@@ -36,4 +36,3 @@ def makeclash(dictin):
             except:
                 continue
     return proxies
-1
