@@ -4,6 +4,7 @@ from datetime import datetime
 import re
 
 REPO_URL = 'https://github.com/changfengoss/pub'
+RAW_URL = 'https://raw.githubusercontent.com/changfengoss/pub/main'
 DATA_DIR = 'data'
 
 def get_latest_yaml_file():
@@ -13,6 +14,10 @@ def get_latest_yaml_file():
         response = requests.get(f"{REPO_URL}/tree/main/{DATA_DIR}")
         response.raise_for_status()
         
+        # 打印页面 HTML 内容以便调试
+        print("Page HTML content for data directory:")
+        print(response.text)
+        
         # 解析 HTML 内容
         soup = BeautifulSoup(response.text, 'html.parser')
         
@@ -20,7 +25,7 @@ def get_latest_yaml_file():
         date_folders = []
         for a in soup.find_all('a', href=True):
             href = a['href']
-            if href.startswith(f"{DATA_DIR}/"):
+            if href.startswith(f"/changfengoss/pub/tree/main/{DATA_DIR}/"):
                 folder_name = href.split('/')[-1]
                 if re.match(r'\d{4}_\d{2}_\d{2}', folder_name):
                     date_folders.append(folder_name)
@@ -39,6 +44,11 @@ def get_latest_yaml_file():
         # 请求最新日期文件夹页面
         response = requests.get(f"{REPO_URL}/tree/main/{DATA_DIR}/{latest_date_folder}")
         response.raise_for_status()
+        
+        # 打印页面 HTML 内容以便调试
+        print(f"Page HTML content for latest date folder ({latest_date_folder}):")
+        print(response.text)
+        
         soup = BeautifulSoup(response.text, 'html.parser')
 
         # 查找最新 YAML 文件
@@ -53,7 +63,7 @@ def get_latest_yaml_file():
         
         # 获取最新的 YAML 文件 URL
         latest_yaml_file = yaml_files[-1]
-        latest_yaml_url = f"{REPO_URL}/raw/main/{latest_yaml_file}"
+        latest_yaml_url = f"{RAW_URL}/{latest_yaml_file.split('/')[-2]}/{latest_yaml_file.split('/')[-1]}"
         print(f"Latest YAML file URL: {latest_yaml_url}")
         return latest_yaml_url
 
