@@ -53,11 +53,13 @@ jobs:
       - name: Install npm packages
         run: cd ./utils/rm/ && npm ci
 
-      - name: Install pip packages
-        run: pip install -r ./utils/pool/requirements.txt
+      - name: Install dependencies
+        run: |
+          pip install -r ./utils/pool/requirements.txt
 
-      - name: Run Python script
-        run: cd ./utils/pool/ && python main.py
+      - name: Run main.py to process YAML
+        run: |
+          cd ./utils/pool/ && python main.py
 
       - name: Pull Clashcheck file
         id: clashcheck
