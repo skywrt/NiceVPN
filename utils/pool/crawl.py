@@ -1,71 +1,63 @@
 import requests
 from bs4 import BeautifulSoup
+import yaml
 from datetime import datetime
 import re
 
-def get_latest_folder_url(repo_url):
-    # 请求主数据目录的页面
-    response = requests.get(f'{repo_url}/tree/main/data')
-    response.raise_for_status()
-    
-    soup = BeautifulSoup(response.text, 'html.parser')
-    
-    # 查找所有日期文件夹链接
-    folder_links = soup.find_all('a', class_='js-navigation-open')
-    folders = [(link.get_text(), f"{repo_url}{link['href']}") for link in folder_links if re.match(r'\d{4}_\d{2}_\d{2}', link.get_text())]
-    
-    # 筛选出最新的文件夹
-    latest_folder = None
-    latest_date = datetime.min
-    
-    for folder_name, folder_url in folders:
-        folder_date = datetime.strptime(folder_name, '%Y_%m_%d')
-        if folder_date > latest_date:
-            latest_date = folder_date
-            latest_folder = folder_url
-            
-    return latest_folder
+GITHUB_REPO_URL = "https://github.com/changfengoss/pub"
+DATA_FOLDER_URL = f"{GITHUB_REPO_URL}/tree/main/data"
 
-def get_latest_yaml_file_url(folder_url):
-    # 请求最新日期文件夹的页面
-    response = requests.get(folder_url)
+def get_soup(url):
+    """获取页面的 BeautifulSoup 对象"""
+    response = requests.get(url)
     response.raise_for_status()
-    
-    soup = BeautifulSoup(response.text, 'html.parser')
-    
-    # 查找所有YAML文件链接
-    file_links = soup.find_all('a', class_='js-navigation-open')
-    yaml_files = [(link.get_text(), f"{repo_url}{link['href']}") for link in file_links if link.get_text().endswith('.yaml')]
-    
-    # 筛选出最新的YAML文件
-    latest_file = None
-    latest_timestamp = datetime.min
-    
-    for file_name, file_url in yaml_files:
-        # 文件名包含日期时间的格式（例如 timestamp），需要根据实际文件名格式调整
-        match = re.search(r'\d{4}_\d{2}_\d{2}_\d{2}_\d{2}_\d{2}', file_name)
+    return BeautifulSoup(response.text, 'html.parser')
+
+def get_latest_date():
+    """获取最新的日期文件夹"""
+    soup = get_soup(DATA_FOLDER_URL)
+    links = soup.find_all('a', href=True)
+    dates = []
+
+    for link in links:
+        match = re.match(r'data/(\d{4}_\d{2}_\d{2})', link['href'])
         if match:
-            file_timestamp = datetime.strptime(match.group(0), '%Y_%m_%d_%H_%M_%S')
-            if file_timestamp > latest_timestamp:
-                latest_timestamp = file_timestamp
-                latest_file = file_url
-    
-    return latest_file
+            dates.append(match.group(1))
 
-repo_url = 'https://github.com/changfengoss/pub'
-latest_folder_url = get_latest_folder_url(repo_url)
+    dates.sort(reverse=True)
+    return dates[0] if dates else None
 
-if latest_folder_url:
-    latest_yaml_file_url = get_latest_yaml_file_url(latest_folder_url)
-    if latest_yaml_file_url:
-        # 下载最新的YAML文件
-        yaml_response = requests.get(latest_yaml_file_url)
-        yaml_response.raise_for_status()
-        
-        # 打印文件内容
-        data = yaml_response.text
-        print(f"最新的YAML文件内容如下:\n{data}")
+def get_latest_yaml(date_folder):
+    """获取最新的 YAML 文件"""
+    date_folder_url = f"{DATA_FOLDER_URL}/{date_folder}"
+    soup = get_soup(date_folder_url)
+    links = soup.find_all('a', href=True)
+    yaml_files = [link['href'] for link in links if link['href'].endswith('.yaml')]
+
+    if not yaml_files:
+        return None
+
+    # Assuming the latest file is the last in the list (may need more logic based on naming)
+    latest_yaml_file = yaml_files[-1]
+    return latest_yaml_file
+
+def get_latest_yaml_file():
+    """获取最新的 YAML 文件路径"""
+    latest_date = get_latest_date()
+    if not latest_date:
+        print("No date folders found.")
+        return None
+
+    latest_yaml = get_latest_yaml(latest_date)
+    if not latest_yaml:
+        print("No YAML files found.")
+        return None
+
+    return f"{GITHUB_REPO_URL}/blob/main/{latest_yaml}"
+
+if __name__ == "__main__":
+    latest_yaml_url = get_latest_yaml_file()
+    if latest_yaml_url:
+        print("Latest YAML URL:", latest_yaml_url)
     else:
-        print("没有找到最新的YAML文件")
-else:
-    print("没有找到最新的日期文件夹")
+        print("Failed to get the latest YAML file.")
