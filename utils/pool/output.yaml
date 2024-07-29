@@ -700,26 +700,11 @@ proxies:
   sni: egcmi.phooeyunfold.com
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 87 SSS"
-  server: 104.207.155.64
-  port: 1633
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: o_A7inN1yqeWtOTL
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 88 TJN"
-  server: 185.180.13.70
-  port: 43118
-  type: trojan
-  password: ypDt8RkT7J
-  sni: earya.phooeyunfold.com
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 89 VMS"
-  server: denc36.xtooltech.cfd
+- name: "\U0001F1FA\U0001F1F8 US 87 VMS"
+  server: beyonddbc.sbs
   port: 443
   type: vmess
-  uuid: b321fd5d-e6ec-4293-a644-164e3885f52e
+  uuid: 8d90c129-4156-4d6c-9115-24df25f26a02
   alterId: 0
   cipher: auto
   tls: true
@@ -728,7 +713,37 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: adenc36v.xtooltech.cfd
+      Host: beyonddbc.sbs
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 88 VMS"
+  server: lin0502.hwcar.sbs
+  port: 443
+  type: vmess
+  uuid: 39cec18f-a439-427c-9a4e-aeb6fcdf6f53
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: linja05.hwcar.sbs
+  udp: true
+- name: "\U0001F1FA\U0001F1F3 UN 89 VMS"
+  server: sareikela.com
+  port: 443
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sareikela.com
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 90 VMS"
   server: 38.46.4.182
@@ -803,7 +818,7 @@ proxies:
     headers:
       Host: ip2.1457230.xyz
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 95 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 95 VMS"
   server: cfcdn2.sanfencdn9.com
   port: 2052
   type: vmess
@@ -1275,44 +1290,14 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 5cp9Z3iWnJZ2
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 128 VMS"
-  server: hms082.gwdef.sbs
-  port: 443
-  type: vmess
-  uuid: bc864078-dcf3-4bf4-8dbf-ca9f200b56be
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: gwdef.sbs
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 129 SSS"
+- name: "\U0001F1FA\U0001F1F8 US 128 SSS"
   server: 184.170.241.194
   port: 443
   type: ss
   cipher: aes-128-cfb
   password: shadowsocks
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 130 VMS"
-  server: s.marktred.com
-  port: 443
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: aveiror.com
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 131 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 129 VMS"
   server: 192.3.150.233
   port: 8443
   type: vmess
@@ -1324,6 +1309,21 @@ proxies:
   network: ws
   ws-opts:
     path: /
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 130 SSS"
+  server: 104.207.155.64
+  port: 1633
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: o_A7inN1yqeWtOTL
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 131 TJN"
+  server: 185.180.13.70
+  port: 43118
+  type: trojan
+  password: ypDt8RkT7J
+  sni: earya.phooeyunfold.com
+  skip-cert-verify: true
   udp: true
 proxy-groups:
 - name: automatic
@@ -1415,15 +1415,15 @@ proxy-groups:
   - "\U0001F1F3\U0001F1F1 NL 84 SSS"
   - "\U0001F1F5\U0001F1F1 PL 85 TJN"
   - "\U0001F1FA\U0001F1F8 US 86 TJN"
-  - "\U0001F1FA\U0001F1F8 US 87 SSS"
-  - "\U0001F1FA\U0001F1F8 US 88 TJN"
-  - "\U0001F1FA\U0001F1F8 US 89 VMS"
+  - "\U0001F1FA\U0001F1F8 US 87 VMS"
+  - "\U0001F1FA\U0001F1F8 US 88 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 89 VMS"
   - "\U0001F1FA\U0001F1F8 US 90 VMS"
   - "\U0001F1FA\U0001F1F8 US 91 VMS"
   - "\U0001F1FA\U0001F1F8 US 92 VMS"
   - "\U0001F1FA\U0001F1F8 US 93 VMS"
   - "\U0001F1FA\U0001F1F8 US 94 VMS"
-  - "\U0001F1FA\U0001F1F8 US 95 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 95 VMS"
   - "\U0001F1FA\U0001F1F8 US 96 VMS"
   - "\U0001F1FA\U0001F1F8 US 97 SSS"
   - "\U0001F1FA\U0001F1F8 US 98 VMS"
@@ -1456,10 +1456,10 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 125 VMS"
   - "\U0001F1FA\U0001F1F8 US 126 VMS"
   - "\U0001F1FA\U0001F1F8 US 127 SSS"
-  - "\U0001F1FA\U0001F1F8 US 128 VMS"
-  - "\U0001F1FA\U0001F1F8 US 129 SSS"
-  - "\U0001F1FA\U0001F1F8 US 130 VMS"
-  - "\U0001F1FA\U0001F1F8 US 131 VMS"
+  - "\U0001F1FA\U0001F1F8 US 128 SSS"
+  - "\U0001F1FA\U0001F1F8 US 129 VMS"
+  - "\U0001F1FA\U0001F1F8 US 130 SSS"
+  - "\U0001F1FA\U0001F1F8 US 131 TJN"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -1552,15 +1552,15 @@ proxy-groups:
   - "\U0001F1F3\U0001F1F1 NL 84 SSS"
   - "\U0001F1F5\U0001F1F1 PL 85 TJN"
   - "\U0001F1FA\U0001F1F8 US 86 TJN"
-  - "\U0001F1FA\U0001F1F8 US 87 SSS"
-  - "\U0001F1FA\U0001F1F8 US 88 TJN"
-  - "\U0001F1FA\U0001F1F8 US 89 VMS"
+  - "\U0001F1FA\U0001F1F8 US 87 VMS"
+  - "\U0001F1FA\U0001F1F8 US 88 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 89 VMS"
   - "\U0001F1FA\U0001F1F8 US 90 VMS"
   - "\U0001F1FA\U0001F1F8 US 91 VMS"
   - "\U0001F1FA\U0001F1F8 US 92 VMS"
   - "\U0001F1FA\U0001F1F8 US 93 VMS"
   - "\U0001F1FA\U0001F1F8 US 94 VMS"
-  - "\U0001F1FA\U0001F1F8 US 95 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 95 VMS"
   - "\U0001F1FA\U0001F1F8 US 96 VMS"
   - "\U0001F1FA\U0001F1F8 US 97 SSS"
   - "\U0001F1FA\U0001F1F8 US 98 VMS"
@@ -1593,9 +1593,9 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 125 VMS"
   - "\U0001F1FA\U0001F1F8 US 126 VMS"
   - "\U0001F1FA\U0001F1F8 US 127 SSS"
-  - "\U0001F1FA\U0001F1F8 US 128 VMS"
-  - "\U0001F1FA\U0001F1F8 US 129 SSS"
-  - "\U0001F1FA\U0001F1F8 US 130 VMS"
-  - "\U0001F1FA\U0001F1F8 US 131 VMS"
+  - "\U0001F1FA\U0001F1F8 US 128 SSS"
+  - "\U0001F1FA\U0001F1F8 US 129 VMS"
+  - "\U0001F1FA\U0001F1F8 US 130 SSS"
+  - "\U0001F1FA\U0001F1F8 US 131 TJN"
 rules:
 - "MATCH,\U0001F310 Proxy"
