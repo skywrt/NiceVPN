@@ -54,15 +54,3 @@ def get_latest_yaml_file(dirlist):
     except Exception as e:
         print(f"Error finding the latest YAML file: {e}")
         return None, None
-
-# Example usage of the modified functions
-if __name__ == "__main__":
-    directories = get_file_list()
-    if directories:
-        latest_date, latest_file = get_latest_yaml_file(directories)
-        if latest_date and latest_file:
-            print(f"Latest YAML file found: {latest_date}/{latest_file}")
-        else:
-            print("No valid YAML files found.")
-    else:
-        print("No files or directories found.")
