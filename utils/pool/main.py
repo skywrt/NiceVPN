@@ -3,7 +3,7 @@ import yaml
 import requests
 from multiprocessing import Process, Manager
 from yaml.loader import SafeLoader
-from crawl import get_latest_yaml_file  # 从 crawl.py 中导入函数
+from crawl import get_latest_yaml_file  # Import the function from crawl.py
 from parse import parse, makeclash
 from clash import push
 
@@ -17,8 +17,8 @@ def local(proxy_list, file):
         for x in working['proxies']:
             data_out.append(x)
         proxy_list.append(data_out)
-    except Exception as e:
-        print(f"{file}: No such file. Error: {e}")
+    except:
+        print(file + ": No such file")
 
 def url(proxy_list, link):
     try:
@@ -31,8 +31,8 @@ def url(proxy_list, link):
         print(f"Error in Collecting {link}: {e}")
 
 def fetch(proxy_list):
-    """Fetch the latest YAML file content and append proxies to the list"""
-    latest_yaml_url = get_latest_yaml_file()  # 获取最新的 YAML 文件 URL
+    """Fetch the YAML file content and append proxies to the list"""
+    latest_yaml_url = get_latest_yaml_file()
     if latest_yaml_url:
         try:
             response = requests.get(latest_yaml_url)
@@ -48,22 +48,19 @@ if __name__ == '__main__':
     with Manager() as manager:
         proxy_list = manager.list()
         start = time.time()  # Time start
-        
-        # 读取配置文件
-        config = 'config.yaml'
-        try:
-            with open(config, 'r') as reader:
-                config = yaml.load(reader, Loader=SafeLoader)
-                subscribe_links = config['sub']
-                subscribe_files = config['local']
-        except Exception as e:
-            print(f"Error reading config file: {e}")
-            exit(1)
 
+        config = 'config.yaml'
+        with open(config, 'r') as reader:
+            config = yaml.load(reader, Loader=SafeLoader)
+            subscribe_links = config['sub']
+            subscribe_files = config['local']
+        
         try:
+            sfiles = len(subscribe_links)
+            tfiles = len(subscribe_links) + len(subscribe_files)
             processes = []
 
-            # 处理本地文件
+            # Process local files
             for i in subscribe_files:
                 p = Process(target=local, args=(proxy_list, i))
                 p.start()
@@ -71,7 +68,7 @@ if __name__ == '__main__':
             for p in processes:
                 p.join()
 
-            # 处理 URL
+            # Process URLs
             for i in subscribe_links:
                 p = Process(target=url, args=(proxy_list, i))
                 p.start()
@@ -79,7 +76,7 @@ if __name__ == '__main__':
             for p in processes:
                 p.join()
 
-            # 处理最新 YAML 文件
+            # Process latest YAML file
             p = Process(target=fetch, args=(proxy_list,))
             p.start()
             processes.append(p)
