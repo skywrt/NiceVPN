@@ -32,7 +32,16 @@ def get_latest_date():
         str: The latest date in 'YYYY_MM_DD' format.
     """
     dirlist, _ = get_file_list()
-    dates = [path.split('/')[1] for path in dirlist if len(path.split('/')) > 1 and path.split('/')[1].count('_') == 2]
+    # Extract all dates from the file paths
+    dates = set()
+    for path in dirlist:
+        parts = path.split('/')
+        if len(parts) > 1 and parts[1].count('_') == 2:
+            try:
+                datetime.strptime(parts[1], '%Y_%m_%d')  # Validate date format
+                dates.add(parts[1])
+            except ValueError:
+                continue  # Skip invalid dates
     
     if not dates:
         print("No date directories found.")
@@ -78,6 +87,7 @@ def get_latest_yaml_file():
         return None
 
     dirlist, _ = get_file_list()
+    # Find YAML files under the latest date directory
     yaml_files = [path for path in dirlist if path.startswith(f"data/{latest_date}/") and path.endswith('.yaml')]
     
     if yaml_files:
