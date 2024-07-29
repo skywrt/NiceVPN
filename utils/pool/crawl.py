@@ -45,10 +45,29 @@ def get_latest_yaml_file():
             return None
         
         # 获取文件的最后修改时间并选择最新的文件
-        latest_yaml_file = max(yaml_files, key=lambda f: datetime.strptime(f['name'], '%Y-%m-%dT%H:%M:%S.%fZ'))  # 假设 API 返回的时间格式是 RFC 3339
-        latest_yaml_url = latest_yaml_file['download_url']
-        print(f"Latest YAML file URL: {latest_yaml_url}")
-        return latest_yaml_url
+        latest_yaml_file = None
+        latest_yaml_time = datetime.min
+        
+        for yaml_file in yaml_files:
+            file_url = yaml_file['url']
+            file_response = requests.get(file_url)
+            file_response.raise_for_status()
+            file_info = file_response.json()
+            
+            # 提取文件的最后修改时间（注意这里的时间格式可能需要根据实际情况调整）
+            file_modified_time = datetime.strptime(file_info['commit']['commit']['committer']['date'], '%Y-%m-%dT%H:%M:%SZ')
+            
+            if file_modified_time > latest_yaml_time:
+                latest_yaml_time = file_modified_time
+                latest_yaml_file = yaml_file
+        
+        if latest_yaml_file:
+            latest_yaml_url = latest_yaml_file['download_url']
+            print(f"Latest YAML file URL: {latest_yaml_url}")
+            return latest_yaml_url
+        else:
+            print("No YAML files found.")
+            return None
 
     except requests.RequestException as e:
         print(f"Error fetching latest YAML file: {e}")
