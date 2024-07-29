@@ -1,89 +1,54 @@
 import requests
-import json
 import yaml
-import time
 from datetime import datetime
 
-def get_file_list():
+def get_latest_proxies():
     """
-    Fetch the list of files from the GitHub repository and return directory paths and count.
+    Fetch the latest YAML file from the specified URL and return its content.
     Returns:
-        tuple: A tuple containing the list of file paths and the total count of files.
+        list: A list of proxies extracted from the latest YAML file.
     """
+    base_url = 'https://raw.githubusercontent.com/changfengoss/pub/main/data/'
+    
+    # Get today's date in YYYY_MM_DD format
+    today_date = datetime.now().strftime('%Y_%m_%d')
+    latest_file_url = f'{base_url}{today_date}/'
+    
     try:
-        start = time.time()
-        response = requests.get('https://api.github.com/repos/changfengoss/pub/git/trees/main?recursive=1')
-        response.raise_for_status()  # Raise an error for bad HTTP responses
-        rawdata = response.json()
-        data = rawdata['tree']
-        dirlist = [x['path'] for x in data if x['path'].endswith('.yaml')]
-        count = len(dirlist)
-        end = time.time()
-        print(f"Fetch changfengoss/pub succeeded in {end-start:.2f} seconds")
-        return dirlist, count
-    except requests.RequestException as e:
-        print(f"Failed to fetch file list: {e}")
-        return [], 0
+        # Fetch the list of files from the latest directory
+        response = requests.get(latest_file_url)
+        response.raise_for_status()
+        
+        file_list = response.text.splitlines()  # Assuming each file is listed in a new line
+        latest_yaml_file = None
+        
+        # Find the latest YAML file
+        for file_name in file_list:
+            if file_name.endswith('.yaml'):
+                latest_yaml_file = file_name
+                break
+        
+        if not latest_yaml_file:
+            print("No YAML file found in the latest directory.")
+            return []
 
-def get_proxies(date, file):
-    """
-    Fetch proxies from the specified YAML file for a given date.
-    Args:
-        date (str): Date in 'YYYY_MM_DD' format.
-        file (str): YAML file name.
-    Returns:
-        list: A list of proxies extracted from the YAML file.
-    """
-    baseurl = f'https://raw.githubusercontent.com/changfengoss/pub/main/data/{date}/'
-    url = baseurl + file
-    try:
-        response = requests.get(url)
-        response.raise_for_status()  # Raise an error for bad HTTP responses
+        # Fetch the latest YAML file content
+        file_url = f'{latest_file_url}{latest_yaml_file}'
+        response = requests.get(file_url)
+        response.raise_for_status()
+        
+        # Load and return proxies from the YAML file
         working = yaml.safe_load(response.text)
         return working.get('proxies', [])
+        
     except requests.RequestException as e:
-        print(f"Error fetching file from {url}: {e}")
+        print(f"Error fetching file: {e}")
         return []
     except yaml.YAMLError as e:
-        print(f"Error parsing YAML file {url}: {e}")
+        print(f"Error parsing YAML file: {e}")
         return []
 
-def get_latest_file_date():
-    """
-    Get the latest date available for YAML files.
-    Returns:
-        str: Latest date in 'YYYY_MM_DD' format.
-    """
-    current_date = datetime.now().strftime('%Y_%m_%d')
-    return current_date
-
-def get_latest_proxies_file(directories):
-    """
-    Get the latest YAML file based on the directories list.
-    Args:
-        directories (list): List of file paths from get_file_list.
-    Returns:
-        str: The latest YAML file name if available, None otherwise.
-    """
-    date = get_latest_file_date()
-    latest_file = None
-    for file in directories:
-        if file.startswith(f'{date}/') and file.endswith('.yaml'):
-            latest_file = file
-            break
-    return latest_file
-
-def fetch_latest_proxies():
-    """
-    Fetch proxies from the latest YAML file.
-    Returns:
-        list: A list of proxies from the latest YAML file if successful, empty list otherwise.
-    """
-    directories, _ = get_file_list()
-    latest_file = get_latest_proxies_file(directories)
-    if latest_file:
-        date = latest_file.split('/')[0]
-        return get_proxies(date, latest_file.split('/')[-1])
-    else:
-        print("No latest YAML file found.")
-        return []
+# Example usage:
+if __name__ == '__main__':
+    proxies = get_latest_proxies()
+    print("Proxies:", proxies)
