@@ -1,6 +1,6 @@
+import os
 import requests
 from datetime import datetime, timedelta
-import os
 
 REPO = 'changfengoss/pub'
 DATA_DIR = 'data'
@@ -22,8 +22,11 @@ def get_processed_file_name(date):
 
 def save_processed_file(file_url):
     """保存新的 YAML 文件 URL 到记录中"""
+    create_processed_yaml_dir()  # 确保目录存在
     today_date = datetime.now().strftime('%Y_%m_%d')
     processed_file = get_processed_file_name(today_date)
+    
+    # 确保文件存在，如果文件夹或文件不存在则创建
     with open(processed_file, 'a') as file:
         file.write(file_url + '\n')
 
@@ -98,5 +101,4 @@ def get_latest_yaml_file():
         return None
 
 if __name__ == "__main__":
-    create_processed_yaml_dir()
     get_latest_yaml_file()
