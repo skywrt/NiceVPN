@@ -16,7 +16,7 @@ def get_file_list():
         response.raise_for_status()  # Raise an error for bad HTTP responses
         rawdata = response.json()
         data = rawdata['tree']
-        dirlist = [x['path'] for x in data]
+        dirlist = [x['path'] for x in data if x['path'].endswith('.yaml')]
         count = len(dirlist)
         end = time.time()
         print(f"Fetch changfengoss/pub succeeded in {end-start:.2f} seconds")
@@ -29,7 +29,7 @@ def get_proxies(date, file):
     """
     Fetch proxies from the specified YAML file for a given date.
     Args:
-        date (str): Date in 'YYYYMMDD' format.
+        date (str): Date in 'YYYY_MM_DD' format.
         file (str): YAML file name.
     Returns:
         list: A list of proxies extracted from the YAML file.
@@ -52,7 +52,7 @@ def get_latest_file_date():
     """
     Get the latest date available for YAML files.
     Returns:
-        str: Latest date in 'YYYYMMDD' format.
+        str: Latest date in 'YYYY_MM_DD' format.
     """
     current_date = datetime.now().strftime('%Y_%m_%d')
     return current_date
