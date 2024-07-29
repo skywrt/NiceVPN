@@ -57,16 +57,17 @@ def get_latest_file_date():
     current_date = datetime.now().strftime('%Y_%m_%d')
     return current_date
 
-def get_latest_proxies_file():
+def get_latest_proxies_file(directories):
     """
-    Get the latest YAML file based on the current date.
+    Get the latest YAML file based on the directories list.
+    Args:
+        directories (list): List of file paths from get_file_list.
     Returns:
         str: The latest YAML file name if available, None otherwise.
     """
     date = get_latest_file_date()
-    file_list, _ = get_file_list()
     latest_file = None
-    for file in file_list:
+    for file in directories:
         if file.startswith(f'{date}/') and file.endswith('.yaml'):
             latest_file = file
             break
@@ -78,10 +79,11 @@ def fetch_latest_proxies():
     Returns:
         list: A list of proxies from the latest YAML file if successful, empty list otherwise.
     """
-    latest_file = get_latest_proxies_file()
+    directories, _ = get_file_list()
+    latest_file = get_latest_proxies_file(directories)
     if latest_file:
-        date = get_latest_file_date()
-        return get_proxies(date, latest_file)
+        date = latest_file.split('/')[0]
+        return get_proxies(date, latest_file.split('/')[-1])
     else:
         print("No latest YAML file found.")
         return []
