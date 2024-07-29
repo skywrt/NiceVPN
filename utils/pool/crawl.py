@@ -38,28 +38,14 @@ def get_latest_yaml_file():
         response.raise_for_status()
         files = response.json()
         
-        # 查找 YAML 文件并选择最后修改时间最新的文件
+        # 查找 YAML 文件并选择最新的文件（基于文件名）
         yaml_files = [file for file in files if file['name'].endswith('.yaml')]
         if not yaml_files:
             print("No YAML files found in the latest date folder.")
             return None
         
-        # 获取文件的最后修改时间并选择最新的文件
-        latest_yaml_file = None
-        latest_yaml_time = datetime.min
-        
-        for yaml_file in yaml_files:
-            file_url = yaml_file['url']
-            file_response = requests.get(file_url)
-            file_response.raise_for_status()
-            file_info = file_response.json()
-            
-            # 提取文件的最后修改时间（注意这里的时间格式可能需要根据实际情况调整）
-            file_modified_time = datetime.strptime(file_info['commit']['commit']['committer']['date'], '%Y-%m-%dT%H:%M:%SZ')
-            
-            if file_modified_time > latest_yaml_time:
-                latest_yaml_time = file_modified_time
-                latest_yaml_file = yaml_file
+        # 假设文件名的时间戳排序是合理的
+        latest_yaml_file = max(yaml_files, key=lambda f: f['name'])
         
         if latest_yaml_file:
             latest_yaml_url = latest_yaml_file['download_url']
