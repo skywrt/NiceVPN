@@ -15,47 +15,50 @@ def get_file_list():
             dirlist = [item['path'] for item in data]
             end = time.time()
             print(f"Fetch changfengoss/pub succeeded in {end - start:.2f} seconds")
-            return dirlist, len(dirlist)
+            return dirlist
         else:
             print(f"Failed to fetch file list, status code: {response.status_code}")
-            return [], 0
+            return []
     except Exception as e:
         print(f"Error fetching file list: {e}")
-        return [], 0
+        return []
 
 def get_latest_yaml_file(dirlist):
     """Find the latest YAML file based on the directory structure."""
     try:
-        # Filter directories that are date directories
+        # Extract date directories
         date_dirs = [path for path in dirlist if path.startswith('data/') and path.count('/') == 2]
+        
+        if not date_dirs:
+            print("No date directories found.")
+            return None, None
         
         # Sort date directories by date
         sorted_date_dirs = sorted(date_dirs, key=lambda x: x.split('/')[1], reverse=True)
-        latest_date_dir = sorted_date_dirs[0] if sorted_date_dirs else None
+        latest_date_dir = sorted_date_dirs[0]
         
-        if latest_date_dir:
-            # Filter YAML files in the latest date directory
-            date_files = [path for path in dirlist if path.startswith(latest_date_dir) and path.endswith('.yaml')]
-            
-            # Sort YAML files by file name (if needed, can add more sorting logic)
-            sorted_files = sorted(date_files, reverse=True)
-            latest_file = sorted_files[0] if sorted_files else None
-            
-            latest_date = latest_date_dir.split('/')[1] if latest_date_dir else None
-            latest_filename = latest_file.split('/')[2] if latest_file else None
-            
-            return latest_date, latest_filename
-        else:
-            print("No date directories found.")
+        # Extract YAML files from the latest date directory
+        date_files = [path for path in dirlist if path.startswith(latest_date_dir) and path.endswith('.yaml')]
+        
+        if not date_files:
+            print(f"No YAML files found in directory: {latest_date_dir}")
             return None, None
+        
+        # Sort files to get the latest one (if filenames need to be sorted)
+        latest_file = max(date_files, key=lambda x: x.split('/')[-1])
+        
+        latest_date = latest_date_dir.split('/')[1]
+        latest_filename = latest_file.split('/')[-1]
+        
+        return latest_date, latest_filename
     except Exception as e:
         print(f"Error finding the latest YAML file: {e}")
         return None, None
 
 # Example usage of the modified functions
 if __name__ == "__main__":
-    directories, total_files = get_file_list()
-    if total_files > 0:
+    directories = get_file_list()
+    if directories:
         latest_date, latest_file = get_latest_yaml_file(directories)
         if latest_date and latest_file:
             print(f"Latest YAML file found: {latest_date}/{latest_file}")
