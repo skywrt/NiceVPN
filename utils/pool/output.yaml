@@ -1,13 +1,260 @@
-proxies: []
+proxies:
+- name: "\U0001F1F9\U0001F1FC TW 1 TJN"
+  server: 211.72.35.155
+  port: 3389
+  type: trojan
+  password: 0cc6b4268dea0ba8
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1F9\U0001F1FC TW 2 TJN"
+  server: 211.72.35.152
+  port: 3389
+  type: trojan
+  password: 26a663656e575c0b
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1F9\U0001F1FC TW 3 TJN"
+  server: 211.72.35.155
+  port: 3389
+  type: trojan
+  password: 26a663656e575c0b
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1F9\U0001F1FC TW 4 TJN"
+  server: 211.72.35.157
+  port: 3389
+  type: trojan
+  password: 26a663656e575c0b
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1F9\U0001F1FC TW 5 TJN"
+  server: 211.72.35.155
+  port: 3389
+  type: trojan
+  password: 3febb05ea76a940f
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1F9\U0001F1FC TW 6 TJN"
+  server: 211.72.35.152
+  port: 3389
+  type: trojan
+  password: 4bacb8f1a089763b
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1F9\U0001F1FC TW 7 TJN"
+  server: 211.72.35.155
+  port: 3389
+  type: trojan
+  password: 7b06d22a8a7c764f
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1F9\U0001F1FC TW 8 TJN"
+  server: 211.72.35.157
+  port: 3389
+  type: trojan
+  password: 8b475d9e868e43e0
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 9 TJN"
+  server: tj2.dalazhi.cyou
+  port: 443
+  type: trojan
+  password: 8f70fde3-a04c-4f6a-b705-aef7406f6ac1
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1F2\U0001F1F4 MO 10 TJN"
+  server: 45.64.22.55
+  port: 443
+  type: trojan
+  password: KLF0qOU0ZZGw5Tnu
+  sni: swift.protocolbuffer.com
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1F2\U0001F1F4 MO 11 TJN"
+  server: 45.64.22.55
+  port: 443
+  type: trojan
+  password: Ty33ylFA4u6A5e0NE3wRFp3DIa8lZOzC87CeKnxYgpSOSa2ZaXBjDDSY9qCcxR
+  sni: flowery.meijireform.com
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1F2\U0001F1F4 MO 12 TJN"
+  server: 45.64.22.55
+  port: 443
+  type: trojan
+  password: ZDAAFTxBNu5j9pl3Re834a3xSXwOZYeIlE30Dp86qc7yYgKaDCaROCSSnz2FCy
+  sni: csharp.protocolbuffer.com
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1F9\U0001F1FC TW 13 TJN"
+  server: 211.72.35.157
+  port: 3389
+  type: trojan
+  password: b09d2aaa443af97a
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1F9\U0001F1FC TW 14 TJN"
+  server: 211.72.35.155
+  port: 3389
+  type: trojan
+  password: b84d16a244460e09
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1E6 CA 15 VMS"
+  server: 23.227.38.5
+  port: 2086
+  type: vmess
+  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip006.freegradely.xyz
+  udp: true
+- name: "\U0001F1F8\U0001F1EC SG 16 SSS"
+  type: ss
+  server: 68.183.176.112
+  port: 55064
+  password: eHdKAXQecCPCvmXi4pU7Yj
+  cipher: chacha20-ietf-poly1305
+- name: "\U0001F1FA\U0001F1F8 US 17 SSS"
+  type: ss
+  server: 38.114.114.207
+  port: 8009
+  password: XKFKl2rULjIp74
+  cipher: aes-256-gcm
+- name: "\U0001F1E8\U0001F1F3 CN 18 TJN"
+  type: trojan
+  server: 36.134.38.49
+  port: 51000
+  udp: true
+  password: MfqALmAJ
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1ED CH 19 SSS"
+  type: ss
+  server: 51.103.232.91
+  port: 8929
+  password: 76ZehNxtyrhe4tLmDYfHsq
+  cipher: chacha20-ietf-poly1305
+- name: "\U0001F1E8\U0001F1F3 CN 20 TJN"
+  type: trojan
+  server: f10002.flyflylflyflysbs.sbs
+  port: 29496
+  udp: true
+  password: 4bd14bdb-db19-4de4-a452-58b897046d2c
+  sni: jp01.ckcloud.info
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F0\U0001F1F7 KR 21 SSS"
+  type: ss
+  server: 52.78.200.155
+  port: 443
+  password: amazonskr05
+  cipher: aes-256-cfb
+- name: "\U0001F1E9\U0001F1EA DE 22 SSS"
+  type: ss
+  server: 80.92.204.106
+  port: 9006
+  password: FAdUvMJUq5vDgKEq
+  cipher: aes-256-cfb
+- name: "\U0001F1E8\U0001F1F3 CN 23 VMS"
+  type: vmess
+  server: mmsg16.micloud.buzz
+  port: 46016
+  cipher: auto
+  uuid: f9b02d8c-b69b-435f-aa25-68393e5fb121
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /zh-cn
+    headers:
+      host: mmsg16.micloud.buzz
+- name: "\U0001F1FA\U0001F1F3 UN 24 VMS"
+  type: vmess
+  server: 104.19.51.232
+  port: 2086
+  cipher: auto
+  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      host: ip005.dtku47.xyz
+- name: "\U0001F1E8\U0001F1E6 CA 25 SSS"
+  type: ss
+  server: 142.4.216.225
+  port: 80
+  password: JIhN6rBKkaEboLNXVSv5rq
+  cipher: chacha20-ietf-poly1305
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies: []
+  proxies:
+  - "\U0001F1F9\U0001F1FC TW 1 TJN"
+  - "\U0001F1F9\U0001F1FC TW 2 TJN"
+  - "\U0001F1F9\U0001F1FC TW 3 TJN"
+  - "\U0001F1F9\U0001F1FC TW 4 TJN"
+  - "\U0001F1F9\U0001F1FC TW 5 TJN"
+  - "\U0001F1F9\U0001F1FC TW 6 TJN"
+  - "\U0001F1F9\U0001F1FC TW 7 TJN"
+  - "\U0001F1F9\U0001F1FC TW 8 TJN"
+  - "\U0001F1FA\U0001F1F8 US 9 TJN"
+  - "\U0001F1F2\U0001F1F4 MO 10 TJN"
+  - "\U0001F1F2\U0001F1F4 MO 11 TJN"
+  - "\U0001F1F2\U0001F1F4 MO 12 TJN"
+  - "\U0001F1F9\U0001F1FC TW 13 TJN"
+  - "\U0001F1F9\U0001F1FC TW 14 TJN"
+  - "\U0001F1E8\U0001F1E6 CA 15 VMS"
+  - "\U0001F1F8\U0001F1EC SG 16 SSS"
+  - "\U0001F1FA\U0001F1F8 US 17 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 18 TJN"
+  - "\U0001F1E8\U0001F1ED CH 19 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 20 TJN"
+  - "\U0001F1F0\U0001F1F7 KR 21 SSS"
+  - "\U0001F1E9\U0001F1EA DE 22 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 23 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 24 VMS"
+  - "\U0001F1E8\U0001F1E6 CA 25 SSS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
+  - "\U0001F1F9\U0001F1FC TW 1 TJN"
+  - "\U0001F1F9\U0001F1FC TW 2 TJN"
+  - "\U0001F1F9\U0001F1FC TW 3 TJN"
+  - "\U0001F1F9\U0001F1FC TW 4 TJN"
+  - "\U0001F1F9\U0001F1FC TW 5 TJN"
+  - "\U0001F1F9\U0001F1FC TW 6 TJN"
+  - "\U0001F1F9\U0001F1FC TW 7 TJN"
+  - "\U0001F1F9\U0001F1FC TW 8 TJN"
+  - "\U0001F1FA\U0001F1F8 US 9 TJN"
+  - "\U0001F1F2\U0001F1F4 MO 10 TJN"
+  - "\U0001F1F2\U0001F1F4 MO 11 TJN"
+  - "\U0001F1F2\U0001F1F4 MO 12 TJN"
+  - "\U0001F1F9\U0001F1FC TW 13 TJN"
+  - "\U0001F1F9\U0001F1FC TW 14 TJN"
+  - "\U0001F1E8\U0001F1E6 CA 15 VMS"
+  - "\U0001F1F8\U0001F1EC SG 16 SSS"
+  - "\U0001F1FA\U0001F1F8 US 17 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 18 TJN"
+  - "\U0001F1E8\U0001F1ED CH 19 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 20 TJN"
+  - "\U0001F1F0\U0001F1F7 KR 21 SSS"
+  - "\U0001F1E9\U0001F1EA DE 22 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 23 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 24 VMS"
+  - "\U0001F1E8\U0001F1E6 CA 25 SSS"
 rules:
 - "MATCH,\U0001F310 Proxy"
