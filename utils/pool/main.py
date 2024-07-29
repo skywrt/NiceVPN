@@ -3,7 +3,7 @@ import yaml
 import requests
 from multiprocessing import Process, Manager
 from yaml.loader import SafeLoader
-from crawl import get_latest_date_and_file, fetch_yaml_file
+from crawl import get_file_list, get_proxies
 from parse import parse, makeclash
 from clash import push
 
