@@ -1,12 +1,11 @@
 import time
 import yaml
 import requests
-from crawl import get_file_list, get_proxies
-from parse import parse, makeclash
-from clash import push
 from multiprocessing import Process, Manager
 from yaml.loader import SafeLoader
 from crawl import get_latest_date_and_file, fetch_yaml_file
+from parse import parse, makeclash
+from clash import push
 
 headers = {'Accept': '*/*', 'Accept-Encoding': 'gzip', 'Connection': 'Keep-Alive', 'User-Agent': 'Clash'}
 
@@ -28,75 +27,73 @@ def url(proxy_list, link):
         for x in working['proxies']:
             data_out.append(x)
         proxy_list.append(data_out)
-    except:
-        print("Error in Collecting " + link )
-        #pass
+    except requests.RequestException as e:
+        print(f"Error in Collecting {link}: {e}")
 
 def fetch(proxy_list, filename):
-    current_date = time.strftime("%Y_%m_%d", time.localtime())
-    baseurl = 'https://raw.githubusercontent.com/changfengoss/pub/main/data/'
-    working = yaml.safe_load(requests.get(url=baseurl + current_date + '/' + filename, timeout=240).text)
-    data_out = []
-    for x in working['proxies']:
-        data_out.append(x)
-    proxy_list.append(data_out)
+    current_date, _ = get_latest_date_and_file()  # Get latest date and file
+    if current_date:
+        yaml_content = fetch_yaml_file(current_date, filename)  # Fetch the latest YAML file
+        if yaml_content:
+            proxy_list.append(yaml_content.get('proxies', []))
+        else:
+            print(f"Failed to fetch or parse the YAML file {filename}")
+    else:
+        print("Failed to get the latest date.")
 
-proxy_list=[]
 if __name__ == '__main__':
     with Manager() as manager:
         proxy_list = manager.list()
-        current_date = time.strftime("%Y_%m_%d", time.localtime())
-        #print("Today is: " + current_date)
-        start = time.time() #time start
+        start = time.time()  # Time start
+        
+        # Get the latest date and file name
+        latest_date, latest_file = get_latest_date_and_file()
+        if not latest_date or not latest_file:
+            print("Could not determine the latest file.")
+            exit(1)
+
         config = 'config.yaml'
         with open(config, 'r') as reader:
             config = yaml.load(reader, Loader=SafeLoader)
             subscribe_links = config['sub']
             subscribe_files = config['local']
-        directories, total = get_file_list()
-        data = parse(directories)
+        
         try:
             sfiles = len(subscribe_links)
-            tfiles = len(subscribe_links) + len(data[current_date])
-            processes=[]
-            filenames = list()
-            filenames = data[current_date]
-        except KeyError:
-            print("Success: " + "find " + str(sfiles) + " Clash link")
-        else:
-            print("Success: " + "find " + str(tfiles) + " Clash link")
+            tfiles = len(subscribe_links) + len(subscribe_files)
+            processes = []
 
-        processes=[]
-
-        try: #Process开启多线程
+            # Process local files
             for i in subscribe_files:
                 p = Process(target=local, args=(proxy_list, i))
                 p.start()
                 processes.append(p)
             for p in processes:
                 p.join()
+
+            # Process URLs
             for i in subscribe_links:
                 p = Process(target=url, args=(proxy_list, i))
                 p.start()
                 processes.append(p)
             for p in processes:
                 p.join()
-            for i in filenames:
-                p = Process(target=fetch, args=(proxy_list, i))
-                p.start()
-                processes.append(p)
+
+            # Process latest YAML file
+            p = Process(target=fetch, args=(proxy_list, latest_file))
+            p.start()
+            processes.append(p)
             for p in processes:
                 p.join()
-            end = time.time() #time end
+            
+            end = time.time()  # Time end
             print("Collecting in " + "{:.2f}".format(end-start) + " seconds")
-        except:
-            end = time.time() #time end
+        
+        except Exception as e:
+            print(f"Error: {e}")
+            end = time.time()  # Time end
             print("Collecting in " + "{:.2f}".format(end-start) + " seconds")
 
-        proxy_list=list(proxy_list)
+        proxy_list = list(proxy_list)
         proxies = makeclash(proxy_list)
         push(proxies)
-    """
-    for i in tqdm(range(int(tfiles)), desc="Download"):
-        proxy_list.append(get_proxies(current_date, data[current_date][i]))
-    """
