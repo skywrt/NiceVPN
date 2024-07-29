@@ -1,66 +1,50 @@
 import requests
+import json
 import yaml
-
-# Define the base URL for accessing GitHub raw content
-BASE_URL = 'https://raw.githubusercontent.com/changfengoss/pub/main/data/'
+from datetime import datetime
 
 def get_latest_date_and_file():
-    """
-    Get the latest date and the latest YAML file for that date.
+    base_url = 'https://api.github.com/repos/changfengoss/pub/git/trees/main?recursive=1'
+    response = requests.get(base_url)
     
-    Returns:
-        tuple: (latest_date, latest_file)
-            - latest_date (str): The latest date directory in YYYY_MM_DD format.
-            - latest_file (str): The name of the latest YAML file in the date directory.
-    """
-    try:
-        # Fetch the list of files and directories from the main repository
-        response = requests.get('https://api.github.com/repos/changfengoss/pub/git/trees/main?recursive=1')
-        response.raise_for_status()
-        tree = response.json().get('tree', [])
-        
-        # Extract all date directories (format YYYY_MM_DD)
-        date_dirs = {path.split('/')[1] for path in tree if len(path.split('/')) == 2 and path.split('/')[1].count('_') == 2}
-        latest_date = max(date_dirs, default=None)
-        
-        if not latest_date:
-            return None, None
-        
-        # Fetch files in the latest date directory
-        response = requests.get(f'https://api.github.com/repos/changfengoss/pub/git/trees/main/0pmtpm/{latest_date}?recursive=1')
-        response.raise_for_status()
-        tree = response.json().get('tree', [])
-        
-        # Extract all YAML files and find the latest one
-        yaml_files = [item['path'] for item in tree if item['path'].endswith('.yaml')]
-        latest_file = max(yaml_files, default=None, key=lambda p: p.split('/')[-1])
-        
-        return latest_date, latest_file
-    
-    except requests.RequestException as e:
-        print(f"Error fetching latest date or file: {e}")
+    if response.status_code != 200:
+        print(f"Failed to fetch data from GitHub: {response.status_code}")
         return None, None
 
-def fetch_yaml_file(date, file_name):
-    """
-    Fetch the YAML file content from the repository.
-    Args:
-        date (str): The date directory in YYYY_MM_DD format.
-        file_name (str): The name of the YAML file to fetch.
-    Returns:
-        dict: The content of the YAML file or None if there was an error.
-    """
-    try:
-        url = f'{BASE_URL}{date}/{file_name}'
-        response = requests.get(url)
-        response.raise_for_status()
-        
-        # Parse YAML content
-        return yaml.safe_load(response.text)
+    data = response.json()
+    tree = data.get('tree', [])
     
+    # Extract directories with date format YYYY_MM_DD
+    date_dirs = {path.split('/')[1] for path in tree if isinstance(path, dict) and len(path['path'].split('/')) == 2 and path['path'].split('/')[1].count('_') == 2}
+    
+    if not date_dirs:
+        print("No valid date directories found.")
+        return None, None
+
+    # Find the latest date
+    latest_date = max(date_dirs)
+    latest_file = None
+    
+    # Find the latest file in the latest date directory
+    for path in tree:
+        if isinstance(path, dict):
+            path_str = path['path']
+            if path_str.startswith(f'data/{latest_date}/'):
+                latest_file = path_str.split('/')[-1]
+                break
+    
+    if not latest_file:
+        print("No files found for the latest date.")
+        return latest_date, None
+    
+    return latest_date, latest_file
+
+def fetch_yaml_file(date, filename):
+    url = f'https://raw.githubusercontent.com/changfengoss/pub/main/data/{date}/{filename}'
+    try:
+        response = requests.get(url, timeout=240)
+        response.raise_for_status()
+        return yaml.safe_load(response.text)
     except requests.RequestException as e:
-        print(f"Error fetching YAML file {file_name}: {e}")
-        return None
-    except yaml.YAMLError as e:
-        print(f"Error parsing YAML file {file_name}: {e}")
+        print(f"Error fetching YAML file {url}: {e}")
         return None
