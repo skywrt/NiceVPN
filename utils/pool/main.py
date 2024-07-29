@@ -1,9 +1,10 @@
+import time
+import yaml
+import requests  # Ensure requests is imported here
 from crawl import get_file_list
 from parse import parse, makeclash
 from clash import push
 from multiprocessing import Process, Manager
-import time
-import yaml
 from yaml.loader import SafeLoader
 
 headers = {
@@ -29,7 +30,7 @@ def url(proxy_list, link):
     """Load proxies from a URL."""
     try:
         response = requests.get(url=link, timeout=240, headers=headers)
-        response.raise_for_status()
+        response.raise_for_status()  # Check if the request was successful
         working = yaml.safe_load(response.text)
         data_out = [x for x in working.get('proxies', [])]
         proxy_list.extend(data_out)
@@ -44,7 +45,7 @@ def fetch(proxy_list, filename):
     baseurl = 'https://raw.githubusercontent.com/changfengoss/pub/main/data/'
     try:
         response = requests.get(url=baseurl + current_date + '/' + filename, timeout=240)
-        response.raise_for_status()
+        response.raise_for_status()  # Check if the request was successful
         working = yaml.safe_load(response.text)
         data_out = [x for x in working.get('proxies', [])]
         proxy_list.extend(data_out)
