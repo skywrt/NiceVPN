@@ -3,7 +3,7 @@ import yaml
 import requests
 from multiprocessing import Process, Manager
 from yaml.loader import SafeLoader
-from crawl import get_file_list, get_proxies
+from crawl import get_latest_yaml_file
 from parse import parse, makeclash
 from clash import push
 
@@ -30,16 +30,21 @@ def url(proxy_list, link):
     except requests.RequestException as e:
         print(f"Error in Collecting {link}: {e}")
 
+from crawl import get_latest_yaml_file  # Import the function from crawl.py
+
 def fetch(proxy_list, filename):
-    current_date, _ = get_latest_date_and_file()  # Get latest date and file
-    if current_date:
-        yaml_content = fetch_yaml_file(current_date, filename)  # Fetch the latest YAML file
-        if yaml_content:
+    """Fetch the YAML file content and append proxies to the list"""
+    latest_yaml_url = get_latest_yaml_file()
+    if latest_yaml_url:
+        try:
+            response = requests.get(latest_yaml_url)
+            response.raise_for_status()
+            yaml_content = yaml.safe_load(response.text)
             proxy_list.append(yaml_content.get('proxies', []))
-        else:
-            print(f"Failed to fetch or parse the YAML file {filename}")
+        except Exception as e:
+            print(f"Error fetching YAML file: {e}")
     else:
-        print("Failed to get the latest date.")
+        print("No URL found for the latest YAML file.")
 
 if __name__ == '__main__':
     with Manager() as manager:
