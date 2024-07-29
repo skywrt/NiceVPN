@@ -17,8 +17,8 @@ def local(proxy_list, file):
         for x in working['proxies']:
             data_out.append(x)
         proxy_list.append(data_out)
-    except:
-        print(file + ": No such file")
+    except Exception as e:
+        print(f"{file}: No such file or error occurred - {e}")
 
 def url(proxy_list, link):
     try:
@@ -33,12 +33,18 @@ def url(proxy_list, link):
 def fetch(proxy_list):
     """Fetch the YAML file content and append proxies to the list"""
     latest_yaml_url = get_latest_yaml_file()
+    print(f"Latest YAML URL fetched: {latest_yaml_url}")  # Debug info
     if latest_yaml_url:
         try:
             response = requests.get(latest_yaml_url)
             response.raise_for_status()
             yaml_content = yaml.safe_load(response.text)
-            proxy_list.append(yaml_content.get('proxies', []))
+            proxies = yaml_content.get('proxies', [])
+            if proxies:
+                proxy_list.append(proxies)
+                print(f"Proxies added from {latest_yaml_url}: {proxies}")  # Debug info
+            else:
+                print("No proxies found in the YAML file.")
         except Exception as e:
             print(f"Error fetching YAML file: {e}")
     else:
