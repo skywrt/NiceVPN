@@ -1,13 +1,40 @@
 import requests
 from datetime import datetime, timedelta
+import os
 
 REPO = 'changfengoss/pub'
 DATA_DIR = 'data'
 GITHUB_API_URL = f'https://api.github.com/repos/{REPO}/contents/{DATA_DIR}'
+PROCESSED_YAML_DIR = 'processed_yaml'
 
 def get_date_folder_url(date_str):
     """获取指定日期文件夹的 GitHub API URL"""
     return f'{GITHUB_API_URL}/{date_str}'
+
+def create_processed_yaml_dir():
+    """创建存储已处理 YAML 文件记录的文件夹"""
+    if not os.path.exists(PROCESSED_YAML_DIR):
+        os.makedirs(PROCESSED_YAML_DIR)
+
+def get_processed_file_name(date):
+    """根据给定日期获取处理文件名"""
+    return os.path.join(PROCESSED_YAML_DIR, f'processed_yaml_{date}.txt')
+
+def save_processed_file(file_url):
+    """保存新的 YAML 文件 URL 到记录中"""
+    today_date = datetime.now().strftime('%Y_%m_%d')
+    processed_file = get_processed_file_name(today_date)
+    with open(processed_file, 'a') as file:
+        file.write(file_url + '\n')
+
+def load_processed_files():
+    """加载已处理的 YAML 文件列表"""
+    today_date = datetime.now().strftime('%Y_%m_%d')
+    processed_file = get_processed_file_name(today_date)
+    if not os.path.exists(processed_file):
+        return set()
+    with open(processed_file, 'r') as file:
+        return set(line.strip() for line in file)
 
 def get_latest_yaml_file():
     """获取最新 YAML 文件的 URL"""
@@ -48,6 +75,19 @@ def get_latest_yaml_file():
         if latest_yaml_file:
             latest_yaml_url = latest_yaml_file['download_url']
             print(f"Latest YAML file URL: {latest_yaml_url}")
+            
+            # 检查是否已经处理过
+            processed_files = load_processed_files()
+            if latest_yaml_url not in processed_files:
+                # 如果没有处理过，则进行处理
+                print(f"Processing new YAML file: {latest_yaml_url}")
+                # 处理 YAML 文件的逻辑，比如下载或解析等
+                
+                # 保存已处理的 YAML 文件 URL
+                save_processed_file(latest_yaml_url)
+            else:
+                print(f"YAML file already processed: {latest_yaml_url}")
+
             return latest_yaml_url
         else:
             print("No YAML files found.")
@@ -57,6 +97,6 @@ def get_latest_yaml_file():
         print(f"Error fetching latest YAML file: {e}")
         return None
 
-# 调用函数获取最新的 YAML 文件 URL
 if __name__ == "__main__":
+    create_processed_yaml_dir()
     get_latest_yaml_file()
