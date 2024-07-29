@@ -33,7 +33,13 @@ def get_latest_date():
     """
     dirlist, _ = get_file_list()
     dates = [path.split('/')[1] for path in dirlist if len(path.split('/')) > 1 and path.split('/')[1].count('_') == 2]
+    
+    if not dates:
+        print("No date directories found.")
+        return None
+
     latest_date = max(dates, default=None)
+    print(f"Latest date directory found: {latest_date}")
     return latest_date
 
 def get_proxies(date, file):
@@ -76,6 +82,7 @@ def get_latest_yaml_file():
     
     if yaml_files:
         latest_yaml = max(yaml_files, key=lambda x: x.split('/')[-1])
+        print(f"Latest YAML file found: {latest_yaml}")
         return latest_yaml
     else:
         print("No YAML files found for the latest date.")
