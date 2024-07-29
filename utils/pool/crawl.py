@@ -34,14 +34,15 @@ def get_latest_yaml_file(dirlist):
         return None, None
 
 # Main execution
-dirlist, count = get_file_list()
-print(f"Total files and directories: {count}")
+if __name__ == "__main__":
+    dirlist, count = get_file_list()
+    print(f"Total files and directories: {count}")
 
-if count > 0:
-    latest_date, latest_file = get_latest_yaml_file(dirlist)
-    if latest_date and latest_file:
-        print(f"Latest file found: {latest_date}/{latest_file}")
+    if count > 0:
+        latest_date, latest_file = get_latest_yaml_file(dirlist)
+        if latest_date and latest_file:
+            print(f"Latest file found: {latest_date}/{latest_file}")
+        else:
+            print("No valid YAML files found in the latest date directory.")
     else:
-        print("No valid YAML files found in the latest date directory.")
-else:
-    print("No files or directories found in the repository.")
+        print("No files or directories found in the repository.")
