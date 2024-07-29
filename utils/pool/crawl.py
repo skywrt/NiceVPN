@@ -1,5 +1,4 @@
 import requests
-import json
 import yaml
 from datetime import datetime
 
@@ -15,7 +14,13 @@ def get_latest_date_and_file():
     tree = data.get('tree', [])
     
     # Extract directories with date format YYYY_MM_DD
-    date_dirs = {path.split('/')[1] for path in tree if isinstance(path, dict) and len(path['path'].split('/')) == 2 and path['path'].split('/')[1].count('_') == 2}
+    date_dirs = set()
+    for item in tree:
+        if 'path' in item:
+            path = item['path']
+            parts = path.split('/')
+            if len(parts) > 1 and parts[1].count('_') == 2:
+                date_dirs.add(parts[1])
     
     if not date_dirs:
         print("No valid date directories found.")
@@ -26,9 +31,9 @@ def get_latest_date_and_file():
     latest_file = None
     
     # Find the latest file in the latest date directory
-    for path in tree:
-        if isinstance(path, dict):
-            path_str = path['path']
+    for item in tree:
+        if 'path' in item:
+            path_str = item['path']
             if path_str.startswith(f'data/{latest_date}/'):
                 latest_file = path_str.split('/')[-1]
                 break
