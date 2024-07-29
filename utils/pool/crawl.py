@@ -13,8 +13,17 @@ def get_latest_yaml_file():
         response.raise_for_status()
         files = response.json()
         
-        # 查找日期文件夹
-        date_folders = [f for f in files if f['type'] == 'dir']
+        # 过滤并查找符合日期格式的日期文件夹
+        date_folders = []
+        for file in files:
+            if file['type'] == 'dir':
+                try:
+                    folder_date = datetime.strptime(file['name'], '%Y_%m_%d')
+                    date_folders.append({'name': file['name'], 'url': file['url']})
+                except ValueError:
+                    # 如果文件夹名不符合日期格式，忽略它
+                    print(f"Ignored non-date folder: {file['name']}")
+        
         if not date_folders:
             print("No date folders found.")
             return None
