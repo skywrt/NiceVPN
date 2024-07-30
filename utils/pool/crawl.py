@@ -16,6 +16,8 @@ def create_processed_yaml_dir():
     if not os.path.exists(PROCESSED_YAML_DIR):
         os.makedirs(PROCESSED_YAML_DIR)
         print(f"Created directory: {PROCESSED_YAML_DIR}")
+    else:
+        print(f"Directory already exists: {PROCESSED_YAML_DIR}")
 
 def get_processed_file_name(date):
     """根据给定日期获取处理文件名"""
