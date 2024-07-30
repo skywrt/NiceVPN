@@ -1,10 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-07-30 20:46:22
+# 创建时间：2024-07-30 21:06:24
 # 使用模版：ACL4SSR_Mini.ini
-# 节点数量：54
-# 节点类型：trojan
+# 节点数量：120
+# 节点类型：vmess, ss
 ####################################
 mixed-port: 7890
 allow-lan: false
@@ -86,179 +86,378 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"江苏省+移动\r_1","type":"trojan","server":"36.151.195.48","port":4787,"udp":true,"password":"TNDSJfNv","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"法国+国际航空电讯集团公司(SITA)\r","type":"trojan","server":"57.181.37.6","port":14435,"udp":true,"password":"AVTI4CYCyIza","sni":"appsvs.shop","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+Amazon+EC2服务器\r_1","type":"trojan","server":"3.134.180.239","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+CloudFlare节点\r_1","type":"trojan","server":"WangCai2","port":2087,"udp":true,"password":"8557692d-c228-48f0-b6f9-50d44d4a2096@104.19.52.11:2087?security=tls&sni=tjjd.yzyx1.v6.army&type=ws&host=tjjd.yzyx1.v6.army&path=/&ed=2048&Telegram🇨🇳 @8557692d-c228-48f0-b6f9-50d44d4a2096@104.19.52.11:2087&security=tls&sni=tjjd.yzyx1.v6.army&type=ws&host=tjjd.yzyx1.v6.army&path=/&ed=2048&Telegram🇨🇳 ","sni":"tjjd.yzyx1.v6.army","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tjjd.yzyx1.v6.army"}}}
-  - {"name":"美国+俄勒冈州波特兰Amazon数据中心\r","type":"trojan","server":"34.210.101.237","port":14443,"udp":true,"password":"wVUamyBcJzQI","sni":"appsvs.shop","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"日本+V2CROSS.COM\r_1","type":"trojan","server":"146.56.130.130","port":14850,"udp":true,"password":"moist","sni":"trojan.freenods.sbs","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"trojan.freenods.sbs"}}}
-  - {"name":"美国+Amazon数据中心\r_1","type":"trojan","server":"18.175.45.41","port":14454,"udp":true,"password":"RCsTMnF80YJC","sni":"appsvs.shop","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+CloudFlare节点\r_2","type":"trojan","server":"104.19.52.250","port":2096,"udp":true,"password":"8557692d-c228-48f0-b6f9-50d44d4a2096","sni":"tjjd.yzyx1.v6.army","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tjjd.yzyx1.v6.army"}}}
-  - {"name":"挪威+V2CROSS.COM\r_1","type":"trojan","server":"138.124.184.173","port":443,"udp":true,"password":"c287c4bc-eb4c-401c-b0c8-c804332b3fc8","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"法国+V2CROSS.COM\r","type":"trojan","server":"146.19.247.183","port":443,"udp":true,"password":"62b9172d-cc3a-4001-8172-7804fbf1a09b","sni":"aka.ms","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"de1.trojanvpn.xyz"}}}
-  - {"name":"美国+CloudFlare节点\r_3","type":"trojan","server":"104.17.215.4","port":443,"udp":true,"password":"cb1f26aa437d4bfa9b841d28503ce8cc","sni":"jobscareerfortoday.com","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"6b777a91","headers":{"host":"jobscareerfortoday.com"}}}
-  - {"name":"美国+Merit网络公司\r","type":"trojan","server":"35.95.189.119","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"加拿大+魁北克省蒙特利尔Amazon数据中心\r_1","type":"trojan","server":"35.182.39.30","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"美国+Amazon数据中心\r_2","type":"trojan","server":"18.175.81.176","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"新加坡+Amazon数据中心\r_1","type":"trojan","server":"54.151.213.224","port":14467,"udp":true,"password":"KmzJNwtPRSWx","sni":"appsvs.shop","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"挪威+V2CROSS.COM\r_2","type":"trojan","server":"us-full.privateip.net","port":443,"udp":true,"password":"c287c4bc-eb4c-401c-b0c8-c804332b3fc8","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+Amazon+EC2服务器\r_2","type":"trojan","server":"3.73.255.248","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"江苏省+移动\r_2","type":"trojan","server":"36.151.195.48","port":4603,"udp":true,"password":"TNDSJfNv","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"英国+V2CROSS.COM\r","type":"trojan","server":"5.44.249.44","port":3306,"udp":true,"password":"b84d16a244460e09","sni":"n2.gladns.com","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/gateway/connect","headers":{"host":"TG.WangCai_1"}}}
-  - {"name":"江苏省+移动\r_3","type":"trojan","server":"36.151.195.48","port":29841,"udp":true,"password":"TNDSJfNv","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+Amazon+EC2服务器\r_3","type":"trojan","server":"3.136.16.17","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+惠普HP\r_1","type":"trojan","server":"15.157.153.47","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"美国+CloudFlare节点\r_4","type":"trojan","server":"104.19.53.186","port":2096,"udp":true,"password":"8557692d-c228-48f0-b6f9-50d44d4a2096","sni":"tjjd.yzyx1.v6.army","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tjjd.yzyx1.v6.army"}}}
-  - {"name":"韩国+首尔Amazon数据中心\r","type":"trojan","server":"13.124.213.75","port":14444,"udp":true,"password":"QbyLbiy1qb6J","sni":"appsvs.shop","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+Amazon+EC2服务器\r_4","type":"trojan","server":"3.73.110.210","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"日本+东京Amazon数据中心\r","type":"trojan","server":"13.230.60.200","port":14472,"udp":true,"password":"iwrfflNURpHQ","sni":"appsvs.shop","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+CloudFlare节点\r_5","type":"trojan","server":"WangCai2","port":8443,"udp":true,"password":"8557692d-c228-48f0-b6f9-50d44d4a2096@104.19.53.103:8443?security=tls&sni=tjjd.yzyx1.v6.army&type=ws&host=tjjd.yzyx1.v6.army&path=/&ed=2048&Telegram🇨🇳 @8557692d-c228-48f0-b6f9-50d44d4a2096@104.19.53.103:8443&security=tls&sni=tjjd.yzyx1.v6.army&type=ws&host=tjjd.yzyx1.v6.army&path=/&ed=2048&Telegram🇨🇳 ","sni":"tjjd.yzyx1.v6.army","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tjjd.yzyx1.v6.army"}}}
-  - {"name":"美国+CloudFlare节点\r_6","type":"trojan","server":"104.21.47.176","port":443,"udp":true,"password":"52701795-3c3b-46b4-b7cf-c5978b3a4cf2","sni":"hdfyc1.achaemenidempireofpersia.uk","skip-cert-verify":false,"network":"grpc","grpc-opts":{"grpc-service-name":"xw7uebRG4KlUXGGYTVEagC5V7fI"}}
-  - {"name":"美国+Amazon+EC2服务器\r_5","type":"trojan","server":"3.148.117.229","port":14469,"udp":true,"password":"T8VyzpdmOiT9","sni":"appsvs.shop","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+Akamai科技公司CDN网络节点\r_1","type":"trojan","server":"172.232.43.111","port":443,"udp":true,"password":"50404548-1d4d-4463-8b41-09694d2771bf","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"德国+黑森州法兰克福Amazon数据中心\r","type":"trojan","server":"35.159.109.50","port":14449,"udp":true,"password":"85ESGc12V4zg","sni":"appsvs.shop","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"英国+社会保险安全部\r","type":"trojan","server":"51.44.14.47","port":14462,"udp":true,"password":"gvbtKZOGiZMc","sni":"appsvs.shop","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"乌克兰+V2CROSS.COM\r","type":"trojan","server":"95.164.33.62","port":443,"udp":true,"password":"0b1371aa-649d-41dc-9126-338c87936500","sni":"sourceforge.net","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/websocket","headers":{"host":"se1.trojanvpn.de"}}}
-  - {"name":"英国+伦敦Amazon数据中心\r","type":"trojan","server":"18.130.175.120","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"加拿大+魁北克省蒙特利尔Amazon数据中心\r_2","type":"trojan","server":"35.182.224.74","port":14441,"udp":true,"password":"h4mzFHfy2g0M","sni":"appsvs.shop","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+CloudFlare节点\r_7","type":"trojan","server":"104.21.43.145","port":2096,"udp":true,"password":"E0002134H","sni":"6504e90a.xpxroject.pages.dev","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"6504e90a.xpxroject.pages.dev"}}}
-  - {"name":"法国+巴黎Amazon数据中心\r","type":"trojan","server":"35.180.154.120","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"新加坡+Amazon数据中心\r_2","type":"trojan","server":"13.250.38.199","port":443,"udp":true,"password":"OE1IBsAueh","sni":"aka.ms","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/http/1.1"}}
-  - {"name":"爱尔兰+都柏林Amazon数据中心\r","type":"trojan","server":"52.16.109.182","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"美国+Amazon+EC2服务器\r_6","type":"trojan","server":"3.99.142.64","port":14450,"udp":true,"password":"VvfQOHxPLWG0","sni":"appsvs.shop","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+CloudFlare节点\r_8","type":"trojan","server":"WangCai2","port":8443,"udp":true,"password":"8557692d-c228-48f0-b6f9-50d44d4a2096@104.19.52.219:8443?security=tls&sni=tjjd.yzyx1.v6.army&type=ws&host=tjjd.yzyx1.v6.army&path=/&ed=2048&Telegram🇨🇳 @8557692d-c228-48f0-b6f9-50d44d4a2096@104.19.52.219:8443&security=tls&sni=tjjd.yzyx1.v6.army&type=ws&host=tjjd.yzyx1.v6.army&path=/&ed=2048&Telegram🇨🇳 ","sni":"tjjd.yzyx1.v6.army","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tjjd.yzyx1.v6.army"}}}
-  - {"name":"日本+V2CROSS.COM\r_2","type":"trojan","server":"43.201.57.106","port":14455,"udp":true,"password":"HoW8ZVuyxuQ7","sni":"appsvs.shop","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"日本东京+Amazon数据中心\r","type":"trojan","server":"52.199.188.25","port":14467,"udp":true,"password":"AlUgLOE3BQ8k","sni":"appsvs.shop","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"台湾省+中华电信(HiNet)数据中心\r","type":"trojan","server":"118.163.128.81","port":13688,"udp":true,"password":"moist","sni":"trojan.freenods.sbs","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"trojan.freenods.sbs"}}}
-  - {"name":"美国+CloudFlare节点\r_9","type":"trojan","server":"104.21.109.230","port":443,"udp":true,"password":"E0002134H","sni":"6504e90a.xpxroject.pages.dev","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"6504e90a.xpxroject.pages.dev"}}}
-  - {"name":"美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心\r","type":"trojan","server":"52.194.187.177","port":14457,"udp":true,"password":"tTNu4CTVZm6A","sni":"appsvs.shop","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国加利福尼亚州洛杉矶+V2CROSS.COM\r","type":"trojan","server":"45.156.24.4","port":443,"udp":true,"password":"ca3d2d6a-f7ea-4a52-ba12-37bd8fcea8d2","sni":"minn2.viraticket.ir","skip-cert-verify":false,"network":"grpc","grpc-opts":{"grpc-service-name":"u9L2z2BtBOlpLASniKKXBXf3Hv"}}
-  - {"name":"韩国+蘑菇主机BGP数据中心\r","type":"trojan","server":"103.214.68.57","port":10003,"udp":true,"password":"6x8HcghsjS","sni":"yes998.chickenkiller.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+惠普HP\r_2","type":"trojan","server":"16.170.150.39","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"美国+Akamai科技公司CDN网络节点\r_2","type":"trojan","server":"fr2-full.privateip.net","port":443,"udp":true,"password":"50404548-1d4d-4463-8b41-09694d2771bf","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+Amazon数据中心\r_3","type":"trojan","server":"13.36.24.53","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"新加坡+Amazon数据中心\r_3","type":"trojan","server":"13.250.38.199","port":16547,"udp":true,"password":"4xKIHqPURA","sni":"m.zoom.us","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/http/1.1"}}
-  - {"name":"广东省云浮市+移动\r","type":"trojan","server":"183.232.139.22","port":41446,"udp":true,"password":"TNDSJfNv","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"爱尔兰+V2CROSS.COM\r","type":"trojan","server":"54.246.245.152","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_1","type":"vmess","server":"104.19.38.62","port":2086,"cipher":"auto","uuid":"29eebb60-b27b-4a9d-bba5-947763d9205e","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_2","type":"vmess","server":"104.19.47.122","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_3","type":"vmess","server":"104.19.57.4","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_4","type":"vmess","server":"104.19.47.79","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_5","type":"ss","server":"163.172.64.22","port":989,"password":"f8f7aCzcPKbsF8p3","cipher":"aes-256-cfb"}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_6","type":"vmess","server":"104.19.46.36","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_7","type":"vmess","server":"104.19.46.39","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_8","type":"vmess","server":"104.19.21.240","port":2052,"cipher":"auto","uuid":"d6b6d982-d52f-465a-b988-85670b23f64a","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_9","type":"vmess","server":"104.19.47.32","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_10","type":"ss","server":"3.39.227.28","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_11","type":"vmess","server":"cfcdn2.sanfencdn9.com","port":2052,"cipher":"auto","uuid":"ab1ee1ac-884c-44dc-ab65-d533d32e2b1a","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_12","type":"vmess","server":"104.20.25.146","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_13","type":"ss","server":"38.114.114.207","port":7001,"password":"RexnBgU7EV5ADxG","cipher":"aes-256-gcm"}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_14","type":"vmess","server":"172.64.198.249","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_15","type":"ss","server":"fuck5.mmmmmmmmmm.cfd","port":59019,"password":"2062a5ca-a34e-47bf-9810-db91185f07fc","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_16","type":"vmess","server":"104.19.21.230","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_17","type":"vmess","server":"104.19.45.47","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_18","type":"vmess","server":"104.18.57.111","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_19","type":"vmess","server":"104.19.47.126","port":8080,"cipher":"auto","uuid":"b551aa22-22af-11ee-b8d8-f23c932eb68d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_20","type":"vmess","server":"104.19.46.123","port":2052,"cipher":"auto","uuid":"d6b6d982-d52f-465a-b988-85670b23f64a","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_21","type":"ss","server":"54.179.87.28","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_22","type":"ss","server":"51.141.73.244","port":29814,"password":"nEyOTWmtPG5tdgZqMQEq4R","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_23","type":"vmess","server":"104.19.51.232","port":2086,"cipher":"auto","uuid":"29eebb60-b27b-4a9d-bba5-947763d9205e","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_24","type":"ss","server":"59.56.77.178","port":15082,"password":"hGkQ6915tD","cipher":"aes-256-cfb"}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_25","type":"vmess","server":"104.19.46.233","port":2086,"cipher":"auto","uuid":"29eebb60-b27b-4a9d-bba5-947763d9205e","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_26","type":"vmess","server":"104.19.46.59","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_27","type":"vmess","server":"104.19.46.27","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_28","type":"vmess","server":"104.19.45.15","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_29","type":"vmess","server":"de-frankfurt-oracle-b26cf5.ip1.shop","port":45103,"cipher":"auto","uuid":"6d3404ef-27c6-48de-a83a-8ac6488760b4","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_30","type":"vmess","server":"104.16.38.71","port":2052,"cipher":"auto","uuid":"c286daa2-59de-455c-8de8-ec032b6ce2e8","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_31","type":"vmess","server":"45.147.200.170","port":35972,"cipher":"auto","uuid":"6a2afda8-8798-434c-8964-1deb4e7655a5","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_32","type":"vmess","server":"cfcdn2.sanfencdn9.com","port":2052,"cipher":"auto","uuid":"ccd92698-4499-472d-a06f-f90e7e89ba4f","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/video/3YKfzGw4"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_33","type":"vmess","server":"45.136.245.240","port":12910,"cipher":"auto","uuid":"8259cb1c-dd6c-4739-9c88-af550d977525","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_34","type":"vmess","server":"hk.wish.ml","port":2052,"cipher":"auto","uuid":"c286daa2-59de-455c-8de8-ec032b6ce2e8","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_35","type":"vmess","server":"us-sanfrancisco-02.t3csyun.buzz","port":34053,"cipher":"auto","uuid":"6d3404ef-27c6-48de-a83a-8ac6488760b4","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_36","type":"vmess","server":"104.17.156.224","port":2052,"cipher":"auto","uuid":"c286daa2-59de-455c-8de8-ec032b6ce2e8","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_37","type":"vmess","server":"172.67.164.78","port":2052,"cipher":"auto","uuid":"c286daa2-59de-455c-8de8-ec032b6ce2e8","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_38","type":"vmess","server":"vip3.niuniupremium.xyz","port":16928,"cipher":"auto","uuid":"2ab54438-8af9-3711-bf1a-676fcc144586","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_39","type":"vmess","server":"148.135.40.190","port":8080,"cipher":"auto","uuid":"f6c4905b-0308-4164-b1ad-4157531a8378","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_40","type":"vmess","server":"104.21.8.157","port":2082,"cipher":"auto","uuid":"112ac36f-3f53-4e26-8371-d25c028e1b9a","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_41","type":"vmess","server":"cfcdn1.sanfencdn9.com","port":2082,"cipher":"auto","uuid":"cd0eb936-9e1e-4730-989e-be43e7fcaf3e","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_42","type":"vmess","server":"104.18.37.248","port":2052,"cipher":"auto","uuid":"60bcbd52-0c88-4da3-aee2-cc1f9d5ca224","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_43","type":"vmess","server":"104.19.47.16","port":8080,"cipher":"auto","uuid":"b551aa22-22af-11ee-b8d8-f23c932eb68d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_44","type":"vmess","server":"104.19.47.65","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_45","type":"vmess","server":"120.232.240.56","port":16928,"cipher":"auto","uuid":"5f6b3c3f-b0a8-33f5-95c6-371f8c6af973","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_46","type":"vmess","server":"183.240.235.162","port":54002,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_47","type":"vmess","server":"p3.v2raybrasil.cloud","port":2052,"cipher":"auto","uuid":"60bcbd52-0c88-4da3-aee2-cc1f9d5ca224","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_48","type":"vmess","server":"104.19.32.46","port":2086,"cipher":"auto","uuid":"29eebb60-b27b-4a9d-bba5-947763d9205e","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_49","type":"vmess","server":"183.240.235.162","port":54882,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_50","type":"vmess","server":"russia.com","port":8080,"cipher":"auto","uuid":"b7c56170-edb4-4c4a-bb64-ed5ef40b8739","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_51","type":"vmess","server":"172.67.130.140","port":2082,"cipher":"auto","uuid":"112ac36f-3f53-4e26-8371-d25c028e1b9a","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_52","type":"vmess","server":"172.64.175.213","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_53","type":"vmess","server":"45.82.31.164","port":3389,"cipher":"auto","uuid":"9c050a86-d612-48f1-ec32-e573df08a1b7","alterId":0,"tls":false,"skip-cert-verify":true,"network":"http"}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_54","type":"vmess","server":"172.67.116.48","port":80,"cipher":"auto","uuid":"22a13aa2-4854-44cb-e090-ec71ab84b1ff","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_55","type":"vmess","server":"94.140.0.110","port":8880,"cipher":"auto","uuid":"0d1bf26a-ce97-4707-a270-7f4d2ae37334","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_56","type":"vmess","server":"78.111.102.232","port":3389,"cipher":"auto","uuid":"9c050a86-d612-48f1-ec32-e573df08a1b7","alterId":0,"tls":false,"skip-cert-verify":true,"network":"http"}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_57","type":"vmess","server":"yh3.freeh1.xyz","port":8080,"cipher":"auto","uuid":"82cb93a3-65a9-4dac-a2a7-d997b6c26d6a","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"82cb93a3-65a9-4dac-a2a7-d997b6c26d6a-vm"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_58","type":"vmess","server":"23.227.38.23","port":8080,"cipher":"auto","uuid":"34c0bb5e-c120-432d-9c58-bd7d82c7397b","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"34c0bb5e-c120-432d-9c58-bd7d82c7397b-vm"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_59","type":"vmess","server":"172.67.152.170","port":2052,"cipher":"auto","uuid":"7a737f41-b792-4260-94ff-3d864da67b80","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_60","type":"vmess","server":"yh1.dtku41.xyz","port":8080,"cipher":"auto","uuid":"34c0bb5e-c120-432d-9c58-bd7d82c7397b","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"34c0bb5e-c120-432d-9c58-bd7d82c7397b-vm"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_61","type":"vmess","server":"162.159.5.6","port":8080,"cipher":"auto","uuid":"d9c5ec6a-a8d8-4732-8447-56fbd2f93e96","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_62","type":"vmess","server":"162.159.134.23","port":8080,"cipher":"auto","uuid":"9b196b50-37f2-4f4b-b175-06273adc6207","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"9b196b50-37f2-4f4b-b175-06273adc6207-vm"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_63","type":"vmess","server":"yh2.dtku41.xyz","port":8080,"cipher":"auto","uuid":"9258153a-dc97-4e39-9037-009abfc4fed0","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"9258153a-dc97-4e39-9037-009abfc4fed0-vm"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_64","type":"vmess","server":"104.21.82.39","port":2052,"cipher":"auto","uuid":"7a737f41-b792-4260-94ff-3d864da67b80","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_65","type":"vmess","server":"mahilu.site","port":2052,"cipher":"auto","uuid":"7a737f41-b792-4260-94ff-3d864da67b80","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_66","type":"vmess","server":"134.122.41.160","port":3389,"cipher":"auto","uuid":"9c050a86-d612-48f1-ec32-e573df08a1b7","alterId":0,"tls":false,"skip-cert-verify":true,"network":"http"}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_67","type":"vmess","server":"russia.com","port":8880,"cipher":"auto","uuid":"6658a3a6-225a-4d33-a5d2-82cfde565b4e","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/api/v3/download.getFile"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_68","type":"vmess","server":"fbi.gov","port":8080,"cipher":"auto","uuid":"ef8c954e-014f-4b36-8273-9b5086afab34","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"ef8c954e-014f-4b36-8273-9b5086afab34-vm"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_69","type":"vmess","server":"172.67.130.140","port":2082,"cipher":"auto","uuid":"112ac36f-3f53-4e26-8371-d25c028e1b9a","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_70","type":"vmess","server":"hms082.gwdef.sbs","port":443,"cipher":"auto","uuid":"bc864078-dcf3-4bf4-8dbf-ca9f200b56be","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_71","type":"vmess","server":"104.21.234.52","port":80,"cipher":"auto","uuid":"7022982f-da4c-48c9-c660-b2315abdcf7e","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_72","type":"vmess","server":"104.19.38.62","port":2086,"cipher":"auto","uuid":"29eebb60-b27b-4a9d-bba5-947763d9205e","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_73","type":"vmess","server":"172.64.233.43","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_74","type":"vmess","server":"104.19.55.49","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_75","type":"vmess","server":"104.19.123.11","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_76","type":"vmess","server":"104.19.58.175","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_77","type":"vmess","server":"172.64.167.35","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_78","type":"vmess","server":"193.160.130.117","port":443,"cipher":"auto","uuid":"9b456c2a-f2c1-45e1-87a9-b7628b04bb24","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_79","type":"vmess","server":"104.19.21.63","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_80","type":"vmess","server":"23.162.152.6","port":22324,"cipher":"auto","uuid":"04621bae-ab36-11ec-b909-0242ac120002","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_81","type":"vmess","server":"172.64.233.27","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_82","type":"vmess","server":"104.19.45.13","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_83","type":"vmess","server":"104.26.7.132","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_84","type":"vmess","server":"104.19.38.22","port":2052,"cipher":"auto","uuid":"d6b6d982-d52f-465a-b988-85670b23f64a","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_85","type":"vmess","server":"104.19.47.18","port":8080,"cipher":"auto","uuid":"b551aa22-22af-11ee-b8d8-f23c932eb68d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_86","type":"vmess","server":"104.19.47.91","port":8080,"cipher":"auto","uuid":"b551aa22-22af-11ee-b8d8-f23c932eb68d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048&Telegram🇨🇳 @WangCai2"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_87","type":"vmess","server":"104.18.57.111","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_88","type":"vmess","server":"104.19.47.231","port":8080,"cipher":"auto","uuid":"b551aa22-22af-11ee-b8d8-f23c932eb68d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048&Telegram🇨🇳 @WangCai2"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_89","type":"vmess","server":"104.19.47.145","port":8080,"cipher":"auto","uuid":"b551aa22-22af-11ee-b8d8-f23c932eb68d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048&Telegram🇨🇳 @WangCai2"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_90","type":"vmess","server":"104.19.38.8","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_91","type":"vmess","server":"104.26.0.56","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_92","type":"vmess","server":"104.18.57.121","port":2052,"cipher":"auto","uuid":"d6b6d982-d52f-465a-b988-85670b23f64a","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_93","type":"vmess","server":"202.78.162.5","port":443,"cipher":"auto","uuid":"2ff97c6d-8557-42a4-b43f-19c77c5959ea","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/@forwardv2ray"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_94","type":"vmess","server":"202.78.162.5","port":443,"cipher":"auto","uuid":"118287d2-e968-42e1-80d0-12fa2f5d38d6","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/@forwardv2ray"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_95","type":"vmess","server":"www.darkroom.lol","port":8080,"cipher":"auto","uuid":"22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_96","type":"vmess","server":"server31.beheshtbaneh.com","port":8880,"cipher":"auto","uuid":"4154143c-bbba-47a4-9f79-c2ed087cbcc9","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_97","type":"vmess","server":"data-us-v1.shwjfkw.cn","port":20401,"cipher":"auto","uuid":"b1478e24-4916-3abe-8f17-15931012ecbe","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/debian"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_98","type":"vmess","server":"104.21.82.183","port":8880,"cipher":"auto","uuid":"5a7021e0-26b4-45d6-b175-fe551601ca97","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_99","type":"vmess","server":"202.78.162.5","port":443,"cipher":"auto","uuid":"716eded6-2201-4dbd-9d63-1638c9e8e677","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/@forwardv2ray"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_100","type":"vmess","server":"gov.uk","port":443,"cipher":"auto","uuid":"77848824-93b7-4b89-ffd0-e91afff406ce","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/77848824"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_101","type":"vmess","server":"server32.beheshtbaneh.com","port":8880,"cipher":"auto","uuid":"044ba8ed-7285-472a-bc14-fb91dc6be4c9","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_102","type":"ss","server":"172.67.141.111","port":8443,"password":"a-wym4ovY4Yw","cipher":"aes-128-gcm"}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_103","type":"vmess","server":"183.232.139.24","port":40081,"cipher":"auto","uuid":"2afa1ad2-990e-4711-8cd0-34085115ec22","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_104","type":"ss","server":"36.138.218.41","port":10067,"password":"ad2114ca-1c75-4607-ad14-1a1824a6dde9","cipher":"aes-256-gcm"}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_105","type":"ss","server":"59.56.77.178","port":15001,"password":"hGkQ6915tD","cipher":"aes-256-cfb"}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_106","type":"ss","server":"cm1-tw.hutaonode3.top","port":12556,"password":"HuTaoCloud","cipher":"chacha20-ietf"}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_107","type":"vmess","server":"cfcdn1.sanfencdn9.com","port":2052,"cipher":"auto","uuid":"0921f18e-db32-4c07-939b-4388673bfe59","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/video/GQ2qE5Us9g"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_108","type":"vmess","server":"cfcdn3.sanfencdn9.com","port":80,"cipher":"auto","uuid":"0921f18e-db32-4c07-939b-4388673bfe59","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/video/P7EExoE2"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_109","type":"ss","server":"59.56.77.178","port":15084,"password":"hGkQ6915tD","cipher":"aes-256-cfb"}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_110","type":"vmess","server":"sui.forlive.live","port":40396,"cipher":"auto","uuid":"545d58da-5cf4-4dd5-8760-353509720b0a","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_111","type":"ss","server":"36.140.94.130","port":10104,"password":"ad2114ca-1c75-4607-ad14-1a1824a6dde9","cipher":"aes-256-gcm"}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_112","type":"vmess","server":"104.19.51.232","port":2086,"cipher":"auto","uuid":"29eebb60-b27b-4a9d-bba5-947763d9205e","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_113","type":"vmess","server":"104.19.38.18","port":2052,"cipher":"auto","uuid":"d6b6d982-d52f-465a-b988-85670b23f64a","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999"}}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_114","type":"ss","server":"13.209.13.203","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_115","type":"ss","server":"54.180.140.81","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_116","type":"ss","server":"43.201.253.180","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_117","type":"ss","server":"59.56.77.178","port":15083,"password":"hGkQ6915tD","cipher":"aes-256-cfb"}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_118","type":"vmess","server":"36.138.218.41","port":10069,"cipher":"auto","uuid":"ad2114ca-1c75-4607-ad14-1a1824a6dde9","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_119","type":"vmess","server":"183.238.202.173","port":51193,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"二爷翻墙 https://1808.free.hr Node_120","type":"vmess","server":"xctransfer1st.cokecloud.top","port":45449,"cipher":"auto","uuid":"2afa1ad2-990e-4711-8cd0-34085115ec22","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - 🔯 故障转移
       - DIRECT
-      - "江苏省+移动\r_1"
-      - "法国+国际航空电讯集团公司(SITA)\r"
-      - "美国+Amazon+EC2服务器\r_1"
-      - "美国+CloudFlare节点\r_1"
-      - "美国+俄勒冈州波特兰Amazon数据中心\r"
-      - "日本+V2CROSS.COM\r_1"
-      - "美国+Amazon数据中心\r_1"
-      - "美国+CloudFlare节点\r_2"
-      - "挪威+V2CROSS.COM\r_1"
-      - "法国+V2CROSS.COM\r"
-      - "美国+CloudFlare节点\r_3"
-      - "美国+Merit网络公司\r"
-      - "加拿大+魁北克省蒙特利尔Amazon数据中心\r_1"
-      - "美国+Amazon数据中心\r_2"
-      - "新加坡+Amazon数据中心\r_1"
-      - "挪威+V2CROSS.COM\r_2"
-      - "美国+Amazon+EC2服务器\r_2"
-      - "江苏省+移动\r_2"
-      - "英国+V2CROSS.COM\r"
-      - "江苏省+移动\r_3"
-      - "美国+Amazon+EC2服务器\r_3"
-      - "美国+惠普HP\r_1"
-      - "美国+CloudFlare节点\r_4"
-      - "韩国+首尔Amazon数据中心\r"
-      - "美国+Amazon+EC2服务器\r_4"
-      - "日本+东京Amazon数据中心\r"
-      - "美国+CloudFlare节点\r_5"
-      - "美国+CloudFlare节点\r_6"
-      - "美国+Amazon+EC2服务器\r_5"
-      - "美国+Akamai科技公司CDN网络节点\r_1"
-      - "德国+黑森州法兰克福Amazon数据中心\r"
-      - "英国+社会保险安全部\r"
-      - "乌克兰+V2CROSS.COM\r"
-      - "英国+伦敦Amazon数据中心\r"
-      - "加拿大+魁北克省蒙特利尔Amazon数据中心\r_2"
-      - "美国+CloudFlare节点\r_7"
-      - "法国+巴黎Amazon数据中心\r"
-      - "新加坡+Amazon数据中心\r_2"
-      - "爱尔兰+都柏林Amazon数据中心\r"
-      - "美国+Amazon+EC2服务器\r_6"
-      - "美国+CloudFlare节点\r_8"
-      - "日本+V2CROSS.COM\r_2"
-      - "日本东京+Amazon数据中心\r"
-      - "台湾省+中华电信(HiNet)数据中心\r"
-      - "美国+CloudFlare节点\r_9"
-      - "美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心\r"
-      - "美国加利福尼亚州洛杉矶+V2CROSS.COM\r"
-      - "韩国+蘑菇主机BGP数据中心\r"
-      - "美国+惠普HP\r_2"
-      - "美国+Akamai科技公司CDN网络节点\r_2"
-      - "美国+Amazon数据中心\r_3"
-      - "新加坡+Amazon数据中心\r_3"
-      - "广东省云浮市+移动\r"
-      - "爱尔兰+V2CROSS.COM\r"
+      - 二爷翻墙 https://1808.free.hr Node_1
+      - 二爷翻墙 https://1808.free.hr Node_2
+      - 二爷翻墙 https://1808.free.hr Node_3
+      - 二爷翻墙 https://1808.free.hr Node_4
+      - 二爷翻墙 https://1808.free.hr Node_5
+      - 二爷翻墙 https://1808.free.hr Node_6
+      - 二爷翻墙 https://1808.free.hr Node_7
+      - 二爷翻墙 https://1808.free.hr Node_8
+      - 二爷翻墙 https://1808.free.hr Node_9
+      - 二爷翻墙 https://1808.free.hr Node_10
+      - 二爷翻墙 https://1808.free.hr Node_11
+      - 二爷翻墙 https://1808.free.hr Node_12
+      - 二爷翻墙 https://1808.free.hr Node_13
+      - 二爷翻墙 https://1808.free.hr Node_14
+      - 二爷翻墙 https://1808.free.hr Node_15
+      - 二爷翻墙 https://1808.free.hr Node_16
+      - 二爷翻墙 https://1808.free.hr Node_17
+      - 二爷翻墙 https://1808.free.hr Node_18
+      - 二爷翻墙 https://1808.free.hr Node_19
+      - 二爷翻墙 https://1808.free.hr Node_20
+      - 二爷翻墙 https://1808.free.hr Node_21
+      - 二爷翻墙 https://1808.free.hr Node_22
+      - 二爷翻墙 https://1808.free.hr Node_23
+      - 二爷翻墙 https://1808.free.hr Node_24
+      - 二爷翻墙 https://1808.free.hr Node_25
+      - 二爷翻墙 https://1808.free.hr Node_26
+      - 二爷翻墙 https://1808.free.hr Node_27
+      - 二爷翻墙 https://1808.free.hr Node_28
+      - 二爷翻墙 https://1808.free.hr Node_29
+      - 二爷翻墙 https://1808.free.hr Node_30
+      - 二爷翻墙 https://1808.free.hr Node_31
+      - 二爷翻墙 https://1808.free.hr Node_32
+      - 二爷翻墙 https://1808.free.hr Node_33
+      - 二爷翻墙 https://1808.free.hr Node_34
+      - 二爷翻墙 https://1808.free.hr Node_35
+      - 二爷翻墙 https://1808.free.hr Node_36
+      - 二爷翻墙 https://1808.free.hr Node_37
+      - 二爷翻墙 https://1808.free.hr Node_38
+      - 二爷翻墙 https://1808.free.hr Node_39
+      - 二爷翻墙 https://1808.free.hr Node_40
+      - 二爷翻墙 https://1808.free.hr Node_41
+      - 二爷翻墙 https://1808.free.hr Node_42
+      - 二爷翻墙 https://1808.free.hr Node_43
+      - 二爷翻墙 https://1808.free.hr Node_44
+      - 二爷翻墙 https://1808.free.hr Node_45
+      - 二爷翻墙 https://1808.free.hr Node_46
+      - 二爷翻墙 https://1808.free.hr Node_47
+      - 二爷翻墙 https://1808.free.hr Node_48
+      - 二爷翻墙 https://1808.free.hr Node_49
+      - 二爷翻墙 https://1808.free.hr Node_50
+      - 二爷翻墙 https://1808.free.hr Node_51
+      - 二爷翻墙 https://1808.free.hr Node_52
+      - 二爷翻墙 https://1808.free.hr Node_53
+      - 二爷翻墙 https://1808.free.hr Node_54
+      - 二爷翻墙 https://1808.free.hr Node_55
+      - 二爷翻墙 https://1808.free.hr Node_56
+      - 二爷翻墙 https://1808.free.hr Node_57
+      - 二爷翻墙 https://1808.free.hr Node_58
+      - 二爷翻墙 https://1808.free.hr Node_59
+      - 二爷翻墙 https://1808.free.hr Node_60
+      - 二爷翻墙 https://1808.free.hr Node_61
+      - 二爷翻墙 https://1808.free.hr Node_62
+      - 二爷翻墙 https://1808.free.hr Node_63
+      - 二爷翻墙 https://1808.free.hr Node_64
+      - 二爷翻墙 https://1808.free.hr Node_65
+      - 二爷翻墙 https://1808.free.hr Node_66
+      - 二爷翻墙 https://1808.free.hr Node_67
+      - 二爷翻墙 https://1808.free.hr Node_68
+      - 二爷翻墙 https://1808.free.hr Node_69
+      - 二爷翻墙 https://1808.free.hr Node_70
+      - 二爷翻墙 https://1808.free.hr Node_71
+      - 二爷翻墙 https://1808.free.hr Node_72
+      - 二爷翻墙 https://1808.free.hr Node_73
+      - 二爷翻墙 https://1808.free.hr Node_74
+      - 二爷翻墙 https://1808.free.hr Node_75
+      - 二爷翻墙 https://1808.free.hr Node_76
+      - 二爷翻墙 https://1808.free.hr Node_77
+      - 二爷翻墙 https://1808.free.hr Node_78
+      - 二爷翻墙 https://1808.free.hr Node_79
+      - 二爷翻墙 https://1808.free.hr Node_80
+      - 二爷翻墙 https://1808.free.hr Node_81
+      - 二爷翻墙 https://1808.free.hr Node_82
+      - 二爷翻墙 https://1808.free.hr Node_83
+      - 二爷翻墙 https://1808.free.hr Node_84
+      - 二爷翻墙 https://1808.free.hr Node_85
+      - 二爷翻墙 https://1808.free.hr Node_86
+      - 二爷翻墙 https://1808.free.hr Node_87
+      - 二爷翻墙 https://1808.free.hr Node_88
+      - 二爷翻墙 https://1808.free.hr Node_89
+      - 二爷翻墙 https://1808.free.hr Node_90
+      - 二爷翻墙 https://1808.free.hr Node_91
+      - 二爷翻墙 https://1808.free.hr Node_92
+      - 二爷翻墙 https://1808.free.hr Node_93
+      - 二爷翻墙 https://1808.free.hr Node_94
+      - 二爷翻墙 https://1808.free.hr Node_95
+      - 二爷翻墙 https://1808.free.hr Node_96
+      - 二爷翻墙 https://1808.free.hr Node_97
+      - 二爷翻墙 https://1808.free.hr Node_98
+      - 二爷翻墙 https://1808.free.hr Node_99
+      - 二爷翻墙 https://1808.free.hr Node_100
+      - 二爷翻墙 https://1808.free.hr Node_101
+      - 二爷翻墙 https://1808.free.hr Node_102
+      - 二爷翻墙 https://1808.free.hr Node_103
+      - 二爷翻墙 https://1808.free.hr Node_104
+      - 二爷翻墙 https://1808.free.hr Node_105
+      - 二爷翻墙 https://1808.free.hr Node_106
+      - 二爷翻墙 https://1808.free.hr Node_107
+      - 二爷翻墙 https://1808.free.hr Node_108
+      - 二爷翻墙 https://1808.free.hr Node_109
+      - 二爷翻墙 https://1808.free.hr Node_110
+      - 二爷翻墙 https://1808.free.hr Node_111
+      - 二爷翻墙 https://1808.free.hr Node_112
+      - 二爷翻墙 https://1808.free.hr Node_113
+      - 二爷翻墙 https://1808.free.hr Node_114
+      - 二爷翻墙 https://1808.free.hr Node_115
+      - 二爷翻墙 https://1808.free.hr Node_116
+      - 二爷翻墙 https://1808.free.hr Node_117
+      - 二爷翻墙 https://1808.free.hr Node_118
+      - 二爷翻墙 https://1808.free.hr Node_119
+      - 二爷翻墙 https://1808.free.hr Node_120
   - name: 🔯 故障转移
     type: fallback
     url: https://www.gstatic.com/generate_204
     interval: 180
+    tolerance: 1
     proxies:
-      - "江苏省+移动\r_1"
-      - "法国+国际航空电讯集团公司(SITA)\r"
-      - "美国+Amazon+EC2服务器\r_1"
-      - "美国+CloudFlare节点\r_1"
-      - "美国+俄勒冈州波特兰Amazon数据中心\r"
-      - "日本+V2CROSS.COM\r_1"
-      - "美国+Amazon数据中心\r_1"
-      - "美国+CloudFlare节点\r_2"
-      - "挪威+V2CROSS.COM\r_1"
-      - "法国+V2CROSS.COM\r"
-      - "美国+CloudFlare节点\r_3"
-      - "美国+Merit网络公司\r"
-      - "加拿大+魁北克省蒙特利尔Amazon数据中心\r_1"
-      - "美国+Amazon数据中心\r_2"
-      - "新加坡+Amazon数据中心\r_1"
-      - "挪威+V2CROSS.COM\r_2"
-      - "美国+Amazon+EC2服务器\r_2"
-      - "江苏省+移动\r_2"
-      - "英国+V2CROSS.COM\r"
-      - "江苏省+移动\r_3"
-      - "美国+Amazon+EC2服务器\r_3"
-      - "美国+惠普HP\r_1"
-      - "美国+CloudFlare节点\r_4"
-      - "韩国+首尔Amazon数据中心\r"
-      - "美国+Amazon+EC2服务器\r_4"
-      - "日本+东京Amazon数据中心\r"
-      - "美国+CloudFlare节点\r_5"
-      - "美国+CloudFlare节点\r_6"
-      - "美国+Amazon+EC2服务器\r_5"
-      - "美国+Akamai科技公司CDN网络节点\r_1"
-      - "德国+黑森州法兰克福Amazon数据中心\r"
-      - "英国+社会保险安全部\r"
-      - "乌克兰+V2CROSS.COM\r"
-      - "英国+伦敦Amazon数据中心\r"
-      - "加拿大+魁北克省蒙特利尔Amazon数据中心\r_2"
-      - "美国+CloudFlare节点\r_7"
-      - "法国+巴黎Amazon数据中心\r"
-      - "新加坡+Amazon数据中心\r_2"
-      - "爱尔兰+都柏林Amazon数据中心\r"
-      - "美国+Amazon+EC2服务器\r_6"
-      - "美国+CloudFlare节点\r_8"
-      - "日本+V2CROSS.COM\r_2"
-      - "日本东京+Amazon数据中心\r"
-      - "台湾省+中华电信(HiNet)数据中心\r"
-      - "美国+CloudFlare节点\r_9"
-      - "美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心\r"
-      - "美国加利福尼亚州洛杉矶+V2CROSS.COM\r"
-      - "韩国+蘑菇主机BGP数据中心\r"
-      - "美国+惠普HP\r_2"
-      - "美国+Akamai科技公司CDN网络节点\r_2"
-      - "美国+Amazon数据中心\r_3"
-      - "新加坡+Amazon数据中心\r_3"
-      - "广东省云浮市+移动\r"
-      - "爱尔兰+V2CROSS.COM\r"
+      - 二爷翻墙 https://1808.free.hr Node_1
+      - 二爷翻墙 https://1808.free.hr Node_2
+      - 二爷翻墙 https://1808.free.hr Node_3
+      - 二爷翻墙 https://1808.free.hr Node_4
+      - 二爷翻墙 https://1808.free.hr Node_5
+      - 二爷翻墙 https://1808.free.hr Node_6
+      - 二爷翻墙 https://1808.free.hr Node_7
+      - 二爷翻墙 https://1808.free.hr Node_8
+      - 二爷翻墙 https://1808.free.hr Node_9
+      - 二爷翻墙 https://1808.free.hr Node_10
+      - 二爷翻墙 https://1808.free.hr Node_11
+      - 二爷翻墙 https://1808.free.hr Node_12
+      - 二爷翻墙 https://1808.free.hr Node_13
+      - 二爷翻墙 https://1808.free.hr Node_14
+      - 二爷翻墙 https://1808.free.hr Node_15
+      - 二爷翻墙 https://1808.free.hr Node_16
+      - 二爷翻墙 https://1808.free.hr Node_17
+      - 二爷翻墙 https://1808.free.hr Node_18
+      - 二爷翻墙 https://1808.free.hr Node_19
+      - 二爷翻墙 https://1808.free.hr Node_20
+      - 二爷翻墙 https://1808.free.hr Node_21
+      - 二爷翻墙 https://1808.free.hr Node_22
+      - 二爷翻墙 https://1808.free.hr Node_23
+      - 二爷翻墙 https://1808.free.hr Node_24
+      - 二爷翻墙 https://1808.free.hr Node_25
+      - 二爷翻墙 https://1808.free.hr Node_26
+      - 二爷翻墙 https://1808.free.hr Node_27
+      - 二爷翻墙 https://1808.free.hr Node_28
+      - 二爷翻墙 https://1808.free.hr Node_29
+      - 二爷翻墙 https://1808.free.hr Node_30
+      - 二爷翻墙 https://1808.free.hr Node_31
+      - 二爷翻墙 https://1808.free.hr Node_32
+      - 二爷翻墙 https://1808.free.hr Node_33
+      - 二爷翻墙 https://1808.free.hr Node_34
+      - 二爷翻墙 https://1808.free.hr Node_35
+      - 二爷翻墙 https://1808.free.hr Node_36
+      - 二爷翻墙 https://1808.free.hr Node_37
+      - 二爷翻墙 https://1808.free.hr Node_38
+      - 二爷翻墙 https://1808.free.hr Node_39
+      - 二爷翻墙 https://1808.free.hr Node_40
+      - 二爷翻墙 https://1808.free.hr Node_41
+      - 二爷翻墙 https://1808.free.hr Node_42
+      - 二爷翻墙 https://1808.free.hr Node_43
+      - 二爷翻墙 https://1808.free.hr Node_44
+      - 二爷翻墙 https://1808.free.hr Node_45
+      - 二爷翻墙 https://1808.free.hr Node_46
+      - 二爷翻墙 https://1808.free.hr Node_47
+      - 二爷翻墙 https://1808.free.hr Node_48
+      - 二爷翻墙 https://1808.free.hr Node_49
+      - 二爷翻墙 https://1808.free.hr Node_50
+      - 二爷翻墙 https://1808.free.hr Node_51
+      - 二爷翻墙 https://1808.free.hr Node_52
+      - 二爷翻墙 https://1808.free.hr Node_53
+      - 二爷翻墙 https://1808.free.hr Node_54
+      - 二爷翻墙 https://1808.free.hr Node_55
+      - 二爷翻墙 https://1808.free.hr Node_56
+      - 二爷翻墙 https://1808.free.hr Node_57
+      - 二爷翻墙 https://1808.free.hr Node_58
+      - 二爷翻墙 https://1808.free.hr Node_59
+      - 二爷翻墙 https://1808.free.hr Node_60
+      - 二爷翻墙 https://1808.free.hr Node_61
+      - 二爷翻墙 https://1808.free.hr Node_62
+      - 二爷翻墙 https://1808.free.hr Node_63
+      - 二爷翻墙 https://1808.free.hr Node_64
+      - 二爷翻墙 https://1808.free.hr Node_65
+      - 二爷翻墙 https://1808.free.hr Node_66
+      - 二爷翻墙 https://1808.free.hr Node_67
+      - 二爷翻墙 https://1808.free.hr Node_68
+      - 二爷翻墙 https://1808.free.hr Node_69
+      - 二爷翻墙 https://1808.free.hr Node_70
+      - 二爷翻墙 https://1808.free.hr Node_71
+      - 二爷翻墙 https://1808.free.hr Node_72
+      - 二爷翻墙 https://1808.free.hr Node_73
+      - 二爷翻墙 https://1808.free.hr Node_74
+      - 二爷翻墙 https://1808.free.hr Node_75
+      - 二爷翻墙 https://1808.free.hr Node_76
+      - 二爷翻墙 https://1808.free.hr Node_77
+      - 二爷翻墙 https://1808.free.hr Node_78
+      - 二爷翻墙 https://1808.free.hr Node_79
+      - 二爷翻墙 https://1808.free.hr Node_80
+      - 二爷翻墙 https://1808.free.hr Node_81
+      - 二爷翻墙 https://1808.free.hr Node_82
+      - 二爷翻墙 https://1808.free.hr Node_83
+      - 二爷翻墙 https://1808.free.hr Node_84
+      - 二爷翻墙 https://1808.free.hr Node_85
+      - 二爷翻墙 https://1808.free.hr Node_86
+      - 二爷翻墙 https://1808.free.hr Node_87
+      - 二爷翻墙 https://1808.free.hr Node_88
+      - 二爷翻墙 https://1808.free.hr Node_89
+      - 二爷翻墙 https://1808.free.hr Node_90
+      - 二爷翻墙 https://1808.free.hr Node_91
+      - 二爷翻墙 https://1808.free.hr Node_92
+      - 二爷翻墙 https://1808.free.hr Node_93
+      - 二爷翻墙 https://1808.free.hr Node_94
+      - 二爷翻墙 https://1808.free.hr Node_95
+      - 二爷翻墙 https://1808.free.hr Node_96
+      - 二爷翻墙 https://1808.free.hr Node_97
+      - 二爷翻墙 https://1808.free.hr Node_98
+      - 二爷翻墙 https://1808.free.hr Node_99
+      - 二爷翻墙 https://1808.free.hr Node_100
+      - 二爷翻墙 https://1808.free.hr Node_101
+      - 二爷翻墙 https://1808.free.hr Node_102
+      - 二爷翻墙 https://1808.free.hr Node_103
+      - 二爷翻墙 https://1808.free.hr Node_104
+      - 二爷翻墙 https://1808.free.hr Node_105
+      - 二爷翻墙 https://1808.free.hr Node_106
+      - 二爷翻墙 https://1808.free.hr Node_107
+      - 二爷翻墙 https://1808.free.hr Node_108
+      - 二爷翻墙 https://1808.free.hr Node_109
+      - 二爷翻墙 https://1808.free.hr Node_110
+      - 二爷翻墙 https://1808.free.hr Node_111
+      - 二爷翻墙 https://1808.free.hr Node_112
+      - 二爷翻墙 https://1808.free.hr Node_113
+      - 二爷翻墙 https://1808.free.hr Node_114
+      - 二爷翻墙 https://1808.free.hr Node_115
+      - 二爷翻墙 https://1808.free.hr Node_116
+      - 二爷翻墙 https://1808.free.hr Node_117
+      - 二爷翻墙 https://1808.free.hr Node_118
+      - 二爷翻墙 https://1808.free.hr Node_119
+      - 二爷翻墙 https://1808.free.hr Node_120
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -276,60 +475,126 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - 🔯 故障转移
-      - "江苏省+移动\r_1"
-      - "法国+国际航空电讯集团公司(SITA)\r"
-      - "美国+Amazon+EC2服务器\r_1"
-      - "美国+CloudFlare节点\r_1"
-      - "美国+俄勒冈州波特兰Amazon数据中心\r"
-      - "日本+V2CROSS.COM\r_1"
-      - "美国+Amazon数据中心\r_1"
-      - "美国+CloudFlare节点\r_2"
-      - "挪威+V2CROSS.COM\r_1"
-      - "法国+V2CROSS.COM\r"
-      - "美国+CloudFlare节点\r_3"
-      - "美国+Merit网络公司\r"
-      - "加拿大+魁北克省蒙特利尔Amazon数据中心\r_1"
-      - "美国+Amazon数据中心\r_2"
-      - "新加坡+Amazon数据中心\r_1"
-      - "挪威+V2CROSS.COM\r_2"
-      - "美国+Amazon+EC2服务器\r_2"
-      - "江苏省+移动\r_2"
-      - "英国+V2CROSS.COM\r"
-      - "江苏省+移动\r_3"
-      - "美国+Amazon+EC2服务器\r_3"
-      - "美国+惠普HP\r_1"
-      - "美国+CloudFlare节点\r_4"
-      - "韩国+首尔Amazon数据中心\r"
-      - "美国+Amazon+EC2服务器\r_4"
-      - "日本+东京Amazon数据中心\r"
-      - "美国+CloudFlare节点\r_5"
-      - "美国+CloudFlare节点\r_6"
-      - "美国+Amazon+EC2服务器\r_5"
-      - "美国+Akamai科技公司CDN网络节点\r_1"
-      - "德国+黑森州法兰克福Amazon数据中心\r"
-      - "英国+社会保险安全部\r"
-      - "乌克兰+V2CROSS.COM\r"
-      - "英国+伦敦Amazon数据中心\r"
-      - "加拿大+魁北克省蒙特利尔Amazon数据中心\r_2"
-      - "美国+CloudFlare节点\r_7"
-      - "法国+巴黎Amazon数据中心\r"
-      - "新加坡+Amazon数据中心\r_2"
-      - "爱尔兰+都柏林Amazon数据中心\r"
-      - "美国+Amazon+EC2服务器\r_6"
-      - "美国+CloudFlare节点\r_8"
-      - "日本+V2CROSS.COM\r_2"
-      - "日本东京+Amazon数据中心\r"
-      - "台湾省+中华电信(HiNet)数据中心\r"
-      - "美国+CloudFlare节点\r_9"
-      - "美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心\r"
-      - "美国加利福尼亚州洛杉矶+V2CROSS.COM\r"
-      - "韩国+蘑菇主机BGP数据中心\r"
-      - "美国+惠普HP\r_2"
-      - "美国+Akamai科技公司CDN网络节点\r_2"
-      - "美国+Amazon数据中心\r_3"
-      - "新加坡+Amazon数据中心\r_3"
-      - "广东省云浮市+移动\r"
-      - "爱尔兰+V2CROSS.COM\r"
+      - 二爷翻墙 https://1808.free.hr Node_1
+      - 二爷翻墙 https://1808.free.hr Node_2
+      - 二爷翻墙 https://1808.free.hr Node_3
+      - 二爷翻墙 https://1808.free.hr Node_4
+      - 二爷翻墙 https://1808.free.hr Node_5
+      - 二爷翻墙 https://1808.free.hr Node_6
+      - 二爷翻墙 https://1808.free.hr Node_7
+      - 二爷翻墙 https://1808.free.hr Node_8
+      - 二爷翻墙 https://1808.free.hr Node_9
+      - 二爷翻墙 https://1808.free.hr Node_10
+      - 二爷翻墙 https://1808.free.hr Node_11
+      - 二爷翻墙 https://1808.free.hr Node_12
+      - 二爷翻墙 https://1808.free.hr Node_13
+      - 二爷翻墙 https://1808.free.hr Node_14
+      - 二爷翻墙 https://1808.free.hr Node_15
+      - 二爷翻墙 https://1808.free.hr Node_16
+      - 二爷翻墙 https://1808.free.hr Node_17
+      - 二爷翻墙 https://1808.free.hr Node_18
+      - 二爷翻墙 https://1808.free.hr Node_19
+      - 二爷翻墙 https://1808.free.hr Node_20
+      - 二爷翻墙 https://1808.free.hr Node_21
+      - 二爷翻墙 https://1808.free.hr Node_22
+      - 二爷翻墙 https://1808.free.hr Node_23
+      - 二爷翻墙 https://1808.free.hr Node_24
+      - 二爷翻墙 https://1808.free.hr Node_25
+      - 二爷翻墙 https://1808.free.hr Node_26
+      - 二爷翻墙 https://1808.free.hr Node_27
+      - 二爷翻墙 https://1808.free.hr Node_28
+      - 二爷翻墙 https://1808.free.hr Node_29
+      - 二爷翻墙 https://1808.free.hr Node_30
+      - 二爷翻墙 https://1808.free.hr Node_31
+      - 二爷翻墙 https://1808.free.hr Node_32
+      - 二爷翻墙 https://1808.free.hr Node_33
+      - 二爷翻墙 https://1808.free.hr Node_34
+      - 二爷翻墙 https://1808.free.hr Node_35
+      - 二爷翻墙 https://1808.free.hr Node_36
+      - 二爷翻墙 https://1808.free.hr Node_37
+      - 二爷翻墙 https://1808.free.hr Node_38
+      - 二爷翻墙 https://1808.free.hr Node_39
+      - 二爷翻墙 https://1808.free.hr Node_40
+      - 二爷翻墙 https://1808.free.hr Node_41
+      - 二爷翻墙 https://1808.free.hr Node_42
+      - 二爷翻墙 https://1808.free.hr Node_43
+      - 二爷翻墙 https://1808.free.hr Node_44
+      - 二爷翻墙 https://1808.free.hr Node_45
+      - 二爷翻墙 https://1808.free.hr Node_46
+      - 二爷翻墙 https://1808.free.hr Node_47
+      - 二爷翻墙 https://1808.free.hr Node_48
+      - 二爷翻墙 https://1808.free.hr Node_49
+      - 二爷翻墙 https://1808.free.hr Node_50
+      - 二爷翻墙 https://1808.free.hr Node_51
+      - 二爷翻墙 https://1808.free.hr Node_52
+      - 二爷翻墙 https://1808.free.hr Node_53
+      - 二爷翻墙 https://1808.free.hr Node_54
+      - 二爷翻墙 https://1808.free.hr Node_55
+      - 二爷翻墙 https://1808.free.hr Node_56
+      - 二爷翻墙 https://1808.free.hr Node_57
+      - 二爷翻墙 https://1808.free.hr Node_58
+      - 二爷翻墙 https://1808.free.hr Node_59
+      - 二爷翻墙 https://1808.free.hr Node_60
+      - 二爷翻墙 https://1808.free.hr Node_61
+      - 二爷翻墙 https://1808.free.hr Node_62
+      - 二爷翻墙 https://1808.free.hr Node_63
+      - 二爷翻墙 https://1808.free.hr Node_64
+      - 二爷翻墙 https://1808.free.hr Node_65
+      - 二爷翻墙 https://1808.free.hr Node_66
+      - 二爷翻墙 https://1808.free.hr Node_67
+      - 二爷翻墙 https://1808.free.hr Node_68
+      - 二爷翻墙 https://1808.free.hr Node_69
+      - 二爷翻墙 https://1808.free.hr Node_70
+      - 二爷翻墙 https://1808.free.hr Node_71
+      - 二爷翻墙 https://1808.free.hr Node_72
+      - 二爷翻墙 https://1808.free.hr Node_73
+      - 二爷翻墙 https://1808.free.hr Node_74
+      - 二爷翻墙 https://1808.free.hr Node_75
+      - 二爷翻墙 https://1808.free.hr Node_76
+      - 二爷翻墙 https://1808.free.hr Node_77
+      - 二爷翻墙 https://1808.free.hr Node_78
+      - 二爷翻墙 https://1808.free.hr Node_79
+      - 二爷翻墙 https://1808.free.hr Node_80
+      - 二爷翻墙 https://1808.free.hr Node_81
+      - 二爷翻墙 https://1808.free.hr Node_82
+      - 二爷翻墙 https://1808.free.hr Node_83
+      - 二爷翻墙 https://1808.free.hr Node_84
+      - 二爷翻墙 https://1808.free.hr Node_85
+      - 二爷翻墙 https://1808.free.hr Node_86
+      - 二爷翻墙 https://1808.free.hr Node_87
+      - 二爷翻墙 https://1808.free.hr Node_88
+      - 二爷翻墙 https://1808.free.hr Node_89
+      - 二爷翻墙 https://1808.free.hr Node_90
+      - 二爷翻墙 https://1808.free.hr Node_91
+      - 二爷翻墙 https://1808.free.hr Node_92
+      - 二爷翻墙 https://1808.free.hr Node_93
+      - 二爷翻墙 https://1808.free.hr Node_94
+      - 二爷翻墙 https://1808.free.hr Node_95
+      - 二爷翻墙 https://1808.free.hr Node_96
+      - 二爷翻墙 https://1808.free.hr Node_97
+      - 二爷翻墙 https://1808.free.hr Node_98
+      - 二爷翻墙 https://1808.free.hr Node_99
+      - 二爷翻墙 https://1808.free.hr Node_100
+      - 二爷翻墙 https://1808.free.hr Node_101
+      - 二爷翻墙 https://1808.free.hr Node_102
+      - 二爷翻墙 https://1808.free.hr Node_103
+      - 二爷翻墙 https://1808.free.hr Node_104
+      - 二爷翻墙 https://1808.free.hr Node_105
+      - 二爷翻墙 https://1808.free.hr Node_106
+      - 二爷翻墙 https://1808.free.hr Node_107
+      - 二爷翻墙 https://1808.free.hr Node_108
+      - 二爷翻墙 https://1808.free.hr Node_109
+      - 二爷翻墙 https://1808.free.hr Node_110
+      - 二爷翻墙 https://1808.free.hr Node_111
+      - 二爷翻墙 https://1808.free.hr Node_112
+      - 二爷翻墙 https://1808.free.hr Node_113
+      - 二爷翻墙 https://1808.free.hr Node_114
+      - 二爷翻墙 https://1808.free.hr Node_115
+      - 二爷翻墙 https://1808.free.hr Node_116
+      - 二爷翻墙 https://1808.free.hr Node_117
+      - 二爷翻墙 https://1808.free.hr Node_118
+      - 二爷翻墙 https://1808.free.hr Node_119
+      - 二爷翻墙 https://1808.free.hr Node_120
 
 rules:
 # 本地/局域网地址
