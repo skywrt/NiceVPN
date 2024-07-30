@@ -22,13 +22,27 @@ def local(proxy_list, file):
 
 def url(proxy_list, link):
     try:
-        working = yaml.safe_load(requests.get(url=link, timeout=240, headers=headers).text)
-        data_out = []
-        for x in working['proxies']:
-            data_out.append(x)
-        proxy_list.append(data_out)
+        response = requests.get(url=link, timeout=240, headers=headers)
+        response.raise_for_status()
+        yaml_content = yaml.safe_load(response.text)
+        
+        print(f"Content fetched from {link}: {yaml_content}")  # Debug info
+        print(f"Type of fetched content: {type(yaml_content)}")  # Debug info
+        
+        if isinstance(yaml_content, dict):
+            proxies = yaml_content.get('proxies', [])
+            if proxies:
+                proxy_list.append(proxies)
+                print(f"Proxies added from {link}: {proxies}")  # Debug info
+            else:
+                print("No proxies found in the YAML file.")
+        else:
+            print(f"Unexpected content format from {link}. Expected a dictionary but got {type(yaml_content)}")
+    
     except requests.RequestException as e:
         print(f"Error in Collecting {link}: {e}")
+    except yaml.YAMLError as e:
+        print(f"YAML Error for {link}: {e}")
 
 def fetch(proxy_list):
     """Fetch the YAML file content and append proxies to the list"""
@@ -39,14 +53,23 @@ def fetch(proxy_list):
             response = requests.get(latest_yaml_url)
             response.raise_for_status()
             yaml_content = yaml.safe_load(response.text)
-            proxies = yaml_content.get('proxies', [])
-            if proxies:
-                proxy_list.append(proxies)
-                print(f"Proxies added from {latest_yaml_url}: {proxies}")  # Debug info
+            
+            print(f"YAML content fetched: {yaml_content}")  # Debug info
+            
+            if isinstance(yaml_content, dict):
+                proxies = yaml_content.get('proxies', [])
+                if proxies:
+                    proxy_list.append(proxies)
+                    print(f"Proxies added from {latest_yaml_url}: {proxies}")  # Debug info
+                else:
+                    print("No proxies found in the YAML file.")
             else:
-                print("No proxies found in the YAML file.")
-        except Exception as e:
+                print(f"Unexpected content format from {latest_yaml_url}. Expected a dictionary but got {type(yaml_content)}")
+
+        except requests.RequestException as e:
             print(f"Error fetching YAML file: {e}")
+        except yaml.YAMLError as e:
+            print(f"YAML Error for {latest_yaml_url}: {e}")
     else:
         print("No URL found for the latest YAML file.")
 
