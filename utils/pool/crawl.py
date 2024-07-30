@@ -16,40 +16,57 @@ def create_processed_yaml_dir():
     if not os.path.exists(PROCESSED_YAML_DIR):
         os.makedirs(PROCESSED_YAML_DIR)
 
-def get_processed_file_name(date):
-    """根据给定日期获取处理文件名"""
-    return os.path.join(PROCESSED_YAML_DIR, f'processed_yaml_{date}.txt')
+def get_latest_yaml_path():
+    """获取最新的 YAML 文件路径"""
+    yaml_files = [f for f in os.listdir(PROCESSED_YAML_DIR) if f.endswith('.yaml')]
+    if not yaml_files:
+        return None
+    return os.path.join(PROCESSED_YAML_DIR, max(yaml_files, key=lambda f: os.path.getctime(os.path.join(PROCESSED_YAML_DIR, f))))
 
 def save_processed_file(file_url):
     """保存新的 YAML 文件 URL 到记录中并下载文件"""
     create_processed_yaml_dir()  # 确保目录存在
-    today_date = datetime.now().strftime('%Y_%m_%d')
-    processed_file = get_processed_file_name(today_date)
-    
-    # 确保文件存在，如果文件夹或文件不存在则创建
-    with open(processed_file, 'a') as file:
-        file.write(file_url + '\n')
-    print(f"Saved processed file URL: {file_url}")
+    latest_yaml_path = get_latest_yaml_path()
 
-    # 下载最新的 YAML 文件并保存到 processed_yaml 目录中
     try:
         response = requests.get(file_url)
         response.raise_for_status()
-        yaml_file_name = os.path.join(PROCESSED_YAML_DIR, os.path.basename(file_url))
-        with open(yaml_file_name, 'wb') as file:
+        yaml_file_name = os.path.basename(file_url)
+        yaml_file_path = os.path.join(PROCESSED_YAML_DIR, yaml_file_name)
+
+        # 删除旧的 YAML 文件
+        if latest_yaml_path and os.path.exists(latest_yaml_path):
+            os.remove(latest_yaml_path)
+            print(f"Removed old YAML file: {latest_yaml_path}")
+
+        # 保存新的 YAML 文件
+        with open(yaml_file_path, 'wb') as file:
             file.write(response.content)
-        print(f"Saved latest YAML file to {yaml_file_name}")
+        print(f"Saved latest YAML file to {yaml_file_path}")
+
     except requests.RequestException as e:
         print(f"Error downloading YAML file from {file_url}: {e}")
 
 def load_processed_files():
     """加载已处理的 YAML 文件列表"""
-    today_date = datetime.now().strftime('%Y_%m_%d')
-    processed_file = get_processed_file_name(today_date)
+    processed_file = get_processed_file_name()
     if not os.path.exists(processed_file):
         return set()
     with open(processed_file, 'r') as file:
         return set(line.strip() for line in file)
+
+def get_processed_file_name():
+    """获取处理文件的文件名"""
+    today_date = datetime.now().strftime('%Y_%m_%d')
+    return os.path.join(PROCESSED_YAML_DIR, f'processed_yaml_{today_date}.txt')
+
+def save_processed_file_record(file_url):
+    """记录处理过的 YAML 文件 URL"""
+    processed_file = get_processed_file_name()
+    create_processed_yaml_dir()  # 确保目录存在
+    with open(processed_file, 'a') as file:
+        file.write(file_url + '\n')
+    print(f"Saved processed file URL: {file_url}")
 
 def get_latest_yaml_file():
     """获取最新 YAML 文件的 URL"""
@@ -107,7 +124,7 @@ def get_latest_yaml_file():
         print(f"Latest YAML file URL: {latest_yaml_url}")
         
         # 保存已处理的 YAML 文件 URL
-        print(f"Processing new YAML file: {latest_yaml_url}")
+        save_processed_file_record(latest_yaml_url)
         save_processed_file(latest_yaml_url)
         
         return latest_yaml_url
