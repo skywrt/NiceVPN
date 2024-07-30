@@ -1,11 +1,11 @@
 import time
 import yaml
 import requests
-from multiprocessing import Process, Manager
-from yaml.loader import SafeLoader
-from crawl import get_latest_yaml_file  # Import the function from crawl.py
+from crawl import get_file_list, get_proxies, get_latest_yaml_file
 from parse import parse, makeclash
 from clash import push
+from multiprocessing import Process, Manager
+from yaml.loader import SafeLoader
 
 headers = {'Accept': '*/*', 'Accept-Encoding': 'gzip', 'Connection': 'Keep-Alive', 'User-Agent': 'Clash'}
 
@@ -18,56 +18,32 @@ def local(proxy_list, file):
             data_out.append(x)
         proxy_list.append(data_out)
     except Exception as e:
-        print(f"{file}: No such file or error occurred - {e}")
+        print(file + ": No such file or error occurred -", e)
 
 def url(proxy_list, link):
     try:
-        response = requests.get(url=link, timeout=240, headers=headers)
-        response.raise_for_status()
-        yaml_content = yaml.safe_load(response.text)
-        
-        print(f"Content fetched from {link}: {yaml_content}")  # Debug info
-        print(f"Type of fetched content: {type(yaml_content)}")  # Debug info
-        
-        if isinstance(yaml_content, dict):
-            proxies = yaml_content.get('proxies', [])
-            if proxies:
-                proxy_list.append(proxies)
-                print(f"Proxies added from {link}: {proxies}")  # Debug info
-            else:
-                print("No proxies found in the YAML file.")
-        else:
-            print(f"Unexpected content format from {link}. Expected a dictionary but got {type(yaml_content)}")
-    
-    except requests.RequestException as e:
-        print(f"Error in Collecting {link}: {e}")
-    except yaml.YAMLError as e:
-        print(f"YAML Error for {link}: {e}")
+        working = yaml.safe_load(requests.get(url=link, timeout=240, headers=headers).text)
+        data_out = []
+        for x in working['proxies']:
+            data_out.append(x)
+        proxy_list.append(data_out)
+    except Exception as e:
+        print("Error in Collecting " + link + ":", e)
 
 def fetch(proxy_list):
-    """Fetch the YAML file content and append proxies to the list"""
     latest_yaml_url = get_latest_yaml_file()
-    print(f"Latest YAML URL fetched: {latest_yaml_url}")  # Debug info
     if latest_yaml_url:
         try:
-            response = requests.get(latest_yaml_url)
+            response = requests.get(latest_yaml_url, timeout=240, headers=headers)
             response.raise_for_status()
             yaml_content = yaml.safe_load(response.text)
-            
-            print(f"YAML content fetched: {yaml_content}")  # Debug info
-            
-            if isinstance(yaml_content, dict):
-                proxies = yaml_content.get('proxies', [])
-                if proxies:
-                    proxy_list.append(proxies)
-                    print(f"Proxies added from {latest_yaml_url}: {proxies}")  # Debug info
-                else:
-                    print("No proxies found in the YAML file.")
+            if isinstance(yaml_content, dict) and 'proxies' in yaml_content:
+                proxy_list.append(yaml_content['proxies'])
+                print(f"Proxies added from {latest_yaml_url}: {yaml_content['proxies']}")
             else:
-                print(f"Unexpected content format from {latest_yaml_url}. Expected a dictionary but got {type(yaml_content)}")
-
+                print(f"Unexpected content format from {latest_yaml_url}. Expected a dictionary with 'proxies'.")
         except requests.RequestException as e:
-            print(f"Error fetching YAML file: {e}")
+            print(f"Error fetching YAML file from {latest_yaml_url}: {e}")
         except yaml.YAMLError as e:
             print(f"YAML Error for {latest_yaml_url}: {e}")
     else:
@@ -83,10 +59,13 @@ if __name__ == '__main__':
             config = yaml.load(reader, Loader=SafeLoader)
             subscribe_links = config['sub']
             subscribe_files = config['local']
-        
+
+        directories, total = get_file_list()
+        data = parse(directories)
+
         try:
             sfiles = len(subscribe_links)
-            tfiles = len(subscribe_links) + len(subscribe_files)
+            tfiles = len(subscribe_links) + len(data[time.strftime("%Y_%m_%d", time.localtime())])
             processes = []
 
             # Process local files
@@ -111,10 +90,10 @@ if __name__ == '__main__':
             processes.append(p)
             for p in processes:
                 p.join()
-            
+
             end = time.time()  # Time end
             print("Collecting in " + "{:.2f}".format(end-start) + " seconds")
-        
+
         except Exception as e:
             print(f"Error: {e}")
             end = time.time()  # Time end
