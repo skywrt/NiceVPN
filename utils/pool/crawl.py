@@ -96,7 +96,6 @@ def get_latest_yaml_file():
             if latest_yaml_url not in processed_files:
                 # 如果没有处理过，则进行处理
                 print(f"Processing new YAML file: {latest_yaml_url}")
-                # 处理 YAML 文件的逻辑，比如下载或解析等
                 
                 # 保存已处理的 YAML 文件 URL
                 save_processed_file(latest_yaml_url)
