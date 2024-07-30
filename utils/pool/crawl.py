@@ -86,14 +86,13 @@ def get_latest_yaml_file():
         files = response.json()
         print(f"Fetched latest date folder contents: {files}")
         
-        # 查找 YAML 文件并选择最新的文件（基于文件名）
+        # 查找 YAML 文件并选择最新的文件（基于 git_url 中的时间戳）
         yaml_files = [file for file in files if file['name'].endswith('.yaml')]
         if not yaml_files:
             print("No YAML files found in the latest date folder.")
             return None
         
-        # 假设文件名的时间戳排序是合理的
-        latest_yaml_file = max(yaml_files, key=lambda f: f['name'])
+        latest_yaml_file = max(yaml_files, key=lambda f: f['git_url'])
         
         if latest_yaml_file:
             latest_yaml_url = latest_yaml_file['download_url']
