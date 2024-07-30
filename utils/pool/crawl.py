@@ -84,34 +84,33 @@ def get_latest_yaml_file():
         # 打印获取的文件列表进行调试
         print(f"Files in {latest_date_folder['name']} folder:", files)
         
-        # 查找 YAML 文件并选择最新的文件（基于更新时间）
+        # 查找 YAML 文件
         yaml_files = [file for file in files if file['name'].endswith('.yaml')]
         if not yaml_files:
             print("No YAML files found in the latest date folder.")
             return None
         
-        # 找到更新时间最新的 YAML 文件
-        latest_yaml_file = max(yaml_files, key=lambda f: f['path'])
+        # 获取已处理的文件 URL 集合
+        processed_files = load_processed_files()
         
-        if latest_yaml_file:
-            latest_yaml_url = latest_yaml_file['download_url']
-            print(f"Latest YAML file URL: {latest_yaml_url}")
-            
-            # 检查是否已经处理过
-            processed_files = load_processed_files()
-            if latest_yaml_url not in processed_files:
-                # 如果没有处理过，则进行处理
-                print(f"Processing new YAML file: {latest_yaml_url}")
-                
-                # 保存已处理的 YAML 文件 URL
-                save_processed_file(latest_yaml_url)
-            else:
-                print(f"YAML file already processed: {latest_yaml_url}")
-
-            return latest_yaml_url
-        else:
-            print("No YAML files found.")
+        # 过滤出未处理过的 YAML 文件
+        new_yaml_files = [file for file in yaml_files if file['download_url'] not in processed_files]
+        
+        if not new_yaml_files:
+            print("No new YAML files to process.")
             return None
+        
+        # 选择第一个新 YAML 文件
+        latest_yaml_file = new_yaml_files[0]
+        latest_yaml_url = latest_yaml_file['download_url']
+        
+        print(f"Latest YAML file URL: {latest_yaml_url}")
+        
+        # 保存已处理的 YAML 文件 URL
+        print(f"Processing new YAML file: {latest_yaml_url}")
+        save_processed_file(latest_yaml_url)
+        
+        return latest_yaml_url
 
     except requests.RequestException as e:
         print(f"Error fetching latest YAML file: {e}")
