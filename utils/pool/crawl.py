@@ -59,6 +59,9 @@ def get_latest_yaml_file():
         response.raise_for_status()
         files = response.json()
         
+        # 打印获取的文件列表进行调试
+        print("Files in data directory:", files)
+        
         # 获取今天和昨天的日期字符串
         today = datetime.now().strftime('%Y_%m_%d')
         yesterday = (datetime.now() - timedelta(days=1)).strftime('%Y_%m_%d')
@@ -78,14 +81,17 @@ def get_latest_yaml_file():
         response.raise_for_status()
         files = response.json()
         
-        # 查找 YAML 文件并选择最新的文件（基于文件名）
+        # 打印获取的文件列表进行调试
+        print(f"Files in {latest_date_folder['name']} folder:", files)
+        
+        # 查找 YAML 文件并选择最新的文件（基于修改时间）
         yaml_files = [file for file in files if file['name'].endswith('.yaml')]
         if not yaml_files:
             print("No YAML files found in the latest date folder.")
             return None
         
-        # 假设文件名的时间戳排序是合理的
-        latest_yaml_file = max(yaml_files, key=lambda f: f['name'])
+        # 找到修改时间最新的 YAML 文件
+        latest_yaml_file = max(yaml_files, key=lambda f: f['last_modified'])
         
         if latest_yaml_file:
             latest_yaml_url = latest_yaml_file['download_url']
