@@ -35,6 +35,8 @@ def fetch(proxy_list, url):
         response = requests.get(url, timeout=240, headers=headers)
         response.raise_for_status()
         yaml_content = yaml.safe_load(response.text)
+        print(f"Fetched content from {url}: {yaml_content}")  # 添加调试信息
+        
         if isinstance(yaml_content, dict) and 'proxies' in yaml_content:
             proxy_list.append(yaml_content['proxies'])
             print(f"Proxies added from {url}: {yaml_content['proxies']}")
@@ -87,5 +89,7 @@ if __name__ == '__main__':
         print("Collecting in " + "{:.2f}".format(end-start) + " seconds")
 
         proxy_list = list(proxy_list)
+        print(f"Collected proxy list: {proxy_list}")  # 调试信息
         proxies = makeclash(proxy_list)
+        print(f"Proxies after makeclash: {proxies}")  # 调试信息
         push(proxies)
