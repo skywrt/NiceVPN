@@ -15,6 +15,7 @@ def create_processed_yaml_dir():
     """创建存储已处理 YAML 文件记录的文件夹"""
     if not os.path.exists(PROCESSED_YAML_DIR):
         os.makedirs(PROCESSED_YAML_DIR)
+        print(f"Created directory: {PROCESSED_YAML_DIR}")
 
 def get_processed_file_name(date):
     """根据给定日期获取处理文件名"""
@@ -29,6 +30,7 @@ def save_processed_file(file_url):
     # 确保文件存在，如果文件夹或文件不存在则创建
     with open(processed_file, 'a') as file:
         file.write(file_url + '\n')
+    print(f"Saved processed file URL: {file_url}")
 
     # 下载最新的 YAML 文件并保存到 processed_yaml 目录中
     try:
@@ -46,9 +48,12 @@ def load_processed_files():
     today_date = datetime.now().strftime('%Y_%m_%d')
     processed_file = get_processed_file_name(today_date)
     if not os.path.exists(processed_file):
+        print(f"No processed file found for {today_date}")
         return set()
     with open(processed_file, 'r') as file:
-        return set(line.strip() for line in file)
+        processed_files = set(line.strip() for line in file)
+        print(f"Loaded processed files: {processed_files}")
+        return processed_files
 
 def get_latest_yaml_file():
     """获取最新 YAML 文件的 URL"""
@@ -57,6 +62,7 @@ def get_latest_yaml_file():
         response = requests.get(GITHUB_API_URL)
         response.raise_for_status()
         files = response.json()
+        print(f"Fetched data directory contents: {files}")
         
         # 获取今天和昨天的日期字符串
         today = datetime.now().strftime('%Y_%m_%d')
@@ -76,6 +82,7 @@ def get_latest_yaml_file():
         response = requests.get(latest_folder_url)
         response.raise_for_status()
         files = response.json()
+        print(f"Fetched latest date folder contents: {files}")
         
         # 查找 YAML 文件并选择最新的文件（基于文件名）
         yaml_files = [file for file in files if file['name'].endswith('.yaml')]
