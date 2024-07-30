@@ -21,7 +21,7 @@ def get_processed_file_name(date):
     return os.path.join(PROCESSED_YAML_DIR, f'processed_yaml_{date}.txt')
 
 def save_processed_file(file_url):
-    """保存新的 YAML 文件 URL 到记录中"""
+    """保存新的 YAML 文件 URL 到记录中并下载文件"""
     create_processed_yaml_dir()  # 确保目录存在
     today_date = datetime.now().strftime('%Y_%m_%d')
     processed_file = get_processed_file_name(today_date)
@@ -95,7 +95,6 @@ def get_latest_yaml_file():
             if latest_yaml_url not in processed_files:
                 # 如果没有处理过，则进行处理
                 print(f"Processing new YAML file: {latest_yaml_url}")
-                # 处理 YAML 文件的逻辑，比如下载或解析等
                 
                 # 保存已处理的 YAML 文件 URL 并下载文件到 processed_yaml 目录
                 save_processed_file(latest_yaml_url)
