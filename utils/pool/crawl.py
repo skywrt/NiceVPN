@@ -30,6 +30,17 @@ def save_processed_file(file_url):
     with open(processed_file, 'a') as file:
         file.write(file_url + '\n')
 
+    # 下载最新的 YAML 文件并保存到 processed_yaml 目录中
+    try:
+        response = requests.get(file_url)
+        response.raise_for_status()
+        yaml_file_name = os.path.join(PROCESSED_YAML_DIR, os.path.basename(file_url))
+        with open(yaml_file_name, 'wb') as file:
+            file.write(response.content)
+        print(f"Saved latest YAML file to {yaml_file_name}")
+    except requests.RequestException as e:
+        print(f"Error downloading YAML file from {file_url}: {e}")
+
 def load_processed_files():
     """加载已处理的 YAML 文件列表"""
     today_date = datetime.now().strftime('%Y_%m_%d')
@@ -86,7 +97,7 @@ def get_latest_yaml_file():
                 print(f"Processing new YAML file: {latest_yaml_url}")
                 # 处理 YAML 文件的逻辑，比如下载或解析等
                 
-                # 保存已处理的 YAML 文件 URL
+                # 保存已处理的 YAML 文件 URL 并下载文件到 processed_yaml 目录
                 save_processed_file(latest_yaml_url)
             else:
                 print(f"YAML file already processed: {latest_yaml_url}")
