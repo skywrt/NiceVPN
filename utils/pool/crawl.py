@@ -15,9 +15,6 @@ def create_processed_yaml_dir():
     """创建存储已处理 YAML 文件记录的文件夹"""
     if not os.path.exists(PROCESSED_YAML_DIR):
         os.makedirs(PROCESSED_YAML_DIR)
-        print(f"Created directory: {PROCESSED_YAML_DIR}")
-    else:
-        print(f"Directory already exists: {PROCESSED_YAML_DIR}")
 
 def get_processed_file_name(date):
     """根据给定日期获取处理文件名"""
@@ -50,12 +47,9 @@ def load_processed_files():
     today_date = datetime.now().strftime('%Y_%m_%d')
     processed_file = get_processed_file_name(today_date)
     if not os.path.exists(processed_file):
-        print(f"No processed file found for {today_date}")
         return set()
     with open(processed_file, 'r') as file:
-        processed_files = set(line.strip() for line in file)
-        print(f"Loaded processed files: {processed_files}")
-        return processed_files
+        return set(line.strip() for line in file)
 
 def get_latest_yaml_file():
     """获取最新 YAML 文件的 URL"""
@@ -64,7 +58,6 @@ def get_latest_yaml_file():
         response = requests.get(GITHUB_API_URL)
         response.raise_for_status()
         files = response.json()
-        print(f"Fetched data directory contents: {files}")
         
         # 获取今天和昨天的日期字符串
         today = datetime.now().strftime('%Y_%m_%d')
@@ -84,15 +77,15 @@ def get_latest_yaml_file():
         response = requests.get(latest_folder_url)
         response.raise_for_status()
         files = response.json()
-        print(f"Fetched latest date folder contents: {files}")
         
-        # 查找 YAML 文件并选择最新的文件（基于 git_url 中的时间戳）
+        # 查找 YAML 文件并选择最新的文件（基于文件名）
         yaml_files = [file for file in files if file['name'].endswith('.yaml')]
         if not yaml_files:
             print("No YAML files found in the latest date folder.")
             return None
         
-        latest_yaml_file = max(yaml_files, key=lambda f: f['git_url'])
+        # 假设文件名的时间戳排序是合理的
+        latest_yaml_file = max(yaml_files, key=lambda f: f['name'])
         
         if latest_yaml_file:
             latest_yaml_url = latest_yaml_file['download_url']
@@ -103,8 +96,9 @@ def get_latest_yaml_file():
             if latest_yaml_url not in processed_files:
                 # 如果没有处理过，则进行处理
                 print(f"Processing new YAML file: {latest_yaml_url}")
+                # 处理 YAML 文件的逻辑，比如下载或解析等
                 
-                # 保存已处理的 YAML 文件 URL 并下载文件到 processed_yaml 目录
+                # 保存已处理的 YAML 文件 URL
                 save_processed_file(latest_yaml_url)
             else:
                 print(f"YAML file already processed: {latest_yaml_url}")
