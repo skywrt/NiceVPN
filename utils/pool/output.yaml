@@ -115,106 +115,1046 @@ proxies:
     headers:
       Host: ip006.freegradely.xyz
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 16 SSS"
-  type: ss
-  server: 69.50.93.100
-  port: 8009
-  password: XKFKl2rULjIp74
-  cipher: aes-256-gcm
-- name: "\U0001F1FA\U0001F1F8 US 17 VMS"
-  type: vmess
-  server: 104.26.0.56
-  port: 2086
-  cipher: auto
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: github.com/Alvin9999
-    headers:
-      host: ip14.freegradely.xyz
-- name: "\U0001F1EF\U0001F1F5 JP 18 VMS"
-  type: vmess
-  server: vt50k-g01.jp05-6786-vm0.entry.fr0307a.art
-  port: 46482
-  cipher: auto
-  uuid: 7a6cb59b-fbcd-3f50-b5f2-a2534326c4c8
-  alterId: 1
-  tls: false
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 19 VMS"
-  type: vmess
-  server: cfcdn1.sanfencdn9.com
-  port: 2052
-  cipher: auto
-  uuid: e093ca94-9890-4b06-8384-08572c5d3215
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /video/DDC4btA8wc/
-    headers:
-      host: us2jdgv5GC7.fzbqfrse.xyz
-- name: "\U0001F1E8\U0001F1F3 CN 20 VMS"
-  type: vmess
-  server: mmjp11.micloud.buzz
-  port: 46011
-  cipher: auto
-  uuid: f9b02d8c-b69b-435f-aa25-68393e5fb121
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /zh-cn
-    headers:
-      host: mmjp11.micloud.buzz
-- name: "\U0001F1E9\U0001F1EA DE 21 SSS"
-  type: ss
-  server: 80.92.204.106
-  port: 9015
-  password: ZpNDDKRu9MagNvaf
-  cipher: aes-256-cfb
-- name: "\U0001F1F7\U0001F1F4 RO 22 SSS"
-  type: ss
-  server: 146.19.75.41
-  port: 9350
-  password: PY2fiJfDCR5dktvS9dLYbI
-  cipher: chacha20-ietf-poly1305
-- name: "\U0001F1EF\U0001F1F5 JP 23 VMS"
-  type: vmess
-  server: t45a7-g03.jp02-9a99-vm0.entry.fr0307a.art
-  port: 11775
-  cipher: auto
-  uuid: b37b7415-1608-3fcd-aa25-d9cc4aae5ded
-  alterId: 1
-  tls: false
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1F0\U0001F1F7 KR 24 SSS"
-  type: ss
-  server: 43.201.254.211
+- name: "\U0001F1FA\U0001F1F8 US 16 TJN"
+  type: trojan
+  server: 172.66.47.7
   port: 443
-  password: amazonskr05
-  cipher: aes-256-cfb
-- name: "\U0001F1FA\U0001F1F3 UN 25 VMS"
-  type: vmess
-  server: 104.19.51.232
-  port: 2086
-  cipher: auto
-  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
-  alterId: 0
-  tls: false
+  udp: true
+  password: auto
+  sni: 4-bf5.pages.dev
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: github.com/Alvin9999
+    path: /
     headers:
-      host: ip005.dtku47.xyz
+      host: 4-bf5.pages.dev
+- name: "\U0001F1FA\U0001F1F3 UN 17 TJN"
+  type: trojan
+  server: 23.174.200.142
+  port: 443
+  udp: true
+  password: auto@172.66.47.95:443?type=ws&host=7-bhe.pages.dev&path=/?socks5=cNc2omvv46:KbNq0fWzaF
+  sni: 7-bhe.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 7-bhe.pages.dev
+- name: "\U0001F1FA\U0001F1F8 US 18 TJN"
+  type: trojan
+  server: 108.165.188.237
+  port: 443
+  udp: true
+  password: auto@172.66.47.197:443?type=ws&host=10-2hh.pages.dev&path=/?socks5=janes:janes
+  sni: 10-2hh.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 10-2hh.pages.dev
+- name: "\U0001F1FA\U0001F1F3 UN 19 TJN"
+  type: trojan
+  server: vless.niceai.us.kg
+  port: 443
+  udp: true
+  password: auto@172.66.47.50:443?type=ws&host=6-7w8.pages.dev&path=/?socks5=MSI5vNO5dK:PrVCqU5dZR
+  sni: 6-7w8.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 6-7w8.pages.dev
+- name: "\U0001F1FA\U0001F1F3 UN 20 TJN"
+  type: trojan
+  server: vless.niceai.us.kg
+  port: 443
+  udp: true
+  password: auto@172.66.47.197:443?type=ws&host=10-2hh.pages.dev&path=/?socks5=24vr5D4Yd8:HkglwlwbUR
+  sni: 10-2hh.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 10-2hh.pages.dev
+- name: "\U0001F1FA\U0001F1F3 UN 21 TJN"
+  type: trojan
+  server: 104.16.12.85
+  port: 443
+  udp: true
+  password: auto
+  sni: 4-bf5.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 4-bf5.pages.dev
+- name: "\U0001F1FA\U0001F1F3 UN 22 TJN"
+  type: trojan
+  server: 104.19.205.226
+  port: 443
+  udp: true
+  password: auto
+  sni: 3-1lz.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 3-1lz.pages.dev
+- name: "\U0001F1FA\U0001F1F3 UN 23 TJN"
+  type: trojan
+  server: 104.16.11.149
+  port: 443
+  udp: true
+  password: auto
+  sni: 5-zx9.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 5-zx9.pages.dev
+- name: "\U0001F1FA\U0001F1F3 UN 24 TJN"
+  type: trojan
+  server: 104.16.10.193
+  port: 443
+  udp: true
+  password: auto
+  sni: 2-9oi.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 2-9oi.pages.dev
+- name: "\U0001F1FA\U0001F1F3 UN 25 TJN"
+  type: trojan
+  server: 104.18.63.188
+  port: 2087
+  udp: true
+  password: auto
+  sni: 3-1lz.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 3-1lz.pages.dev
+- name: "\U0001F1FA\U0001F1F3 UN 26 TJN"
+  type: trojan
+  server: 104.18.63.210
+  port: 2083
+  udp: true
+  password: auto
+  sni: 8-4rz.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 8-4rz.pages.dev
+- name: "\U0001F1FA\U0001F1F3 UN 27 TJN"
+  type: trojan
+  server: 104.18.63.228
+  port: 2053
+  udp: true
+  password: auto
+  sni: 9-c6t.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 9-c6t.pages.dev
+- name: "\U0001F1FA\U0001F1F3 UN 28 TJN"
+  type: trojan
+  server: 104.19.203.94
+  port: 443
+  udp: true
+  password: auto
+  sni: 4-bf5.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 4-bf5.pages.dev
+- name: "\U0001F1FA\U0001F1F3 UN 29 TJN"
+  type: trojan
+  server: 104.19.209.173
+  port: 443
+  udp: true
+  password: auto
+  sni: 6-7w8.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 6-7w8.pages.dev
+- name: "\U0001F1FA\U0001F1F3 UN 30 TJN"
+  type: trojan
+  server: 104.17.106.230
+  port: 443
+  udp: true
+  password: auto
+  sni: 10-2hh.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 10-2hh.pages.dev
+- name: "\U0001F1FA\U0001F1F3 UN 31 TJN"
+  type: trojan
+  server: 104.16.80.50
+  port: 443
+  udp: true
+  password: auto
+  sni: 8-4rz.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 8-4rz.pages.dev
+- name: "\U0001F1FA\U0001F1F3 UN 32 TJN"
+  type: trojan
+  server: 104.16.130.60
+  port: 443
+  udp: true
+  password: auto
+  sni: 9-c6t.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 9-c6t.pages.dev
+- name: "\U0001F1FA\U0001F1F8 US 33 TJN"
+  type: trojan
+  server: 108.165.188.237
+  port: 443
+  udp: true
+  password: auto@172.66.46.229:443?type=ws&host=8-4rz.pages.dev&path=/?proxyip=janes:janes
+  sni: 8-4rz.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 8-4rz.pages.dev
+- name: "\U0001F1FA\U0001F1F8 US 34 TJN"
+  type: trojan
+  server: 108.165.188.237
+  port: 443
+  udp: true
+  password: auto@185.146.173.20:443?type=ws&host=6-7w8.pages.dev&path=/?proxyip=janes:janes
+  sni: 6-7w8.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 6-7w8.pages.dev
+- name: "\U0001F1FA\U0001F1F3 UN 35 TJN"
+  type: trojan
+  server: 104.18.14.166
+  port: 443
+  udp: true
+  password: auto
+  sni: 10-2hh.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 10-2hh.pages.dev
+- name: "\U0001F1FA\U0001F1F8 US 36 TJN"
+  type: trojan
+  server: 108.165.188.237
+  port: 443
+  udp: true
+  password: auto@104.19.173.68:443?type=ws&host=6-7w8.pages.dev&path=/?proxyip=janes:janes
+  sni: 6-7w8.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 6-7w8.pages.dev
+- name: "\U0001F1FA\U0001F1F3 UN 37 TJN"
+  type: trojan
+  server: vless.niceai.us.kg
+  port: 443
+  udp: true
+  password: auto@104.18.15.19:443?type=ws&host=5-zx9.pages.dev&path=/?proxyip=MSI5vNO5dK:PrVCqU5dZR
+  sni: 5-zx9.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 5-zx9.pages.dev
+- name: "\U0001F1FA\U0001F1F3 UN 38 TJN"
+  type: trojan
+  server: vless.niceai.us.kg
+  port: 443
+  udp: true
+  password: auto@104.16.149.244:443?type=ws&host=10-2hh.pages.dev&path=/?proxyip=24vr5D4Yd8:HkglwlwbUR
+  sni: 10-2hh.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 10-2hh.pages.dev
+- name: "\U0001F1FA\U0001F1F3 UN 39 TJN"
+  type: trojan
+  server: osaka-01.oci.ee
+  port: 443
+  udp: true
+  password: auto@104.18.4.250:443?type=ws&host=3-1lz.pages.dev&path=/?proxyip=SOCKS5:DHIvejUoRy:FLF2jIaxB6
+  sni: 3-1lz.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 3-1lz.pages.dev
+- name: "\U0001F1FA\U0001F1F3 UN 40 TJN"
+  type: trojan
+  server: 23.174.200.142
+  port: 443
+  udp: true
+  password: auto@104.19.223.79:443?type=ws&host=6-7w8.pages.dev&path=/?proxyip=cNc2omvv46:KbNq0fWzaF
+  sni: 6-7w8.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 6-7w8.pages.dev
+- name: "\U0001F1FA\U0001F1F3 UN 41 TJN"
+  type: trojan
+  server: vless.niceai.us.kg
+  port: 443
+  udp: true
+  password: auto@172.67.143.54:443?type=ws&host=3-1lz.pages.dev&path=/?proxyip=MSI5vNO5dK:PrVCqU5dZR
+  sni: 3-1lz.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 3-1lz.pages.dev
+- name: "\U0001F1FA\U0001F1F3 UN 42 TJN"
+  type: trojan
+  server: vless.niceai.us.kg
+  port: 443
+  udp: true
+  password: auto@172.67.198.192:443?type=ws&host=10-2hh.pages.dev&path=/?proxyip=24vr5D4Yd8:HkglwlwbUR
+  sni: 10-2hh.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 10-2hh.pages.dev
+- name: "\U0001F1EF\U0001F1F5 JP 43 TJN"
+  type: trojan
+  server: 131.186.33.175
+  port: 443
+  udp: true
+  password: auto
+  sni: 10-2hh.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 10-2hh.pages.dev
+- name: "\U0001F1F8\U0001F1EC SG 44 TJN"
+  type: trojan
+  server: 8.219.144.168
+  port: 443
+  udp: true
+  password: auto
+  sni: 3-1lz.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 3-1lz.pages.dev
+- name: "\U0001F1F0\U0001F1F7 KR 45 TJN"
+  type: trojan
+  server: 152.70.234.188
+  port: 443
+  udp: true
+  password: auto
+  sni: 2-9oi.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 2-9oi.pages.dev
+- name: "\U0001F1E6\U0001F1EA AE 46 TJN"
+  type: trojan
+  server: 193.123.69.77
+  port: 443
+  udp: true
+  password: auto
+  sni: 3-1lz.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 3-1lz.pages.dev
+- name: "\U0001F1ED\U0001F1F0 HK 47 TJN"
+  type: trojan
+  server: 47.242.94.48
+  port: 443
+  udp: true
+  password: auto
+  sni: 5-zx9.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 5-zx9.pages.dev
+- name: "\U0001F1FA\U0001F1F8 US 48 TJN"
+  type: trojan
+  server: 129.159.84.71
+  port: 443
+  udp: true
+  password: auto
+  sni: 8-4rz.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 8-4rz.pages.dev
+- name: "\U0001F1E8\U0001F1E6 CA 49 TJN"
+  type: trojan
+  server: 168.138.66.11
+  port: 443
+  udp: true
+  password: auto
+  sni: 8-4rz.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 8-4rz.pages.dev
+- name: "\U0001F1F3\U0001F1F1 NL 50 TJN"
+  type: trojan
+  server: 141.148.225.142
+  port: 443
+  udp: true
+  password: auto
+  sni: 1-9fw.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 1-9fw.pages.dev
+- name: "\U0001F1E8\U0001F1ED CH 51 TJN"
+  type: trojan
+  server: 152.67.65.201
+  port: 443
+  udp: true
+  password: auto
+  sni: 6-7w8.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 6-7w8.pages.dev
+- name: "\U0001F1E9\U0001F1EA DE 52 TJN"
+  type: trojan
+  server: 129.159.241.172
+  port: 443
+  udp: true
+  password: auto
+  sni: 2-9oi.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 2-9oi.pages.dev
+- name: "\U0001F1E6\U0001F1FA AU 53 TJN"
+  type: trojan
+  server: 192.9.177.204
+  port: 443
+  udp: true
+  password: auto
+  sni: 9-c6t.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 9-c6t.pages.dev
+- name: "\U0001F1EF\U0001F1F5 JP 54 TJN"
+  type: trojan
+  server: 138.2.18.184
+  port: 443
+  udp: true
+  password: auto
+  sni: 8-4rz.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 8-4rz.pages.dev
+- name: "\U0001F1EC\U0001F1E7 GB 55 TJN"
+  type: trojan
+  server: 152.67.148.130
+  port: 443
+  udp: true
+  password: auto
+  sni: 7-bhe.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 7-bhe.pages.dev
+- name: "\U0001F1EC\U0001F1E7 GB 56 TJN"
+  type: trojan
+  server: 158.180.231.216
+  port: 443
+  udp: true
+  password: auto
+  sni: 7-bhe.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 7-bhe.pages.dev
+- name: "\U0001F1EB\U0001F1F7 FR 57 TJN"
+  type: trojan
+  server: 144.24.200.164
+  port: 443
+  udp: true
+  password: auto
+  sni: 8-4rz.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 8-4rz.pages.dev
+- name: "\U0001F1F0\U0001F1F7 KR 58 TJN"
+  type: trojan
+  server: 132.145.82.137
+  port: 443
+  udp: true
+  password: auto
+  sni: 4-bf5.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 4-bf5.pages.dev
+- name: "\U0001F1FA\U0001F1F8 US 59 TJN"
+  type: trojan
+  server: 192.9.224.194
+  port: 443
+  udp: true
+  password: auto
+  sni: 9-c6t.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 9-c6t.pages.dev
+- name: "\U0001F1E6\U0001F1EA AE 60 TJN"
+  type: trojan
+  server: 139.185.34.131
+  port: 443
+  udp: true
+  password: auto
+  sni: 3-1lz.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 3-1lz.pages.dev
+- name: "\U0001F1E8\U0001F1E6 CA 61 TJN"
+  type: trojan
+  server: 140.238.158.238
+  port: 443
+  udp: true
+  password: auto
+  sni: 4-bf5.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 4-bf5.pages.dev
+- name: "\U0001F1ED\U0001F1F0 HK 62 TJN"
+  type: trojan
+  server: 47.57.245.232
+  port: 443
+  udp: true
+  password: auto
+  sni: 10-2hh.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 10-2hh.pages.dev
+- name: "\U0001F1F3\U0001F1F1 NL 63 TJN"
+  type: trojan
+  server: 152.70.54.161
+  port: 443
+  udp: true
+  password: auto
+  sni: 4-bf5.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 4-bf5.pages.dev
+- name: "\U0001F1F8\U0001F1EC SG 64 TJN"
+  type: trojan
+  server: 8.222.204.128
+  port: 443
+  udp: true
+  password: auto
+  sni: 10-2hh.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 10-2hh.pages.dev
+- name: "\U0001F1E6\U0001F1FA AU 65 TJN"
+  type: trojan
+  server: 192.9.180.162
+  port: 443
+  udp: true
+  password: auto
+  sni: 4-bf5.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 4-bf5.pages.dev
+- name: "\U0001F1E9\U0001F1EA DE 66 TJN"
+  type: trojan
+  server: 144.24.189.21
+  port: 443
+  udp: true
+  password: auto
+  sni: 7-bhe.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 7-bhe.pages.dev
+- name: "\U0001F1EC\U0001F1E7 GB 67 TJN"
+  type: trojan
+  server: 141.147.97.37
+  port: 443
+  udp: true
+  password: auto
+  sni: 1-9fw.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 1-9fw.pages.dev
+- name: "\U0001F1E8\U0001F1ED CH 68 TJN"
+  type: trojan
+  server: 144.24.243.207
+  port: 443
+  udp: true
+  password: auto
+  sni: 10-2hh.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 10-2hh.pages.dev
+- name: "\U0001F1FA\U0001F1F8 US 69 TJN"
+  type: trojan
+  server: 43.153.103.203
+  port: 443
+  udp: true
+  password: auto
+  sni: 4-bf5.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 4-bf5.pages.dev
+- name: "\U0001F1E8\U0001F1E6 CA 70 TJN"
+  type: trojan
+  server: 168.138.71.220
+  port: 443
+  udp: true
+  password: auto
+  sni: 2-9oi.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 2-9oi.pages.dev
+- name: "\U0001F1F0\U0001F1F7 KR 71 TJN"
+  type: trojan
+  server: 149.129.8.215
+  port: 443
+  udp: true
+  password: auto
+  sni: 6-7w8.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 6-7w8.pages.dev
+- name: "\U0001F1E6\U0001F1EA AE 72 TJN"
+  type: trojan
+  server: 193.123.81.105
+  port: 443
+  udp: true
+  password: auto
+  sni: 8-4rz.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 8-4rz.pages.dev
+- name: "\U0001F1F3\U0001F1F1 NL 73 TJN"
+  type: trojan
+  server: 141.148.229.106
+  port: 443
+  udp: true
+  password: auto
+  sni: 10-2hh.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 10-2hh.pages.dev
+- name: "\U0001F1E9\U0001F1EA DE 74 TJN"
+  type: trojan
+  server: 141.144.232.159
+  port: 443
+  udp: true
+  password: auto
+  sni: 3-1lz.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 3-1lz.pages.dev
+- name: "\U0001F1ED\U0001F1F0 HK 75 TJN"
+  type: trojan
+  server: 47.57.13.107
+  port: 443
+  udp: true
+  password: auto
+  sni: 7-bhe.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 7-bhe.pages.dev
+- name: "\U0001F1EC\U0001F1E7 GB 76 TJN"
+  type: trojan
+  server: 141.147.74.20
+  port: 443
+  udp: true
+  password: auto
+  sni: 10-2hh.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 10-2hh.pages.dev
+- name: "\U0001F1FA\U0001F1F8 US 77 TJN"
+  type: trojan
+  server: 155.248.196.123
+  port: 443
+  udp: true
+  password: auto
+  sni: 10-2hh.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 10-2hh.pages.dev
+- name: "\U0001F1F3\U0001F1F1 NL 78 TJN"
+  type: trojan
+  server: 141.144.197.53
+  port: 443
+  udp: true
+  password: auto
+  sni: 4-bf5.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 4-bf5.pages.dev
+- name: "\U0001F1ED\U0001F1F0 HK 79 TJN"
+  type: trojan
+  server: 8.210.118.122
+  port: 443
+  udp: true
+  password: auto
+  sni: 4-bf5.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 4-bf5.pages.dev
+- name: "\U0001F1E9\U0001F1EA DE 80 TJN"
+  type: trojan
+  server: 130.61.87.219
+  port: 443
+  udp: true
+  password: auto
+  sni: 7-bhe.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 7-bhe.pages.dev
+- name: "\U0001F1EC\U0001F1E7 GB 81 TJN"
+  type: trojan
+  server: 144.21.51.110
+  port: 443
+  udp: true
+  password: auto
+  sni: 4-bf5.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 4-bf5.pages.dev
+- name: "\U0001F1FA\U0001F1F8 US 82 TJN"
+  type: trojan
+  server: 192.9.159.65
+  port: 443
+  udp: true
+  password: auto
+  sni: 3-1lz.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 3-1lz.pages.dev
+- name: "\U0001F1E9\U0001F1EA DE 83 TJN"
+  type: trojan
+  server: 130.61.239.203
+  port: 443
+  udp: true
+  password: auto
+  sni: 5-zx9.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 5-zx9.pages.dev
+- name: "\U0001F1ED\U0001F1F0 HK 84 TJN"
+  type: trojan
+  server: 47.57.14.118
+  port: 443
+  udp: true
+  password: auto
+  sni: 3-1lz.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 3-1lz.pages.dev
+- name: "\U0001F1FA\U0001F1F8 US 85 TJN"
+  type: trojan
+  server: 129.146.46.164
+  port: 443
+  udp: true
+  password: auto
+  sni: 4-bf5.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 4-bf5.pages.dev
+- name: "\U0001F1E9\U0001F1EA DE 86 TJN"
+  type: trojan
+  server: 138.3.254.39
+  port: 443
+  udp: true
+  password: auto
+  sni: 6-7w8.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 6-7w8.pages.dev
+- name: "\U0001F1FA\U0001F1F8 US 87 TJN"
+  type: trojan
+  server: 150.136.241.40
+  port: 443
+  udp: true
+  password: auto
+  sni: 6-7w8.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 6-7w8.pages.dev
+- name: "\U0001F1E9\U0001F1EA DE 88 TJN"
+  type: trojan
+  server: 130.61.83.37
+  port: 443
+  udp: true
+  password: auto
+  sni: 7-bhe.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 7-bhe.pages.dev
+- name: "\U0001F1FA\U0001F1F8 US 89 TJN"
+  type: trojan
+  server: 155.248.202.141
+  port: 443
+  udp: true
+  password: auto
+  sni: 5-zx9.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 5-zx9.pages.dev
+- name: "\U0001F1E9\U0001F1EA DE 90 TJN"
+  type: trojan
+  server: 130.61.176.29
+  port: 443
+  udp: true
+  password: auto
+  sni: 5-zx9.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 5-zx9.pages.dev
+- name: "\U0001F1FA\U0001F1F8 US 91 TJN"
+  type: trojan
+  server: 129.146.248.140
+  port: 443
+  udp: true
+  password: auto
+  sni: 5-zx9.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 5-zx9.pages.dev
+- name: "\U0001F1FA\U0001F1F8 US 92 TJN"
+  type: trojan
+  server: 192.9.132.79
+  port: 443
+  udp: true
+  password: auto
+  sni: 4-bf5.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 4-bf5.pages.dev
+- name: "\U0001F1FA\U0001F1F8 US 93 TJN"
+  type: trojan
+  server: 129.146.254.39
+  port: 443
+  udp: true
+  password: auto
+  sni: 9-c6t.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 9-c6t.pages.dev
+- name: "\U0001F1FA\U0001F1F8 US 94 TJN"
+  type: trojan
+  server: 150.230.34.116
+  port: 443
+  udp: true
+  password: auto
+  sni: 10-2hh.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 10-2hh.pages.dev
+- name: "\U0001F1FA\U0001F1F8 US 95 TJN"
+  type: trojan
+  server: 152.70.155.147
+  port: 443
+  udp: true
+  password: auto
+  sni: 8-4rz.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: 8-4rz.pages.dev
 proxy-groups:
 - name: automatic
   type: url-test
@@ -234,16 +1174,86 @@ proxy-groups:
   - "\U0001F1F9\U0001F1FC TW 13 TJN"
   - "\U0001F1F9\U0001F1FC TW 14 TJN"
   - "\U0001F1E8\U0001F1E6 CA 15 VMS"
-  - "\U0001F1FA\U0001F1F8 US 16 SSS"
-  - "\U0001F1FA\U0001F1F8 US 17 VMS"
-  - "\U0001F1EF\U0001F1F5 JP 18 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 19 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 20 VMS"
-  - "\U0001F1E9\U0001F1EA DE 21 SSS"
-  - "\U0001F1F7\U0001F1F4 RO 22 SSS"
-  - "\U0001F1EF\U0001F1F5 JP 23 VMS"
-  - "\U0001F1F0\U0001F1F7 KR 24 SSS"
-  - "\U0001F1FA\U0001F1F3 UN 25 VMS"
+  - "\U0001F1FA\U0001F1F8 US 16 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 17 TJN"
+  - "\U0001F1FA\U0001F1F8 US 18 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 19 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 20 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 21 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 22 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 23 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 24 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 25 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 26 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 27 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 28 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 29 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 30 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 31 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 32 TJN"
+  - "\U0001F1FA\U0001F1F8 US 33 TJN"
+  - "\U0001F1FA\U0001F1F8 US 34 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 35 TJN"
+  - "\U0001F1FA\U0001F1F8 US 36 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 37 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 38 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 39 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 40 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 41 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 42 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 43 TJN"
+  - "\U0001F1F8\U0001F1EC SG 44 TJN"
+  - "\U0001F1F0\U0001F1F7 KR 45 TJN"
+  - "\U0001F1E6\U0001F1EA AE 46 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 47 TJN"
+  - "\U0001F1FA\U0001F1F8 US 48 TJN"
+  - "\U0001F1E8\U0001F1E6 CA 49 TJN"
+  - "\U0001F1F3\U0001F1F1 NL 50 TJN"
+  - "\U0001F1E8\U0001F1ED CH 51 TJN"
+  - "\U0001F1E9\U0001F1EA DE 52 TJN"
+  - "\U0001F1E6\U0001F1FA AU 53 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 54 TJN"
+  - "\U0001F1EC\U0001F1E7 GB 55 TJN"
+  - "\U0001F1EC\U0001F1E7 GB 56 TJN"
+  - "\U0001F1EB\U0001F1F7 FR 57 TJN"
+  - "\U0001F1F0\U0001F1F7 KR 58 TJN"
+  - "\U0001F1FA\U0001F1F8 US 59 TJN"
+  - "\U0001F1E6\U0001F1EA AE 60 TJN"
+  - "\U0001F1E8\U0001F1E6 CA 61 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 62 TJN"
+  - "\U0001F1F3\U0001F1F1 NL 63 TJN"
+  - "\U0001F1F8\U0001F1EC SG 64 TJN"
+  - "\U0001F1E6\U0001F1FA AU 65 TJN"
+  - "\U0001F1E9\U0001F1EA DE 66 TJN"
+  - "\U0001F1EC\U0001F1E7 GB 67 TJN"
+  - "\U0001F1E8\U0001F1ED CH 68 TJN"
+  - "\U0001F1FA\U0001F1F8 US 69 TJN"
+  - "\U0001F1E8\U0001F1E6 CA 70 TJN"
+  - "\U0001F1F0\U0001F1F7 KR 71 TJN"
+  - "\U0001F1E6\U0001F1EA AE 72 TJN"
+  - "\U0001F1F3\U0001F1F1 NL 73 TJN"
+  - "\U0001F1E9\U0001F1EA DE 74 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 75 TJN"
+  - "\U0001F1EC\U0001F1E7 GB 76 TJN"
+  - "\U0001F1FA\U0001F1F8 US 77 TJN"
+  - "\U0001F1F3\U0001F1F1 NL 78 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 79 TJN"
+  - "\U0001F1E9\U0001F1EA DE 80 TJN"
+  - "\U0001F1EC\U0001F1E7 GB 81 TJN"
+  - "\U0001F1FA\U0001F1F8 US 82 TJN"
+  - "\U0001F1E9\U0001F1EA DE 83 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 84 TJN"
+  - "\U0001F1FA\U0001F1F8 US 85 TJN"
+  - "\U0001F1E9\U0001F1EA DE 86 TJN"
+  - "\U0001F1FA\U0001F1F8 US 87 TJN"
+  - "\U0001F1E9\U0001F1EA DE 88 TJN"
+  - "\U0001F1FA\U0001F1F8 US 89 TJN"
+  - "\U0001F1E9\U0001F1EA DE 90 TJN"
+  - "\U0001F1FA\U0001F1F8 US 91 TJN"
+  - "\U0001F1FA\U0001F1F8 US 92 TJN"
+  - "\U0001F1FA\U0001F1F8 US 93 TJN"
+  - "\U0001F1FA\U0001F1F8 US 94 TJN"
+  - "\U0001F1FA\U0001F1F8 US 95 TJN"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -265,15 +1275,85 @@ proxy-groups:
   - "\U0001F1F9\U0001F1FC TW 13 TJN"
   - "\U0001F1F9\U0001F1FC TW 14 TJN"
   - "\U0001F1E8\U0001F1E6 CA 15 VMS"
-  - "\U0001F1FA\U0001F1F8 US 16 SSS"
-  - "\U0001F1FA\U0001F1F8 US 17 VMS"
-  - "\U0001F1EF\U0001F1F5 JP 18 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 19 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 20 VMS"
-  - "\U0001F1E9\U0001F1EA DE 21 SSS"
-  - "\U0001F1F7\U0001F1F4 RO 22 SSS"
-  - "\U0001F1EF\U0001F1F5 JP 23 VMS"
-  - "\U0001F1F0\U0001F1F7 KR 24 SSS"
-  - "\U0001F1FA\U0001F1F3 UN 25 VMS"
+  - "\U0001F1FA\U0001F1F8 US 16 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 17 TJN"
+  - "\U0001F1FA\U0001F1F8 US 18 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 19 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 20 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 21 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 22 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 23 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 24 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 25 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 26 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 27 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 28 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 29 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 30 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 31 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 32 TJN"
+  - "\U0001F1FA\U0001F1F8 US 33 TJN"
+  - "\U0001F1FA\U0001F1F8 US 34 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 35 TJN"
+  - "\U0001F1FA\U0001F1F8 US 36 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 37 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 38 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 39 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 40 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 41 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 42 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 43 TJN"
+  - "\U0001F1F8\U0001F1EC SG 44 TJN"
+  - "\U0001F1F0\U0001F1F7 KR 45 TJN"
+  - "\U0001F1E6\U0001F1EA AE 46 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 47 TJN"
+  - "\U0001F1FA\U0001F1F8 US 48 TJN"
+  - "\U0001F1E8\U0001F1E6 CA 49 TJN"
+  - "\U0001F1F3\U0001F1F1 NL 50 TJN"
+  - "\U0001F1E8\U0001F1ED CH 51 TJN"
+  - "\U0001F1E9\U0001F1EA DE 52 TJN"
+  - "\U0001F1E6\U0001F1FA AU 53 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 54 TJN"
+  - "\U0001F1EC\U0001F1E7 GB 55 TJN"
+  - "\U0001F1EC\U0001F1E7 GB 56 TJN"
+  - "\U0001F1EB\U0001F1F7 FR 57 TJN"
+  - "\U0001F1F0\U0001F1F7 KR 58 TJN"
+  - "\U0001F1FA\U0001F1F8 US 59 TJN"
+  - "\U0001F1E6\U0001F1EA AE 60 TJN"
+  - "\U0001F1E8\U0001F1E6 CA 61 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 62 TJN"
+  - "\U0001F1F3\U0001F1F1 NL 63 TJN"
+  - "\U0001F1F8\U0001F1EC SG 64 TJN"
+  - "\U0001F1E6\U0001F1FA AU 65 TJN"
+  - "\U0001F1E9\U0001F1EA DE 66 TJN"
+  - "\U0001F1EC\U0001F1E7 GB 67 TJN"
+  - "\U0001F1E8\U0001F1ED CH 68 TJN"
+  - "\U0001F1FA\U0001F1F8 US 69 TJN"
+  - "\U0001F1E8\U0001F1E6 CA 70 TJN"
+  - "\U0001F1F0\U0001F1F7 KR 71 TJN"
+  - "\U0001F1E6\U0001F1EA AE 72 TJN"
+  - "\U0001F1F3\U0001F1F1 NL 73 TJN"
+  - "\U0001F1E9\U0001F1EA DE 74 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 75 TJN"
+  - "\U0001F1EC\U0001F1E7 GB 76 TJN"
+  - "\U0001F1FA\U0001F1F8 US 77 TJN"
+  - "\U0001F1F3\U0001F1F1 NL 78 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 79 TJN"
+  - "\U0001F1E9\U0001F1EA DE 80 TJN"
+  - "\U0001F1EC\U0001F1E7 GB 81 TJN"
+  - "\U0001F1FA\U0001F1F8 US 82 TJN"
+  - "\U0001F1E9\U0001F1EA DE 83 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 84 TJN"
+  - "\U0001F1FA\U0001F1F8 US 85 TJN"
+  - "\U0001F1E9\U0001F1EA DE 86 TJN"
+  - "\U0001F1FA\U0001F1F8 US 87 TJN"
+  - "\U0001F1E9\U0001F1EA DE 88 TJN"
+  - "\U0001F1FA\U0001F1F8 US 89 TJN"
+  - "\U0001F1E9\U0001F1EA DE 90 TJN"
+  - "\U0001F1FA\U0001F1F8 US 91 TJN"
+  - "\U0001F1FA\U0001F1F8 US 92 TJN"
+  - "\U0001F1FA\U0001F1F8 US 93 TJN"
+  - "\U0001F1FA\U0001F1F8 US 94 TJN"
+  - "\U0001F1FA\U0001F1F8 US 95 TJN"
 rules:
 - "MATCH,\U0001F310 Proxy"
