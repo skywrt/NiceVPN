@@ -1,22 +1,22 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-08-01 09:01:42
+# 创建时间：2024-08-01 10:03:26
 # 使用模版：ACL4SSR_Mini.ini
 # 节点数量：42
 # 节点类型：ss, vmess
 ####################################
 mixed-port: 7890
-allow-lan: false
-log-level: silent
+allow-lan: true
+log-level: info
 external-controller: 0.0.0.0:9090
 dns:
   enabled: true
   listen: 0.0.0.0:1053
   ipv6: true
   default-nameserver:
-    - 9.9.9.9
-    - 185.222.222.222
+    - 223.5.5.5
+    - 114.114.114.114
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
@@ -77,10 +77,10 @@ dns:
     - stun.*.*.*
     - '*.mcdn.bilivideo.cn'
   nameserver:
-    - https://dns.quad9.net/dns-query
-    - https://doh.dns.sb/dns-query
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
   fallback-filter:
-    geoip: true
+    geoip: false
     ipcidr:
       - 240.0.0.0/4
       - 0.0.0.0/32
@@ -132,7 +132,7 @@ proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
-      - 🔯 故障转移
+      - ♻️ 自动选择
       - DIRECT
       - 未知_1
       - 🇺🇸_US_美国->🇫🇷_FR_法国_1
@@ -176,10 +176,11 @@ proxy-groups:
       - 🇷🇺_RU_俄罗斯_4
       - 未知_7
       - 未知_8
-  - name: 🔯 故障转移
-    type: fallback
-    url: https://www.gstatic.com/generate_204
-    interval: 180
+  - name: ♻️ 自动选择
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
     proxies:
       - 未知_1
       - 🇺🇸_US_美国->🇫🇷_FR_法国_1
@@ -228,60 +229,12 @@ proxy-groups:
     proxies:
       - DIRECT
       - 🚀 节点选择
-      - 🔯 故障转移
+      - ♻️ 自动选择
   - name: 🛑 全球拦截
     type: select
     proxies:
       - REJECT
       - DIRECT
-  - name: 🐟 漏网之鱼
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - 🎯 全球直连
-      - 🔯 故障转移
-      - 未知_1
-      - 🇺🇸_US_美国->🇫🇷_FR_法国_1
-      - 🇺🇸_US_美国->🇩🇪_DE_德国_1
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_1
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_2
-      - 🇦🇱_AL_阿尔巴尼亚->🇺🇸_US_美国
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_3
-      - 🇺🇸_US_美国->🇦🇺_AU_澳大利亚
-      - 🇳🇱_NL_荷兰
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_4
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_5
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_6
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_7
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_8
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_9
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_10
-      - 🇺🇸_US_美国->🇫🇷_FR_法国_2
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_11
-      - 🇺🇸_US_美国->🇩🇪_DE_德国_2
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_12
-      - 🇺🇸_US_美国->🇧🇷_BR_巴西
-      - 未知_2
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_13
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_14
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_15
-      - 🇷🇺_RU_俄罗斯_1
-      - 未知_3
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_16
-      - 未知_4
-      - 未知_5
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_17
-      - 未知_6
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_18
-      - 🇨🇦_CA_加拿大
-      - 🇷🇺_RU_俄罗斯_2
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_19
-      - 🇺🇸_US_美国
-      - 🇷🇺_RU_俄罗斯_3
-      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_20
-      - 🇷🇺_RU_俄罗斯_4
-      - 未知_7
-      - 未知_8
 
 rules:
 # 本地/局域网地址
@@ -3827,4 +3780,3 @@ rules:
   - IP-CIDR,101.198.192.0/19,🎯 全球直连,no-resolve
   - IP-CIDR,101.199.196.0/22,🎯 全球直连,no-resolve
   - GEOIP,CN,🎯 全球直连
-  - MATCH,🐟 漏网之鱼
