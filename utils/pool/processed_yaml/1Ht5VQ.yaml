@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-08-01 08:06:23
+# 创建时间：2024-08-01 09:01:42
 # 使用模版：ACL4SSR_Mini.ini
 # 节点数量：42
 # 节点类型：ss, vmess
@@ -77,10 +77,10 @@ dns:
     - stun.*.*.*
     - '*.mcdn.bilivideo.cn'
   nameserver:
-    - https://doh.pub/dns-query
-    - https://dns.alidns.com/dns-query
+    - https://dns.quad9.net/dns-query
+    - https://doh.dns.sb/dns-query
   fallback-filter:
-    geoip: false
+    geoip: true
     ipcidr:
       - 240.0.0.0/4
       - 0.0.0.0/32
@@ -179,8 +179,7 @@ proxy-groups:
   - name: 🔯 故障转移
     type: fallback
     url: https://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 0
+    interval: 180
     proxies:
       - 未知_1
       - 🇺🇸_US_美国->🇫🇷_FR_法国_1
