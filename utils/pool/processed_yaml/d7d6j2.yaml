@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-08-02 14:35:32
+# 创建时间：2024-08-02 16:32:53
 # 使用模版：ACL4SSR_Mini_Fallback.ini
 # 节点数量：1012
 # 节点类型：vmess, ss, trojan
@@ -2120,7 +2120,6 @@ proxy-groups:
     type: fallback
     url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 0
     proxies:
       - 中转节点-514.6KB/s
       - 韩国-505.2KB/s
@@ -3135,10 +3134,9 @@ proxy-groups:
       - SG_1
       - SG_2
   - name: 🔮 负载均衡
-    type: load-balance
+    type: tolerance
     url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 0
     proxies:
       - 中转节点-514.6KB/s
       - 韩国-505.2KB/s
