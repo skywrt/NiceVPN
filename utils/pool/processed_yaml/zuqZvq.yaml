@@ -7,16 +7,16 @@
 # 节点类型：ss, trojan, vmess
 ####################################
 mixed-port: 7890
-allow-lan: true
-log-level: info
+allow-lan: false
+log-level: silent
 external-controller: 0.0.0.0:9090
 dns:
   enabled: true
   listen: 0.0.0.0:1053
   ipv6: true
   default-nameserver:
-    - 223.5.5.5
-    - 114.114.114.114
+    - 1.1.1.1
+    - 185.222.222.222
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
@@ -77,13 +77,12 @@ dns:
     - stun.*.*.*
     - '*.mcdn.bilivideo.cn'
   nameserver:
-    - https://doh.pub/dns-query
-    - https://dns.alidns.com/dns-query
+    - https://cloudflare-dns.com/dns-query
+    - https://doh.dns.sb/dns-query
   fallback-filter:
-    geoip: false
+    geoip: true
     ipcidr:
       - 240.0.0.0/4
-      - 0.0.0.0/32
 
 proxies:
   - {"name":"🇷🇺_RU_俄罗斯","type":"ss","server":"80.92.204.106","port":9031,"password":"BwcAUZk8hUFAkDGN","cipher":"aes-256-cfb"}
@@ -111,7 +110,7 @@ proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
-      - ♻️ 自动选择
+      - 🔯 故障转移
       - DIRECT
       - 🇷🇺_RU_俄罗斯
       - 🇺🇸_US_美国->🇸🇬_SG_新加坡
@@ -134,11 +133,12 @@ proxy-groups:
       - 🇮🇷_IR_伊朗->🇺🇸_US_美国
       - 🇺🇸_US_美国_12
       - 🇺🇸_US_美国_13
-  - name: ♻️ 自动选择
-    type: url-test
-    url: http://www.gstatic.com/generate_204
+  - name: 🔯 故障转移
+    type: fallback
+    url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
+    tolerance: 5
+    max-failed-times: 5
     proxies:
       - 🇷🇺_RU_俄罗斯
       - 🇺🇸_US_美国->🇸🇬_SG_新加坡
@@ -166,7 +166,7 @@ proxy-groups:
     proxies:
       - DIRECT
       - 🚀 节点选择
-      - ♻️ 自动选择
+      - 🔯 故障转移
   - name: 🛑 全球拦截
     type: select
     proxies:
@@ -177,7 +177,7 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - ♻️ 自动选择
+      - 🔯 故障转移
       - 🇷🇺_RU_俄罗斯
       - 🇺🇸_US_美国->🇸🇬_SG_新加坡
       - 🇺🇸_US_美国->🇨🇦_CA_加拿大
