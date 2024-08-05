@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-08-05 22:57:15
+# 创建时间：2024-08-05 05:44:31
 # 使用模版：ACL4SSR_Mini.ini
 # 节点数量：1000
 # 节点类型：ss, vmess, trojan
@@ -2091,11 +2091,12 @@ proxy-groups:
       - 丹麦-2.97MB/s
       - 荷兰-2.57MB/s
       - 土耳其-3.42MB/s
-  - name: 🔯 故障转移
-    type: fallback
+  - name: ♻️ 自动选择
+    type: url-test
     url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 1
+    tolerance: 3
+    retry: 3
     proxies:
       - 中转节点-9.44MB/s_1
       - 爱尔兰-1.40MB/s
