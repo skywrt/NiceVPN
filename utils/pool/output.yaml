@@ -115,22 +115,87 @@ proxies:
     headers:
       Host: ip006.freegradely.xyz
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 16 HTT"
-  type: http
-  server: 124.15.12.24
-  port: 251
-  username: username
-  password: password
-- name: "\U0001F1E8\U0001F1F3 CN 17 SK5"
-  type: socks5
-  server: 124.15.12.24
-  port: 2312
-- name: "\U0001F1E6\U0001F1FA AU 18 SK5"
-  type: socks5
-  server: 1.2.3.4
-  port: 123
-  username: username
-  password: password
+- name: "\U0001F1F8\U0001F1EA SE 16 VMS"
+  type: vmess
+  server: 185.146.173.227
+  port: 80
+  cipher: auto
+  uuid: 2ced7332-31d2-4b62-b098-fb31ea120359
+  alterId: 0
+  network: ws
+- name: "\U0001F1FA\U0001F1F3 UN 17 VMS"
+  type: vmess
+  server: 104.19.51.232
+  port: 2086
+  cipher: auto
+  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+  alterId: 0
+  sni: ''
+  network: ws
+- name: "\U0001F1F3\U0001F1F1 NL 18 VMS"
+  type: vmess
+  server: 188.114.97.111
+  port: 80
+  cipher: none
+  uuid: 91a80c8a-fcc2-53e1-9184-791cafbdbbc9
+  alterId: 0
+  sni: ''
+  network: ws
+  fingerprint: ''
+- name: "\U0001F1FA\U0001F1F8 US 19 VMS"
+  type: vmess
+  server: 172.64.233.32
+  port: 2086
+  cipher: auto
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  sni: ''
+  network: ws
+- name: "\U0001F1FA\U0001F1F8 US 20 VMS"
+  type: vmess
+  server: 172.64.99.22
+  port: 2052
+  cipher: auto
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  alterId: 0
+  sni: ''
+  network: ws
+- name: "\U0001F1FA\U0001F1F8 US 21 VMS"
+  type: vmess
+  server: 172.64.233.27
+  port: 2086
+  cipher: auto
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  sni: ''
+  network: ws
+- name: "\U0001F1FA\U0001F1F8 US 22 VMS"
+  type: vmess
+  server: 172.64.233.9
+  port: 2086
+  cipher: auto
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  sni: ''
+  network: ws
+- name: "\U0001F1FA\U0001F1F3 UN 23 VMS"
+  type: vmess
+  server: 104.19.46.56
+  port: 2086
+  cipher: auto
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  sni: ip2.1457230.xyz
+  network: ws
+- name: "\U0001F1FA\U0001F1F8 US 24 VMS"
+  type: vmess
+  server: 104.26.0.50
+  port: 2086
+  cipher: auto
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  sni: ''
+  network: ws
 proxy-groups:
 - name: automatic
   type: url-test
@@ -150,9 +215,15 @@ proxy-groups:
   - "\U0001F1F9\U0001F1FC TW 13 TJN"
   - "\U0001F1F9\U0001F1FC TW 14 TJN"
   - "\U0001F1E8\U0001F1E6 CA 15 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 16 HTT"
-  - "\U0001F1E8\U0001F1F3 CN 17 SK5"
-  - "\U0001F1E6\U0001F1FA AU 18 SK5"
+  - "\U0001F1F8\U0001F1EA SE 16 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 17 VMS"
+  - "\U0001F1F3\U0001F1F1 NL 18 VMS"
+  - "\U0001F1FA\U0001F1F8 US 19 VMS"
+  - "\U0001F1FA\U0001F1F8 US 20 VMS"
+  - "\U0001F1FA\U0001F1F8 US 21 VMS"
+  - "\U0001F1FA\U0001F1F8 US 22 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 23 VMS"
+  - "\U0001F1FA\U0001F1F8 US 24 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -174,8 +245,14 @@ proxy-groups:
   - "\U0001F1F9\U0001F1FC TW 13 TJN"
   - "\U0001F1F9\U0001F1FC TW 14 TJN"
   - "\U0001F1E8\U0001F1E6 CA 15 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 16 HTT"
-  - "\U0001F1E8\U0001F1F3 CN 17 SK5"
-  - "\U0001F1E6\U0001F1FA AU 18 SK5"
+  - "\U0001F1F8\U0001F1EA SE 16 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 17 VMS"
+  - "\U0001F1F3\U0001F1F1 NL 18 VMS"
+  - "\U0001F1FA\U0001F1F8 US 19 VMS"
+  - "\U0001F1FA\U0001F1F8 US 20 VMS"
+  - "\U0001F1FA\U0001F1F8 US 21 VMS"
+  - "\U0001F1FA\U0001F1F8 US 22 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 23 VMS"
+  - "\U0001F1FA\U0001F1F8 US 24 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
