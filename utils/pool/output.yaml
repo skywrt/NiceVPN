@@ -117,54 +117,6 @@ proxies:
   udp: true
 - name: "\U0001F1FA\U0001F1F3 UN 16 VMS"
   type: vmess
-  server: 104.18.57.121
-  port: 2052
-  cipher: auto
-  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
-  alterId: 0
-  sni: cdn3.freegradely.xyz
-  network: ws
-- name: "\U0001F1FA\U0001F1F8 US 17 VMS"
-  type: vmess
-  server: 172.64.166.12
-  port: 2086
-  cipher: auto
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  alterId: 0
-  sni: ''
-  network: ws
-- name: "\U0001F1FA\U0001F1F8 US 18 VMS"
-  type: vmess
-  server: 172.64.166.12
-  port: 2086
-  cipher: auto
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  alterId: 0
-  sni: ''
-  network: ws
-- name: "\U0001F1FA\U0001F1F3 UN 19 VMS"
-  type: vmess
-  server: 104.19.55.49
-  port: 2086
-  cipher: auto
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  alterId: 0
-  sni: ip2.1457230.xyz
-  network: ws
-- name: "\U0001F1F0\U0001F1FF KZ 20 SSS"
-  type: ss
-  server: 89.44.193.112
-  port: 51348
-  password: 04yG0sOWSRVSlid9mfKUmmj8U4XgVlodu4oSRU90ey2e0CQ2
-  cipher: chacha20-ietf-poly1305
-- name: "\U0001F1E8\U0001F1F3 CN 21 SSS"
-  type: ss
-  server: deepf.hjkdsak2.com
-  port: 20003
-  password: 99301d55-a41f-4919-986b-1435996533aa
-  cipher: chacha20-ietf-poly1305
-- name: "\U0001F1FA\U0001F1F3 UN 22 VMS"
-  type: vmess
   server: 104.19.46.39
   port: 2086
   cipher: auto
@@ -172,7 +124,7 @@ proxies:
   alterId: 0
   sni: ''
   network: ws
-- name: "\U0001F1FA\U0001F1F3 UN 23 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 17 VMS"
   type: vmess
   server: 104.19.42.49
   port: 2052
@@ -181,12 +133,63 @@ proxies:
   alterId: 0
   sni: ''
   network: ws
-- name: "\U0001F1FA\U0001F1F3 UN 24 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 18 VMS"
   type: vmess
   server: 104.19.55.79
   port: 2052
   cipher: auto
   uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  alterId: 0
+  sni: ''
+  network: ws
+- name: "\U0001F1FA\U0001F1F3 UN 19 VMS"
+  type: vmess
+  server: 104.20.25.166
+  port: 2052
+  cipher: auto
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  alterId: 0
+  sni: cdn3.freegradely.xyz
+  network: ws
+- name: "\U0001F1E9\U0001F1EA DE 20 SSS"
+  type: ss
+  server: 80.92.204.106
+  port: 9064
+  password: cp8pRSUAyLhTfVWH
+  cipher: aes-256-cfb
+- name: "\U0001F1FA\U0001F1F8 US 21 VMS"
+  type: vmess
+  server: 172.64.233.24
+  port: 2086
+  cipher: auto
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  sni: ''
+  network: ws
+- name: "\U0001F1FA\U0001F1F3 UN 22 VMS"
+  type: vmess
+  server: 104.19.46.233
+  port: 2086
+  cipher: auto
+  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+  alterId: 0
+  sni: ip005.3196772.xyz
+  network: ws
+- name: "\U0001F1FA\U0001F1F8 US 23 VMS"
+  type: vmess
+  server: 172.64.99.32
+  port: 2052
+  cipher: auto
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  alterId: 0
+  sni: ''
+  network: ws
+- name: "\U0001F1FA\U0001F1F3 UN 24 VMS"
+  type: vmess
+  server: 104.19.46.22
+  port: 2086
+  cipher: auto
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
   sni: ''
   network: ws
@@ -210,13 +213,13 @@ proxy-groups:
   - "\U0001F1F9\U0001F1FC TW 14 TJN"
   - "\U0001F1E8\U0001F1E6 CA 15 VMS"
   - "\U0001F1FA\U0001F1F3 UN 16 VMS"
-  - "\U0001F1FA\U0001F1F8 US 17 VMS"
-  - "\U0001F1FA\U0001F1F8 US 18 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 17 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 18 VMS"
   - "\U0001F1FA\U0001F1F3 UN 19 VMS"
-  - "\U0001F1F0\U0001F1FF KZ 20 SSS"
-  - "\U0001F1E8\U0001F1F3 CN 21 SSS"
+  - "\U0001F1E9\U0001F1EA DE 20 SSS"
+  - "\U0001F1FA\U0001F1F8 US 21 VMS"
   - "\U0001F1FA\U0001F1F3 UN 22 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 23 VMS"
+  - "\U0001F1FA\U0001F1F8 US 23 VMS"
   - "\U0001F1FA\U0001F1F3 UN 24 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
@@ -240,13 +243,13 @@ proxy-groups:
   - "\U0001F1F9\U0001F1FC TW 14 TJN"
   - "\U0001F1E8\U0001F1E6 CA 15 VMS"
   - "\U0001F1FA\U0001F1F3 UN 16 VMS"
-  - "\U0001F1FA\U0001F1F8 US 17 VMS"
-  - "\U0001F1FA\U0001F1F8 US 18 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 17 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 18 VMS"
   - "\U0001F1FA\U0001F1F3 UN 19 VMS"
-  - "\U0001F1F0\U0001F1FF KZ 20 SSS"
-  - "\U0001F1E8\U0001F1F3 CN 21 SSS"
+  - "\U0001F1E9\U0001F1EA DE 20 SSS"
+  - "\U0001F1FA\U0001F1F8 US 21 VMS"
   - "\U0001F1FA\U0001F1F3 UN 22 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 23 VMS"
+  - "\U0001F1FA\U0001F1F8 US 23 VMS"
   - "\U0001F1FA\U0001F1F3 UN 24 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
