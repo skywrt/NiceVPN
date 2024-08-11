@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-08-11 12:35:11
+# 创建时间：2024-08-11 12:10:59
 # 使用模版：V2RaySE 默认模版
-# 节点数量：10
+# 节点数量：3
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -86,109 +86,60 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"新加坡_1","type":"vless","server":"ku.bisna.dynv6.net","port":2087,"uuid":"31d6cad7-b2f8-41f6-9d37-63585e22b049","tls":true,"servername":"ku.bisna.dynv6.net","network":"ws","ws-opts":{"path":"/?ed=2048"},"client-fingerprint":"random"}
-  - {"name":"新加坡_2","type":"vless","server":"ku.bisna.dynv6.net","port":2053,"uuid":"31d6cad7-b2f8-41f6-9d37-63585e22b049","tls":true,"servername":"ku.bisna.dynv6.net","network":"ws","ws-opts":{"path":"/?ed=2048"},"client-fingerprint":"random"}
-  - {"name":"新加坡_3","type":"vless","server":"ku.bisna.dynv6.net","port":2083,"uuid":"31d6cad7-b2f8-41f6-9d37-63585e22b049","tls":true,"servername":"ku.bisna.dynv6.net","network":"ws","ws-opts":{"path":"/?ed=2048"},"client-fingerprint":"random"}
-  - {"name":"新加坡_4","type":"vless","server":"ku.bisna.dynv6.net","port":8443,"uuid":"31d6cad7-b2f8-41f6-9d37-63585e22b049","tls":true,"servername":"ku.bisna.dynv6.net","network":"ws","ws-opts":{"path":"/?ed=2048"},"client-fingerprint":"random"}
-  - {"name":"新加坡_5","type":"vless","server":"ku.bisna.dynv6.net","port":443,"uuid":"31d6cad7-b2f8-41f6-9d37-63585e22b049","tls":true,"servername":"ku.bisna.dynv6.net","network":"ws","ws-opts":{"path":"/?ed=2048"},"client-fingerprint":"random"}
-  - {"name":"新加坡_6","type":"vless","server":"ku.bisna.dynv6.net","port":443,"uuid":"31d6cad7-b2f8-41f6-9d37-63585e22b049","tls":true,"servername":"ku.bisna.dynv6.net","network":"ws","ws-opts":{"path":"/?ed=2048"},"client-fingerprint":"random"}
-  - {"name":"新加坡_7","type":"vless","server":"ku.bisna.dynv6.net","port":2053,"uuid":"31d6cad7-b2f8-41f6-9d37-63585e22b049","tls":true,"servername":"ku.bisna.dynv6.net","network":"ws","ws-opts":{"path":"/?ed=2048"},"client-fingerprint":"random"}
-  - {"name":"新加坡_8","type":"vless","server":"ku.bisna.dynv6.net","port":2083,"uuid":"31d6cad7-b2f8-41f6-9d37-63585e22b049","tls":true,"servername":"ku.bisna.dynv6.net","network":"ws","ws-opts":{"path":"/?ed=2048"},"client-fingerprint":"random"}
-  - {"name":"新加坡_9","type":"vless","server":"ku.bisna.dynv6.net","port":2096,"uuid":"31d6cad7-b2f8-41f6-9d37-63585e22b049","tls":true,"servername":"ku.bisna.dynv6.net","network":"ws","ws-opts":{"path":"/?ed=2048"},"client-fingerprint":"random"}
-  - {"name":"新加坡_10","type":"vless","server":"ku.bisna.dynv6.net","port":2087,"uuid":"31d6cad7-b2f8-41f6-9d37-63585e22b049","tls":true,"servername":"ku.bisna.dynv6.net","network":"ws","ws-opts":{"path":"/?ed=2048"},"client-fingerprint":"random"}
+  - {"name":"新加坡","type":"vless","server":"104.18.52.41","port":8080,"uuid":"5409a9e5-98a9-49e1-9c35-1ca08d7886b0","tls":false,"servername":"ip.xxyi2024-7eb.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048"},"client-fingerprint":"randomized"}
+  - {"name":"sg","type":"vless","server":"104.19.44.23","port":443,"uuid":"5d6a503f-5948-4dc4-82d1-605fc72fda73","tls":true,"servername":"sg.croig.us.kg","network":"ws","ws-opts":{"path":"/?ed=2048"},"client-fingerprint":"randomized"}
+  - {"name":"1","type":"vless","server":"sg.bisnop.us.kg","port":2083,"uuid":"2b2ef020-58b9-4b1d-ad4c-41f5992c8338","tls":true,"servername":"sg.bisnop.us.kg","network":"ws","ws-opts":{"path":"/?ed=2048"}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 新加坡_1
-      - 新加坡_2
-      - 新加坡_3
-      - 新加坡_4
-      - 新加坡_5
-      - 新加坡_6
-      - 新加坡_7
-      - 新加坡_8
-      - 新加坡_9
-      - 新加坡_10
+      - 新加坡
+      - sg
+      - '1'
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 新加坡_1
-      - 新加坡_2
-      - 新加坡_3
-      - 新加坡_4
-      - 新加坡_5
-      - 新加坡_6
-      - 新加坡_7
-      - 新加坡_8
-      - 新加坡_9
-      - 新加坡_10
+      - 新加坡
+      - sg
+      - '1'
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡_1
-      - 新加坡_2
-      - 新加坡_3
-      - 新加坡_4
-      - 新加坡_5
-      - 新加坡_6
-      - 新加坡_7
-      - 新加坡_8
-      - 新加坡_9
-      - 新加坡_10
+      - 新加坡
+      - sg
+      - '1'
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 新加坡_1
-      - 新加坡_2
-      - 新加坡_3
-      - 新加坡_4
-      - 新加坡_5
-      - 新加坡_6
-      - 新加坡_7
-      - 新加坡_8
-      - 新加坡_9
-      - 新加坡_10
+      - 新加坡
+      - sg
+      - '1'
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 新加坡_1
-      - 新加坡_2
-      - 新加坡_3
-      - 新加坡_4
-      - 新加坡_5
-      - 新加坡_6
-      - 新加坡_7
-      - 新加坡_8
-      - 新加坡_9
-      - 新加坡_10
+      - 新加坡
+      - sg
+      - '1'
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 新加坡_1
-      - 新加坡_2
-      - 新加坡_3
-      - 新加坡_4
-      - 新加坡_5
-      - 新加坡_6
-      - 新加坡_7
-      - 新加坡_8
-      - 新加坡_9
-      - 新加坡_10
+      - 新加坡
+      - sg
+      - '1'
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -211,16 +162,9 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡_1
-      - 新加坡_2
-      - 新加坡_3
-      - 新加坡_4
-      - 新加坡_5
-      - 新加坡_6
-      - 新加坡_7
-      - 新加坡_8
-      - 新加坡_9
-      - 新加坡_10
+      - 新加坡
+      - sg
+      - '1'
 
 rules:
 # 本地/局域网地址
