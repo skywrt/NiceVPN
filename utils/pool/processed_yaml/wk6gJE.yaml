@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-08-17 10:38:20
+# 创建时间：2024-08-17 10:57:09
 # 使用模版：ACL4SSR_Mini.ini
 # 节点数量：203
 # 节点类型：ss, vmess
@@ -502,8 +502,8 @@ proxy-groups:
     url: https://www.gstatic.com/generate_204
     interval: 180
     tolerance: 1
+    strategy: latency
     proxies:
-      - Auto-Select
       - AL-31.171.153.178-0724 | 13.053MB
       - AL-31.171.153.181-0726 | 13.674MB
       - BA-185.164.35.9-0727 | 13.069MB
