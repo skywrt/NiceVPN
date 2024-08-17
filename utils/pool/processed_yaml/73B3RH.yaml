@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-08-17 19:00:36
+# 创建时间：2024-08-17 19:44:58
 # 使用模版：ACL4SSR_Mini.ini
 # 节点数量：990
 # 节点类型：ss, vmess, trojan
@@ -15,8 +15,8 @@ dns:
   listen: 0.0.0.0:1053
   ipv6: true
   default-nameserver:
-    - 1.1.1.1
-    - 9.9.9.9
+    - tls://1.1.1.1
+    - tls://9.9.9.9
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
@@ -2074,7 +2074,7 @@ proxy-groups:
   - name: 🔯 故障转移
     type: fallback
     url: https://www.gstatic.com/generate_204
-    interval: 180
+    interval: 300
     proxies:
       - 加拿大-864.1KB/s
       - 德国-123.2KB/s
