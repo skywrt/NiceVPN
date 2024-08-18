@@ -7,16 +7,16 @@
 # 节点类型：ss, vmess
 ####################################
 mixed-port: 7890
-allow-lan: true
-log-level: info
-external-controller: 0.0.0.0:9090
+allow-lan: false
+log-level: silent
+external-controller: 127.0.0.1:9090
 dns:
   enabled: true
   listen: 0.0.0.0:1053
   ipv6: true
   default-nameserver:
-    - 223.5.5.5
-    - 114.114.114.114
+    - tls://1.1.1.1:443
+    - tls://9.9.9.9:443
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
@@ -77,13 +77,12 @@ dns:
     - stun.*.*.*
     - '*.mcdn.bilivideo.cn'
   nameserver:
-    - https://doh.pub/dns-query
-    - https://dns.alidns.com/dns-query
+    - https://cloudflare-dns.com/dns-query
+    - https://dns.quad9.net/dns-query
   fallback-filter:
-    geoip: false
+    geoip: true
     ipcidr:
       - 240.0.0.0/4
-      - 0.0.0.0/32
 
 proxies:
   - {"name":"GB_瑞恩南京首席门徒閑哥Game私教一对一请加微信:txyz6234，订阅《閑哥情感TV（165CM大叔无房无车）》免费领取一套线上课\r_1","type":"ss","server":"212.102.53.197","port":443,"password":"shadowsocks","cipher":"aes-128-gcm"}
