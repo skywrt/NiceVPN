@@ -1,22 +1,22 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-08-18 12:53:21
+# 创建时间：2024-08-18 12:12:43
 # 使用模版：ACL4SSR_Mini.ini
 # 节点数量：229
 # 节点类型：ss, vmess
 ####################################
 mixed-port: 7890
-allow-lan: false
-log-level: silent
-external-controller: 127.0.0.1:9090
+allow-lan: true
+log-level: info
+external-controller: 0.0.0.0:9090
 dns:
   enabled: true
   listen: 0.0.0.0:1053
   ipv6: true
   default-nameserver:
-    - tls://1.1.1.1:443
-    - tls://9.9.9.9:443
+    - 223.5.5.5
+    - 114.114.114.114
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
@@ -77,12 +77,13 @@ dns:
     - stun.*.*.*
     - '*.mcdn.bilivideo.cn'
   nameserver:
-    - https://cloudflare-dns.com/dns-query
-    - https://dns.quad9.net/dns-query
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
   fallback-filter:
-    geoip: true
+    geoip: false
     ipcidr:
       - 240.0.0.0/4
+      - 0.0.0.0/32
 
 proxies:
   - {"name":"GB_瑞恩南京首席门徒閑哥Game私教一对一请加微信:txyz6234，订阅《閑哥情感TV（165CM大叔无房无车）》免费领取一套线上课\r_1","type":"ss","server":"212.102.53.197","port":443,"password":"shadowsocks","cipher":"aes-128-gcm"}
@@ -554,7 +555,7 @@ proxy-groups:
     url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 1
-    timeout: 1
+    timeout: 3
     lazy: true
     proxies:
       - "GB_瑞恩南京首席门徒閑哥Game私教一对一请加微信:txyz6234，订阅《閑哥情感TV（165CM大叔无房无车）》免费领取一套线上课\r_1"
