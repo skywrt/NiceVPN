@@ -1,12 +1,12 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-08-19 11:11:39
-# 使用模版：qq
+# 创建时间：2024-08-19 11:16:57
+# 使用模版：问问
 # 节点数量：35
 # 节点类型：vless, hysteria2, vmess
-# !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
+# !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -73,7 +73,7 @@ proxies:
   - {"name":"US4","type":"vless","server":"us4.speed-mitce.top","port":10004,"udp":true,"cipher":"auto","uuid":"43AD00F6-5BDB-4931-A422-A0E53193EA10","tls":true,"servername":"s0.awsstatic.com","flow":"xtls-rprx-vision","reality-opts":{"public-key":"dR1QmDjsiujobG0AxdPdsom9gNkgf8qnJglB49-XclM","short-id":"01fc5e98a68e5e7b"},"client-fingerprint":"chrome"}
   - {"name":"US5","type":"vless","server":"us5.speed-mitce.top","port":10005,"udp":true,"cipher":"auto","uuid":"43AD00F6-5BDB-4931-A422-A0E53193EA10","tls":true,"servername":"s0.awsstatic.com","flow":"xtls-rprx-vision","reality-opts":{"public-key":"dR1QmDjsiujobG0AxdPdsom9gNkgf8qnJglB49-XclM","short-id":"01fc5e98a68e5e7b"},"client-fingerprint":"chrome"}
 proxy-groups:
-  - name: 一元机场
+  - name: .*
     type: select
     proxies:
       - 自动选择
@@ -195,11 +195,6 @@ proxy-groups:
       - US5
 
 rules:
-# 长风网站，自动注入
-  - DOMAIN-SUFFIX,v2rayse.com,一元机场
-  - DOMAIN-SUFFIX,cff.pw,一元机场
-  - DOMAIN-SUFFIX,vpnse.org,一元机场
-  - DOMAIN-SUFFIX,cfmem.com,一元机场
   - DOMAIN-SUFFIX,xn--4gq62f52gdss.com,一元机场
   - DOMAIN-SUFFIX,xn--4gq62f52gdss.club,一元机场
   - DOMAIN-SUFFIX,xn--4gq62f52gdss.art,一元机场
