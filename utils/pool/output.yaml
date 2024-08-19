@@ -115,6 +115,71 @@ proxies:
     headers:
       Host: ip006.freegradely.xyz
   udp: true
+- name: "\U0001F1ED\U0001F1F0 HK 16 VMS"
+  type: vmess
+  server: grpc-hk-1.axe.is
+  port: 50001
+  udp: true
+  cipher: auto
+  uuid: 43AD00F6-5BDB-4931-A422-A0E53193EA10
+  alterId: 0
+  tls: true
+  servername: ''
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: "\U0001F1ED\U0001F1F0 HK 17 VMS"
+  type: vmess
+  server: grpc-hk-2.axe.is
+  port: 50002
+  udp: true
+  cipher: auto
+  uuid: 43AD00F6-5BDB-4931-A422-A0E53193EA10
+  alterId: 0
+  tls: true
+  servername: ''
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: "\U0001F1ED\U0001F1F0 HK 18 VMS"
+  type: vmess
+  server: grpc-hk-3.axe.is
+  port: 50003
+  udp: true
+  cipher: auto
+  uuid: 43AD00F6-5BDB-4931-A422-A0E53193EA10
+  alterId: 0
+  tls: true
+  servername: ''
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: "\U0001F1F9\U0001F1FC TW 19 VMS"
+  type: vmess
+  server: grpc-tw-1.axe.is
+  port: 50001
+  udp: true
+  cipher: auto
+  uuid: 43AD00F6-5BDB-4931-A422-A0E53193EA10
+  alterId: 0
+  tls: true
+  servername: ''
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: "\U0001F1F9\U0001F1FC TW 20 VMS"
+  type: vmess
+  server: grpc-tw-2.axe.is
+  port: 50002
+  udp: true
+  cipher: auto
+  uuid: 43AD00F6-5BDB-4931-A422-A0E53193EA10
+  alterId: 0
+  tls: true
+  servername: ''
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
 proxy-groups:
 - name: automatic
   type: url-test
@@ -134,6 +199,11 @@ proxy-groups:
   - "\U0001F1F9\U0001F1FC TW 13 TJN"
   - "\U0001F1F9\U0001F1FC TW 14 TJN"
   - "\U0001F1E8\U0001F1E6 CA 15 VMS"
+  - "\U0001F1ED\U0001F1F0 HK 16 VMS"
+  - "\U0001F1ED\U0001F1F0 HK 17 VMS"
+  - "\U0001F1ED\U0001F1F0 HK 18 VMS"
+  - "\U0001F1F9\U0001F1FC TW 19 VMS"
+  - "\U0001F1F9\U0001F1FC TW 20 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -155,5 +225,10 @@ proxy-groups:
   - "\U0001F1F9\U0001F1FC TW 13 TJN"
   - "\U0001F1F9\U0001F1FC TW 14 TJN"
   - "\U0001F1E8\U0001F1E6 CA 15 VMS"
+  - "\U0001F1ED\U0001F1F0 HK 16 VMS"
+  - "\U0001F1ED\U0001F1F0 HK 17 VMS"
+  - "\U0001F1ED\U0001F1F0 HK 18 VMS"
+  - "\U0001F1F9\U0001F1FC TW 19 VMS"
+  - "\U0001F1F9\U0001F1FC TW 20 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
