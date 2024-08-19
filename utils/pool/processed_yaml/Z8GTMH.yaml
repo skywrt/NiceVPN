@@ -3067,7 +3067,8 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-      - 🔯 故障转移
+      - 🚀 节点选择
+      - ♻️ 自动选择
   - name: 🛑 全球拦截
     type: select
     proxies:
@@ -3076,8 +3077,9 @@ proxy-groups:
   - name: 🐟 漏网之鱼
     type: select
     proxies:
+      - 🚀 节点选择
       - 🎯 全球直连
-      - 🔯 故障转移
+      - ♻️ 自动选择
       - 加拿大-864.1KB/s
       - 德国-123.2KB/s
       - 德国-199.6KB/s
