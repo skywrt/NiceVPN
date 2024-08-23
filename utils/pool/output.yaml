@@ -128,7 +128,8 @@ proxies:
   cipher: auto
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
-  sni: ''
+  tls: false
+  skip-cert-verify: true
   network: ws
 - name: "\U0001F1FA\U0001F1F3 UN 18 VMS"
   type: vmess
@@ -137,7 +138,8 @@ proxies:
   cipher: auto
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
-  sni: ''
+  tls: false
+  skip-cert-verify: true
   network: ws
 - name: "\U0001F1F7\U0001F1FA RU 19 TJN"
   type: trojan
@@ -145,12 +147,9 @@ proxies:
   port: 39257
   udp: true
   password: FXsXW6uWH5HqptVp7H2SfFvrTRHDnAsn
-  sni: ihave.baselinux.net
+  sni: ihave.baselinux.neth3,h2,http/1.1
+  skip-cert-verify: true
   network: grpc
-  alpn:
-  - h3
-  - h2
-  - http/1.1
 - name: "\U0001F1FA\U0001F1F3 UN 20 VMS"
   type: vmess
   server: 104.19.45.11
@@ -158,14 +157,18 @@ proxies:
   cipher: auto
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
-  sni: ''
+  tls: false
+  skip-cert-verify: true
   network: ws
 - name: "\U0001F1FA\U0001F1E6 UA 21 TJN"
   type: trojan
   server: cn2.cdn.xfltd-cdn.top
   port: 12070
+  udp: true
   password: 3698a3e7-2877-4ded-a665-d81ee3cfd449
   sni: cdn.alibaba.com
+  skip-cert-verify: true
+  network: tcp
 - name: "\U0001F1FA\U0001F1F3 UN 22 VMS"
   type: vmess
   server: 104.19.45.47
@@ -173,7 +176,8 @@ proxies:
   cipher: auto
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
-  sni: ''
+  tls: false
+  skip-cert-verify: true
   network: ws
 - name: "\U0001F1FA\U0001F1F3 UN 23 VMS"
   type: vmess
@@ -182,7 +186,8 @@ proxies:
   cipher: auto
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
-  sni: ''
+  tls: false
+  skip-cert-verify: true
   network: ws
 - name: "\U0001F1FA\U0001F1F8 US 24 VMS"
   type: vmess
@@ -191,7 +196,8 @@ proxies:
   cipher: auto
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
-  sni: ''
+  tls: false
+  skip-cert-verify: true
   network: ws
 - name: "\U0001F1FA\U0001F1F3 UN 25 VMS"
   type: vmess
@@ -200,6 +206,8 @@ proxies:
   cipher: auto
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
+  tls: false
+  skip-cert-verify: true
   network: ws
 - name: "\U0001F1FA\U0001F1F8 US 26 VMS"
   type: vmess
@@ -208,7 +216,8 @@ proxies:
   cipher: auto
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
-  sni: ''
+  tls: false
+  skip-cert-verify: true
   network: ws
 - name: "\U0001F1FA\U0001F1F3 UN 27 VMS"
   type: vmess
@@ -217,7 +226,8 @@ proxies:
   cipher: auto
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
-  sni: ''
+  tls: false
+  skip-cert-verify: true
   network: ws
 - name: "\U0001F1FA\U0001F1F3 UN 28 VMS"
   type: vmess
@@ -226,7 +236,8 @@ proxies:
   cipher: auto
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
-  sni: ''
+  tls: false
+  skip-cert-verify: true
   network: ws
 - name: "\U0001F1FA\U0001F1F8 US 29 VMS"
   type: vmess
@@ -235,7 +246,8 @@ proxies:
   cipher: auto
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
-  sni: ''
+  tls: false
+  skip-cert-verify: true
   network: ws
 - name: "\U0001F1FA\U0001F1F8 US 30 VMS"
   type: vmess
@@ -244,7 +256,8 @@ proxies:
   cipher: auto
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
-  sni: ''
+  tls: false
+  skip-cert-verify: true
   network: ws
 - name: "\U0001F1E9\U0001F1EA DE 31 SSS"
   type: ss
@@ -265,7 +278,8 @@ proxies:
   cipher: auto
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
-  sni: ''
+  tls: false
+  skip-cert-verify: true
   network: ws
 - name: "\U0001F1FA\U0001F1F3 UN 34 VMS"
   type: vmess
@@ -274,7 +288,8 @@ proxies:
   cipher: auto
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
-  sni: ip2.1457230.xyz
+  tls: false
+  skip-cert-verify: true
   network: ws
 - name: "\U0001F1FA\U0001F1F3 UN 35 VMS"
   type: vmess
@@ -283,7 +298,8 @@ proxies:
   cipher: auto
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
-  sni: ip11.freegradely.xyz
+  tls: false
+  skip-cert-verify: true
   network: ws
 - name: "\U0001F1FA\U0001F1F3 UN 36 VMS"
   type: vmess
@@ -292,7 +308,8 @@ proxies:
   cipher: auto
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
-  sni: ''
+  tls: false
+  skip-cert-verify: true
   network: ws
 - name: "\U0001F1FA\U0001F1F3 UN 37 VMS"
   type: vmess
@@ -301,6 +318,8 @@ proxies:
   cipher: auto
   uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
   alterId: 0
+  tls: false
+  skip-cert-verify: true
   network: ws
 - name: "\U0001F1FA\U0001F1F3 UN 38 VMS"
   type: vmess
@@ -309,14 +328,18 @@ proxies:
   cipher: auto
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
-  sni: ''
+  tls: false
+  skip-cert-verify: true
   network: ws
 - name: "\U0001F1E8\U0001F1E6 CA 39 TJN"
   type: trojan
   server: 15.156.140.120
   port: 22222
+  udp: true
   password: telegram-id-directvpn
   sni: trojan.burgerip.co.uk
+  skip-cert-verify: true
+  network: tcp
 - name: "\U0001F1FA\U0001F1F3 UN 40 VMS"
   type: vmess
   server: 104.19.47.77
@@ -324,7 +347,8 @@ proxies:
   cipher: auto
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
-  sni: ''
+  tls: false
+  skip-cert-verify: true
   network: ws
 - name: "\U0001F1EB\U0001F1F7 FR 41 SSS"
   type: ss
@@ -339,7 +363,8 @@ proxies:
   cipher: auto
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
-  sni: ''
+  tls: false
+  skip-cert-verify: true
   network: ws
 - name: "\U0001F1FA\U0001F1F3 UN 43 VMS"
   type: vmess
@@ -348,7 +373,8 @@ proxies:
   cipher: auto
   uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
   alterId: 0
-  sni: ''
+  tls: false
+  skip-cert-verify: true
   network: ws
 - name: "\U0001F1FA\U0001F1F3 UN 44 VMS"
   type: vmess
@@ -357,7 +383,8 @@ proxies:
   cipher: auto
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
-  sni: ''
+  tls: false
+  skip-cert-verify: true
   network: ws
 - name: "\U0001F1FA\U0001F1F3 UN 45 VMS"
   type: vmess
@@ -366,7 +393,8 @@ proxies:
   cipher: auto
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
-  sni: ''
+  tls: false
+  skip-cert-verify: true
   network: ws
 - name: "\U0001F1FA\U0001F1F8 US 46 VMS"
   type: vmess
@@ -375,7 +403,8 @@ proxies:
   cipher: auto
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
-  sni: ''
+  tls: false
+  skip-cert-verify: true
   network: ws
 - name: "\U0001F1FA\U0001F1F3 UN 47 VMS"
   type: vmess
@@ -384,7 +413,8 @@ proxies:
   cipher: auto
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
-  sni: ''
+  tls: false
+  skip-cert-verify: true
   network: ws
 - name: "\U0001F1FA\U0001F1F8 US 48 VMS"
   type: vmess
@@ -393,7 +423,8 @@ proxies:
   cipher: auto
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
-  sni: ''
+  tls: false
+  skip-cert-verify: true
   network: ws
 - name: "\U0001F1FA\U0001F1F8 US 49 VMS"
   type: vmess
@@ -402,7 +433,8 @@ proxies:
   cipher: auto
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
-  sni: ''
+  tls: false
+  skip-cert-verify: true
   network: ws
 - name: "\U0001F1FA\U0001F1F3 UN 50 VMS"
   type: vmess
@@ -411,6 +443,8 @@ proxies:
   cipher: auto
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
+  tls: false
+  skip-cert-verify: true
   network: ws
 - name: "\U0001F1E8\U0001F1E6 CA 51 VMS"
   type: vmess
@@ -419,7 +453,8 @@ proxies:
   cipher: auto
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
-  sni: ''
+  tls: false
+  skip-cert-verify: true
   network: ws
 - name: "\U0001F1EB\U0001F1F7 FR 52 SSS"
   type: ss
@@ -434,7 +469,8 @@ proxies:
   cipher: auto
   uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
   alterId: 0
-  sni: ip006.dtku47.xyz
+  tls: false
+  skip-cert-verify: true
   network: ws
 - name: "\U0001F1FA\U0001F1F3 UN 54 VMS"
   type: vmess
@@ -443,7 +479,8 @@ proxies:
   cipher: auto
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
-  sni: ''
+  tls: false
+  skip-cert-verify: true
   network: ws
 - name: "\U0001F1FA\U0001F1F8 US 55 VMS"
   type: vmess
@@ -452,7 +489,8 @@ proxies:
   cipher: auto
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
-  sni: ''
+  tls: false
+  skip-cert-verify: true
   network: ws
 - name: "\U0001F1F7\U0001F1FA RU 56 SSS"
   type: ss
@@ -467,7 +505,8 @@ proxies:
   cipher: auto
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
-  sni: ip2.1457230.xyz
+  tls: false
+  skip-cert-verify: true
   network: ws
 proxy-groups:
 - name: automatic
