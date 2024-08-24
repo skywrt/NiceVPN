@@ -1,10 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-08-24 16:10:08
+# 创建时间：24-08-2024 03:01:36
 # 使用模版：ACL4SSR.ini
-# 节点数量：14
-# 节点类型：vless, vmess, ss, hysteria2
+# 节点数量：1
+# 节点类型：hysteria2
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
 mixed-port: 7890
@@ -87,137 +87,46 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"FLEX1(vl-reality)","type":"vless","server":"140.83.63.100","port":49248,"udp":true,"uuid":"956c328e-81ac-41b7-b146-ed74abd0fb86","tls":true,"servername":"www.yahoo.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"Cy_K8I6NC_fL-bKkIhUvdeGUyXTMXaCMt2_47bMxBmc","short-id":"8e8aaad6"},"client-fingerprint":"chrome"}
-  - {"name":"FLEX2-ja2r584f","type":"vmess","server":"168.138.55.200","port":47710,"cipher":"auto","uuid":"a91e8b30-81ef-494b-8a9b-5e27a12b27f1","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"FLEX2(vless)-ds56gx58","type":"vless","server":"168.138.55.200","port":52904,"uuid":"f006019c-53c4-4c33-b058-c0a14d791413","tls":false,"network":"tcp"}
-  - {"name":"E2(233ss)","type":"ss","server":"138.2.56.185","port":61752,"password":"233blog.com","cipher":"aes-256-gcm"}
-  - {"name":"FLEX1(hy2-history)","type":"hysteria2","server":"140.83.63.100","port":37850,"password":"956c328e-81ac-41b7-b146-ed74abd0fb86","sni":"www.bing.com","skip-cert-verify":true,"alpn":["h3"]}
-  - {"name":"E2(vl-reality)","type":"vless","server":"64.110.111.153","port":14622,"udp":true,"uuid":"a9e258d5-91c1-48f8-be6b-f7ea1807ea9b","tls":true,"servername":"www.yahoo.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"Oe48cPCtzCARnrBCCTV-UGkO7AniB0coGKUfiC5S2Ds","short-id":"3b4f98cc"},"client-fingerprint":"chrome"}
-  - {"name":"FLEX1(vm-argo)","type":"vmess","server":"www.visa.com.sg","port":8443,"cipher":"auto","uuid":"956c328e-81ac-41b7-b146-ed74abd0fb86","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"pubs-quantitative-ensemble-clicks.trycloudflare.com","network":"ws","ws-opts":{"path":"956c328e-81ac-41b7-b146-ed74abd0fb86-vm","headers":{"host":"pubs-quantitative-ensemble-clicks.trycloudflare.com"}}}
-  - {"name":"FLEX1（wmess)","type":"vmess","server":"140.83.63.100","port":2082,"cipher":"auto","uuid":"956c328e-81ac-41b7-b146-ed74abd0fb86","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"956c328e-81ac-41b7-b146-ed74abd0fb86-vm","headers":{"host":"www.bing.com"}}}
-  - {"name":"E2(vm-argo)","type":"vmess","server":"www.visa.com.sg","port":8443,"cipher":"auto","uuid":"a9e258d5-91c1-48f8-be6b-f7ea1807ea9b","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"looked-regarded-tr-purple.trycloudflare.com","network":"ws","ws-opts":{"path":"a9e258d5-91c1-48f8-be6b-f7ea1807ea9b-vm","headers":{"host":"looked-regarded-tr-purple.trycloudflare.com"}}}
-  - {"name":"E2(vm-ws)","type":"vmess","server":"64.110.111.153","port":8880,"cipher":"auto","uuid":"a9e258d5-91c1-48f8-be6b-f7ea1807ea9b","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"a9e258d5-91c1-48f8-be6b-f7ea1807ea9b-vm","headers":{"host":"www.bing.com"}}}
-  - {"name":"E2(hy2-instance)","type":"hysteria2","server":"64.110.111.153","port":50488,"password":"a9e258d5-91c1-48f8-be6b-f7ea1807ea9b","sni":"www.bing.com","skip-cert-verify":true,"alpn":["h3"]}
-  - {"name":"defaultName","server":"64.110.111.153","port":62556,"password":"a9e258d5-91c1-48f8-be6b-f7ea1807ea9b","uuid":"a9e258d5-91c1-48f8-be6b-f7ea1807ea9b","sni":"www.bing.com","alpn":["h3"],"congestion_control":"bbr#E2(tu5-instance)"}
-  - {"name":"lys808（1）","type":"vless","server":"104.19.62.86","port":443,"uuid":"b9a0d34b-57d3-42ae-b3ae-303f9ce4d09b","tls":true,"servername":"lys808.jammarchday.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"lys808.jammarchday.workers.dev"}},"client-fingerprint":"randomized"}
-  - {"name":"lys808（2）","type":"vless","server":"bestcf.onecf.eu.org","port":2082,"uuid":"b9a0d34b-57d3-42ae-b3ae-303f9ce4d09b","tls":false,"servername":"lys808.jammarchday.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"lys808.jammarchday.workers.dev"}},"client-fingerprint":"randomized"}
+  - {"name":"Hyteria2_oksig_VVIP","type":"hysteria2","server":"103.182.47.241","port":443,"password":"6676aa086fd020d3","sni":"sdc.sing-box.id","skip-cert-verify":true,"obfs-password":"t.me/iptunnels"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - FLEX1(vl-reality)
-      - FLEX2-ja2r584f
-      - FLEX2(vless)-ds56gx58
-      - E2(233ss)
-      - FLEX1(hy2-history)
-      - E2(vl-reality)
-      - FLEX1(vm-argo)
-      - FLEX1（wmess)
-      - E2(vm-argo)
-      - E2(vm-ws)
-      - E2(hy2-instance)
-      - defaultName
-      - lys808（1）
-      - lys808（2）
+      - Hyteria2_oksig_VVIP
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - FLEX1(vl-reality)
-      - FLEX2-ja2r584f
-      - FLEX2(vless)-ds56gx58
-      - E2(233ss)
-      - FLEX1(hy2-history)
-      - E2(vl-reality)
-      - FLEX1(vm-argo)
-      - FLEX1（wmess)
-      - E2(vm-argo)
-      - E2(vm-ws)
-      - E2(hy2-instance)
-      - defaultName
-      - lys808（1）
-      - lys808（2）
+      - Hyteria2_oksig_VVIP
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - FLEX1(vl-reality)
-      - FLEX2-ja2r584f
-      - FLEX2(vless)-ds56gx58
-      - E2(233ss)
-      - FLEX1(hy2-history)
-      - E2(vl-reality)
-      - FLEX1(vm-argo)
-      - FLEX1（wmess)
-      - E2(vm-argo)
-      - E2(vm-ws)
-      - E2(hy2-instance)
-      - defaultName
-      - lys808（1）
-      - lys808（2）
+      - Hyteria2_oksig_VVIP
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - FLEX1(vl-reality)
-      - FLEX2-ja2r584f
-      - FLEX2(vless)-ds56gx58
-      - E2(233ss)
-      - FLEX1(hy2-history)
-      - E2(vl-reality)
-      - FLEX1(vm-argo)
-      - FLEX1（wmess)
-      - E2(vm-argo)
-      - E2(vm-ws)
-      - E2(hy2-instance)
-      - defaultName
-      - lys808（1）
-      - lys808（2）
+      - Hyteria2_oksig_VVIP
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - FLEX1(vl-reality)
-      - FLEX2-ja2r584f
-      - FLEX2(vless)-ds56gx58
-      - E2(233ss)
-      - FLEX1(hy2-history)
-      - E2(vl-reality)
-      - FLEX1(vm-argo)
-      - FLEX1（wmess)
-      - E2(vm-argo)
-      - E2(vm-ws)
-      - E2(hy2-instance)
-      - defaultName
-      - lys808（1）
-      - lys808（2）
+      - Hyteria2_oksig_VVIP
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - FLEX1(vl-reality)
-      - FLEX2-ja2r584f
-      - FLEX2(vless)-ds56gx58
-      - E2(233ss)
-      - FLEX1(hy2-history)
-      - E2(vl-reality)
-      - FLEX1(vm-argo)
-      - FLEX1（wmess)
-      - E2(vm-argo)
-      - E2(vm-ws)
-      - E2(hy2-instance)
-      - defaultName
-      - lys808（1）
-      - lys808（2）
+      - Hyteria2_oksig_VVIP
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -240,20 +149,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - FLEX1(vl-reality)
-      - FLEX2-ja2r584f
-      - FLEX2(vless)-ds56gx58
-      - E2(233ss)
-      - FLEX1(hy2-history)
-      - E2(vl-reality)
-      - FLEX1(vm-argo)
-      - FLEX1（wmess)
-      - E2(vm-argo)
-      - E2(vm-ws)
-      - E2(hy2-instance)
-      - defaultName
-      - lys808（1）
-      - lys808（2）
+      - Hyteria2_oksig_VVIP
 
 rules:
 # 本地/局域网地址
