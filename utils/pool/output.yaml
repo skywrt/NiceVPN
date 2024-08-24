@@ -115,83 +115,6 @@ proxies:
     headers:
       Host: ip006.freegradely.xyz
   udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 16 VMS"
-  type: vmess
-  server: 168.138.55.200
-  port: 47710
-  cipher: auto
-  uuid: a91e8b30-81ef-494b-8a9b-5e27a12b27f1
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: ''
-  network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 17 SSS"
-  type: ss
-  server: 138.2.56.185
-  port: 61752
-  password: 233blog.com
-  cipher: aes-256-gcm
-- name: "\U0001F1FA\U0001F1F3 UN 18 VMS"
-  type: vmess
-  server: www.visa.com.sg
-  port: 8443
-  cipher: auto
-  uuid: 956c328e-81ac-41b7-b146-ed74abd0fb86
-  alterId: 0
-  tls: true
-  skip-cert-verify: true
-  servername: pubs-quantitative-ensemble-clicks.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: 956c328e-81ac-41b7-b146-ed74abd0fb86-vm
-    headers:
-      host: pubs-quantitative-ensemble-clicks.trycloudflare.com
-- name: "\U0001F1EF\U0001F1F5 JP 19 VMS"
-  type: vmess
-  server: 140.83.63.100
-  port: 2082
-  cipher: auto
-  uuid: 956c328e-81ac-41b7-b146-ed74abd0fb86
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: 956c328e-81ac-41b7-b146-ed74abd0fb86-vm
-    headers:
-      host: www.bing.com
-- name: "\U0001F1FA\U0001F1F3 UN 20 VMS"
-  type: vmess
-  server: www.visa.com.sg
-  port: 8443
-  cipher: auto
-  uuid: a9e258d5-91c1-48f8-be6b-f7ea1807ea9b
-  alterId: 0
-  tls: true
-  skip-cert-verify: true
-  servername: looked-regarded-tr-purple.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: a9e258d5-91c1-48f8-be6b-f7ea1807ea9b-vm
-    headers:
-      host: looked-regarded-tr-purple.trycloudflare.com
-- name: "\U0001F1E8\U0001F1ED CH 21 VMS"
-  type: vmess
-  server: 64.110.111.153
-  port: 8880
-  cipher: auto
-  uuid: a9e258d5-91c1-48f8-be6b-f7ea1807ea9b
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: a9e258d5-91c1-48f8-be6b-f7ea1807ea9b-vm
-    headers:
-      host: www.bing.com
 proxy-groups:
 - name: automatic
   type: url-test
@@ -211,12 +134,6 @@ proxy-groups:
   - "\U0001F1F9\U0001F1FC TW 13 TJN"
   - "\U0001F1F9\U0001F1FC TW 14 TJN"
   - "\U0001F1E8\U0001F1E6 CA 15 VMS"
-  - "\U0001F1EF\U0001F1F5 JP 16 VMS"
-  - "\U0001F1EF\U0001F1F5 JP 17 SSS"
-  - "\U0001F1FA\U0001F1F3 UN 18 VMS"
-  - "\U0001F1EF\U0001F1F5 JP 19 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 20 VMS"
-  - "\U0001F1E8\U0001F1ED CH 21 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -238,11 +155,5 @@ proxy-groups:
   - "\U0001F1F9\U0001F1FC TW 13 TJN"
   - "\U0001F1F9\U0001F1FC TW 14 TJN"
   - "\U0001F1E8\U0001F1E6 CA 15 VMS"
-  - "\U0001F1EF\U0001F1F5 JP 16 VMS"
-  - "\U0001F1EF\U0001F1F5 JP 17 SSS"
-  - "\U0001F1FA\U0001F1F3 UN 18 VMS"
-  - "\U0001F1EF\U0001F1F5 JP 19 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 20 VMS"
-  - "\U0001F1E8\U0001F1ED CH 21 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
