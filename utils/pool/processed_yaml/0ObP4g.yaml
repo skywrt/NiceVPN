@@ -1,9 +1,9 @@
 #
 #-------------------------------------------------------------#
 #  创建者：https://v2rayse.com
-#  创建时间：2024-08-27 18:33:35
+#  创建时间：2024-08-27 16:38:10
 #  模版：v2rayse默认模版
-#  节点数量：10
+#  节点数量：1
 #-------------------------------------------------------------#
 #
 port: 7890
@@ -13,109 +13,46 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"type":"vless","name":"✅️AzadNet-Domain_1:443","server":"azadnet-freedom-iranian3.pages.dev","port":443,"uuid":"89b3cbba-e6ac-485a-9481-976a0415eab9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"AZADneT-frEedOm-IRAnian3.PagES.Dev","ws-opts":{"path":"/JNmoUCklQaKukMGZ?ed=2560","headers":{"host":"AZADneT-frEedOm-IRAnian3.PagES.Dev"}}}
-  - {"type":"vless","name":"✅️AzadNet-Domain_2:443","server":"tgju.org","port":443,"uuid":"89b3cbba-e6ac-485a-9481-976a0415eab9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"AZadNet-FREEdOm-IrANIAn3.PageS.Dev","ws-opts":{"path":"/exnZcB3sSsD0DaJJ?ed=2560","headers":{"host":"AZadNet-FREEdOm-IrANIAn3.PageS.Dev"}}}
-  - {"type":"vless","name":"✅️AzadNet-IPv4_1:443","server":"188.114.96.3","port":443,"uuid":"89b3cbba-e6ac-485a-9481-976a0415eab9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"AZadNet-FReedOm-IraNiAN3.pAgeS.DEV","ws-opts":{"path":"/Eimzx0mlro5G5qwu?ed=2560","headers":{"host":"AZadNet-FReedOm-IraNiAN3.pAgeS.DEV"}}}
-  - {"type":"vless","name":"✅️AzadNet-IPv4_2:443","server":"188.114.97.3","port":443,"uuid":"89b3cbba-e6ac-485a-9481-976a0415eab9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"AzaDnEt-fReedoM-IRANIAN3.pages.dEv","ws-opts":{"path":"/OIQ0tJ2Oo1Hg01oN?ed=2560","headers":{"host":"AzaDnEt-fReedoM-IRANIAN3.pages.dEv"}}}
-  - {"type":"vless","name":"✅️AzadNet-IPv6_1:443","server":"[2a06","port":98,"uuid":"89b3cbba-e6ac-485a-9481-976a0415eab9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"azadNET-FReEdoM-irANiaN3.PAgeS.Dev","ws-opts":{"path":"/EYdLOHXPBiBwvLs4?ed=2560","headers":{"host":"azadNET-FReEdoM-irANiaN3.PAgeS.Dev"}}}
-  - {"type":"vless","name":"✅️AzadNet-IPv6_2:443","server":"[2a06","port":98,"uuid":"89b3cbba-e6ac-485a-9481-976a0415eab9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"azADNEt-frEEdOm-iraNIAn3.PAGeS.DEV","ws-opts":{"path":"/zdjume9bSevLbqf5?ed=2560","headers":{"host":"azADNEt-frEEdOm-iraNIAn3.PAGeS.DEV"}}}
-  - {"type":"vless","name":"✅️AzadNet-CleanIP_1:443","server":"www.ipget.net","port":443,"uuid":"89b3cbba-e6ac-485a-9481-976a0415eab9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"AzADNEt-fREeDOM-iRanIAN3.PageS.DEv","ws-opts":{"path":"/Tp3WSFdlw0H3V7Ex?ed=2560","headers":{"host":"AzADNEt-fREeDOM-iRanIAN3.PageS.DEv"}}}
-  - {"type":"vless","name":"✅️AzadNet-CleanIP_2:443","server":"icook.hk","port":443,"uuid":"89b3cbba-e6ac-485a-9481-976a0415eab9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"aZaDnET-fREEdOm-iraNIAN3.pAgeS.Dev","ws-opts":{"path":"/i26aSzb7qMi7nt6P?ed=2560","headers":{"host":"aZaDnET-fREEdOm-iraNIAN3.pAgeS.Dev"}}}
-  - {"type":"vless","name":"✅️AzadNet-CleanIP_3:443","server":"www.visa.com.hk","port":443,"uuid":"89b3cbba-e6ac-485a-9481-976a0415eab9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"aZADneT-fReedOm-iranian3.PAgeS.DEV","ws-opts":{"path":"/3hROvias1mmejVIi?ed=2560","headers":{"host":"aZADneT-fReedOm-iranian3.PAgeS.DEV"}}}
-  - {"type":"vless","name":"✅️AzadNet-CleanIP_4:443","server":"time.cloudflare.com","port":443,"uuid":"89b3cbba-e6ac-485a-9481-976a0415eab9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"aZadnet-FrEEdoM-iRaNian3.paGEs.dEV","ws-opts":{"path":"/y5YPlLxgPZFgpnxA?ed=2560","headers":{"host":"aZadnet-FrEEdoM-iRaNian3.paGEs.dEV"}}}
+  - {"type":"ss","name":"default_name","server":"ss.tansongyun.org","port":443,"cipher":"aes-256-gcm","password":"Yiwenyue1.","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","tls":true,"host":"ss.tansongyun.org"}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - ✅️AzadNet-Domain_1:443
-      - ✅️AzadNet-Domain_2:443
-      - ✅️AzadNet-IPv4_1:443
-      - ✅️AzadNet-IPv4_2:443
-      - ✅️AzadNet-IPv6_1:443
-      - ✅️AzadNet-IPv6_2:443
-      - ✅️AzadNet-CleanIP_1:443
-      - ✅️AzadNet-CleanIP_2:443
-      - ✅️AzadNet-CleanIP_3:443
-      - ✅️AzadNet-CleanIP_4:443
+      - default_name
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - ✅️AzadNet-Domain_1:443
-      - ✅️AzadNet-Domain_2:443
-      - ✅️AzadNet-IPv4_1:443
-      - ✅️AzadNet-IPv4_2:443
-      - ✅️AzadNet-IPv6_1:443
-      - ✅️AzadNet-IPv6_2:443
-      - ✅️AzadNet-CleanIP_1:443
-      - ✅️AzadNet-CleanIP_2:443
-      - ✅️AzadNet-CleanIP_3:443
-      - ✅️AzadNet-CleanIP_4:443
+      - default_name
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - ✅️AzadNet-Domain_1:443
-      - ✅️AzadNet-Domain_2:443
-      - ✅️AzadNet-IPv4_1:443
-      - ✅️AzadNet-IPv4_2:443
-      - ✅️AzadNet-IPv6_1:443
-      - ✅️AzadNet-IPv6_2:443
-      - ✅️AzadNet-CleanIP_1:443
-      - ✅️AzadNet-CleanIP_2:443
-      - ✅️AzadNet-CleanIP_3:443
-      - ✅️AzadNet-CleanIP_4:443
+      - default_name
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - ✅️AzadNet-Domain_1:443
-      - ✅️AzadNet-Domain_2:443
-      - ✅️AzadNet-IPv4_1:443
-      - ✅️AzadNet-IPv4_2:443
-      - ✅️AzadNet-IPv6_1:443
-      - ✅️AzadNet-IPv6_2:443
-      - ✅️AzadNet-CleanIP_1:443
-      - ✅️AzadNet-CleanIP_2:443
-      - ✅️AzadNet-CleanIP_3:443
-      - ✅️AzadNet-CleanIP_4:443
+      - default_name
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - ✅️AzadNet-Domain_1:443
-      - ✅️AzadNet-Domain_2:443
-      - ✅️AzadNet-IPv4_1:443
-      - ✅️AzadNet-IPv4_2:443
-      - ✅️AzadNet-IPv6_1:443
-      - ✅️AzadNet-IPv6_2:443
-      - ✅️AzadNet-CleanIP_1:443
-      - ✅️AzadNet-CleanIP_2:443
-      - ✅️AzadNet-CleanIP_3:443
-      - ✅️AzadNet-CleanIP_4:443
+      - default_name
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - ✅️AzadNet-Domain_1:443
-      - ✅️AzadNet-Domain_2:443
-      - ✅️AzadNet-IPv4_1:443
-      - ✅️AzadNet-IPv4_2:443
-      - ✅️AzadNet-IPv6_1:443
-      - ✅️AzadNet-IPv6_2:443
-      - ✅️AzadNet-CleanIP_1:443
-      - ✅️AzadNet-CleanIP_2:443
-      - ✅️AzadNet-CleanIP_3:443
-      - ✅️AzadNet-CleanIP_4:443
+      - default_name
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -138,16 +75,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - ✅️AzadNet-Domain_1:443
-      - ✅️AzadNet-Domain_2:443
-      - ✅️AzadNet-IPv4_1:443
-      - ✅️AzadNet-IPv4_2:443
-      - ✅️AzadNet-IPv6_1:443
-      - ✅️AzadNet-IPv6_2:443
-      - ✅️AzadNet-CleanIP_1:443
-      - ✅️AzadNet-CleanIP_2:443
-      - ✅️AzadNet-CleanIP_3:443
-      - ✅️AzadNet-CleanIP_4:443
+      - default_name
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
