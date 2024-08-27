@@ -115,6 +115,47 @@ proxies:
     headers:
       Host: ip006.freegradely.xyz
   udp: true
+- name: "\U0001F1F8\U0001F1E8 SC 16 VMS"
+  server: 156.251.191.241
+  port: 32898
+  type: vmess
+  uuid: 7204d6b8-ddaf-417b-c8d8-5f983dc9f6cb
+  alterId: 0
+  cipher: auto
+  country: "\U0001F1FF\U0001F1E6_ZA_\u5357\u975E_1"
+  skip-cert-verify: true
+  tls: false
+  network: tcp
+  index: 1
+- name: "\U0001F1E8\U0001F1F3 CN 17 SSS"
+  server: 120.233.10.71
+  port: 38007
+  type: ss
+  country: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD->\U0001F1ED\U0001F1F0_HK_\u9999\u6E2F\
+    _2"
+  cipher: chacha20-ietf-poly1305
+  password: 66aa4ba9-8df9-4d58-ad8e-1026a2b0219b
+  index: 2
+- name: "\U0001F1FA\U0001F1F3 UN 18 TJN"
+  server: hncu.relay.qchwnd.moe
+  port: 10201
+  type: trojan
+  country: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD->\U0001F1EF\U0001F1F5_JP_\u65E5\u672C\
+    _3"
+  skip-cert-verify: true
+  udp: true
+  password: 5b059403-c05c-4609-ab01-a9352041d2e4
+  index: 3
+- name: "\U0001F1F7\U0001F1FA RU 19 SSR"
+  server: 213.183.53.200
+  port: 9005
+  type: ssr
+  country: "\U0001F1F7\U0001F1FA_RU_\u4FC4\u7F57\u65AF\u8054\u90A6_4"
+  password: ZET59LF6DvCC8KVt
+  cipher: aes-256-cfb
+  protocol: origin
+  obfs: plain
+  index: 4
 proxy-groups:
 - name: automatic
   type: url-test
@@ -134,6 +175,10 @@ proxy-groups:
   - "\U0001F1F9\U0001F1FC TW 13 TJN"
   - "\U0001F1F9\U0001F1FC TW 14 TJN"
   - "\U0001F1E8\U0001F1E6 CA 15 VMS"
+  - "\U0001F1F8\U0001F1E8 SC 16 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 17 SSS"
+  - "\U0001F1FA\U0001F1F3 UN 18 TJN"
+  - "\U0001F1F7\U0001F1FA RU 19 SSR"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -155,5 +200,9 @@ proxy-groups:
   - "\U0001F1F9\U0001F1FC TW 13 TJN"
   - "\U0001F1F9\U0001F1FC TW 14 TJN"
   - "\U0001F1E8\U0001F1E6 CA 15 VMS"
+  - "\U0001F1F8\U0001F1E8 SC 16 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 17 SSS"
+  - "\U0001F1FA\U0001F1F3 UN 18 TJN"
+  - "\U0001F1F7\U0001F1FA RU 19 SSR"
 rules:
 - "MATCH,\U0001F310 Proxy"
