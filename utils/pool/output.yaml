@@ -115,6 +115,21 @@ proxies:
     headers:
       Host: ip006.freegradely.xyz
   udp: true
+- name: "\U0001F1FA\U0001F1F3 UN 16 VMS"
+  type: vmess
+  server: 104.21.69.44
+  port: 8880
+  cipher: auto
+  uuid: ec286f13-7e1a-42bc-9deb-76b91b4b9d2d
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess
+    headers:
+      host: "www.iransell.ir.127.0.0.1.dl3.\u044D\u0432\u0440\u0438\u043A\u0430.mrarsha.\u5C24\
+        \u91CC\u5361\u0441\u043F\u0435\u0446\u0438\u0430\u043B\u0438\u0441\u0442.wonkacapitano.buzz."
 proxy-groups:
 - name: automatic
   type: url-test
@@ -134,6 +149,7 @@ proxy-groups:
   - "\U0001F1F9\U0001F1FC TW 13 TJN"
   - "\U0001F1F9\U0001F1FC TW 14 TJN"
   - "\U0001F1E8\U0001F1E6 CA 15 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 16 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -155,5 +171,6 @@ proxy-groups:
   - "\U0001F1F9\U0001F1FC TW 13 TJN"
   - "\U0001F1F9\U0001F1FC TW 14 TJN"
   - "\U0001F1E8\U0001F1E6 CA 15 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 16 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
