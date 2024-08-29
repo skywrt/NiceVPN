@@ -1,11 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash.Meta
-# 创建时间：29-08-2024 16:39:46
+# 客户端：Clash
+# 创建时间：2024-08-29 22:20:39
 # 使用模版：V2RaySE 默认模版
-# 节点数量：5
+# 节点数量：10
 ####################################
-# !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
 allow-lan: true
 log-level: info
@@ -86,74 +85,109 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-162.159.152.2:2053","type":"vless","server":"162.159.152.2","port":2053,"uuid":"e1913fbb-cc33-4e13-bb2b-db35b60e6a53","tls":true,"servername":"cODe911cometOiraNNsOdsnefhhdkALCoshD.PAGes.dEv","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"cODe911cometOiraNNsOdsnefhhdkALCoshD.PAGes.dEv"}},"alpn":["http/1.1"]}
-  - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-162.159.153.2:2053","type":"vless","server":"162.159.153.2","port":2053,"uuid":"e1913fbb-cc33-4e13-bb2b-db35b60e6a53","tls":true,"servername":"cODe911cometOiraNNsOdsnefhhdkALCoshD.PAGes.dEv","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"cODe911cometOiraNNsOdsnefhhdkALCoshD.PAGes.dEv"}},"alpn":["http/1.1"]}
-  - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-104.16.148.244:2053","type":"vless","server":"104.16.148.244","port":2053,"uuid":"e1913fbb-cc33-4e13-bb2b-db35b60e6a53","tls":true,"servername":"CoDe911COmeTOIraNnsOdSNEFHhdkAlcOsHd.pAGEs.dev","network":"ws","ws-opts":{"path":"/?ed=0","headers":{"host":"CoDe911COmeTOIraNnsOdSNEFHhdkAlcOsHd.pAGEs.dev"}},"alpn":["http/1.1"]}
-  - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-104.16.149.244:2053","type":"vless","server":"104.16.149.244","port":2053,"uuid":"e1913fbb-cc33-4e13-bb2b-db35b60e6a53","tls":true,"servername":"CoDe911COmeTOIraNnsOdSNEFHhdkAlcOsHd.pAGEs.dev","network":"ws","ws-opts":{"path":"/?ed=0","headers":{"host":"CoDe911COmeTOIraNnsOdSNEFHhdkAlcOsHd.pAGEs.dev"}},"alpn":["http/1.1"]}
-  - {"name":"🔒 VL-WS-TLS 🇦🇲 AM-45.82.100.62:443","type":"vless","server":"45.82.100.62","port":443,"uuid":"4352f2a7-d620-474e-9249-e866774a2c81","tls":true,"servername":"ebnada.com","network":"ws","ws-opts":{"path":"/hgffg","headers":{"host":"ebnada.com"}}}
+  - {"name":"德国-161.3KB/s","type":"ss","server":"80.92.204.106","port":9046,"password":"NvS8N4Vf8qAGPSCL","cipher":"aes-256-cfb"}
+  - {"name":"英国-2.11MB/s","type":"vmess","server":"172.99.190.50","port":443,"cipher":"auto","uuid":"03fcc618-b93d-6796-6aed-8a38c975d581","alterId":1,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"linkvws"}}
+  - {"name":"新加坡-112.0KB/s","type":"trojan","server":"cn2.cdn.xfltd-cdn.top","port":12070,"udp":true,"password":"3698a3e7-2877-4ded-a665-d81ee3cfd449","sni":"cdn.alibaba.com","skip-cert-verify":true}
+  - {"name":"未知国家-895.2KB/s","type":"vmess","server":"cfcdn3.sanfencdn9.com","port":80,"cipher":"auto","uuid":"b300b4b1-e6d4-463b-9dae-2ac0cfa0d218","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/video/X37qXHip","headers":{"host":"6Sn8mFtTjp3.yofnhkfc.xyz"}}}
+  - {"name":"未知国家-1.53MB/s","type":"vmess","server":"104.21.61.246","port":443,"cipher":"auto","uuid":"f9ccede9-ca9c-4719-b105-e494742499e3","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"kmz3.sassanidempire.com"}}}
+  - {"name":"未知国家-201.7KB/s","type":"vmess","server":"104.26.0.56","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip14.freegradely.xyz"}}}
+  - {"name":"俄罗斯联邦-257.8KB/s","type":"vmess","server":"mz.flmweb.cc","port":40045,"cipher":"auto","uuid":"1cbb8f04-b0cc-4520-8b17-ed412f457b9f","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"mz.flmweb.cc"}}}
+  - {"name":"中转节点-1.01MB/s","type":"vmess","server":"183.236.51.23","port":54104,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"未知国家-1.61MB/s","type":"vmess","server":"104.19.51.232","port":2086,"cipher":"auto","uuid":"29eebb60-b27b-4a9d-bba5-947763d9205e","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip005.dtku47.xyz"}}}
+  - {"name":"中转节点-159.4KB/s","type":"vmess","server":"v29.heduian.online","port":30866,"cipher":"auto","uuid":"cbb3f877-d1fb-344c-87a9-d153bffd5484","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/oooo","headers":{"host":"v29.heduian.online"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-162.159.152.2:2053
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-162.159.153.2:2053
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.16.148.244:2053
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.16.149.244:2053
-      - 🔒 VL-WS-TLS 🇦🇲 AM-45.82.100.62:443
+      - 德国-161.3KB/s
+      - 英国-2.11MB/s
+      - 新加坡-112.0KB/s
+      - 未知国家-895.2KB/s
+      - 未知国家-1.53MB/s
+      - 未知国家-201.7KB/s
+      - 俄罗斯联邦-257.8KB/s
+      - 中转节点-1.01MB/s
+      - 未知国家-1.61MB/s
+      - 中转节点-159.4KB/s
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-162.159.152.2:2053
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-162.159.153.2:2053
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.16.148.244:2053
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.16.149.244:2053
-      - 🔒 VL-WS-TLS 🇦🇲 AM-45.82.100.62:443
+      - 德国-161.3KB/s
+      - 英国-2.11MB/s
+      - 新加坡-112.0KB/s
+      - 未知国家-895.2KB/s
+      - 未知国家-1.53MB/s
+      - 未知国家-201.7KB/s
+      - 俄罗斯联邦-257.8KB/s
+      - 中转节点-1.01MB/s
+      - 未知国家-1.61MB/s
+      - 中转节点-159.4KB/s
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-162.159.152.2:2053
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-162.159.153.2:2053
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.16.148.244:2053
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.16.149.244:2053
-      - 🔒 VL-WS-TLS 🇦🇲 AM-45.82.100.62:443
+      - 德国-161.3KB/s
+      - 英国-2.11MB/s
+      - 新加坡-112.0KB/s
+      - 未知国家-895.2KB/s
+      - 未知国家-1.53MB/s
+      - 未知国家-201.7KB/s
+      - 俄罗斯联邦-257.8KB/s
+      - 中转节点-1.01MB/s
+      - 未知国家-1.61MB/s
+      - 中转节点-159.4KB/s
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-162.159.152.2:2053
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-162.159.153.2:2053
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.16.148.244:2053
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.16.149.244:2053
-      - 🔒 VL-WS-TLS 🇦🇲 AM-45.82.100.62:443
+      - 德国-161.3KB/s
+      - 英国-2.11MB/s
+      - 新加坡-112.0KB/s
+      - 未知国家-895.2KB/s
+      - 未知国家-1.53MB/s
+      - 未知国家-201.7KB/s
+      - 俄罗斯联邦-257.8KB/s
+      - 中转节点-1.01MB/s
+      - 未知国家-1.61MB/s
+      - 中转节点-159.4KB/s
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-162.159.152.2:2053
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-162.159.153.2:2053
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.16.148.244:2053
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.16.149.244:2053
-      - 🔒 VL-WS-TLS 🇦🇲 AM-45.82.100.62:443
+      - 德国-161.3KB/s
+      - 英国-2.11MB/s
+      - 新加坡-112.0KB/s
+      - 未知国家-895.2KB/s
+      - 未知国家-1.53MB/s
+      - 未知国家-201.7KB/s
+      - 俄罗斯联邦-257.8KB/s
+      - 中转节点-1.01MB/s
+      - 未知国家-1.61MB/s
+      - 中转节点-159.4KB/s
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-162.159.152.2:2053
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-162.159.153.2:2053
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.16.148.244:2053
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.16.149.244:2053
-      - 🔒 VL-WS-TLS 🇦🇲 AM-45.82.100.62:443
+      - 德国-161.3KB/s
+      - 英国-2.11MB/s
+      - 新加坡-112.0KB/s
+      - 未知国家-895.2KB/s
+      - 未知国家-1.53MB/s
+      - 未知国家-201.7KB/s
+      - 俄罗斯联邦-257.8KB/s
+      - 中转节点-1.01MB/s
+      - 未知国家-1.61MB/s
+      - 中转节点-159.4KB/s
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -176,11 +210,16 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-162.159.152.2:2053
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-162.159.153.2:2053
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.16.148.244:2053
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.16.149.244:2053
-      - 🔒 VL-WS-TLS 🇦🇲 AM-45.82.100.62:443
+      - 德国-161.3KB/s
+      - 英国-2.11MB/s
+      - 新加坡-112.0KB/s
+      - 未知国家-895.2KB/s
+      - 未知国家-1.53MB/s
+      - 未知国家-201.7KB/s
+      - 俄罗斯联邦-257.8KB/s
+      - 中转节点-1.01MB/s
+      - 未知国家-1.61MB/s
+      - 中转节点-159.4KB/s
 
 rules:
 # 本地/局域网地址
