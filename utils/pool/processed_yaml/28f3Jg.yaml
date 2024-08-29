@@ -94,14 +94,14 @@
       "type": "selector",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 CloudFlare节点"
+        "TW-2648323437"
       ]
     },
     {
       "tag": "auto",
       "type": "urltest",
       "outbounds": [
-        "🇺🇸 美国 CloudFlare节点"
+        "TW-2648323437"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "1m",
@@ -112,35 +112,35 @@
       "type": "selector",
       "outbounds": [
         "direct",
-        "🇺🇸 美国 CloudFlare节点"
+        "TW-2648323437"
       ]
     },
     {
       "tag": "🌌 Google",
       "type": "selector",
       "outbounds": [
-        "🇺🇸 美国 CloudFlare节点"
+        "TW-2648323437"
       ]
     },
     {
       "tag": "📟 Telegram",
       "type": "selector",
       "outbounds": [
-        "🇺🇸 美国 CloudFlare节点"
+        "TW-2648323437"
       ]
     },
     {
       "tag": "🐦 Twitter",
       "type": "selector",
       "outbounds": [
-        "🇺🇸 美国 CloudFlare节点"
+        "TW-2648323437"
       ]
     },
     {
       "tag": "👤 Facebook",
       "type": "selector",
       "outbounds": [
-        "🇺🇸 美国 CloudFlare节点"
+        "TW-2648323437"
       ]
     },
     {
@@ -148,7 +148,7 @@
       "type": "selector",
       "outbounds": [
         "direct",
-        "🇺🇸 美国 CloudFlare节点"
+        "TW-2648323437"
       ]
     },
     {
@@ -156,7 +156,7 @@
       "type": "selector",
       "outbounds": [
         "direct",
-        "🇺🇸 美国 CloudFlare节点"
+        "TW-2648323437"
       ]
     },
     {
@@ -164,7 +164,7 @@
       "type": "selector",
       "outbounds": [
         "direct",
-        "🇺🇸 美国 CloudFlare节点"
+        "TW-2648323437"
       ]
     },
     {
@@ -172,7 +172,7 @@
       "type": "selector",
       "outbounds": [
         "direct",
-        "🇺🇸 美国 CloudFlare节点"
+        "TW-2648323437"
       ]
     },
     {
@@ -187,7 +187,7 @@
       "type": "selector",
       "outbounds": [
         "direct",
-        "🇺🇸 美国 CloudFlare节点"
+        "TW-2648323437"
       ]
     },
     {
@@ -195,7 +195,7 @@
       "type": "selector",
       "outbounds": [
         "direct",
-        "🇺🇸 美国 CloudFlare节点"
+        "TW-2648323437"
       ]
     },
     {
@@ -227,20 +227,30 @@
       "type": "dns"
     },
     {
-      "server": "104.21.69.44",
-      "server_port": 8880,
+      "server": "visa.com",
+      "server_port": 2053,
+      "tls": {
+        "enabled": true,
+        "server_name": "twv1.188855.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "alpn": [
+          "h2",
+          "h3",
+          "http/1.1"
+        ]
+      },
       "transport": {
-        "path": "/vmess",
+        "path": "/download",
         "type": "ws",
-        "max_early_data": 2048,
+        "max_early_data": 4096,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "uuid": "ec286f13-7e1a-42bc-9deb-76b91b4b9d2d",
-      "packet_encoding": "xudp",
-      "security": "auto",
-      "alter_id": 0,
-      "tag": "🇺🇸 美国 CloudFlare节点",
-      "type": "vmess"
+      "uuid": "72bbebf0-7665-4103-a885-84b0fa26ed05",
+      "tag": "TW-2648323437",
+      "type": "vless"
     }
   ],
   "route": {
