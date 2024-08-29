@@ -115,33 +115,32 @@ proxies:
     headers:
       Host: ip006.freegradely.xyz
   udp: true
-- name: "\U0001F1EC\U0001F1E7 GB 16 TJN"
-  type: trojan
-  server: 18.134.110.216
-  port: 22222
-  password: telegram-id-privatevpns
-  sni: trojan.burgerip.co.uk
-  network: tcp
-  alpn:
-  - http/1.1
-- name: "\U0001F1E9\U0001F1EA DE 17 SSS"
-  type: ss
-  server: 80.92.204.106
-  port: 9080
-  password: VP8ZPxQpJtZRCjfZ
-  cipher: aes-256-cfb
-- name: "\U0001F1FA\U0001F1F8 US 18 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 16 VMS"
   type: vmess
-  server: oracle-kr-01.av5.buzz
-  port: 80
+  server: 104.22.37.243
+  port: 2086
   cipher: auto
-  uuid: b448c7c2-13b4-4415-b83a-097c6fd405bd
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
-  sni: ''
   network: ws
-- name: "\U0001F1FA\U0001F1F3 UN 19 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 17 VMS"
   type: vmess
-  server: 104.19.45.42
+  server: 104.18.14.19
+  port: 2086
+  cipher: auto
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  sni: ip1.1789034.xyz
+  network: ws
+- name: "\U0001F1FA\U0001F1E6 UA 18 TJN"
+  type: trojan
+  server: cn2.cdn.xfltd-cdn.top
+  port: 12066
+  password: 3698a3e7-2877-4ded-a665-d81ee3cfd449
+  sni: cdn.alibaba.com
+- name: "\U0001F1FA\U0001F1F8 US 19 VMS"
+  type: vmess
+  server: 172.64.198.249
   port: 2086
   cipher: auto
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
@@ -150,37 +149,39 @@ proxies:
   network: ws
 - name: "\U0001F1FA\U0001F1F3 UN 20 VMS"
   type: vmess
-  server: 104.19.55.49
+  server: 104.19.38.8
   port: 2086
   cipher: auto
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
-  sni: ip2.1457230.xyz
+  sni: ''
   network: ws
 - name: "\U0001F1FA\U0001F1F8 US 21 VMS"
   type: vmess
-  server: 104.26.5.123
+  server: 172.64.167.25
   port: 2086
   cipher: auto
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
+  sni: ''
   network: ws
 - name: "\U0001F1FA\U0001F1F3 UN 22 VMS"
   type: vmess
-  server: 104.19.46.103
+  server: 104.19.51.232
+  port: 2086
+  cipher: auto
+  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+  alterId: 0
+  sni: ''
+  network: ws
+- name: "\U0001F1FA\U0001F1F3 UN 23 VMS"
+  type: vmess
+  server: 104.18.14.19
   port: 2086
   cipher: auto
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
-  sni: ip2.1457230.xyz
-  network: ws
-- name: "\U0001F1FA\U0001F1F3 UN 23 VMS"
-  type: vmess
-  server: 104.16.61.8
-  port: 8080
-  cipher: auto
-  uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
-  alterId: 0
+  sni: ip1.1789034.xyz
   network: ws
 proxy-groups:
 - name: automatic
@@ -201,10 +202,10 @@ proxy-groups:
   - "\U0001F1F9\U0001F1FC TW 13 TJN"
   - "\U0001F1F9\U0001F1FC TW 14 TJN"
   - "\U0001F1E8\U0001F1E6 CA 15 VMS"
-  - "\U0001F1EC\U0001F1E7 GB 16 TJN"
-  - "\U0001F1E9\U0001F1EA DE 17 SSS"
-  - "\U0001F1FA\U0001F1F8 US 18 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 19 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 16 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 17 VMS"
+  - "\U0001F1FA\U0001F1E6 UA 18 TJN"
+  - "\U0001F1FA\U0001F1F8 US 19 VMS"
   - "\U0001F1FA\U0001F1F3 UN 20 VMS"
   - "\U0001F1FA\U0001F1F8 US 21 VMS"
   - "\U0001F1FA\U0001F1F3 UN 22 VMS"
@@ -230,10 +231,10 @@ proxy-groups:
   - "\U0001F1F9\U0001F1FC TW 13 TJN"
   - "\U0001F1F9\U0001F1FC TW 14 TJN"
   - "\U0001F1E8\U0001F1E6 CA 15 VMS"
-  - "\U0001F1EC\U0001F1E7 GB 16 TJN"
-  - "\U0001F1E9\U0001F1EA DE 17 SSS"
-  - "\U0001F1FA\U0001F1F8 US 18 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 19 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 16 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 17 VMS"
+  - "\U0001F1FA\U0001F1E6 UA 18 TJN"
+  - "\U0001F1FA\U0001F1F8 US 19 VMS"
   - "\U0001F1FA\U0001F1F3 UN 20 VMS"
   - "\U0001F1FA\U0001F1F8 US 21 VMS"
   - "\U0001F1FA\U0001F1F3 UN 22 VMS"
