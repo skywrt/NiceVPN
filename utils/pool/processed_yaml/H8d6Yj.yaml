@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-09-02 11:03:49
+# 创建时间：02-09-2024 17:00:34
 # 使用模版：V2RaySE 默认模版
-# 节点数量：50
+# 节点数量：29
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -12,399 +12,316 @@ log-level: info
 external-controller: 0.0.0.0:9090
 dns:
   enabled: true
-  nameserver:
-    - 119.29.29.29
+  listen: 0.0.0.0:1053
+  ipv6: true
+  default-nameserver:
     - 223.5.5.5
-  fallback:
-    - 8.8.8.8
-    - 8.8.4.4
-    - tls://1.0.0.1:853
-    - tls://dns.google:853
+    - 114.114.114.114
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - '*.lan'
+    - '*.linksys.com'
+    - '*.linksyssmartwifi.com'
+    - swscan.apple.com
+    - mesu.apple.com
+    - '*.msftconnecttest.com'
+    - '*.msftncsi.com'
+    - time.*.com
+    - time.*.gov
+    - time.*.edu.cn
+    - time.*.apple.com
+    - time1.*.com
+    - time2.*.com
+    - time3.*.com
+    - time4.*.com
+    - time5.*.com
+    - time6.*.com
+    - time7.*.com
+    - ntp.*.com
+    - ntp.*.com
+    - ntp1.*.com
+    - ntp2.*.com
+    - ntp3.*.com
+    - ntp4.*.com
+    - ntp5.*.com
+    - ntp6.*.com
+    - ntp7.*.com
+    - '*.time.edu.cn'
+    - '*.ntp.org.cn'
+    - +.pool.ntp.org
+    - time1.cloud.tencent.com
+    - +.music.163.com
+    - '*.126.net'
+    - musicapi.taihe.com
+    - music.taihe.com
+    - songsearch.kugou.com
+    - trackercdn.kugou.com
+    - '*.kuwo.cn'
+    - api-jooxtt.sanook.com
+    - api.joox.com
+    - joox.com
+    - +.y.qq.com
+    - +.music.tc.qq.com
+    - aqqmusic.tc.qq.com
+    - +.stream.qqmusic.qq.com
+    - '*.xiami.com'
+    - +.music.migu.cn
+    - +.srv.nintendo.net
+    - +.stun.playstation.net
+    - xbox.*.microsoft.com
+    - +.xboxlive.com
+    - localhost.ptlogin2.qq.com
+    - proxy.golang.org
+    - stun.*.*
+    - stun.*.*.*
+    - '*.mcdn.bilivideo.cn'
+  nameserver:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+  fallback-filter:
+    geoip: false
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
 
 proxies:
-  - {"name":"🇺🇸_US_美国_1","type":"vless","server":"104.18.177.82","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","network":"ws"}
-  - {"name":"🇺🇸_US_美国_2","type":"vless","server":"104.18.176.212","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","network":"ws"}
-  - {"name":"🇺🇸_US_美国_3","type":"vless","server":"104.17.216.244","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","network":"ws"}
-  - {"name":"🇺🇸_US_美国_4","type":"vless","server":"104.18.84.181","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","network":"ws"}
-  - {"name":"🇺🇸_US_美国_5","type":"vless","server":"104.16.198.32","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","network":"ws"}
-  - {"name":"🇺🇸_US_美国_6","type":"vless","server":"104.17.57.29","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","network":"ws"}
-  - {"name":"🇺🇸_US_美国_7","type":"vless","server":"104.16.10.99","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","network":"ws"}
-  - {"name":"🇺🇸_US_美国_8","type":"vless","server":"104.18.22.93","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","network":"ws"}
-  - {"name":"🇸🇪_SE_瑞典","type":"vless","server":"185.146.173.96","port":2095,"uuid":"7a70e749-a876-510b-abea-bfd364f481d6","network":"ws"}
-  - {"name":"🇺🇸_US_美国_9","type":"vless","server":"198.41.220.22","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","network":"ws"}
-  - {"name":"🇺🇸_US_美国_10","type":"vless","server":"104.17.29.169","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","network":"ws"}
-  - {"name":"🇺🇸_US_美国_11","type":"vless","server":"172.67.78.55","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","network":"ws"}
-  - {"name":"🇺🇸_US_美国_12","type":"vless","server":"104.17.212.95","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","network":"ws"}
-  - {"name":"🇺🇸_US_美国_13","type":"vless","server":"104.16.96.228","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","network":"ws"}
-  - {"name":"🇺🇸_US_美国_14","type":"vless","server":"104.16.100.193","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","network":"ws"}
-  - {"name":"🇺🇸_US_美国_15","type":"vless","server":"104.17.62.48","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","network":"ws"}
-  - {"name":"🇺🇸_US_美国_16","type":"vless","server":"104.17.106.47","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","network":"ws"}
-  - {"name":"🇺🇸_US_美国_17","type":"vless","server":"198.41.221.28","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","network":"ws"}
-  - {"name":"🇺🇸_US_美国_18","type":"vless","server":"104.22.59.254","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","network":"ws"}
-  - {"name":"🇺🇸_US_美国_19","type":"vless","server":"104.17.185.198","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","network":"ws"}
-  - {"name":"🇺🇸_US_美国_20","type":"vless","server":"104.18.15.249","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","network":"ws"}
-  - {"name":"🇺🇸_US_美国_21","type":"vless","server":"104.17.61.84","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","network":"ws"}
-  - {"name":"🇺🇸_US_美国_22","type":"vless","server":"104.18.83.237","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","network":"ws"}
-  - {"name":"🇺🇸_US_美国_23","type":"vless","server":"104.16.254.158","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","network":"ws"}
-  - {"name":"🇺🇸_US_美国_24","type":"vless","server":"104.21.30.20","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","network":"ws"}
-  - {"name":"🇺🇸_US_美国_25","type":"vless","server":"104.18.176.89","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","network":"ws"}
-  - {"name":"🇺🇸_US_美国_26","type":"vless","server":"104.18.6.113","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","network":"ws"}
-  - {"name":"🇺🇸_US_美国_27","type":"vless","server":"104.16.103.228","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","network":"ws"}
-  - {"name":"🇺🇸_US_美国_28","type":"vless","server":"104.21.236.158","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","network":"ws"}
-  - {"name":"🇺🇸_US_美国_29","type":"vless","server":"172.67.77.236","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","network":"ws"}
-  - {"name":"🇺🇸_US_美国_30","type":"vless","server":"104.16.204.211","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","network":"ws"}
-  - {"name":"🇺🇸_US_美国_31","type":"vless","server":"104.17.18.181","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","network":"ws"}
-  - {"name":"🇺🇸_US_美国_32","type":"vless","server":"104.19.49.166","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","network":"ws"}
-  - {"name":"🇺🇸_US_美国_33","type":"vless","server":"172.66.44.1","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","network":"ws"}
-  - {"name":"🇺🇸_US_美国_34","type":"vless","server":"104.21.17.204","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","network":"ws"}
-  - {"name":"🇺🇸_US_美国_35","type":"vless","server":"172.67.70.240","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","network":"ws"}
-  - {"name":"🇺🇸_US_美国_36","type":"vless","server":"104.17.186.124","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","network":"ws"}
-  - {"name":"🇺🇸_US_美国_37","type":"vless","server":"104.19.169.55","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","network":"ws"}
-  - {"name":"🇺🇸_US_美国_38","type":"vless","server":"104.18.12.125","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","network":"ws"}
-  - {"name":"🇺🇸_US_美国_39","type":"vless","server":"104.17.228.51","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","network":"ws"}
-  - {"name":"🇺🇸_US_美国_40","type":"vless","server":"172.64.229.60","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","network":"ws"}
-  - {"name":"🇺🇸_US_美国_41","type":"vless","server":"104.26.1.113","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","network":"ws"}
-  - {"name":"🇺🇸_US_美国_42","type":"vless","server":"104.21.27.109","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","network":"ws"}
-  - {"name":"🇺🇸_US_美国_43","type":"vless","server":"104.17.219.183","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","network":"ws"}
-  - {"name":"🇺🇸_US_美国->🇩🇪_DE_德国","type":"vless","server":"104.16.206.101","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","network":"ws"}
-  - {"name":"🇺🇸_US_美国_44","type":"vless","server":"104.22.56.223","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","network":"ws"}
-  - {"name":"🇺🇸_US_美国_45","type":"vless","server":"104.17.29.249","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","network":"ws"}
-  - {"name":"🇺🇸_US_美国_46","type":"vless","server":"104.25.89.0","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","network":"ws"}
-  - {"name":"🇺🇸_US_美国_47","type":"vless","server":"104.16.110.235","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","network":"ws"}
-  - {"name":"🇺🇸_US_美国_48","type":"vless","server":"104.18.31.56","port":80,"uuid":"781a8eb4-c4f7-4f99-9dee-e80369dbf1ec","network":"ws"}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-162.159.254.222:8080","type":"vless","server":"162.159.254.222","port":8080,"uuid":"67ac2966-c633-4fbe-92dd-8c666881c6de","tls":false,"servername":"worker-hidden-thunder-00c3.test29-c85.workers.dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"worker-hidden-thunder-00c3.test29-c85.workers.dev"}}}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.96:80","type":"vless","server":"104.21.224.96","port":80,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":false,"servername":"a.ssll.gay","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"a.ssll.gay"}}}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.26.14.16:8080","type":"vless","server":"104.26.14.16","port":8080,"uuid":"15859e6b-5bfb-4bfa-93e6-311593a1919c","tls":false,"servername":"wWw.speEdtest.net.www.zula.ir.cloudflare.com.Tescoco.cFd.","network":"ws","ws-opts":{"path":"/join---to---vistav2ray-------join---to---vistav2ray-------join---to---vistav2ray-------join---to---vistav2ray-------?ed=2048","headers":{"host":"wWw.speEdtest.net.www.zula.ir.cloudflare.com.Tescoco.cFd."}}}
+  - {"name":"🔒 VL-WS-TLS 🇺🇸 US-92.38.145.145:443","type":"vless","server":"92.38.145.145","port":443,"uuid":"4352f2a7-d620-474e-9249-e866774a2c81","tls":true,"servername":"ebnada.com","network":"ws","ws-opts":{"path":"/hgffg","headers":{"host":"ebnada.com"}}}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.94.125:80","type":"vless","server":"104.21.94.125","port":80,"uuid":"f020a6cf-0ce7-47f3-88b3-d840dd8a557b","tls":false,"servername":"worker-empty-rain-c00d.raminramin006.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"worker-empty-rain-c00d.raminramin006.workers.dev"}}}
+  - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.47.159:2087","type":"vless","server":"172.66.47.159","port":2087,"uuid":"89b3cbba-e6ac-485a-9481-976a0415eab9","tls":true,"servername":"joiNv2NgFAsT-49u.PageS.dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"joiNv2NgFAsT-49u.PageS.dev"}}}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.163:80","type":"vless","server":"104.21.224.163","port":80,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":false,"servername":"a.ssll.gay","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"a.ssll.gay"}}}
+  - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.182:443_1","type":"vless","server":"172.66.44.182","port":443,"uuid":"89b3cbba-e6ac-485a-9481-976a0415eab9","tls":true,"servername":"V2NGfaST-6ZM.PagES.DEv","network":"ws","ws-opts":{"path":"/","headers":{"host":"V2NGfaST-6ZM.PagES.DEv"}}}
+  - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.141:443_1","type":"vless","server":"172.66.44.141","port":443,"uuid":"89b3cbba-e6ac-485a-9481-976a0415eab9","tls":true,"servername":"v2ngFASt.pAGeS.dEV","network":"ws","ws-opts":{"path":"/","headers":{"host":"v2ngFASt.pAGeS.dEV"}}}
+  - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.141:443_2","type":"vless","server":"172.66.44.141","port":443,"uuid":"89b3cbba-e6ac-485a-9481-976a0415eab9","tls":true,"servername":"v2ngFASt.pAGeS.dEV","network":"ws","ws-opts":{"path":"/UwFT7UjxD7OKHhBU?ed=2560","headers":{"host":"v2ngFASt.pAGeS.dEV"}}}
+  - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.97:2087_1","type":"vless","server":"172.66.44.97","port":2087,"uuid":"89b3cbba-e6ac-485a-9481-976a0415eab9","tls":true,"servername":"joiNv2NgFAsT-49u.PageS.dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"joiNv2NgFAsT-49u.PageS.dev"}}}
+  - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.47.74:443_1","type":"vless","server":"172.66.47.74","port":443,"uuid":"89b3cbba-e6ac-485a-9481-976a0415eab9","tls":true,"servername":"V2NGfaST-6ZM.PagES.DEv","network":"ws","ws-opts":{"path":"/o8mCNUh5NEZBiShb?ed=2560","headers":{"host":"V2NGfaST-6ZM.PagES.DEv"}}}
+  - {"name":"➡️@v2ray_configs_pool⬅️`","type":"vless","server":"joinv2ngfast-49u.pages.dev","port":2087,"uuid":"89b3cbba-e6ac-485a-9481-976a0415eab9","tls":true,"servername":"joiNv2NgFAsT-49u.PageS.dev","network":"ws","ws-opts":{"path":"/vl0rioUFQ6HK2PN5?ed=2560","headers":{"host":"joiNv2NgFAsT-49u.PageS.dev"}}}
+  - {"name":"🔒 VL-WS-NONE 🇮🇷 IR-78.109.194.92:39082","type":"vless","server":"78.109.194.92","port":39082,"uuid":"58ca7947-4ce5-485e-99b8-e89398cf8ca0","tls":false,"servername":"telewebion.com","network":"ws","ws-opts":{"path":"/","headers":{"host":"telewebion.com"}}}
+  - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.182:443_2","type":"vless","server":"172.66.44.182","port":443,"uuid":"89b3cbba-e6ac-485a-9481-976a0415eab9","tls":true,"servername":"V2NGfaST-6ZM.PagES.DEv","network":"ws","ws-opts":{"path":"/o8mCNUh5NEZBiShb?ed=2560","headers":{"host":"V2NGfaST-6ZM.PagES.DEv"}}}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.147.22:80","type":"vless","server":"104.17.147.22","port":80,"uuid":"7a5a4624-df8d-4955-bccc-b3fa6161411f","tls":false,"servername":"www.speedtest.net.10.10.10.10.ir.xn--g28h.dns-dynamic.neT.","network":"ws","ws-opts":{"path":"/Telegram-XV2ry2?ed=512","headers":{"host":"www.speedtest.net.10.10.10.10.ir.xn--g28h.dns-dynamic.neT."}}}
+  - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.47.74:443_2","type":"vless","server":"172.66.47.74","port":443,"uuid":"89b3cbba-e6ac-485a-9481-976a0415eab9","tls":true,"servername":"V2NGfaST-6ZM.PagES.DEv","network":"ws","ws-opts":{"path":"/","headers":{"host":"V2NGfaST-6ZM.PagES.DEv"}}}
+  - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.97:2087_2","type":"vless","server":"172.66.44.97","port":2087,"uuid":"89b3cbba-e6ac-485a-9481-976a0415eab9","tls":true,"servername":"joiNv2NgFAsT-49u.PageS.dev","network":"ws","ws-opts":{"path":"/vl0rioUFQ6HK2PN5?ed=2560","headers":{"host":"joiNv2NgFAsT-49u.PageS.dev"}}}
+  - {"name":"🔒 VL-WS-TLS 🇦🇲 AM-45.82.100.62:443","type":"vless","server":"45.82.100.62","port":443,"uuid":"4352f2a7-d620-474e-9249-e866774a2c81","tls":true,"servername":"ebnada.com","network":"ws","ws-opts":{"path":"/hgffg","headers":{"host":"ebnada.com"}}}
+  - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.1.191:2053","type":"vless","server":"172.67.1.191","port":2053,"uuid":"ac51ad36-5052-460a-842a-e13455d30cb8","tls":true,"servername":"emoemotional.pages.dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"emoemotional.pages.dev"}}}
+  - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-104.20.6.134:2053","type":"vless","server":"104.20.6.134","port":2053,"uuid":"ac51ad36-5052-460a-842a-e13455d30cb8","tls":true,"servername":"emoemotional.pages.dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"emoemotional.pages.dev"}}}
+  - {"name":"🔒 TR-WS-TLS 🏴‍☠️ NA-104.16.192.135:443","type":"trojan","server":"104.16.192.135","port":443,"udp":true,"password":"f0eb8c92ce8946aaba856569cff1a16b","sni":"jobscareertoday.com","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6b777a91","headers":{"host":"jobscareertoday.com"}}}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.36.170:80","type":"vless","server":"104.21.36.170","port":80,"uuid":"6ad08747-42b9-4618-8f11-ac47de0da0f8","tls":false,"servername":"proxiiraniii.fiseye5589.workers.dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"proxiiraniii.fiseye5589.workers.dev"}}}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.175.9:80","type":"vless","server":"172.67.175.9","port":80,"uuid":"ea9148b9-13b7-41cf-8911-94234e7c3fcf","tls":false,"servername":"private-codmhttp.teqqlzdw.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"private-codmhttp.teqqlzdw.workers.dev"}}}
+  - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-104.20.5.134:2053","type":"vless","server":"104.20.5.134","port":2053,"uuid":"ac51ad36-5052-460a-842a-e13455d30cb8","tls":true,"servername":"emoemotional.pages.dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"emoemotional.pages.dev"}}}
+  - {"name":"🔒 TR-WS-TLS 🏴‍☠️ NA-198.41.220.2:443","type":"trojan","server":"198.41.220.2","port":443,"udp":true,"password":"242a3d8eee5e4ed1a6bfa4141d549a25","sni":"jobscareerfortoday.com","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"6b777a91","headers":{"host":"jobscareerfortoday.com"}}}
+  - {"name":"🔒 VL-WS-TLS 🇮🇱 IL-5.188.94.5:443","type":"vless","server":"5.188.94.5","port":443,"uuid":"4352f2a7-d620-474e-9249-e866774a2c81","tls":true,"servername":"ebnada.com","network":"ws","ws-opts":{"path":"/hgffg","headers":{"host":"ebnada.com"}}}
+  - {"name":"🔒 VL-TCP-NONE 🇮🇷 IR-185.155.72.119:17132","type":"vless","server":"185.155.72.119","port":17132,"uuid":"08eca8a9-4135-4d36-848b-10e3e088ac9a","tls":false,"servername":"telewebion.com","network":"tcp"}
+  - {"name":"😍@v2ray_configs_pool😍`","type":"vless","server":"172.66.47.159","port":2087,"uuid":"89b3cbba-e6ac-485a-9481-976a0415eab9","tls":true,"servername":"joiNv2NgFAsT-49u.PageS.dev","network":"ws","ws-opts":{"path":"/vl0rioUFQ6HK2PN5?ed=2560","headers":{"host":"joiNv2NgFAsT-49u.PageS.dev"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国_7
-      - 🇺🇸_US_美国_8
-      - 🇸🇪_SE_瑞典
-      - 🇺🇸_US_美国_9
-      - 🇺🇸_US_美国_10
-      - 🇺🇸_US_美国_11
-      - 🇺🇸_US_美国_12
-      - 🇺🇸_US_美国_13
-      - 🇺🇸_US_美国_14
-      - 🇺🇸_US_美国_15
-      - 🇺🇸_US_美国_16
-      - 🇺🇸_US_美国_17
-      - 🇺🇸_US_美国_18
-      - 🇺🇸_US_美国_19
-      - 🇺🇸_US_美国_20
-      - 🇺🇸_US_美国_21
-      - 🇺🇸_US_美国_22
-      - 🇺🇸_US_美国_23
-      - 🇺🇸_US_美国_24
-      - 🇺🇸_US_美国_25
-      - 🇺🇸_US_美国_26
-      - 🇺🇸_US_美国_27
-      - 🇺🇸_US_美国_28
-      - 🇺🇸_US_美国_29
-      - 🇺🇸_US_美国_30
-      - 🇺🇸_US_美国_31
-      - 🇺🇸_US_美国_32
-      - 🇺🇸_US_美国_33
-      - 🇺🇸_US_美国_34
-      - 🇺🇸_US_美国_35
-      - 🇺🇸_US_美国_36
-      - 🇺🇸_US_美国_37
-      - 🇺🇸_US_美国_38
-      - 🇺🇸_US_美国_39
-      - 🇺🇸_US_美国_40
-      - 🇺🇸_US_美国_41
-      - 🇺🇸_US_美国_42
-      - 🇺🇸_US_美国_43
-      - 🇺🇸_US_美国->🇩🇪_DE_德国
-      - 🇺🇸_US_美国_44
-      - 🇺🇸_US_美国_45
-      - 🇺🇸_US_美国_46
-      - 🇺🇸_US_美国_47
-      - 🇺🇸_US_美国_48
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-162.159.254.222:8080
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.96:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.26.14.16:8080
+      - 🔒 VL-WS-TLS 🇺🇸 US-92.38.145.145:443
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.94.125:80
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.47.159:2087
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.163:80
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.182:443_1
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.141:443_1
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.141:443_2
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.97:2087_1
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.47.74:443_1
+      - ➡️@v2ray_configs_pool⬅️`
+      - 🔒 VL-WS-NONE 🇮🇷 IR-78.109.194.92:39082
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.182:443_2
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.147.22:80
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.47.74:443_2
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.97:2087_2
+      - 🔒 VL-WS-TLS 🇦🇲 AM-45.82.100.62:443
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.1.191:2053
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.20.6.134:2053
+      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.16.192.135:443
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.36.170:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.175.9:80
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.20.5.134:2053
+      - 🔒 TR-WS-TLS 🏴‍☠️ NA-198.41.220.2:443
+      - 🔒 VL-WS-TLS 🇮🇱 IL-5.188.94.5:443
+      - 🔒 VL-TCP-NONE 🇮🇷 IR-185.155.72.119:17132
+      - 😍@v2ray_configs_pool😍`
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国_7
-      - 🇺🇸_US_美国_8
-      - 🇸🇪_SE_瑞典
-      - 🇺🇸_US_美国_9
-      - 🇺🇸_US_美国_10
-      - 🇺🇸_US_美国_11
-      - 🇺🇸_US_美国_12
-      - 🇺🇸_US_美国_13
-      - 🇺🇸_US_美国_14
-      - 🇺🇸_US_美国_15
-      - 🇺🇸_US_美国_16
-      - 🇺🇸_US_美国_17
-      - 🇺🇸_US_美国_18
-      - 🇺🇸_US_美国_19
-      - 🇺🇸_US_美国_20
-      - 🇺🇸_US_美国_21
-      - 🇺🇸_US_美国_22
-      - 🇺🇸_US_美国_23
-      - 🇺🇸_US_美国_24
-      - 🇺🇸_US_美国_25
-      - 🇺🇸_US_美国_26
-      - 🇺🇸_US_美国_27
-      - 🇺🇸_US_美国_28
-      - 🇺🇸_US_美国_29
-      - 🇺🇸_US_美国_30
-      - 🇺🇸_US_美国_31
-      - 🇺🇸_US_美国_32
-      - 🇺🇸_US_美国_33
-      - 🇺🇸_US_美国_34
-      - 🇺🇸_US_美国_35
-      - 🇺🇸_US_美国_36
-      - 🇺🇸_US_美国_37
-      - 🇺🇸_US_美国_38
-      - 🇺🇸_US_美国_39
-      - 🇺🇸_US_美国_40
-      - 🇺🇸_US_美国_41
-      - 🇺🇸_US_美国_42
-      - 🇺🇸_US_美国_43
-      - 🇺🇸_US_美国->🇩🇪_DE_德国
-      - 🇺🇸_US_美国_44
-      - 🇺🇸_US_美国_45
-      - 🇺🇸_US_美国_46
-      - 🇺🇸_US_美国_47
-      - 🇺🇸_US_美国_48
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-162.159.254.222:8080
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.96:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.26.14.16:8080
+      - 🔒 VL-WS-TLS 🇺🇸 US-92.38.145.145:443
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.94.125:80
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.47.159:2087
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.163:80
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.182:443_1
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.141:443_1
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.141:443_2
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.97:2087_1
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.47.74:443_1
+      - ➡️@v2ray_configs_pool⬅️`
+      - 🔒 VL-WS-NONE 🇮🇷 IR-78.109.194.92:39082
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.182:443_2
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.147.22:80
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.47.74:443_2
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.97:2087_2
+      - 🔒 VL-WS-TLS 🇦🇲 AM-45.82.100.62:443
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.1.191:2053
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.20.6.134:2053
+      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.16.192.135:443
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.36.170:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.175.9:80
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.20.5.134:2053
+      - 🔒 TR-WS-TLS 🏴‍☠️ NA-198.41.220.2:443
+      - 🔒 VL-WS-TLS 🇮🇱 IL-5.188.94.5:443
+      - 🔒 VL-TCP-NONE 🇮🇷 IR-185.155.72.119:17132
+      - 😍@v2ray_configs_pool😍`
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国_7
-      - 🇺🇸_US_美国_8
-      - 🇸🇪_SE_瑞典
-      - 🇺🇸_US_美国_9
-      - 🇺🇸_US_美国_10
-      - 🇺🇸_US_美国_11
-      - 🇺🇸_US_美国_12
-      - 🇺🇸_US_美国_13
-      - 🇺🇸_US_美国_14
-      - 🇺🇸_US_美国_15
-      - 🇺🇸_US_美国_16
-      - 🇺🇸_US_美国_17
-      - 🇺🇸_US_美国_18
-      - 🇺🇸_US_美国_19
-      - 🇺🇸_US_美国_20
-      - 🇺🇸_US_美国_21
-      - 🇺🇸_US_美国_22
-      - 🇺🇸_US_美国_23
-      - 🇺🇸_US_美国_24
-      - 🇺🇸_US_美国_25
-      - 🇺🇸_US_美国_26
-      - 🇺🇸_US_美国_27
-      - 🇺🇸_US_美国_28
-      - 🇺🇸_US_美国_29
-      - 🇺🇸_US_美国_30
-      - 🇺🇸_US_美国_31
-      - 🇺🇸_US_美国_32
-      - 🇺🇸_US_美国_33
-      - 🇺🇸_US_美国_34
-      - 🇺🇸_US_美国_35
-      - 🇺🇸_US_美国_36
-      - 🇺🇸_US_美国_37
-      - 🇺🇸_US_美国_38
-      - 🇺🇸_US_美国_39
-      - 🇺🇸_US_美国_40
-      - 🇺🇸_US_美国_41
-      - 🇺🇸_US_美国_42
-      - 🇺🇸_US_美国_43
-      - 🇺🇸_US_美国->🇩🇪_DE_德国
-      - 🇺🇸_US_美国_44
-      - 🇺🇸_US_美国_45
-      - 🇺🇸_US_美国_46
-      - 🇺🇸_US_美国_47
-      - 🇺🇸_US_美国_48
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-162.159.254.222:8080
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.96:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.26.14.16:8080
+      - 🔒 VL-WS-TLS 🇺🇸 US-92.38.145.145:443
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.94.125:80
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.47.159:2087
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.163:80
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.182:443_1
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.141:443_1
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.141:443_2
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.97:2087_1
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.47.74:443_1
+      - ➡️@v2ray_configs_pool⬅️`
+      - 🔒 VL-WS-NONE 🇮🇷 IR-78.109.194.92:39082
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.182:443_2
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.147.22:80
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.47.74:443_2
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.97:2087_2
+      - 🔒 VL-WS-TLS 🇦🇲 AM-45.82.100.62:443
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.1.191:2053
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.20.6.134:2053
+      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.16.192.135:443
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.36.170:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.175.9:80
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.20.5.134:2053
+      - 🔒 TR-WS-TLS 🏴‍☠️ NA-198.41.220.2:443
+      - 🔒 VL-WS-TLS 🇮🇱 IL-5.188.94.5:443
+      - 🔒 VL-TCP-NONE 🇮🇷 IR-185.155.72.119:17132
+      - 😍@v2ray_configs_pool😍`
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国_7
-      - 🇺🇸_US_美国_8
-      - 🇸🇪_SE_瑞典
-      - 🇺🇸_US_美国_9
-      - 🇺🇸_US_美国_10
-      - 🇺🇸_US_美国_11
-      - 🇺🇸_US_美国_12
-      - 🇺🇸_US_美国_13
-      - 🇺🇸_US_美国_14
-      - 🇺🇸_US_美国_15
-      - 🇺🇸_US_美国_16
-      - 🇺🇸_US_美国_17
-      - 🇺🇸_US_美国_18
-      - 🇺🇸_US_美国_19
-      - 🇺🇸_US_美国_20
-      - 🇺🇸_US_美国_21
-      - 🇺🇸_US_美国_22
-      - 🇺🇸_US_美国_23
-      - 🇺🇸_US_美国_24
-      - 🇺🇸_US_美国_25
-      - 🇺🇸_US_美国_26
-      - 🇺🇸_US_美国_27
-      - 🇺🇸_US_美国_28
-      - 🇺🇸_US_美国_29
-      - 🇺🇸_US_美国_30
-      - 🇺🇸_US_美国_31
-      - 🇺🇸_US_美国_32
-      - 🇺🇸_US_美国_33
-      - 🇺🇸_US_美国_34
-      - 🇺🇸_US_美国_35
-      - 🇺🇸_US_美国_36
-      - 🇺🇸_US_美国_37
-      - 🇺🇸_US_美国_38
-      - 🇺🇸_US_美国_39
-      - 🇺🇸_US_美国_40
-      - 🇺🇸_US_美国_41
-      - 🇺🇸_US_美国_42
-      - 🇺🇸_US_美国_43
-      - 🇺🇸_US_美国->🇩🇪_DE_德国
-      - 🇺🇸_US_美国_44
-      - 🇺🇸_US_美国_45
-      - 🇺🇸_US_美国_46
-      - 🇺🇸_US_美国_47
-      - 🇺🇸_US_美国_48
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-162.159.254.222:8080
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.96:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.26.14.16:8080
+      - 🔒 VL-WS-TLS 🇺🇸 US-92.38.145.145:443
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.94.125:80
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.47.159:2087
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.163:80
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.182:443_1
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.141:443_1
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.141:443_2
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.97:2087_1
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.47.74:443_1
+      - ➡️@v2ray_configs_pool⬅️`
+      - 🔒 VL-WS-NONE 🇮🇷 IR-78.109.194.92:39082
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.182:443_2
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.147.22:80
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.47.74:443_2
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.97:2087_2
+      - 🔒 VL-WS-TLS 🇦🇲 AM-45.82.100.62:443
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.1.191:2053
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.20.6.134:2053
+      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.16.192.135:443
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.36.170:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.175.9:80
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.20.5.134:2053
+      - 🔒 TR-WS-TLS 🏴‍☠️ NA-198.41.220.2:443
+      - 🔒 VL-WS-TLS 🇮🇱 IL-5.188.94.5:443
+      - 🔒 VL-TCP-NONE 🇮🇷 IR-185.155.72.119:17132
+      - 😍@v2ray_configs_pool😍`
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国_7
-      - 🇺🇸_US_美国_8
-      - 🇸🇪_SE_瑞典
-      - 🇺🇸_US_美国_9
-      - 🇺🇸_US_美国_10
-      - 🇺🇸_US_美国_11
-      - 🇺🇸_US_美国_12
-      - 🇺🇸_US_美国_13
-      - 🇺🇸_US_美国_14
-      - 🇺🇸_US_美国_15
-      - 🇺🇸_US_美国_16
-      - 🇺🇸_US_美国_17
-      - 🇺🇸_US_美国_18
-      - 🇺🇸_US_美国_19
-      - 🇺🇸_US_美国_20
-      - 🇺🇸_US_美国_21
-      - 🇺🇸_US_美国_22
-      - 🇺🇸_US_美国_23
-      - 🇺🇸_US_美国_24
-      - 🇺🇸_US_美国_25
-      - 🇺🇸_US_美国_26
-      - 🇺🇸_US_美国_27
-      - 🇺🇸_US_美国_28
-      - 🇺🇸_US_美国_29
-      - 🇺🇸_US_美国_30
-      - 🇺🇸_US_美国_31
-      - 🇺🇸_US_美国_32
-      - 🇺🇸_US_美国_33
-      - 🇺🇸_US_美国_34
-      - 🇺🇸_US_美国_35
-      - 🇺🇸_US_美国_36
-      - 🇺🇸_US_美国_37
-      - 🇺🇸_US_美国_38
-      - 🇺🇸_US_美国_39
-      - 🇺🇸_US_美国_40
-      - 🇺🇸_US_美国_41
-      - 🇺🇸_US_美国_42
-      - 🇺🇸_US_美国_43
-      - 🇺🇸_US_美国->🇩🇪_DE_德国
-      - 🇺🇸_US_美国_44
-      - 🇺🇸_US_美国_45
-      - 🇺🇸_US_美国_46
-      - 🇺🇸_US_美国_47
-      - 🇺🇸_US_美国_48
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-162.159.254.222:8080
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.96:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.26.14.16:8080
+      - 🔒 VL-WS-TLS 🇺🇸 US-92.38.145.145:443
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.94.125:80
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.47.159:2087
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.163:80
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.182:443_1
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.141:443_1
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.141:443_2
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.97:2087_1
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.47.74:443_1
+      - ➡️@v2ray_configs_pool⬅️`
+      - 🔒 VL-WS-NONE 🇮🇷 IR-78.109.194.92:39082
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.182:443_2
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.147.22:80
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.47.74:443_2
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.97:2087_2
+      - 🔒 VL-WS-TLS 🇦🇲 AM-45.82.100.62:443
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.1.191:2053
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.20.6.134:2053
+      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.16.192.135:443
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.36.170:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.175.9:80
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.20.5.134:2053
+      - 🔒 TR-WS-TLS 🏴‍☠️ NA-198.41.220.2:443
+      - 🔒 VL-WS-TLS 🇮🇱 IL-5.188.94.5:443
+      - 🔒 VL-TCP-NONE 🇮🇷 IR-185.155.72.119:17132
+      - 😍@v2ray_configs_pool😍`
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国_7
-      - 🇺🇸_US_美国_8
-      - 🇸🇪_SE_瑞典
-      - 🇺🇸_US_美国_9
-      - 🇺🇸_US_美国_10
-      - 🇺🇸_US_美国_11
-      - 🇺🇸_US_美国_12
-      - 🇺🇸_US_美国_13
-      - 🇺🇸_US_美国_14
-      - 🇺🇸_US_美国_15
-      - 🇺🇸_US_美国_16
-      - 🇺🇸_US_美国_17
-      - 🇺🇸_US_美国_18
-      - 🇺🇸_US_美国_19
-      - 🇺🇸_US_美国_20
-      - 🇺🇸_US_美国_21
-      - 🇺🇸_US_美国_22
-      - 🇺🇸_US_美国_23
-      - 🇺🇸_US_美国_24
-      - 🇺🇸_US_美国_25
-      - 🇺🇸_US_美国_26
-      - 🇺🇸_US_美国_27
-      - 🇺🇸_US_美国_28
-      - 🇺🇸_US_美国_29
-      - 🇺🇸_US_美国_30
-      - 🇺🇸_US_美国_31
-      - 🇺🇸_US_美国_32
-      - 🇺🇸_US_美国_33
-      - 🇺🇸_US_美国_34
-      - 🇺🇸_US_美国_35
-      - 🇺🇸_US_美国_36
-      - 🇺🇸_US_美国_37
-      - 🇺🇸_US_美国_38
-      - 🇺🇸_US_美国_39
-      - 🇺🇸_US_美国_40
-      - 🇺🇸_US_美国_41
-      - 🇺🇸_US_美国_42
-      - 🇺🇸_US_美国_43
-      - 🇺🇸_US_美国->🇩🇪_DE_德国
-      - 🇺🇸_US_美国_44
-      - 🇺🇸_US_美国_45
-      - 🇺🇸_US_美国_46
-      - 🇺🇸_US_美国_47
-      - 🇺🇸_US_美国_48
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-162.159.254.222:8080
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.96:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.26.14.16:8080
+      - 🔒 VL-WS-TLS 🇺🇸 US-92.38.145.145:443
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.94.125:80
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.47.159:2087
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.163:80
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.182:443_1
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.141:443_1
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.141:443_2
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.97:2087_1
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.47.74:443_1
+      - ➡️@v2ray_configs_pool⬅️`
+      - 🔒 VL-WS-NONE 🇮🇷 IR-78.109.194.92:39082
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.182:443_2
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.147.22:80
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.47.74:443_2
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.97:2087_2
+      - 🔒 VL-WS-TLS 🇦🇲 AM-45.82.100.62:443
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.1.191:2053
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.20.6.134:2053
+      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.16.192.135:443
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.36.170:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.175.9:80
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.20.5.134:2053
+      - 🔒 TR-WS-TLS 🏴‍☠️ NA-198.41.220.2:443
+      - 🔒 VL-WS-TLS 🇮🇱 IL-5.188.94.5:443
+      - 🔒 VL-TCP-NONE 🇮🇷 IR-185.155.72.119:17132
+      - 😍@v2ray_configs_pool😍`
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -427,56 +344,35 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国_7
-      - 🇺🇸_US_美国_8
-      - 🇸🇪_SE_瑞典
-      - 🇺🇸_US_美国_9
-      - 🇺🇸_US_美国_10
-      - 🇺🇸_US_美国_11
-      - 🇺🇸_US_美国_12
-      - 🇺🇸_US_美国_13
-      - 🇺🇸_US_美国_14
-      - 🇺🇸_US_美国_15
-      - 🇺🇸_US_美国_16
-      - 🇺🇸_US_美国_17
-      - 🇺🇸_US_美国_18
-      - 🇺🇸_US_美国_19
-      - 🇺🇸_US_美国_20
-      - 🇺🇸_US_美国_21
-      - 🇺🇸_US_美国_22
-      - 🇺🇸_US_美国_23
-      - 🇺🇸_US_美国_24
-      - 🇺🇸_US_美国_25
-      - 🇺🇸_US_美国_26
-      - 🇺🇸_US_美国_27
-      - 🇺🇸_US_美国_28
-      - 🇺🇸_US_美国_29
-      - 🇺🇸_US_美国_30
-      - 🇺🇸_US_美国_31
-      - 🇺🇸_US_美国_32
-      - 🇺🇸_US_美国_33
-      - 🇺🇸_US_美国_34
-      - 🇺🇸_US_美国_35
-      - 🇺🇸_US_美国_36
-      - 🇺🇸_US_美国_37
-      - 🇺🇸_US_美国_38
-      - 🇺🇸_US_美国_39
-      - 🇺🇸_US_美国_40
-      - 🇺🇸_US_美国_41
-      - 🇺🇸_US_美国_42
-      - 🇺🇸_US_美国_43
-      - 🇺🇸_US_美国->🇩🇪_DE_德国
-      - 🇺🇸_US_美国_44
-      - 🇺🇸_US_美国_45
-      - 🇺🇸_US_美国_46
-      - 🇺🇸_US_美国_47
-      - 🇺🇸_US_美国_48
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-162.159.254.222:8080
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.96:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.26.14.16:8080
+      - 🔒 VL-WS-TLS 🇺🇸 US-92.38.145.145:443
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.94.125:80
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.47.159:2087
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.163:80
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.182:443_1
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.141:443_1
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.141:443_2
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.97:2087_1
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.47.74:443_1
+      - ➡️@v2ray_configs_pool⬅️`
+      - 🔒 VL-WS-NONE 🇮🇷 IR-78.109.194.92:39082
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.182:443_2
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.147.22:80
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.47.74:443_2
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.97:2087_2
+      - 🔒 VL-WS-TLS 🇦🇲 AM-45.82.100.62:443
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.1.191:2053
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.20.6.134:2053
+      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.16.192.135:443
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.36.170:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.175.9:80
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.20.5.134:2053
+      - 🔒 TR-WS-TLS 🏴‍☠️ NA-198.41.220.2:443
+      - 🔒 VL-WS-TLS 🇮🇱 IL-5.188.94.5:443
+      - 🔒 VL-TCP-NONE 🇮🇷 IR-185.155.72.119:17132
+      - 😍@v2ray_configs_pool😍`
 
 rules:
 # 本地/局域网地址
