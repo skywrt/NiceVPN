@@ -115,6 +115,81 @@ proxies:
     headers:
       Host: ip006.freegradely.xyz
   udp: true
+- name: "\U0001F1FA\U0001F1F8 US 16 VMS"
+  type: vmess
+  server: 172.67.170.11
+  port: 443
+  cipher: auto
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  servername: linde06.indiavideo.sbs
+  network: ws
+  ws-opts:
+    path: /linkws
+    headers:
+      host: linde06.indiavideo.sbs
+- name: "\U0001F1F3\U0001F1F1 NL 17 VMS"
+  type: vmess
+  server: 188.114.97.3
+  port: 443
+  cipher: auto
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  servername: linde06.indiavideo.sbs
+  network: ws
+  ws-opts:
+    path: /linkws
+    headers:
+      host: linde06.indiavideo.sbs
+- name: "\U0001F1F3\U0001F1F1 NL 18 VMS"
+  type: vmess
+  server: 188.114.96.2
+  port: 443
+  cipher: auto
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /linkws
+    headers:
+      host: obdii.cfd
+- name: "\U0001F1FA\U0001F1F3 UN 19 VMS"
+  type: vmess
+  server: cfcdn2.sanfencdn9.com
+  port: 2052
+  cipher: auto
+  uuid: 9ebb09ef-ce69-4bbb-ba8f-3be6c52ef9c2
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /video/u4eCZTxW
+    headers:
+      host: jpafzyhfsg3.yofnhkfc.xyz
+- name: "\U0001F1FA\U0001F1F8 US 20 VMS"
+  type: vmess
+  server: 66.235.200.0
+  port: 80
+  cipher: auto
+  uuid: ec286f13-7e1a-42bc-9deb-76b91b4b9d2d
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: tr1-vmess.ctunnel.xyz
 proxy-groups:
 - name: automatic
   type: url-test
@@ -134,6 +209,11 @@ proxy-groups:
   - "\U0001F1F9\U0001F1FC TW 13 TJN"
   - "\U0001F1F9\U0001F1FC TW 14 TJN"
   - "\U0001F1E8\U0001F1E6 CA 15 VMS"
+  - "\U0001F1FA\U0001F1F8 US 16 VMS"
+  - "\U0001F1F3\U0001F1F1 NL 17 VMS"
+  - "\U0001F1F3\U0001F1F1 NL 18 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 19 VMS"
+  - "\U0001F1FA\U0001F1F8 US 20 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -155,5 +235,10 @@ proxy-groups:
   - "\U0001F1F9\U0001F1FC TW 13 TJN"
   - "\U0001F1F9\U0001F1FC TW 14 TJN"
   - "\U0001F1E8\U0001F1E6 CA 15 VMS"
+  - "\U0001F1FA\U0001F1F8 US 16 VMS"
+  - "\U0001F1F3\U0001F1F1 NL 17 VMS"
+  - "\U0001F1F3\U0001F1F1 NL 18 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 19 VMS"
+  - "\U0001F1FA\U0001F1F8 US 20 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
