@@ -1,10 +1,11 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash
-# 创建时间：02-09-2024 18:13:28
+# 客户端：Clash.Meta
+# 创建时间：02-09-2024 17:07:53
 # 使用模版：V2RaySE 默认模版
-# 节点数量：24
+# 节点数量：39
 ####################################
+# !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
 allow-lan: true
 log-level: info
@@ -85,207 +86,312 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"🏁RELAY-172.67.130.140-0835","type":"vmess","server":"172.67.130.140","port":2082,"cipher":"auto","uuid":"112ac36f-3f53-4e26-8371-d25c028e1b9a","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"s1c.v2.v001sss.xyz"}}}
-  - {"name":"🏁RELAY-104.21.52.103-0472","type":"vmess","server":"s.marktred.com","port":443,"cipher":"auto","uuid":"03fcc618-b93d-6796-6aed-8a38c975d581","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"aveiror.com","network":"ws","ws-opts":{"path":"/linkvws","headers":{"host":"aveiror.com"}}}
-  - {"name":"🚩CF | 🟢 | vmess | @ShadowProxy66 | 16","type":"vmess","server":"172.67.204.84","port":443,"cipher":"auto","uuid":"950db6aa-4926-4616-816e-ec0312dcb87b","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"jahfkjha.cfd","network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"jahfkjha.cfd"}}}
-  - {"name":"🔒 VM-WS-NA 🏴‍☠️ NA-172.67.130.140:2082","type":"vmess","server":"172.67.130.140","port":2082,"cipher":"auto","uuid":"112ac36f-3f53-4e26-8371-d25c028e1b9a","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"s1c.v2.v001sss.xyz"}}}
-  - {"name":"رایگان | VMESS | @v2Line | US🇺🇸 | 0️⃣4️⃣","type":"vmess","server":"104.26.15.148","port":80,"cipher":"auto","uuid":"2c4d6f66-2966-49c1-93aa-a7192ba8f8fc","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/V2LINE-TELEGRAM-CHANNEL-VMESS-WS","headers":{"host":"73012792103530616183052842717949.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou"}}}
-  - {"name":"🚩CF | 🟢 | vmess | @DeamNet_Proxy | 10","type":"vmess","server":"104.19.44.151","port":8080,"cipher":"auto","uuid":"3fdf9d48-578a-42dc-9fdd-0dfcefa3d0c5","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/?ed=2048&Telegram🇨🇳 @WangCai_8","headers":{"host":"amd2.720208.xyz"}}}
-  - {"name":"🚩CF | 🟢 | vmess | @ShadowProxy66 | 6","type":"vmess","server":"104.21.82.17","port":443,"cipher":"auto","uuid":"bc864078-dcf3-4bf4-8dbf-ca9f200b56be","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"gwdef.sbs","network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"gwdef.sbs"}}}
-  - {"name":"🔒 TR-WS-TLS 🏴‍☠️ NA-198.41.220.12:443","type":"trojan","server":"198.41.220.12","port":443,"udp":true,"password":"242a3d8eee5e4ed1a6bfa4141d549a25","sni":"jobscareerforlawyers.com","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"6b777a91","headers":{"host":"jobscareerforlawyers.com"}}}
-  - {"name":"🔒 TR-WS-TLS 🏴‍☠️ NA-198.41.220.4:443","type":"trojan","server":"198.41.220.4","port":443,"udp":true,"password":"71409d3e488548e8bb076d229778f008","sni":"jobscareerforlawyers.com","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"6b777a91","headers":{"host":"jobscareerforlawyers.com"}}}
-  - {"name":"🔒 TR-WS-TLS 🏴‍☠️ NA-162.159.136.234:443","type":"trojan","server":"162.159.136.234","port":443,"udp":true,"password":"559c3b5f-3dd1-47e4-94ad-017cb392a7ba","sni":"de1.trojanvpn.de","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config","headers":{"host":"de1.trojanvpn.dE"}}}
-  - {"name":"🔒 TR-WS-TLS 🏴‍☠️ NA-190.93.246.247:443","type":"trojan","server":"190.93.246.247","port":443,"udp":true,"password":"dba20dcb635e430fa4d3bfc303a149d2","sni":"jobscareerforlawyers.com","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"6b777a91","headers":{"host":"jobscareerforlawyers.com"}}}
-  - {"name":"🔒 TR-WS-TLS 🏴‍☠️ NA-104.26.8.202:443","type":"trojan","server":"104.26.8.202","port":443,"udp":true,"password":"559c3b5f-3dd1-47e4-94ad-017cb392a7ba","sni":"de1.trojanvpn.de","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/Alfred_Config-Alfred_Config-Alfred_Config-Alfred_Config-Alfred_Config-Alfred_Config-Alfred_Config-Alfred_Config-Alfred_Config-Alfred_Config-Alfred_Config-Alfred_Config-Alfred_Config-Alfred_Config-Alfred_Config-Alfred_Config-Alfred_Config-Alfred_Config-Alfred_Config-Alfred_Config-Alfred_Config-Alfred_Config-Alfred_Config-Alfred_Config-Alfred_Config-Alfred_Config-Alfred_Config","headers":{"host":"de1.trojanvpn.dE"}}}
-  - {"name":"🔒 TR-WS-TLS 🏴‍☠️ NA-104.17.147.7:443","type":"trojan","server":"104.17.147.7","port":443,"udp":true,"password":"71409d3e488548e8bb076d229778f008","sni":"jobscareertoday.com","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"6b777a91","headers":{"host":"jobscareertoday.com"}}}
-  - {"name":"🔒 TR-WS-TLS 🏴‍☠️ NA-162.159.152.2:443","type":"trojan","server":"162.159.152.2","port":443,"udp":true,"password":"242a3d8eee5e4ed1a6bfa4141d549a25","sni":"jobscareerforlawyers.com","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"6b777a91","headers":{"host":"jobscareerforlawyers.com"}}}
-  - {"name":"🔒 TR-WS-TLS 🏴‍☠️ NA-104.18.12.229:2053","type":"trojan","server":"104.18.12.229","port":2053,"udp":true,"password":"Watashi_VPN","sni":"t-watashi-r-jacket-o-people-jan.watashi-java.ir","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"t-watashi-r-jacket-o-people-jan.watashi-java.ir"}}}
-  - {"name":"🔒 TR-WS-TLS 🏴‍☠️ NA-104.27.7.142:2053","type":"trojan","server":"Watashi_VPN@104.27.7.142:2053?security=tls&sni=t-watashi-r-jacket-o-people-jan.watashi-java.ir&type=ws&host=t-watashi-r-jacket-o-people-jan.watashi-java.ir&path=/?TM@AZARBAYJAB1 TM@AZARBAYJAB1 @AZARBAYJAB1","port":2053,"udp":true,"password":"Watashi_VPN@104.27.7.142:2053?security=tls&sni=t-watashi-r-jacket-o-people-jan.watashi-java.ir&type=ws&host=t-watashi-r-jacket-o-people-jan.watashi-java.ir&path=/?TM@AZARBAYJAB1 TM@AZARBAYJAB1 ","sni":"t-watashi-r-jacket-o-people-jan.watashi-java.ir","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"t-watashi-r-jacket-o-people-jan.watashi-java.ir"}}}
-  - {"name":"🔒 TR-WS-TLS 🏴‍☠️ NA-104.17.147.8:443","type":"trojan","server":"104.17.147.8","port":443,"udp":true,"password":"4aec4e7f8cf8454ea4613659822e1a61","sni":"jobscareerforstudent.com","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6b777a91","headers":{"host":"jobscareerforstudent.com"}}}
-  - {"name":"🔒 TR-WS-TLS 🏴‍☠️ NA-104.17.61.5:443","type":"trojan","server":"104.17.61.5","port":443,"udp":true,"password":"2cba4104747d49d18319e5ade1b93ab5","sni":"jobscareerfortoday.com","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"6b777a91","headers":{"host":"jobscareerfortoday.com"}}}
-  - {"name":"🔒 TR-WS-TLS 🏴‍☠️ NA-198.41.220.2:443","type":"trojan","server":"198.41.220.2","port":443,"udp":true,"password":"242a3d8eee5e4ed1a6bfa4141d549a25","sni":"jobscareerfortoday.com","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"6b777a91","headers":{"host":"jobscareerfortoday.com"}}}
-  - {"name":"🔒 TR-WS-TLS 🏴‍☠️ NA-162.159.133.234:443","type":"trojan","server":"162.159.133.234","port":443,"udp":true,"password":"559c3b5f-3dd1-47e4-94ad-017cb392a7ba","sni":"de1.trojanvpn.de","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config","headers":{"host":"de1.trojanvpn.dE"}}}
-  - {"name":"🔒 TR-WS-TLS 🏴‍☠️ NA-104.19.159.6:443","type":"trojan","server":"104.19.159.6","port":443,"udp":true,"password":"b0b861c2c85346a389b9e95769c3cba4","sni":"jobscareerforstudent.com","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6b777a91","headers":{"host":"jobscareerforstudent.com"}}}
-  - {"name":"🔒 TR-WS-TLS 🏴‍☠️ NA-104.19.171.8:443","type":"trojan","server":"104.19.171.8","port":443,"udp":true,"password":"0ab6c98dae3b48e8b9c4a776b6c9c19a","sni":"jobscareerforlawyers.com","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"6b777a91","headers":{"host":"jobscareerforlawyers.com"}}}
-  - {"name":"🔒 TR-WS-TLS 🏴‍☠️ NA-198.41.220.14:443","type":"trojan","server":"198.41.220.14","port":443,"udp":true,"password":"b4e8771997c94732acbc9ec4d19c2589","sni":"avianrecruit.com","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"6b777a91","headers":{"host":"avianrecruit.com"}}}
-  - {"name":"🔒 TR-WS-TLS 🏴‍☠️ NA-173.245.49.20:2096","type":"trojan","server":"173.245.49.20","port":2096,"udp":true,"password":"Watashi_VPN","sni":"t-watashi-r-jacket-o-people-jan.watashi-java.ir","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"t-watashi-r-jacket-o-people-jan.watashi-java.ir"}}}
+  - {"name":"12|US_speednode_0274","type":"vless","server":"104.21.224.197","port":80,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":false,"servername":"a.ssll.gay","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"a.ssll.gay"}}}
+  - {"name":"12|US_speednode_0229","type":"vless","server":"104.21.224.124","port":80,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":false,"servername":"a.ssll.gay","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"a.ssll.gay"}}}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.81:80","type":"vless","server":"104.21.224.81","port":80,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":false,"servername":"a.ssll.gay","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"a.ssll.gay"}}}
+  - {"name":"12|US_speednode_0263","type":"vless","server":"104.21.224.158","port":80,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":false,"servername":"a.ssll.gay","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"a.ssll.gay"}}}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.108:80","type":"vless","server":"104.21.224.108","port":80,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":false,"servername":"a.ssll.gay","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"a.ssll.gay"}}}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.176:80","type":"vless","server":"104.21.224.176","port":80,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":false,"servername":"a.ssll.gay","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"a.ssll.gay"}}}
+  - {"name":"12|US_speednode_0251","type":"vless","server":"104.21.224.153","port":80,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":false,"servername":"a.ssll.gay","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"a.ssll.gay"}}}
+  - {"name":"12|US_speednode_0165","type":"vless","server":"104.21.224.60","port":80,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":false,"servername":"a.ssll.gay","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"a.ssll.gay"}}}
+  - {"name":"12|US_speednode_0170","type":"vless","server":"104.21.224.54","port":80,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":false,"servername":"a.ssll.gay","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"a.ssll.gay"}}}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-162.159.153.4:8880","type":"vless","server":"162.159.153.4","port":8880,"uuid":"376e5993-9afa-4bac-9660-edf39ea29996","tls":false,"servername":"kanal-ma-falcunargo.43f6252145.workers.Dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"kanal-ma-falcunargo.43f6252145.workers.Dev"}}}
+  - {"name":"12|US_speednode_0179","type":"vless","server":"104.21.224.72","port":80,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":false,"servername":"a.ssll.gay","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"a.ssll.gay"}}}
+  - {"name":"12|US_speednode_0158","type":"vless","server":"104.21.224.15","port":80,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":false,"servername":"a.ssll.gay","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"a.ssll.gay"}}}
+  - {"name":"12|US_speednode_0176","type":"vless","server":"104.21.224.68","port":80,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":false,"servername":"a.ssll.gay","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"a.ssll.gay"}}}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.50.233:80","type":"vless","server":"104.21.50.233","port":80,"uuid":"ec6e3722-1456-44eb-8349-d565aa774174","tls":false,"servername":"telegram-vpnhttpinjectorfree-31.hawage8393.workers.dev","network":"ws","ws-opts":{"path":"/Telegram:@VPNHTTPInjectorfree-Telegram:@VPNHTTPInjectorfree-Telegram:@VPNHTTPInjectorfree?ed=2048","headers":{"host":"telegram-vpnhttpinjectorfree-31.hawage8393.workers.dev"}}}
+  - {"name":"🔒 VL-WS-TLS 🇦🇲 AM-45.82.100.62:443","type":"vless","server":"45.82.100.62","port":443,"uuid":"4352f2a7-d620-474e-9249-e866774a2c81","tls":true,"servername":"ebnada.com","network":"ws","ws-opts":{"path":"/hgffg","headers":{"host":"ebnada.com"}}}
+  - {"name":"12|US_speednode_0219","type":"vless","server":"104.21.224.106","port":80,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":false,"servername":"a.ssll.gay","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"a.ssll.gay"}}}
+  - {"name":"12|US_speednode_0287","type":"vless","server":"104.21.224.199","port":80,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":false,"servername":"a.ssll.gay","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"a.ssll.gay"}}}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.92:80","type":"vless","server":"104.21.224.92","port":80,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":false,"servername":"a.ssll.gay","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"a.ssll.gay"}}}
+  - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-104.17.53.18:443","type":"vless","server":"104.17.53.18","port":443,"uuid":"e4e7b149-8bd8-4266-8cbb-0987604dbc87","tls":true,"servername":"toujiediansigema.5112233.xyz","network":"ws","ws-opts":{"path":"TG@juzibaipiao偷节点死吗","headers":{"host":"toujiediansigema.5112233.xyz"}}}
+  - {"name":"12|US_speednode_0269","type":"vless","server":"104.21.224.189","port":80,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":false,"servername":"a.ssll.gay","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"a.ssll.gay"}}}
+  - {"name":"12|US_speednode_0155","type":"vless","server":"104.21.224.27","port":80,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":false,"servername":"a.ssll.gay","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"a.ssll.gay"}}}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.115:80","type":"vless","server":"104.21.224.115","port":80,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":false,"servername":"a.ssll.gay","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"a.ssll.gay"}}}
+  - {"name":"12|US_speednode_0268","type":"vless","server":"104.21.224.181","port":80,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":false,"servername":"a.ssll.gay","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"a.ssll.gay"}}}
+  - {"name":"12|US_speednode_0280","type":"vless","server":"104.21.224.180","port":80,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":false,"servername":"a.ssll.gay","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"a.ssll.gay"}}}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.70.29:80","type":"vless","server":"104.21.70.29","port":80,"uuid":"ebbeeb9f-0842-5048-89b9-64643d3424e6","tls":false,"servername":"sany.babaksalehi58.woRkeRs.dEv","network":"ws","ws-opts":{"path":"vless-ws/?ed=2560","headers":{"host":"sany.babaksalehi58.woRkeRs.dEv"}}}
+  - {"name":"12|US_speednode_0211","type":"vless","server":"104.21.224.107","port":80,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":false,"servername":"a.ssll.gay","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"a.ssll.gay"}}}
+  - {"name":"🔒 TR-WS-TLS 🏴‍☠️ NA-104.16.159.2:443","type":"trojan","server":"104.16.159.2","port":443,"udp":true,"password":"cb1f26aa437d4bfa9b841d28503ce8cc","sni":"jobscareerforstudent.com","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"6b777a91","headers":{"host":"jobscareerforstudent.com"}}}
+  - {"name":"12|US_speednode_0162","type":"vless","server":"104.21.224.19","port":80,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":false,"servername":"a.ssll.gay","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"a.ssll.gay"}}}
+  - {"name":"12|US_speednode_0182","type":"vless","server":"104.21.224.67","port":80,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":false,"servername":"a.ssll.gay","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"a.ssll.gay"}}}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.157.34:8880","type":"vless","server":"172.67.157.34","port":8880,"uuid":"a0ff2513-1598-40c5-9db5-c4bb1a72d17e","tls":false,"servername":"worker-billowing-cloud-0c50.b9350565a48fe0.workers.dev","network":"ws","ws-opts":{"path":"Telegram channel : @pandavpntc","headers":{"host":"worker-billowing-cloud-0c50.b9350565a48fe0.workers.dev"}}}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-188.114.96.217:80","type":"vless","server":"188.114.96.217","port":80,"uuid":"70aa6fd6-9d04-4657-9eaa-2946541f6deb","tls":false,"servername":"071ll2532.16965a6a7d.workers.dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"071ll2532.16965a6a7d.workers.dev"}}}
+  - {"name":"4Jadi-17087","type":"vmess","server":"104.26.15.148","port":80,"cipher":"auto","uuid":"947cb385-54b4-4453-ac92-63c95ef32a6a","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/V2LINE-TELEGRAM-CHANNEL-VMESS-WS","headers":{"host":"39238319310964543920519489701900.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou"}}}
+  - {"name":"12|US_speednode_0259","type":"vless","server":"104.21.224.182","port":80,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":false,"servername":"a.ssll.gay","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"a.ssll.gay"}}}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.10:80","type":"vless","server":"104.21.224.10","port":80,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":false,"servername":"a.ssll.gay","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"a.ssll.gay"}}}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.130:80","type":"vless","server":"104.21.224.130","port":80,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":false,"servername":"a.ssll.gay","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"a.ssll.gay"}}}
+  - {"name":"12|US_speednode_0174","type":"vless","server":"104.21.224.66","port":80,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":false,"servername":"a.ssll.gay","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"a.ssll.gay"}}}
+  - {"name":"12|US_speednode_0277","type":"vless","server":"104.21.224.179","port":80,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":false,"servername":"a.ssll.gay","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"a.ssll.gay"}}}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.44.193:80","type":"vless","server":"172.67.44.193","port":80,"uuid":"3d4e4ff0-d706-4a6c-92b1-ed4927959c3a","tls":false,"servername":"cpy.cpy-teel-1-32f.workers.dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"cpy.cpy-teel-1-32f.workers.dev"}}}
+  - {"name":"12|US_speednode_0121","type":"vless","server":"104.21.224.14","port":80,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":false,"servername":"a.ssll.gay","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"a.ssll.gay"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🏁RELAY-172.67.130.140-0835
-      - 🏁RELAY-104.21.52.103-0472
-      - 🚩CF | 🟢 | vmess | @ShadowProxy66 | 16
-      - 🔒 VM-WS-NA 🏴‍☠️ NA-172.67.130.140:2082
-      - رایگان | VMESS | @v2Line | US🇺🇸 | 0️⃣4️⃣
-      - 🚩CF | 🟢 | vmess | @DeamNet_Proxy | 10
-      - 🚩CF | 🟢 | vmess | @ShadowProxy66 | 6
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-198.41.220.12:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-198.41.220.4:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-162.159.136.234:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-190.93.246.247:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.26.8.202:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.17.147.7:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-162.159.152.2:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.18.12.229:2053
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.27.7.142:2053
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.17.147.8:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.17.61.5:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-198.41.220.2:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-162.159.133.234:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.19.159.6:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.19.171.8:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-198.41.220.14:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-173.245.49.20:2096
+      - 12|US_speednode_0274
+      - 12|US_speednode_0229
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.81:80
+      - 12|US_speednode_0263
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.108:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.176:80
+      - 12|US_speednode_0251
+      - 12|US_speednode_0165
+      - 12|US_speednode_0170
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-162.159.153.4:8880
+      - 12|US_speednode_0179
+      - 12|US_speednode_0158
+      - 12|US_speednode_0176
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.50.233:80
+      - 🔒 VL-WS-TLS 🇦🇲 AM-45.82.100.62:443
+      - 12|US_speednode_0219
+      - 12|US_speednode_0287
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.92:80
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.17.53.18:443
+      - 12|US_speednode_0269
+      - 12|US_speednode_0155
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.115:80
+      - 12|US_speednode_0268
+      - 12|US_speednode_0280
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.70.29:80
+      - 12|US_speednode_0211
+      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.16.159.2:443
+      - 12|US_speednode_0162
+      - 12|US_speednode_0182
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.157.34:8880
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-188.114.96.217:80
+      - 4Jadi-17087
+      - 12|US_speednode_0259
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.10:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.130:80
+      - 12|US_speednode_0174
+      - 12|US_speednode_0277
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.44.193:80
+      - 12|US_speednode_0121
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🏁RELAY-172.67.130.140-0835
-      - 🏁RELAY-104.21.52.103-0472
-      - 🚩CF | 🟢 | vmess | @ShadowProxy66 | 16
-      - 🔒 VM-WS-NA 🏴‍☠️ NA-172.67.130.140:2082
-      - رایگان | VMESS | @v2Line | US🇺🇸 | 0️⃣4️⃣
-      - 🚩CF | 🟢 | vmess | @DeamNet_Proxy | 10
-      - 🚩CF | 🟢 | vmess | @ShadowProxy66 | 6
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-198.41.220.12:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-198.41.220.4:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-162.159.136.234:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-190.93.246.247:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.26.8.202:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.17.147.7:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-162.159.152.2:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.18.12.229:2053
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.27.7.142:2053
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.17.147.8:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.17.61.5:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-198.41.220.2:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-162.159.133.234:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.19.159.6:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.19.171.8:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-198.41.220.14:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-173.245.49.20:2096
+      - 12|US_speednode_0274
+      - 12|US_speednode_0229
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.81:80
+      - 12|US_speednode_0263
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.108:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.176:80
+      - 12|US_speednode_0251
+      - 12|US_speednode_0165
+      - 12|US_speednode_0170
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-162.159.153.4:8880
+      - 12|US_speednode_0179
+      - 12|US_speednode_0158
+      - 12|US_speednode_0176
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.50.233:80
+      - 🔒 VL-WS-TLS 🇦🇲 AM-45.82.100.62:443
+      - 12|US_speednode_0219
+      - 12|US_speednode_0287
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.92:80
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.17.53.18:443
+      - 12|US_speednode_0269
+      - 12|US_speednode_0155
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.115:80
+      - 12|US_speednode_0268
+      - 12|US_speednode_0280
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.70.29:80
+      - 12|US_speednode_0211
+      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.16.159.2:443
+      - 12|US_speednode_0162
+      - 12|US_speednode_0182
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.157.34:8880
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-188.114.96.217:80
+      - 4Jadi-17087
+      - 12|US_speednode_0259
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.10:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.130:80
+      - 12|US_speednode_0174
+      - 12|US_speednode_0277
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.44.193:80
+      - 12|US_speednode_0121
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🏁RELAY-172.67.130.140-0835
-      - 🏁RELAY-104.21.52.103-0472
-      - 🚩CF | 🟢 | vmess | @ShadowProxy66 | 16
-      - 🔒 VM-WS-NA 🏴‍☠️ NA-172.67.130.140:2082
-      - رایگان | VMESS | @v2Line | US🇺🇸 | 0️⃣4️⃣
-      - 🚩CF | 🟢 | vmess | @DeamNet_Proxy | 10
-      - 🚩CF | 🟢 | vmess | @ShadowProxy66 | 6
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-198.41.220.12:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-198.41.220.4:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-162.159.136.234:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-190.93.246.247:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.26.8.202:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.17.147.7:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-162.159.152.2:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.18.12.229:2053
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.27.7.142:2053
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.17.147.8:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.17.61.5:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-198.41.220.2:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-162.159.133.234:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.19.159.6:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.19.171.8:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-198.41.220.14:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-173.245.49.20:2096
+      - 12|US_speednode_0274
+      - 12|US_speednode_0229
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.81:80
+      - 12|US_speednode_0263
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.108:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.176:80
+      - 12|US_speednode_0251
+      - 12|US_speednode_0165
+      - 12|US_speednode_0170
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-162.159.153.4:8880
+      - 12|US_speednode_0179
+      - 12|US_speednode_0158
+      - 12|US_speednode_0176
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.50.233:80
+      - 🔒 VL-WS-TLS 🇦🇲 AM-45.82.100.62:443
+      - 12|US_speednode_0219
+      - 12|US_speednode_0287
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.92:80
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.17.53.18:443
+      - 12|US_speednode_0269
+      - 12|US_speednode_0155
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.115:80
+      - 12|US_speednode_0268
+      - 12|US_speednode_0280
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.70.29:80
+      - 12|US_speednode_0211
+      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.16.159.2:443
+      - 12|US_speednode_0162
+      - 12|US_speednode_0182
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.157.34:8880
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-188.114.96.217:80
+      - 4Jadi-17087
+      - 12|US_speednode_0259
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.10:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.130:80
+      - 12|US_speednode_0174
+      - 12|US_speednode_0277
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.44.193:80
+      - 12|US_speednode_0121
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🏁RELAY-172.67.130.140-0835
-      - 🏁RELAY-104.21.52.103-0472
-      - 🚩CF | 🟢 | vmess | @ShadowProxy66 | 16
-      - 🔒 VM-WS-NA 🏴‍☠️ NA-172.67.130.140:2082
-      - رایگان | VMESS | @v2Line | US🇺🇸 | 0️⃣4️⃣
-      - 🚩CF | 🟢 | vmess | @DeamNet_Proxy | 10
-      - 🚩CF | 🟢 | vmess | @ShadowProxy66 | 6
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-198.41.220.12:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-198.41.220.4:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-162.159.136.234:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-190.93.246.247:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.26.8.202:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.17.147.7:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-162.159.152.2:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.18.12.229:2053
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.27.7.142:2053
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.17.147.8:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.17.61.5:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-198.41.220.2:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-162.159.133.234:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.19.159.6:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.19.171.8:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-198.41.220.14:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-173.245.49.20:2096
+      - 12|US_speednode_0274
+      - 12|US_speednode_0229
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.81:80
+      - 12|US_speednode_0263
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.108:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.176:80
+      - 12|US_speednode_0251
+      - 12|US_speednode_0165
+      - 12|US_speednode_0170
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-162.159.153.4:8880
+      - 12|US_speednode_0179
+      - 12|US_speednode_0158
+      - 12|US_speednode_0176
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.50.233:80
+      - 🔒 VL-WS-TLS 🇦🇲 AM-45.82.100.62:443
+      - 12|US_speednode_0219
+      - 12|US_speednode_0287
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.92:80
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.17.53.18:443
+      - 12|US_speednode_0269
+      - 12|US_speednode_0155
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.115:80
+      - 12|US_speednode_0268
+      - 12|US_speednode_0280
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.70.29:80
+      - 12|US_speednode_0211
+      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.16.159.2:443
+      - 12|US_speednode_0162
+      - 12|US_speednode_0182
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.157.34:8880
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-188.114.96.217:80
+      - 4Jadi-17087
+      - 12|US_speednode_0259
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.10:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.130:80
+      - 12|US_speednode_0174
+      - 12|US_speednode_0277
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.44.193:80
+      - 12|US_speednode_0121
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🏁RELAY-172.67.130.140-0835
-      - 🏁RELAY-104.21.52.103-0472
-      - 🚩CF | 🟢 | vmess | @ShadowProxy66 | 16
-      - 🔒 VM-WS-NA 🏴‍☠️ NA-172.67.130.140:2082
-      - رایگان | VMESS | @v2Line | US🇺🇸 | 0️⃣4️⃣
-      - 🚩CF | 🟢 | vmess | @DeamNet_Proxy | 10
-      - 🚩CF | 🟢 | vmess | @ShadowProxy66 | 6
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-198.41.220.12:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-198.41.220.4:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-162.159.136.234:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-190.93.246.247:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.26.8.202:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.17.147.7:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-162.159.152.2:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.18.12.229:2053
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.27.7.142:2053
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.17.147.8:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.17.61.5:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-198.41.220.2:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-162.159.133.234:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.19.159.6:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.19.171.8:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-198.41.220.14:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-173.245.49.20:2096
+      - 12|US_speednode_0274
+      - 12|US_speednode_0229
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.81:80
+      - 12|US_speednode_0263
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.108:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.176:80
+      - 12|US_speednode_0251
+      - 12|US_speednode_0165
+      - 12|US_speednode_0170
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-162.159.153.4:8880
+      - 12|US_speednode_0179
+      - 12|US_speednode_0158
+      - 12|US_speednode_0176
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.50.233:80
+      - 🔒 VL-WS-TLS 🇦🇲 AM-45.82.100.62:443
+      - 12|US_speednode_0219
+      - 12|US_speednode_0287
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.92:80
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.17.53.18:443
+      - 12|US_speednode_0269
+      - 12|US_speednode_0155
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.115:80
+      - 12|US_speednode_0268
+      - 12|US_speednode_0280
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.70.29:80
+      - 12|US_speednode_0211
+      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.16.159.2:443
+      - 12|US_speednode_0162
+      - 12|US_speednode_0182
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.157.34:8880
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-188.114.96.217:80
+      - 4Jadi-17087
+      - 12|US_speednode_0259
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.10:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.130:80
+      - 12|US_speednode_0174
+      - 12|US_speednode_0277
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.44.193:80
+      - 12|US_speednode_0121
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🏁RELAY-172.67.130.140-0835
-      - 🏁RELAY-104.21.52.103-0472
-      - 🚩CF | 🟢 | vmess | @ShadowProxy66 | 16
-      - 🔒 VM-WS-NA 🏴‍☠️ NA-172.67.130.140:2082
-      - رایگان | VMESS | @v2Line | US🇺🇸 | 0️⃣4️⃣
-      - 🚩CF | 🟢 | vmess | @DeamNet_Proxy | 10
-      - 🚩CF | 🟢 | vmess | @ShadowProxy66 | 6
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-198.41.220.12:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-198.41.220.4:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-162.159.136.234:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-190.93.246.247:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.26.8.202:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.17.147.7:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-162.159.152.2:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.18.12.229:2053
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.27.7.142:2053
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.17.147.8:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.17.61.5:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-198.41.220.2:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-162.159.133.234:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.19.159.6:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.19.171.8:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-198.41.220.14:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-173.245.49.20:2096
+      - 12|US_speednode_0274
+      - 12|US_speednode_0229
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.81:80
+      - 12|US_speednode_0263
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.108:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.176:80
+      - 12|US_speednode_0251
+      - 12|US_speednode_0165
+      - 12|US_speednode_0170
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-162.159.153.4:8880
+      - 12|US_speednode_0179
+      - 12|US_speednode_0158
+      - 12|US_speednode_0176
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.50.233:80
+      - 🔒 VL-WS-TLS 🇦🇲 AM-45.82.100.62:443
+      - 12|US_speednode_0219
+      - 12|US_speednode_0287
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.92:80
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.17.53.18:443
+      - 12|US_speednode_0269
+      - 12|US_speednode_0155
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.115:80
+      - 12|US_speednode_0268
+      - 12|US_speednode_0280
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.70.29:80
+      - 12|US_speednode_0211
+      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.16.159.2:443
+      - 12|US_speednode_0162
+      - 12|US_speednode_0182
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.157.34:8880
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-188.114.96.217:80
+      - 4Jadi-17087
+      - 12|US_speednode_0259
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.10:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.130:80
+      - 12|US_speednode_0174
+      - 12|US_speednode_0277
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.44.193:80
+      - 12|US_speednode_0121
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -308,30 +414,45 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🏁RELAY-172.67.130.140-0835
-      - 🏁RELAY-104.21.52.103-0472
-      - 🚩CF | 🟢 | vmess | @ShadowProxy66 | 16
-      - 🔒 VM-WS-NA 🏴‍☠️ NA-172.67.130.140:2082
-      - رایگان | VMESS | @v2Line | US🇺🇸 | 0️⃣4️⃣
-      - 🚩CF | 🟢 | vmess | @DeamNet_Proxy | 10
-      - 🚩CF | 🟢 | vmess | @ShadowProxy66 | 6
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-198.41.220.12:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-198.41.220.4:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-162.159.136.234:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-190.93.246.247:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.26.8.202:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.17.147.7:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-162.159.152.2:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.18.12.229:2053
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.27.7.142:2053
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.17.147.8:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.17.61.5:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-198.41.220.2:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-162.159.133.234:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.19.159.6:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.19.171.8:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-198.41.220.14:443
-      - 🔒 TR-WS-TLS 🏴‍☠️ NA-173.245.49.20:2096
+      - 12|US_speednode_0274
+      - 12|US_speednode_0229
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.81:80
+      - 12|US_speednode_0263
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.108:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.176:80
+      - 12|US_speednode_0251
+      - 12|US_speednode_0165
+      - 12|US_speednode_0170
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-162.159.153.4:8880
+      - 12|US_speednode_0179
+      - 12|US_speednode_0158
+      - 12|US_speednode_0176
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.50.233:80
+      - 🔒 VL-WS-TLS 🇦🇲 AM-45.82.100.62:443
+      - 12|US_speednode_0219
+      - 12|US_speednode_0287
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.92:80
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.17.53.18:443
+      - 12|US_speednode_0269
+      - 12|US_speednode_0155
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.115:80
+      - 12|US_speednode_0268
+      - 12|US_speednode_0280
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.70.29:80
+      - 12|US_speednode_0211
+      - 🔒 TR-WS-TLS 🏴‍☠️ NA-104.16.159.2:443
+      - 12|US_speednode_0162
+      - 12|US_speednode_0182
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.157.34:8880
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-188.114.96.217:80
+      - 4Jadi-17087
+      - 12|US_speednode_0259
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.10:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.224.130:80
+      - 12|US_speednode_0174
+      - 12|US_speednode_0277
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.44.193:80
+      - 12|US_speednode_0121
 
 rules:
 # 本地/局域网地址
