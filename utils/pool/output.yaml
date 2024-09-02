@@ -115,77 +115,26 @@ proxies:
     headers:
       Host: ip006.freegradely.xyz
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 16 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 16 SSS"
+  type: ss
+  server: 111.29.58.27
+  port: 635
+  password: a19a57a8-bf7d-4944-9680-212c7d374b30
+  cipher: aes-128-gcm
+- name: "\U0001F1FA\U0001F1F8 US 17 VMS"
   type: vmess
-  server: 172.64.155.209
-  port: 80
+  server: 172.64.32.154
+  port: 2087
   cipher: auto
-  uuid: 947cb385-54b4-4453-ac92-63c95ef32a6a
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /V2LINE-TELEGRAM-CHANNEL-VMESS-WS
-    headers:
-      host: 39238319310964543920519489701900.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou
-- name: "\U0001F1FA\U0001F1F3 UN 17 TJN"
-  type: trojan
-  server: 198.41.220.4
-  port: 443
-  udp: true
-  password: 71409d3e488548e8bb076d229778f008
-  sni: jobscareerforlawyers.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: 6b777a91
-    headers:
-      host: jobscareerforlawyers.com
-- name: "\U0001F1FA\U0001F1F8 US 18 VMS"
-  type: vmess
-  server: 104.26.15.148
-  port: 80
-  cipher: auto
-  uuid: 2c4d6f66-2966-49c1-93aa-a7192ba8f8fc
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /V2LINE-TELEGRAM-CHANNEL-VMESS-WS
-    headers:
-      host: 73012792103530616183052842717949.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou
-- name: "\U0001F1FA\U0001F1F3 UN 19 TJN"
-  type: trojan
-  server: 104.16.192.155
-  port: 443
-  udp: true
-  password: e8105dfd24414268b6c7652c63731097
-  sni: jobscareerfortoday.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: 6b777a91
-    headers:
-      host: jobscareerfortoday.com
-- name: "\U0001F1FA\U0001F1F8 US 20 VMS"
-  type: vmess
-  server: 172.67.192.57
-  port: 443
-  cipher: auto
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: db5afae4-ac23-41a6-8378-f307a9a47436
   alterId: 0
   tls: true
   skip-cert-verify: true
-  servername: max.mankadmu.com
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      host: max.mankadmu.com
+  servername: dd21146ygfdSNA9191281280kdm22kas2123Aawdsd1234bb155138164167.telegrph.info
+  network: grpc
+  grpc-opts:
+    grpc-service-name: /
+    grpc-mode: gun
 proxy-groups:
 - name: automatic
   type: url-test
@@ -205,11 +154,8 @@ proxy-groups:
   - "\U0001F1F9\U0001F1FC TW 13 TJN"
   - "\U0001F1F9\U0001F1FC TW 14 TJN"
   - "\U0001F1E8\U0001F1E6 CA 15 VMS"
-  - "\U0001F1FA\U0001F1F8 US 16 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 17 TJN"
-  - "\U0001F1FA\U0001F1F8 US 18 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 19 TJN"
-  - "\U0001F1FA\U0001F1F8 US 20 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 16 SSS"
+  - "\U0001F1FA\U0001F1F8 US 17 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -231,10 +177,7 @@ proxy-groups:
   - "\U0001F1F9\U0001F1FC TW 13 TJN"
   - "\U0001F1F9\U0001F1FC TW 14 TJN"
   - "\U0001F1E8\U0001F1E6 CA 15 VMS"
-  - "\U0001F1FA\U0001F1F8 US 16 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 17 TJN"
-  - "\U0001F1FA\U0001F1F8 US 18 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 19 TJN"
-  - "\U0001F1FA\U0001F1F8 US 20 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 16 SSS"
+  - "\U0001F1FA\U0001F1F8 US 17 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
