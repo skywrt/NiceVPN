@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：02-09-2024 16:31:41
+# 创建时间：02-09-2024 16:06:28
 # 使用模版：V2RaySE 默认模版
-# 节点数量：50
+# 节点数量：16
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -86,389 +86,151 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"🔒 VL-WS-NA 🏴‍☠️ NA-104.16.61.8:8080","type":"vless","server":"104.16.61.8","port":8080,"uuid":"f32a99e8-05dd-478a-82c0-7688848121bd","tls":false,"servername":"mkhy.daozhang.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"mkhy.daozhang.link"}}}
-  - {"name":"🔒 VL-WS-NONE 🇨🇦 CA-199.212.90.64:80","type":"vless","server":"199.212.90.64","port":80,"uuid":"44b3cbba-e6ac-485a-9481-981a0415eab9","tls":false,"servername":"BRoKEn-bar-5948.NEpog45969.WoRKERS.dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"BRoKEn-bar-5948.NEpog45969.WoRKERS.dev"}}}
-  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.29.181:8080_1","type":"vless","server":"104.18.29.181","port":8080,"uuid":"3f9d3b52-1bcc-499f-aad0-ba71d6123f8b","tls":false,"servername":"shuige3.cbj2bxt6.workers.dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"shuige3.cbj2bxt6.workers.dev"}}}
-  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.42.56:80","type":"vless","server":"104.21.42.56","port":80,"uuid":"baadfec3-75bd-4df0-ad6b-2ecdfdfe9d52","tls":false,"servername":"worker-super-shape-975b.1011da65bb0ac5.workers.Dev","network":"ws","ws-opts":{"path":"/Telegram channel : @pandavpntc","headers":{"host":"worker-super-shape-975b.1011da65bb0ac5.workers.Dev"}}}
-  - {"name":"🔒 VL-WS-NA 🏴‍☠️ NA-172.67.143.102:80","type":"vless","server":"172.67.143.102","port":80,"uuid":"1702734a-fe43-4b45-8a03-1ef12c5709e5","tls":false,"servername":"worker-super-cake-c026.gogoligogoli26.workers.dev","network":"ws","ws-opts":{"path":"/CHANNEL-@ARCHIVE_ANDROID-@ARCHIVE_ANDROIDTelegram-@Archive_Android-Telegram-@Archive_Android-Telegram-@Archive_Android-Telegram-@Archive_Android-Telegram-@Archive_Android-Telegram-@Archive_Androi-Telegram-@Archive_Android","headers":{"host":"worker-super-cake-c026.gogoligogoli26.workers.dev"}}}
-  - {"name":"🔒 VM-WS-NA 🏴‍☠️ NA-172.64.150.8:2095","type":"vmess","server":"172.64.150.8","port":2095,"cipher":"auto","uuid":"a5dc7082-3433-48ad-9216-ddc9768e5160","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/DDD","headers":{"host":"ybr.redbullplus.xyz"}}}
-  - {"name":"🏁RELAY-104.16.72.179-1318","type":"vmess","server":"cfcdn3.sanfencdn9.com","port":80,"cipher":"auto","uuid":"63911f91-bc91-4b71-8d40-9ba99e7043e0","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/video/VDXcaM7r","headers":{"host":"GWYp69Yujp2.yofnhkfc.xyz"}}}
-  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.14.19:8880","type":"vless","server":"104.18.14.19","port":8880,"uuid":"aece0e9c-fc30-4e53-b09c-29622372c2ed","tls":false,"servername":"iran-hamedan.beheni7009.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"iran-hamedan.beheni7009.workers.dev"}}}
-  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.0.35:8880","type":"vless","server":"104.16.0.35","port":8880,"uuid":"075a365b-b0c7-4ba3-b5a6-597850c223f9","tls":false,"servername":"sinaazizpor.wapgiz.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"sinaazizpor.wapgiz.workers.dev"}}}
-  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.29.181:8080_2","type":"vless","server":"104.18.29.181","port":8080,"uuid":"3f9d3b52-1bcc-499f-aad0-ba71d6123f8b","tls":false,"servername":"shuige3.cbj2bxt6.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"shuige3.cbj2bxt6.workers.dev"}}}
-  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.20.19.168:2052","type":"vless","server":"104.20.19.168","port":2052,"uuid":"39d06891-ee89-4316-ae0e-3fcfb9e9714c","tls":false,"servername":"worker-reza2.wbfoppa.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"worker-reza2.wbfoppa.workers.dev"}}}
-  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.8.174:80","type":"vless","server":"104.21.8.174","port":80,"uuid":"76b3cbba-e6ac-485a-9481-336a0415eab9","tls":false,"servername":"olD-diSK-EFCd.JoJahoF109.woRkerS.dev","network":"ws","ws-opts":{"path":"/koNdWpgBHsAGpWzD?ed=2560","headers":{"host":"olD-diSK-EFCd.JoJahoF109.woRkerS.dev"}}}
-  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.2.238:2052","type":"vless","server":"172.67.2.238","port":2052,"uuid":"39d06891-ee89-4316-ae0e-3fcfb9e9714c","tls":false,"servername":"worker-reza2.wbfoppa.workers.dev","network":"ws","ws-opts":{"path":"/TELEGRAM...PROXY_MTM?ed=2048","headers":{"host":"worker-reza2.wbfoppa.workers.dev"}}}
-  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.15.19:8880","type":"vless","server":"104.18.15.19","port":8880,"uuid":"aece0e9c-fc30-4e53-b09c-29622372c2ed","tls":false,"servername":"iran-hamedan.beheni7009.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"iran-hamedan.beheni7009.workers.dev"}}}
-  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-198.41.223.86:8080","type":"vless","server":"198.41.223.86","port":8080,"uuid":"79978027-ef16-4137-b18e-905f8c18f845","tls":false,"servername":"cdnanycasteuorg.fjacz6xe.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"cdnanycasteuorg.fjacz6xe.workers.dev"}}}
-  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.50.26:80","type":"vless","server":"104.21.50.26","port":80,"uuid":"363a1242-5d0b-44b5-be94-4f8d18f45206","tls":false,"servername":"test54.socepol945.workers.Dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"test54.socepol945.workers.Dev"}}}
-  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.26.12.8:8080","type":"vless","server":"104.26.12.8","port":8080,"uuid":"79978027-ef16-4137-b18e-905f8c18f845","tls":false,"servername":"cdnanycasteuorg.fjacz6xe.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"cdnanycasteuorg.fjacz6xe.workers.dev"}}}
-  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.33.85:8880","type":"vless","server":"104.21.33.85","port":8880,"uuid":"5faa94c6-ea27-4ea0-9e39-2de3d6ea9be1","tls":false,"servername":"channel-falcunargo.efa180b5d7.workers.Dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"channel-falcunargo.efa180b5d7.workers.Dev"}}}
-  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.20.18.168:2052","type":"vless","server":"104.20.18.168","port":2052,"uuid":"39d06891-ee89-4316-ae0e-3fcfb9e9714c","tls":false,"servername":"worker-reza2.wbfoppa.workers.dev","network":"ws","ws-opts":{"path":"/TELEGRAM...PROXY_MTM?ed=2048","headers":{"host":"worker-reza2.wbfoppa.workers.dev"}}}
-  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.39.52:80","type":"vless","server":"104.21.39.52","port":80,"uuid":"1702734a-fe43-4b45-8a03-1ef12c5709e5","tls":false,"servername":"worker-super-cake-c026.gogoligogoli26.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"worker-super-cake-c026.gogoligogoli26.workers.dev"}}}
-  - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.83.230:2053","type":"vless","server":"104.21.83.230","port":2053,"uuid":"ac61724f-5b45-57da-afc9-961bff0bbf40","tls":true,"servername":"vpnkenzo5.nptkbb.wORKers.DEV","network":"ws","ws-opts":{"path":"vless-ws/?ed=2048","headers":{"host":"vpnkenzo5.nptkbb.wORKers.DEV"}},"alpn":["http/1.1"]}
-  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.156.192:8080","type":"vless","server":"172.67.156.192","port":8080,"uuid":"d69b66cb-5fe2-40b9-842b-1951982f80ae","tls":false,"servername":"zebelkhan30.quysc64868.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"zebelkhan30.quysc64868.workers.dev"}}}
-  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.13.159:8080","type":"vless","server":"104.21.13.159","port":8080,"uuid":"d69b66cb-5fe2-40b9-842b-1951982f80ae","tls":false,"servername":"zebelkhan30.quysc64868.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"zebelkhan30.quysc64868.workers.dev"}}}
-  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.195.126:8880","type":"vless","server":"172.67.195.126","port":8880,"uuid":"44ab0683-1a75-4859-88ce-ef9ffea53c91","tls":false,"servername":"falcunargo-telegram.384f2ed785.workers.Dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"falcunargo-telegram.384f2ed785.workers.Dev"}}}
-  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.13.159:2086","type":"vless","server":"104.21.13.159","port":2086,"uuid":"d69b66cb-5fe2-40b9-842b-1951982f80ae","tls":false,"servername":"zebelkhan30.quysc64868.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"zebelkhan30.quysc64868.workers.dev"}}}
-  - {"name":"🔒 VL-WS-NA 🏴‍☠️ NA-172.67.157.202:80","type":"vless","server":"172.67.157.202","port":80,"uuid":"76b3cbba-e6ac-485a-9481-336a0415eab9","tls":false,"servername":"OlD-disk-EFCd.JojAhoF109.WorKerS.DEv","network":"ws","ws-opts":{"path":"/odHGn0T9HGFXsTlN?ed=2560","headers":{"host":"OlD-disk-EFCd.JojAhoF109.WorKerS.DEv"}}}
-  - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.182.221:2053","type":"vless","server":"172.67.182.221","port":2053,"uuid":"ac61724f-5b45-57da-afc9-961bff0bbf40","tls":true,"servername":"vpnkenzo5.nptkbb.wORKers.DEV","network":"ws","ws-opts":{"path":"vless-ws/?ed=2048","headers":{"host":"vpnkenzo5.nptkbb.wORKers.DEV"}},"alpn":["http/1.1"]}
-  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.155.183:80","type":"vless","server":"172.67.155.183","port":80,"uuid":"363a1242-5d0b-44b5-be94-4f8d18f45206","tls":false,"servername":"test54.socepol945.workers.Dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"test54.socepol945.workers.Dev"}}}
-  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.28.34:8880","type":"vless","server":"104.16.28.34","port":8880,"uuid":"075a365b-b0c7-4ba3-b5a6-597850c223f9","tls":false,"servername":"sinaazizpor.wapgiz.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"sinaazizpor.wapgiz.workers.dev"}}}
-  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.31.34:8880","type":"vless","server":"104.16.31.34","port":8880,"uuid":"075a365b-b0c7-4ba3-b5a6-597850c223f9","tls":false,"servername":"sinaazizpor.wapgiz.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"sinaazizpor.wapgiz.workers.dev"}}}
-  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.10.196:80","type":"vless","server":"104.21.10.196","port":80,"uuid":"54b3cbba-e6ac-485a-9481-976a0873eab9","tls":false,"servername":"black-tRUth-63bc.DovIf72324.WORKeRS.deV","network":"ws","ws-opts":{"path":"/uKnxA8ei1XcX8fEh?ed=2560","headers":{"host":"black-tRUth-63bc.DovIf72324.WORKeRS.deV"}}}
-  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.33.123:80","type":"vless","server":"104.18.33.123","port":80,"uuid":"01e86ab8-fbda-4ff5-8159-41b0f35c08d4","tls":false,"servername":"vless.2786416969.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"vless.2786416969.workers.dev"}}}
-  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.216.166:2052","type":"vless","server":"172.67.216.166","port":2052,"uuid":"2b4bed25-a5ef-439d-93b1-395b7bcec58b","tls":false,"servername":"workerr.dimon22287.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"workerr.dimon22287.workers.dev"}}}
-  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.64.93:2086","type":"vless","server":"104.21.64.93","port":2086,"uuid":"d69b66cb-5fe2-40b9-842b-1951982f80ae","tls":false,"servername":"zebelkhan30.quysc64868.workers.dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"zebelkhan30.quysc64868.workers.dev"}}}
-  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.157.34:80","type":"vless","server":"172.67.157.34","port":80,"uuid":"6034088f-b713-40dd-93be-eaea802eafe1","tls":false,"servername":"5435.nhopzuei.workers.Dev","network":"ws","ws-opts":{"path":"/Telegram channel : @pandavpntc","headers":{"host":"5435.nhopzuei.workers.Dev"}}}
-  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.2.238:80_1","type":"vless","server":"172.67.2.238","port":80,"uuid":"0fb53a60-2372-412a-a693-5157b58ecc94","tls":false,"servername":"v2raylandd-85.upftsx.workers.Dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"v2raylandd-85.upftsx.workers.Dev"}}}
-  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.161.1:2082","type":"vless","server":"172.67.161.1","port":2082,"uuid":"636b1684-b26c-4a9c-bc6e-8e1197a36d74","tls":false,"servername":"workerr.hashdiler.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"workerr.hashdiler.workers.dev"}}}
-  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.40.164:2086","type":"vless","server":"104.21.40.164","port":2086,"uuid":"636b1684-b26c-4a9c-bc6e-8e1197a36d74","tls":false,"servername":"workerr.hashdiler.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"workerr.hashdiler.workers.dev"}}}
-  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.30.34:8880","type":"vless","server":"104.16.30.34","port":8880,"uuid":"58dbfb96-afac-4251-9189-137e883e65ab","tls":false,"servername":"worker-bitter-tooth-2833.geyoleg265.workers.dev","network":"ws","ws-opts":{"path":"/TELEGRAM-MARAMBASHI/?ed=2048","headers":{"host":"worker-bitter-tooth-2833.geyoleg265.workers.dev"}}}
-  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.133.177:8880","type":"vless","server":"172.67.133.177","port":8880,"uuid":"33f8c4f4-2515-4798-9ea0-15f2030ef4d8","tls":false,"servername":"bia-zod-falcunargo.545c437f13.workers.Dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"bia-zod-falcunargo.545c437f13.workers.Dev"}}}
-  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.9.215:8080_1","type":"vless","server":"104.18.9.215","port":8080,"uuid":"99678074-122c-46db-97fc-80b604c20158","tls":false,"servername":"shuige2.ywfmu-qx.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"shuige2.ywfmu-qx.workers.dev"}}}
-  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.28.181:8080","type":"vless","server":"104.18.28.181","port":8080,"uuid":"99678074-122c-46db-97fc-80b604c20158","tls":false,"servername":"shuige2.ywfmu-qx.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"shuige2.ywfmu-qx.workers.dev"}}}
-  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.20.18.168:80","type":"vless","server":"104.20.18.168","port":80,"uuid":"0fb53a60-2372-412a-a693-5157b58ecc94","tls":false,"servername":"v2raylandd-85.upftsx.workers.Dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"v2raylandd-85.upftsx.workers.Dev"}}}
-  - {"name":"12|US_speednode_0175_1","type":"vless","server":"ip.sb","port":8080,"uuid":"6f183280-b258-437a-a216-e83f7dece776","tls":false,"servername":"901.dbodanwi.workers.dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"901.dbodanwi.workers.dev"}}}
-  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.160.179:8880","type":"vless","server":"172.67.160.179","port":8880,"uuid":"5faa94c6-ea27-4ea0-9e39-2de3d6ea9be1","tls":false,"servername":"channel-falcunargo.efa180b5d7.workers.Dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"channel-falcunargo.efa180b5d7.workers.Dev"}}}
-  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.191.209:8080","type":"vless","server":"172.67.191.209","port":8080,"uuid":"79978027-ef16-4137-b18e-905f8c18f845","tls":false,"servername":"cdnanycasteuorg.fjacz6xe.workers.dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"cdnanycasteuorg.fjacz6xe.workers.dev"}}}
-  - {"name":"12|US_speednode_0175_2","type":"vless","server":"ip.sb","port":8080,"uuid":"6f183280-b258-437a-a216-e83f7dece776","tls":false,"servername":"901.dbodanwi.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048fp=randomized","headers":{"host":"901.dbodanwi.workers.dev"}}}
-  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.20.19.168:80","type":"vless","server":"104.20.19.168","port":80,"uuid":"0fb53a60-2372-412a-a693-5157b58ecc94","tls":false,"servername":"v2raylandd-85.upftsx.workers.Dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"v2raylandd-85.upftsx.workers.Dev"}}}
-  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.2.238:80_2","type":"vless","server":"172.67.2.238","port":80,"uuid":"0fb53a60-2372-412a-a693-5157b58ecc94","tls":false,"servername":"v2raylandd-85.upftsx.workers.Dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"v2raylandd-85.upftsx.workers.Dev"}}}
-  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.9.215:8080_2","type":"vless","server":"104.18.9.215","port":8080,"uuid":"99678074-122c-46db-97fc-80b604c20158","tls":false,"servername":"shuige2.ywfmu-qx.workers.dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"shuige2.ywfmu-qx.workers.dev"}}}
+  - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-104.20.5.134:2053","type":"vless","server":"104.20.5.134","port":2053,"uuid":"ac51ad36-5052-460a-842a-e13455d30cb8","tls":true,"servername":"emoemotional.pages.dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"emoemotional.pages.dev"}}}
+  - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.47.74:443_1","type":"vless","server":"172.66.47.74","port":443,"uuid":"89b3cbba-e6ac-485a-9481-976a0415eab9","tls":true,"servername":"V2NGfaST-6ZM.PagES.DEv","network":"ws","ws-opts":{"path":"/o8mCNUh5NEZBiShb?ed=2560","headers":{"host":"V2NGfaST-6ZM.PagES.DEv"}}}
+  - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.97:2087_1","type":"vless","server":"172.66.44.97","port":2087,"uuid":"89b3cbba-e6ac-485a-9481-976a0415eab9","tls":true,"servername":"joiNv2NgFAsT-49u.PageS.dev","network":"ws","ws-opts":{"path":"/vl0rioUFQ6HK2PN5?ed=2560","headers":{"host":"joiNv2NgFAsT-49u.PageS.dev"}}}
+  - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.97:2087_2","type":"vless","server":"172.66.44.97","port":2087,"uuid":"89b3cbba-e6ac-485a-9481-976a0415eab9","tls":true,"servername":"joiNv2NgFAsT-49u.PageS.dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"joiNv2NgFAsT-49u.PageS.dev"}}}
+  - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.141:443_1","type":"vless","server":"172.66.44.141","port":443,"uuid":"89b3cbba-e6ac-485a-9481-976a0415eab9","tls":true,"servername":"v2ngFASt.pAGeS.dEV","network":"ws","ws-opts":{"path":"/UwFT7UjxD7OKHhBU?ed=2560","headers":{"host":"v2ngFASt.pAGeS.dEV"}}}
+  - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.182:443_1","type":"vless","server":"172.66.44.182","port":443,"uuid":"89b3cbba-e6ac-485a-9481-976a0415eab9","tls":true,"servername":"V2NGfaST-6ZM.PagES.DEv","network":"ws","ws-opts":{"path":"/","headers":{"host":"V2NGfaST-6ZM.PagES.DEv"}}}
+  - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.1.191:2053","type":"vless","server":"172.67.1.191","port":2053,"uuid":"ac51ad36-5052-460a-842a-e13455d30cb8","tls":true,"servername":"emoemotional.pages.dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"emoemotional.pages.dev"}}}
+  - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.47.159:2087","type":"vless","server":"172.66.47.159","port":2087,"uuid":"89b3cbba-e6ac-485a-9481-976a0415eab9","tls":true,"servername":"joiNv2NgFAsT-49u.PageS.dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"joiNv2NgFAsT-49u.PageS.dev"}}}
+  - {"name":"😍@v2ray_configs_pool😍`","type":"vless","server":"172.66.47.159","port":2087,"uuid":"89b3cbba-e6ac-485a-9481-976a0415eab9","tls":true,"servername":"joiNv2NgFAsT-49u.PageS.dev","network":"ws","ws-opts":{"path":"/vl0rioUFQ6HK2PN5?ed=2560","headers":{"host":"joiNv2NgFAsT-49u.PageS.dev"}}}
+  - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.182:443_2","type":"vless","server":"172.66.44.182","port":443,"uuid":"89b3cbba-e6ac-485a-9481-976a0415eab9","tls":true,"servername":"V2NGfaST-6ZM.PagES.DEv","network":"ws","ws-opts":{"path":"/o8mCNUh5NEZBiShb?ed=2560","headers":{"host":"V2NGfaST-6ZM.PagES.DEv"}}}
+  - {"name":"🔒 VL-WS-TLS 🇮🇱 IL-5.188.94.5:443","type":"vless","server":"5.188.94.5","port":443,"uuid":"4352f2a7-d620-474e-9249-e866774a2c81","tls":true,"servername":"ebnada.com","network":"ws","ws-opts":{"path":"/hgffg","headers":{"host":"ebnada.com"}}}
+  - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.141:443_2","type":"vless","server":"172.66.44.141","port":443,"uuid":"89b3cbba-e6ac-485a-9481-976a0415eab9","tls":true,"servername":"v2ngFASt.pAGeS.dEV","network":"ws","ws-opts":{"path":"/","headers":{"host":"v2ngFASt.pAGeS.dEV"}}}
+  - {"name":"➡️@v2ray_configs_pool⬅️`","type":"vless","server":"joinv2ngfast-49u.pages.dev","port":2087,"uuid":"89b3cbba-e6ac-485a-9481-976a0415eab9","tls":true,"servername":"joiNv2NgFAsT-49u.PageS.dev","network":"ws","ws-opts":{"path":"/vl0rioUFQ6HK2PN5?ed=2560","headers":{"host":"joiNv2NgFAsT-49u.PageS.dev"}}}
+  - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.47.74:443_2","type":"vless","server":"172.66.47.74","port":443,"uuid":"89b3cbba-e6ac-485a-9481-976a0415eab9","tls":true,"servername":"V2NGfaST-6ZM.PagES.DEv","network":"ws","ws-opts":{"path":"/","headers":{"host":"V2NGfaST-6ZM.PagES.DEv"}}}
+  - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-104.20.6.134:2053","type":"vless","server":"104.20.6.134","port":2053,"uuid":"ac51ad36-5052-460a-842a-e13455d30cb8","tls":true,"servername":"emoemotional.pages.dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"emoemotional.pages.dev"}}}
+  - {"name":"🔒 VL-TCP-NONE 🇮🇷 IR-185.155.72.119:17132","type":"vless","server":"185.155.72.119","port":17132,"uuid":"08eca8a9-4135-4d36-848b-10e3e088ac9a","tls":false,"servername":"telewebion.com","network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-104.16.61.8:8080
-      - 🔒 VL-WS-NONE 🇨🇦 CA-199.212.90.64:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.29.181:8080_1
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.42.56:80
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-172.67.143.102:80
-      - 🔒 VM-WS-NA 🏴‍☠️ NA-172.64.150.8:2095
-      - 🏁RELAY-104.16.72.179-1318
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.14.19:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.0.35:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.29.181:8080_2
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.20.19.168:2052
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.8.174:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.2.238:2052
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.15.19:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-198.41.223.86:8080
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.50.26:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.26.12.8:8080
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.33.85:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.20.18.168:2052
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.39.52:80
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.83.230:2053
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.156.192:8080
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.13.159:8080
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.195.126:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.13.159:2086
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-172.67.157.202:80
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.182.221:2053
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.155.183:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.28.34:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.31.34:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.10.196:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.33.123:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.216.166:2052
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.64.93:2086
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.157.34:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.2.238:80_1
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.161.1:2082
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.40.164:2086
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.30.34:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.133.177:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.9.215:8080_1
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.28.181:8080
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.20.18.168:80
-      - 12|US_speednode_0175_1
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.160.179:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.191.209:8080
-      - 12|US_speednode_0175_2
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.20.19.168:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.2.238:80_2
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.9.215:8080_2
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.20.5.134:2053
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.47.74:443_1
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.97:2087_1
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.97:2087_2
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.141:443_1
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.182:443_1
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.1.191:2053
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.47.159:2087
+      - 😍@v2ray_configs_pool😍`
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.182:443_2
+      - 🔒 VL-WS-TLS 🇮🇱 IL-5.188.94.5:443
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.141:443_2
+      - ➡️@v2ray_configs_pool⬅️`
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.47.74:443_2
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.20.6.134:2053
+      - 🔒 VL-TCP-NONE 🇮🇷 IR-185.155.72.119:17132
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-104.16.61.8:8080
-      - 🔒 VL-WS-NONE 🇨🇦 CA-199.212.90.64:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.29.181:8080_1
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.42.56:80
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-172.67.143.102:80
-      - 🔒 VM-WS-NA 🏴‍☠️ NA-172.64.150.8:2095
-      - 🏁RELAY-104.16.72.179-1318
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.14.19:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.0.35:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.29.181:8080_2
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.20.19.168:2052
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.8.174:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.2.238:2052
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.15.19:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-198.41.223.86:8080
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.50.26:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.26.12.8:8080
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.33.85:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.20.18.168:2052
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.39.52:80
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.83.230:2053
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.156.192:8080
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.13.159:8080
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.195.126:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.13.159:2086
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-172.67.157.202:80
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.182.221:2053
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.155.183:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.28.34:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.31.34:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.10.196:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.33.123:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.216.166:2052
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.64.93:2086
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.157.34:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.2.238:80_1
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.161.1:2082
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.40.164:2086
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.30.34:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.133.177:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.9.215:8080_1
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.28.181:8080
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.20.18.168:80
-      - 12|US_speednode_0175_1
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.160.179:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.191.209:8080
-      - 12|US_speednode_0175_2
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.20.19.168:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.2.238:80_2
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.9.215:8080_2
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.20.5.134:2053
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.47.74:443_1
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.97:2087_1
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.97:2087_2
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.141:443_1
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.182:443_1
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.1.191:2053
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.47.159:2087
+      - 😍@v2ray_configs_pool😍`
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.182:443_2
+      - 🔒 VL-WS-TLS 🇮🇱 IL-5.188.94.5:443
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.141:443_2
+      - ➡️@v2ray_configs_pool⬅️`
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.47.74:443_2
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.20.6.134:2053
+      - 🔒 VL-TCP-NONE 🇮🇷 IR-185.155.72.119:17132
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-104.16.61.8:8080
-      - 🔒 VL-WS-NONE 🇨🇦 CA-199.212.90.64:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.29.181:8080_1
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.42.56:80
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-172.67.143.102:80
-      - 🔒 VM-WS-NA 🏴‍☠️ NA-172.64.150.8:2095
-      - 🏁RELAY-104.16.72.179-1318
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.14.19:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.0.35:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.29.181:8080_2
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.20.19.168:2052
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.8.174:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.2.238:2052
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.15.19:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-198.41.223.86:8080
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.50.26:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.26.12.8:8080
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.33.85:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.20.18.168:2052
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.39.52:80
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.83.230:2053
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.156.192:8080
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.13.159:8080
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.195.126:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.13.159:2086
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-172.67.157.202:80
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.182.221:2053
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.155.183:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.28.34:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.31.34:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.10.196:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.33.123:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.216.166:2052
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.64.93:2086
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.157.34:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.2.238:80_1
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.161.1:2082
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.40.164:2086
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.30.34:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.133.177:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.9.215:8080_1
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.28.181:8080
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.20.18.168:80
-      - 12|US_speednode_0175_1
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.160.179:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.191.209:8080
-      - 12|US_speednode_0175_2
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.20.19.168:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.2.238:80_2
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.9.215:8080_2
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.20.5.134:2053
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.47.74:443_1
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.97:2087_1
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.97:2087_2
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.141:443_1
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.182:443_1
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.1.191:2053
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.47.159:2087
+      - 😍@v2ray_configs_pool😍`
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.182:443_2
+      - 🔒 VL-WS-TLS 🇮🇱 IL-5.188.94.5:443
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.141:443_2
+      - ➡️@v2ray_configs_pool⬅️`
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.47.74:443_2
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.20.6.134:2053
+      - 🔒 VL-TCP-NONE 🇮🇷 IR-185.155.72.119:17132
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-104.16.61.8:8080
-      - 🔒 VL-WS-NONE 🇨🇦 CA-199.212.90.64:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.29.181:8080_1
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.42.56:80
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-172.67.143.102:80
-      - 🔒 VM-WS-NA 🏴‍☠️ NA-172.64.150.8:2095
-      - 🏁RELAY-104.16.72.179-1318
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.14.19:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.0.35:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.29.181:8080_2
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.20.19.168:2052
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.8.174:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.2.238:2052
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.15.19:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-198.41.223.86:8080
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.50.26:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.26.12.8:8080
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.33.85:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.20.18.168:2052
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.39.52:80
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.83.230:2053
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.156.192:8080
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.13.159:8080
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.195.126:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.13.159:2086
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-172.67.157.202:80
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.182.221:2053
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.155.183:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.28.34:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.31.34:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.10.196:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.33.123:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.216.166:2052
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.64.93:2086
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.157.34:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.2.238:80_1
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.161.1:2082
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.40.164:2086
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.30.34:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.133.177:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.9.215:8080_1
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.28.181:8080
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.20.18.168:80
-      - 12|US_speednode_0175_1
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.160.179:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.191.209:8080
-      - 12|US_speednode_0175_2
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.20.19.168:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.2.238:80_2
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.9.215:8080_2
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.20.5.134:2053
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.47.74:443_1
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.97:2087_1
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.97:2087_2
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.141:443_1
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.182:443_1
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.1.191:2053
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.47.159:2087
+      - 😍@v2ray_configs_pool😍`
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.182:443_2
+      - 🔒 VL-WS-TLS 🇮🇱 IL-5.188.94.5:443
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.141:443_2
+      - ➡️@v2ray_configs_pool⬅️`
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.47.74:443_2
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.20.6.134:2053
+      - 🔒 VL-TCP-NONE 🇮🇷 IR-185.155.72.119:17132
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-104.16.61.8:8080
-      - 🔒 VL-WS-NONE 🇨🇦 CA-199.212.90.64:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.29.181:8080_1
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.42.56:80
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-172.67.143.102:80
-      - 🔒 VM-WS-NA 🏴‍☠️ NA-172.64.150.8:2095
-      - 🏁RELAY-104.16.72.179-1318
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.14.19:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.0.35:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.29.181:8080_2
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.20.19.168:2052
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.8.174:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.2.238:2052
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.15.19:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-198.41.223.86:8080
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.50.26:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.26.12.8:8080
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.33.85:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.20.18.168:2052
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.39.52:80
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.83.230:2053
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.156.192:8080
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.13.159:8080
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.195.126:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.13.159:2086
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-172.67.157.202:80
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.182.221:2053
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.155.183:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.28.34:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.31.34:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.10.196:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.33.123:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.216.166:2052
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.64.93:2086
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.157.34:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.2.238:80_1
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.161.1:2082
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.40.164:2086
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.30.34:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.133.177:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.9.215:8080_1
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.28.181:8080
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.20.18.168:80
-      - 12|US_speednode_0175_1
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.160.179:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.191.209:8080
-      - 12|US_speednode_0175_2
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.20.19.168:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.2.238:80_2
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.9.215:8080_2
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.20.5.134:2053
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.47.74:443_1
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.97:2087_1
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.97:2087_2
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.141:443_1
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.182:443_1
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.1.191:2053
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.47.159:2087
+      - 😍@v2ray_configs_pool😍`
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.182:443_2
+      - 🔒 VL-WS-TLS 🇮🇱 IL-5.188.94.5:443
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.141:443_2
+      - ➡️@v2ray_configs_pool⬅️`
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.47.74:443_2
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.20.6.134:2053
+      - 🔒 VL-TCP-NONE 🇮🇷 IR-185.155.72.119:17132
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-104.16.61.8:8080
-      - 🔒 VL-WS-NONE 🇨🇦 CA-199.212.90.64:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.29.181:8080_1
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.42.56:80
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-172.67.143.102:80
-      - 🔒 VM-WS-NA 🏴‍☠️ NA-172.64.150.8:2095
-      - 🏁RELAY-104.16.72.179-1318
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.14.19:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.0.35:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.29.181:8080_2
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.20.19.168:2052
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.8.174:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.2.238:2052
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.15.19:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-198.41.223.86:8080
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.50.26:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.26.12.8:8080
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.33.85:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.20.18.168:2052
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.39.52:80
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.83.230:2053
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.156.192:8080
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.13.159:8080
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.195.126:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.13.159:2086
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-172.67.157.202:80
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.182.221:2053
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.155.183:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.28.34:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.31.34:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.10.196:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.33.123:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.216.166:2052
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.64.93:2086
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.157.34:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.2.238:80_1
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.161.1:2082
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.40.164:2086
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.30.34:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.133.177:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.9.215:8080_1
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.28.181:8080
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.20.18.168:80
-      - 12|US_speednode_0175_1
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.160.179:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.191.209:8080
-      - 12|US_speednode_0175_2
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.20.19.168:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.2.238:80_2
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.9.215:8080_2
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.20.5.134:2053
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.47.74:443_1
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.97:2087_1
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.97:2087_2
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.141:443_1
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.182:443_1
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.1.191:2053
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.47.159:2087
+      - 😍@v2ray_configs_pool😍`
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.182:443_2
+      - 🔒 VL-WS-TLS 🇮🇱 IL-5.188.94.5:443
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.141:443_2
+      - ➡️@v2ray_configs_pool⬅️`
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.47.74:443_2
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.20.6.134:2053
+      - 🔒 VL-TCP-NONE 🇮🇷 IR-185.155.72.119:17132
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -491,56 +253,22 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-104.16.61.8:8080
-      - 🔒 VL-WS-NONE 🇨🇦 CA-199.212.90.64:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.29.181:8080_1
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.42.56:80
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-172.67.143.102:80
-      - 🔒 VM-WS-NA 🏴‍☠️ NA-172.64.150.8:2095
-      - 🏁RELAY-104.16.72.179-1318
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.14.19:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.0.35:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.29.181:8080_2
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.20.19.168:2052
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.8.174:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.2.238:2052
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.15.19:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-198.41.223.86:8080
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.50.26:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.26.12.8:8080
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.33.85:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.20.18.168:2052
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.39.52:80
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.83.230:2053
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.156.192:8080
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.13.159:8080
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.195.126:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.13.159:2086
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-172.67.157.202:80
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.182.221:2053
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.155.183:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.28.34:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.31.34:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.10.196:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.33.123:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.216.166:2052
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.64.93:2086
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.157.34:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.2.238:80_1
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.161.1:2082
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.40.164:2086
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.30.34:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.133.177:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.9.215:8080_1
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.28.181:8080
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.20.18.168:80
-      - 12|US_speednode_0175_1
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.160.179:8880
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.191.209:8080
-      - 12|US_speednode_0175_2
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.20.19.168:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.2.238:80_2
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.9.215:8080_2
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.20.5.134:2053
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.47.74:443_1
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.97:2087_1
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.97:2087_2
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.141:443_1
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.182:443_1
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.1.191:2053
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.47.159:2087
+      - 😍@v2ray_configs_pool😍`
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.182:443_2
+      - 🔒 VL-WS-TLS 🇮🇱 IL-5.188.94.5:443
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.141:443_2
+      - ➡️@v2ray_configs_pool⬅️`
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.47.74:443_2
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.20.6.134:2053
+      - 🔒 VL-TCP-NONE 🇮🇷 IR-185.155.72.119:17132
 
 rules:
 # 本地/局域网地址

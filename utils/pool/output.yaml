@@ -115,36 +115,6 @@ proxies:
     headers:
       Host: ip006.freegradely.xyz
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 16 VMS"
-  type: vmess
-  server: 172.64.150.8
-  port: 2095
-  cipher: auto
-  uuid: a5dc7082-3433-48ad-9216-ddc9768e5160
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /DDD
-    headers:
-      host: ybr.redbullplus.xyz
-- name: "\U0001F1FA\U0001F1F3 UN 17 VMS"
-  type: vmess
-  server: cfcdn3.sanfencdn9.com
-  port: 80
-  cipher: auto
-  uuid: 63911f91-bc91-4b71-8d40-9ba99e7043e0
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /video/VDXcaM7r
-    headers:
-      host: GWYp69Yujp2.yofnhkfc.xyz
 proxy-groups:
 - name: automatic
   type: url-test
@@ -164,8 +134,6 @@ proxy-groups:
   - "\U0001F1F9\U0001F1FC TW 13 TJN"
   - "\U0001F1F9\U0001F1FC TW 14 TJN"
   - "\U0001F1E8\U0001F1E6 CA 15 VMS"
-  - "\U0001F1FA\U0001F1F8 US 16 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 17 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -187,7 +155,5 @@ proxy-groups:
   - "\U0001F1F9\U0001F1FC TW 13 TJN"
   - "\U0001F1F9\U0001F1FC TW 14 TJN"
   - "\U0001F1E8\U0001F1E6 CA 15 VMS"
-  - "\U0001F1FA\U0001F1F8 US 16 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 17 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
