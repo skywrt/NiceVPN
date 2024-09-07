@@ -62,8 +62,22 @@ def save_processed_file_record(file_url):
     """记录处理过的 YAML 文件 URL"""
     processed_file = get_processed_file_name()
     create_processed_yaml_dir()  # 确保目录存在
+
+    # 先保存文件
     with open(processed_file, 'a') as file:
         file.write(file_url + '\n')
+
+    # 保留最新的三个 TXT 文件
+    keep_latest_processed_files()
+
+def keep_latest_processed_files():
+    """保留最新的三个 TXT 文件"""
+    txt_files = [f for f in os.listdir(PROCESSED_YAML_DIR) if f.endswith('.txt')]
+    if len(txt_files) > 3:
+        # 按文件创建时间排序，删除最旧的文件
+        txt_files.sort(key=lambda f: os.path.getctime(os.path.join(PROCESSED_YAML_DIR, f)))
+        for file_to_delete in txt_files[:-3]:  # 删除多余的文件
+            os.remove(os.path.join(PROCESSED_YAML_DIR, file_to_delete))
 
 def get_latest_yaml_file():
     """获取最新 YAML 文件的 URL"""
