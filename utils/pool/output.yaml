@@ -115,90 +115,108 @@ proxies:
     headers:
       Host: ip006.freegradely.xyz
   udp: true
-- type: vmess
-  name: "\U0001F1FA\U0001F1F8 US 16 VMS"
-  ws-opts:
-    path: github.com/Alvin9999
-    headers:
-      host: ip1.1789034.xyz
+- name: "\U0001F1FA\U0001F1F8 US 16 VMS"
+  type: vmess
   server: russia.com
   port: 2086
+  cipher: auto
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
-  cipher: auto
+  tls: false
+  skip-cert-verify: true
   network: ws
-- type: vmess
-  name: "\U0001F1FA\U0001F1F8 US 17 VMS"
   ws-opts:
     path: github.com/Alvin9999
     headers:
       host: ip1.1789034.xyz
-  server: 104.26.5.67
-  port: 2086
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+- name: "\U0001F1E8\U0001F1F3 CN 17 VMS"
+  type: vmess
+  server: 120.232.217.160
+  port: 31004
+  cipher: auto
+  uuid: 52f188cc-456c-3306-b6c0-087ab42328d9
   alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 18 VMS"
+  type: vmess
+  server: 120.232.217.160
+  port: 31008
   cipher: auto
-  network: ws
-- type: vmess
-  name: "\U0001F1F8\U0001F1EA SE 18 VMS"
-  ws-opts:
-    path: /obdii.cfd/linkws
-    headers:
-      host: d396-flower-d396.megare7260.workers.dev
-  server: Back.MsV2ray.online
-  port: 80
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  alterId: '0'
-  cipher: auto
-  network: ws
-- type: vmess
-  name: "\U0001F1FA\U0001F1F8 US 19 VMS"
-  ws-opts:
-    path: github.com/Alvin9999
-    headers:
-      host: ip1.1789034.xyz
-  server: 104.26.9.156
-  port: 2086
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  uuid: 52f188cc-456c-3306-b6c0-087ab42328d9
   alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 19 VMS"
+  type: vmess
+  server: 120.232.217.160
+  port: 31102
   cipher: auto
-  network: ws
-- type: vmess
-  name: "\U0001F1FA\U0001F1F3 UN 20 VMS"
-  ws-opts:
-    path: github.com/Alvin9999
-    headers:
-      host: ip14.freegradely.xyz
-  server: 104.20.25.146
-  port: 2086
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  uuid: 52f188cc-456c-3306-b6c0-087ab42328d9
   alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 20 VMS"
+  type: vmess
+  server: 120.232.217.160
+  port: 31104
   cipher: auto
-  network: ws
-- type: vmess
-  name: "\U0001F1E8\U0001F1E6 CA 21 VMS"
-  ws-opts:
-    path: github.com/Alvin9999
-    headers:
-      host: ip006.freegradely.xyz
-  server: 23.227.38.5
-  port: 2086
-  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+  uuid: 52f188cc-456c-3306-b6c0-087ab42328d9
   alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 21 VMS"
+  type: vmess
+  server: 120.232.217.160
+  port: 31105
   cipher: auto
-  network: ws
-- type: vmess
-  name: "\U0001F1FA\U0001F1F3 UN 22 VMS"
-  ws-opts:
-    path: github.com/Alvin9999
-    headers:
-      host: ip1.1789034.xyz
-  server: 162.159.140.19
-  port: 2086
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  uuid: 52f188cc-456c-3306-b6c0-087ab42328d9
   alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 22 VMS"
+  type: vmess
+  server: 120.232.217.160
+  port: 31005
   cipher: auto
+  uuid: e3b476f8-eafd-345f-b3c8-994273507220
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 23 SSS"
+  type: ss
+  server: deepf.hjkdsak2.com
+  port: 20003
+  password: 99301d55-a41f-4919-986b-1435996533aa
+  cipher: chacha20-ietf-poly1305
+- name: "\U0001F1FA\U0001F1F3 UN 24 VMS"
+  type: vmess
+  server: 23.162.200.227
+  port: 443
+  cipher: auto
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
   network: ws
+  ws-opts:
+    path: /linkvws
+- name: "\U0001F1E8\U0001F1F3 CN 25 VMS"
+  type: vmess
+  server: 120.232.217.160
+  port: 31103
+  cipher: auto
+  uuid: 52f188cc-456c-3306-b6c0-087ab42328d9
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -219,12 +237,15 @@ proxy-groups:
   - "\U0001F1F9\U0001F1FC TW 14 TJN"
   - "\U0001F1E8\U0001F1E6 CA 15 VMS"
   - "\U0001F1FA\U0001F1F8 US 16 VMS"
-  - "\U0001F1FA\U0001F1F8 US 17 VMS"
-  - "\U0001F1F8\U0001F1EA SE 18 VMS"
-  - "\U0001F1FA\U0001F1F8 US 19 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 20 VMS"
-  - "\U0001F1E8\U0001F1E6 CA 21 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 22 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 17 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 18 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 19 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 20 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 21 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 22 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 23 SSS"
+  - "\U0001F1FA\U0001F1F3 UN 24 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 25 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -247,11 +268,14 @@ proxy-groups:
   - "\U0001F1F9\U0001F1FC TW 14 TJN"
   - "\U0001F1E8\U0001F1E6 CA 15 VMS"
   - "\U0001F1FA\U0001F1F8 US 16 VMS"
-  - "\U0001F1FA\U0001F1F8 US 17 VMS"
-  - "\U0001F1F8\U0001F1EA SE 18 VMS"
-  - "\U0001F1FA\U0001F1F8 US 19 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 20 VMS"
-  - "\U0001F1E8\U0001F1E6 CA 21 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 22 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 17 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 18 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 19 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 20 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 21 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 22 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 23 SSS"
+  - "\U0001F1FA\U0001F1F3 UN 24 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 25 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
