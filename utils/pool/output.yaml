@@ -115,6 +115,12 @@ proxies:
     headers:
       Host: ip006.freegradely.xyz
   udp: true
+- name: "\U0001F1FA\U0001F1F8 US 16 SSS"
+  type: ss
+  server: 34.223.226.135
+  port: 443
+  password: amazonskr05
+  cipher: aes-256-cfb
 proxy-groups:
 - name: automatic
   type: url-test
@@ -134,6 +140,7 @@ proxy-groups:
   - "\U0001F1F9\U0001F1FC TW 13 TJN"
   - "\U0001F1F9\U0001F1FC TW 14 TJN"
   - "\U0001F1E8\U0001F1E6 CA 15 VMS"
+  - "\U0001F1FA\U0001F1F8 US 16 SSS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -155,5 +162,6 @@ proxy-groups:
   - "\U0001F1F9\U0001F1FC TW 13 TJN"
   - "\U0001F1F9\U0001F1FC TW 14 TJN"
   - "\U0001F1E8\U0001F1E6 CA 15 VMS"
+  - "\U0001F1FA\U0001F1F8 US 16 SSS"
 rules:
 - "MATCH,\U0001F310 Proxy"
