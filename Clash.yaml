@@ -196,7 +196,10 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
-  - {name: 🇨🇦 CA 1 → skywrt, server: 23.227.38.5, port: 2086, type: vmess, uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip006.freegradely.xyz}}, udp: true}
+  - {name: 🇯🇵 JP 1 → skywrt, server: 54.199.83.239, port: 2333, type: ss, cipher: aes-256-cfb, password: doub.io, udp: true}
+  - {name: 🇸🇬 SG 1 → skywrt, server: 13.213.46.196, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇸🇬 SG 2 → skywrt, server: 54.251.168.143, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇸🇬 SG 3 → skywrt, server: 159.223.94.156, port: 80, type: vmess, uuid: 533724ad-58ef-4147-88dc-9da523c15fc4, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /anti13.zingfast.vn}, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -214,14 +217,20 @@ proxy-groups:
   - name: ✋ 手动选择
     type: select
     proxies:
-      - 🇨🇦 CA 1 → skywrt
+      - 🇯🇵 JP 1 → skywrt
+      - 🇸🇬 SG 1 → skywrt
+      - 🇸🇬 SG 2 → skywrt
+      - 🇸🇬 SG 3 → skywrt
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇦 CA 1 → skywrt
+      - 🇯🇵 JP 1 → skywrt
+      - 🇸🇬 SG 1 → skywrt
+      - 🇸🇬 SG 2 → skywrt
+      - 🇸🇬 SG 3 → skywrt
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -235,7 +244,7 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇯🇵 JP 1 → skywrt
   - name: 🇺🇲 美国节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -256,7 +265,9 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇸🇬 SG 1 → skywrt
+      - 🇸🇬 SG 2 → skywrt
+      - 🇸🇬 SG 3 → skywrt
   - name: 🇰🇷 韩国节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -267,14 +278,17 @@ proxy-groups:
   - name: 🌍 其他地区
     type: select
     proxies:
-      - 🇨🇦 CA 1 → skywrt
+      - DIRECT
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇦 CA 1 → skywrt
+      - 🇯🇵 JP 1 → skywrt
+      - 🇸🇬 SG 1 → skywrt
+      - 🇸🇬 SG 2 → skywrt
+      - 🇸🇬 SG 3 → skywrt
   - name: 👉 国内网站
     type: select
     proxies:
