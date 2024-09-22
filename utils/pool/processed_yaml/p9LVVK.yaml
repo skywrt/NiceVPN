@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：22-09-2024 19:45:39
+# 创建时间：22-09-2024 19:50:27
 # 使用模版：V2RaySE 默认模版
-# 节点数量：7
+# 节点数量：3
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -86,12 +86,8 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"👉🆔 @v2ray_configs_pool📡🇺🇸United States`_1","type":"vless","server":"speedtest.net","port":443,"uuid":"d89f2641-c400-4747-ab47-c9578518e28c","tls":true,"servername":"barkat1.ir","network":"ws","ws-opts":{"path":"/telegram-@proxy_mtm-telegram-@proxy_mtm-Telegram-proxy_mtm?ed=2056","headers":{"host":"barkat1.ir"}}}
-  - {"name":"👉🆔 @v2ray_configs_pool📡🇺🇸United States`_2","type":"vless","server":"speedtest.net","port":443,"uuid":"5900342c-b516-486c-9cb7-21b5f0ef7ec8","tls":true,"servername":"barkat1.ir","network":"ws","ws-opts":{"path":"/telegram-@proxy_mtm-telegram-@proxy_mtm-Telegram-proxy_mtm?ed=2056","headers":{"host":"barkat1.ir"}}}
-  - {"name":"👉🆔 @v2ray_configs_pool📡🇺🇸United States`_3","type":"vless","server":"speedtest.net","port":443,"uuid":"c717d4ca-7ca1-44d8-a987-b1b430fe3d22","tls":true,"servername":"wWw.SpEeDtEsT.NeT.ZuLa.Ir.IkCoSaLeS.iR.D662599.v02.drlimit.net","network":"ws","ws-opts":{"path":"/","headers":{"host":"wWw.SpEeDtEsT.NeT.ZuLa.Ir.IkCoSaLeS.iR.D662599.v02.drlimit.net"}}}
-  - {"name":"👉🆔 @v2ray_configs_pool📡🇺🇸United States`_4","type":"vless","server":"speedtest.net","port":443,"uuid":"1cf6799d-6636-4d1f-827d-f02621316cfa","tls":true,"servername":"barkat1.ir","network":"ws","ws-opts":{"path":"/telegram-@proxy_mtm-telegram-@proxy_mtm-Telegram-proxy_mtm?ed=2056","headers":{"host":"barkat1.ir"}}}
-  - {"name":"👉🆔 @v2ray_configs_pool📡🇺🇸United States`_5","type":"vless","server":"speedtest.net","port":443,"uuid":"8ae4cf40-a4c3-422d-9ecc-f61cac00dbb6","tls":true,"servername":"barkat1.ir","network":"ws","ws-opts":{"path":"/telegram-@proxy_mtm-telegram-@proxy_mtm-Telegram-proxy_mtm?ed=2056","headers":{"host":"barkat1.ir"}}}
   - {"name":"👉🆔 @v2ray_configs_pool📡🇨🇦Canada`","type":"vless","server":"speedtest.org","port":2096,"uuid":"89b3cbba-e6ac-485a-9481-976a0415eab9","tls":true,"servername":"JOInv2ngFaSt-2mM.pAges.DeV","network":"ws","ws-opts":{"path":"/Telegram-@V2ray_Alpha/?ed=2560","headers":{"host":"JOInv2ngFaSt-2mM.pAges.DeV"}}}
+  - {"name":"[🇺🇸]t.me/ConfigsHub`","type":"vless","server":"speedtest.net","port":443,"uuid":"36b09981-d533-41e8-b583-25a95a16da04","tls":true,"servername":"oobgvubvuvbhbghvhbghvhb.com","network":"ws","ws-opts":{"path":"ws/?ed=2048","headers":{"host":"oobgvubvuvbhbghvhbghvhb.com"}}}
   - {"name":"[🇨🇦]t.me/ConfigsHub`","type":"vless","server":"www.speedtest.net","port":443,"uuid":"e2f4d1fa-0a6d-48c3-a5bb-8b438e78af23","tls":true,"servername":"119f3a0b.chikiy123w.pages.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"119f3a0b.chikiy123w.pages.dev"}}}
 proxy-groups:
   - name: 🚀 节点选择
@@ -99,12 +95,8 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 👉🆔 @v2ray_configs_pool📡🇺🇸United States`_1
-      - 👉🆔 @v2ray_configs_pool📡🇺🇸United States`_2
-      - 👉🆔 @v2ray_configs_pool📡🇺🇸United States`_3
-      - 👉🆔 @v2ray_configs_pool📡🇺🇸United States`_4
-      - 👉🆔 @v2ray_configs_pool📡🇺🇸United States`_5
       - 👉🆔 @v2ray_configs_pool📡🇨🇦Canada`
+      - '[🇺🇸]t.me/ConfigsHub`'
       - '[🇨🇦]t.me/ConfigsHub`'
   - name: ♻️ 自动选择
     type: url-test
@@ -112,12 +104,8 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 👉🆔 @v2ray_configs_pool📡🇺🇸United States`_1
-      - 👉🆔 @v2ray_configs_pool📡🇺🇸United States`_2
-      - 👉🆔 @v2ray_configs_pool📡🇺🇸United States`_3
-      - 👉🆔 @v2ray_configs_pool📡🇺🇸United States`_4
-      - 👉🆔 @v2ray_configs_pool📡🇺🇸United States`_5
       - 👉🆔 @v2ray_configs_pool📡🇨🇦Canada`
+      - '[🇺🇸]t.me/ConfigsHub`'
       - '[🇨🇦]t.me/ConfigsHub`'
   - name: 🌍 国外媒体
     type: select
@@ -125,48 +113,32 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 👉🆔 @v2ray_configs_pool📡🇺🇸United States`_1
-      - 👉🆔 @v2ray_configs_pool📡🇺🇸United States`_2
-      - 👉🆔 @v2ray_configs_pool📡🇺🇸United States`_3
-      - 👉🆔 @v2ray_configs_pool📡🇺🇸United States`_4
-      - 👉🆔 @v2ray_configs_pool📡🇺🇸United States`_5
       - 👉🆔 @v2ray_configs_pool📡🇨🇦Canada`
+      - '[🇺🇸]t.me/ConfigsHub`'
       - '[🇨🇦]t.me/ConfigsHub`'
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 👉🆔 @v2ray_configs_pool📡🇺🇸United States`_1
-      - 👉🆔 @v2ray_configs_pool📡🇺🇸United States`_2
-      - 👉🆔 @v2ray_configs_pool📡🇺🇸United States`_3
-      - 👉🆔 @v2ray_configs_pool📡🇺🇸United States`_4
-      - 👉🆔 @v2ray_configs_pool📡🇺🇸United States`_5
       - 👉🆔 @v2ray_configs_pool📡🇨🇦Canada`
+      - '[🇺🇸]t.me/ConfigsHub`'
       - '[🇨🇦]t.me/ConfigsHub`'
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 👉🆔 @v2ray_configs_pool📡🇺🇸United States`_1
-      - 👉🆔 @v2ray_configs_pool📡🇺🇸United States`_2
-      - 👉🆔 @v2ray_configs_pool📡🇺🇸United States`_3
-      - 👉🆔 @v2ray_configs_pool📡🇺🇸United States`_4
-      - 👉🆔 @v2ray_configs_pool📡🇺🇸United States`_5
       - 👉🆔 @v2ray_configs_pool📡🇨🇦Canada`
+      - '[🇺🇸]t.me/ConfigsHub`'
       - '[🇨🇦]t.me/ConfigsHub`'
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 👉🆔 @v2ray_configs_pool📡🇺🇸United States`_1
-      - 👉🆔 @v2ray_configs_pool📡🇺🇸United States`_2
-      - 👉🆔 @v2ray_configs_pool📡🇺🇸United States`_3
-      - 👉🆔 @v2ray_configs_pool📡🇺🇸United States`_4
-      - 👉🆔 @v2ray_configs_pool📡🇺🇸United States`_5
       - 👉🆔 @v2ray_configs_pool📡🇨🇦Canada`
+      - '[🇺🇸]t.me/ConfigsHub`'
       - '[🇨🇦]t.me/ConfigsHub`'
   - name: 🎯 全球直连
     type: select
@@ -190,12 +162,8 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 👉🆔 @v2ray_configs_pool📡🇺🇸United States`_1
-      - 👉🆔 @v2ray_configs_pool📡🇺🇸United States`_2
-      - 👉🆔 @v2ray_configs_pool📡🇺🇸United States`_3
-      - 👉🆔 @v2ray_configs_pool📡🇺🇸United States`_4
-      - 👉🆔 @v2ray_configs_pool📡🇺🇸United States`_5
       - 👉🆔 @v2ray_configs_pool📡🇨🇦Canada`
+      - '[🇺🇸]t.me/ConfigsHub`'
       - '[🇨🇦]t.me/ConfigsHub`'
 
 rules:
