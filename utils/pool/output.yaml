@@ -134,6 +134,30 @@ proxies:
   ws-opts:
     path: /anti13.zingfast.vn
   udp: true
+- name: "\U0001F1ED\U0001F1FA HU 19 SSS"
+  type: ss
+  server: 91.219.237.102
+  port: 990
+  password: f8f7aCzcPKbsF8p3
+  cipher: chacha20-ietf-poly1305
+- name: "\U0001F1EB\U0001F1EE FI 20 TJN"
+  type: trojan
+  server: 95.216.8.162
+  port: 110
+  udp: true
+  password: kxuBkBG8GK
+  sni: flt2.ftpcomand.com
+  skip-cert-verify: true
+  network: tcp
+  alpn:
+  - h3
+  - h2
+- name: "\U0001F1F7\U0001F1FA RU 21 SSS"
+  type: ss
+  server: 147.45.75.246
+  port: 36619
+  password: pBmhmqSrdbx8twKpv13GEA
+  cipher: aes-256-gcm
 proxy-groups:
 - name: automatic
   type: url-test
@@ -156,6 +180,9 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 16 SSS"
   - "\U0001F1F8\U0001F1EC SG 17 SSS"
   - "\U0001F1F8\U0001F1EC SG 18 VMS"
+  - "\U0001F1ED\U0001F1FA HU 19 SSS"
+  - "\U0001F1EB\U0001F1EE FI 20 TJN"
+  - "\U0001F1F7\U0001F1FA RU 21 SSS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -180,5 +207,8 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 16 SSS"
   - "\U0001F1F8\U0001F1EC SG 17 SSS"
   - "\U0001F1F8\U0001F1EC SG 18 VMS"
+  - "\U0001F1ED\U0001F1FA HU 19 SSS"
+  - "\U0001F1EB\U0001F1EE FI 20 TJN"
+  - "\U0001F1F7\U0001F1FA RU 21 SSS"
 rules:
 - "MATCH,\U0001F310 Proxy"
