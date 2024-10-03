@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-10-03 21:09:49
+# 创建时间：2024-10-03 19:12:53
 # 使用模版：ACL4SSR_Mini.ini
 # 节点数量：204
 # 节点类型：vmess
@@ -298,7 +298,7 @@ proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
-      - ♻️ 自动选择
+      - 🔯 故障转移
       - DIRECT
       - 美国_由快嘴科技提供：kkzui.com美国_1_由快嘴科技提供：kkzui.com1
       - 美国_由快嘴科技提供：kkzui.com美国_2_由快嘴科技提供：kkzui.com2
@@ -504,12 +504,10 @@ proxy-groups:
       - 美国_由快嘴科技提供：kkzui.com美国_202_由快嘴科技提供：kkzui.com202
       - 美国_由快嘴科技提供：kkzui.com美国_203_由快嘴科技提供：kkzui.com203
       - 美国_由快嘴科技提供：kkzui.com美国_204_由快嘴科技提供：kkzui.com204
-  - name: ♻️ 自动选择
-    type: url-test
+  - name: 🔯 故障转移
+    type: fallback
     url: https://www.gstatic.com/generate_204
-    interval: 300
-    max-failed-times: 3
-    tolerance: 50
+    interval: 180
     proxies:
       - 美国_由快嘴科技提供：kkzui.com美国_1_由快嘴科技提供：kkzui.com1
       - 美国_由快嘴科技提供：kkzui.com美国_2_由快嘴科技提供：kkzui.com2
@@ -720,7 +718,7 @@ proxy-groups:
     proxies:
       - DIRECT
       - 🚀 节点选择
-      - ♻️ 自动选择
+      - 🔯 故障转移
   - name: 🛑 全球拦截
     type: select
     proxies:
@@ -731,7 +729,7 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - ♻️ 自动选择
+      - 🔯 故障转移
       - 美国_由快嘴科技提供：kkzui.com美国_1_由快嘴科技提供：kkzui.com1
       - 美国_由快嘴科技提供：kkzui.com美国_2_由快嘴科技提供：kkzui.com2
       - 美国_由快嘴科技提供：kkzui.com美国_3_由快嘴科技提供：kkzui.com3
