@@ -134,78 +134,183 @@ proxies:
   ws-opts:
     path: /anti13.zingfast.vn
   udp: true
-- type: ss
-  name: "\U0001F1FA\U0001F1F8 US 19 SSS"
-  server: 38.110.1.105
-  port: 5003
-  cipher: aes-256-gcm
-  password: g5MeD6Ft3CWlJId
-- type: ss
-  name: "\U0001F1FA\U0001F1F8 US 20 SSS"
-  server: 38.114.114.69
-  port: 5004
-  cipher: aes-256-gcm
-  password: g5MeD6Ft3CWlJId
-- type: ss
-  name: "\U0001F1E8\U0001F1F3 CN 21 SSS"
-  server: deepf.hjkdsak2.com
-  port: 20003
-  cipher: chacha20-ietf-poly1305
-  password: 99301d55-a41f-4919-986b-1435996533aa
-- type: ss
-  name: "\U0001F1FA\U0001F1F8 US 22 SSS"
-  server: 38.110.1.12
-  port: 3389
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-- type: trojan
-  name: "\U0001F1FA\U0001F1F8 US 23 TJN"
-  server: 3.16.140.208
-  port: 22222
-  password: telegram-id-directvpn
-  udp: true
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
+- type: vmess
+  name: "\U0001F1ED\U0001F1F0 HK 19 VMS"
+  http-opts:
+    path:
+    - /
+  server: 45.125.35.57
+  port: 55305
+  uuid: db87b0f5-01bb-448c-bb5f-9668fe09300e
+  alterId: '0'
+  cipher: auto
+  network: http
+- type: vmess
+  name: "\U0001F1E8\U0001F1F3 CN 20 VMS"
+  server: 120.232.153.40
+  port: 35601
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: '64'
+  cipher: auto
+  network: tcp
+- type: vmess
+  name: "\U0001F1E8\U0001F1F3 CN 21 VMS"
+  server: z3.fragranceninja.com
+  port: 12960
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+  alterId: '0'
+  cipher: auto
+  network: tcp
+  tls: true
+- type: vmess
+  name: "\U0001F1FA\U0001F1F8 US 22 VMS"
+  ws-opts:
+    path: /
+    headers:
+      host: jp01.1761d77fead15f193490a0f11b83f3a4.buzz
+  server: kz3bw.c6tu5uwk9.buzz
+  port: 80
+  uuid: 219eb7ea-8f9a-4af8-857b-4b4b564224ef
+  alterId: '0'
+  cipher: auto
+  network: ws
+- type: vmess
+  name: "\U0001F1FA\U0001F1F3 UN 23 VMS"
+  ws-opts:
+    path: /
+    headers:
+      host: kr01.1761d77fead15f193490a0f11b83f3a4.buzz
+  server: cU9jf.c6tu5uwk9.buzz
+  port: 80
+  uuid: 219eb7ea-8f9a-4af8-857b-4b4b564224ef
+  alterId: '0'
+  cipher: auto
+  network: ws
+- type: vmess
+  name: "\U0001F1FA\U0001F1F3 UN 24 VMS"
+  ws-opts:
+    path: /
+    headers:
+      host: us04.1761d77fead15f193490a0f11b83f3a4.buzz
+  server: strw4.c6tu5uwk9.buzz
+  port: 80
+  uuid: 219eb7ea-8f9a-4af8-857b-4b4b564224ef
+  alterId: '0'
+  cipher: auto
+  network: ws
+- type: vmess
+  name: "\U0001F1E8\U0001F1F3 CN 25 VMS"
+  server: 120.232.153.40
+  port: 43526
+  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
+  alterId: '64'
+  cipher: auto
+  network: tcp
+- type: vmess
+  name: "\U0001F1E8\U0001F1F3 CN 26 VMS"
+  server: 120.232.153.71
+  port: 43526
+  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
+  alterId: '64'
+  cipher: auto
+  network: tcp
+- type: vmess
+  name: "\U0001F1E8\U0001F1F3 CN 27 VMS"
+  server: 120.232.153.40
+  port: 35601
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: '64'
+  cipher: auto
+  network: tcp
+- type: vmess
+  name: "\U0001F1EC\U0001F1E7 GB 28 VMS"
+  http-opts:
+    path:
+    - /
+  server: 45.94.68.193
+  port: 40546
+  uuid: 181cd551-ebfd-43fa-b3b6-01dd949f4013
+  alterId: '0'
+  cipher: auto
+  network: http
+- type: vmess
+  name: "\U0001F1E8\U0001F1F3 CN 29 VMS"
+  ws-opts:
+    path: /zh-cn
+  server: 223.244.26.216
+  port: 46010
+  uuid: c9bda0e7-4ffa-464f-84a0-41253180d04c
+  alterId: '0'
+  cipher: auto
+  network: ws
+- type: vmess
+  name: "\U0001F1E8\U0001F1F3 CN 30 VMS"
+  server: 120.232.153.71
+  port: 43526
+  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
+  alterId: '64'
+  cipher: auto
   network: tcp
 - type: trojan
-  name: "\U0001F1E9\U0001F1EA DE 24 TJN"
-  server: 3.76.238.103
-  port: 22222
-  password: telegram-id-directvpn
+  name: "\U0001F1FA\U0001F1F8 US 31 TJN"
+  server: champion-dog.lab300.lat
+  port: 443
+  password: '3672449442956713984'
   udp: true
   skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
   network: tcp
-- type: ss
-  name: "\U0001F1FA\U0001F1F8 US 25 SSS"
-  server: 38.110.1.105
-  port: 8000
-  cipher: aes-256-gcm
-  password: KixLvKzwjekG00rm
-- type: trojan
-  name: "\U0001F1E9\U0001F1EA DE 26 TJN"
-  server: 18.196.197.92
-  port: 22222
-  password: telegram-id-privatevpns
-  udp: true
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
+- type: vmess
+  name: "\U0001F1FA\U0001F1F8 US 32 VMS"
+  ws-opts:
+    path: /
+    headers:
+      host: hk01.industriouseileen.buzz
+  server: yfg4l.c6tu5uwk9.buzz
+  port: 80
+  uuid: 219eb7ea-8f9a-4af8-857b-4b4b564224ef
+  alterId: '0'
+  cipher: auto
+  network: ws
+- type: vmess
+  name: "\U0001F1FA\U0001F1F8 US 33 VMS"
+  http-opts:
+    path:
+    - /
+  server: 38.147.188.88
+  port: 10701
+  uuid: b76ca9b0-d763-4231-a2ac-c1da3af9e3bd
+  alterId: '0'
+  cipher: auto
+  network: http
+- type: vmess
+  name: "\U0001F1E8\U0001F1F3 CN 34 VMS"
+  server: 120.232.153.40
+  port: 35601
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: '64'
+  cipher: auto
   network: tcp
-- type: ss
-  name: "\U0001F1FA\U0001F1F8 US 27 SSS"
-  server: 38.114.114.69
-  port: 8118
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
-- type: trojan
-  name: "\U0001F1EE\U0001F1EA IE 28 TJN"
-  server: 34.252.160.139
-  port: 22222
-  password: telegram-id-privatevpns
-  udp: true
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  network: tcp
+- type: vmess
+  name: "\U0001F1EF\U0001F1F5 JP 35 VMS"
+  http-opts:
+    path:
+    - /
+  server: 45.159.51.46
+  port: 43652
+  uuid: cea93c7c-7f4c-43b2-a31b-e1ee8e5b19bf
+  alterId: '0'
+  cipher: auto
+  network: http
+- type: vmess
+  name: "\U0001F1E8\U0001F1F3 CN 36 VMS"
+  ws-opts:
+    path: /zh-cn
+  server: 223.244.26.216
+  port: 46010
+  uuid: 58ffeca7-7e75-417f-bbac-7b1041ce616d
+  alterId: '0'
+  cipher: auto
+  network: ws
 proxy-groups:
 - name: automatic
   type: url-test
@@ -228,16 +333,24 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 16 SSS"
   - "\U0001F1F8\U0001F1EC SG 17 SSS"
   - "\U0001F1F8\U0001F1EC SG 18 VMS"
-  - "\U0001F1FA\U0001F1F8 US 19 SSS"
-  - "\U0001F1FA\U0001F1F8 US 20 SSS"
-  - "\U0001F1E8\U0001F1F3 CN 21 SSS"
-  - "\U0001F1FA\U0001F1F8 US 22 SSS"
-  - "\U0001F1FA\U0001F1F8 US 23 TJN"
-  - "\U0001F1E9\U0001F1EA DE 24 TJN"
-  - "\U0001F1FA\U0001F1F8 US 25 SSS"
-  - "\U0001F1E9\U0001F1EA DE 26 TJN"
-  - "\U0001F1FA\U0001F1F8 US 27 SSS"
-  - "\U0001F1EE\U0001F1EA IE 28 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 19 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 20 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 21 VMS"
+  - "\U0001F1FA\U0001F1F8 US 22 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 23 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 24 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 25 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 26 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 27 VMS"
+  - "\U0001F1EC\U0001F1E7 GB 28 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 29 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 30 VMS"
+  - "\U0001F1FA\U0001F1F8 US 31 TJN"
+  - "\U0001F1FA\U0001F1F8 US 32 VMS"
+  - "\U0001F1FA\U0001F1F8 US 33 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 34 VMS"
+  - "\U0001F1EF\U0001F1F5 JP 35 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 36 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -262,15 +375,23 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 16 SSS"
   - "\U0001F1F8\U0001F1EC SG 17 SSS"
   - "\U0001F1F8\U0001F1EC SG 18 VMS"
-  - "\U0001F1FA\U0001F1F8 US 19 SSS"
-  - "\U0001F1FA\U0001F1F8 US 20 SSS"
-  - "\U0001F1E8\U0001F1F3 CN 21 SSS"
-  - "\U0001F1FA\U0001F1F8 US 22 SSS"
-  - "\U0001F1FA\U0001F1F8 US 23 TJN"
-  - "\U0001F1E9\U0001F1EA DE 24 TJN"
-  - "\U0001F1FA\U0001F1F8 US 25 SSS"
-  - "\U0001F1E9\U0001F1EA DE 26 TJN"
-  - "\U0001F1FA\U0001F1F8 US 27 SSS"
-  - "\U0001F1EE\U0001F1EA IE 28 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 19 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 20 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 21 VMS"
+  - "\U0001F1FA\U0001F1F8 US 22 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 23 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 24 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 25 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 26 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 27 VMS"
+  - "\U0001F1EC\U0001F1E7 GB 28 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 29 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 30 VMS"
+  - "\U0001F1FA\U0001F1F8 US 31 TJN"
+  - "\U0001F1FA\U0001F1F8 US 32 VMS"
+  - "\U0001F1FA\U0001F1F8 US 33 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 34 VMS"
+  - "\U0001F1EF\U0001F1F5 JP 35 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 36 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"

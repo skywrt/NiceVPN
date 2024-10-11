@@ -1,9 +1,9 @@
 #
 #-------------------------------------------------------------#
 #  创建者：https://v2rayse.com
-#  创建时间：2024-10-11 20:41:48
+#  创建时间：2024-10-11 20:45:42
 #  模版：v2rayse默认模版
-#  节点数量：10
+#  节点数量：18
 #-------------------------------------------------------------#
 #
 port: 7890
@@ -13,109 +13,165 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"type":"ss","name":"_119","server":"38.110.1.105","port":5003,"cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
-  - {"type":"ss","name":"🇺🇸US-38.114.114.69-0930","server":"38.114.114.69","port":5004,"cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
-  - {"type":"ss","name":"🇨🇳CN-183.233.187.156-1096","server":"deepf.hjkdsak2.com","port":20003,"cipher":"chacha20-ietf-poly1305","password":"99301d55-a41f-4919-986b-1435996533aa"}
-  - {"type":"ss","name":"🇺🇸US_580","server":"38.110.1.12","port":3389,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
-  - {"type":"trojan","name":"🔒TR-TCP-TLS🇺🇸US-3.16.140.208:22222","server":"3.16.140.208","port":22222,"password":"telegram-id-directvpn","udp":true,"skip-cert-verify":true,"sni":"trojan.burgerip.co.uk","network":"tcp"}
-  - {"type":"trojan","name":"🔒TR-TCP-TLS🇩🇪DE-3.76.238.103:22222","server":"3.76.238.103","port":22222,"password":"telegram-id-directvpn","udp":true,"skip-cert-verify":true,"sni":"trojan.burgerip.co.uk","network":"tcp"}
-  - {"type":"ss","name":"_122","server":"38.110.1.105","port":8000,"cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
-  - {"type":"trojan","name":"🔒TR-TCP-TLS🇩🇪DE-18.196.197.92:22222","server":"18.196.197.92","port":22222,"password":"telegram-id-privatevpns","udp":true,"skip-cert-verify":true,"sni":"trojan.burgerip.co.uk","network":"tcp"}
-  - {"type":"ss","name":"🇺🇸美国华盛顿Cogent通信公司","server":"38.114.114.69","port":8118,"cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
-  - {"type":"trojan","name":"🔒TR-TCP-TLS🇮🇪IE-34.252.160.139:22222","server":"34.252.160.139","port":22222,"password":"telegram-id-privatevpns","udp":true,"skip-cert-verify":true,"sni":"trojan.burgerip.co.uk","network":"tcp"}
+  - {"type":"vmess","name":"免费梯子https://t.me/mftizi_1","http-opts":{"path":["/"]},"server":"45.125.35.57","port":"55305","uuid":"db87b0f5-01bb-448c-bb5f-9668fe09300e","alterId":"0","cipher":"auto","network":"http"}
+  - {"type":"vmess","name":"关注电报https://t.me/mftizi_1","server":"120.232.153.40","port":"35601","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"64","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"关注频道https://t.me/mftizi_1","server":"z3.fragranceninja.com","port":"12960","uuid":"a32313ad-5e39-4f9a-9cad-512041790050","alterId":"0","cipher":"auto","network":"tcp","tls":true}
+  - {"type":"vmess","name":"长期更新节点@mftizi_1","ws-opts":{"path":"/","headers":{"host":"jp01.1761d77fead15f193490a0f11b83f3a4.buzz"}},"server":"kz3bw.c6tu5uwk9.buzz","port":"80","uuid":"219eb7ea-8f9a-4af8-857b-4b4b564224ef","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"不定期抽奖https://t.me/mftizi_1","ws-opts":{"path":"/","headers":{"host":"kr01.1761d77fead15f193490a0f11b83f3a4.buzz"}},"server":"cU9jf.c6tu5uwk9.buzz","port":"80","uuid":"219eb7ea-8f9a-4af8-857b-4b4b564224ef","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"免费梯子https://t.me/mftizi_2","ws-opts":{"path":"/","headers":{"host":"us04.1761d77fead15f193490a0f11b83f3a4.buzz"}},"server":"strw4.c6tu5uwk9.buzz","port":"80","uuid":"219eb7ea-8f9a-4af8-857b-4b4b564224ef","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"关注电报https://t.me/mftizi_2","server":"120.232.153.40","port":"43526","uuid":"21a9bff2-72de-4e62-93ff-8b159f66d875","alterId":"64","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"长期更新节点@mftizi_2","server":"120.232.153.71","port":"43526","uuid":"21a9bff2-72de-4e62-93ff-8b159f66d875","alterId":"64","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"免费梯子https://t.me/mftizi_3","server":"120.232.153.40","port":"35601","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"64","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"关注电报https://t.me/mftizi_3","http-opts":{"path":["/"]},"server":"45.94.68.193","port":"40546","uuid":"181cd551-ebfd-43fa-b3b6-01dd949f4013","alterId":"0","cipher":"auto","network":"http"}
+  - {"type":"vmess","name":"关注频道https://t.me/mftizi_2","ws-opts":{"path":"/zh-cn"},"server":"223.244.26.216","port":"46010","uuid":"c9bda0e7-4ffa-464f-84a0-41253180d04c","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"长期更新节点@mftizi_3","server":"120.232.153.71","port":"43526","uuid":"21a9bff2-72de-4e62-93ff-8b159f66d875","alterId":"64","cipher":"auto","network":"tcp"}
+  - {"type":"trojan","name":"不定期抽奖https://t.me/mftizi_2","server":"champion-dog.lab300.lat","port":443,"password":"3672449442956713984","udp":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"type":"vmess","name":"免费梯子https://t.me/mftizi_4","ws-opts":{"path":"/","headers":{"host":"hk01.industriouseileen.buzz"}},"server":"yfg4l.c6tu5uwk9.buzz","port":"80","uuid":"219eb7ea-8f9a-4af8-857b-4b4b564224ef","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"关注电报https://t.me/mftizi_4","http-opts":{"path":["/"]},"server":"38.147.188.88","port":"10701","uuid":"b76ca9b0-d763-4231-a2ac-c1da3af9e3bd","alterId":"0","cipher":"auto","network":"http"}
+  - {"type":"vmess","name":"关注频道https://t.me/mftizi_3","server":"120.232.153.40","port":"35601","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"64","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"长期更新节点@mftizi_4","http-opts":{"path":["/"]},"server":"45.159.51.46","port":"43652","uuid":"cea93c7c-7f4c-43b2-a31b-e1ee8e5b19bf","alterId":"0","cipher":"auto","network":"http"}
+  - {"type":"vmess","name":"不定期抽奖https://t.me/mftizi_3","ws-opts":{"path":"/zh-cn"},"server":"223.244.26.216","port":"46010","uuid":"58ffeca7-7e75-417f-bbac-7b1041ce616d","alterId":"0","cipher":"auto","network":"ws"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - _119
-      - 🇺🇸US-38.114.114.69-0930
-      - 🇨🇳CN-183.233.187.156-1096
-      - 🇺🇸US_580
-      - 🔒TR-TCP-TLS🇺🇸US-3.16.140.208:22222
-      - 🔒TR-TCP-TLS🇩🇪DE-3.76.238.103:22222
-      - _122
-      - 🔒TR-TCP-TLS🇩🇪DE-18.196.197.92:22222
-      - 🇺🇸美国华盛顿Cogent通信公司
-      - 🔒TR-TCP-TLS🇮🇪IE-34.252.160.139:22222
+      - 免费梯子https://t.me/mftizi_1
+      - 关注电报https://t.me/mftizi_1
+      - 关注频道https://t.me/mftizi_1
+      - 长期更新节点@mftizi_1
+      - 不定期抽奖https://t.me/mftizi_1
+      - 免费梯子https://t.me/mftizi_2
+      - 关注电报https://t.me/mftizi_2
+      - 长期更新节点@mftizi_2
+      - 免费梯子https://t.me/mftizi_3
+      - 关注电报https://t.me/mftizi_3
+      - 关注频道https://t.me/mftizi_2
+      - 长期更新节点@mftizi_3
+      - 不定期抽奖https://t.me/mftizi_2
+      - 免费梯子https://t.me/mftizi_4
+      - 关注电报https://t.me/mftizi_4
+      - 关注频道https://t.me/mftizi_3
+      - 长期更新节点@mftizi_4
+      - 不定期抽奖https://t.me/mftizi_3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - _119
-      - 🇺🇸US-38.114.114.69-0930
-      - 🇨🇳CN-183.233.187.156-1096
-      - 🇺🇸US_580
-      - 🔒TR-TCP-TLS🇺🇸US-3.16.140.208:22222
-      - 🔒TR-TCP-TLS🇩🇪DE-3.76.238.103:22222
-      - _122
-      - 🔒TR-TCP-TLS🇩🇪DE-18.196.197.92:22222
-      - 🇺🇸美国华盛顿Cogent通信公司
-      - 🔒TR-TCP-TLS🇮🇪IE-34.252.160.139:22222
+      - 免费梯子https://t.me/mftizi_1
+      - 关注电报https://t.me/mftizi_1
+      - 关注频道https://t.me/mftizi_1
+      - 长期更新节点@mftizi_1
+      - 不定期抽奖https://t.me/mftizi_1
+      - 免费梯子https://t.me/mftizi_2
+      - 关注电报https://t.me/mftizi_2
+      - 长期更新节点@mftizi_2
+      - 免费梯子https://t.me/mftizi_3
+      - 关注电报https://t.me/mftizi_3
+      - 关注频道https://t.me/mftizi_2
+      - 长期更新节点@mftizi_3
+      - 不定期抽奖https://t.me/mftizi_2
+      - 免费梯子https://t.me/mftizi_4
+      - 关注电报https://t.me/mftizi_4
+      - 关注频道https://t.me/mftizi_3
+      - 长期更新节点@mftizi_4
+      - 不定期抽奖https://t.me/mftizi_3
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _119
-      - 🇺🇸US-38.114.114.69-0930
-      - 🇨🇳CN-183.233.187.156-1096
-      - 🇺🇸US_580
-      - 🔒TR-TCP-TLS🇺🇸US-3.16.140.208:22222
-      - 🔒TR-TCP-TLS🇩🇪DE-3.76.238.103:22222
-      - _122
-      - 🔒TR-TCP-TLS🇩🇪DE-18.196.197.92:22222
-      - 🇺🇸美国华盛顿Cogent通信公司
-      - 🔒TR-TCP-TLS🇮🇪IE-34.252.160.139:22222
+      - 免费梯子https://t.me/mftizi_1
+      - 关注电报https://t.me/mftizi_1
+      - 关注频道https://t.me/mftizi_1
+      - 长期更新节点@mftizi_1
+      - 不定期抽奖https://t.me/mftizi_1
+      - 免费梯子https://t.me/mftizi_2
+      - 关注电报https://t.me/mftizi_2
+      - 长期更新节点@mftizi_2
+      - 免费梯子https://t.me/mftizi_3
+      - 关注电报https://t.me/mftizi_3
+      - 关注频道https://t.me/mftizi_2
+      - 长期更新节点@mftizi_3
+      - 不定期抽奖https://t.me/mftizi_2
+      - 免费梯子https://t.me/mftizi_4
+      - 关注电报https://t.me/mftizi_4
+      - 关注频道https://t.me/mftizi_3
+      - 长期更新节点@mftizi_4
+      - 不定期抽奖https://t.me/mftizi_3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - _119
-      - 🇺🇸US-38.114.114.69-0930
-      - 🇨🇳CN-183.233.187.156-1096
-      - 🇺🇸US_580
-      - 🔒TR-TCP-TLS🇺🇸US-3.16.140.208:22222
-      - 🔒TR-TCP-TLS🇩🇪DE-3.76.238.103:22222
-      - _122
-      - 🔒TR-TCP-TLS🇩🇪DE-18.196.197.92:22222
-      - 🇺🇸美国华盛顿Cogent通信公司
-      - 🔒TR-TCP-TLS🇮🇪IE-34.252.160.139:22222
+      - 免费梯子https://t.me/mftizi_1
+      - 关注电报https://t.me/mftizi_1
+      - 关注频道https://t.me/mftizi_1
+      - 长期更新节点@mftizi_1
+      - 不定期抽奖https://t.me/mftizi_1
+      - 免费梯子https://t.me/mftizi_2
+      - 关注电报https://t.me/mftizi_2
+      - 长期更新节点@mftizi_2
+      - 免费梯子https://t.me/mftizi_3
+      - 关注电报https://t.me/mftizi_3
+      - 关注频道https://t.me/mftizi_2
+      - 长期更新节点@mftizi_3
+      - 不定期抽奖https://t.me/mftizi_2
+      - 免费梯子https://t.me/mftizi_4
+      - 关注电报https://t.me/mftizi_4
+      - 关注频道https://t.me/mftizi_3
+      - 长期更新节点@mftizi_4
+      - 不定期抽奖https://t.me/mftizi_3
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - _119
-      - 🇺🇸US-38.114.114.69-0930
-      - 🇨🇳CN-183.233.187.156-1096
-      - 🇺🇸US_580
-      - 🔒TR-TCP-TLS🇺🇸US-3.16.140.208:22222
-      - 🔒TR-TCP-TLS🇩🇪DE-3.76.238.103:22222
-      - _122
-      - 🔒TR-TCP-TLS🇩🇪DE-18.196.197.92:22222
-      - 🇺🇸美国华盛顿Cogent通信公司
-      - 🔒TR-TCP-TLS🇮🇪IE-34.252.160.139:22222
+      - 免费梯子https://t.me/mftizi_1
+      - 关注电报https://t.me/mftizi_1
+      - 关注频道https://t.me/mftizi_1
+      - 长期更新节点@mftizi_1
+      - 不定期抽奖https://t.me/mftizi_1
+      - 免费梯子https://t.me/mftizi_2
+      - 关注电报https://t.me/mftizi_2
+      - 长期更新节点@mftizi_2
+      - 免费梯子https://t.me/mftizi_3
+      - 关注电报https://t.me/mftizi_3
+      - 关注频道https://t.me/mftizi_2
+      - 长期更新节点@mftizi_3
+      - 不定期抽奖https://t.me/mftizi_2
+      - 免费梯子https://t.me/mftizi_4
+      - 关注电报https://t.me/mftizi_4
+      - 关注频道https://t.me/mftizi_3
+      - 长期更新节点@mftizi_4
+      - 不定期抽奖https://t.me/mftizi_3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - _119
-      - 🇺🇸US-38.114.114.69-0930
-      - 🇨🇳CN-183.233.187.156-1096
-      - 🇺🇸US_580
-      - 🔒TR-TCP-TLS🇺🇸US-3.16.140.208:22222
-      - 🔒TR-TCP-TLS🇩🇪DE-3.76.238.103:22222
-      - _122
-      - 🔒TR-TCP-TLS🇩🇪DE-18.196.197.92:22222
-      - 🇺🇸美国华盛顿Cogent通信公司
-      - 🔒TR-TCP-TLS🇮🇪IE-34.252.160.139:22222
+      - 免费梯子https://t.me/mftizi_1
+      - 关注电报https://t.me/mftizi_1
+      - 关注频道https://t.me/mftizi_1
+      - 长期更新节点@mftizi_1
+      - 不定期抽奖https://t.me/mftizi_1
+      - 免费梯子https://t.me/mftizi_2
+      - 关注电报https://t.me/mftizi_2
+      - 长期更新节点@mftizi_2
+      - 免费梯子https://t.me/mftizi_3
+      - 关注电报https://t.me/mftizi_3
+      - 关注频道https://t.me/mftizi_2
+      - 长期更新节点@mftizi_3
+      - 不定期抽奖https://t.me/mftizi_2
+      - 免费梯子https://t.me/mftizi_4
+      - 关注电报https://t.me/mftizi_4
+      - 关注频道https://t.me/mftizi_3
+      - 长期更新节点@mftizi_4
+      - 不定期抽奖https://t.me/mftizi_3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -138,16 +194,24 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _119
-      - 🇺🇸US-38.114.114.69-0930
-      - 🇨🇳CN-183.233.187.156-1096
-      - 🇺🇸US_580
-      - 🔒TR-TCP-TLS🇺🇸US-3.16.140.208:22222
-      - 🔒TR-TCP-TLS🇩🇪DE-3.76.238.103:22222
-      - _122
-      - 🔒TR-TCP-TLS🇩🇪DE-18.196.197.92:22222
-      - 🇺🇸美国华盛顿Cogent通信公司
-      - 🔒TR-TCP-TLS🇮🇪IE-34.252.160.139:22222
+      - 免费梯子https://t.me/mftizi_1
+      - 关注电报https://t.me/mftizi_1
+      - 关注频道https://t.me/mftizi_1
+      - 长期更新节点@mftizi_1
+      - 不定期抽奖https://t.me/mftizi_1
+      - 免费梯子https://t.me/mftizi_2
+      - 关注电报https://t.me/mftizi_2
+      - 长期更新节点@mftizi_2
+      - 免费梯子https://t.me/mftizi_3
+      - 关注电报https://t.me/mftizi_3
+      - 关注频道https://t.me/mftizi_2
+      - 长期更新节点@mftizi_3
+      - 不定期抽奖https://t.me/mftizi_2
+      - 免费梯子https://t.me/mftizi_4
+      - 关注电报https://t.me/mftizi_4
+      - 关注频道https://t.me/mftizi_3
+      - 长期更新节点@mftizi_4
+      - 不定期抽奖https://t.me/mftizi_3
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
