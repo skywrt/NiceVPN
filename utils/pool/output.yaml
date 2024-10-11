@@ -134,6 +134,78 @@ proxies:
   ws-opts:
     path: /anti13.zingfast.vn
   udp: true
+- type: ss
+  name: "\U0001F1FA\U0001F1F8 US 19 SSS"
+  server: 38.110.1.105
+  port: 5003
+  cipher: aes-256-gcm
+  password: g5MeD6Ft3CWlJId
+- type: ss
+  name: "\U0001F1FA\U0001F1F8 US 20 SSS"
+  server: 38.114.114.69
+  port: 5004
+  cipher: aes-256-gcm
+  password: g5MeD6Ft3CWlJId
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 21 SSS"
+  server: deepf.hjkdsak2.com
+  port: 20003
+  cipher: chacha20-ietf-poly1305
+  password: 99301d55-a41f-4919-986b-1435996533aa
+- type: ss
+  name: "\U0001F1FA\U0001F1F8 US 22 SSS"
+  server: 38.110.1.12
+  port: 3389
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 23 TJN"
+  server: 3.16.140.208
+  port: 22222
+  password: telegram-id-directvpn
+  udp: true
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  network: tcp
+- type: trojan
+  name: "\U0001F1E9\U0001F1EA DE 24 TJN"
+  server: 3.76.238.103
+  port: 22222
+  password: telegram-id-directvpn
+  udp: true
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  network: tcp
+- type: ss
+  name: "\U0001F1FA\U0001F1F8 US 25 SSS"
+  server: 38.110.1.105
+  port: 8000
+  cipher: aes-256-gcm
+  password: KixLvKzwjekG00rm
+- type: trojan
+  name: "\U0001F1E9\U0001F1EA DE 26 TJN"
+  server: 18.196.197.92
+  port: 22222
+  password: telegram-id-privatevpns
+  udp: true
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  network: tcp
+- type: ss
+  name: "\U0001F1FA\U0001F1F8 US 27 SSS"
+  server: 38.114.114.69
+  port: 8118
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+- type: trojan
+  name: "\U0001F1EE\U0001F1EA IE 28 TJN"
+  server: 34.252.160.139
+  port: 22222
+  password: telegram-id-privatevpns
+  udp: true
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -156,6 +228,16 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 16 SSS"
   - "\U0001F1F8\U0001F1EC SG 17 SSS"
   - "\U0001F1F8\U0001F1EC SG 18 VMS"
+  - "\U0001F1FA\U0001F1F8 US 19 SSS"
+  - "\U0001F1FA\U0001F1F8 US 20 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 21 SSS"
+  - "\U0001F1FA\U0001F1F8 US 22 SSS"
+  - "\U0001F1FA\U0001F1F8 US 23 TJN"
+  - "\U0001F1E9\U0001F1EA DE 24 TJN"
+  - "\U0001F1FA\U0001F1F8 US 25 SSS"
+  - "\U0001F1E9\U0001F1EA DE 26 TJN"
+  - "\U0001F1FA\U0001F1F8 US 27 SSS"
+  - "\U0001F1EE\U0001F1EA IE 28 TJN"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -180,5 +262,15 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 16 SSS"
   - "\U0001F1F8\U0001F1EC SG 17 SSS"
   - "\U0001F1F8\U0001F1EC SG 18 VMS"
+  - "\U0001F1FA\U0001F1F8 US 19 SSS"
+  - "\U0001F1FA\U0001F1F8 US 20 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 21 SSS"
+  - "\U0001F1FA\U0001F1F8 US 22 SSS"
+  - "\U0001F1FA\U0001F1F8 US 23 TJN"
+  - "\U0001F1E9\U0001F1EA DE 24 TJN"
+  - "\U0001F1FA\U0001F1F8 US 25 SSS"
+  - "\U0001F1E9\U0001F1EA DE 26 TJN"
+  - "\U0001F1FA\U0001F1F8 US 27 SSS"
+  - "\U0001F1EE\U0001F1EA IE 28 TJN"
 rules:
 - "MATCH,\U0001F310 Proxy"
