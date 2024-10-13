@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-10-13 13:30:13
+# 创建时间：2024-10-13 14:30:22
 # 使用模版：ACL4SSR_Mini.ini
 # 节点数量：1000
 # 节点类型：ss, trojan, vmess
@@ -83,7 +83,6 @@ dns:
     geoip: true
     ipcidr:
       - 240.0.0.0/4
-      - 0.0.0.0/32
 
 proxies:
   - {"name":"美国-856.3KB/s","type":"ss","server":"38.86.135.31","port":7001,"password":"RexnBgU7EV5ADxG","cipher":"aes-256-gcm"}
@@ -2096,6 +2095,7 @@ proxy-groups:
     type: fallback
     url: https://www.gstatic.com/generate_204
     interval: 180
+    tolerance: 10
     proxies:
       - 美国-856.3KB/s
       - 德国-504.0KB/s
