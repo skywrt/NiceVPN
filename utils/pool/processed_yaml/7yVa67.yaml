@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-10-16 19:12:57
+# 创建时间：2024-10-16 21:09:52
 # 使用模版：ACL4SSR_Mini.ini
 # 节点数量：900
 # 节点类型：ss, vmess, trojan, ssr
@@ -1896,22 +1896,8 @@ proxy-groups:
     type: fallback
     url: https://www.gstatic.com/generate_204
     interval: 180
-    retry: 3
-    health-check:
-      enable: true
-      interval: 180
-      recovery-interval: 30
-      timeout: 2
-      url: https://www.gstatic.com/generate_204
-      method: GET
-      threshold: 2
-      expected-status: 200
-      passive: true
-      failure-threshold: 3
-    latency: true
-    latency-weight: true
-    load-balancing-strategy: round-robin
-    health-check-cache: 60
+    retry: 1
+    threshold: 1 
     proxies:
       - 美国-683.7KB/s
       - 美国-571.2KB/s
