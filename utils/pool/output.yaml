@@ -134,45 +134,6 @@ proxies:
   ws-opts:
     path: /anti13.zingfast.vn
   udp: true
-- type: trojan
-  name: "\U0001F1EC\U0001F1E7 GB 19 TJN"
-  server: 35.178.14.234
-  port: 22222
-  password: telegram-id-privatevpns
-  udp: true
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  network: tcp
-- type: ss
-  name: "\U0001F1EC\U0001F1E7 GB 20 SSS"
-  server: 212.102.53.198
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- type: trojan
-  name: "\U0001F1FA\U0001F1F8 US 21 TJN"
-  server: 154.17.0.15
-  port: 28331
-  password: Y3Tw3OF8IxN7SDZCRSaqFljeeYzEAa98235l3DBxnRaODcAygpZuK4CpyC60XS
-  udp: true
-  skip-cert-verify: true
-  sni: harvest.missionsec.io
-  network: tcp
-- type: ss
-  name: "\U0001F1FA\U0001F1F8 US 22 SSS"
-  server: 69.50.93.113
-  port: 5004
-  cipher: aes-256-gcm
-  password: g5MeD6Ft3CWlJId
-- type: trojan
-  name: "\U0001F1FA\U0001F1F8 US 23 TJN"
-  server: 154.21.86.20
-  port: 28334
-  password: x2uDYA5XgC87FaeCnR9SFNEZc8SDwp3p0z4yRCj33IZBYxeayaDlTlO6Sq3OAK
-  udp: true
-  skip-cert-verify: true
-  sni: testify.missionsec.io
-  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -195,11 +156,6 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 16 SSS"
   - "\U0001F1F8\U0001F1EC SG 17 SSS"
   - "\U0001F1F8\U0001F1EC SG 18 VMS"
-  - "\U0001F1EC\U0001F1E7 GB 19 TJN"
-  - "\U0001F1EC\U0001F1E7 GB 20 SSS"
-  - "\U0001F1FA\U0001F1F8 US 21 TJN"
-  - "\U0001F1FA\U0001F1F8 US 22 SSS"
-  - "\U0001F1FA\U0001F1F8 US 23 TJN"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -224,10 +180,5 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 16 SSS"
   - "\U0001F1F8\U0001F1EC SG 17 SSS"
   - "\U0001F1F8\U0001F1EC SG 18 VMS"
-  - "\U0001F1EC\U0001F1E7 GB 19 TJN"
-  - "\U0001F1EC\U0001F1E7 GB 20 SSS"
-  - "\U0001F1FA\U0001F1F8 US 21 TJN"
-  - "\U0001F1FA\U0001F1F8 US 22 SSS"
-  - "\U0001F1FA\U0001F1F8 US 23 TJN"
 rules:
 - "MATCH,\U0001F310 Proxy"
