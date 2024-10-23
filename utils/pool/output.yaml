@@ -134,6 +134,62 @@ proxies:
   ws-opts:
     path: /anti13.zingfast.vn
   udp: true
+- type: vmess
+  name: "\U0001F1FA\U0001F1F8 US 19 VMS"
+  ws-opts:
+    path: /racevpn
+    headers:
+      host: gerMAnyISvP.iR
+  server: 151.101.2.133
+  port: 80
+  uuid: a888b89a-08ac-40e6-8ad7-cfce9569f967
+  alterId: '0'
+  cipher: auto
+  network: ws
+- type: ss
+  name: "\U0001F1FA\U0001F1F3 UN 20 SSS"
+  server: 23.166.88.221
+  port: 8118
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+- type: ss
+  name: "\U0001F1FA\U0001F1F8 US 21 SSS"
+  server: 169.197.142.216
+  port: 7002
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+- type: trojan
+  name: "\U0001F1EB\U0001F1F7 FR 22 TJN"
+  server: 13.36.247.155
+  port: 22222
+  password: telegram-id-privatevpns
+  udp: true
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+- type: vmess
+  name: "\U0001F1FA\U0001F1F8 US 23 VMS"
+  ws-opts:
+    path: /racevpn
+    headers:
+      host: gerMAnyISvP.iR
+  server: 151.101.2.133
+  port: 80
+  uuid: a888b89a-08ac-40e6-8ad7-cfce9569f967
+  alterId: '0'
+  cipher: auto
+  network: ws
+- type: ss
+  name: "\U0001F1F1\U0001F1F9 LT 24 SSS"
+  server: 45.87.175.188
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+- type: ss
+  name: "\U0001F1FA\U0001F1F8 US 25 SSS"
+  server: 169.197.141.84
+  port: 8091
+  cipher: aes-256-gcm
+  password: PCnnH6SQSnfoS27
 proxy-groups:
 - name: automatic
   type: url-test
@@ -156,6 +212,13 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 16 SSS"
   - "\U0001F1F8\U0001F1EC SG 17 SSS"
   - "\U0001F1F8\U0001F1EC SG 18 VMS"
+  - "\U0001F1FA\U0001F1F8 US 19 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 20 SSS"
+  - "\U0001F1FA\U0001F1F8 US 21 SSS"
+  - "\U0001F1EB\U0001F1F7 FR 22 TJN"
+  - "\U0001F1FA\U0001F1F8 US 23 VMS"
+  - "\U0001F1F1\U0001F1F9 LT 24 SSS"
+  - "\U0001F1FA\U0001F1F8 US 25 SSS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -180,5 +243,12 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 16 SSS"
   - "\U0001F1F8\U0001F1EC SG 17 SSS"
   - "\U0001F1F8\U0001F1EC SG 18 VMS"
+  - "\U0001F1FA\U0001F1F8 US 19 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 20 SSS"
+  - "\U0001F1FA\U0001F1F8 US 21 SSS"
+  - "\U0001F1EB\U0001F1F7 FR 22 TJN"
+  - "\U0001F1FA\U0001F1F8 US 23 VMS"
+  - "\U0001F1F1\U0001F1F9 LT 24 SSS"
+  - "\U0001F1FA\U0001F1F8 US 25 SSS"
 rules:
 - "MATCH,\U0001F310 Proxy"
