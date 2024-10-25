@@ -1,10 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-10-25 19:42:29
+# 创建时间：2024-10-25 20:28:03
 # 使用模版：ACL4SSR_Mini.ini
-# 节点数量：73
-# 节点类型：trojan
+# 节点数量：75
+# 节点类型：vmess, ssr, trojan, http
 ####################################
 mixed-port: 7890
 allow-lan: false
@@ -86,236 +86,242 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"(S115)🇨🇵t.me/PrivateVPNs_1","type":"trojan","server":"13.36.102.108","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S116)🇨🇵t.me/PrivateVPNs_1","type":"trojan","server":"13.39.33.141","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S117)🇬🇧t.me/PrivateVPNs_1","type":"trojan","server":"18.169.250.165","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S118)🇬🇧t.me/PrivateVPNs_1","type":"trojan","server":"18.170.184.167","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S119)🇨🇮t.me/PrivateVPNs_1","type":"trojan","server":"54.195.225.88","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S120)🇨🇮t.me/PrivateVPNs_1","type":"trojan","server":"54.171.148.96","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S101)🇸🇪t.me/PrivateVPNs_1","type":"trojan","server":"51.21.60.7","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S102)🇸🇪t.me/PrivateVPNs_1","type":"trojan","server":"16.170.5.34","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S103)🇩🇪t.me/PrivateVPNs_1","type":"trojan","server":"3.123.47.8","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S104)🇩🇪t.me/PrivateVPNs_1","type":"trojan","server":"18.156.207.80","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S105)🇨🇵t.me/PrivateVPNs_1","type":"trojan","server":"13.37.66.114","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S106)🇨🇵t.me/PrivateVPNs_1","type":"trojan","server":"51.44.40.40","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S107)🇬🇧t.me/PrivateVPNs_1","type":"trojan","server":"18.170.12.92","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S108)🇬🇧t.me/PrivateVPNs_1","type":"trojan","server":"35.179.78.225","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S109)🇨🇮t.me/PrivateVPNs_1","type":"trojan","server":"52.210.45.218","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S110)🇨🇮t.me/PrivateVPNs_1","type":"trojan","server":"34.249.179.254","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S111)🇸🇪t.me/PrivateVPNs_1","type":"trojan","server":"13.50.47.22","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S112)🇸🇪t.me/PrivateVPNs_1","type":"trojan","server":"51.20.155.229","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S113)🇩🇪t.me/PrivateVPNs_1","type":"trojan","server":"3.71.234.199","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S114)🇩🇪t.me/PrivateVPNs_1","type":"trojan","server":"18.198.161.189","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S115)🇨🇵t.me/PrivateVPNs_2","type":"trojan","server":"13.38.178.28","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S116)🇨🇵t.me/PrivateVPNs_2","type":"trojan","server":"13.36.247.155","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S117)🇬🇧t.me/PrivateVPNs_2","type":"trojan","server":"51.24.9.162","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S118)🇬🇧t.me/PrivateVPNs_2","type":"trojan","server":"13.43.169.221","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S119)🇨🇮t.me/PrivateVPNs_2","type":"trojan","server":"34.249.50.7","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S120)🇨🇮t.me/PrivateVPNs_2","type":"trojan","server":"34.250.106.56","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S101)🇸🇪t.me/PrivateVPNs_2","type":"trojan","server":"13.51.188.221","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S102)🇸🇪t.me/PrivateVPNs_2","type":"trojan","server":"13.51.220.245","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S103)🇩🇪t.me/PrivateVPNs_2","type":"trojan","server":"52.28.242.93","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S104)🇩🇪t.me/PrivateVPNs_2","type":"trojan","server":"18.196.76.204","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S105)🇨🇵t.me/PrivateVPNs_2","type":"trojan","server":"15.237.157.11","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S106)🇨🇵t.me/PrivateVPNs_2","type":"trojan","server":"35.181.125.130","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S107)🇬🇧t.me/PrivateVPNs_2","type":"trojan","server":"3.11.27.8","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S108)🇬🇧t.me/PrivateVPNs_2","type":"trojan","server":"3.9.3.93","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S109)🇨🇮t.me/PrivateVPNs_2","type":"trojan","server":"99.81.243.187","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S110)🇨🇮t.me/PrivateVPNs_2","type":"trojan","server":"99.81.205.218","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S111)🇸🇪t.me/PrivateVPNs_2","type":"trojan","server":"16.170.129.229","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S112)🇸🇪t.me/PrivateVPNs_2","type":"trojan","server":"51.20.22.202","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S113)🇩🇪t.me/PrivateVPNs_2","type":"trojan","server":"63.176.56.140","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S114)🇩🇪t.me/PrivateVPNs_2","type":"trojan","server":"35.159.56.144","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S115)🇨🇵t.me/PrivateVPNs_3","type":"trojan","server":"35.181.133.198","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S116)🇨🇵t.me/PrivateVPNs_3","type":"trojan","server":"15.236.11.73","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S117)🇬🇧t.me/PrivateVPNs_3","type":"trojan","server":"35.176.39.84","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S118)🇬🇧t.me/PrivateVPNs_3","type":"trojan","server":"35.179.230.154","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S119)🇨🇮t.me/PrivateVPNs_3","type":"trojan","server":"52.215.253.208","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S120)🇨🇮t.me/PrivateVPNs_3","type":"trojan","server":"108.128.8.83","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S101)🇸🇪t.me/PrivateVPNs_3","type":"trojan","server":"51.20.19.8","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S102)🇸🇪t.me/PrivateVPNs_3","type":"trojan","server":"13.49.141.217","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S103)🇩🇪t.me/PrivateVPNs_3","type":"trojan","server":"3.77.71.120","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S104)🇩🇪t.me/PrivateVPNs_3","type":"trojan","server":"3.73.135.113","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S105)🇨🇵t.me/PrivateVPNs_3","type":"trojan","server":"15.237.158.22","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S106)🇨🇵t.me/PrivateVPNs_3","type":"trojan","server":"35.181.239.0","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S107)🇬🇧t.me/PrivateVPNs_3","type":"trojan","server":"18.171.117.95","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S108)🇬🇧t.me/PrivateVPNs_3","type":"trojan","server":"13.42.123.199","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S109)🇨🇮t.me/PrivateVPNs_3","type":"trojan","server":"52.30.85.89","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S110)🇨🇮t.me/PrivateVPNs_3","type":"trojan","server":"52.212.234.231","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S111)🇸🇪t.me/PrivateVPNs_3","type":"trojan","server":"13.50.145.193","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S112)🇸🇪t.me/PrivateVPNs_3","type":"trojan","server":"51.20.139.208","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S113)🇩🇪t.me/PrivateVPNs_3","type":"trojan","server":"3.127.191.38","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S114)🇩🇪t.me/PrivateVPNs_3","type":"trojan","server":"3.69.68.233","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S115)🇨🇵t.me/PrivateVPNs_4","type":"trojan","server":"13.37.146.156","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S116)🇨🇵t.me/PrivateVPNs_4","type":"trojan","server":"51.44.87.13","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S117)🇬🇧t.me/PrivateVPNs_4","type":"trojan","server":"35.179.187.162","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S118)🇬🇧t.me/PrivateVPNs_4","type":"trojan","server":"13.43.106.26","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S119)🇨🇮t.me/PrivateVPNs_4","type":"trojan","server":"3.255.71.193","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S120)🇨🇮t.me/PrivateVPNs_4","type":"trojan","server":"63.32.152.87","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S101)🇸🇪t.me/PrivateVPNs_4","type":"trojan","server":"13.61.50.127","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S102)🇸🇪t.me/PrivateVPNs_4","type":"trojan","server":"51.21.116.179","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S103)🇩🇪t.me/PrivateVPNs_4","type":"trojan","server":"52.58.55.88","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S104)🇩🇪t.me/PrivateVPNs_4","type":"trojan","server":"35.159.146.63","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S105)🇨🇵t.me/PrivateVPNs_4","type":"trojan","server":"15.188.248.174","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S106)🇨🇵t.me/PrivateVPNs_4","type":"trojan","server":"15.236.170.249","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"(S107)🇬🇧t.me/PrivateVPNs_4","type":"trojan","server":"18.169.31.170","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
+  - {"name":"UM??SSRSUB_3266573527","type":"vmess","server":"142.4.104.33","port":52143,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"Other??SSRSUB_3087487628","type":"vmess","server":"183.236.51.36","port":59003,"cipher":"none","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"Other??SSRSUB_3574339605","type":"vmess","server":"47.92.152.169","port":50002,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"UM??SSRSUB_3115807370","type":"vmess","server":"104.20.17.186","port":2082,"cipher":"auto","uuid":"5f3f09ad-89cb-4e94-a7ad-aa8239913555","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999"}}
+  - {"name":"Asia??SSRSUB_3951971837","type":"vmess","server":"104.16.61.8","port":2082,"cipher":"auto","uuid":"441da342-ce90-441e-bff9-d2ceb55e68ca","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ivideos.sbs/linkws"}}
+  - {"name":"Other??SSRSUB_3225342711","type":"vmess","server":"112.132.215.12","port":50002,"cipher":"none","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"???? JP??SSRSUB_192934526","type":"ssr","server":"7438974b54cf5c57.cdn.jiashule.com","port":40221,"password":"ENZ52K","cipher":"rc4-md5","obfs":"plain","protocol":"auth_aes128_md5","obfs-param":"cd5ed74592.6602b8463464108506.microsoft.com","protocol-param":"74592:o4fbeopsgcf"}
+  - {"name":"UM??SSRSUB_279023244","type":"vmess","server":"104.16.60.8","port":8080,"cipher":"auto","uuid":"f584de15-2034-4170-a723-f48c2bae5e0f","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/afrhms16v.bestxray.buzz/linkws"}}
+  - {"name":"Other??SSRSUB_2165487018","type":"vmess","server":"183.236.51.23","port":45020,"cipher":"none","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"Other??SSRSUB_4099562408","type":"vmess","server":"112.132.212.19","port":50004,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"TG??SSRSUB_3290563095","type":"vmess","server":"47.104.186.133","port":50002,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"???? HK??SSRSUB_252344610","type":"vmess","server":"120.232.153.40","port":35601,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"Other??SSRSUB_1901174806","type":"vmess","server":"183.236.48.161","port":33288,"cipher":"none","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"UM??SSRSUB_3861831637","type":"vmess","server":"172.64.167.44","port":2095,"cipher":"auto","uuid":"a63e9c8c-2c04-4b8e-af6a-4a02494a1f0b","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999"}}
+  - {"name":"Other??SSRSUB_833968396","type":"trojan","server":"13.48.222.216","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"???? JP??SSRSUB_2463454605","type":"ssr","server":"28b09af269781f9b.cdn.jiashule.com","port":40257,"password":"ENZ52K","cipher":"rc4-md5","obfs":"plain","protocol":"auth_aes128_md5","obfs-param":"cd5ed74592.6602b8463464108506.microsoft.com","protocol-param":"74592:o4fbeopsgcf"}
+  - {"name":"???? UK??SSRSUB_2125441813","type":"vmess","server":"141.101.122.109","port":443,"cipher":"auto","uuid":"09d5805c-7a22-47c1-b1c3-f090df0a98ed","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/lfljvws"}}
+  - {"name":"???? JP??SSRSUB_2598990979","type":"ssr","server":"95b1cd85a0968ff2.cdn.jiashule.com","port":40201,"password":"ENZ52K","cipher":"rc4-md5","obfs":"plain","protocol":"auth_aes128_md5","obfs-param":"cd5ed74592.6602b8463464108506.microsoft.com","protocol-param":"74592:o4fbeopsgcf"}
+  - {"name":"???? HK??SSRSUB_3949890657","type":"vmess","server":"o1sl.qiyunlink.top","port":46728,"cipher":"auto","uuid":"f2796bde-ba2a-4b2c-acca-872c5eb784d0","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"Other??SSRSUB_525609051","type":"vmess","server":"183.236.48.163","port":58831,"cipher":"none","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"Other??SSRSUB_785944417","type":"trojan","server":"15.237.12.232","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"TG??SSRSUB_3688352138","type":"vmess","server":"120.210.205.82","port":50002,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"UM??SSRSUB_3715247902","type":"vmess","server":"104.18.112.107","port":443,"cipher":"auto","uuid":"09d5805c-7a22-47c1-b1c3-f090df0a98ed","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/lfljvws"}}
+  - {"name":"CH??SSRSUB_1698251682","type":"vmess","server":"47.116.173.76","port":50002,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"UM??SSRSUB_4032071225","type":"vmess","server":"172.64.167.15","port":2095,"cipher":"auto","uuid":"18d96190-c10f-448f-a82a-2d36df5c3cde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999"}}
+  - {"name":"???? Americas??SSRSUB_3588875311","type":"vmess","server":"104.19.45.17","port":2095,"cipher":"auto","uuid":"18d96190-c10f-448f-a82a-2d36df5c3cde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999"}}
+  - {"name":"Euro??SSRSUB_2368461052","type":"vmess","server":"120.232.153.71","port":43526,"cipher":"auto","uuid":"21a9bff2-72de-4e62-93ff-8b159f66d875","alterId":64,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"???? KR??SSRSUB_455686761","type":"vmess","server":"shouer1.209966.xyz","port":14338,"cipher":"auto","uuid":"7fd4d16d-4b6b-4560-cf6c-23fa094be476","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"UM??SSRSUB_280405591","type":"ssr","server":"95b1cd85a0968ff2.cdn.jiashule.com","port":40205,"password":"ENZ52K","cipher":"rc4-md5","obfs":"plain","protocol":"auth_aes128_md5","obfs-param":"cd5ed74592.6602b8463464108506.microsoft.com","protocol-param":"74592:o4fbeopsgcf"}
+  - {"name":"CH??SSRSUB_2785493623","type":"vmess","server":"114.55.132.202","port":50002,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"UM??SSRSUB_2313596545","type":"vmess","server":"151.101.2.133","port":443,"cipher":"auto","uuid":"66833e2f-dca1-4591-951c-1392ace0b2f6","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"ws/?ed=2048"}}
+  - {"name":"UM??SSRSUB_1786046118","type":"trojan","server":"18.159.29.8","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"defaultName","type":"http","server":"110.41.32.204","port":7890}
+  - {"name":"UM??SSRSUB_2215546844","type":"ssr","server":"95b1cd85a0968ff2.cdn.jiashule.com","port":40217,"password":"ENZ52K","cipher":"rc4-md5","obfs":"plain","protocol":"auth_aes128_md5","obfs-param":"8195986416.6602b8463464108506.microsoft.com","protocol-param":"86416:SlZFuy"}
+  - {"name":"Other??SSRSUB_1512957847","type":"trojan","server":"13.49.242.221","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"Other??SSRSUB_3928156646","type":"vmess","server":"47.92.152.169","port":50002,"cipher":"none","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"UM??SSRSUB_4036010914","type":"trojan","server":"51.44.54.127","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"UM??SSRSUB_123086233","type":"ssr","server":"7438974b54cf5c57.cdn.jiashule.com","port":40211,"password":"ENZ52K","cipher":"rc4-md5","obfs":"plain","protocol":"auth_aes128_md5","obfs-param":"8195986416.6602b8463464108506.microsoft.com","protocol-param":"86416:SlZFuy"}
+  - {"name":"UM??SSRSUB_1540031215","type":"vmess","server":"183.238.202.173","port":39041,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"Other??SSRSUB_1039286148","type":"trojan","server":"13.51.185.245","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"UM??SSRSUB_2891198944","type":"vmess","server":"104.19.45.90","port":2095,"cipher":"auto","uuid":"a63e9c8c-2c04-4b8e-af6a-4a02494a1f0b","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999"}}
+  - {"name":"CH??SSRSUB_543224176","type":"vmess","server":"112.132.215.12","port":50002,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"UM??SSRSUB_1645121432","type":"vmess","server":"5.39.254.196","port":2945,"cipher":"auto","uuid":"6074a3b0-f2a0-4b05-b1c9-4066e8b876c2","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"???? FR??SSRSUB_1976738468","type":"vmess","server":"146.19.168.161","port":443,"cipher":"auto","uuid":"3f638f34-8dba-4186-bc43-2716a7ddd4be","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/link"}}
+  - {"name":"UM??SSRSUB_3181287189","type":"vmess","server":"104.19.59.89","port":2095,"cipher":"auto","uuid":"a63e9c8c-2c04-4b8e-af6a-4a02494a1f0b","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999"}}
+  - {"name":"???? Americas??SSRSUB_2231939728","type":"vmess","server":"104.18.57.111","port":2082,"cipher":"auto","uuid":"5f3f09ad-89cb-4e94-a7ad-aa8239913555","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999"}}
+  - {"name":"UM??SSRSUB_187487565","type":"trojan","server":"15.237.12.232","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"Other??SSRSUB_16954344","type":"trojan","server":"18.159.29.8","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"Other??SSRSUB_2891657463","type":"vmess","server":"183.236.48.166","port":33288,"cipher":"none","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"???? UK??SSRSUB_1655862801","type":"vmess","server":"120.237.79.157","port":46665,"cipher":"auto","uuid":"3ac820af-becb-45d7-9e7a-e33d02961bb3","alterId":64,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"???? JP??SSRSUB_631076657","type":"ssr","server":"7438974b54cf5c57.cdn.jiashule.com","port":40219,"password":"ENZ52K","cipher":"rc4-md5","obfs":"plain","protocol":"auth_aes128_md5","obfs-param":"8195986416.6602b8463464108506.microsoft.com","protocol-param":"86416:SlZFuy"}
+  - {"name":"Other??SSRSUB_1067019020","type":"trojan","server":"13.41.49.58","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"UM??SSRSUB_2429145910","type":"trojan","server":"18.221.212.142","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"Other??SSRSUB_3168417863","type":"trojan","server":"13.48.247.165","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"Other??SSRSUB_2958601820","type":"trojan","server":"99.80.148.46","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"???? FR??SSRSUB_136489409","type":"vmess","server":"az05.beyondy.cfd","port":443,"cipher":"auto","uuid":"3f638f34-8dba-4186-bc43-2716a7ddd4be","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/link"}}
+  - {"name":"CH??SSRSUB_2444475651","type":"vmess","server":"183.236.51.36","port":59003,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"Euro??SSRSUB_2523899909","type":"vmess","server":"104.16.68.38","port":2052,"cipher":"auto","uuid":"76221bfb-e92f-4e80-81c5-6fe48f50ac0b","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/glweidf.sbs/linkws"}}
+  - {"name":"Other??SSRSUB_1873915727","type":"vmess","server":"112.132.212.19","port":50004,"cipher":"none","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"Asia??SSRSUB_207235238","type":"vmess","server":"cfcdn2.sanfencdn9.com","port":2086,"cipher":"auto","uuid":"7ad8da0c-fda5-416b-9e72-47cc68313ffe","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ifBUEjhG"}}
+  - {"name":"???? HK??SSRSUB_912323628","type":"vmess","server":"o1sl.qiyunlink.top","port":46728,"cipher":"none","uuid":"f2796bde-ba2a-4b2c-acca-872c5eb784d0","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"UM??SSRSUB_2519677486","type":"vmess","server":"104.25.127.240","port":443,"cipher":"auto","uuid":"09d5805c-7a22-47c1-b1c3-f090df0a98ed","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/lfljvws"}}
+  - {"name":"???? HK??SSRSUB_3695677373","type":"vmess","server":"sgp.cdn-sgp.xyz","port":5245,"cipher":"auto","uuid":"6074a3b0-f2a0-4b05-b1c9-4066e8b876c2","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"UM??SSRSUB_2479977516","type":"ssr","server":"7438974b54cf5c57.cdn.jiashule.com","port":40263,"password":"ENZ52K","cipher":"rc4-md5","obfs":"plain","protocol":"auth_aes128_md5","obfs-param":"cd5ed74592.6602b8463464108506.microsoft.com","protocol-param":"74592:o4fbeopsgcf"}
+  - {"name":"Asia??SSRSUB_1266265329","type":"trojan","server":"103.74.102.168","port":443,"udp":true,"password":"94d219c9-1afc-4d42-b090-8b3794764380","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"Other??SSRSUB_3091005802","type":"vmess","server":"104.16.60.8","port":2095,"cipher":"auto","uuid":"441da342-ce90-441e-bff9-d2ceb55e68ca","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ivideos.sbs/linkws"}}
+  - {"name":"Other??SSRSUB_2578581128","type":"vmess","server":"47.104.186.133","port":50002,"cipher":"none","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"Other??SSRSUB_325597721","type":"vmess","server":"120.210.205.82","port":50002,"cipher":"none","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"???? HK??SSRSUB_2881941470","type":"vmess","server":"120.232.153.40","port":35601,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"???? Americas??SSRSUB_3881104772","type":"vmess","server":"162.159.140.66","port":2082,"cipher":"auto","uuid":"5f3f09ad-89cb-4e94-a7ad-aa8239913555","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999"}}
+  - {"name":"Other??SSRSUB_233140273","type":"vmess","server":"47.116.173.76","port":50002,"cipher":"none","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"Other??SSRSUB_4008167912","type":"vmess","server":"114.55.132.202","port":50002,"cipher":"none","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"UM??SSRSUB_865104408","type":"vmess","server":"172.64.166.33","port":2095,"cipher":"auto","uuid":"18d96190-c10f-448f-a82a-2d36df5c3cde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999"}}
+  - {"name":"???? FR??SSRSUB_209538928","type":"vmess","server":"183.236.48.166","port":33288,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"Other??SSRSUB_604386632","type":"vmess","server":"142.4.104.33","port":52143,"cipher":"none","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":""}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - 🔯 故障转移
       - DIRECT
-      - (S115)🇨🇵t.me/PrivateVPNs_1
-      - (S116)🇨🇵t.me/PrivateVPNs_1
-      - (S117)🇬🇧t.me/PrivateVPNs_1
-      - (S118)🇬🇧t.me/PrivateVPNs_1
-      - (S119)🇨🇮t.me/PrivateVPNs_1
-      - (S120)🇨🇮t.me/PrivateVPNs_1
-      - (S101)🇸🇪t.me/PrivateVPNs_1
-      - (S102)🇸🇪t.me/PrivateVPNs_1
-      - (S103)🇩🇪t.me/PrivateVPNs_1
-      - (S104)🇩🇪t.me/PrivateVPNs_1
-      - (S105)🇨🇵t.me/PrivateVPNs_1
-      - (S106)🇨🇵t.me/PrivateVPNs_1
-      - (S107)🇬🇧t.me/PrivateVPNs_1
-      - (S108)🇬🇧t.me/PrivateVPNs_1
-      - (S109)🇨🇮t.me/PrivateVPNs_1
-      - (S110)🇨🇮t.me/PrivateVPNs_1
-      - (S111)🇸🇪t.me/PrivateVPNs_1
-      - (S112)🇸🇪t.me/PrivateVPNs_1
-      - (S113)🇩🇪t.me/PrivateVPNs_1
-      - (S114)🇩🇪t.me/PrivateVPNs_1
-      - (S115)🇨🇵t.me/PrivateVPNs_2
-      - (S116)🇨🇵t.me/PrivateVPNs_2
-      - (S117)🇬🇧t.me/PrivateVPNs_2
-      - (S118)🇬🇧t.me/PrivateVPNs_2
-      - (S119)🇨🇮t.me/PrivateVPNs_2
-      - (S120)🇨🇮t.me/PrivateVPNs_2
-      - (S101)🇸🇪t.me/PrivateVPNs_2
-      - (S102)🇸🇪t.me/PrivateVPNs_2
-      - (S103)🇩🇪t.me/PrivateVPNs_2
-      - (S104)🇩🇪t.me/PrivateVPNs_2
-      - (S105)🇨🇵t.me/PrivateVPNs_2
-      - (S106)🇨🇵t.me/PrivateVPNs_2
-      - (S107)🇬🇧t.me/PrivateVPNs_2
-      - (S108)🇬🇧t.me/PrivateVPNs_2
-      - (S109)🇨🇮t.me/PrivateVPNs_2
-      - (S110)🇨🇮t.me/PrivateVPNs_2
-      - (S111)🇸🇪t.me/PrivateVPNs_2
-      - (S112)🇸🇪t.me/PrivateVPNs_2
-      - (S113)🇩🇪t.me/PrivateVPNs_2
-      - (S114)🇩🇪t.me/PrivateVPNs_2
-      - (S115)🇨🇵t.me/PrivateVPNs_3
-      - (S116)🇨🇵t.me/PrivateVPNs_3
-      - (S117)🇬🇧t.me/PrivateVPNs_3
-      - (S118)🇬🇧t.me/PrivateVPNs_3
-      - (S119)🇨🇮t.me/PrivateVPNs_3
-      - (S120)🇨🇮t.me/PrivateVPNs_3
-      - (S101)🇸🇪t.me/PrivateVPNs_3
-      - (S102)🇸🇪t.me/PrivateVPNs_3
-      - (S103)🇩🇪t.me/PrivateVPNs_3
-      - (S104)🇩🇪t.me/PrivateVPNs_3
-      - (S105)🇨🇵t.me/PrivateVPNs_3
-      - (S106)🇨🇵t.me/PrivateVPNs_3
-      - (S107)🇬🇧t.me/PrivateVPNs_3
-      - (S108)🇬🇧t.me/PrivateVPNs_3
-      - (S109)🇨🇮t.me/PrivateVPNs_3
-      - (S110)🇨🇮t.me/PrivateVPNs_3
-      - (S111)🇸🇪t.me/PrivateVPNs_3
-      - (S112)🇸🇪t.me/PrivateVPNs_3
-      - (S113)🇩🇪t.me/PrivateVPNs_3
-      - (S114)🇩🇪t.me/PrivateVPNs_3
-      - (S115)🇨🇵t.me/PrivateVPNs_4
-      - (S116)🇨🇵t.me/PrivateVPNs_4
-      - (S117)🇬🇧t.me/PrivateVPNs_4
-      - (S118)🇬🇧t.me/PrivateVPNs_4
-      - (S119)🇨🇮t.me/PrivateVPNs_4
-      - (S120)🇨🇮t.me/PrivateVPNs_4
-      - (S101)🇸🇪t.me/PrivateVPNs_4
-      - (S102)🇸🇪t.me/PrivateVPNs_4
-      - (S103)🇩🇪t.me/PrivateVPNs_4
-      - (S104)🇩🇪t.me/PrivateVPNs_4
-      - (S105)🇨🇵t.me/PrivateVPNs_4
-      - (S106)🇨🇵t.me/PrivateVPNs_4
-      - (S107)🇬🇧t.me/PrivateVPNs_4
+      - UM??SSRSUB_3266573527
+      - Other??SSRSUB_3087487628
+      - Other??SSRSUB_3574339605
+      - UM??SSRSUB_3115807370
+      - Asia??SSRSUB_3951971837
+      - Other??SSRSUB_3225342711
+      - '???? JP??SSRSUB_192934526'
+      - UM??SSRSUB_279023244
+      - Other??SSRSUB_2165487018
+      - Other??SSRSUB_4099562408
+      - TG??SSRSUB_3290563095
+      - '???? HK??SSRSUB_252344610'
+      - Other??SSRSUB_1901174806
+      - UM??SSRSUB_3861831637
+      - Other??SSRSUB_833968396
+      - '???? JP??SSRSUB_2463454605'
+      - '???? UK??SSRSUB_2125441813'
+      - '???? JP??SSRSUB_2598990979'
+      - '???? HK??SSRSUB_3949890657'
+      - Other??SSRSUB_525609051
+      - Other??SSRSUB_785944417
+      - TG??SSRSUB_3688352138
+      - UM??SSRSUB_3715247902
+      - CH??SSRSUB_1698251682
+      - UM??SSRSUB_4032071225
+      - '???? Americas??SSRSUB_3588875311'
+      - Euro??SSRSUB_2368461052
+      - '???? KR??SSRSUB_455686761'
+      - UM??SSRSUB_280405591
+      - CH??SSRSUB_2785493623
+      - UM??SSRSUB_2313596545
+      - UM??SSRSUB_1786046118
+      - defaultName
+      - UM??SSRSUB_2215546844
+      - Other??SSRSUB_1512957847
+      - Other??SSRSUB_3928156646
+      - UM??SSRSUB_4036010914
+      - UM??SSRSUB_123086233
+      - UM??SSRSUB_1540031215
+      - Other??SSRSUB_1039286148
+      - UM??SSRSUB_2891198944
+      - CH??SSRSUB_543224176
+      - UM??SSRSUB_1645121432
+      - '???? FR??SSRSUB_1976738468'
+      - UM??SSRSUB_3181287189
+      - '???? Americas??SSRSUB_2231939728'
+      - UM??SSRSUB_187487565
+      - Other??SSRSUB_16954344
+      - Other??SSRSUB_2891657463
+      - '???? UK??SSRSUB_1655862801'
+      - '???? JP??SSRSUB_631076657'
+      - Other??SSRSUB_1067019020
+      - UM??SSRSUB_2429145910
+      - Other??SSRSUB_3168417863
+      - Other??SSRSUB_2958601820
+      - '???? FR??SSRSUB_136489409'
+      - CH??SSRSUB_2444475651
+      - Euro??SSRSUB_2523899909
+      - Other??SSRSUB_1873915727
+      - Asia??SSRSUB_207235238
+      - '???? HK??SSRSUB_912323628'
+      - UM??SSRSUB_2519677486
+      - '???? HK??SSRSUB_3695677373'
+      - UM??SSRSUB_2479977516
+      - Asia??SSRSUB_1266265329
+      - Other??SSRSUB_3091005802
+      - Other??SSRSUB_2578581128
+      - Other??SSRSUB_325597721
+      - '???? HK??SSRSUB_2881941470'
+      - '???? Americas??SSRSUB_3881104772'
+      - Other??SSRSUB_233140273
+      - Other??SSRSUB_4008167912
+      - UM??SSRSUB_865104408
+      - '???? FR??SSRSUB_209538928'
+      - Other??SSRSUB_604386632
   - name: 🔯 故障转移
     type: fallback
     url: https://www.gstatic.com/generate_204
     interval: 180
     proxies:
-      - (S115)🇨🇵t.me/PrivateVPNs_1
-      - (S116)🇨🇵t.me/PrivateVPNs_1
-      - (S117)🇬🇧t.me/PrivateVPNs_1
-      - (S118)🇬🇧t.me/PrivateVPNs_1
-      - (S119)🇨🇮t.me/PrivateVPNs_1
-      - (S120)🇨🇮t.me/PrivateVPNs_1
-      - (S101)🇸🇪t.me/PrivateVPNs_1
-      - (S102)🇸🇪t.me/PrivateVPNs_1
-      - (S103)🇩🇪t.me/PrivateVPNs_1
-      - (S104)🇩🇪t.me/PrivateVPNs_1
-      - (S105)🇨🇵t.me/PrivateVPNs_1
-      - (S106)🇨🇵t.me/PrivateVPNs_1
-      - (S107)🇬🇧t.me/PrivateVPNs_1
-      - (S108)🇬🇧t.me/PrivateVPNs_1
-      - (S109)🇨🇮t.me/PrivateVPNs_1
-      - (S110)🇨🇮t.me/PrivateVPNs_1
-      - (S111)🇸🇪t.me/PrivateVPNs_1
-      - (S112)🇸🇪t.me/PrivateVPNs_1
-      - (S113)🇩🇪t.me/PrivateVPNs_1
-      - (S114)🇩🇪t.me/PrivateVPNs_1
-      - (S115)🇨🇵t.me/PrivateVPNs_2
-      - (S116)🇨🇵t.me/PrivateVPNs_2
-      - (S117)🇬🇧t.me/PrivateVPNs_2
-      - (S118)🇬🇧t.me/PrivateVPNs_2
-      - (S119)🇨🇮t.me/PrivateVPNs_2
-      - (S120)🇨🇮t.me/PrivateVPNs_2
-      - (S101)🇸🇪t.me/PrivateVPNs_2
-      - (S102)🇸🇪t.me/PrivateVPNs_2
-      - (S103)🇩🇪t.me/PrivateVPNs_2
-      - (S104)🇩🇪t.me/PrivateVPNs_2
-      - (S105)🇨🇵t.me/PrivateVPNs_2
-      - (S106)🇨🇵t.me/PrivateVPNs_2
-      - (S107)🇬🇧t.me/PrivateVPNs_2
-      - (S108)🇬🇧t.me/PrivateVPNs_2
-      - (S109)🇨🇮t.me/PrivateVPNs_2
-      - (S110)🇨🇮t.me/PrivateVPNs_2
-      - (S111)🇸🇪t.me/PrivateVPNs_2
-      - (S112)🇸🇪t.me/PrivateVPNs_2
-      - (S113)🇩🇪t.me/PrivateVPNs_2
-      - (S114)🇩🇪t.me/PrivateVPNs_2
-      - (S115)🇨🇵t.me/PrivateVPNs_3
-      - (S116)🇨🇵t.me/PrivateVPNs_3
-      - (S117)🇬🇧t.me/PrivateVPNs_3
-      - (S118)🇬🇧t.me/PrivateVPNs_3
-      - (S119)🇨🇮t.me/PrivateVPNs_3
-      - (S120)🇨🇮t.me/PrivateVPNs_3
-      - (S101)🇸🇪t.me/PrivateVPNs_3
-      - (S102)🇸🇪t.me/PrivateVPNs_3
-      - (S103)🇩🇪t.me/PrivateVPNs_3
-      - (S104)🇩🇪t.me/PrivateVPNs_3
-      - (S105)🇨🇵t.me/PrivateVPNs_3
-      - (S106)🇨🇵t.me/PrivateVPNs_3
-      - (S107)🇬🇧t.me/PrivateVPNs_3
-      - (S108)🇬🇧t.me/PrivateVPNs_3
-      - (S109)🇨🇮t.me/PrivateVPNs_3
-      - (S110)🇨🇮t.me/PrivateVPNs_3
-      - (S111)🇸🇪t.me/PrivateVPNs_3
-      - (S112)🇸🇪t.me/PrivateVPNs_3
-      - (S113)🇩🇪t.me/PrivateVPNs_3
-      - (S114)🇩🇪t.me/PrivateVPNs_3
-      - (S115)🇨🇵t.me/PrivateVPNs_4
-      - (S116)🇨🇵t.me/PrivateVPNs_4
-      - (S117)🇬🇧t.me/PrivateVPNs_4
-      - (S118)🇬🇧t.me/PrivateVPNs_4
-      - (S119)🇨🇮t.me/PrivateVPNs_4
-      - (S120)🇨🇮t.me/PrivateVPNs_4
-      - (S101)🇸🇪t.me/PrivateVPNs_4
-      - (S102)🇸🇪t.me/PrivateVPNs_4
-      - (S103)🇩🇪t.me/PrivateVPNs_4
-      - (S104)🇩🇪t.me/PrivateVPNs_4
-      - (S105)🇨🇵t.me/PrivateVPNs_4
-      - (S106)🇨🇵t.me/PrivateVPNs_4
-      - (S107)🇬🇧t.me/PrivateVPNs_4
+      - UM??SSRSUB_3266573527
+      - Other??SSRSUB_3087487628
+      - Other??SSRSUB_3574339605
+      - UM??SSRSUB_3115807370
+      - Asia??SSRSUB_3951971837
+      - Other??SSRSUB_3225342711
+      - '???? JP??SSRSUB_192934526'
+      - UM??SSRSUB_279023244
+      - Other??SSRSUB_2165487018
+      - Other??SSRSUB_4099562408
+      - TG??SSRSUB_3290563095
+      - '???? HK??SSRSUB_252344610'
+      - Other??SSRSUB_1901174806
+      - UM??SSRSUB_3861831637
+      - Other??SSRSUB_833968396
+      - '???? JP??SSRSUB_2463454605'
+      - '???? UK??SSRSUB_2125441813'
+      - '???? JP??SSRSUB_2598990979'
+      - '???? HK??SSRSUB_3949890657'
+      - Other??SSRSUB_525609051
+      - Other??SSRSUB_785944417
+      - TG??SSRSUB_3688352138
+      - UM??SSRSUB_3715247902
+      - CH??SSRSUB_1698251682
+      - UM??SSRSUB_4032071225
+      - '???? Americas??SSRSUB_3588875311'
+      - Euro??SSRSUB_2368461052
+      - '???? KR??SSRSUB_455686761'
+      - UM??SSRSUB_280405591
+      - CH??SSRSUB_2785493623
+      - UM??SSRSUB_2313596545
+      - UM??SSRSUB_1786046118
+      - defaultName
+      - UM??SSRSUB_2215546844
+      - Other??SSRSUB_1512957847
+      - Other??SSRSUB_3928156646
+      - UM??SSRSUB_4036010914
+      - UM??SSRSUB_123086233
+      - UM??SSRSUB_1540031215
+      - Other??SSRSUB_1039286148
+      - UM??SSRSUB_2891198944
+      - CH??SSRSUB_543224176
+      - UM??SSRSUB_1645121432
+      - '???? FR??SSRSUB_1976738468'
+      - UM??SSRSUB_3181287189
+      - '???? Americas??SSRSUB_2231939728'
+      - UM??SSRSUB_187487565
+      - Other??SSRSUB_16954344
+      - Other??SSRSUB_2891657463
+      - '???? UK??SSRSUB_1655862801'
+      - '???? JP??SSRSUB_631076657'
+      - Other??SSRSUB_1067019020
+      - UM??SSRSUB_2429145910
+      - Other??SSRSUB_3168417863
+      - Other??SSRSUB_2958601820
+      - '???? FR??SSRSUB_136489409'
+      - CH??SSRSUB_2444475651
+      - Euro??SSRSUB_2523899909
+      - Other??SSRSUB_1873915727
+      - Asia??SSRSUB_207235238
+      - '???? HK??SSRSUB_912323628'
+      - UM??SSRSUB_2519677486
+      - '???? HK??SSRSUB_3695677373'
+      - UM??SSRSUB_2479977516
+      - Asia??SSRSUB_1266265329
+      - Other??SSRSUB_3091005802
+      - Other??SSRSUB_2578581128
+      - Other??SSRSUB_325597721
+      - '???? HK??SSRSUB_2881941470'
+      - '???? Americas??SSRSUB_3881104772'
+      - Other??SSRSUB_233140273
+      - Other??SSRSUB_4008167912
+      - UM??SSRSUB_865104408
+      - '???? FR??SSRSUB_209538928'
+      - Other??SSRSUB_604386632
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -333,79 +339,81 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - 🔯 故障转移
-      - (S115)🇨🇵t.me/PrivateVPNs_1
-      - (S116)🇨🇵t.me/PrivateVPNs_1
-      - (S117)🇬🇧t.me/PrivateVPNs_1
-      - (S118)🇬🇧t.me/PrivateVPNs_1
-      - (S119)🇨🇮t.me/PrivateVPNs_1
-      - (S120)🇨🇮t.me/PrivateVPNs_1
-      - (S101)🇸🇪t.me/PrivateVPNs_1
-      - (S102)🇸🇪t.me/PrivateVPNs_1
-      - (S103)🇩🇪t.me/PrivateVPNs_1
-      - (S104)🇩🇪t.me/PrivateVPNs_1
-      - (S105)🇨🇵t.me/PrivateVPNs_1
-      - (S106)🇨🇵t.me/PrivateVPNs_1
-      - (S107)🇬🇧t.me/PrivateVPNs_1
-      - (S108)🇬🇧t.me/PrivateVPNs_1
-      - (S109)🇨🇮t.me/PrivateVPNs_1
-      - (S110)🇨🇮t.me/PrivateVPNs_1
-      - (S111)🇸🇪t.me/PrivateVPNs_1
-      - (S112)🇸🇪t.me/PrivateVPNs_1
-      - (S113)🇩🇪t.me/PrivateVPNs_1
-      - (S114)🇩🇪t.me/PrivateVPNs_1
-      - (S115)🇨🇵t.me/PrivateVPNs_2
-      - (S116)🇨🇵t.me/PrivateVPNs_2
-      - (S117)🇬🇧t.me/PrivateVPNs_2
-      - (S118)🇬🇧t.me/PrivateVPNs_2
-      - (S119)🇨🇮t.me/PrivateVPNs_2
-      - (S120)🇨🇮t.me/PrivateVPNs_2
-      - (S101)🇸🇪t.me/PrivateVPNs_2
-      - (S102)🇸🇪t.me/PrivateVPNs_2
-      - (S103)🇩🇪t.me/PrivateVPNs_2
-      - (S104)🇩🇪t.me/PrivateVPNs_2
-      - (S105)🇨🇵t.me/PrivateVPNs_2
-      - (S106)🇨🇵t.me/PrivateVPNs_2
-      - (S107)🇬🇧t.me/PrivateVPNs_2
-      - (S108)🇬🇧t.me/PrivateVPNs_2
-      - (S109)🇨🇮t.me/PrivateVPNs_2
-      - (S110)🇨🇮t.me/PrivateVPNs_2
-      - (S111)🇸🇪t.me/PrivateVPNs_2
-      - (S112)🇸🇪t.me/PrivateVPNs_2
-      - (S113)🇩🇪t.me/PrivateVPNs_2
-      - (S114)🇩🇪t.me/PrivateVPNs_2
-      - (S115)🇨🇵t.me/PrivateVPNs_3
-      - (S116)🇨🇵t.me/PrivateVPNs_3
-      - (S117)🇬🇧t.me/PrivateVPNs_3
-      - (S118)🇬🇧t.me/PrivateVPNs_3
-      - (S119)🇨🇮t.me/PrivateVPNs_3
-      - (S120)🇨🇮t.me/PrivateVPNs_3
-      - (S101)🇸🇪t.me/PrivateVPNs_3
-      - (S102)🇸🇪t.me/PrivateVPNs_3
-      - (S103)🇩🇪t.me/PrivateVPNs_3
-      - (S104)🇩🇪t.me/PrivateVPNs_3
-      - (S105)🇨🇵t.me/PrivateVPNs_3
-      - (S106)🇨🇵t.me/PrivateVPNs_3
-      - (S107)🇬🇧t.me/PrivateVPNs_3
-      - (S108)🇬🇧t.me/PrivateVPNs_3
-      - (S109)🇨🇮t.me/PrivateVPNs_3
-      - (S110)🇨🇮t.me/PrivateVPNs_3
-      - (S111)🇸🇪t.me/PrivateVPNs_3
-      - (S112)🇸🇪t.me/PrivateVPNs_3
-      - (S113)🇩🇪t.me/PrivateVPNs_3
-      - (S114)🇩🇪t.me/PrivateVPNs_3
-      - (S115)🇨🇵t.me/PrivateVPNs_4
-      - (S116)🇨🇵t.me/PrivateVPNs_4
-      - (S117)🇬🇧t.me/PrivateVPNs_4
-      - (S118)🇬🇧t.me/PrivateVPNs_4
-      - (S119)🇨🇮t.me/PrivateVPNs_4
-      - (S120)🇨🇮t.me/PrivateVPNs_4
-      - (S101)🇸🇪t.me/PrivateVPNs_4
-      - (S102)🇸🇪t.me/PrivateVPNs_4
-      - (S103)🇩🇪t.me/PrivateVPNs_4
-      - (S104)🇩🇪t.me/PrivateVPNs_4
-      - (S105)🇨🇵t.me/PrivateVPNs_4
-      - (S106)🇨🇵t.me/PrivateVPNs_4
-      - (S107)🇬🇧t.me/PrivateVPNs_4
+      - UM??SSRSUB_3266573527
+      - Other??SSRSUB_3087487628
+      - Other??SSRSUB_3574339605
+      - UM??SSRSUB_3115807370
+      - Asia??SSRSUB_3951971837
+      - Other??SSRSUB_3225342711
+      - '???? JP??SSRSUB_192934526'
+      - UM??SSRSUB_279023244
+      - Other??SSRSUB_2165487018
+      - Other??SSRSUB_4099562408
+      - TG??SSRSUB_3290563095
+      - '???? HK??SSRSUB_252344610'
+      - Other??SSRSUB_1901174806
+      - UM??SSRSUB_3861831637
+      - Other??SSRSUB_833968396
+      - '???? JP??SSRSUB_2463454605'
+      - '???? UK??SSRSUB_2125441813'
+      - '???? JP??SSRSUB_2598990979'
+      - '???? HK??SSRSUB_3949890657'
+      - Other??SSRSUB_525609051
+      - Other??SSRSUB_785944417
+      - TG??SSRSUB_3688352138
+      - UM??SSRSUB_3715247902
+      - CH??SSRSUB_1698251682
+      - UM??SSRSUB_4032071225
+      - '???? Americas??SSRSUB_3588875311'
+      - Euro??SSRSUB_2368461052
+      - '???? KR??SSRSUB_455686761'
+      - UM??SSRSUB_280405591
+      - CH??SSRSUB_2785493623
+      - UM??SSRSUB_2313596545
+      - UM??SSRSUB_1786046118
+      - defaultName
+      - UM??SSRSUB_2215546844
+      - Other??SSRSUB_1512957847
+      - Other??SSRSUB_3928156646
+      - UM??SSRSUB_4036010914
+      - UM??SSRSUB_123086233
+      - UM??SSRSUB_1540031215
+      - Other??SSRSUB_1039286148
+      - UM??SSRSUB_2891198944
+      - CH??SSRSUB_543224176
+      - UM??SSRSUB_1645121432
+      - '???? FR??SSRSUB_1976738468'
+      - UM??SSRSUB_3181287189
+      - '???? Americas??SSRSUB_2231939728'
+      - UM??SSRSUB_187487565
+      - Other??SSRSUB_16954344
+      - Other??SSRSUB_2891657463
+      - '???? UK??SSRSUB_1655862801'
+      - '???? JP??SSRSUB_631076657'
+      - Other??SSRSUB_1067019020
+      - UM??SSRSUB_2429145910
+      - Other??SSRSUB_3168417863
+      - Other??SSRSUB_2958601820
+      - '???? FR??SSRSUB_136489409'
+      - CH??SSRSUB_2444475651
+      - Euro??SSRSUB_2523899909
+      - Other??SSRSUB_1873915727
+      - Asia??SSRSUB_207235238
+      - '???? HK??SSRSUB_912323628'
+      - UM??SSRSUB_2519677486
+      - '???? HK??SSRSUB_3695677373'
+      - UM??SSRSUB_2479977516
+      - Asia??SSRSUB_1266265329
+      - Other??SSRSUB_3091005802
+      - Other??SSRSUB_2578581128
+      - Other??SSRSUB_325597721
+      - '???? HK??SSRSUB_2881941470'
+      - '???? Americas??SSRSUB_3881104772'
+      - Other??SSRSUB_233140273
+      - Other??SSRSUB_4008167912
+      - UM??SSRSUB_865104408
+      - '???? FR??SSRSUB_209538928'
+      - Other??SSRSUB_604386632
 
 rules:
 # 本地/局域网地址
