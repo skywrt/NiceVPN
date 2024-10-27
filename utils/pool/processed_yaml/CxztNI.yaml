@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-10-27 14:21:33
+# 创建时间：2024-10-27 16:32:56
 # 使用模版：ACL4SSR_Mini.ini
-# 节点数量：158
+# 节点数量：110
 # 节点类型：vmess, trojan
 ####################################
 mixed-port: 7890
@@ -86,328 +86,232 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"美国 CloudFlare节点_1","type":"vmess","server":"104.19.45.13","port":2082,"cipher":"auto","uuid":"5f3f09ad-89cb-4e94-a7ad-aa8239913555","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip3.6929198.xyz"}}}
-  - {"name":"美国 CloudFlare节点_2","type":"vmess","server":"162.159.140.91","port":2082,"cipher":"auto","uuid":"5f3f09ad-89cb-4e94-a7ad-aa8239913555","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip3.6929198.xyz"}}}
-  - {"name":"广东省广州市 移动_1","type":"vmess","server":"183.236.51.23","port":45020,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"香港 电讯盈科有限公司_1","type":"vmess","server":"hkt2.bika.hk","port":30251,"cipher":"auto","uuid":"9e88a10b-655c-5120-89d0-408634169561","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国 CloudFlare节点_3","type":"vmess","server":"172.64.166.33","port":2095,"cipher":"auto","uuid":"18d96190-c10f-448f-a82a-2d36df5c3cde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip2.6016725.xyz"}}}
-  - {"name":"美国 CloudFlare节点_4","type":"vmess","server":"172.64.166.2","port":2082,"cipher":"auto","uuid":"5f3f09ad-89cb-4e94-a7ad-aa8239913555","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip3.6929198.xyz"}}}
-  - {"name":"美国 CloudFlare节点_5","type":"vmess","server":"104.26.5.112","port":2095,"cipher":"auto","uuid":"18d96190-c10f-448f-a82a-2d36df5c3cde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip2.6016725.xyz"}}}
-  - {"name":"美国 CloudFlare节点_6","type":"vmess","server":"icook.tw","port":2082,"cipher":"auto","uuid":"5f3f09ad-89cb-4e94-a7ad-aa8239913555","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip3.6929198.xyz"}}}
-  - {"name":"美国 CloudFlare节点_7","type":"vmess","server":"104.19.46.103","port":2082,"cipher":"auto","uuid":"5f3f09ad-89cb-4e94-a7ad-aa8239913555","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip3.6929198.xyz"}}}
-  - {"name":"美国 CloudFlare节点_8","type":"vmess","server":"172.67.165.53","port":2086,"cipher":"auto","uuid":"3fd7b958-2161-46e1-b6fc-bd6bb2165312","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"shs.xiaoqi666.xyz"}}}
-  - {"name":"美国 CloudFlare节点_9","type":"vmess","server":"104.16.68.38","port":2086,"cipher":"auto","uuid":"76221bfb-e92f-4e80-81c5-6fe48f50ac0b","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/glweidf.sbs/linkws","headers":{"host":"rough-wildflower-0b5e.zemel-yesenia1720.workers.dev"}}}
-  - {"name":"美国 CloudFlare节点_10","type":"vmess","server":"104.16.67.38","port":2082,"cipher":"auto","uuid":"441da342-ce90-441e-bff9-d2ceb55e68ca","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ivideos.sbs/linkws","headers":{"host":"late-wave-1d0a.lesijo3430.workers.dev"}}}
-  - {"name":"美国 CloudFlare节点_11","type":"vmess","server":"172.64.167.15","port":2082,"cipher":"auto","uuid":"5f3f09ad-89cb-4e94-a7ad-aa8239913555","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/github.com/Alvin9999","headers":{"host":"ip16.6929198.xyz"}}}
-  - {"name":"美国 CloudFlare节点_12","type":"vmess","server":"172.64.99.22","port":2082,"cipher":"auto","uuid":"5f3f09ad-89cb-4e94-a7ad-aa8239913555","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip3.6929198.xyz"}}}
-  - {"name":"美国 CloudFlare节点_13","type":"vmess","server":"104.19.45.13","port":2095,"cipher":"auto","uuid":"7a737f41-b792-4260-94ff-3d864da67b80","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"onea.flha.ru"}}}
-  - {"name":"美国 CloudFlare节点_14","type":"vmess","server":"172.64.175.88","port":2082,"cipher":"auto","uuid":"5f3f09ad-89cb-4e94-a7ad-aa8239913555","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip3.6929198.xyz"}}}
-  - {"name":"巴拿马 V2CROSS.COM","type":"vmess","server":"186.190.215.75","port":443,"cipher":"auto","uuid":"03fcc618-b93d-6796-6aed-8a38c975d581","alterId":1,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"linkvws","headers":{"host":"186.190.215.75"}}}
-  - {"name":"广东省广州市 移动_2","type":"vmess","server":"183.236.48.163","port":58831,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"香港 电讯盈科有限公司_2","type":"vmess","server":"1.65.205.116","port":30251,"cipher":"auto","uuid":"9e88a10b-655c-5120-89d0-408634169561","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国 CloudFlare节点_15","type":"vmess","server":"104.19.38.12","port":2082,"cipher":"auto","uuid":"5f3f09ad-89cb-4e94-a7ad-aa8239913555","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip3.6929198.xyz"}}}
-  - {"name":"美国 CloudFlare节点_16","type":"vmess","server":"104.16.61.8","port":2052,"cipher":"auto","uuid":"76221bfb-e92f-4e80-81c5-6fe48f50ac0b","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/glweidf.sbs/linkws","headers":{"host":"free.fnet00.workers.dev"}}}
-  - {"name":"美国 CloudFlare节点_17","type":"vmess","server":"162.159.140.19","port":2095,"cipher":"auto","uuid":"18d96190-c10f-448f-a82a-2d36df5c3cde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip2.6016725.xyz"}}}
-  - {"name":"俄罗斯 V2CROSS.COM","type":"vmess","server":"185.221.160.163","port":443,"cipher":"auto","uuid":"1052f24e-7b09-45eb-b0c5-d858eb124192","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/glweidf.cfd/linkws","headers":{"host":"worker-mute-bar-1719.nifotok993.workers.dev"}}}
-  - {"name":"美国 Fastly全球Anycast节点_1","type":"vmess","server":"plex.com","port":80,"cipher":"auto","uuid":"a888b89a-08ac-40e6-8ad7-cfce9569f967","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/racevpn","headers":{"host":"gerMAnyISvP.iR"}}}
-  - {"name":"美国 CloudFlare节点_18","type":"vmess","server":"104.16.67.38","port":2095,"cipher":"auto","uuid":"edbb1059-1633-4271-b66e-ed4fba47a1bf","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linde06.indiavideo.sbs/linkws","headers":{"host":"worker-lingering-fog-c021.gesofog870.workers.dev"}}}
-  - {"name":"美国 CloudFlare节点_19","type":"vmess","server":"104.26.0.56","port":2095,"cipher":"auto","uuid":"18d96190-c10f-448f-a82a-2d36df5c3cde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip2.6016725.xyz"}}}
-  - {"name":"美国 CloudFlare节点_20","type":"vmess","server":"104.16.60.8","port":2095,"cipher":"auto","uuid":"441da342-ce90-441e-bff9-d2ceb55e68ca","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ivideos.sbs/linkws","headers":{"host":"8eh-band-d994.gijica5932.workers.dev"}}}
-  - {"name":"美国 CloudFlare公司CDN节点(shopify)","type":"vmess","server":"23.227.38.3","port":2095,"cipher":"auto","uuid":"18d96190-c10f-448f-a82a-2d36df5c3cde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip2.6016725.xyz"}}}
-  - {"name":"美国 CloudFlare节点_21","type":"vmess","server":"172.64.166.8","port":2082,"cipher":"auto","uuid":"5f3f09ad-89cb-4e94-a7ad-aa8239913555","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/github.com/Alvin9999","headers":{"host":"ip16.6929198.xyz"}}}
-  - {"name":"美国 CloudFlare节点_22","type":"vmess","server":"104.19.46.103","port":2095,"cipher":"auto","uuid":"18d96190-c10f-448f-a82a-2d36df5c3cde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip2.6016725.xyz"}}}
-  - {"name":"美国 Fastly全球Anycast节点_2","type":"vmess","server":"speedtest.net","port":443,"cipher":"auto","uuid":"57727d7d-8873-4000-b3f4-33a93fcfdd51","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/m28jcoZZUhkqg6pk11","headers":{"host":"mehrjavan.ir"}}}
-  - {"name":"丹麦 V2CROSS.COM_1","type":"vmess","server":"go.alipay.ovh","port":80,"cipher":"auto","uuid":"a94171be-b387-4f02-a5ef-a1b4b7a26c04","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/aries?ed=2048","headers":{"host":"open.alipay.ovh"}}}
-  - {"name":"广东省广州市 移动_3","type":"vmess","server":"183.236.48.166","port":33288,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"江苏省 移动数据上网公共出口","type":"vmess","server":"15086.kuaiyin02.top","port":15086,"cipher":"auto","uuid":"9f513161-576b-3abc-9c98-06e52c3a24c6","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"广东省中山市 移动","type":"vmess","server":"120.237.79.157","port":46665,"cipher":"auto","uuid":"3ac820af-becb-45d7-9e7a-e33d02961bb3","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国 CloudFlare节点_23","type":"vmess","server":"172.64.166.33","port":2082,"cipher":"auto","uuid":"5f3f09ad-89cb-4e94-a7ad-aa8239913555","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/github.com/Alvin9999","headers":{"host":"ip16.6929198.xyz"}}}
-  - {"name":"美国 CloudFlare节点_24","type":"vmess","server":"104.26.5.66","port":2082,"cipher":"auto","uuid":"5f3f09ad-89cb-4e94-a7ad-aa8239913555","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip3.6929198.xyz"}}}
-  - {"name":"美国 V2CROSS.COM","type":"vmess","server":"23.162.200.227","port":443,"cipher":"auto","uuid":"03fcc618-b93d-6796-6aed-8a38c975d581","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkvws"}}
-  - {"name":"美国 CloudFlare节点_25","type":"vmess","server":"104.19.45.17","port":2095,"cipher":"auto","uuid":"18d96190-c10f-448f-a82a-2d36df5c3cde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip2.6016725.xyz"}}}
-  - {"name":"瑞典 V2CROSS.COM","type":"vmess","server":"185.146.173.59","port":80,"cipher":"auto","uuid":"1052f24e-7b09-45eb-b0c5-d858eb124192","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/glweidf.cfd/linkws","headers":{"host":"freevpn878.hamidimorteza680.workers.dev"}}}
-  - {"name":"美国 CloudFlare节点_26","type":"vmess","server":"b.jannah.homes","port":443,"cipher":"auto","uuid":"03fcc618-b93d-6796-6aed-8a38c975d581","alterId":1,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"linkvws","headers":{"host":"b.jannah.homes"}}}
-  - {"name":"巴西圣保罗 CloudFlare节点","type":"vmess","server":"188.114.96.2","port":443,"cipher":"auto","uuid":"f584de15-2034-4170-a723-f48c2bae5e0f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"afrhms16v.bestxray.buzz"}}}
-  - {"name":"广东省广州市 移动_4","type":"vmess","server":"183.236.48.161","port":33288,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国 CloudFlare节点_27","type":"vmess","server":"172.64.167.10","port":2082,"cipher":"auto","uuid":"5f3f09ad-89cb-4e94-a7ad-aa8239913555","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip3.6929198.xyz"}}}
-  - {"name":"美国 CloudFlare节点_28","type":"vmess","server":"gt021.bestforxray.buzz","port":443,"cipher":"auto","uuid":"c1fd780a-3408-4f48-a932-5832a28ce9f6","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"ausgt02.bestforxray.buzz"}}}
-  - {"name":"美国 CloudFlare节点_29","type":"vmess","server":"172.64.167.8","port":2095,"cipher":"auto","uuid":"18d96190-c10f-448f-a82a-2d36df5c3cde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip2.6016725.xyz"}}}
-  - {"name":"美国 CloudFlare节点_30","type":"vmess","server":"172.64.167.15","port":2095,"cipher":"auto","uuid":"18d96190-c10f-448f-a82a-2d36df5c3cde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip2.6016725.xyz"}}}
-  - {"name":"北美地区 V2CROSS.COM","type":"vmess","server":"23.157.88.6","port":443,"cipher":"auto","uuid":"03fcc618-b93d-6796-6aed-8a38c975d581","alterId":1,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"linkvws","headers":{"host":"23.157.88.6"}}}
-  - {"name":"美国 CloudFlare节点_31","type":"vmess","server":"172.64.166.22","port":2095,"cipher":"auto","uuid":"18d96190-c10f-448f-a82a-2d36df5c3cde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip2.6016725.xyz"}}}
-  - {"name":"美国 CloudFlare节点_32","type":"vmess","server":"104.19.45.47","port":2095,"cipher":"auto","uuid":"18d96190-c10f-448f-a82a-2d36df5c3cde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip2.6016725.xyz"}}}
-  - {"name":"美国 CloudFlare节点_33","type":"vmess","server":"c.jannah.homes","port":443,"cipher":"auto","uuid":"03fcc618-b93d-6796-6aed-8a38c975d581","alterId":1,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"linkvws","headers":{"host":"c.jannah.homes"}}}
-  - {"name":"广东省广州市 移动_5","type":"vmess","server":"120.232.153.71","port":43526,"cipher":"auto","uuid":"21a9bff2-72de-4e62-93ff-8b159f66d875","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国 CloudFlare节点_34","type":"vmess","server":"104.19.45.31","port":2095,"cipher":"auto","uuid":"18d96190-c10f-448f-a82a-2d36df5c3cde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip2.6016725.xyz"}}}
-  - {"name":"美国 CloudFlare节点_35","type":"vmess","server":"104.19.42.49","port":2082,"cipher":"auto","uuid":"5f3f09ad-89cb-4e94-a7ad-aa8239913555","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip3.6929198.xyz"}}}
-  - {"name":"美国 CloudFlare节点_36","type":"vmess","server":"172.64.167.25","port":2082,"cipher":"auto","uuid":"5f3f09ad-89cb-4e94-a7ad-aa8239913555","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip3.6929198.xyz"}}}
-  - {"name":"美国 CloudFlare节点_37","type":"vmess","server":"russia.com","port":2095,"cipher":"auto","uuid":"18d96190-c10f-448f-a82a-2d36df5c3cde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/github.com/Alvin9999","headers":{"host":"ip11.6016725.xyz"}}}
-  - {"name":"美国 CloudFlare节点_38","type":"vmess","server":"104.26.5.90","port":2095,"cipher":"auto","uuid":"18d96190-c10f-448f-a82a-2d36df5c3cde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip2.6016725.xyz"}}}
-  - {"name":"美国 CloudFlare节点_39","type":"vmess","server":"104.19.55.49","port":2095,"cipher":"auto","uuid":"18d96190-c10f-448f-a82a-2d36df5c3cde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip2.6016725.xyz"}}}
-  - {"name":"美国 CloudFlare节点_40","type":"vmess","server":"lol.ps","port":2052,"cipher":"auto","uuid":"f584de15-2034-4170-a723-f48c2bae5e0f","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/afrhms16v.bestxray.buzz/linkws","headers":{"host":"mysan2.jaquay22.workers.dev"}}}
-  - {"name":"美国 CloudFlare节点_41","type":"vmess","server":"172.64.175.213","port":2082,"cipher":"auto","uuid":"5f3f09ad-89cb-4e94-a7ad-aa8239913555","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip3.6929198.xyz"}}}
-  - {"name":"美国 CloudFlare节点_42","type":"vmess","server":"172.64.198.249","port":2082,"cipher":"auto","uuid":"5f3f09ad-89cb-4e94-a7ad-aa8239913555","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip3.6929198.xyz"}}}
-  - {"name":"美国 CloudFlare节点_43","type":"vmess","server":"104.19.32.216","port":2082,"cipher":"auto","uuid":"5f3f09ad-89cb-4e94-a7ad-aa8239913555","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip3.6929198.xyz"}}}
-  - {"name":"美国 CloudFlare节点_44","type":"vmess","server":"104.26.5.113","port":2095,"cipher":"auto","uuid":"18d96190-c10f-448f-a82a-2d36df5c3cde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip2.6016725.xyz"}}}
-  - {"name":"广东省广州市 移动_6","type":"vmess","server":"120.232.153.40","port":35601,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国 CloudFlare节点_45","type":"vmess","server":"172.64.166.22","port":2082,"cipher":"auto","uuid":"5f3f09ad-89cb-4e94-a7ad-aa8239913555","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip3.6929198.xyz"}}}
-  - {"name":"美国 Fastly全球Anycast节点_3","type":"vmess","server":"151.101.130.133","port":80,"cipher":"auto","uuid":"a888b89a-08ac-40e6-8ad7-cfce9569f967","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/racevpn","headers":{"host":"gerMAnyISvP.iR"}}}
-  - {"name":"美国 CloudFlare节点_46","type":"vmess","server":"104.26.5.88","port":2095,"cipher":"auto","uuid":"18d96190-c10f-448f-a82a-2d36df5c3cde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip2.6016725.xyz"}}}
-  - {"name":"美国 CloudFlare节点_47","type":"vmess","server":"172.64.194.76","port":2082,"cipher":"auto","uuid":"5f3f09ad-89cb-4e94-a7ad-aa8239913555","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip3.6929198.xyz"}}}
-  - {"name":"美国 CloudFlare节点_48","type":"vmess","server":"162.159.140.77","port":2095,"cipher":"auto","uuid":"18d96190-c10f-448f-a82a-2d36df5c3cde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip2.6016725.xyz"}}}
-  - {"name":"美国 CloudFlare节点_49","type":"vmess","server":"104.20.17.186","port":2082,"cipher":"auto","uuid":"5f3f09ad-89cb-4e94-a7ad-aa8239913555","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip3.6929198.xyz"}}}
-  - {"name":"美国 CloudFlare节点_50","type":"vmess","server":"104.19.38.12","port":2095,"cipher":"auto","uuid":"18d96190-c10f-448f-a82a-2d36df5c3cde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip2.6016725.xyz"}}}
-  - {"name":"美国 Fastly全球Anycast节点_4","type":"vmess","server":"plex.com","port":443,"cipher":"auto","uuid":"a888b89a-08ac-40e6-8ad7-cfce9569f967","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/racevpn","headers":{"host":"gerMAnyISvP.iR"}}}
-  - {"name":"美国 CloudFlare节点_51","type":"vmess","server":"172.64.167.35","port":2095,"cipher":"auto","uuid":"18d96190-c10f-448f-a82a-2d36df5c3cde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip2.6016725.xyz"}}}
-  - {"name":"美国 CloudFlare节点_52","type":"vmess","server":"104.19.45.196","port":2095,"cipher":"auto","uuid":"7a737f41-b792-4260-94ff-3d864da67b80","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"onea.flha.ru"}}}
-  - {"name":"美国 CloudFlare节点_53","type":"vmess","server":"104.26.5.67","port":2082,"cipher":"auto","uuid":"5f3f09ad-89cb-4e94-a7ad-aa8239913555","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip3.6929198.xyz"}}}
-  - {"name":"美国 CloudFlare节点_54","type":"vmess","server":"172.64.167.10","port":2095,"cipher":"auto","uuid":"18d96190-c10f-448f-a82a-2d36df5c3cde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip2.6016725.xyz"}}}
-  - {"name":"广东省 移动","type":"vmess","server":"183.238.202.173","port":39041,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国 CloudFlare节点_55","type":"vmess","server":"d.sanglar.homes","port":443,"cipher":"auto","uuid":"03fcc618-b93d-6796-6aed-8a38c975d581","alterId":1,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"linkvws","headers":{"host":"d.sanglar.homes"}}}
-  - {"name":"美国 CloudFlare节点_56","type":"vmess","server":"104.26.5.112","port":2082,"cipher":"auto","uuid":"5f3f09ad-89cb-4e94-a7ad-aa8239913555","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip3.6929198.xyz"}}}
-  - {"name":"日本 东京Fastly节点_1","type":"vmess","server":"bwdraper.faculty.ucdavis.edu","port":443,"cipher":"auto","uuid":"587eeb1a-9d5e-4407-886f-9e9492e42273","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/express_v2ray?ed=2560","headers":{"host":"icomedbackbitches.com"}}}
-  - {"name":"澳大利亚 V2CROSS.COM","type":"vmess","server":"143.92.42.65","port":2902,"cipher":"auto","uuid":"640c1077-d10b-4225-a9fb-d3e9c3ce7a00","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国 CloudFlare节点_57","type":"vmess","server":"104.26.5.88","port":2082,"cipher":"auto","uuid":"5f3f09ad-89cb-4e94-a7ad-aa8239913555","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip3.6929198.xyz"}}}
-  - {"name":"丹麦 V2CROSS.COM_2","type":"vmess","server":"195.85.59.95","port":80,"cipher":"auto","uuid":"a94171be-b387-4f02-a5ef-a1b4b7a26c04","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/aries?ed=2048","headers":{"host":"open.alipay.ovh"}}}
-  - {"name":"美国 CloudFlare节点_58","type":"vmess","server":"104.19.55.49","port":2082,"cipher":"auto","uuid":"5f3f09ad-89cb-4e94-a7ad-aa8239913555","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip3.6929198.xyz"}}}
-  - {"name":"美国 CloudFlare节点_59","type":"vmess","server":"104.20.17.186","port":2095,"cipher":"auto","uuid":"18d96190-c10f-448f-a82a-2d36df5c3cde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip2.6016725.xyz"}}}
-  - {"name":"美国 CloudFlare节点_60","type":"vmess","server":"104.19.45.243","port":2095,"cipher":"auto","uuid":"7a737f41-b792-4260-94ff-3d864da67b80","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"onea.flha.ru"}}}
-  - {"name":"美国 CloudFlare节点_61","type":"vmess","server":"104.19.123.11","port":2095,"cipher":"auto","uuid":"18d96190-c10f-448f-a82a-2d36df5c3cde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip2.6016725.xyz"}}}
-  - {"name":"美国 Fastly全球Anycast节点_5","type":"vmess","server":"151.101.2.133","port":80,"cipher":"auto","uuid":"a888b89a-08ac-40e6-8ad7-cfce9569f967","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/racevpn","headers":{"host":"gerMAnyISvP.iR"}}}
-  - {"name":"美国 CloudFlare节点_62","type":"vmess","server":"104.19.45.70","port":2095,"cipher":"auto","uuid":"7a737f41-b792-4260-94ff-3d864da67b80","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"onea.flha.ru"}}}
-  - {"name":"美国 CloudFlare节点_63","type":"vmess","server":"104.16.61.8","port":8880,"cipher":"auto","uuid":"950db6aa-4926-4616-816e-ec0312dcb87b","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/jahfkjha.cfd/linkws","headers":{"host":"yaghoob55freenodes.repaco69437403.workers.dev"}}}
-  - {"name":"美国 CloudFlare节点_64","type":"vmess","server":"e.sanglar.homes","port":443,"cipher":"auto","uuid":"03fcc618-b93d-6796-6aed-8a38c975d581","alterId":1,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"linkvws","headers":{"host":"e.sanglar.homes"}}}
-  - {"name":"美国 CloudFlare节点_65","type":"vmess","server":"172.64.166.8","port":2095,"cipher":"auto","uuid":"18d96190-c10f-448f-a82a-2d36df5c3cde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip2.6016725.xyz"}}}
-  - {"name":"美国 CloudFlare节点_66","type":"vmess","server":"usnew.lbxjc.site","port":80,"cipher":"auto","uuid":"e6543319-0574-42ac-b778-1c4325d626f5","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"chunchuan.kejixiaoqi666.store"}}}
-  - {"name":"美国 CloudFlare节点_67","type":"vmess","server":"104.21.238.100","port":2095,"cipher":"auto","uuid":"18d96190-c10f-448f-a82a-2d36df5c3cde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip2.6016725.xyz"}}}
-  - {"name":"美国 CloudFlare节点_68","type":"vmess","server":"172.64.175.88","port":2095,"cipher":"auto","uuid":"18d96190-c10f-448f-a82a-2d36df5c3cde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip2.6016725.xyz"}}}
-  - {"name":"美国 CloudFlare节点_69","type":"vmess","server":"malaysia.com","port":2082,"cipher":"auto","uuid":"5f3f09ad-89cb-4e94-a7ad-aa8239913555","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip3.6929198.xyz"}}}
-  - {"name":"美国 CloudFlare节点_70","type":"vmess","server":"104.19.45.232","port":2095,"cipher":"auto","uuid":"7a737f41-b792-4260-94ff-3d864da67b80","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"onea.flha.ru"}}}
-  - {"name":"美国 CloudFlare节点_71","type":"vmess","server":"172.67.64.120","port":80,"cipher":"auto","uuid":"7a8c8e19-b110-4224-89c5-f32f8c9b07eb","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/V2LINE-TELEGRAM-CHANNEL-VMESS-WS","headers":{"host":"68690907783461163508239105253758.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou"}}}
-  - {"name":"美国 CloudFlare节点_72","type":"vmess","server":"104.19.45.90","port":2082,"cipher":"auto","uuid":"5f3f09ad-89cb-4e94-a7ad-aa8239913555","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip3.6929198.xyz"}}}
-  - {"name":"美国 CloudFlare节点_73","type":"vmess","server":"www.speedtest.net","port":80,"cipher":"auto","uuid":"3f638f34-8dba-4186-bc43-2716a7ddd4be","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/az05.beyondy.cfd:443/link","headers":{"host":"telegram----cassiusvpn----2.ranob36907.workers.dev"}}}
-  - {"name":"美国 CloudFlare节点_74","type":"vmess","server":"172.64.167.44","port":2082,"cipher":"auto","uuid":"5f3f09ad-89cb-4e94-a7ad-aa8239913555","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip3.6929198.xyz"}}}
-  - {"name":"美国 CloudFlare节点_75","type":"vmess","server":"162.159.140.33","port":2082,"cipher":"auto","uuid":"5f3f09ad-89cb-4e94-a7ad-aa8239913555","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip3.6929198.xyz"}}}
-  - {"name":"香港 HKCABLE","type":"vmess","server":"218.252.203.74","port":15086,"cipher":"auto","uuid":"9f513161-576b-3abc-9c98-06e52c3a24c6","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国 CloudFlare节点_76","type":"vmess","server":"104.19.45.42","port":2095,"cipher":"auto","uuid":"18d96190-c10f-448f-a82a-2d36df5c3cde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip2.6016725.xyz"}}}
-  - {"name":"日本 东京Fastly节点_2","type":"vmess","server":"zmaoz.faculty.ucdavis.edu","port":443,"cipher":"auto","uuid":"587eeb1a-9d5e-4407-886f-9e9492e42273","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/express_v2ray?ed=2560","headers":{"host":"icomedbackbitches.com"}}}
-  - {"name":"美国 CloudFlare节点_77","type":"vmess","server":"172.64.166.9","port":2082,"cipher":"auto","uuid":"5f3f09ad-89cb-4e94-a7ad-aa8239913555","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip3.6929198.xyz"}}}
-  - {"name":"美国 CloudFlare节点_78","type":"vmess","server":"104.16.60.8","port":2086,"cipher":"auto","uuid":"441da342-ce90-441e-bff9-d2ceb55e68ca","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ivideos.sbs/linkws","headers":{"host":"82uple-bird-b087.pemed58443.workers.dev"}}}
-  - {"name":"美国 CloudFlare节点_79","type":"vmess","server":"162.159.140.66","port":2095,"cipher":"auto","uuid":"18d96190-c10f-448f-a82a-2d36df5c3cde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip2.6016725.xyz"}}}
-  - {"name":"美国 CloudFlare节点_80","type":"vmess","server":"104.16.68.38","port":2095,"cipher":"auto","uuid":"441da342-ce90-441e-bff9-d2ceb55e68ca","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ivideos.sbs/linkws","headers":{"host":"late-wave-1d0a.lesijo3430.workers.dev"}}}
-  - {"name":"美国 CloudFlare节点_81","type":"vmess","server":"104.16.67.38","port":8080,"cipher":"auto","uuid":"6c168fcc-2231-4f3b-8c1e-f6391692df4a","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/hms02.fxiaomi.sbs/link","headers":{"host":"8bsibsh8wbbwihfhjskbbng-shape-3.mewivot154.workers.dev"}}}
-  - {"name":"美国 CloudFlare节点_82","type":"vmess","server":"104.19.45.11","port":2095,"cipher":"auto","uuid":"18d96190-c10f-448f-a82a-2d36df5c3cde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip2.6016725.xyz"}}}
-  - {"name":"美国 CloudFlare节点_83","type":"vmess","server":"104.26.0.56","port":2082,"cipher":"auto","uuid":"5f3f09ad-89cb-4e94-a7ad-aa8239913555","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip3.6929198.xyz"}}}
-  - {"name":"美国 CloudFlare节点_84","type":"vmess","server":"104.20.25.146","port":2095,"cipher":"auto","uuid":"18d96190-c10f-448f-a82a-2d36df5c3cde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip2.6016725.xyz"}}}
-  - {"name":"美国 CloudFlare节点_85","type":"vmess","server":"172.64.166.20","port":2082,"cipher":"auto","uuid":"5f3f09ad-89cb-4e94-a7ad-aa8239913555","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip3.6929198.xyz"}}}
-  - {"name":"印度 V2CROSS.COM_1","type":"vmess","server":"202.78.162.5","port":443,"cipher":"auto","uuid":"2ff97c6d-8557-42a4-b43f-19c77c5959ea","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/@forwardv2ray","headers":{"host":"irsoft.sytes.net"}}}
-  - {"name":"印度 V2CROSS.COM_2","type":"vmess","server":"202.78.162.5","port":443,"cipher":"auto","uuid":"118287d2-e968-42e1-80d0-12fa2f5d38d6","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/@forwardv2ray","headers":{"host":"sahand.serveminecraft.net"}}}
-  - {"name":"美国 CloudFlare节点_86","type":"vmess","server":"www.darkroom.lol","port":8080,"cipher":"auto","uuid":"22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"www.darkroom.lol"}}}
-  - {"name":"美国 CloudFlare节点_87","type":"vmess","server":"server31.beheshtbaneh.com","port":8880,"cipher":"auto","uuid":"4154143c-bbba-47a4-9f79-c2ed087cbcc9","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"server31.beheshtbaneh.com"}}}
-  - {"name":"美国 CloudFlare节点_88","type":"vmess","server":"104.21.82.183","port":8880,"cipher":"auto","uuid":"5a7021e0-26b4-45d6-b175-fe551601ca97","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"server26.beheshtbaneh.com"}}}
-  - {"name":"印度 V2CROSS.COM_3","type":"vmess","server":"202.78.162.5","port":443,"cipher":"auto","uuid":"716eded6-2201-4dbd-9d63-1638c9e8e677","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/@forwardv2ray","headers":{"host":"pendar.onthewifi.com"}}}
-  - {"name":"美国 Fastly全球Anycast节点_6","type":"vmess","server":"gov.uk","port":443,"cipher":"auto","uuid":"77848824-93b7-4b89-ffd0-e91afff406ce","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/77848824","headers":{"host":"zheshiscp.com"}}}
-  - {"name":"英国+社会保险安全部_2","type":"trojan","server":"51.21.57.131","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"荷兰+V2CROSS.COM_1","type":"trojan","server":"91.199.84.246","port":443,"udp":true,"password":"3690911436885991424","sni":"giving-marmoset.opossum872.cfd","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"爱尔兰+V2CROSS.COM","type":"trojan","server":"63.33.13.45","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"法国+巴黎Amazon数据中心","type":"trojan","server":"52.47.87.55","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"香港+环球全域电讯_1","type":"trojan","server":"hknode07.oportal.cc","port":443,"udp":true,"password":"981db44e-9f07-49eb-9ba0-6ab4939919a2","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+惠普HP_2","type":"trojan","server":"15.157.10.5","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+Amazon数据中心_1","type":"trojan","server":"13.41.249.210","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"荷兰+V2CROSS.COM_2","type":"trojan","server":"giving-marmoset.opossum872.cfd","port":443,"udp":true,"password":"3690911436885991424","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+麻省理工学院","type":"trojan","server":"18.135.225.151","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"俄罗斯+V2CROSS.COM_2","type":"trojan","server":"195.133.93.155","port":443,"udp":true,"password":"3672449442956713984","sni":"present-blowfish.sunbeam921.monster","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"亚太地区+V2CROSS.COM_1","type":"trojan","server":"std1.loadingip.com","port":443,"udp":true,"password":"94d219c9-1afc-4d42-b090-8b3794764380","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"台湾省+中华电信_1","type":"trojan","server":"61.220.126.180","port":443,"udp":true,"password":"981db44e-9f07-49eb-9ba0-6ab4939919a2","sni":"twnode11.oportal.cc","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"德国+黑森州法兰克福Amazon数据中心","type":"trojan","server":"18.185.1.6","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"爱尔兰+都柏林Amazon数据中心","type":"trojan","server":"54.77.161.237","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"印度+V2CROSS.COM","type":"trojan","server":"artistic-cat.sheepdog670.boats","port":443,"udp":true,"password":"3648425794742788096","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"亚太地区+V2CROSS.COM_2","type":"trojan","server":"36.50.134.26","port":443,"udp":true,"password":"94d219c9-1afc-4d42-b090-8b3794764380","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"亚太地区+V2CROSS.COM_3","type":"trojan","server":"bs1.loadingip.com","port":443,"udp":true,"password":"94d219c9-1afc-4d42-b090-8b3794764380","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"香港+环球全域电讯_2","type":"trojan","server":"203.184.132.166","port":443,"udp":true,"password":"981db44e-9f07-49eb-9ba0-6ab4939919a2","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"台湾省+中华电信_2","type":"trojan","server":"twnode11.oportal.cc","port":443,"udp":true,"password":"981db44e-9f07-49eb-9ba0-6ab4939919a2","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"日本+V2CROSS.COM_1","type":"trojan","server":"ent1.imyourdaddy.top","port":20987,"udp":true,"password":"64f33df2-4f9d-4cf3-bb69-b82b08cf149a","sni":"sale.alibaba.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"俄罗斯+V2CROSS.COM_3","type":"trojan","server":"present-blowfish.sunbeam921.monster","port":443,"udp":true,"password":"3672449442956713984","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+Amazon+EC2服务器_1","type":"trojan","server":"3.131.226.234","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"日本+东京Amazon数据中心","type":"trojan","server":"jp008.421421.xyz","port":20230,"udp":true,"password":"4aa9ee7a-ffee-4ca4-a588-f5fa9e979c38","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"瑞典+斯德哥尔摩Amazon数据中心","type":"trojan","server":"13.53.237.92","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"新加坡+Amazon数据中心","type":"trojan","server":"sg005.421421.xyz","port":20230,"udp":true,"password":"d971ee7a-32d9-402a-8a4f-d2135d48a47b","sni":"421421.xyz","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+V2CROSS.COM_18","type":"trojan","server":"166.1.227.165","port":443,"udp":true,"password":"3672449442956713984","sni":"champion-dog.lab300.lat","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"日本+V2CROSS.COM_2","type":"trojan","server":"ent1.imyourdaddy.top","port":20985,"udp":true,"password":"64f33df2-4f9d-4cf3-bb69-b82b08cf149a","sni":"sale.alibaba.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+CloudFlare节点","type":"trojan","server":"104.19.171.5","port":443,"udp":true,"password":"cb1f26aa437d4bfa9b841d28503ce8cc","sni":"jobscareerforlawyers.com","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6b777a91","headers":{"host":"jobscareerforlawyers.com"}}}
-  - {"name":"美国+新泽西州皮斯卡特维Choopa数据中心","type":"trojan","server":"149.28.224.85","port":443,"udp":true,"password":"sharevpn","sni":"tlsh2ss.mynode.work.gd","skip-cert-verify":true,"network":"http","ws-opts":{"headers":{"host":"babybaby.canyou.seeh2,http/1.1"}}}
-  - {"name":"美国+Amazon+EC2服务器_2","type":"trojan","server":"3.76.25.56","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"英国+社会保险安全部_3","type":"trojan","server":"51.20.176.193","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"日本+东京都Amazon数据中心","type":"trojan","server":"bgroup.node1.t.nodelist-airport.com","port":50001,"udp":true,"password":"2155145a-b1b5-443a-8977-670f6bd10f02","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+Amazon数据中心_2","type":"trojan","server":"18.169.147.170","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"乌克兰+V2CROSS.COM_2","type":"trojan","server":"185.234.64.146","port":2053,"udp":true,"password":"5c7941b5-c393-4eea-a76d-d44b59baf8a0","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"日本+V2CROSS.COM_3","type":"trojan","server":"ent1.imyourdaddy.top","port":20992,"udp":true,"password":"64f33df2-4f9d-4cf3-bb69-b82b08cf149a","sni":"sale.alibaba.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"日本+V2CROSS.COM_4","type":"trojan","server":"ent1.imyourdaddy.top","port":20983,"udp":true,"password":"64f33df2-4f9d-4cf3-bb69-b82b08cf149a","sni":"sale.alibaba.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+Amazon数据中心_3","type":"trojan","server":"18.198.108.17","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇭🇰_油管：全网最强白嫖_1","type":"vmess","server":"625hk01.fx6688.top","port":80,"cipher":"auto","uuid":"7f4ff2e1-c08f-35bd-afe7-4a6a386907aa","alterId":2,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ray","headers":{"host":"625hk01.fx6688.top"}}}
+  - {"name":"🇨🇳_油管：全网最强白嫖_1","type":"vmess","server":"cn2.soow.win","port":50027,"cipher":"aes-128-gcm","uuid":"c1d0ae9e-f08a-3f81-962d-ca19b52c760d","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/video","headers":{"host":"cn2.soow.win"}}}
+  - {"name":"🇨🇳_油管：全网最强白嫖_2","type":"vmess","server":"36.139.115.52","port":11303,"cipher":"auto","uuid":"21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳_油管：全网最强白嫖_3","type":"vmess","server":"116.129.254.65","port":63086,"cipher":"auto","uuid":"352ba93c-fd92-3055-ad10-b3599ff2802f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mugua"}}
+  - {"name":"🇨🇳_油管：全网最强白嫖_4","type":"vmess","server":"159.27.90.254","port":63086,"cipher":"auto","uuid":"352ba93c-fd92-3055-ad10-b3599ff2802f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mugua","headers":{"host":"jp-balancer.myn1des.com"}}}
+  - {"name":"🇨🇳_油管：全网最强白嫖_5","type":"vmess","server":"159.27.90.254","port":63086,"cipher":"auto","uuid":"352ba93c-fd92-3055-ad10-b3599ff2802f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mugua"}}
+  - {"name":"🇨🇳_油管：全网最强白嫖_6","type":"vmess","server":"159.27.90.254","port":63086,"cipher":"auto","uuid":"352ba93c-fd92-3055-ad10-b3599ff2802f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mugua","headers":{"host":"jp-balancer.myn1des.com"}}}
+  - {"name":"🇭🇰_油管：全网最强白嫖_2","type":"vmess","server":"625hk01.fx6688.top","port":80,"cipher":"auto","uuid":"7f4ff2e1-c08f-35bd-afe7-4a6a386907aa","alterId":2,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ray","headers":{"host":"625hk01.fx6688.top"}}}
+  - {"name":"🇨🇳_油管：全网最强白嫖_7","type":"vmess","server":"pp1.zhengzhongfeizhu.xyz","port":43960,"cipher":"auto","uuid":"2f606ee8-3cfa-30b2-a191-f88efe912f5c","alterId":1,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/j20-hgc3","headers":{"host":"pp1.zhengzhongfeizhu.xyz"}}}
+  - {"name":"🇨🇳_油管：全网最强白嫖_8","type":"vmess","server":"159.27.90.254","port":63086,"cipher":"auto","uuid":"352ba93c-fd92-3055-ad10-b3599ff2802f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mugua"}}
+  - {"name":"🇨🇳_油管：全网最强白嫖_9","type":"vmess","server":"pp1.zhengzhongfeizhu.xyz","port":33004,"cipher":"auto","uuid":"177501cc-f0c2-3cc3-b9a7-8c1e8e27655f","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳_油管：全网最强白嫖_10","type":"vmess","server":"zf.gaoyuanmonv.top","port":32414,"cipher":"auto","uuid":"ddc9c34f-a5a5-3861-95c4-3158647f0f6a","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/v2ray","headers":{"host":"zf.gaoyuanmonv.top"}}}
+  - {"name":"🇨🇳_油管：全网最强白嫖_11","type":"vmess","server":"116.129.254.65","port":63087,"cipher":"auto","uuid":"352ba93c-fd92-3055-ad10-b3599ff2802f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mugua","headers":{"host":"%7B%22Host%22:%22sg-balancer.tencent.best%22%7D"}}}
+  - {"name":"🇨🇳_油管：全网最强白嫖_12","type":"vmess","server":"pp1.zhengzhongfeizhu.xyz","port":33004,"cipher":"auto","uuid":"eb2f8154-ff58-3b99-b393-28c8eecdbe64","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳_油管：全网最强白嫖_13","type":"vmess","server":"116.129.254.65","port":63086,"cipher":"auto","uuid":"352ba93c-fd92-3055-ad10-b3599ff2802f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mugua","headers":{"host":"%7B%22Host%22:%22jp-balancer.myn1des.com%22%7D"}}}
+  - {"name":"🇨🇳_油管：全网最强白嫖_14","type":"vmess","server":"pp1.zhengzhongfeizhu.xyz","port":43960,"cipher":"auto","uuid":"177501cc-f0c2-3cc3-b9a7-8c1e8e27655f","alterId":1,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/j20-hgc4","headers":{"host":"pp1.zhengzhongfeizhu.xyz"}}}
+  - {"name":"🇺🇸_油管：全网最强白嫖_1","type":"vmess","server":"jpaz2.xmrth-node.xyz","port":14025,"cipher":"auto","uuid":"60517dbb-a465-32c6-87e7-2a457663de53","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/index","headers":{"host":"www.baidu.com"}}}
+  - {"name":"🇨🇳_油管：全网最强白嫖_15","type":"vmess","server":"112.64.98.133","port":63087,"cipher":"auto","uuid":"352ba93c-fd92-3055-ad10-b3599ff2802f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mugua"}}
+  - {"name":"🇨🇳_油管：全网最强白嫖_16","type":"vmess","server":"112.64.98.133","port":63087,"cipher":"auto","uuid":"352ba93c-fd92-3055-ad10-b3599ff2802f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mugua","headers":{"host":"%7B%22Host%22:%22sg-balancer.tencent.best%22%7D"}}}
+  - {"name":"🇨🇳_油管：全网最强白嫖_17","type":"vmess","server":"112.64.98.133","port":63087,"cipher":"auto","uuid":"352ba93c-fd92-3055-ad10-b3599ff2802f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mugua","headers":{"host":"112.64.98.133"}}}
+  - {"name":"🇨🇳_油管：全网最强白嫖_18","type":"vmess","server":"112.64.98.133","port":63087,"cipher":"auto","uuid":"352ba93c-fd92-3055-ad10-b3599ff2802f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mugua","headers":{"host":"sg-balancer.tencent.best"}}}
+  - {"name":"🇨🇳_油管：全网最强白嫖_19","type":"vmess","server":"112.64.98.133","port":63087,"cipher":"auto","uuid":"352ba93c-fd92-3055-ad10-b3599ff2802f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mugua"}}
+  - {"name":"🇨🇳_油管：全网最强白嫖_20","type":"vmess","server":"112.64.98.133","port":63087,"cipher":"auto","uuid":"352ba93c-fd92-3055-ad10-b3599ff2802f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mugua","headers":{"host":"%7B%22Host%22:%22sg-balancer.tencent.best%22%7D"}}}
+  - {"name":"🇨🇳_油管：全网最强白嫖_21","type":"vmess","server":"zf.gaoyuanmonv.top","port":32414,"cipher":"auto","uuid":"ddc9c34f-a5a5-3861-95c4-3158647f0f6a","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/v2ray","headers":{"host":"zf.gaoyuanmonv.top"}}}
+  - {"name":"🇨🇳_油管：全网最强白嫖_22","type":"vmess","server":"112.64.98.133","port":63087,"cipher":"auto","uuid":"352ba93c-fd92-3055-ad10-b3599ff2802f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mugua","headers":{"host":"sg-balancer.tencent.best"}}}
+  - {"name":"🇯🇵_油管：全网最强白嫖_1","type":"vmess","server":"jpaws002.xmrth-node.xyz","port":15665,"cipher":"auto","uuid":"60517dbb-a465-32c6-87e7-2a457663de53","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/index","headers":{"host":"www.baidu.com"}}}
+  - {"name":"🇦🇺_油管：全网最强白嫖","type":"vmess","server":"20.70.19.80","port":443,"cipher":"auto","uuid":"67fbbdac-99e8-405b-8883-26953a2c8fe3","alterId":0,"tls":true,"skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"b0a7426a","grpc-mode":"gun"}}
+  - {"name":"🇨🇳_油管：全网最强白嫖_23","type":"vmess","server":"zf.gaoyuanmonv.top","port":52119,"cipher":"auto","uuid":"ddc9c34f-a5a5-3861-95c4-3158647f0f6a","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/v2ray","headers":{"host":"zf.gaoyuanmonv.top"}}}
+  - {"name":"🇨🇳_油管：全网最强白嫖_24","type":"vmess","server":"112.64.98.133","port":63087,"cipher":"auto","uuid":"352ba93c-fd92-3055-ad10-b3599ff2802f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mugua","headers":{"host":"112.64.98.133"}}}
+  - {"name":"🇸🇬_油管：全网最强白嫖_1","type":"vmess","server":"626sg01.fx6688.top","port":80,"cipher":"auto","uuid":"7f4ff2e1-c08f-35bd-afe7-4a6a386907aa","alterId":2,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ray","headers":{"host":"626sg01.fx6688.top"}}}
+  - {"name":"🇨🇳_油管：全网最强白嫖_25","type":"vmess","server":"pp1.zhengzhongfeizhu.xyz","port":33004,"cipher":"auto","uuid":"177501cc-f0c2-3cc3-b9a7-8c1e8e27655f","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳_油管：全网最强白嫖_26","type":"vmess","server":"j1.v2.gay","port":38301,"cipher":"auto","uuid":"79386685-16da-327c-9e14-aa6d702d86bc","alterId":1,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/hls/cctv5phd.m3u8","headers":{"host":"j1.v2.gay"}}}
+  - {"name":"🇨🇳_油管：全网最强白嫖_27","type":"vmess","server":"cn2.soow.win","port":50027,"cipher":"auto","uuid":"c1d0ae9e-f08a-3f81-962d-ca19b52c760d","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/video","headers":{"host":"cn2.soow.win"}}}
+  - {"name":"🇨🇳_油管：全网最强白嫖_28","type":"vmess","server":"zf.gaoyuanmonv.top","port":52119,"cipher":"auto","uuid":"ddc9c34f-a5a5-3861-95c4-3158647f0f6a","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/v2ray","headers":{"host":"zf.gaoyuanmonv.top"}}}
+  - {"name":"🇺🇸_油管：全网最强白嫖_2","type":"vmess","server":"hkaz7.xmrth-node.xyz","port":15882,"cipher":"auto","uuid":"60517dbb-a465-32c6-87e7-2a457663de53","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/index","headers":{"host":"www.baidu.com"}}}
+  - {"name":"🇨🇳_油管：全网最强白嫖_29","type":"vmess","server":"36.139.115.52","port":11403,"cipher":"auto","uuid":"21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳_油管：全网最强白嫖_30","type":"vmess","server":"pp1.zhengzhongfeizhu.xyz","port":33009,"cipher":"auto","uuid":"eb2f8154-ff58-3b99-b393-28c8eecdbe64","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳_油管：全网最强白嫖_31","type":"vmess","server":"36.139.115.52","port":11403,"cipher":"auto","uuid":"21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳_油管：全网最强白嫖_32","type":"vmess","server":"pp1.zhengzhongfeizhu.xyz","port":33004,"cipher":"auto","uuid":"2f606ee8-3cfa-30b2-a191-f88efe912f5c","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳_油管：全网最强白嫖_33","type":"vmess","server":"36.139.115.52","port":11403,"cipher":"auto","uuid":"21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳_油管：全网最强白嫖_34","type":"vmess","server":"36.139.115.52","port":11403,"cipher":"auto","uuid":"21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳_油管：全网最强白嫖_35","type":"vmess","server":"ingress-i2.iivvppnn.info","port":38106,"cipher":"auto","uuid":"79386685-16da-327c-9e14-aa6d702d86bc","alterId":1,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/hls/cctv5phd.m3u8","headers":{"host":"www.ivpnpro.net"}}}
+  - {"name":"🇭🇰_油管：全网最强白嫖_3","type":"vmess","server":"hkaz6.xmrth-node.xyz","port":15905,"cipher":"auto","uuid":"60517dbb-a465-32c6-87e7-2a457663de53","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/index","headers":{"host":"www.baidu.com"}}}
+  - {"name":"🇨🇳_油管：全网最强白嫖_36","type":"vmess","server":"116.129.254.65","port":63086,"cipher":"auto","uuid":"352ba93c-fd92-3055-ad10-b3599ff2802f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mugua"}}
+  - {"name":"🇨🇳_油管：全网最强白嫖_37","type":"vmess","server":"116.129.254.65","port":63087,"cipher":"auto","uuid":"352ba93c-fd92-3055-ad10-b3599ff2802f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mugua","headers":{"host":"%7B%22Host%22:%22sg-balancer.tencent.best%22%7D"}}}
+  - {"name":"🇨🇳_油管：全网最强白嫖_38","type":"vmess","server":"cn2.soow.win","port":50027,"cipher":"aes-128-gcm","uuid":"c1d0ae9e-f08a-3f81-962d-ca19b52c760d","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/video","headers":{"host":"cn2.soow.win"}}}
+  - {"name":"🇯🇵_油管：全网最强白嫖_2","type":"vmess","server":"jp02.henet.cyou","port":20000,"cipher":"auto","uuid":"279e0915-b0ce-49c7-a4df-39f9232d2034","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/live","headers":{"host":"cctv.com"}}}
+  - {"name":"🇯🇵_油管：全网最强白嫖_3","type":"vmess","server":"janpanbpjcyos.loseyourip.com","port":80,"cipher":"auto","uuid":"dcec9778-3e07-4800-824e-5bccb04bc2b8","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/images","headers":{"host":"v.qq.com"}}}
+  - {"name":"🇨🇳_油管：全网最强白嫖_39","type":"vmess","server":"116.129.254.65","port":63086,"cipher":"auto","uuid":"352ba93c-fd92-3055-ad10-b3599ff2802f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mugua","headers":{"host":"%7B%22Host%22:%22jp-balancer.myn1des.com%22%7D"}}}
+  - {"name":"🇨🇳_油管：全网最强白嫖_40","type":"vmess","server":"116.129.254.65","port":63086,"cipher":"auto","uuid":"352ba93c-fd92-3055-ad10-b3599ff2802f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mugua","headers":{"host":"jp-balancer.myn1des.com"}}}
+  - {"name":"🇨🇳_油管：全网最强白嫖_41","type":"vmess","server":"pp1.zhengzhongfeizhu.xyz","port":33004,"cipher":"auto","uuid":"2f606ee8-3cfa-30b2-a191-f88efe912f5c","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳_油管：全网最强白嫖_42","type":"vmess","server":"cn2.soow.win","port":50027,"cipher":"auto","uuid":"c1d0ae9e-f08a-3f81-962d-ca19b52c760d","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/video","headers":{"host":"cn2.soow.win"}}}
+  - {"name":"🇨🇳_油管：全网最强白嫖_43","type":"vmess","server":"in-jp-1.iivvppnn.info","port":38301,"cipher":"auto","uuid":"79386685-16da-327c-9e14-aa6d702d86bc","alterId":1,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/hls/cctv5phd.m3u8","headers":{"host":"www.ivpnpro.net"}}}
+  - {"name":"🇯🇵_油管：全网最强白嫖_4","type":"vmess","server":"jplin005.xmrth-node.xyz","port":15698,"cipher":"auto","uuid":"60517dbb-a465-32c6-87e7-2a457663de53","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/index","headers":{"host":"www.baidu.com"}}}
+  - {"name":"🇺🇸_油管：全网最强白嫖_3","type":"vmess","server":"hkaz7.xmrth-node.xyz","port":15882,"cipher":"auto","uuid":"60517dbb-a465-32c6-87e7-2a457663de53","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/index","headers":{"host":"www.baidu.com"}}}
+  - {"name":"🇨🇳_油管：全网最强白嫖_44","type":"vmess","server":"116.129.254.65","port":63086,"cipher":"auto","uuid":"352ba93c-fd92-3055-ad10-b3599ff2802f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mugua","headers":{"host":"jp-balancer.myn1des.com"}}}
+  - {"name":"🇯🇵_油管：全网最强白嫖_5","type":"vmess","server":"janpanbpjcyos.loseyourip.com","port":80,"cipher":"auto","uuid":"dcec9778-3e07-4800-824e-5bccb04bc2b8","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/images","headers":{"host":"v.qq.com"}}}
+  - {"name":"🇨🇳_油管：全网最强白嫖_45","type":"vmess","server":"j1.v2.gay","port":38301,"cipher":"auto","uuid":"79386685-16da-327c-9e14-aa6d702d86bc","alterId":1,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/hls/cctv5phd.m3u8","headers":{"host":"j1.v2.gay"}}}
+  - {"name":"🇨🇳_油管：全网最强白嫖_46","type":"vmess","server":"in-jp-1.iivvppnn.info","port":38301,"cipher":"auto","uuid":"79386685-16da-327c-9e14-aa6d702d86bc","alterId":1,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/hls/cctv5phd.m3u8","headers":{"host":"www.ivpnpro.net"}}}
+  - {"name":"🇯🇵_油管：全网最强白嫖_6","type":"vmess","server":"jp02.henet.cyou","port":20000,"cipher":"auto","uuid":"279e0915-b0ce-49c7-a4df-39f9232d2034","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/live","headers":{"host":"cctv.com"}}}
+  - {"name":"🇺🇸_油管：全网最强白嫖_4","type":"vmess","server":"jpaz2.xmrth-node.xyz","port":14025,"cipher":"auto","uuid":"60517dbb-a465-32c6-87e7-2a457663de53","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/index","headers":{"host":"www.baidu.com"}}}
+  - {"name":"🇺🇸_油管：全网最强白嫖_5","type":"vmess","server":"hk4.zingfast.vn","port":80,"cipher":"auto","uuid":"b8a87016-f9f9-456c-b1af-77a9bb96e6e5","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/kvw0870h/","headers":{"host":"zingfast.akamaized.net"}}}
+  - {"name":"🇯🇵_油管：全网最强白嫖_7","type":"vmess","server":"jp04-vm0.entry.rwesdhytjuftyhdafsdgfrh.club","port":446,"cipher":"auto","uuid":"c498879d-8a73-3baf-a4f4-a0f38b75949c","alterId":1,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":""}}
+  - {"name":"🇯🇵_油管：全网最强白嫖_8","type":"vmess","server":"jpaws006.xmrth-node.xyz","port":15863,"cipher":"auto","uuid":"60517dbb-a465-32c6-87e7-2a457663de53","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/index","headers":{"host":"www.baidu.com"}}}
+  - {"name":"🇸🇬_油管：全网最强白嫖_2","type":"vmess","server":"626sg01.fx6688.top","port":80,"cipher":"auto","uuid":"7f4ff2e1-c08f-35bd-afe7-4a6a386907aa","alterId":2,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ray","headers":{"host":"626sg01.fx6688.top"}}}
+  - {"name":"🇭🇰_油管：全网最强白嫖_4","type":"vmess","server":"hkaz6.xmrth-node.xyz","port":15905,"cipher":"auto","uuid":"60517dbb-a465-32c6-87e7-2a457663de53","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/index","headers":{"host":"www.baidu.com"}}}
+  - {"name":"🇺🇸_油管：全网最强白嫖_6","type":"vmess","server":"hk4.zingfast.vn","port":80,"cipher":"auto","uuid":"b8a87016-f9f9-456c-b1af-77a9bb96e6e5","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/kvw0870h/","headers":{"host":"zingfast.akamaized.net"}}}
+  - {"name":"🇨🇳_油管：全网最强白嫖_47","type":"vmess","server":"ingress-i2.iivvppnn.info","port":38106,"cipher":"auto","uuid":"79386685-16da-327c-9e14-aa6d702d86bc","alterId":1,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/hls/cctv5phd.m3u8","headers":{"host":"www.ivpnpro.net"}}}
+  - {"name":"🇨🇳_油管：全网最强白嫖_48","type":"vmess","server":"120.233.7.221","port":18001,"cipher":"auto","uuid":"21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳_油管：全网最强白嫖_49","type":"vmess","server":"120.233.7.221","port":18001,"cipher":"auto","uuid":"21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳_油管：全网最强白嫖_50","type":"vmess","server":"120.233.7.221","port":18001,"cipher":"auto","uuid":"21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳_油管：全网最强白嫖\r_5","type":"trojan","server":"mlxy-zf.jiashumao.net","port":27171,"udp":true,"password":"375e1e34-8f6f-39be-bdb9-52080f546d4d","sni":"mlxy.jiashumao.net","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳_油管：全网最强白嫖\r_6","type":"trojan","server":"mlxy-zf.jiashumao.net","port":27171,"udp":true,"password":"375e1e34-8f6f-39be-bdb9-52080f546d4d","sni":"mlxy.jiashumao.net","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳_油管：全网最强白嫖\r_7","type":"trojan","server":"hnyd.52147.top","port":30120,"udp":true,"password":"52a98419-efab-4c34-b4cc-4e2a7bc37029","sni":"huayun.xyz","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇯🇵_油管：全网最强白嫖\r_325","type":"trojan","server":"164.70.68.67","port":28000,"udp":true,"password":"52a98419-efab-4c34-b4cc-4e2a7bc37029","sni":"huayun.xyz","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳_油管：全网最强白嫖\r_8","type":"trojan","server":"hnyd.52147.top","port":30120,"udp":true,"password":"52a98419-efab-4c34-b4cc-4e2a7bc37029","sni":"huayun.xyz","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_油管：全网最强白嫖\r_3","type":"trojan","server":"sg-zf.jiashumao.net","port":29465,"udp":true,"password":"375e1e34-8f6f-39be-bdb9-52080f546d4d","sni":"sg.jiashumao.net","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇯🇵_油管：全网最强白嫖\r_326","type":"trojan","server":"203.138.98.199","port":28000,"udp":true,"password":"52a98419-efab-4c34-b4cc-4e2a7bc37029","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷_油管：全网最强白嫖\r_1","type":"trojan","server":"hg.jiashumao.net","port":34210,"udp":true,"password":"375e1e34-8f6f-39be-bdb9-52080f546d4d","sni":"hg.jiashumao.net","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳_油管：全网最强白嫖\r_9","type":"trojan","server":"hnyd.52147.top","port":30130,"udp":true,"password":"52a98419-efab-4c34-b4cc-4e2a7bc37029","sni":"hnyd.52147.top","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳_油管：全网最强白嫖\r_10","type":"trojan","server":"hnyd.52147.top","port":30130,"udp":true,"password":"52a98419-efab-4c34-b4cc-4e2a7bc37029","sni":"hnyd.52147.top","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳_油管：全网最强白嫖\r_11","type":"trojan","server":"gzyd2.52147.top","port":30120,"udp":true,"password":"52a98419-efab-4c34-b4cc-4e2a7bc37029","sni":"huayun.xyz","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳_油管：全网最强白嫖\r_12","type":"trojan","server":"gzyd1.52147.top","port":30130,"udp":true,"password":"52a98419-efab-4c34-b4cc-4e2a7bc37029","sni":"gzyd1.52147.top","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳_油管：全网最强白嫖\r_13","type":"trojan","server":"gzyd2.52147.top","port":30130,"udp":true,"password":"52a98419-efab-4c34-b4cc-4e2a7bc37029","sni":"huayun.xyz","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳_油管：全网最强白嫖\r_14","type":"trojan","server":"gzyd1.52147.top","port":30120,"udp":true,"password":"52a98419-efab-4c34-b4cc-4e2a7bc37029","sni":"huayun.xyz","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳_油管：全网最强白嫖\r_15","type":"trojan","server":"gzyd2.52147.top","port":30120,"udp":true,"password":"52a98419-efab-4c34-b4cc-4e2a7bc37029","sni":"huayun.xyz","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳_油管：全网最强白嫖\r_16","type":"trojan","server":"gzyd1.52147.top","port":30120,"udp":true,"password":"52a98419-efab-4c34-b4cc-4e2a7bc37029","sni":"huayun.xyz","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳_油管：全网最强白嫖\r_17","type":"trojan","server":"gzyd2.52147.top","port":30130,"udp":true,"password":"52a98419-efab-4c34-b4cc-4e2a7bc37029","sni":"huayun.xyz","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳_油管：全网最强白嫖\r_18","type":"trojan","server":"gzyd1.52147.top","port":30130,"udp":true,"password":"52a98419-efab-4c34-b4cc-4e2a7bc37029","sni":"gzyd1.52147.top","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳_油管：全网最强白嫖\r_19","type":"trojan","server":"szdx-anhb.jiashumao.net","port":22481,"udp":true,"password":"375e1e34-8f6f-39be-bdb9-52080f546d4d","sni":"ahbn.jiashumao.net","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_油管：全网最强白嫖\r_4","type":"trojan","server":"yn-zf.jiashumao.net","port":40375,"udp":true,"password":"375e1e34-8f6f-39be-bdb9-52080f546d4d","sni":"yn.jiashumao.net","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇯🇵_油管：全网最强白嫖\r_327","type":"trojan","server":"203.138.98.199","port":28000,"udp":true,"password":"52a98419-efab-4c34-b4cc-4e2a7bc37029","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"油管：全网最强白嫖\r_1","type":"trojan","server":"103.173.255.228","port":28000,"udp":true,"password":"52a98419-efab-4c34-b4cc-4e2a7bc37029","sni":"huayun.xyz","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳_油管：全网最强白嫖\r_20","type":"trojan","server":"sxdx-nf.jiashumao.net","port":35401,"udp":true,"password":"375e1e34-8f6f-39be-bdb9-52080f546d4d","sni":"nf.jiashumao.net","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"油管：全网最强白嫖\r_2","type":"trojan","server":"103.173.255.228","port":28443,"udp":true,"password":"841b229a-304f-46a2-a0fe-3b4e3e0e44f6","sni":"huayun.xyz","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"油管：全网最强白嫖\r_3","type":"trojan","server":"103.173.255.127","port":28000,"udp":true,"password":"52a98419-efab-4c34-b4cc-4e2a7bc37029","sni":"huayun.xyz","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_油管：全网最强白嫖\r_5","type":"trojan","server":"yn-zf.jiashumao.net","port":40375,"udp":true,"password":"375e1e34-8f6f-39be-bdb9-52080f546d4d","sni":"yn.jiashumao.net","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_油管：全网最强白嫖\r_6","type":"trojan","server":"jpa-zf.jiashumao.net","port":29881,"udp":true,"password":"375e1e34-8f6f-39be-bdb9-52080f546d4d","sni":"jpa.jiashumao.net","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"油管：全网最强白嫖\r_4","type":"trojan","server":"103.173.255.21","port":28000,"udp":true,"password":"52a98419-efab-4c34-b4cc-4e2a7bc37029","sni":"huayun.xyz","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"油管：全网最强白嫖\r_5","type":"trojan","server":"103.173.255.228","port":28000,"udp":true,"password":"52a98419-efab-4c34-b4cc-4e2a7bc37029","sni":"huayun.xyz","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"油管：全网最强白嫖\r_6","type":"trojan","server":"103.173.255.234","port":28000,"udp":true,"password":"52a98419-efab-4c34-b4cc-4e2a7bc37029","sni":"huayun.xyz","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"油管：全网最强白嫖\r_7","type":"trojan","server":"103.173.255.228","port":28443,"udp":true,"password":"841b229a-304f-46a2-a0fe-3b4e3e0e44f6","sni":"huayun.xyz","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"油管：全网最强白嫖\r_8","type":"trojan","server":"103.173.255.234","port":28000,"udp":true,"password":"52a98419-efab-4c34-b4cc-4e2a7bc37029","sni":"huayun.xyz","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷_油管：全网最强白嫖\r_2","type":"trojan","server":"hg.jiashumao.net","port":34210,"udp":true,"password":"375e1e34-8f6f-39be-bdb9-52080f546d4d","sni":"hg.jiashumao.net","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"油管：全网最强白嫖\r_9","type":"trojan","server":"103.173.255.127","port":28000,"udp":true,"password":"52a98419-efab-4c34-b4cc-4e2a7bc37029","sni":"huayun.xyz","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"油管：全网最强白嫖\r_10","type":"trojan","server":"103.173.255.21","port":28000,"udp":true,"password":"52a98419-efab-4c34-b4cc-4e2a7bc37029","sni":"huayun.xyz","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_油管：全网最强白嫖\r_7","type":"trojan","server":"jpa-zf.jiashumao.net","port":29881,"udp":true,"password":"375e1e34-8f6f-39be-bdb9-52080f546d4d","sni":"jpa.jiashumao.net","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_油管：全网最强白嫖\r_8","type":"trojan","server":"sg-zf.jiashumao.net","port":29465,"udp":true,"password":"375e1e34-8f6f-39be-bdb9-52080f546d4d","sni":"sg.jiashumao.net","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳_油管：全网最强白嫖\r_21","type":"trojan","server":"szdx-anhb.jiashumao.net","port":22481,"udp":true,"password":"375e1e34-8f6f-39be-bdb9-52080f546d4d","sni":"ahbn.jiashumao.net","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳_油管：全网最强白嫖\r_22","type":"trojan","server":"sxdx-nf.jiashumao.net","port":35401,"udp":true,"password":"375e1e34-8f6f-39be-bdb9-52080f546d4d","sni":"nf.jiashumao.net","skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - 🔯 故障转移
       - DIRECT
-      - 美国 CloudFlare节点_1
-      - 美国 CloudFlare节点_2
-      - 广东省广州市 移动_1
-      - 香港 电讯盈科有限公司_1
-      - 美国 CloudFlare节点_3
-      - 美国 CloudFlare节点_4
-      - 美国 CloudFlare节点_5
-      - 美国 CloudFlare节点_6
-      - 美国 CloudFlare节点_7
-      - 美国 CloudFlare节点_8
-      - 美国 CloudFlare节点_9
-      - 美国 CloudFlare节点_10
-      - 美国 CloudFlare节点_11
-      - 美国 CloudFlare节点_12
-      - 美国 CloudFlare节点_13
-      - 美国 CloudFlare节点_14
-      - 巴拿马 V2CROSS.COM
-      - 广东省广州市 移动_2
-      - 香港 电讯盈科有限公司_2
-      - 美国 CloudFlare节点_15
-      - 美国 CloudFlare节点_16
-      - 美国 CloudFlare节点_17
-      - 俄罗斯 V2CROSS.COM
-      - 美国 Fastly全球Anycast节点_1
-      - 美国 CloudFlare节点_18
-      - 美国 CloudFlare节点_19
-      - 美国 CloudFlare节点_20
-      - 美国 CloudFlare公司CDN节点(shopify)
-      - 美国 CloudFlare节点_21
-      - 美国 CloudFlare节点_22
-      - 美国 Fastly全球Anycast节点_2
-      - 丹麦 V2CROSS.COM_1
-      - 广东省广州市 移动_3
-      - 江苏省 移动数据上网公共出口
-      - 广东省中山市 移动
-      - 美国 CloudFlare节点_23
-      - 美国 CloudFlare节点_24
-      - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点_25
-      - 瑞典 V2CROSS.COM
-      - 美国 CloudFlare节点_26
-      - 巴西圣保罗 CloudFlare节点
-      - 广东省广州市 移动_4
-      - 美国 CloudFlare节点_27
-      - 美国 CloudFlare节点_28
-      - 美国 CloudFlare节点_29
-      - 美国 CloudFlare节点_30
-      - 北美地区 V2CROSS.COM
-      - 美国 CloudFlare节点_31
-      - 美国 CloudFlare节点_32
-      - 美国 CloudFlare节点_33
-      - 广东省广州市 移动_5
-      - 美国 CloudFlare节点_34
-      - 美国 CloudFlare节点_35
-      - 美国 CloudFlare节点_36
-      - 美国 CloudFlare节点_37
-      - 美国 CloudFlare节点_38
-      - 美国 CloudFlare节点_39
-      - 美国 CloudFlare节点_40
-      - 美国 CloudFlare节点_41
-      - 美国 CloudFlare节点_42
-      - 美国 CloudFlare节点_43
-      - 美国 CloudFlare节点_44
-      - 广东省广州市 移动_6
-      - 美国 CloudFlare节点_45
-      - 美国 Fastly全球Anycast节点_3
-      - 美国 CloudFlare节点_46
-      - 美国 CloudFlare节点_47
-      - 美国 CloudFlare节点_48
-      - 美国 CloudFlare节点_49
-      - 美国 CloudFlare节点_50
-      - 美国 Fastly全球Anycast节点_4
-      - 美国 CloudFlare节点_51
-      - 美国 CloudFlare节点_52
-      - 美国 CloudFlare节点_53
-      - 美国 CloudFlare节点_54
-      - 广东省 移动
-      - 美国 CloudFlare节点_55
-      - 美国 CloudFlare节点_56
-      - 日本 东京Fastly节点_1
-      - 澳大利亚 V2CROSS.COM
-      - 美国 CloudFlare节点_57
-      - 丹麦 V2CROSS.COM_2
-      - 美国 CloudFlare节点_58
-      - 美国 CloudFlare节点_59
-      - 美国 CloudFlare节点_60
-      - 美国 CloudFlare节点_61
-      - 美国 Fastly全球Anycast节点_5
-      - 美国 CloudFlare节点_62
-      - 美国 CloudFlare节点_63
-      - 美国 CloudFlare节点_64
-      - 美国 CloudFlare节点_65
-      - 美国 CloudFlare节点_66
-      - 美国 CloudFlare节点_67
-      - 美国 CloudFlare节点_68
-      - 美国 CloudFlare节点_69
-      - 美国 CloudFlare节点_70
-      - 美国 CloudFlare节点_71
-      - 美国 CloudFlare节点_72
-      - 美国 CloudFlare节点_73
-      - 美国 CloudFlare节点_74
-      - 美国 CloudFlare节点_75
-      - 香港 HKCABLE
-      - 美国 CloudFlare节点_76
-      - 日本 东京Fastly节点_2
-      - 美国 CloudFlare节点_77
-      - 美国 CloudFlare节点_78
-      - 美国 CloudFlare节点_79
-      - 美国 CloudFlare节点_80
-      - 美国 CloudFlare节点_81
-      - 美国 CloudFlare节点_82
-      - 美国 CloudFlare节点_83
-      - 美国 CloudFlare节点_84
-      - 美国 CloudFlare节点_85
-      - 印度 V2CROSS.COM_1
-      - 印度 V2CROSS.COM_2
-      - 美国 CloudFlare节点_86
-      - 美国 CloudFlare节点_87
-      - 美国 CloudFlare节点_88
-      - 印度 V2CROSS.COM_3
-      - 美国 Fastly全球Anycast节点_6
-      - 英国+社会保险安全部_2
-      - 荷兰+V2CROSS.COM_1
-      - 爱尔兰+V2CROSS.COM
-      - 法国+巴黎Amazon数据中心
-      - 香港+环球全域电讯_1
-      - 美国+惠普HP_2
-      - 美国+Amazon数据中心_1
-      - 荷兰+V2CROSS.COM_2
-      - 美国+麻省理工学院
-      - 俄罗斯+V2CROSS.COM_2
-      - 亚太地区+V2CROSS.COM_1
-      - 台湾省+中华电信_1
-      - 德国+黑森州法兰克福Amazon数据中心
-      - 爱尔兰+都柏林Amazon数据中心
-      - 印度+V2CROSS.COM
-      - 亚太地区+V2CROSS.COM_2
-      - 亚太地区+V2CROSS.COM_3
-      - 香港+环球全域电讯_2
-      - 台湾省+中华电信_2
-      - 日本+V2CROSS.COM_1
-      - 俄罗斯+V2CROSS.COM_3
-      - 美国+Amazon+EC2服务器_1
-      - 日本+东京Amazon数据中心
-      - 瑞典+斯德哥尔摩Amazon数据中心
-      - 新加坡+Amazon数据中心
-      - 美国+V2CROSS.COM_18
-      - 日本+V2CROSS.COM_2
-      - 美国+CloudFlare节点
-      - 美国+新泽西州皮斯卡特维Choopa数据中心
-      - 美国+Amazon+EC2服务器_2
-      - 英国+社会保险安全部_3
-      - 日本+东京都Amazon数据中心
-      - 美国+Amazon数据中心_2
-      - 乌克兰+V2CROSS.COM_2
-      - 日本+V2CROSS.COM_3
-      - 日本+V2CROSS.COM_4
-      - 美国+Amazon数据中心_3
+      - 🇭🇰_油管：全网最强白嫖_1
+      - 🇨🇳_油管：全网最强白嫖_1
+      - 🇨🇳_油管：全网最强白嫖_2
+      - 🇨🇳_油管：全网最强白嫖_3
+      - 🇨🇳_油管：全网最强白嫖_4
+      - 🇨🇳_油管：全网最强白嫖_5
+      - 🇨🇳_油管：全网最强白嫖_6
+      - 🇭🇰_油管：全网最强白嫖_2
+      - 🇨🇳_油管：全网最强白嫖_7
+      - 🇨🇳_油管：全网最强白嫖_8
+      - 🇨🇳_油管：全网最强白嫖_9
+      - 🇨🇳_油管：全网最强白嫖_10
+      - 🇨🇳_油管：全网最强白嫖_11
+      - 🇨🇳_油管：全网最强白嫖_12
+      - 🇨🇳_油管：全网最强白嫖_13
+      - 🇨🇳_油管：全网最强白嫖_14
+      - 🇺🇸_油管：全网最强白嫖_1
+      - 🇨🇳_油管：全网最强白嫖_15
+      - 🇨🇳_油管：全网最强白嫖_16
+      - 🇨🇳_油管：全网最强白嫖_17
+      - 🇨🇳_油管：全网最强白嫖_18
+      - 🇨🇳_油管：全网最强白嫖_19
+      - 🇨🇳_油管：全网最强白嫖_20
+      - 🇨🇳_油管：全网最强白嫖_21
+      - 🇨🇳_油管：全网最强白嫖_22
+      - 🇯🇵_油管：全网最强白嫖_1
+      - 🇦🇺_油管：全网最强白嫖
+      - 🇨🇳_油管：全网最强白嫖_23
+      - 🇨🇳_油管：全网最强白嫖_24
+      - 🇸🇬_油管：全网最强白嫖_1
+      - 🇨🇳_油管：全网最强白嫖_25
+      - 🇨🇳_油管：全网最强白嫖_26
+      - 🇨🇳_油管：全网最强白嫖_27
+      - 🇨🇳_油管：全网最强白嫖_28
+      - 🇺🇸_油管：全网最强白嫖_2
+      - 🇨🇳_油管：全网最强白嫖_29
+      - 🇨🇳_油管：全网最强白嫖_30
+      - 🇨🇳_油管：全网最强白嫖_31
+      - 🇨🇳_油管：全网最强白嫖_32
+      - 🇨🇳_油管：全网最强白嫖_33
+      - 🇨🇳_油管：全网最强白嫖_34
+      - 🇨🇳_油管：全网最强白嫖_35
+      - 🇭🇰_油管：全网最强白嫖_3
+      - 🇨🇳_油管：全网最强白嫖_36
+      - 🇨🇳_油管：全网最强白嫖_37
+      - 🇨🇳_油管：全网最强白嫖_38
+      - 🇯🇵_油管：全网最强白嫖_2
+      - 🇯🇵_油管：全网最强白嫖_3
+      - 🇨🇳_油管：全网最强白嫖_39
+      - 🇨🇳_油管：全网最强白嫖_40
+      - 🇨🇳_油管：全网最强白嫖_41
+      - 🇨🇳_油管：全网最强白嫖_42
+      - 🇨🇳_油管：全网最强白嫖_43
+      - 🇯🇵_油管：全网最强白嫖_4
+      - 🇺🇸_油管：全网最强白嫖_3
+      - 🇨🇳_油管：全网最强白嫖_44
+      - 🇯🇵_油管：全网最强白嫖_5
+      - 🇨🇳_油管：全网最强白嫖_45
+      - 🇨🇳_油管：全网最强白嫖_46
+      - 🇯🇵_油管：全网最强白嫖_6
+      - 🇺🇸_油管：全网最强白嫖_4
+      - 🇺🇸_油管：全网最强白嫖_5
+      - 🇯🇵_油管：全网最强白嫖_7
+      - 🇯🇵_油管：全网最强白嫖_8
+      - 🇸🇬_油管：全网最强白嫖_2
+      - 🇭🇰_油管：全网最强白嫖_4
+      - 🇺🇸_油管：全网最强白嫖_6
+      - 🇨🇳_油管：全网最强白嫖_47
+      - 🇨🇳_油管：全网最强白嫖_48
+      - 🇨🇳_油管：全网最强白嫖_49
+      - 🇨🇳_油管：全网最强白嫖_50
+      - "🇨🇳_油管：全网最强白嫖\r_5"
+      - "🇨🇳_油管：全网最强白嫖\r_6"
+      - "🇨🇳_油管：全网最强白嫖\r_7"
+      - "🇯🇵_油管：全网最强白嫖\r_325"
+      - "🇨🇳_油管：全网最强白嫖\r_8"
+      - "🇺🇸_油管：全网最强白嫖\r_3"
+      - "🇯🇵_油管：全网最强白嫖\r_326"
+      - "🇰🇷_油管：全网最强白嫖\r_1"
+      - "🇨🇳_油管：全网最强白嫖\r_9"
+      - "🇨🇳_油管：全网最强白嫖\r_10"
+      - "🇨🇳_油管：全网最强白嫖\r_11"
+      - "🇨🇳_油管：全网最强白嫖\r_12"
+      - "🇨🇳_油管：全网最强白嫖\r_13"
+      - "🇨🇳_油管：全网最强白嫖\r_14"
+      - "🇨🇳_油管：全网最强白嫖\r_15"
+      - "🇨🇳_油管：全网最强白嫖\r_16"
+      - "🇨🇳_油管：全网最强白嫖\r_17"
+      - "🇨🇳_油管：全网最强白嫖\r_18"
+      - "🇨🇳_油管：全网最强白嫖\r_19"
+      - "🇺🇸_油管：全网最强白嫖\r_4"
+      - "🇯🇵_油管：全网最强白嫖\r_327"
+      - "油管：全网最强白嫖\r_1"
+      - "🇨🇳_油管：全网最强白嫖\r_20"
+      - "油管：全网最强白嫖\r_2"
+      - "油管：全网最强白嫖\r_3"
+      - "🇺🇸_油管：全网最强白嫖\r_5"
+      - "🇺🇸_油管：全网最强白嫖\r_6"
+      - "油管：全网最强白嫖\r_4"
+      - "油管：全网最强白嫖\r_5"
+      - "油管：全网最强白嫖\r_6"
+      - "油管：全网最强白嫖\r_7"
+      - "油管：全网最强白嫖\r_8"
+      - "🇰🇷_油管：全网最强白嫖\r_2"
+      - "油管：全网最强白嫖\r_9"
+      - "油管：全网最强白嫖\r_10"
+      - "🇺🇸_油管：全网最强白嫖\r_7"
+      - "🇺🇸_油管：全网最强白嫖\r_8"
+      - "🇨🇳_油管：全网最强白嫖\r_21"
+      - "🇨🇳_油管：全网最强白嫖\r_22"
   - name: 🔯 故障转移
     type: fallback
     url: https://www.gstatic.com/generate_204
@@ -417,164 +321,116 @@ proxy-groups:
     expected_status: 204
     packet_loss_threshold: 5
     proxies:
-      - 美国 CloudFlare节点_1
-      - 美国 CloudFlare节点_2
-      - 广东省广州市 移动_1
-      - 香港 电讯盈科有限公司_1
-      - 美国 CloudFlare节点_3
-      - 美国 CloudFlare节点_4
-      - 美国 CloudFlare节点_5
-      - 美国 CloudFlare节点_6
-      - 美国 CloudFlare节点_7
-      - 美国 CloudFlare节点_8
-      - 美国 CloudFlare节点_9
-      - 美国 CloudFlare节点_10
-      - 美国 CloudFlare节点_11
-      - 美国 CloudFlare节点_12
-      - 美国 CloudFlare节点_13
-      - 美国 CloudFlare节点_14
-      - 巴拿马 V2CROSS.COM
-      - 广东省广州市 移动_2
-      - 香港 电讯盈科有限公司_2
-      - 美国 CloudFlare节点_15
-      - 美国 CloudFlare节点_16
-      - 美国 CloudFlare节点_17
-      - 俄罗斯 V2CROSS.COM
-      - 美国 Fastly全球Anycast节点_1
-      - 美国 CloudFlare节点_18
-      - 美国 CloudFlare节点_19
-      - 美国 CloudFlare节点_20
-      - 美国 CloudFlare公司CDN节点(shopify)
-      - 美国 CloudFlare节点_21
-      - 美国 CloudFlare节点_22
-      - 美国 Fastly全球Anycast节点_2
-      - 丹麦 V2CROSS.COM_1
-      - 广东省广州市 移动_3
-      - 江苏省 移动数据上网公共出口
-      - 广东省中山市 移动
-      - 美国 CloudFlare节点_23
-      - 美国 CloudFlare节点_24
-      - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点_25
-      - 瑞典 V2CROSS.COM
-      - 美国 CloudFlare节点_26
-      - 巴西圣保罗 CloudFlare节点
-      - 广东省广州市 移动_4
-      - 美国 CloudFlare节点_27
-      - 美国 CloudFlare节点_28
-      - 美国 CloudFlare节点_29
-      - 美国 CloudFlare节点_30
-      - 北美地区 V2CROSS.COM
-      - 美国 CloudFlare节点_31
-      - 美国 CloudFlare节点_32
-      - 美国 CloudFlare节点_33
-      - 广东省广州市 移动_5
-      - 美国 CloudFlare节点_34
-      - 美国 CloudFlare节点_35
-      - 美国 CloudFlare节点_36
-      - 美国 CloudFlare节点_37
-      - 美国 CloudFlare节点_38
-      - 美国 CloudFlare节点_39
-      - 美国 CloudFlare节点_40
-      - 美国 CloudFlare节点_41
-      - 美国 CloudFlare节点_42
-      - 美国 CloudFlare节点_43
-      - 美国 CloudFlare节点_44
-      - 广东省广州市 移动_6
-      - 美国 CloudFlare节点_45
-      - 美国 Fastly全球Anycast节点_3
-      - 美国 CloudFlare节点_46
-      - 美国 CloudFlare节点_47
-      - 美国 CloudFlare节点_48
-      - 美国 CloudFlare节点_49
-      - 美国 CloudFlare节点_50
-      - 美国 Fastly全球Anycast节点_4
-      - 美国 CloudFlare节点_51
-      - 美国 CloudFlare节点_52
-      - 美国 CloudFlare节点_53
-      - 美国 CloudFlare节点_54
-      - 广东省 移动
-      - 美国 CloudFlare节点_55
-      - 美国 CloudFlare节点_56
-      - 日本 东京Fastly节点_1
-      - 澳大利亚 V2CROSS.COM
-      - 美国 CloudFlare节点_57
-      - 丹麦 V2CROSS.COM_2
-      - 美国 CloudFlare节点_58
-      - 美国 CloudFlare节点_59
-      - 美国 CloudFlare节点_60
-      - 美国 CloudFlare节点_61
-      - 美国 Fastly全球Anycast节点_5
-      - 美国 CloudFlare节点_62
-      - 美国 CloudFlare节点_63
-      - 美国 CloudFlare节点_64
-      - 美国 CloudFlare节点_65
-      - 美国 CloudFlare节点_66
-      - 美国 CloudFlare节点_67
-      - 美国 CloudFlare节点_68
-      - 美国 CloudFlare节点_69
-      - 美国 CloudFlare节点_70
-      - 美国 CloudFlare节点_71
-      - 美国 CloudFlare节点_72
-      - 美国 CloudFlare节点_73
-      - 美国 CloudFlare节点_74
-      - 美国 CloudFlare节点_75
-      - 香港 HKCABLE
-      - 美国 CloudFlare节点_76
-      - 日本 东京Fastly节点_2
-      - 美国 CloudFlare节点_77
-      - 美国 CloudFlare节点_78
-      - 美国 CloudFlare节点_79
-      - 美国 CloudFlare节点_80
-      - 美国 CloudFlare节点_81
-      - 美国 CloudFlare节点_82
-      - 美国 CloudFlare节点_83
-      - 美国 CloudFlare节点_84
-      - 美国 CloudFlare节点_85
-      - 印度 V2CROSS.COM_1
-      - 印度 V2CROSS.COM_2
-      - 美国 CloudFlare节点_86
-      - 美国 CloudFlare节点_87
-      - 美国 CloudFlare节点_88
-      - 印度 V2CROSS.COM_3
-      - 美国 Fastly全球Anycast节点_6
-      - 英国+社会保险安全部_2
-      - 荷兰+V2CROSS.COM_1
-      - 爱尔兰+V2CROSS.COM
-      - 法国+巴黎Amazon数据中心
-      - 香港+环球全域电讯_1
-      - 美国+惠普HP_2
-      - 美国+Amazon数据中心_1
-      - 荷兰+V2CROSS.COM_2
-      - 美国+麻省理工学院
-      - 俄罗斯+V2CROSS.COM_2
-      - 亚太地区+V2CROSS.COM_1
-      - 台湾省+中华电信_1
-      - 德国+黑森州法兰克福Amazon数据中心
-      - 爱尔兰+都柏林Amazon数据中心
-      - 印度+V2CROSS.COM
-      - 亚太地区+V2CROSS.COM_2
-      - 亚太地区+V2CROSS.COM_3
-      - 香港+环球全域电讯_2
-      - 台湾省+中华电信_2
-      - 日本+V2CROSS.COM_1
-      - 俄罗斯+V2CROSS.COM_3
-      - 美国+Amazon+EC2服务器_1
-      - 日本+东京Amazon数据中心
-      - 瑞典+斯德哥尔摩Amazon数据中心
-      - 新加坡+Amazon数据中心
-      - 美国+V2CROSS.COM_18
-      - 日本+V2CROSS.COM_2
-      - 美国+CloudFlare节点
-      - 美国+新泽西州皮斯卡特维Choopa数据中心
-      - 美国+Amazon+EC2服务器_2
-      - 英国+社会保险安全部_3
-      - 日本+东京都Amazon数据中心
-      - 美国+Amazon数据中心_2
-      - 乌克兰+V2CROSS.COM_2
-      - 日本+V2CROSS.COM_3
-      - 日本+V2CROSS.COM_4
-      - 美国+Amazon数据中心_3
+      - 🇭🇰_油管：全网最强白嫖_1
+      - 🇨🇳_油管：全网最强白嫖_1
+      - 🇨🇳_油管：全网最强白嫖_2
+      - 🇨🇳_油管：全网最强白嫖_3
+      - 🇨🇳_油管：全网最强白嫖_4
+      - 🇨🇳_油管：全网最强白嫖_5
+      - 🇨🇳_油管：全网最强白嫖_6
+      - 🇭🇰_油管：全网最强白嫖_2
+      - 🇨🇳_油管：全网最强白嫖_7
+      - 🇨🇳_油管：全网最强白嫖_8
+      - 🇨🇳_油管：全网最强白嫖_9
+      - 🇨🇳_油管：全网最强白嫖_10
+      - 🇨🇳_油管：全网最强白嫖_11
+      - 🇨🇳_油管：全网最强白嫖_12
+      - 🇨🇳_油管：全网最强白嫖_13
+      - 🇨🇳_油管：全网最强白嫖_14
+      - 🇺🇸_油管：全网最强白嫖_1
+      - 🇨🇳_油管：全网最强白嫖_15
+      - 🇨🇳_油管：全网最强白嫖_16
+      - 🇨🇳_油管：全网最强白嫖_17
+      - 🇨🇳_油管：全网最强白嫖_18
+      - 🇨🇳_油管：全网最强白嫖_19
+      - 🇨🇳_油管：全网最强白嫖_20
+      - 🇨🇳_油管：全网最强白嫖_21
+      - 🇨🇳_油管：全网最强白嫖_22
+      - 🇯🇵_油管：全网最强白嫖_1
+      - 🇦🇺_油管：全网最强白嫖
+      - 🇨🇳_油管：全网最强白嫖_23
+      - 🇨🇳_油管：全网最强白嫖_24
+      - 🇸🇬_油管：全网最强白嫖_1
+      - 🇨🇳_油管：全网最强白嫖_25
+      - 🇨🇳_油管：全网最强白嫖_26
+      - 🇨🇳_油管：全网最强白嫖_27
+      - 🇨🇳_油管：全网最强白嫖_28
+      - 🇺🇸_油管：全网最强白嫖_2
+      - 🇨🇳_油管：全网最强白嫖_29
+      - 🇨🇳_油管：全网最强白嫖_30
+      - 🇨🇳_油管：全网最强白嫖_31
+      - 🇨🇳_油管：全网最强白嫖_32
+      - 🇨🇳_油管：全网最强白嫖_33
+      - 🇨🇳_油管：全网最强白嫖_34
+      - 🇨🇳_油管：全网最强白嫖_35
+      - 🇭🇰_油管：全网最强白嫖_3
+      - 🇨🇳_油管：全网最强白嫖_36
+      - 🇨🇳_油管：全网最强白嫖_37
+      - 🇨🇳_油管：全网最强白嫖_38
+      - 🇯🇵_油管：全网最强白嫖_2
+      - 🇯🇵_油管：全网最强白嫖_3
+      - 🇨🇳_油管：全网最强白嫖_39
+      - 🇨🇳_油管：全网最强白嫖_40
+      - 🇨🇳_油管：全网最强白嫖_41
+      - 🇨🇳_油管：全网最强白嫖_42
+      - 🇨🇳_油管：全网最强白嫖_43
+      - 🇯🇵_油管：全网最强白嫖_4
+      - 🇺🇸_油管：全网最强白嫖_3
+      - 🇨🇳_油管：全网最强白嫖_44
+      - 🇯🇵_油管：全网最强白嫖_5
+      - 🇨🇳_油管：全网最强白嫖_45
+      - 🇨🇳_油管：全网最强白嫖_46
+      - 🇯🇵_油管：全网最强白嫖_6
+      - 🇺🇸_油管：全网最强白嫖_4
+      - 🇺🇸_油管：全网最强白嫖_5
+      - 🇯🇵_油管：全网最强白嫖_7
+      - 🇯🇵_油管：全网最强白嫖_8
+      - 🇸🇬_油管：全网最强白嫖_2
+      - 🇭🇰_油管：全网最强白嫖_4
+      - 🇺🇸_油管：全网最强白嫖_6
+      - 🇨🇳_油管：全网最强白嫖_47
+      - 🇨🇳_油管：全网最强白嫖_48
+      - 🇨🇳_油管：全网最强白嫖_49
+      - 🇨🇳_油管：全网最强白嫖_50
+      - "🇨🇳_油管：全网最强白嫖\r_5"
+      - "🇨🇳_油管：全网最强白嫖\r_6"
+      - "🇨🇳_油管：全网最强白嫖\r_7"
+      - "🇯🇵_油管：全网最强白嫖\r_325"
+      - "🇨🇳_油管：全网最强白嫖\r_8"
+      - "🇺🇸_油管：全网最强白嫖\r_3"
+      - "🇯🇵_油管：全网最强白嫖\r_326"
+      - "🇰🇷_油管：全网最强白嫖\r_1"
+      - "🇨🇳_油管：全网最强白嫖\r_9"
+      - "🇨🇳_油管：全网最强白嫖\r_10"
+      - "🇨🇳_油管：全网最强白嫖\r_11"
+      - "🇨🇳_油管：全网最强白嫖\r_12"
+      - "🇨🇳_油管：全网最强白嫖\r_13"
+      - "🇨🇳_油管：全网最强白嫖\r_14"
+      - "🇨🇳_油管：全网最强白嫖\r_15"
+      - "🇨🇳_油管：全网最强白嫖\r_16"
+      - "🇨🇳_油管：全网最强白嫖\r_17"
+      - "🇨🇳_油管：全网最强白嫖\r_18"
+      - "🇨🇳_油管：全网最强白嫖\r_19"
+      - "🇺🇸_油管：全网最强白嫖\r_4"
+      - "🇯🇵_油管：全网最强白嫖\r_327"
+      - "油管：全网最强白嫖\r_1"
+      - "🇨🇳_油管：全网最强白嫖\r_20"
+      - "油管：全网最强白嫖\r_2"
+      - "油管：全网最强白嫖\r_3"
+      - "🇺🇸_油管：全网最强白嫖\r_5"
+      - "🇺🇸_油管：全网最强白嫖\r_6"
+      - "油管：全网最强白嫖\r_4"
+      - "油管：全网最强白嫖\r_5"
+      - "油管：全网最强白嫖\r_6"
+      - "油管：全网最强白嫖\r_7"
+      - "油管：全网最强白嫖\r_8"
+      - "🇰🇷_油管：全网最强白嫖\r_2"
+      - "油管：全网最强白嫖\r_9"
+      - "油管：全网最强白嫖\r_10"
+      - "🇺🇸_油管：全网最强白嫖\r_7"
+      - "🇺🇸_油管：全网最强白嫖\r_8"
+      - "🇨🇳_油管：全网最强白嫖\r_21"
+      - "🇨🇳_油管：全网最强白嫖\r_22"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -592,164 +448,116 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - 🔯 故障转移
-      - 美国 CloudFlare节点_1
-      - 美国 CloudFlare节点_2
-      - 广东省广州市 移动_1
-      - 香港 电讯盈科有限公司_1
-      - 美国 CloudFlare节点_3
-      - 美国 CloudFlare节点_4
-      - 美国 CloudFlare节点_5
-      - 美国 CloudFlare节点_6
-      - 美国 CloudFlare节点_7
-      - 美国 CloudFlare节点_8
-      - 美国 CloudFlare节点_9
-      - 美国 CloudFlare节点_10
-      - 美国 CloudFlare节点_11
-      - 美国 CloudFlare节点_12
-      - 美国 CloudFlare节点_13
-      - 美国 CloudFlare节点_14
-      - 巴拿马 V2CROSS.COM
-      - 广东省广州市 移动_2
-      - 香港 电讯盈科有限公司_2
-      - 美国 CloudFlare节点_15
-      - 美国 CloudFlare节点_16
-      - 美国 CloudFlare节点_17
-      - 俄罗斯 V2CROSS.COM
-      - 美国 Fastly全球Anycast节点_1
-      - 美国 CloudFlare节点_18
-      - 美国 CloudFlare节点_19
-      - 美国 CloudFlare节点_20
-      - 美国 CloudFlare公司CDN节点(shopify)
-      - 美国 CloudFlare节点_21
-      - 美国 CloudFlare节点_22
-      - 美国 Fastly全球Anycast节点_2
-      - 丹麦 V2CROSS.COM_1
-      - 广东省广州市 移动_3
-      - 江苏省 移动数据上网公共出口
-      - 广东省中山市 移动
-      - 美国 CloudFlare节点_23
-      - 美国 CloudFlare节点_24
-      - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点_25
-      - 瑞典 V2CROSS.COM
-      - 美国 CloudFlare节点_26
-      - 巴西圣保罗 CloudFlare节点
-      - 广东省广州市 移动_4
-      - 美国 CloudFlare节点_27
-      - 美国 CloudFlare节点_28
-      - 美国 CloudFlare节点_29
-      - 美国 CloudFlare节点_30
-      - 北美地区 V2CROSS.COM
-      - 美国 CloudFlare节点_31
-      - 美国 CloudFlare节点_32
-      - 美国 CloudFlare节点_33
-      - 广东省广州市 移动_5
-      - 美国 CloudFlare节点_34
-      - 美国 CloudFlare节点_35
-      - 美国 CloudFlare节点_36
-      - 美国 CloudFlare节点_37
-      - 美国 CloudFlare节点_38
-      - 美国 CloudFlare节点_39
-      - 美国 CloudFlare节点_40
-      - 美国 CloudFlare节点_41
-      - 美国 CloudFlare节点_42
-      - 美国 CloudFlare节点_43
-      - 美国 CloudFlare节点_44
-      - 广东省广州市 移动_6
-      - 美国 CloudFlare节点_45
-      - 美国 Fastly全球Anycast节点_3
-      - 美国 CloudFlare节点_46
-      - 美国 CloudFlare节点_47
-      - 美国 CloudFlare节点_48
-      - 美国 CloudFlare节点_49
-      - 美国 CloudFlare节点_50
-      - 美国 Fastly全球Anycast节点_4
-      - 美国 CloudFlare节点_51
-      - 美国 CloudFlare节点_52
-      - 美国 CloudFlare节点_53
-      - 美国 CloudFlare节点_54
-      - 广东省 移动
-      - 美国 CloudFlare节点_55
-      - 美国 CloudFlare节点_56
-      - 日本 东京Fastly节点_1
-      - 澳大利亚 V2CROSS.COM
-      - 美国 CloudFlare节点_57
-      - 丹麦 V2CROSS.COM_2
-      - 美国 CloudFlare节点_58
-      - 美国 CloudFlare节点_59
-      - 美国 CloudFlare节点_60
-      - 美国 CloudFlare节点_61
-      - 美国 Fastly全球Anycast节点_5
-      - 美国 CloudFlare节点_62
-      - 美国 CloudFlare节点_63
-      - 美国 CloudFlare节点_64
-      - 美国 CloudFlare节点_65
-      - 美国 CloudFlare节点_66
-      - 美国 CloudFlare节点_67
-      - 美国 CloudFlare节点_68
-      - 美国 CloudFlare节点_69
-      - 美国 CloudFlare节点_70
-      - 美国 CloudFlare节点_71
-      - 美国 CloudFlare节点_72
-      - 美国 CloudFlare节点_73
-      - 美国 CloudFlare节点_74
-      - 美国 CloudFlare节点_75
-      - 香港 HKCABLE
-      - 美国 CloudFlare节点_76
-      - 日本 东京Fastly节点_2
-      - 美国 CloudFlare节点_77
-      - 美国 CloudFlare节点_78
-      - 美国 CloudFlare节点_79
-      - 美国 CloudFlare节点_80
-      - 美国 CloudFlare节点_81
-      - 美国 CloudFlare节点_82
-      - 美国 CloudFlare节点_83
-      - 美国 CloudFlare节点_84
-      - 美国 CloudFlare节点_85
-      - 印度 V2CROSS.COM_1
-      - 印度 V2CROSS.COM_2
-      - 美国 CloudFlare节点_86
-      - 美国 CloudFlare节点_87
-      - 美国 CloudFlare节点_88
-      - 印度 V2CROSS.COM_3
-      - 美国 Fastly全球Anycast节点_6
-      - 英国+社会保险安全部_2
-      - 荷兰+V2CROSS.COM_1
-      - 爱尔兰+V2CROSS.COM
-      - 法国+巴黎Amazon数据中心
-      - 香港+环球全域电讯_1
-      - 美国+惠普HP_2
-      - 美国+Amazon数据中心_1
-      - 荷兰+V2CROSS.COM_2
-      - 美国+麻省理工学院
-      - 俄罗斯+V2CROSS.COM_2
-      - 亚太地区+V2CROSS.COM_1
-      - 台湾省+中华电信_1
-      - 德国+黑森州法兰克福Amazon数据中心
-      - 爱尔兰+都柏林Amazon数据中心
-      - 印度+V2CROSS.COM
-      - 亚太地区+V2CROSS.COM_2
-      - 亚太地区+V2CROSS.COM_3
-      - 香港+环球全域电讯_2
-      - 台湾省+中华电信_2
-      - 日本+V2CROSS.COM_1
-      - 俄罗斯+V2CROSS.COM_3
-      - 美国+Amazon+EC2服务器_1
-      - 日本+东京Amazon数据中心
-      - 瑞典+斯德哥尔摩Amazon数据中心
-      - 新加坡+Amazon数据中心
-      - 美国+V2CROSS.COM_18
-      - 日本+V2CROSS.COM_2
-      - 美国+CloudFlare节点
-      - 美国+新泽西州皮斯卡特维Choopa数据中心
-      - 美国+Amazon+EC2服务器_2
-      - 英国+社会保险安全部_3
-      - 日本+东京都Amazon数据中心
-      - 美国+Amazon数据中心_2
-      - 乌克兰+V2CROSS.COM_2
-      - 日本+V2CROSS.COM_3
-      - 日本+V2CROSS.COM_4
-      - 美国+Amazon数据中心_3
+      - 🇭🇰_油管：全网最强白嫖_1
+      - 🇨🇳_油管：全网最强白嫖_1
+      - 🇨🇳_油管：全网最强白嫖_2
+      - 🇨🇳_油管：全网最强白嫖_3
+      - 🇨🇳_油管：全网最强白嫖_4
+      - 🇨🇳_油管：全网最强白嫖_5
+      - 🇨🇳_油管：全网最强白嫖_6
+      - 🇭🇰_油管：全网最强白嫖_2
+      - 🇨🇳_油管：全网最强白嫖_7
+      - 🇨🇳_油管：全网最强白嫖_8
+      - 🇨🇳_油管：全网最强白嫖_9
+      - 🇨🇳_油管：全网最强白嫖_10
+      - 🇨🇳_油管：全网最强白嫖_11
+      - 🇨🇳_油管：全网最强白嫖_12
+      - 🇨🇳_油管：全网最强白嫖_13
+      - 🇨🇳_油管：全网最强白嫖_14
+      - 🇺🇸_油管：全网最强白嫖_1
+      - 🇨🇳_油管：全网最强白嫖_15
+      - 🇨🇳_油管：全网最强白嫖_16
+      - 🇨🇳_油管：全网最强白嫖_17
+      - 🇨🇳_油管：全网最强白嫖_18
+      - 🇨🇳_油管：全网最强白嫖_19
+      - 🇨🇳_油管：全网最强白嫖_20
+      - 🇨🇳_油管：全网最强白嫖_21
+      - 🇨🇳_油管：全网最强白嫖_22
+      - 🇯🇵_油管：全网最强白嫖_1
+      - 🇦🇺_油管：全网最强白嫖
+      - 🇨🇳_油管：全网最强白嫖_23
+      - 🇨🇳_油管：全网最强白嫖_24
+      - 🇸🇬_油管：全网最强白嫖_1
+      - 🇨🇳_油管：全网最强白嫖_25
+      - 🇨🇳_油管：全网最强白嫖_26
+      - 🇨🇳_油管：全网最强白嫖_27
+      - 🇨🇳_油管：全网最强白嫖_28
+      - 🇺🇸_油管：全网最强白嫖_2
+      - 🇨🇳_油管：全网最强白嫖_29
+      - 🇨🇳_油管：全网最强白嫖_30
+      - 🇨🇳_油管：全网最强白嫖_31
+      - 🇨🇳_油管：全网最强白嫖_32
+      - 🇨🇳_油管：全网最强白嫖_33
+      - 🇨🇳_油管：全网最强白嫖_34
+      - 🇨🇳_油管：全网最强白嫖_35
+      - 🇭🇰_油管：全网最强白嫖_3
+      - 🇨🇳_油管：全网最强白嫖_36
+      - 🇨🇳_油管：全网最强白嫖_37
+      - 🇨🇳_油管：全网最强白嫖_38
+      - 🇯🇵_油管：全网最强白嫖_2
+      - 🇯🇵_油管：全网最强白嫖_3
+      - 🇨🇳_油管：全网最强白嫖_39
+      - 🇨🇳_油管：全网最强白嫖_40
+      - 🇨🇳_油管：全网最强白嫖_41
+      - 🇨🇳_油管：全网最强白嫖_42
+      - 🇨🇳_油管：全网最强白嫖_43
+      - 🇯🇵_油管：全网最强白嫖_4
+      - 🇺🇸_油管：全网最强白嫖_3
+      - 🇨🇳_油管：全网最强白嫖_44
+      - 🇯🇵_油管：全网最强白嫖_5
+      - 🇨🇳_油管：全网最强白嫖_45
+      - 🇨🇳_油管：全网最强白嫖_46
+      - 🇯🇵_油管：全网最强白嫖_6
+      - 🇺🇸_油管：全网最强白嫖_4
+      - 🇺🇸_油管：全网最强白嫖_5
+      - 🇯🇵_油管：全网最强白嫖_7
+      - 🇯🇵_油管：全网最强白嫖_8
+      - 🇸🇬_油管：全网最强白嫖_2
+      - 🇭🇰_油管：全网最强白嫖_4
+      - 🇺🇸_油管：全网最强白嫖_6
+      - 🇨🇳_油管：全网最强白嫖_47
+      - 🇨🇳_油管：全网最强白嫖_48
+      - 🇨🇳_油管：全网最强白嫖_49
+      - 🇨🇳_油管：全网最强白嫖_50
+      - "🇨🇳_油管：全网最强白嫖\r_5"
+      - "🇨🇳_油管：全网最强白嫖\r_6"
+      - "🇨🇳_油管：全网最强白嫖\r_7"
+      - "🇯🇵_油管：全网最强白嫖\r_325"
+      - "🇨🇳_油管：全网最强白嫖\r_8"
+      - "🇺🇸_油管：全网最强白嫖\r_3"
+      - "🇯🇵_油管：全网最强白嫖\r_326"
+      - "🇰🇷_油管：全网最强白嫖\r_1"
+      - "🇨🇳_油管：全网最强白嫖\r_9"
+      - "🇨🇳_油管：全网最强白嫖\r_10"
+      - "🇨🇳_油管：全网最强白嫖\r_11"
+      - "🇨🇳_油管：全网最强白嫖\r_12"
+      - "🇨🇳_油管：全网最强白嫖\r_13"
+      - "🇨🇳_油管：全网最强白嫖\r_14"
+      - "🇨🇳_油管：全网最强白嫖\r_15"
+      - "🇨🇳_油管：全网最强白嫖\r_16"
+      - "🇨🇳_油管：全网最强白嫖\r_17"
+      - "🇨🇳_油管：全网最强白嫖\r_18"
+      - "🇨🇳_油管：全网最强白嫖\r_19"
+      - "🇺🇸_油管：全网最强白嫖\r_4"
+      - "🇯🇵_油管：全网最强白嫖\r_327"
+      - "油管：全网最强白嫖\r_1"
+      - "🇨🇳_油管：全网最强白嫖\r_20"
+      - "油管：全网最强白嫖\r_2"
+      - "油管：全网最强白嫖\r_3"
+      - "🇺🇸_油管：全网最强白嫖\r_5"
+      - "🇺🇸_油管：全网最强白嫖\r_6"
+      - "油管：全网最强白嫖\r_4"
+      - "油管：全网最强白嫖\r_5"
+      - "油管：全网最强白嫖\r_6"
+      - "油管：全网最强白嫖\r_7"
+      - "油管：全网最强白嫖\r_8"
+      - "🇰🇷_油管：全网最强白嫖\r_2"
+      - "油管：全网最强白嫖\r_9"
+      - "油管：全网最强白嫖\r_10"
+      - "🇺🇸_油管：全网最强白嫖\r_7"
+      - "🇺🇸_油管：全网最强白嫖\r_8"
+      - "🇨🇳_油管：全网最强白嫖\r_21"
+      - "🇨🇳_油管：全网最强白嫖\r_22"
 
 rules:
 # 本地/局域网地址
