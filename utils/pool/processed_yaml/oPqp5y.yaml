@@ -1,11 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash.Meta
-# 创建时间：2024-10-28 17:36:44
+# 客户端：Clash
+# 创建时间：2024-10-29 01:07:21
 # 使用模版：ACL4SSR_Mini.ini
-# 节点数量：40
-# 节点类型：hysteria2
-# !!当前配置文件请使用基于 Clash.Meta 内核程序
+# 节点数量：341
+# 节点类型：trojan, vmess
 ####################################
 mixed-port: 7890
 allow-lan: false
@@ -87,142 +86,1045 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"BR-2","type":"hysteria2","server":"144.22.242.34","port":35000,"password":"38c31b4c-117d-429a-9469-aa2a420ac04e","sni":"www.apple.com","skip-cert-verify":true}
-  - {"name":"🇨🇦 CA-1","type":"hysteria2","server":"bgp.xn--jbyq16e.xyz","port":41161,"password":"cbd41a4c-c287-4b51-8898-37040ac4cc68","skip-cert-verify":true}
-  - {"name":"🇨🇦 CA-2","type":"hysteria2","server":"bgp.abyssvpn.com","port":31161,"password":"fecac7b1-0c2b-419a-93c7-8684acfc9e74","skip-cert-verify":true}
-  - {"name":"🇨🇦 CA-3","type":"hysteria2","server":"ca.cloudlion.me","port":59185,"password":"9bb35cda-7ca9-40cf-a53e-f2fa28eafaa2","skip-cert-verify":true}
-  - {"name":"🇨🇦 CA-4","type":"hysteria2","server":"ca.cloudlion.me","port":55407,"password":"9bb35cda-7ca9-40cf-a53e-f2fa28eafaa2","skip-cert-verify":true}
-  - {"name":"🇨🇳 TW-1","type":"hysteria2","server":"tw.cloudlion.me","port":56813,"password":"9bb35cda-7ca9-40cf-a53e-f2fa28eafaa2","skip-cert-verify":true}
-  - {"name":"🇨🇳 TW-2","type":"hysteria2","server":"tw.cloudlion.me","port":52044,"password":"9bb35cda-7ca9-40cf-a53e-f2fa28eafaa2","skip-cert-verify":true}
-  - {"name":"🇨🇳 TW-3","type":"hysteria2","server":"tw.cloudlion.me","port":59707,"password":"9bb35cda-7ca9-40cf-a53e-f2fa28eafaa2","skip-cert-verify":true}
-  - {"name":"🇩🇪 DE-1","type":"hysteria2","server":"141.147.19.58","port":35000,"password":"38c31b4c-117d-429a-9469-aa2a420ac04e","sni":"api.push.apple.com","skip-cert-verify":true}
-  - {"name":"🇩🇪 DE-2","type":"hysteria2","server":"frankfurt1-2500m.node.xn--l6qx3lcvp58x.com","port":23219,"password":"1bea3512-76e9-4c48-b828-6e1ac603926f","sni":"1.nodes.yljc.online","skip-cert-verify":true}
-  - {"name":"🇫🇷 FR-1","type":"hysteria2","server":"fr.cloudlion.me","port":59381,"password":"9bb35cda-7ca9-40cf-a53e-f2fa28eafaa2","skip-cert-verify":true}
-  - {"name":"🇫🇷 FR-2","type":"hysteria2","server":"fr.cloudlion.me","port":51014,"password":"9bb35cda-7ca9-40cf-a53e-f2fa28eafaa2","skip-cert-verify":true}
-  - {"name":"🇫🇷 FR-3","type":"hysteria2","server":"fr.cloudlion.me","port":59772,"password":"9bb35cda-7ca9-40cf-a53e-f2fa28eafaa2","skip-cert-verify":true}
-  - {"name":"🇬🇧 GB-2","type":"hysteria2","server":"uk.cloudlion.me","port":58786,"password":"9bb35cda-7ca9-40cf-a53e-f2fa28eafaa2","skip-cert-verify":true}
-  - {"name":"🇭🇰 HK-1","type":"hysteria2","server":"hk-03.cloudlion.me","port":8005,"password":"bc5744c4-39cd-4883-abb8-01db364d9cc9","skip-cert-verify":true}
-  - {"name":"🇭🇰 HK-2","type":"hysteria2","server":"hk-03.cloudlion.me","port":8005,"password":"9a601d59-4941-45e3-a863-c040737f2b25","skip-cert-verify":true}
-  - {"name":"🇭🇰 HK-3","type":"hysteria2","server":"hk.cloudlion.me","port":55466,"password":"9bb35cda-7ca9-40cf-a53e-f2fa28eafaa2","skip-cert-verify":true}
-  - {"name":"🇭🇰 HK-4","type":"hysteria2","server":"hk.cloudlion.me","port":57956,"password":"9bb35cda-7ca9-40cf-a53e-f2fa28eafaa2","skip-cert-verify":true}
-  - {"name":"🇭🇰 HK-5","type":"hysteria2","server":"hk.cloudlion.me","port":51679,"password":"9bb35cda-7ca9-40cf-a53e-f2fa28eafaa2","skip-cert-verify":true}
-  - {"name":"🇭🇰 HK-6","type":"hysteria2","server":"hk.cloudlion.me","port":52668,"password":"9bb35cda-7ca9-40cf-a53e-f2fa28eafaa2","skip-cert-verify":true}
-  - {"name":"🇯🇵 JP-1","type":"hysteria2","server":"tokyo2-500m.node.xn--l6qx3lcvp58x.com","port":21316,"password":"1bea3512-76e9-4c48-b828-6e1ac603926f","sni":"2.nodes.yljc.online","skip-cert-verify":true}
-  - {"name":"🇰🇷 KR-1","type":"hysteria2","server":"152.70.234.12","port":35000,"password":"38c31b4c-117d-429a-9469-aa2a420ac04e","sni":"api.push.apple.com","skip-cert-verify":true}
-  - {"name":"🇰🇷 KR-2","type":"hysteria2","server":"193.122.114.172","port":35000,"password":"38c31b4c-117d-429a-9469-aa2a420ac04e","sni":"api.push.apple.com","skip-cert-verify":true}
-  - {"name":"🇰🇷 KR-3","type":"hysteria2","server":"193.122.113.204","port":35000,"password":"38c31b4c-117d-429a-9469-aa2a420ac04e","sni":"www.apple.com","skip-cert-verify":true}
-  - {"name":"🇰🇷 KR-4","type":"hysteria2","server":"146.56.100.103","port":35000,"password":"38c31b4c-117d-429a-9469-aa2a420ac04e","sni":"www.apple.com","skip-cert-verify":true}
-  - {"name":"🇰🇷 KR-5","type":"hysteria2","server":"152.69.225.196","port":35000,"password":"38c31b4c-117d-429a-9469-aa2a420ac04e","sni":"www.apple.com","skip-cert-verify":true}
-  - {"name":"🇰🇷 KR-6","type":"hysteria2","server":"146.56.174.194","port":35000,"password":"38c31b4c-117d-429a-9469-aa2a420ac04e","sni":"api.push.apple.com","skip-cert-verify":true}
-  - {"name":"🇸🇬 SG-2","type":"hysteria2","server":"sg-02.cloudlion.me","port":8005,"password":"9a601d59-4941-45e3-a863-c040737f2b25","skip-cert-verify":true}
-  - {"name":"🇸🇬 SG-3","type":"hysteria2","server":"sg-02.cloudlion.me","port":8005,"password":"1947e8a2-f868-4ef5-8024-21c9dfa27450","skip-cert-verify":true}
-  - {"name":"🇸🇬 SG-4","type":"hysteria2","server":"sg-02.cloudlion.me","port":8005,"password":"c35a6dd1-a1f3-4ddb-a4cf-f6868bb34b51","skip-cert-verify":true}
-  - {"name":"🇺🇸 US-16","type":"hysteria2","server":"108.181.23.71","port":35000,"password":"38c31b4c-117d-429a-9469-aa2a420ac04e","sni":"tv.apple.com","skip-cert-verify":true}
-  - {"name":"🇺🇸 US-17","type":"hysteria2","server":"108.181.23.225","port":35000,"password":"38c31b4c-117d-429a-9469-aa2a420ac04e","sni":"www.apple.com","skip-cert-verify":true}
-  - {"name":"🇺🇸 US-18","type":"hysteria2","server":"108.181.23.235","port":35000,"password":"38c31b4c-117d-429a-9469-aa2a420ac04e","sni":"www.apple.com","skip-cert-verify":true}
-  - {"name":"🇺🇸 US-19","type":"hysteria2","server":"108.181.23.253","port":35000,"password":"38c31b4c-117d-429a-9469-aa2a420ac04e","sni":"www.apple.com","skip-cert-verify":true}
-  - {"name":"🇺🇸 US-20","type":"hysteria2","server":"207.148.22.93","port":443,"password":"9bb452b106ffc217","sni":"wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc","skip-cert-verify":true,"obfs-password":"cd29099d"}
-  - {"name":"🇺🇸 US-21","type":"hysteria2","server":"45.76.0.86","port":443,"password":"1f17cdf0578a2860","sni":"45.76.0.86","skip-cert-verify":true,"obfs-password":"4b817757"}
-  - {"name":"🇺🇸 US-22","type":"hysteria2","server":"jiedianfsc.fsc.interld123456789.com","port":24000,"password":"b3b5f0b9-31a5-4868-8f86-8b4ea22ee781","sni":"234224.1234567890spcloud.com","skip-cert-verify":true}
-  - {"name":"🇺🇸 US-23","type":"hysteria2","server":"jiedianfsc.fsc.interld123456789.com","port":28001,"password":"b3b5f0b9-31a5-4868-8f86-8b4ea22ee781","sni":"cesuuu.1234567890spcloud.com","skip-cert-verify":true}
-  - {"name":"🇺🇸 US-24","type":"hysteria2","server":"us.cloudlion.me","port":56650,"password":"9bb35cda-7ca9-40cf-a53e-f2fa28eafaa2","skip-cert-verify":true}
-  - {"name":"🇺🇸 US-25","type":"hysteria2","server":"us.cloudlion.me","port":52131,"password":"9bb35cda-7ca9-40cf-a53e-f2fa28eafaa2","skip-cert-verify":true}
+  - {"name":"🇰🇷 韩国-三网优化2-5x","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"6515eff5-a03a-43ca-a2aa-9b00eba12b78","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-4Z","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"46e626cd-2c48-4ee7-946c-f138179d076b","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-6Q","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"3f671526-3f51-4803-889d-fe135c1e9c13","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-6F","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"6be74dde-24bb-4553-94ea-2b8561df1477","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-7K","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"0ad38dfe-6fdd-4f21-9b55-428475fa8717","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-4W","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"7df477db-ada1-4de7-bdee-d1efe33cb65c","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-5E","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"9595f12d-d23e-4f9a-af2f-6a1e9f3bb4f6","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-2M","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"afa199e4-353e-47e6-8034-397df9c183ec","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇸🇪 瑞典 IEPL专线NO1-1B","type":"vmess","server":"i.needss.top","port":31001,"cipher":"auto","uuid":"c336152e-9ef8-4126-9335-f81e9b4cbe3a","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇰🇷 韩国-三网优化2-1B","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"99727c05-d69d-4221-866d-6c73cab1d014","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-2F","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"918935d3-7193-4360-b8ee-3c4ca5230964","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇸🇬 新加坡 IEPL专线NO1-1A","type":"vmess","server":"i.needss.top","port":20015,"cipher":"auto","uuid":"07b0dfc9-0d63-4e89-8ffa-4a890bb4ef93","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇰🇷 韩国-三网优化2-5H","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"9dec3ac4-3a1a-421d-8c39-2be2c69096fc","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇬🇧 伦敦专线-1H","type":"vmess","server":"xr004.louwangzhiyu.xyz","port":30000,"cipher":"auto","uuid":"d0ff8a9d-444f-4f5a-a4c0-17df434fe615","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇰🇷 韩国-三网优化2-2E","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"3b68bf19-3e9b-4033-badb-e7810de00155","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-4T","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"f288c1bc-6ea6-4544-a21a-3985cae4aec4","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇷🇺 莫斯科专线-1P","type":"vmess","server":"xr002.louwangzhiyu.xyz","port":30000,"cipher":"auto","uuid":"fb5cc4bf-5220-4f14-a228-717c57be890f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇰🇷 韩国-三网优化2-1F","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"1e3bdb00-9857-4465-b660-3f5e01640315","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇸🇬 新加坡-1J","type":"vmess","server":"m002.mmzhk.website","port":8080,"cipher":"auto","uuid":"782b949f-59ea-457b-bfa3-71530e6966ff","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇰🇷 韩国-三网优化2-6M","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"4c588f4c-9053-40ee-afbd-132e07410484","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-3T","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"810fa308-5c38-41eb-b17b-1a5201c003dd","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇭 瑞士专线-1O","type":"vmess","server":"xr005.louwangzhiyu.xyz","port":8080,"cipher":"auto","uuid":"21c3e3f3-4887-4983-b541-c3b5afc98836","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇰🇷 韩国-三网优化2-2R","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"7e8ac8d1-7926-4dd0-abaa-a82a63f98f11","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇦 加拿大 IEPL专线NO1-1B","type":"vmess","server":"sh3.needss.top","port":20013,"cipher":"auto","uuid":"c336152e-9ef8-4126-9335-f81e9b4cbe3a","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇰🇷 韩国-三网优化2-2H","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"857afd2c-c374-4063-8326-ac0882a94d28","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇬🇧 伦敦专线-1G","type":"vmess","server":"xr004.louwangzhiyu.xyz","port":30000,"cipher":"auto","uuid":"e1f63425-6f04-468c-89b3-a3dfe17dd75f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇰🇷 韩国-三网优化2-4M","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"81750f71-9a3d-4ffa-be7c-1c0f6e91651f","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇬🇧 伦敦专线-1F","type":"vmess","server":"xr004.louwangzhiyu.xyz","port":30000,"cipher":"auto","uuid":"7097b9d1-56e8-406f-812c-bc219924b9b1","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇰🇷 韩国-三网优化2-1H","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"76d2e82a-98ec-49d6-9d22-247b7f2b3a69","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-8G","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"728a6d83-c5fb-4ebd-9048-0ba1446984ac","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-7Y","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"116f62e8-b980-4336-95b8-4cc51acf4d20","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-6B","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"020b0e7c-92b4-4bb8-ba27-b4a504779038","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-1L","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"1bd70254-8222-4650-a3a7-637eda5f7a5d","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇸🇬 新加坡-1K","type":"vmess","server":"m002.mmzhk.website","port":8080,"cipher":"auto","uuid":"aaa3f836-db3f-46ec-aeaf-41be73b3652e","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇷🇺 莫斯科专线-1L","type":"vmess","server":"xr002.louwangzhiyu.xyz","port":30000,"cipher":"auto","uuid":"990fe0ac-8741-4fd6-be1c-91e339cfb64f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇰🇷 韩国-三网优化2-8L","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"01cf18ef-4310-4690-b754-8f1ae42e7698","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-3D","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"6f9335f3-a528-475f-b341-7b5c81f15bba","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇸🇬 新加坡-1F","type":"vmess","server":"m002.mmzhk.website","port":8080,"cipher":"auto","uuid":"7097b9d1-56e8-406f-812c-bc219924b9b1","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇰🇷 韩国-三网优化2-6U","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"f4615087-78f6-41df-8837-4d9e6fb1b827","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-2G","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"652a48a7-0549-427e-bb7b-4e21307169ce","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇷🇺 俄罗斯 IEPL专线NO1-1B","type":"vmess","server":"i.needss.top","port":21111,"cipher":"auto","uuid":"c336152e-9ef8-4126-9335-f81e9b4cbe3a","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇰🇷 韩国-三网优化2-7L","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"1f1055b0-217d-4984-9c06-dcb4d00d4573","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-7M","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"2db89ca2-aa6f-401d-9c9a-bc2a8e55bddd","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-6C","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"dfecec10-f0c1-4ec7-a92f-510aba9803c1","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-3P","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"1df0eaa3-cae9-44a2-8547-dba6ab9936cd","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-6O","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"562fa291-51f4-483b-b0b5-6e668657e83f","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸 美国-拉斯维加斯专线2-1D","type":"vmess","server":"m001.mmzhk.website","port":8080,"cipher":"auto","uuid":"b54e6bc4-5e3f-45a3-94bf-0920d45781c5","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇷🇺 莫斯科专线-1D","type":"vmess","server":"xr002.louwangzhiyu.xyz","port":30000,"cipher":"auto","uuid":"b54e6bc4-5e3f-45a3-94bf-0920d45781c5","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇷🇺 莫斯科专线-1G","type":"vmess","server":"xr002.louwangzhiyu.xyz","port":30000,"cipher":"auto","uuid":"e1f63425-6f04-468c-89b3-a3dfe17dd75f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇰🇷 韩国-三网优化2-7G","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"0d4f31b2-893e-47fe-b4d6-72d7dd7d6c25","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-1Z","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"78e7f04f-5f7d-4d1a-bd89-32c4797c66f6","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-7D","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"5ecdfc71-ddcb-4514-b6fc-2654dd75d5e2","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇭 瑞士专线-1M","type":"vmess","server":"xr005.louwangzhiyu.xyz","port":8080,"cipher":"auto","uuid":"79a15d6c-27a1-4dda-99fb-88c31545de5a","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇰🇷 韩国-三网优化2-6E","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"5223b5ab-2a39-4c1a-aedf-4711a7fa8211","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-5L","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"ad822134-2ed0-42d6-bed5-f372af3b20a4","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇸🇬 新加坡-1I","type":"vmess","server":"m002.mmzhk.website","port":8080,"cipher":"auto","uuid":"dca01f7a-3105-4ab7-80c5-bd3158fdadd0","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇸🇬 新加坡-1M","type":"vmess","server":"m002.mmzhk.website","port":8080,"cipher":"auto","uuid":"79a15d6c-27a1-4dda-99fb-88c31545de5a","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇨🇦 加拿大 IEPL专线NO1-1A","type":"vmess","server":"sh3.needss.top","port":20013,"cipher":"auto","uuid":"07b0dfc9-0d63-4e89-8ffa-4a890bb4ef93","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇰🇷 韩国-三网优化2-1M","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"e7eadc6c-63d8-436f-92cc-f7bcab6dd2b2","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-1G","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"3522c830-863a-413b-b4e9-62efba45246c","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-4Y","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"a75c58e2-f104-43a2-9b47-e672bae56ced","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-3A","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"0b46e69e-e105-4589-9af4-23cd49030c81","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-6N","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"cb01d12b-baac-4688-9b00-2023d45bc884","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸 美国-拉斯维加斯专线2-1F","type":"vmess","server":"m001.mmzhk.website","port":8080,"cipher":"auto","uuid":"7097b9d1-56e8-406f-812c-bc219924b9b1","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇰🇷 韩国-三网优化2-7P","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"d55576f3-db98-45a6-b25e-c966b6085eee","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-6D","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"f5c67a87-90df-436f-8ec7-2c3058496270","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-3F","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"1c9e8f41-cd05-43e7-a749-2ce443f7fdf3","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇸🇬 新加坡-1L","type":"vmess","server":"m002.mmzhk.website","port":8080,"cipher":"auto","uuid":"990fe0ac-8741-4fd6-be1c-91e339cfb64f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇰🇷 韩国-三网优化2-6J","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"9688500d-5eeb-48ec-964d-89672802edb4","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇫🇷 法国2","type":"vmess","server":"xdd.dashuai.cyou","port":45071,"cipher":"auto","uuid":"fcc338ed-d213-4952-ab5b-0a1e6d5400e4","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇰🇷 韩国-三网优化2-4Q","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"035d8d0b-0031-41a3-b6a5-f59fda4e8fd1","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇭 瑞士专线-1A","type":"vmess","server":"xr005.louwangzhiyu.xyz","port":8080,"cipher":"auto","uuid":"140c0ff3-9b2d-43ab-bafd-fa7fe8cfb42c","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇰🇷 韩国-三网优化2-1I","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"a7a8ee96-286b-4121-95c3-2a0f238e1cfa","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-4L","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"7a23e20b-f23b-4aa6-9153-e6838f57006e","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇦🇺 澳大利亚原生1","type":"vmess","server":"haa.dashuai.cyou","port":45062,"cipher":"auto","uuid":"fcc338ed-d213-4952-ab5b-0a1e6d5400e4","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇰🇷 韩国-三网优化2-5W","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"efbc5c92-c15c-4fdb-836e-46105ae7762b","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇷🇺 莫斯科专线-1A","type":"vmess","server":"xr002.louwangzhiyu.xyz","port":30000,"cipher":"auto","uuid":"140c0ff3-9b2d-43ab-bafd-fa7fe8cfb42c","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇰🇷 韩国-三网优化2-6I","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"c2998f13-fe88-4d5e-90ef-00ef89fa26a5","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-3H","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"0b374d21-4623-4c78-ba27-5b58245519f9","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-8F","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"1bd0cf0a-668f-4945-acee-34b8b35cd3fd","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-7E","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"f52a3d49-29f9-4f70-b43f-9dce07bcf6c0","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-1O","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"c47c0563-f883-4362-92ec-e913248b6db2","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇷🇺 莫斯科专线-1M","type":"vmess","server":"xr002.louwangzhiyu.xyz","port":30000,"cipher":"auto","uuid":"79a15d6c-27a1-4dda-99fb-88c31545de5a","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇦🇺 澳大利亚原生2","type":"vmess","server":"xdd.dashuai.cyou","port":45063,"cipher":"auto","uuid":"fcc338ed-d213-4952-ab5b-0a1e6d5400e4","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇰🇷 韩国-三网优化2-3I","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"259bbb91-6cc5-4429-a4d7-2cb1fc6b9f45","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-2U","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"eddf2694-6a2d-48a3-a36d-11d8798ff524","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-8I","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"25ee54e7-954d-483b-9373-057181e840fb","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-2Q","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"c70f67a3-944d-4ac5-ab92-9171d3b9eba2","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇷🇺 莫斯科专线-1J","type":"vmess","server":"xr002.louwangzhiyu.xyz","port":30000,"cipher":"auto","uuid":"782b949f-59ea-457b-bfa3-71530e6966ff","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇨🇭 瑞士专线-1B","type":"vmess","server":"xr005.louwangzhiyu.xyz","port":8080,"cipher":"auto","uuid":"196c00ca-786e-4d73-85e8-6dd29d40342e","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇩🇪 德国 IEPL专线NO1-1A","type":"vmess","server":"sh3.needss.top","port":54787,"cipher":"auto","uuid":"07b0dfc9-0d63-4e89-8ffa-4a890bb4ef93","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇰🇷 韩国-三网优化2-5Z","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"1525dc21-dda8-48b0-aace-456f6c04a1c3","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-4U","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"a1eadf94-07da-40d2-b14a-a067733f8693","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-3B","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"044b4900-56b8-417c-ac3f-682033d9c920","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇬🇧 伦敦专线-1K","type":"vmess","server":"xr004.louwangzhiyu.xyz","port":30000,"cipher":"auto","uuid":"aaa3f836-db3f-46ec-aeaf-41be73b3652e","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇰🇷 韩国-三网优化2-4G","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"69e7ff7a-7a29-4c9f-baba-16e7fac8b15c","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-3V","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"b75e7061-732b-4940-9789-08e110592037","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-2D","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"b183b907-4e26-4672-968b-f4e7b58477e3","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-5B","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"0135fdb2-ec6e-48f7-8a1d-ce10d15ce06d","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-3N","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"032ca238-607a-455e-ae42-37df05b2c936","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-2S","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"cf316416-86cd-4e44-adec-9a5c01b50c5c","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇬🇧 伦敦专线-1N","type":"vmess","server":"xr004.louwangzhiyu.xyz","port":30000,"cipher":"auto","uuid":"e7a678a0-8b87-4183-b07c-5c6a8052cb5b","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇰🇷 韩国-三网优化2-8K","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"db9c8225-3271-43c6-aee0-2516c2fb7135","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国 IEPL专线NO1-1B","type":"vmess","server":"i.needss.top","port":20021,"cipher":"auto","uuid":"c336152e-9ef8-4126-9335-f81e9b4cbe3a","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇰🇷 韩国-三网优化2-3L","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"a769eac8-cc63-41a8-8b2b-85aa99b93581","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇦🇺 澳大利亚 IEPL专线NO1-1B","type":"vmess","server":"i.needss.top","port":20011,"cipher":"auto","uuid":"c336152e-9ef8-4126-9335-f81e9b4cbe3a","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇰🇷 韩国-三网优化2-1K","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"5045a9e3-bd4d-4fec-bf24-f5419cb8996d","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇮🇹 意大利 IEPL专线NO1-1A","type":"vmess","server":"i.needss.top","port":33322,"cipher":"auto","uuid":"07b0dfc9-0d63-4e89-8ffa-4a890bb4ef93","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇸🇬 新加坡-1C","type":"vmess","server":"m002.mmzhk.website","port":8080,"cipher":"auto","uuid":"16da842a-acb5-4c3e-97d7-74542f509196","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇰🇷 韩国-三网优化2-2T","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"71e9a89f-c9c7-4ff4-b596-e8b1a0146985","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇮🇳 印度1","type":"vmess","server":"haa.dashuai.cyou","port":45074,"cipher":"auto","uuid":"fcc338ed-d213-4952-ab5b-0a1e6d5400e4","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇸🇬 新加坡-1B","type":"vmess","server":"m002.mmzhk.website","port":8080,"cipher":"auto","uuid":"196c00ca-786e-4d73-85e8-6dd29d40342e","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇺🇸 美国 IEPL专线NO1-1A","type":"vmess","server":"i.needss.top","port":54770,"cipher":"auto","uuid":"07b0dfc9-0d63-4e89-8ffa-4a890bb4ef93","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇰🇷 韩国-三网优化2-7T","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"d641f53b-f249-4c31-81e2-0904f532acdf","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇳🇱 荷兰 CM 隧道NO1-1B","type":"vmess","server":"sh3.needss.top","port":20025,"cipher":"auto","uuid":"c336152e-9ef8-4126-9335-f81e9b4cbe3a","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇨🇭 瑞士专线-1P","type":"vmess","server":"xr005.louwangzhiyu.xyz","port":8080,"cipher":"auto","uuid":"fb5cc4bf-5220-4f14-a228-717c57be890f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇹🇼 台湾 IEPL专线NO1-1A","type":"vmess","server":"i.needss.top","port":52103,"cipher":"auto","uuid":"07b0dfc9-0d63-4e89-8ffa-4a890bb4ef93","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇸🇬 新加坡NO.2","type":"vmess","server":"xdd.dashuai.cyou","port":45055,"cipher":"auto","uuid":"fcc338ed-d213-4952-ab5b-0a1e6d5400e4","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇹🇼 台湾02-3x-流媒体","type":"vmess","server":"cf.hy2.one","port":80,"cipher":"auto","uuid":"eaa405e1-8023-4758-8c35-dc59126963b0","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/af323d"}}
+  - {"name":"🇰🇷 韩国-三网优化2-5M","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"a689fb4f-2641-42ce-8d81-f849a7899a9b","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸 美国-拉斯维加斯专线2-1M","type":"vmess","server":"m001.mmzhk.website","port":8080,"cipher":"auto","uuid":"79a15d6c-27a1-4dda-99fb-88c31545de5a","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇨🇭 瑞士专线-1E","type":"vmess","server":"xr005.louwangzhiyu.xyz","port":8080,"cipher":"auto","uuid":"09c2a9db-b133-417e-910a-066ec3f35930","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇰🇷 韩国-三网优化2-1U","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"c77c9b65-4fb5-44eb-bc0a-d9e7aaeb411c","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇸🇬 新加坡-1A","type":"vmess","server":"m002.mmzhk.website","port":8080,"cipher":"auto","uuid":"140c0ff3-9b2d-43ab-bafd-fa7fe8cfb42c","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇰🇷 韩国-三网优化2-4B","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"1530c82e-dc37-430c-97f9-f26f6ae62809","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-5Q","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"0984264e-d42e-49ab-8fd6-634634a05cf5","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-1Y","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"6ea07f95-b188-4612-9c90-8cafbcb97ecd","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-7U","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"04854b70-23a0-4780-a01c-2ead5a659d42","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇮🇩 印度尼西亚2","type":"vmess","server":"xdd.dashuai.cyou","port":45061,"cipher":"auto","uuid":"fcc338ed-d213-4952-ab5b-0a1e6d5400e4","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇰🇷 韩国-三网优化2-7Q","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"f5d6489d-69c3-47f2-8c8f-36b1cf358b37","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-4N","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"9e72ff48-9803-4b30-9c21-aaaab1235122","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-2C","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"164f163f-d846-4021-a2f6-fd73c87f0e6e","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇭 瑞士专线-1F","type":"vmess","server":"xr005.louwangzhiyu.xyz","port":8080,"cipher":"auto","uuid":"7097b9d1-56e8-406f-812c-bc219924b9b1","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇰🇷 韩国-三网优化2-3Q","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"28378b12-e4da-4842-93fb-7e07fcdc4c3f","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-7W","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"bf6c4894-19ce-464b-a1df-409e485dbf3d","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-4C","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"28e98f2d-e9e8-46ff-bdd9-1d8a6dda0143","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇸🇬 新加坡-1D","type":"vmess","server":"m002.mmzhk.website","port":8080,"cipher":"auto","uuid":"b54e6bc4-5e3f-45a3-94bf-0920d45781c5","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇰🇷 韩国-三网优化2-4H","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"f8d31f49-7873-4eab-abb6-670829943cad","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇸🇬 新加坡-1P","type":"vmess","server":"m002.mmzhk.website","port":8080,"cipher":"auto","uuid":"fb5cc4bf-5220-4f14-a228-717c57be890f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇰🇷 韩国-三网优化2-5I","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"9da86c26-6a30-4dd7-b6ce-7d429bff1807","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-5P","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"6f7a3b42-a0f5-44b7-beb6-d368877c30d8","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-5T","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"ed77c84a-e87a-4dd6-86fc-1fadfde4834b","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-3Y","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"f3ebb97c-0a70-4396-b71b-0a918a69afbd","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇬🇧 伦敦专线-1E","type":"vmess","server":"xr004.louwangzhiyu.xyz","port":30000,"cipher":"auto","uuid":"09c2a9db-b133-417e-910a-066ec3f35930","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇮🇩 印度尼西亚1","type":"vmess","server":"haa.dashuai.cyou","port":45060,"cipher":"auto","uuid":"fcc338ed-d213-4952-ab5b-0a1e6d5400e4","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇰🇷 韩国-三网优化2-1A","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"e74051c7-e78e-4d69-8aa0-d0bbe2da2e9b","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸 美国-拉斯维加斯专线2-1B","type":"vmess","server":"m001.mmzhk.website","port":8080,"cipher":"auto","uuid":"196c00ca-786e-4d73-85e8-6dd29d40342e","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇰🇷 韩国-三网优化2-8J","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"3d1ed406-2f7f-48ce-921c-24b255d99df9","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇦🇺 澳大利亚 IEPL专线NO1-1A","type":"vmess","server":"i.needss.top","port":20011,"cipher":"auto","uuid":"07b0dfc9-0d63-4e89-8ffa-4a890bb4ef93","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇰🇷 韩国-三网优化2-3C","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"21a989ec-837d-4a25-96b0-86d37e08422a","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇬🇧 伦敦专线-1M","type":"vmess","server":"xr004.louwangzhiyu.xyz","port":30000,"cipher":"auto","uuid":"79a15d6c-27a1-4dda-99fb-88c31545de5a","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇹🇼 台湾2","type":"vmess","server":"xdd.dashuai.cyou","port":45077,"cipher":"auto","uuid":"fcc338ed-d213-4952-ab5b-0a1e6d5400e4","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇰🇷 韩国-三网优化2-4V","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"3697cbee-a4e0-4e95-b531-dd7f684b4c0b","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-7A","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"defe816d-5503-4c3b-98d0-e1f7392eb7e9","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-5Y","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"b371983f-cb32-4251-b3a8-f9856852ba6c","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-5D","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"fb580893-a79a-41f9-b05a-b42026054ce5","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-6H","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"e25e84d5-370e-4577-999e-047a64cd2b33","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-7S","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"e22ff634-8d17-4eea-bb05-994fddaae447","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-7N","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"3b8a2657-8fa9-49bf-8831-5ef3ef967171","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇯🇵 日本 IEPL专线NO3-1A","type":"vmess","server":"i.needss.top","port":52117,"cipher":"auto","uuid":"07b0dfc9-0d63-4e89-8ffa-4a890bb4ef93","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇰🇷 韩国-三网优化2-1P","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"551e9117-d936-4e95-a4a2-93b71f212954","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇭 瑞士专线-1H","type":"vmess","server":"xr005.louwangzhiyu.xyz","port":8080,"cipher":"auto","uuid":"d0ff8a9d-444f-4f5a-a4c0-17df434fe615","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇬🇧 伦敦专线-1J","type":"vmess","server":"xr004.louwangzhiyu.xyz","port":30000,"cipher":"auto","uuid":"782b949f-59ea-457b-bfa3-71530e6966ff","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇰🇷 韩国-三网优化2-5C","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"943d9961-ff3f-4982-878b-7e74e0c83499","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇷🇺 莫斯科专线-1F","type":"vmess","server":"xr002.louwangzhiyu.xyz","port":30000,"cipher":"auto","uuid":"7097b9d1-56e8-406f-812c-bc219924b9b1","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇮🇳 印度 IEPL专线NO1-1B","type":"vmess","server":"i.needss.top","port":15442,"cipher":"auto","uuid":"c336152e-9ef8-4126-9335-f81e9b4cbe3a","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇨🇭 瑞士专线-1J","type":"vmess","server":"xr005.louwangzhiyu.xyz","port":8080,"cipher":"auto","uuid":"782b949f-59ea-457b-bfa3-71530e6966ff","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇺🇸 美国-拉斯维加斯专线2-1E","type":"vmess","server":"m001.mmzhk.website","port":8080,"cipher":"auto","uuid":"09c2a9db-b133-417e-910a-066ec3f35930","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇰🇷 韩国-三网优化2-2P","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"c439d24a-ba5c-45d0-86b3-2a84eda19e30","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇬🇧 伦敦专线-1L","type":"vmess","server":"xr004.louwangzhiyu.xyz","port":30000,"cipher":"auto","uuid":"990fe0ac-8741-4fd6-be1c-91e339cfb64f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇰🇷 韩国-三网优化2-8E","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"f260b77a-63c6-49a5-a843-5636053441c9","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-5U","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"cbce7062-b5a1-4298-93b9-99da2ff4653d","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-6R","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"0af0b41b-27d6-4756-9dfb-b7c6407048a0","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇮🇳 印度 IEPL专线NO1-1A","type":"vmess","server":"i.needss.top","port":15442,"cipher":"auto","uuid":"07b0dfc9-0d63-4e89-8ffa-4a890bb4ef93","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇰🇷 韩国-三网优化2-1S","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"c94803a2-7b96-4aac-b0d5-063ebcea2bb8","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇷🇺 莫斯科专线-1E","type":"vmess","server":"xr002.louwangzhiyu.xyz","port":30000,"cipher":"auto","uuid":"09c2a9db-b133-417e-910a-066ec3f35930","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇰🇷 韩国-三网优化2-3U","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"b2403ea3-19c8-4e00-ac6a-9368f183e009","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-7V","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"e2a579c4-932b-42a7-87b3-cae685995e6b","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇮🇩 印尼 IEPL专线NO1-1A","type":"vmess","server":"i.needss.top","port":25129,"cipher":"auto","uuid":"07b0dfc9-0d63-4e89-8ffa-4a890bb4ef93","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇰🇷 韩国-三网优化2-5G","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"d4574966-2286-4ced-9a13-3a128719fadf","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-3M","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"79464aff-46d0-4208-9146-3db61fbcc042","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇵🇭 菲律宾 IEPL专线NO1-1A","type":"vmess","server":"i.needss.top","port":20019,"cipher":"auto","uuid":"07b0dfc9-0d63-4e89-8ffa-4a890bb4ef93","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇰🇷 韩国-三网优化2-3K","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"bd652a31-7167-4c3a-9640-251b7e0ec43a","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-1V","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"32a93e69-49be-437a-90a2-b7622796bb22","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-4F","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"df1c2aa7-6b34-4c74-b017-2f418112163f","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇸🇬 新加坡 IEPL专线NO1-1B","type":"vmess","server":"i.needss.top","port":20015,"cipher":"auto","uuid":"c336152e-9ef8-4126-9335-f81e9b4cbe3a","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇰🇷 韩国-三网优化2-7I","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"48caaf09-5f35-4bba-a0e1-5d2b0e97e06f","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-4A","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"50bbad36-e1b1-4459-b158-2eae0b7a3d00","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-1T","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"b320d4db-d949-4a1e-8eaf-6140df1953b3","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-3E","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"d5813673-16d8-4a09-ac68-f22275597f95","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇭 瑞士专线-1K","type":"vmess","server":"xr005.louwangzhiyu.xyz","port":8080,"cipher":"auto","uuid":"aaa3f836-db3f-46ec-aeaf-41be73b3652e","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇦🇷 阿根廷 IEPL专线NO1-1B","type":"vmess","server":"i.needss.top","port":20014,"cipher":"auto","uuid":"c336152e-9ef8-4126-9335-f81e9b4cbe3a","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇰🇷 韩国-三网优化2-7C","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"af7bb95b-a21e-4ace-bf48-652ff7185fe1","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇳🇱 荷兰 CM 隧道NO1-1A","type":"vmess","server":"sh3.needss.top","port":20025,"cipher":"auto","uuid":"07b0dfc9-0d63-4e89-8ffa-4a890bb4ef93","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇷🇺 俄罗斯 IEPL专线NO1-1A","type":"vmess","server":"i.needss.top","port":21111,"cipher":"auto","uuid":"07b0dfc9-0d63-4e89-8ffa-4a890bb4ef93","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇫🇷 法国 CM 隧道NO1-1A","type":"vmess","server":"sh3.needss.top","port":52108,"cipher":"auto","uuid":"07b0dfc9-0d63-4e89-8ffa-4a890bb4ef93","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇰🇷 韩国-三网优化2-3Z","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"d4ab0eee-ad7f-415a-8df0-576f45b2c180","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇦🇷 阿根廷 IEPL专线NO1-1A","type":"vmess","server":"i.needss.top","port":20014,"cipher":"auto","uuid":"07b0dfc9-0d63-4e89-8ffa-4a890bb4ef93","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇰🇷 韩国-三网优化2-7B","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"cfe0f83d-9661-457d-9f61-3307b5f67d12","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇸🇬 新加坡-1N","type":"vmess","server":"m002.mmzhk.website","port":8080,"cipher":"auto","uuid":"e7a678a0-8b87-4183-b07c-5c6a8052cb5b","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇨🇭 瑞士专线-1N","type":"vmess","server":"xr005.louwangzhiyu.xyz","port":8080,"cipher":"auto","uuid":"e7a678a0-8b87-4183-b07c-5c6a8052cb5b","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇰🇷 韩国-三网优化2-4J","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"0b5bd1ec-e688-4cb7-945a-58a8f1d9982b","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇮🇩 印尼 IEPL专线NO1-1B","type":"vmess","server":"i.needss.top","port":25129,"cipher":"auto","uuid":"c336152e-9ef8-4126-9335-f81e9b4cbe3a","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇯🇵 日本NO.2","type":"vmess","server":"xdd.dashuai.cyou","port":45057,"cipher":"auto","uuid":"fcc338ed-d213-4952-ab5b-0a1e6d5400e4","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇸🇬 新加坡NO.1","type":"vmess","server":"haa.dashuai.cyou","port":45054,"cipher":"auto","uuid":"fcc338ed-d213-4952-ab5b-0a1e6d5400e4","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇭🇰 香港 IEPL专线NO1-1B","type":"vmess","server":"i.needss.top","port":20013,"cipher":"auto","uuid":"c336152e-9ef8-4126-9335-f81e9b4cbe3a","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇯🇵 日本 IEPL专线NO3-1B","type":"vmess","server":"i.needss.top","port":52117,"cipher":"auto","uuid":"c336152e-9ef8-4126-9335-f81e9b4cbe3a","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇰🇷 韩国-三网优化2-4D","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"5c6687bb-8dcc-4e89-abea-9a2548fc78dd","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-1R","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"0f709af2-bf59-4deb-b20b-f3fca0ca76cc","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸 美国-拉斯维加斯专线2-1J","type":"vmess","server":"m001.mmzhk.website","port":8080,"cipher":"auto","uuid":"782b949f-59ea-457b-bfa3-71530e6966ff","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇰🇷 韩国-三网优化2-2B","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"1cc1e2bc-60ed-42bd-ba49-c40af21ff336","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇹🇼 台湾1","type":"vmess","server":"haa.dashuai.cyou","port":45078,"cipher":"auto","uuid":"fcc338ed-d213-4952-ab5b-0a1e6d5400e4","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇰🇷 韩国-三网优化2-5S","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"66ce9749-5022-4e21-b10b-6cdf3997726b","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-6V","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"4ad0239e-3ac2-41b7-8555-30ca8a335778","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-5O","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"2dc9bea5-2646-4325-9624-c0751190c3f6","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-6L","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"18881c94-a845-442c-94eb-8538ac7b1aec","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇲🇴 澳门NO.2","type":"vmess","server":"xdd.dashuai.cyou","port":45051,"cipher":"auto","uuid":"fcc338ed-d213-4952-ab5b-0a1e6d5400e4","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇰🇷 韩国-三网优化2-2J","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"a385dac2-e55b-4b49-bef4-8b88de50db32","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-7R","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"57652713-c6a9-4300-a747-d586ac2bbea1","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇯🇵 日本NO.1","type":"vmess","server":"haa.dashuai.cyou","port":45056,"cipher":"auto","uuid":"fcc338ed-d213-4952-ab5b-0a1e6d5400e4","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇰🇷 韩国-三网优化2-1x","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"661fa6f4-4081-4838-be38-8d1cd11360d9","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-6A","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"828872b3-d3a1-41af-a692-a4f246b93073","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-2W","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"195dad89-8ac8-4088-b340-cd66d6543bbc","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-4R","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"6092ff37-0419-416d-a4b5-d718d8c933dc","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-3x","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"ceb58572-1db2-4e2c-a78d-b50a586ec563","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸 美国-拉斯维加斯专线2-1K","type":"vmess","server":"m001.mmzhk.website","port":8080,"cipher":"auto","uuid":"aaa3f836-db3f-46ec-aeaf-41be73b3652e","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇭🇰 香港 IEPL专线NO1-1A","type":"vmess","server":"i.needss.top","port":20013,"cipher":"auto","uuid":"07b0dfc9-0d63-4e89-8ffa-4a890bb4ef93","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇸🇬 新加坡-1G","type":"vmess","server":"m002.mmzhk.website","port":8080,"cipher":"auto","uuid":"e1f63425-6f04-468c-89b3-a3dfe17dd75f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇰🇷 韩国-三网优化2-7x","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"73795de5-62c7-4409-92ed-4c5f63507685","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇭🇰 香港NO.1","type":"vmess","server":"haa.dashuai.cyou","port":45050,"cipher":"auto","uuid":"fcc338ed-d213-4952-ab5b-0a1e6d5400e4","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇰🇷 韩国-三网优化2-8M","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"9fa47b94-9b12-4682-b2a4-b4434409ab55","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国 IEPL专线NO1-1A","type":"vmess","server":"i.needss.top","port":20021,"cipher":"auto","uuid":"07b0dfc9-0d63-4e89-8ffa-4a890bb4ef93","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇺🇸 美国-拉斯维加斯专线2-1N","type":"vmess","server":"m001.mmzhk.website","port":8080,"cipher":"auto","uuid":"e7a678a0-8b87-4183-b07c-5c6a8052cb5b","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇰🇷 韩国-三网优化2-2N","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"54a1cff3-ddfd-4a8d-b9a2-e77a7e6bf9d9","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇷🇺 莫斯科专线-1C","type":"vmess","server":"xr002.louwangzhiyu.xyz","port":30000,"cipher":"auto","uuid":"16da842a-acb5-4c3e-97d7-74542f509196","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇺🇸 美国-拉斯维加斯专线2-1G","type":"vmess","server":"m001.mmzhk.website","port":8080,"cipher":"auto","uuid":"e1f63425-6f04-468c-89b3-a3dfe17dd75f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇰🇷 韩国-三网优化2-6T","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"cc8cdade-9bb0-4c70-81ce-efb32ed203a5","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-1C","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"4c3ac1e5-df71-443b-b575-d1bb3e207b1c","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-5A","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"2c8b5f0a-f672-433b-82eb-1f40c9a5f642","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-8B","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"08ecc02b-5d65-48b7-9c1a-bd5d8ad097d3","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇭 瑞士专线-1C","type":"vmess","server":"xr005.louwangzhiyu.xyz","port":8080,"cipher":"auto","uuid":"16da842a-acb5-4c3e-97d7-74542f509196","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇰🇷 韩国-三网优化2-2O","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"fe0c5bf0-06e5-4da9-98ea-271bde463472","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-3O","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"6ad20ded-abc8-4ac8-bddb-86fd9efcc3c4","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-4I","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"25706b89-a0b4-4fe1-8683-81c4a6afe93b","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-6Y","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"7feb1662-be18-422f-8b74-62f8f636ed2f","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-6K","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"18c6bf08-2373-4df1-9e19-872fbd0527ae","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-2x","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"3106da4f-d3fa-4008-8dd6-21ff4f1b362a","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-5R","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"6a45296d-7865-484d-928b-153d1e654b3a","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇭🇰 香港","type":"vmess","server":"xg.dashuai.cyou","port":19901,"cipher":"auto","uuid":"fcc338ed-d213-4952-ab5b-0a1e6d5400e4","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇰🇷 韩国-三网优化2-6P","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"c02d8be9-999c-4159-b395-4edfa1216bb5","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-7H","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"2e399eba-8aad-405c-89a0-73910a7d17e8","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-4O","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"666f0ad4-39ee-447d-8b31-fd29f037909f","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-7Z","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"b581d282-ab6b-41fa-b2b2-387affa90be6","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸 美国 IEPL专线NO1-1B","type":"vmess","server":"i.needss.top","port":54770,"cipher":"auto","uuid":"c336152e-9ef8-4126-9335-f81e9b4cbe3a","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇷🇺 莫斯科专线-1O","type":"vmess","server":"xr002.louwangzhiyu.xyz","port":30000,"cipher":"auto","uuid":"21c3e3f3-4887-4983-b541-c3b5afc98836","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇸🇬 新加坡-1H","type":"vmess","server":"m002.mmzhk.website","port":8080,"cipher":"auto","uuid":"d0ff8a9d-444f-4f5a-a4c0-17df434fe615","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇰🇷 韩国-三网优化2-4E","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"63f0490a-c953-4ddf-bd4c-788f1049141b","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-8D","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"ddfdbee2-a3a5-4cb0-84f8-4eccbd652043","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-5K","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"3a8eed4e-72f4-40d3-b6cf-535eeb7f44c0","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-6G","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"b5f8aba8-09ab-41ff-9487-6b6d95530310","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇬🇧 伦敦专线-1I","type":"vmess","server":"xr004.louwangzhiyu.xyz","port":30000,"cipher":"auto","uuid":"dca01f7a-3105-4ab7-80c5-bd3158fdadd0","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇹🇼 台湾 IEPL专线NO1-1B","type":"vmess","server":"i.needss.top","port":52103,"cipher":"auto","uuid":"c336152e-9ef8-4126-9335-f81e9b4cbe3a","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇰🇷 韩国-三网优化2-4P","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"8165a6af-970f-4e7f-95f9-50b1207e9a4c","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇭 瑞士专线-1G","type":"vmess","server":"xr005.louwangzhiyu.xyz","port":8080,"cipher":"auto","uuid":"e1f63425-6f04-468c-89b3-a3dfe17dd75f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇰🇷 韩国-三网优化2-7J","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"de3ddea0-8481-46a4-904c-b21c4e8b86ca","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-8C","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"b95f19c6-54d5-400b-97d3-3d8c1edc5a27","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇬🇧 伦敦专线-1D","type":"vmess","server":"xr004.louwangzhiyu.xyz","port":30000,"cipher":"auto","uuid":"b54e6bc4-5e3f-45a3-94bf-0920d45781c5","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇰🇷 韩国-三网优化2-6S","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"86b45ea3-09e1-4558-a0ff-1d523933fdb1","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇬🇧 伦敦专线-1B","type":"vmess","server":"xr004.louwangzhiyu.xyz","port":30000,"cipher":"auto","uuid":"196c00ca-786e-4d73-85e8-6dd29d40342e","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇫🇷 法国 CM 隧道NO1-1B","type":"vmess","server":"sh3.needss.top","port":52108,"cipher":"auto","uuid":"c336152e-9ef8-4126-9335-f81e9b4cbe3a","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇰🇷 韩国-三网优化2-2Y","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"bd4cc043-9f47-4642-8456-964ba02c77c6","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸 美国NO.1","type":"vmess","server":"haa.dashuai.cyou","port":45052,"cipher":"auto","uuid":"fcc338ed-d213-4952-ab5b-0a1e6d5400e4","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇰🇷 韩国-三网优化2-4K","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"9390bdf7-1477-4347-a21c-5e108ae8fec3","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇦 加拿大1","type":"vmess","server":"haa.dashuai.cyou","port":45064,"cipher":"auto","uuid":"fcc338ed-d213-4952-ab5b-0a1e6d5400e4","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇺🇸 美国-拉斯维加斯专线2-1A","type":"vmess","server":"m001.mmzhk.website","port":8080,"cipher":"auto","uuid":"140c0ff3-9b2d-43ab-bafd-fa7fe8cfb42c","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇬🇧 英国 IEPL专线NO1-1A","type":"vmess","server":"sh3.needss.top","port":54774,"cipher":"auto","uuid":"07b0dfc9-0d63-4e89-8ffa-4a890bb4ef93","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇰🇷 韩国-三网优化2-1Q","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"4f401756-e9d2-48f4-b2f2-1ca8986b4587","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-2Z","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"8b5fdbfd-713e-4bab-a99d-22305e8c5f96","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-1E","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"ad62f7d0-43f7-4a2a-a774-96dc0426770c","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-2L","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"2498f33e-bfd3-4b1a-b906-541ed54e3c04","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇭 瑞士专线-1D","type":"vmess","server":"xr005.louwangzhiyu.xyz","port":8080,"cipher":"auto","uuid":"b54e6bc4-5e3f-45a3-94bf-0920d45781c5","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇰🇷 韩国-三网优化2-3S","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"2d8f8ca7-a9c8-4e26-b4e7-9a435e4ab350","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-5N","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"6038b2d0-c1a1-4f42-bf23-efe75bfbe7df","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇸🇬 新加坡-1O","type":"vmess","server":"m002.mmzhk.website","port":8080,"cipher":"auto","uuid":"21c3e3f3-4887-4983-b541-c3b5afc98836","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇬🇧 伦敦专线-1C","type":"vmess","server":"xr004.louwangzhiyu.xyz","port":30000,"cipher":"auto","uuid":"16da842a-acb5-4c3e-97d7-74542f509196","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇸🇪 瑞典 IEPL专线NO1-1A","type":"vmess","server":"i.needss.top","port":31001,"cipher":"auto","uuid":"07b0dfc9-0d63-4e89-8ffa-4a890bb4ef93","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇺🇸 美国-拉斯维加斯专线2-1O","type":"vmess","server":"m001.mmzhk.website","port":8080,"cipher":"auto","uuid":"21c3e3f3-4887-4983-b541-c3b5afc98836","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇰🇷 韩国-三网优化2-5J","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"c9159cde-529f-4686-9b78-ff0a7a21e909","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-2A","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"8e3b3ebb-05d4-460e-89be-ef143b2de48a","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇬🇧 伦敦专线-1A","type":"vmess","server":"xr004.louwangzhiyu.xyz","port":30000,"cipher":"auto","uuid":"140c0ff3-9b2d-43ab-bafd-fa7fe8cfb42c","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇰🇷 韩国-三网优化2-3G","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"5448ccc6-1c24-4770-bf3d-ca5a57b43888","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-5F","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"d373d90a-f3d6-492f-b845-e827a5ecae5f","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇸🇬 新加坡 IEPL专线NO3-1B","type":"vmess","server":"i.needss.top","port":44412,"cipher":"auto","uuid":"c336152e-9ef8-4126-9335-f81e9b4cbe3a","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇰🇷 韩国-三网优化2-5V","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"c24e3b90-5c3f-4c92-95d9-936210253987","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇵🇭 菲律宾 IEPL专线NO1-1B","type":"vmess","server":"i.needss.top","port":20019,"cipher":"auto","uuid":"c336152e-9ef8-4126-9335-f81e9b4cbe3a","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇷🇺 莫斯科专线-1B","type":"vmess","server":"xr002.louwangzhiyu.xyz","port":30000,"cipher":"auto","uuid":"196c00ca-786e-4d73-85e8-6dd29d40342e","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇸🇬 新加坡-1E","type":"vmess","server":"m002.mmzhk.website","port":8080,"cipher":"auto","uuid":"09c2a9db-b133-417e-910a-066ec3f35930","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇰🇷 韩国-三网优化2-2V","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"8aa763bd-bae2-4be8-96f6-35e1f26a1faf","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇷🇺 莫斯科专线-1H","type":"vmess","server":"xr002.louwangzhiyu.xyz","port":30000,"cipher":"auto","uuid":"d0ff8a9d-444f-4f5a-a4c0-17df434fe615","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇰🇷 韩国-三网优化2-7F","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"8b09aedf-ba0b-474d-88ec-4f7212dec46d","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸 美国-拉斯维加斯专线2-1C","type":"vmess","server":"m001.mmzhk.website","port":8080,"cipher":"auto","uuid":"16da842a-acb5-4c3e-97d7-74542f509196","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇰🇷 韩国-三网优化2-3R","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"0583ea1a-e919-44d3-b878-3532869dd22a","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸 美国-拉斯维加斯专线2-1H","type":"vmess","server":"m001.mmzhk.website","port":8080,"cipher":"auto","uuid":"d0ff8a9d-444f-4f5a-a4c0-17df434fe615","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇮🇹 意大利 IEPL专线NO1-1B","type":"vmess","server":"i.needss.top","port":33322,"cipher":"auto","uuid":"c336152e-9ef8-4126-9335-f81e9b4cbe3a","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇰🇷 韩国-三网优化2-1W","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"4f429f58-0b7f-4024-96f1-384b9653757a","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇸🇬 新加坡 IEPL专线NO3-1A","type":"vmess","server":"i.needss.top","port":44412,"cipher":"auto","uuid":"07b0dfc9-0d63-4e89-8ffa-4a890bb4ef93","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇰🇷 韩国-三网优化2-1D","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"a6c73c0b-9350-4fe1-9001-742af0141bd5","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇯🇵 日本 IEPL专线NO1-1B","type":"vmess","server":"i.needss.top","port":20017,"cipher":"auto","uuid":"c336152e-9ef8-4126-9335-f81e9b4cbe3a","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇫🇷 法国1","type":"vmess","server":"haa.dashuai.cyou","port":45072,"cipher":"auto","uuid":"fcc338ed-d213-4952-ab5b-0a1e6d5400e4","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇺🇸 美国NO.2","type":"vmess","server":"xdd.dashuai.cyou","port":45053,"cipher":"auto","uuid":"fcc338ed-d213-4952-ab5b-0a1e6d5400e4","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇺🇸 美国-拉斯维加斯专线2-1P","type":"vmess","server":"m001.mmzhk.website","port":8080,"cipher":"auto","uuid":"fb5cc4bf-5220-4f14-a228-717c57be890f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇰🇷 韩国-三网优化2-2K","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"f790062a-6ae2-43d5-87cf-613ea7f45ce0","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-7O","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"330d59f6-f60a-4f68-b309-2fe3999ff69a","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇭 瑞士专线-1L","type":"vmess","server":"xr005.louwangzhiyu.xyz","port":8080,"cipher":"auto","uuid":"990fe0ac-8741-4fd6-be1c-91e339cfb64f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇷🇺 莫斯科专线-1I","type":"vmess","server":"xr002.louwangzhiyu.xyz","port":30000,"cipher":"auto","uuid":"dca01f7a-3105-4ab7-80c5-bd3158fdadd0","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇰🇷 韩国-三网优化2-1N","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"eea8e86e-67e4-4f21-9944-4ad0e1dac248","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-6Z","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"0274d660-85d3-428f-844c-ba9729a6a621","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-1J","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"12662105-dbf7-4d5e-bed2-669c359e8144","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇷🇺 莫斯科专线-1N","type":"vmess","server":"xr002.louwangzhiyu.xyz","port":30000,"cipher":"auto","uuid":"e7a678a0-8b87-4183-b07c-5c6a8052cb5b","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇬🇧 伦敦专线-1O","type":"vmess","server":"xr004.louwangzhiyu.xyz","port":30000,"cipher":"auto","uuid":"21c3e3f3-4887-4983-b541-c3b5afc98836","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇷🇺 莫斯科专线-1K","type":"vmess","server":"xr002.louwangzhiyu.xyz","port":30000,"cipher":"auto","uuid":"aaa3f836-db3f-46ec-aeaf-41be73b3652e","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇩🇪 德国 IEPL专线NO1-1B","type":"vmess","server":"sh3.needss.top","port":54787,"cipher":"auto","uuid":"c336152e-9ef8-4126-9335-f81e9b4cbe3a","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇰🇷 韩国-三网优化2-6x","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"3279d8b9-0ee6-4708-a3c2-1ab8f38763b5","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-3J","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"086aac32-9a32-4770-8518-b48905d1e55a","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-6W","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"70203d44-7d40-4e19-a0ea-b17cd0c35471","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-8A","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"2cb2d85b-909f-4f4d-90f0-f8c452d6fcd0","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇯🇵 日本 IEPL专线NO1-1A","type":"vmess","server":"i.needss.top","port":20017,"cipher":"auto","uuid":"07b0dfc9-0d63-4e89-8ffa-4a890bb4ef93","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇺🇸 美国-拉斯维加斯专线2-1L","type":"vmess","server":"m001.mmzhk.website","port":8080,"cipher":"auto","uuid":"990fe0ac-8741-4fd6-be1c-91e339cfb64f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇬🇧 伦敦专线-1P","type":"vmess","server":"xr004.louwangzhiyu.xyz","port":30000,"cipher":"auto","uuid":"fb5cc4bf-5220-4f14-a228-717c57be890f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇰🇷 韩国-三网优化2-2I","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"c0e66902-a423-43be-8119-1f7842695635","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇮🇳 印度2","type":"vmess","server":"xdd.dashuai.cyou","port":45073,"cipher":"auto","uuid":"fcc338ed-d213-4952-ab5b-0a1e6d5400e4","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇸🇬 新加坡02-V4-流媒体","type":"vmess","server":"cf.hy2.one","port":2052,"cipher":"auto","uuid":"eaa405e1-8023-4758-8c35-dc59126963b0","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/0"}}
+  - {"name":"🇨🇭 瑞士专线-1I","type":"vmess","server":"xr005.louwangzhiyu.xyz","port":8080,"cipher":"auto","uuid":"dca01f7a-3105-4ab7-80c5-bd3158fdadd0","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇺🇸 美国-拉斯维加斯专线2-1I","type":"vmess","server":"m001.mmzhk.website","port":8080,"cipher":"auto","uuid":"dca01f7a-3105-4ab7-80c5-bd3158fdadd0","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/xyz"}}
+  - {"name":"🇰🇷 韩国-三网优化2-8H","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"6a0680c5-3eee-40f0-a72d-d6f00ec70568","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷 韩国-三网优化2-4S","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"fe2bbed7-393e-45df-b3c1-a77808a8c91d","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇬🇧 英国 IEPL专线NO1-1B","type":"vmess","server":"sh3.needss.top","port":54774,"cipher":"auto","uuid":"c336152e-9ef8-4126-9335-f81e9b4cbe3a","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇰🇷 韩国-三网优化2-3W","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"3081fcf0-afe5-4742-b5e0-8218066966e6","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇦 加拿大2","type":"vmess","server":"xdd.dashuai.cyou","port":45065,"cipher":"auto","uuid":"fcc338ed-d213-4952-ab5b-0a1e6d5400e4","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇰🇷 韩国-三网优化2-4x","type":"trojan","server":"kr-qingyun.dwyun.me","port":44732,"udp":true,"password":"b3ecf224-2af5-434c-85cf-1581f668b4c9","sni":"kr-qingyun.dwyun.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇸🇬 新加坡05极速节点|油管速度优化","type":"vmess","server":"yx.sulink.one","port":80,"cipher":"auto","uuid":"4c3b21e4-9e62-467c-aef7-8dcb629323cd","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - 🔯 故障转移
       - DIRECT
-      - BR-2
-      - 🇨🇦 CA-1
-      - 🇨🇦 CA-2
-      - 🇨🇦 CA-3
-      - 🇨🇦 CA-4
-      - 🇨🇳 TW-1
-      - 🇨🇳 TW-2
-      - 🇨🇳 TW-3
-      - 🇩🇪 DE-1
-      - 🇩🇪 DE-2
-      - 🇫🇷 FR-1
-      - 🇫🇷 FR-2
-      - 🇫🇷 FR-3
-      - 🇬🇧 GB-2
-      - 🇭🇰 HK-1
-      - 🇭🇰 HK-2
-      - 🇭🇰 HK-3
-      - 🇭🇰 HK-4
-      - 🇭🇰 HK-5
-      - 🇭🇰 HK-6
-      - 🇯🇵 JP-1
-      - 🇰🇷 KR-1
-      - 🇰🇷 KR-2
-      - 🇰🇷 KR-3
-      - 🇰🇷 KR-4
-      - 🇰🇷 KR-5
-      - 🇰🇷 KR-6
-      - 🇸🇬 SG-2
-      - 🇸🇬 SG-3
-      - 🇸🇬 SG-4
-      - 🇺🇸 US-16
-      - 🇺🇸 US-17
-      - 🇺🇸 US-18
-      - 🇺🇸 US-19
-      - 🇺🇸 US-20
-      - 🇺🇸 US-21
-      - 🇺🇸 US-22
-      - 🇺🇸 US-23
-      - 🇺🇸 US-24
-      - 🇺🇸 US-25
+      - 🇰🇷 韩国-三网优化2-5x
+      - 🇰🇷 韩国-三网优化2-4Z
+      - 🇰🇷 韩国-三网优化2-6Q
+      - 🇰🇷 韩国-三网优化2-6F
+      - 🇰🇷 韩国-三网优化2-7K
+      - 🇰🇷 韩国-三网优化2-4W
+      - 🇰🇷 韩国-三网优化2-5E
+      - 🇰🇷 韩国-三网优化2-2M
+      - 🇸🇪 瑞典 IEPL专线NO1-1B
+      - 🇰🇷 韩国-三网优化2-1B
+      - 🇰🇷 韩国-三网优化2-2F
+      - 🇸🇬 新加坡 IEPL专线NO1-1A
+      - 🇰🇷 韩国-三网优化2-5H
+      - 🇬🇧 伦敦专线-1H
+      - 🇰🇷 韩国-三网优化2-2E
+      - 🇰🇷 韩国-三网优化2-4T
+      - 🇷🇺 莫斯科专线-1P
+      - 🇰🇷 韩国-三网优化2-1F
+      - 🇸🇬 新加坡-1J
+      - 🇰🇷 韩国-三网优化2-6M
+      - 🇰🇷 韩国-三网优化2-3T
+      - 🇨🇭 瑞士专线-1O
+      - 🇰🇷 韩国-三网优化2-2R
+      - 🇨🇦 加拿大 IEPL专线NO1-1B
+      - 🇰🇷 韩国-三网优化2-2H
+      - 🇬🇧 伦敦专线-1G
+      - 🇰🇷 韩国-三网优化2-4M
+      - 🇬🇧 伦敦专线-1F
+      - 🇰🇷 韩国-三网优化2-1H
+      - 🇰🇷 韩国-三网优化2-8G
+      - 🇰🇷 韩国-三网优化2-7Y
+      - 🇰🇷 韩国-三网优化2-6B
+      - 🇰🇷 韩国-三网优化2-1L
+      - 🇸🇬 新加坡-1K
+      - 🇷🇺 莫斯科专线-1L
+      - 🇰🇷 韩国-三网优化2-8L
+      - 🇰🇷 韩国-三网优化2-3D
+      - 🇸🇬 新加坡-1F
+      - 🇰🇷 韩国-三网优化2-6U
+      - 🇰🇷 韩国-三网优化2-2G
+      - 🇷🇺 俄罗斯 IEPL专线NO1-1B
+      - 🇰🇷 韩国-三网优化2-7L
+      - 🇰🇷 韩国-三网优化2-7M
+      - 🇰🇷 韩国-三网优化2-6C
+      - 🇰🇷 韩国-三网优化2-3P
+      - 🇰🇷 韩国-三网优化2-6O
+      - 🇺🇸 美国-拉斯维加斯专线2-1D
+      - 🇷🇺 莫斯科专线-1D
+      - 🇷🇺 莫斯科专线-1G
+      - 🇰🇷 韩国-三网优化2-7G
+      - 🇰🇷 韩国-三网优化2-1Z
+      - 🇰🇷 韩国-三网优化2-7D
+      - 🇨🇭 瑞士专线-1M
+      - 🇰🇷 韩国-三网优化2-6E
+      - 🇰🇷 韩国-三网优化2-5L
+      - 🇸🇬 新加坡-1I
+      - 🇸🇬 新加坡-1M
+      - 🇨🇦 加拿大 IEPL专线NO1-1A
+      - 🇰🇷 韩国-三网优化2-1M
+      - 🇰🇷 韩国-三网优化2-1G
+      - 🇰🇷 韩国-三网优化2-4Y
+      - 🇰🇷 韩国-三网优化2-3A
+      - 🇰🇷 韩国-三网优化2-6N
+      - 🇺🇸 美国-拉斯维加斯专线2-1F
+      - 🇰🇷 韩国-三网优化2-7P
+      - 🇰🇷 韩国-三网优化2-6D
+      - 🇰🇷 韩国-三网优化2-3F
+      - 🇸🇬 新加坡-1L
+      - 🇰🇷 韩国-三网优化2-6J
+      - 🇫🇷 法国2
+      - 🇰🇷 韩国-三网优化2-4Q
+      - 🇨🇭 瑞士专线-1A
+      - 🇰🇷 韩国-三网优化2-1I
+      - 🇰🇷 韩国-三网优化2-4L
+      - 🇦🇺 澳大利亚原生1
+      - 🇰🇷 韩国-三网优化2-5W
+      - 🇷🇺 莫斯科专线-1A
+      - 🇰🇷 韩国-三网优化2-6I
+      - 🇰🇷 韩国-三网优化2-3H
+      - 🇰🇷 韩国-三网优化2-8F
+      - 🇰🇷 韩国-三网优化2-7E
+      - 🇰🇷 韩国-三网优化2-1O
+      - 🇷🇺 莫斯科专线-1M
+      - 🇦🇺 澳大利亚原生2
+      - 🇰🇷 韩国-三网优化2-3I
+      - 🇰🇷 韩国-三网优化2-2U
+      - 🇰🇷 韩国-三网优化2-8I
+      - 🇰🇷 韩国-三网优化2-2Q
+      - 🇷🇺 莫斯科专线-1J
+      - 🇨🇭 瑞士专线-1B
+      - 🇩🇪 德国 IEPL专线NO1-1A
+      - 🇰🇷 韩国-三网优化2-5Z
+      - 🇰🇷 韩国-三网优化2-4U
+      - 🇰🇷 韩国-三网优化2-3B
+      - 🇬🇧 伦敦专线-1K
+      - 🇰🇷 韩国-三网优化2-4G
+      - 🇰🇷 韩国-三网优化2-3V
+      - 🇰🇷 韩国-三网优化2-2D
+      - 🇰🇷 韩国-三网优化2-5B
+      - 🇰🇷 韩国-三网优化2-3N
+      - 🇰🇷 韩国-三网优化2-2S
+      - 🇬🇧 伦敦专线-1N
+      - 🇰🇷 韩国-三网优化2-8K
+      - 🇰🇷 韩国 IEPL专线NO1-1B
+      - 🇰🇷 韩国-三网优化2-3L
+      - 🇦🇺 澳大利亚 IEPL专线NO1-1B
+      - 🇰🇷 韩国-三网优化2-1K
+      - 🇮🇹 意大利 IEPL专线NO1-1A
+      - 🇸🇬 新加坡-1C
+      - 🇰🇷 韩国-三网优化2-2T
+      - 🇮🇳 印度1
+      - 🇸🇬 新加坡-1B
+      - 🇺🇸 美国 IEPL专线NO1-1A
+      - 🇰🇷 韩国-三网优化2-7T
+      - 🇳🇱 荷兰 CM 隧道NO1-1B
+      - 🇨🇭 瑞士专线-1P
+      - 🇹🇼 台湾 IEPL专线NO1-1A
+      - 🇸🇬 新加坡NO.2
+      - 🇹🇼 台湾02-3x-流媒体
+      - 🇰🇷 韩国-三网优化2-5M
+      - 🇺🇸 美国-拉斯维加斯专线2-1M
+      - 🇨🇭 瑞士专线-1E
+      - 🇰🇷 韩国-三网优化2-1U
+      - 🇸🇬 新加坡-1A
+      - 🇰🇷 韩国-三网优化2-4B
+      - 🇰🇷 韩国-三网优化2-5Q
+      - 🇰🇷 韩国-三网优化2-1Y
+      - 🇰🇷 韩国-三网优化2-7U
+      - 🇮🇩 印度尼西亚2
+      - 🇰🇷 韩国-三网优化2-7Q
+      - 🇰🇷 韩国-三网优化2-4N
+      - 🇰🇷 韩国-三网优化2-2C
+      - 🇨🇭 瑞士专线-1F
+      - 🇰🇷 韩国-三网优化2-3Q
+      - 🇰🇷 韩国-三网优化2-7W
+      - 🇰🇷 韩国-三网优化2-4C
+      - 🇸🇬 新加坡-1D
+      - 🇰🇷 韩国-三网优化2-4H
+      - 🇸🇬 新加坡-1P
+      - 🇰🇷 韩国-三网优化2-5I
+      - 🇰🇷 韩国-三网优化2-5P
+      - 🇰🇷 韩国-三网优化2-5T
+      - 🇰🇷 韩国-三网优化2-3Y
+      - 🇬🇧 伦敦专线-1E
+      - 🇮🇩 印度尼西亚1
+      - 🇰🇷 韩国-三网优化2-1A
+      - 🇺🇸 美国-拉斯维加斯专线2-1B
+      - 🇰🇷 韩国-三网优化2-8J
+      - 🇦🇺 澳大利亚 IEPL专线NO1-1A
+      - 🇰🇷 韩国-三网优化2-3C
+      - 🇬🇧 伦敦专线-1M
+      - 🇹🇼 台湾2
+      - 🇰🇷 韩国-三网优化2-4V
+      - 🇰🇷 韩国-三网优化2-7A
+      - 🇰🇷 韩国-三网优化2-5Y
+      - 🇰🇷 韩国-三网优化2-5D
+      - 🇰🇷 韩国-三网优化2-6H
+      - 🇰🇷 韩国-三网优化2-7S
+      - 🇰🇷 韩国-三网优化2-7N
+      - 🇯🇵 日本 IEPL专线NO3-1A
+      - 🇰🇷 韩国-三网优化2-1P
+      - 🇨🇭 瑞士专线-1H
+      - 🇬🇧 伦敦专线-1J
+      - 🇰🇷 韩国-三网优化2-5C
+      - 🇷🇺 莫斯科专线-1F
+      - 🇮🇳 印度 IEPL专线NO1-1B
+      - 🇨🇭 瑞士专线-1J
+      - 🇺🇸 美国-拉斯维加斯专线2-1E
+      - 🇰🇷 韩国-三网优化2-2P
+      - 🇬🇧 伦敦专线-1L
+      - 🇰🇷 韩国-三网优化2-8E
+      - 🇰🇷 韩国-三网优化2-5U
+      - 🇰🇷 韩国-三网优化2-6R
+      - 🇮🇳 印度 IEPL专线NO1-1A
+      - 🇰🇷 韩国-三网优化2-1S
+      - 🇷🇺 莫斯科专线-1E
+      - 🇰🇷 韩国-三网优化2-3U
+      - 🇰🇷 韩国-三网优化2-7V
+      - 🇮🇩 印尼 IEPL专线NO1-1A
+      - 🇰🇷 韩国-三网优化2-5G
+      - 🇰🇷 韩国-三网优化2-3M
+      - 🇵🇭 菲律宾 IEPL专线NO1-1A
+      - 🇰🇷 韩国-三网优化2-3K
+      - 🇰🇷 韩国-三网优化2-1V
+      - 🇰🇷 韩国-三网优化2-4F
+      - 🇸🇬 新加坡 IEPL专线NO1-1B
+      - 🇰🇷 韩国-三网优化2-7I
+      - 🇰🇷 韩国-三网优化2-4A
+      - 🇰🇷 韩国-三网优化2-1T
+      - 🇰🇷 韩国-三网优化2-3E
+      - 🇨🇭 瑞士专线-1K
+      - 🇦🇷 阿根廷 IEPL专线NO1-1B
+      - 🇰🇷 韩国-三网优化2-7C
+      - 🇳🇱 荷兰 CM 隧道NO1-1A
+      - 🇷🇺 俄罗斯 IEPL专线NO1-1A
+      - 🇫🇷 法国 CM 隧道NO1-1A
+      - 🇰🇷 韩国-三网优化2-3Z
+      - 🇦🇷 阿根廷 IEPL专线NO1-1A
+      - 🇰🇷 韩国-三网优化2-7B
+      - 🇸🇬 新加坡-1N
+      - 🇨🇭 瑞士专线-1N
+      - 🇰🇷 韩国-三网优化2-4J
+      - 🇮🇩 印尼 IEPL专线NO1-1B
+      - 🇯🇵 日本NO.2
+      - 🇸🇬 新加坡NO.1
+      - 🇭🇰 香港 IEPL专线NO1-1B
+      - 🇯🇵 日本 IEPL专线NO3-1B
+      - 🇰🇷 韩国-三网优化2-4D
+      - 🇰🇷 韩国-三网优化2-1R
+      - 🇺🇸 美国-拉斯维加斯专线2-1J
+      - 🇰🇷 韩国-三网优化2-2B
+      - 🇹🇼 台湾1
+      - 🇰🇷 韩国-三网优化2-5S
+      - 🇰🇷 韩国-三网优化2-6V
+      - 🇰🇷 韩国-三网优化2-5O
+      - 🇰🇷 韩国-三网优化2-6L
+      - 🇲🇴 澳门NO.2
+      - 🇰🇷 韩国-三网优化2-2J
+      - 🇰🇷 韩国-三网优化2-7R
+      - 🇯🇵 日本NO.1
+      - 🇰🇷 韩国-三网优化2-1x
+      - 🇰🇷 韩国-三网优化2-6A
+      - 🇰🇷 韩国-三网优化2-2W
+      - 🇰🇷 韩国-三网优化2-4R
+      - 🇰🇷 韩国-三网优化2-3x
+      - 🇺🇸 美国-拉斯维加斯专线2-1K
+      - 🇭🇰 香港 IEPL专线NO1-1A
+      - 🇸🇬 新加坡-1G
+      - 🇰🇷 韩国-三网优化2-7x
+      - 🇭🇰 香港NO.1
+      - 🇰🇷 韩国-三网优化2-8M
+      - 🇰🇷 韩国 IEPL专线NO1-1A
+      - 🇺🇸 美国-拉斯维加斯专线2-1N
+      - 🇰🇷 韩国-三网优化2-2N
+      - 🇷🇺 莫斯科专线-1C
+      - 🇺🇸 美国-拉斯维加斯专线2-1G
+      - 🇰🇷 韩国-三网优化2-6T
+      - 🇰🇷 韩国-三网优化2-1C
+      - 🇰🇷 韩国-三网优化2-5A
+      - 🇰🇷 韩国-三网优化2-8B
+      - 🇨🇭 瑞士专线-1C
+      - 🇰🇷 韩国-三网优化2-2O
+      - 🇰🇷 韩国-三网优化2-3O
+      - 🇰🇷 韩国-三网优化2-4I
+      - 🇰🇷 韩国-三网优化2-6Y
+      - 🇰🇷 韩国-三网优化2-6K
+      - 🇰🇷 韩国-三网优化2-2x
+      - 🇰🇷 韩国-三网优化2-5R
+      - 🇭🇰 香港
+      - 🇰🇷 韩国-三网优化2-6P
+      - 🇰🇷 韩国-三网优化2-7H
+      - 🇰🇷 韩国-三网优化2-4O
+      - 🇰🇷 韩国-三网优化2-7Z
+      - 🇺🇸 美国 IEPL专线NO1-1B
+      - 🇷🇺 莫斯科专线-1O
+      - 🇸🇬 新加坡-1H
+      - 🇰🇷 韩国-三网优化2-4E
+      - 🇰🇷 韩国-三网优化2-8D
+      - 🇰🇷 韩国-三网优化2-5K
+      - 🇰🇷 韩国-三网优化2-6G
+      - 🇬🇧 伦敦专线-1I
+      - 🇹🇼 台湾 IEPL专线NO1-1B
+      - 🇰🇷 韩国-三网优化2-4P
+      - 🇨🇭 瑞士专线-1G
+      - 🇰🇷 韩国-三网优化2-7J
+      - 🇰🇷 韩国-三网优化2-8C
+      - 🇬🇧 伦敦专线-1D
+      - 🇰🇷 韩国-三网优化2-6S
+      - 🇬🇧 伦敦专线-1B
+      - 🇫🇷 法国 CM 隧道NO1-1B
+      - 🇰🇷 韩国-三网优化2-2Y
+      - 🇺🇸 美国NO.1
+      - 🇰🇷 韩国-三网优化2-4K
+      - 🇨🇦 加拿大1
+      - 🇺🇸 美国-拉斯维加斯专线2-1A
+      - 🇬🇧 英国 IEPL专线NO1-1A
+      - 🇰🇷 韩国-三网优化2-1Q
+      - 🇰🇷 韩国-三网优化2-2Z
+      - 🇰🇷 韩国-三网优化2-1E
+      - 🇰🇷 韩国-三网优化2-2L
+      - 🇨🇭 瑞士专线-1D
+      - 🇰🇷 韩国-三网优化2-3S
+      - 🇰🇷 韩国-三网优化2-5N
+      - 🇸🇬 新加坡-1O
+      - 🇬🇧 伦敦专线-1C
+      - 🇸🇪 瑞典 IEPL专线NO1-1A
+      - 🇺🇸 美国-拉斯维加斯专线2-1O
+      - 🇰🇷 韩国-三网优化2-5J
+      - 🇰🇷 韩国-三网优化2-2A
+      - 🇬🇧 伦敦专线-1A
+      - 🇰🇷 韩国-三网优化2-3G
+      - 🇰🇷 韩国-三网优化2-5F
+      - 🇸🇬 新加坡 IEPL专线NO3-1B
+      - 🇰🇷 韩国-三网优化2-5V
+      - 🇵🇭 菲律宾 IEPL专线NO1-1B
+      - 🇷🇺 莫斯科专线-1B
+      - 🇸🇬 新加坡-1E
+      - 🇰🇷 韩国-三网优化2-2V
+      - 🇷🇺 莫斯科专线-1H
+      - 🇰🇷 韩国-三网优化2-7F
+      - 🇺🇸 美国-拉斯维加斯专线2-1C
+      - 🇰🇷 韩国-三网优化2-3R
+      - 🇺🇸 美国-拉斯维加斯专线2-1H
+      - 🇮🇹 意大利 IEPL专线NO1-1B
+      - 🇰🇷 韩国-三网优化2-1W
+      - 🇸🇬 新加坡 IEPL专线NO3-1A
+      - 🇰🇷 韩国-三网优化2-1D
+      - 🇯🇵 日本 IEPL专线NO1-1B
+      - 🇫🇷 法国1
+      - 🇺🇸 美国NO.2
+      - 🇺🇸 美国-拉斯维加斯专线2-1P
+      - 🇰🇷 韩国-三网优化2-2K
+      - 🇰🇷 韩国-三网优化2-7O
+      - 🇨🇭 瑞士专线-1L
+      - 🇷🇺 莫斯科专线-1I
+      - 🇰🇷 韩国-三网优化2-1N
+      - 🇰🇷 韩国-三网优化2-6Z
+      - 🇰🇷 韩国-三网优化2-1J
+      - 🇷🇺 莫斯科专线-1N
+      - 🇬🇧 伦敦专线-1O
+      - 🇷🇺 莫斯科专线-1K
+      - 🇩🇪 德国 IEPL专线NO1-1B
+      - 🇰🇷 韩国-三网优化2-6x
+      - 🇰🇷 韩国-三网优化2-3J
+      - 🇰🇷 韩国-三网优化2-6W
+      - 🇰🇷 韩国-三网优化2-8A
+      - 🇯🇵 日本 IEPL专线NO1-1A
+      - 🇺🇸 美国-拉斯维加斯专线2-1L
+      - 🇬🇧 伦敦专线-1P
+      - 🇰🇷 韩国-三网优化2-2I
+      - 🇮🇳 印度2
+      - 🇸🇬 新加坡02-V4-流媒体
+      - 🇨🇭 瑞士专线-1I
+      - 🇺🇸 美国-拉斯维加斯专线2-1I
+      - 🇰🇷 韩国-三网优化2-8H
+      - 🇰🇷 韩国-三网优化2-4S
+      - 🇬🇧 英国 IEPL专线NO1-1B
+      - 🇰🇷 韩国-三网优化2-3W
+      - 🇨🇦 加拿大2
+      - 🇰🇷 韩国-三网优化2-4x
+      - 🇸🇬 新加坡05极速节点|油管速度优化
   - name: 🔯 故障转移
     type: fallback
     url: https://www.gstatic.com/generate_204
     interval: 300
-    timeout: 2
+    timeout: 3
     packet_loss_detection:
     enabled: true
     threshold: 5
     check_interval: 60
     proxies:
-      - BR-2
-      - 🇨🇦 CA-1
-      - 🇨🇦 CA-2
-      - 🇨🇦 CA-3
-      - 🇨🇦 CA-4
-      - 🇨🇳 TW-1
-      - 🇨🇳 TW-2
-      - 🇨🇳 TW-3
-      - 🇩🇪 DE-1
-      - 🇩🇪 DE-2
-      - 🇫🇷 FR-1
-      - 🇫🇷 FR-2
-      - 🇫🇷 FR-3
-      - 🇬🇧 GB-2
-      - 🇭🇰 HK-1
-      - 🇭🇰 HK-2
-      - 🇭🇰 HK-3
-      - 🇭🇰 HK-4
-      - 🇭🇰 HK-5
-      - 🇭🇰 HK-6
-      - 🇯🇵 JP-1
-      - 🇰🇷 KR-1
-      - 🇰🇷 KR-2
-      - 🇰🇷 KR-3
-      - 🇰🇷 KR-4
-      - 🇰🇷 KR-5
-      - 🇰🇷 KR-6
-      - 🇸🇬 SG-2
-      - 🇸🇬 SG-3
-      - 🇸🇬 SG-4
-      - 🇺🇸 US-16
-      - 🇺🇸 US-17
-      - 🇺🇸 US-18
-      - 🇺🇸 US-19
-      - 🇺🇸 US-20
-      - 🇺🇸 US-21
-      - 🇺🇸 US-22
-      - 🇺🇸 US-23
-      - 🇺🇸 US-24
-      - 🇺🇸 US-25
+      - 🇰🇷 韩国-三网优化2-5x
+      - 🇰🇷 韩国-三网优化2-4Z
+      - 🇰🇷 韩国-三网优化2-6Q
+      - 🇰🇷 韩国-三网优化2-6F
+      - 🇰🇷 韩国-三网优化2-7K
+      - 🇰🇷 韩国-三网优化2-4W
+      - 🇰🇷 韩国-三网优化2-5E
+      - 🇰🇷 韩国-三网优化2-2M
+      - 🇸🇪 瑞典 IEPL专线NO1-1B
+      - 🇰🇷 韩国-三网优化2-1B
+      - 🇰🇷 韩国-三网优化2-2F
+      - 🇸🇬 新加坡 IEPL专线NO1-1A
+      - 🇰🇷 韩国-三网优化2-5H
+      - 🇬🇧 伦敦专线-1H
+      - 🇰🇷 韩国-三网优化2-2E
+      - 🇰🇷 韩国-三网优化2-4T
+      - 🇷🇺 莫斯科专线-1P
+      - 🇰🇷 韩国-三网优化2-1F
+      - 🇸🇬 新加坡-1J
+      - 🇰🇷 韩国-三网优化2-6M
+      - 🇰🇷 韩国-三网优化2-3T
+      - 🇨🇭 瑞士专线-1O
+      - 🇰🇷 韩国-三网优化2-2R
+      - 🇨🇦 加拿大 IEPL专线NO1-1B
+      - 🇰🇷 韩国-三网优化2-2H
+      - 🇬🇧 伦敦专线-1G
+      - 🇰🇷 韩国-三网优化2-4M
+      - 🇬🇧 伦敦专线-1F
+      - 🇰🇷 韩国-三网优化2-1H
+      - 🇰🇷 韩国-三网优化2-8G
+      - 🇰🇷 韩国-三网优化2-7Y
+      - 🇰🇷 韩国-三网优化2-6B
+      - 🇰🇷 韩国-三网优化2-1L
+      - 🇸🇬 新加坡-1K
+      - 🇷🇺 莫斯科专线-1L
+      - 🇰🇷 韩国-三网优化2-8L
+      - 🇰🇷 韩国-三网优化2-3D
+      - 🇸🇬 新加坡-1F
+      - 🇰🇷 韩国-三网优化2-6U
+      - 🇰🇷 韩国-三网优化2-2G
+      - 🇷🇺 俄罗斯 IEPL专线NO1-1B
+      - 🇰🇷 韩国-三网优化2-7L
+      - 🇰🇷 韩国-三网优化2-7M
+      - 🇰🇷 韩国-三网优化2-6C
+      - 🇰🇷 韩国-三网优化2-3P
+      - 🇰🇷 韩国-三网优化2-6O
+      - 🇺🇸 美国-拉斯维加斯专线2-1D
+      - 🇷🇺 莫斯科专线-1D
+      - 🇷🇺 莫斯科专线-1G
+      - 🇰🇷 韩国-三网优化2-7G
+      - 🇰🇷 韩国-三网优化2-1Z
+      - 🇰🇷 韩国-三网优化2-7D
+      - 🇨🇭 瑞士专线-1M
+      - 🇰🇷 韩国-三网优化2-6E
+      - 🇰🇷 韩国-三网优化2-5L
+      - 🇸🇬 新加坡-1I
+      - 🇸🇬 新加坡-1M
+      - 🇨🇦 加拿大 IEPL专线NO1-1A
+      - 🇰🇷 韩国-三网优化2-1M
+      - 🇰🇷 韩国-三网优化2-1G
+      - 🇰🇷 韩国-三网优化2-4Y
+      - 🇰🇷 韩国-三网优化2-3A
+      - 🇰🇷 韩国-三网优化2-6N
+      - 🇺🇸 美国-拉斯维加斯专线2-1F
+      - 🇰🇷 韩国-三网优化2-7P
+      - 🇰🇷 韩国-三网优化2-6D
+      - 🇰🇷 韩国-三网优化2-3F
+      - 🇸🇬 新加坡-1L
+      - 🇰🇷 韩国-三网优化2-6J
+      - 🇫🇷 法国2
+      - 🇰🇷 韩国-三网优化2-4Q
+      - 🇨🇭 瑞士专线-1A
+      - 🇰🇷 韩国-三网优化2-1I
+      - 🇰🇷 韩国-三网优化2-4L
+      - 🇦🇺 澳大利亚原生1
+      - 🇰🇷 韩国-三网优化2-5W
+      - 🇷🇺 莫斯科专线-1A
+      - 🇰🇷 韩国-三网优化2-6I
+      - 🇰🇷 韩国-三网优化2-3H
+      - 🇰🇷 韩国-三网优化2-8F
+      - 🇰🇷 韩国-三网优化2-7E
+      - 🇰🇷 韩国-三网优化2-1O
+      - 🇷🇺 莫斯科专线-1M
+      - 🇦🇺 澳大利亚原生2
+      - 🇰🇷 韩国-三网优化2-3I
+      - 🇰🇷 韩国-三网优化2-2U
+      - 🇰🇷 韩国-三网优化2-8I
+      - 🇰🇷 韩国-三网优化2-2Q
+      - 🇷🇺 莫斯科专线-1J
+      - 🇨🇭 瑞士专线-1B
+      - 🇩🇪 德国 IEPL专线NO1-1A
+      - 🇰🇷 韩国-三网优化2-5Z
+      - 🇰🇷 韩国-三网优化2-4U
+      - 🇰🇷 韩国-三网优化2-3B
+      - 🇬🇧 伦敦专线-1K
+      - 🇰🇷 韩国-三网优化2-4G
+      - 🇰🇷 韩国-三网优化2-3V
+      - 🇰🇷 韩国-三网优化2-2D
+      - 🇰🇷 韩国-三网优化2-5B
+      - 🇰🇷 韩国-三网优化2-3N
+      - 🇰🇷 韩国-三网优化2-2S
+      - 🇬🇧 伦敦专线-1N
+      - 🇰🇷 韩国-三网优化2-8K
+      - 🇰🇷 韩国 IEPL专线NO1-1B
+      - 🇰🇷 韩国-三网优化2-3L
+      - 🇦🇺 澳大利亚 IEPL专线NO1-1B
+      - 🇰🇷 韩国-三网优化2-1K
+      - 🇮🇹 意大利 IEPL专线NO1-1A
+      - 🇸🇬 新加坡-1C
+      - 🇰🇷 韩国-三网优化2-2T
+      - 🇮🇳 印度1
+      - 🇸🇬 新加坡-1B
+      - 🇺🇸 美国 IEPL专线NO1-1A
+      - 🇰🇷 韩国-三网优化2-7T
+      - 🇳🇱 荷兰 CM 隧道NO1-1B
+      - 🇨🇭 瑞士专线-1P
+      - 🇹🇼 台湾 IEPL专线NO1-1A
+      - 🇸🇬 新加坡NO.2
+      - 🇹🇼 台湾02-3x-流媒体
+      - 🇰🇷 韩国-三网优化2-5M
+      - 🇺🇸 美国-拉斯维加斯专线2-1M
+      - 🇨🇭 瑞士专线-1E
+      - 🇰🇷 韩国-三网优化2-1U
+      - 🇸🇬 新加坡-1A
+      - 🇰🇷 韩国-三网优化2-4B
+      - 🇰🇷 韩国-三网优化2-5Q
+      - 🇰🇷 韩国-三网优化2-1Y
+      - 🇰🇷 韩国-三网优化2-7U
+      - 🇮🇩 印度尼西亚2
+      - 🇰🇷 韩国-三网优化2-7Q
+      - 🇰🇷 韩国-三网优化2-4N
+      - 🇰🇷 韩国-三网优化2-2C
+      - 🇨🇭 瑞士专线-1F
+      - 🇰🇷 韩国-三网优化2-3Q
+      - 🇰🇷 韩国-三网优化2-7W
+      - 🇰🇷 韩国-三网优化2-4C
+      - 🇸🇬 新加坡-1D
+      - 🇰🇷 韩国-三网优化2-4H
+      - 🇸🇬 新加坡-1P
+      - 🇰🇷 韩国-三网优化2-5I
+      - 🇰🇷 韩国-三网优化2-5P
+      - 🇰🇷 韩国-三网优化2-5T
+      - 🇰🇷 韩国-三网优化2-3Y
+      - 🇬🇧 伦敦专线-1E
+      - 🇮🇩 印度尼西亚1
+      - 🇰🇷 韩国-三网优化2-1A
+      - 🇺🇸 美国-拉斯维加斯专线2-1B
+      - 🇰🇷 韩国-三网优化2-8J
+      - 🇦🇺 澳大利亚 IEPL专线NO1-1A
+      - 🇰🇷 韩国-三网优化2-3C
+      - 🇬🇧 伦敦专线-1M
+      - 🇹🇼 台湾2
+      - 🇰🇷 韩国-三网优化2-4V
+      - 🇰🇷 韩国-三网优化2-7A
+      - 🇰🇷 韩国-三网优化2-5Y
+      - 🇰🇷 韩国-三网优化2-5D
+      - 🇰🇷 韩国-三网优化2-6H
+      - 🇰🇷 韩国-三网优化2-7S
+      - 🇰🇷 韩国-三网优化2-7N
+      - 🇯🇵 日本 IEPL专线NO3-1A
+      - 🇰🇷 韩国-三网优化2-1P
+      - 🇨🇭 瑞士专线-1H
+      - 🇬🇧 伦敦专线-1J
+      - 🇰🇷 韩国-三网优化2-5C
+      - 🇷🇺 莫斯科专线-1F
+      - 🇮🇳 印度 IEPL专线NO1-1B
+      - 🇨🇭 瑞士专线-1J
+      - 🇺🇸 美国-拉斯维加斯专线2-1E
+      - 🇰🇷 韩国-三网优化2-2P
+      - 🇬🇧 伦敦专线-1L
+      - 🇰🇷 韩国-三网优化2-8E
+      - 🇰🇷 韩国-三网优化2-5U
+      - 🇰🇷 韩国-三网优化2-6R
+      - 🇮🇳 印度 IEPL专线NO1-1A
+      - 🇰🇷 韩国-三网优化2-1S
+      - 🇷🇺 莫斯科专线-1E
+      - 🇰🇷 韩国-三网优化2-3U
+      - 🇰🇷 韩国-三网优化2-7V
+      - 🇮🇩 印尼 IEPL专线NO1-1A
+      - 🇰🇷 韩国-三网优化2-5G
+      - 🇰🇷 韩国-三网优化2-3M
+      - 🇵🇭 菲律宾 IEPL专线NO1-1A
+      - 🇰🇷 韩国-三网优化2-3K
+      - 🇰🇷 韩国-三网优化2-1V
+      - 🇰🇷 韩国-三网优化2-4F
+      - 🇸🇬 新加坡 IEPL专线NO1-1B
+      - 🇰🇷 韩国-三网优化2-7I
+      - 🇰🇷 韩国-三网优化2-4A
+      - 🇰🇷 韩国-三网优化2-1T
+      - 🇰🇷 韩国-三网优化2-3E
+      - 🇨🇭 瑞士专线-1K
+      - 🇦🇷 阿根廷 IEPL专线NO1-1B
+      - 🇰🇷 韩国-三网优化2-7C
+      - 🇳🇱 荷兰 CM 隧道NO1-1A
+      - 🇷🇺 俄罗斯 IEPL专线NO1-1A
+      - 🇫🇷 法国 CM 隧道NO1-1A
+      - 🇰🇷 韩国-三网优化2-3Z
+      - 🇦🇷 阿根廷 IEPL专线NO1-1A
+      - 🇰🇷 韩国-三网优化2-7B
+      - 🇸🇬 新加坡-1N
+      - 🇨🇭 瑞士专线-1N
+      - 🇰🇷 韩国-三网优化2-4J
+      - 🇮🇩 印尼 IEPL专线NO1-1B
+      - 🇯🇵 日本NO.2
+      - 🇸🇬 新加坡NO.1
+      - 🇭🇰 香港 IEPL专线NO1-1B
+      - 🇯🇵 日本 IEPL专线NO3-1B
+      - 🇰🇷 韩国-三网优化2-4D
+      - 🇰🇷 韩国-三网优化2-1R
+      - 🇺🇸 美国-拉斯维加斯专线2-1J
+      - 🇰🇷 韩国-三网优化2-2B
+      - 🇹🇼 台湾1
+      - 🇰🇷 韩国-三网优化2-5S
+      - 🇰🇷 韩国-三网优化2-6V
+      - 🇰🇷 韩国-三网优化2-5O
+      - 🇰🇷 韩国-三网优化2-6L
+      - 🇲🇴 澳门NO.2
+      - 🇰🇷 韩国-三网优化2-2J
+      - 🇰🇷 韩国-三网优化2-7R
+      - 🇯🇵 日本NO.1
+      - 🇰🇷 韩国-三网优化2-1x
+      - 🇰🇷 韩国-三网优化2-6A
+      - 🇰🇷 韩国-三网优化2-2W
+      - 🇰🇷 韩国-三网优化2-4R
+      - 🇰🇷 韩国-三网优化2-3x
+      - 🇺🇸 美国-拉斯维加斯专线2-1K
+      - 🇭🇰 香港 IEPL专线NO1-1A
+      - 🇸🇬 新加坡-1G
+      - 🇰🇷 韩国-三网优化2-7x
+      - 🇭🇰 香港NO.1
+      - 🇰🇷 韩国-三网优化2-8M
+      - 🇰🇷 韩国 IEPL专线NO1-1A
+      - 🇺🇸 美国-拉斯维加斯专线2-1N
+      - 🇰🇷 韩国-三网优化2-2N
+      - 🇷🇺 莫斯科专线-1C
+      - 🇺🇸 美国-拉斯维加斯专线2-1G
+      - 🇰🇷 韩国-三网优化2-6T
+      - 🇰🇷 韩国-三网优化2-1C
+      - 🇰🇷 韩国-三网优化2-5A
+      - 🇰🇷 韩国-三网优化2-8B
+      - 🇨🇭 瑞士专线-1C
+      - 🇰🇷 韩国-三网优化2-2O
+      - 🇰🇷 韩国-三网优化2-3O
+      - 🇰🇷 韩国-三网优化2-4I
+      - 🇰🇷 韩国-三网优化2-6Y
+      - 🇰🇷 韩国-三网优化2-6K
+      - 🇰🇷 韩国-三网优化2-2x
+      - 🇰🇷 韩国-三网优化2-5R
+      - 🇭🇰 香港
+      - 🇰🇷 韩国-三网优化2-6P
+      - 🇰🇷 韩国-三网优化2-7H
+      - 🇰🇷 韩国-三网优化2-4O
+      - 🇰🇷 韩国-三网优化2-7Z
+      - 🇺🇸 美国 IEPL专线NO1-1B
+      - 🇷🇺 莫斯科专线-1O
+      - 🇸🇬 新加坡-1H
+      - 🇰🇷 韩国-三网优化2-4E
+      - 🇰🇷 韩国-三网优化2-8D
+      - 🇰🇷 韩国-三网优化2-5K
+      - 🇰🇷 韩国-三网优化2-6G
+      - 🇬🇧 伦敦专线-1I
+      - 🇹🇼 台湾 IEPL专线NO1-1B
+      - 🇰🇷 韩国-三网优化2-4P
+      - 🇨🇭 瑞士专线-1G
+      - 🇰🇷 韩国-三网优化2-7J
+      - 🇰🇷 韩国-三网优化2-8C
+      - 🇬🇧 伦敦专线-1D
+      - 🇰🇷 韩国-三网优化2-6S
+      - 🇬🇧 伦敦专线-1B
+      - 🇫🇷 法国 CM 隧道NO1-1B
+      - 🇰🇷 韩国-三网优化2-2Y
+      - 🇺🇸 美国NO.1
+      - 🇰🇷 韩国-三网优化2-4K
+      - 🇨🇦 加拿大1
+      - 🇺🇸 美国-拉斯维加斯专线2-1A
+      - 🇬🇧 英国 IEPL专线NO1-1A
+      - 🇰🇷 韩国-三网优化2-1Q
+      - 🇰🇷 韩国-三网优化2-2Z
+      - 🇰🇷 韩国-三网优化2-1E
+      - 🇰🇷 韩国-三网优化2-2L
+      - 🇨🇭 瑞士专线-1D
+      - 🇰🇷 韩国-三网优化2-3S
+      - 🇰🇷 韩国-三网优化2-5N
+      - 🇸🇬 新加坡-1O
+      - 🇬🇧 伦敦专线-1C
+      - 🇸🇪 瑞典 IEPL专线NO1-1A
+      - 🇺🇸 美国-拉斯维加斯专线2-1O
+      - 🇰🇷 韩国-三网优化2-5J
+      - 🇰🇷 韩国-三网优化2-2A
+      - 🇬🇧 伦敦专线-1A
+      - 🇰🇷 韩国-三网优化2-3G
+      - 🇰🇷 韩国-三网优化2-5F
+      - 🇸🇬 新加坡 IEPL专线NO3-1B
+      - 🇰🇷 韩国-三网优化2-5V
+      - 🇵🇭 菲律宾 IEPL专线NO1-1B
+      - 🇷🇺 莫斯科专线-1B
+      - 🇸🇬 新加坡-1E
+      - 🇰🇷 韩国-三网优化2-2V
+      - 🇷🇺 莫斯科专线-1H
+      - 🇰🇷 韩国-三网优化2-7F
+      - 🇺🇸 美国-拉斯维加斯专线2-1C
+      - 🇰🇷 韩国-三网优化2-3R
+      - 🇺🇸 美国-拉斯维加斯专线2-1H
+      - 🇮🇹 意大利 IEPL专线NO1-1B
+      - 🇰🇷 韩国-三网优化2-1W
+      - 🇸🇬 新加坡 IEPL专线NO3-1A
+      - 🇰🇷 韩国-三网优化2-1D
+      - 🇯🇵 日本 IEPL专线NO1-1B
+      - 🇫🇷 法国1
+      - 🇺🇸 美国NO.2
+      - 🇺🇸 美国-拉斯维加斯专线2-1P
+      - 🇰🇷 韩国-三网优化2-2K
+      - 🇰🇷 韩国-三网优化2-7O
+      - 🇨🇭 瑞士专线-1L
+      - 🇷🇺 莫斯科专线-1I
+      - 🇰🇷 韩国-三网优化2-1N
+      - 🇰🇷 韩国-三网优化2-6Z
+      - 🇰🇷 韩国-三网优化2-1J
+      - 🇷🇺 莫斯科专线-1N
+      - 🇬🇧 伦敦专线-1O
+      - 🇷🇺 莫斯科专线-1K
+      - 🇩🇪 德国 IEPL专线NO1-1B
+      - 🇰🇷 韩国-三网优化2-6x
+      - 🇰🇷 韩国-三网优化2-3J
+      - 🇰🇷 韩国-三网优化2-6W
+      - 🇰🇷 韩国-三网优化2-8A
+      - 🇯🇵 日本 IEPL专线NO1-1A
+      - 🇺🇸 美国-拉斯维加斯专线2-1L
+      - 🇬🇧 伦敦专线-1P
+      - 🇰🇷 韩国-三网优化2-2I
+      - 🇮🇳 印度2
+      - 🇸🇬 新加坡02-V4-流媒体
+      - 🇨🇭 瑞士专线-1I
+      - 🇺🇸 美国-拉斯维加斯专线2-1I
+      - 🇰🇷 韩国-三网优化2-8H
+      - 🇰🇷 韩国-三网优化2-4S
+      - 🇬🇧 英国 IEPL专线NO1-1B
+      - 🇰🇷 韩国-三网优化2-3W
+      - 🇨🇦 加拿大2
+      - 🇰🇷 韩国-三网优化2-4x
+      - 🇸🇬 新加坡05极速节点|油管速度优化
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -240,46 +1142,347 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - 🔯 故障转移
-      - BR-2
-      - 🇨🇦 CA-1
-      - 🇨🇦 CA-2
-      - 🇨🇦 CA-3
-      - 🇨🇦 CA-4
-      - 🇨🇳 TW-1
-      - 🇨🇳 TW-2
-      - 🇨🇳 TW-3
-      - 🇩🇪 DE-1
-      - 🇩🇪 DE-2
-      - 🇫🇷 FR-1
-      - 🇫🇷 FR-2
-      - 🇫🇷 FR-3
-      - 🇬🇧 GB-2
-      - 🇭🇰 HK-1
-      - 🇭🇰 HK-2
-      - 🇭🇰 HK-3
-      - 🇭🇰 HK-4
-      - 🇭🇰 HK-5
-      - 🇭🇰 HK-6
-      - 🇯🇵 JP-1
-      - 🇰🇷 KR-1
-      - 🇰🇷 KR-2
-      - 🇰🇷 KR-3
-      - 🇰🇷 KR-4
-      - 🇰🇷 KR-5
-      - 🇰🇷 KR-6
-      - 🇸🇬 SG-2
-      - 🇸🇬 SG-3
-      - 🇸🇬 SG-4
-      - 🇺🇸 US-16
-      - 🇺🇸 US-17
-      - 🇺🇸 US-18
-      - 🇺🇸 US-19
-      - 🇺🇸 US-20
-      - 🇺🇸 US-21
-      - 🇺🇸 US-22
-      - 🇺🇸 US-23
-      - 🇺🇸 US-24
-      - 🇺🇸 US-25
+      - 🇰🇷 韩国-三网优化2-5x
+      - 🇰🇷 韩国-三网优化2-4Z
+      - 🇰🇷 韩国-三网优化2-6Q
+      - 🇰🇷 韩国-三网优化2-6F
+      - 🇰🇷 韩国-三网优化2-7K
+      - 🇰🇷 韩国-三网优化2-4W
+      - 🇰🇷 韩国-三网优化2-5E
+      - 🇰🇷 韩国-三网优化2-2M
+      - 🇸🇪 瑞典 IEPL专线NO1-1B
+      - 🇰🇷 韩国-三网优化2-1B
+      - 🇰🇷 韩国-三网优化2-2F
+      - 🇸🇬 新加坡 IEPL专线NO1-1A
+      - 🇰🇷 韩国-三网优化2-5H
+      - 🇬🇧 伦敦专线-1H
+      - 🇰🇷 韩国-三网优化2-2E
+      - 🇰🇷 韩国-三网优化2-4T
+      - 🇷🇺 莫斯科专线-1P
+      - 🇰🇷 韩国-三网优化2-1F
+      - 🇸🇬 新加坡-1J
+      - 🇰🇷 韩国-三网优化2-6M
+      - 🇰🇷 韩国-三网优化2-3T
+      - 🇨🇭 瑞士专线-1O
+      - 🇰🇷 韩国-三网优化2-2R
+      - 🇨🇦 加拿大 IEPL专线NO1-1B
+      - 🇰🇷 韩国-三网优化2-2H
+      - 🇬🇧 伦敦专线-1G
+      - 🇰🇷 韩国-三网优化2-4M
+      - 🇬🇧 伦敦专线-1F
+      - 🇰🇷 韩国-三网优化2-1H
+      - 🇰🇷 韩国-三网优化2-8G
+      - 🇰🇷 韩国-三网优化2-7Y
+      - 🇰🇷 韩国-三网优化2-6B
+      - 🇰🇷 韩国-三网优化2-1L
+      - 🇸🇬 新加坡-1K
+      - 🇷🇺 莫斯科专线-1L
+      - 🇰🇷 韩国-三网优化2-8L
+      - 🇰🇷 韩国-三网优化2-3D
+      - 🇸🇬 新加坡-1F
+      - 🇰🇷 韩国-三网优化2-6U
+      - 🇰🇷 韩国-三网优化2-2G
+      - 🇷🇺 俄罗斯 IEPL专线NO1-1B
+      - 🇰🇷 韩国-三网优化2-7L
+      - 🇰🇷 韩国-三网优化2-7M
+      - 🇰🇷 韩国-三网优化2-6C
+      - 🇰🇷 韩国-三网优化2-3P
+      - 🇰🇷 韩国-三网优化2-6O
+      - 🇺🇸 美国-拉斯维加斯专线2-1D
+      - 🇷🇺 莫斯科专线-1D
+      - 🇷🇺 莫斯科专线-1G
+      - 🇰🇷 韩国-三网优化2-7G
+      - 🇰🇷 韩国-三网优化2-1Z
+      - 🇰🇷 韩国-三网优化2-7D
+      - 🇨🇭 瑞士专线-1M
+      - 🇰🇷 韩国-三网优化2-6E
+      - 🇰🇷 韩国-三网优化2-5L
+      - 🇸🇬 新加坡-1I
+      - 🇸🇬 新加坡-1M
+      - 🇨🇦 加拿大 IEPL专线NO1-1A
+      - 🇰🇷 韩国-三网优化2-1M
+      - 🇰🇷 韩国-三网优化2-1G
+      - 🇰🇷 韩国-三网优化2-4Y
+      - 🇰🇷 韩国-三网优化2-3A
+      - 🇰🇷 韩国-三网优化2-6N
+      - 🇺🇸 美国-拉斯维加斯专线2-1F
+      - 🇰🇷 韩国-三网优化2-7P
+      - 🇰🇷 韩国-三网优化2-6D
+      - 🇰🇷 韩国-三网优化2-3F
+      - 🇸🇬 新加坡-1L
+      - 🇰🇷 韩国-三网优化2-6J
+      - 🇫🇷 法国2
+      - 🇰🇷 韩国-三网优化2-4Q
+      - 🇨🇭 瑞士专线-1A
+      - 🇰🇷 韩国-三网优化2-1I
+      - 🇰🇷 韩国-三网优化2-4L
+      - 🇦🇺 澳大利亚原生1
+      - 🇰🇷 韩国-三网优化2-5W
+      - 🇷🇺 莫斯科专线-1A
+      - 🇰🇷 韩国-三网优化2-6I
+      - 🇰🇷 韩国-三网优化2-3H
+      - 🇰🇷 韩国-三网优化2-8F
+      - 🇰🇷 韩国-三网优化2-7E
+      - 🇰🇷 韩国-三网优化2-1O
+      - 🇷🇺 莫斯科专线-1M
+      - 🇦🇺 澳大利亚原生2
+      - 🇰🇷 韩国-三网优化2-3I
+      - 🇰🇷 韩国-三网优化2-2U
+      - 🇰🇷 韩国-三网优化2-8I
+      - 🇰🇷 韩国-三网优化2-2Q
+      - 🇷🇺 莫斯科专线-1J
+      - 🇨🇭 瑞士专线-1B
+      - 🇩🇪 德国 IEPL专线NO1-1A
+      - 🇰🇷 韩国-三网优化2-5Z
+      - 🇰🇷 韩国-三网优化2-4U
+      - 🇰🇷 韩国-三网优化2-3B
+      - 🇬🇧 伦敦专线-1K
+      - 🇰🇷 韩国-三网优化2-4G
+      - 🇰🇷 韩国-三网优化2-3V
+      - 🇰🇷 韩国-三网优化2-2D
+      - 🇰🇷 韩国-三网优化2-5B
+      - 🇰🇷 韩国-三网优化2-3N
+      - 🇰🇷 韩国-三网优化2-2S
+      - 🇬🇧 伦敦专线-1N
+      - 🇰🇷 韩国-三网优化2-8K
+      - 🇰🇷 韩国 IEPL专线NO1-1B
+      - 🇰🇷 韩国-三网优化2-3L
+      - 🇦🇺 澳大利亚 IEPL专线NO1-1B
+      - 🇰🇷 韩国-三网优化2-1K
+      - 🇮🇹 意大利 IEPL专线NO1-1A
+      - 🇸🇬 新加坡-1C
+      - 🇰🇷 韩国-三网优化2-2T
+      - 🇮🇳 印度1
+      - 🇸🇬 新加坡-1B
+      - 🇺🇸 美国 IEPL专线NO1-1A
+      - 🇰🇷 韩国-三网优化2-7T
+      - 🇳🇱 荷兰 CM 隧道NO1-1B
+      - 🇨🇭 瑞士专线-1P
+      - 🇹🇼 台湾 IEPL专线NO1-1A
+      - 🇸🇬 新加坡NO.2
+      - 🇹🇼 台湾02-3x-流媒体
+      - 🇰🇷 韩国-三网优化2-5M
+      - 🇺🇸 美国-拉斯维加斯专线2-1M
+      - 🇨🇭 瑞士专线-1E
+      - 🇰🇷 韩国-三网优化2-1U
+      - 🇸🇬 新加坡-1A
+      - 🇰🇷 韩国-三网优化2-4B
+      - 🇰🇷 韩国-三网优化2-5Q
+      - 🇰🇷 韩国-三网优化2-1Y
+      - 🇰🇷 韩国-三网优化2-7U
+      - 🇮🇩 印度尼西亚2
+      - 🇰🇷 韩国-三网优化2-7Q
+      - 🇰🇷 韩国-三网优化2-4N
+      - 🇰🇷 韩国-三网优化2-2C
+      - 🇨🇭 瑞士专线-1F
+      - 🇰🇷 韩国-三网优化2-3Q
+      - 🇰🇷 韩国-三网优化2-7W
+      - 🇰🇷 韩国-三网优化2-4C
+      - 🇸🇬 新加坡-1D
+      - 🇰🇷 韩国-三网优化2-4H
+      - 🇸🇬 新加坡-1P
+      - 🇰🇷 韩国-三网优化2-5I
+      - 🇰🇷 韩国-三网优化2-5P
+      - 🇰🇷 韩国-三网优化2-5T
+      - 🇰🇷 韩国-三网优化2-3Y
+      - 🇬🇧 伦敦专线-1E
+      - 🇮🇩 印度尼西亚1
+      - 🇰🇷 韩国-三网优化2-1A
+      - 🇺🇸 美国-拉斯维加斯专线2-1B
+      - 🇰🇷 韩国-三网优化2-8J
+      - 🇦🇺 澳大利亚 IEPL专线NO1-1A
+      - 🇰🇷 韩国-三网优化2-3C
+      - 🇬🇧 伦敦专线-1M
+      - 🇹🇼 台湾2
+      - 🇰🇷 韩国-三网优化2-4V
+      - 🇰🇷 韩国-三网优化2-7A
+      - 🇰🇷 韩国-三网优化2-5Y
+      - 🇰🇷 韩国-三网优化2-5D
+      - 🇰🇷 韩国-三网优化2-6H
+      - 🇰🇷 韩国-三网优化2-7S
+      - 🇰🇷 韩国-三网优化2-7N
+      - 🇯🇵 日本 IEPL专线NO3-1A
+      - 🇰🇷 韩国-三网优化2-1P
+      - 🇨🇭 瑞士专线-1H
+      - 🇬🇧 伦敦专线-1J
+      - 🇰🇷 韩国-三网优化2-5C
+      - 🇷🇺 莫斯科专线-1F
+      - 🇮🇳 印度 IEPL专线NO1-1B
+      - 🇨🇭 瑞士专线-1J
+      - 🇺🇸 美国-拉斯维加斯专线2-1E
+      - 🇰🇷 韩国-三网优化2-2P
+      - 🇬🇧 伦敦专线-1L
+      - 🇰🇷 韩国-三网优化2-8E
+      - 🇰🇷 韩国-三网优化2-5U
+      - 🇰🇷 韩国-三网优化2-6R
+      - 🇮🇳 印度 IEPL专线NO1-1A
+      - 🇰🇷 韩国-三网优化2-1S
+      - 🇷🇺 莫斯科专线-1E
+      - 🇰🇷 韩国-三网优化2-3U
+      - 🇰🇷 韩国-三网优化2-7V
+      - 🇮🇩 印尼 IEPL专线NO1-1A
+      - 🇰🇷 韩国-三网优化2-5G
+      - 🇰🇷 韩国-三网优化2-3M
+      - 🇵🇭 菲律宾 IEPL专线NO1-1A
+      - 🇰🇷 韩国-三网优化2-3K
+      - 🇰🇷 韩国-三网优化2-1V
+      - 🇰🇷 韩国-三网优化2-4F
+      - 🇸🇬 新加坡 IEPL专线NO1-1B
+      - 🇰🇷 韩国-三网优化2-7I
+      - 🇰🇷 韩国-三网优化2-4A
+      - 🇰🇷 韩国-三网优化2-1T
+      - 🇰🇷 韩国-三网优化2-3E
+      - 🇨🇭 瑞士专线-1K
+      - 🇦🇷 阿根廷 IEPL专线NO1-1B
+      - 🇰🇷 韩国-三网优化2-7C
+      - 🇳🇱 荷兰 CM 隧道NO1-1A
+      - 🇷🇺 俄罗斯 IEPL专线NO1-1A
+      - 🇫🇷 法国 CM 隧道NO1-1A
+      - 🇰🇷 韩国-三网优化2-3Z
+      - 🇦🇷 阿根廷 IEPL专线NO1-1A
+      - 🇰🇷 韩国-三网优化2-7B
+      - 🇸🇬 新加坡-1N
+      - 🇨🇭 瑞士专线-1N
+      - 🇰🇷 韩国-三网优化2-4J
+      - 🇮🇩 印尼 IEPL专线NO1-1B
+      - 🇯🇵 日本NO.2
+      - 🇸🇬 新加坡NO.1
+      - 🇭🇰 香港 IEPL专线NO1-1B
+      - 🇯🇵 日本 IEPL专线NO3-1B
+      - 🇰🇷 韩国-三网优化2-4D
+      - 🇰🇷 韩国-三网优化2-1R
+      - 🇺🇸 美国-拉斯维加斯专线2-1J
+      - 🇰🇷 韩国-三网优化2-2B
+      - 🇹🇼 台湾1
+      - 🇰🇷 韩国-三网优化2-5S
+      - 🇰🇷 韩国-三网优化2-6V
+      - 🇰🇷 韩国-三网优化2-5O
+      - 🇰🇷 韩国-三网优化2-6L
+      - 🇲🇴 澳门NO.2
+      - 🇰🇷 韩国-三网优化2-2J
+      - 🇰🇷 韩国-三网优化2-7R
+      - 🇯🇵 日本NO.1
+      - 🇰🇷 韩国-三网优化2-1x
+      - 🇰🇷 韩国-三网优化2-6A
+      - 🇰🇷 韩国-三网优化2-2W
+      - 🇰🇷 韩国-三网优化2-4R
+      - 🇰🇷 韩国-三网优化2-3x
+      - 🇺🇸 美国-拉斯维加斯专线2-1K
+      - 🇭🇰 香港 IEPL专线NO1-1A
+      - 🇸🇬 新加坡-1G
+      - 🇰🇷 韩国-三网优化2-7x
+      - 🇭🇰 香港NO.1
+      - 🇰🇷 韩国-三网优化2-8M
+      - 🇰🇷 韩国 IEPL专线NO1-1A
+      - 🇺🇸 美国-拉斯维加斯专线2-1N
+      - 🇰🇷 韩国-三网优化2-2N
+      - 🇷🇺 莫斯科专线-1C
+      - 🇺🇸 美国-拉斯维加斯专线2-1G
+      - 🇰🇷 韩国-三网优化2-6T
+      - 🇰🇷 韩国-三网优化2-1C
+      - 🇰🇷 韩国-三网优化2-5A
+      - 🇰🇷 韩国-三网优化2-8B
+      - 🇨🇭 瑞士专线-1C
+      - 🇰🇷 韩国-三网优化2-2O
+      - 🇰🇷 韩国-三网优化2-3O
+      - 🇰🇷 韩国-三网优化2-4I
+      - 🇰🇷 韩国-三网优化2-6Y
+      - 🇰🇷 韩国-三网优化2-6K
+      - 🇰🇷 韩国-三网优化2-2x
+      - 🇰🇷 韩国-三网优化2-5R
+      - 🇭🇰 香港
+      - 🇰🇷 韩国-三网优化2-6P
+      - 🇰🇷 韩国-三网优化2-7H
+      - 🇰🇷 韩国-三网优化2-4O
+      - 🇰🇷 韩国-三网优化2-7Z
+      - 🇺🇸 美国 IEPL专线NO1-1B
+      - 🇷🇺 莫斯科专线-1O
+      - 🇸🇬 新加坡-1H
+      - 🇰🇷 韩国-三网优化2-4E
+      - 🇰🇷 韩国-三网优化2-8D
+      - 🇰🇷 韩国-三网优化2-5K
+      - 🇰🇷 韩国-三网优化2-6G
+      - 🇬🇧 伦敦专线-1I
+      - 🇹🇼 台湾 IEPL专线NO1-1B
+      - 🇰🇷 韩国-三网优化2-4P
+      - 🇨🇭 瑞士专线-1G
+      - 🇰🇷 韩国-三网优化2-7J
+      - 🇰🇷 韩国-三网优化2-8C
+      - 🇬🇧 伦敦专线-1D
+      - 🇰🇷 韩国-三网优化2-6S
+      - 🇬🇧 伦敦专线-1B
+      - 🇫🇷 法国 CM 隧道NO1-1B
+      - 🇰🇷 韩国-三网优化2-2Y
+      - 🇺🇸 美国NO.1
+      - 🇰🇷 韩国-三网优化2-4K
+      - 🇨🇦 加拿大1
+      - 🇺🇸 美国-拉斯维加斯专线2-1A
+      - 🇬🇧 英国 IEPL专线NO1-1A
+      - 🇰🇷 韩国-三网优化2-1Q
+      - 🇰🇷 韩国-三网优化2-2Z
+      - 🇰🇷 韩国-三网优化2-1E
+      - 🇰🇷 韩国-三网优化2-2L
+      - 🇨🇭 瑞士专线-1D
+      - 🇰🇷 韩国-三网优化2-3S
+      - 🇰🇷 韩国-三网优化2-5N
+      - 🇸🇬 新加坡-1O
+      - 🇬🇧 伦敦专线-1C
+      - 🇸🇪 瑞典 IEPL专线NO1-1A
+      - 🇺🇸 美国-拉斯维加斯专线2-1O
+      - 🇰🇷 韩国-三网优化2-5J
+      - 🇰🇷 韩国-三网优化2-2A
+      - 🇬🇧 伦敦专线-1A
+      - 🇰🇷 韩国-三网优化2-3G
+      - 🇰🇷 韩国-三网优化2-5F
+      - 🇸🇬 新加坡 IEPL专线NO3-1B
+      - 🇰🇷 韩国-三网优化2-5V
+      - 🇵🇭 菲律宾 IEPL专线NO1-1B
+      - 🇷🇺 莫斯科专线-1B
+      - 🇸🇬 新加坡-1E
+      - 🇰🇷 韩国-三网优化2-2V
+      - 🇷🇺 莫斯科专线-1H
+      - 🇰🇷 韩国-三网优化2-7F
+      - 🇺🇸 美国-拉斯维加斯专线2-1C
+      - 🇰🇷 韩国-三网优化2-3R
+      - 🇺🇸 美国-拉斯维加斯专线2-1H
+      - 🇮🇹 意大利 IEPL专线NO1-1B
+      - 🇰🇷 韩国-三网优化2-1W
+      - 🇸🇬 新加坡 IEPL专线NO3-1A
+      - 🇰🇷 韩国-三网优化2-1D
+      - 🇯🇵 日本 IEPL专线NO1-1B
+      - 🇫🇷 法国1
+      - 🇺🇸 美国NO.2
+      - 🇺🇸 美国-拉斯维加斯专线2-1P
+      - 🇰🇷 韩国-三网优化2-2K
+      - 🇰🇷 韩国-三网优化2-7O
+      - 🇨🇭 瑞士专线-1L
+      - 🇷🇺 莫斯科专线-1I
+      - 🇰🇷 韩国-三网优化2-1N
+      - 🇰🇷 韩国-三网优化2-6Z
+      - 🇰🇷 韩国-三网优化2-1J
+      - 🇷🇺 莫斯科专线-1N
+      - 🇬🇧 伦敦专线-1O
+      - 🇷🇺 莫斯科专线-1K
+      - 🇩🇪 德国 IEPL专线NO1-1B
+      - 🇰🇷 韩国-三网优化2-6x
+      - 🇰🇷 韩国-三网优化2-3J
+      - 🇰🇷 韩国-三网优化2-6W
+      - 🇰🇷 韩国-三网优化2-8A
+      - 🇯🇵 日本 IEPL专线NO1-1A
+      - 🇺🇸 美国-拉斯维加斯专线2-1L
+      - 🇬🇧 伦敦专线-1P
+      - 🇰🇷 韩国-三网优化2-2I
+      - 🇮🇳 印度2
+      - 🇸🇬 新加坡02-V4-流媒体
+      - 🇨🇭 瑞士专线-1I
+      - 🇺🇸 美国-拉斯维加斯专线2-1I
+      - 🇰🇷 韩国-三网优化2-8H
+      - 🇰🇷 韩国-三网优化2-4S
+      - 🇬🇧 英国 IEPL专线NO1-1B
+      - 🇰🇷 韩国-三网优化2-3W
+      - 🇨🇦 加拿大2
+      - 🇰🇷 韩国-三网优化2-4x
+      - 🇸🇬 新加坡05极速节点|油管速度优化
 
 rules:
 # 本地/局域网地址
