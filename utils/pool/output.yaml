@@ -134,6 +134,78 @@ proxies:
   ws-opts:
     path: /anti13.zingfast.vn
   udp: true
+- type: ss
+  name: "\U0001F1F8\U0001F1EC SG 19 SSS"
+  server: 13.250.3.43
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- type: ss
+  name: "\U0001F1F8\U0001F1EC SG 20 SSS"
+  server: 13.215.205.186
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- type: ss
+  name: "\U0001F1F8\U0001F1EC SG 21 SSS"
+  server: 52.221.255.53
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- type: ss
+  name: "\U0001F1FA\U0001F1F8 US 22 SSS"
+  server: 54.71.237.242
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- type: ss
+  name: "\U0001F1F8\U0001F1EC SG 23 SSS"
+  server: 54.169.216.179
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- type: ss
+  name: "\U0001F1FA\U0001F1F8 US 24 SSS"
+  server: 35.94.16.186
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- type: ss
+  name: "\U0001F1F8\U0001F1EC SG 25 SSS"
+  server: 54.169.135.226
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- type: ss
+  name: "\U0001F1FA\U0001F1F8 US 26 SSS"
+  server: 54.200.148.115
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- type: ss
+  name: "\U0001F1EF\U0001F1F5 JP 27 SSS"
+  server: 13.113.17.246
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- type: ss
+  name: "\U0001F1FA\U0001F1F8 US 28 SSS"
+  server: 34.210.94.67
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- type: ss
+  name: "\U0001F1F8\U0001F1EC SG 29 SSS"
+  server: 18.136.197.165
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- type: ss
+  name: "\U0001F1F0\U0001F1F7 KR 30 SSS"
+  server: 43.201.254.211
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
 proxy-groups:
 - name: automatic
   type: url-test
@@ -156,6 +228,18 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 16 SSS"
   - "\U0001F1F8\U0001F1EC SG 17 SSS"
   - "\U0001F1F8\U0001F1EC SG 18 VMS"
+  - "\U0001F1F8\U0001F1EC SG 19 SSS"
+  - "\U0001F1F8\U0001F1EC SG 20 SSS"
+  - "\U0001F1F8\U0001F1EC SG 21 SSS"
+  - "\U0001F1FA\U0001F1F8 US 22 SSS"
+  - "\U0001F1F8\U0001F1EC SG 23 SSS"
+  - "\U0001F1FA\U0001F1F8 US 24 SSS"
+  - "\U0001F1F8\U0001F1EC SG 25 SSS"
+  - "\U0001F1FA\U0001F1F8 US 26 SSS"
+  - "\U0001F1EF\U0001F1F5 JP 27 SSS"
+  - "\U0001F1FA\U0001F1F8 US 28 SSS"
+  - "\U0001F1F8\U0001F1EC SG 29 SSS"
+  - "\U0001F1F0\U0001F1F7 KR 30 SSS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -180,5 +264,17 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 16 SSS"
   - "\U0001F1F8\U0001F1EC SG 17 SSS"
   - "\U0001F1F8\U0001F1EC SG 18 VMS"
+  - "\U0001F1F8\U0001F1EC SG 19 SSS"
+  - "\U0001F1F8\U0001F1EC SG 20 SSS"
+  - "\U0001F1F8\U0001F1EC SG 21 SSS"
+  - "\U0001F1FA\U0001F1F8 US 22 SSS"
+  - "\U0001F1F8\U0001F1EC SG 23 SSS"
+  - "\U0001F1FA\U0001F1F8 US 24 SSS"
+  - "\U0001F1F8\U0001F1EC SG 25 SSS"
+  - "\U0001F1FA\U0001F1F8 US 26 SSS"
+  - "\U0001F1EF\U0001F1F5 JP 27 SSS"
+  - "\U0001F1FA\U0001F1F8 US 28 SSS"
+  - "\U0001F1F8\U0001F1EC SG 29 SSS"
+  - "\U0001F1F0\U0001F1F7 KR 30 SSS"
 rules:
 - "MATCH,\U0001F310 Proxy"
