@@ -1,18 +1,18 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-10-30 14:05:08
+# 创建时间：2024-10-30 14:25:30
 # 使用模版：ACL4SSR_Online_Full.ini
 # 节点数量：66
 # 节点类型：vmess
 ####################################
 mixed-port: 7890
-allow-lan: true
-log-level: info
-external-controller: 0.0.0.0:9090
+allow-lan: false
+log-level: silent
+external-controller: 127.0.0.1:9090
 dns:
   enabled: true
-  listen: 0.0.0.0:1053
+  listen: 127.0.0.1:1053
   ipv6: true
   default-nameserver:
     - 223.5.5.5
@@ -80,7 +80,7 @@ dns:
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
   fallback-filter:
-    geoip: false
+    geoip: true
     ipcidr:
       - 240.0.0.0/4
       - 0.0.0.0/32
@@ -156,7 +156,7 @@ proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
-      - ♻️ 自动选择
+      - 🔯 故障转移
       - 🇭🇰 香港节点
       - 🇨🇳 台湾节点
       - 🇸🇬 狮城节点
@@ -234,11 +234,15 @@ proxy-groups:
       - 箕伯「台湾」「海外专用」
       - 摩羯「新加坡」「海外专用」
       - 双子「俄罗斯」「海外专用」
-  - name: ♻️ 自动选择
-    type: url-test
-    url: http://www.gstatic.com/generate_204
+  - name: 🔯 故障转移
+    type: fallback
+    url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
+    timeout: 3
+    packet_loss_detection:
+    enabled: true
+    threshold: 5
+    check_interval: 60
     proxies:
       - 剩余流量：-648064.08 GB
       - 套餐到期：长期有效
@@ -310,7 +314,7 @@ proxy-groups:
     type: select
     proxies:
       - 🚀 节点选择
-      - ♻️ 自动选择
+      - 🔯 故障转移
       - 🇸🇬 狮城节点
       - 🇭🇰 香港节点
       - 🇨🇳 台湾节点
@@ -323,7 +327,7 @@ proxy-groups:
     type: select
     proxies:
       - 🚀 节点选择
-      - ♻️ 自动选择
+      - 🔯 故障转移
       - 🇸🇬 狮城节点
       - 🇭🇰 香港节点
       - 🇨🇳 台湾节点
@@ -336,7 +340,7 @@ proxy-groups:
     type: select
     proxies:
       - 🚀 节点选择
-      - ♻️ 自动选择
+      - 🔯 故障转移
       - 🇸🇬 狮城节点
       - 🇭🇰 香港节点
       - 🇨🇳 台湾节点
@@ -348,9 +352,8 @@ proxy-groups:
   - name: 🎥 奈飞视频
     type: select
     proxies:
-      - 🎥 奈飞节点
       - 🚀 节点选择
-      - ♻️ 自动选择
+      - 🔯 故障转移
       - 🇸🇬 狮城节点
       - 🇭🇰 香港节点
       - 🇨🇳 台湾节点
@@ -376,7 +379,7 @@ proxy-groups:
     type: select
     proxies:
       - 🚀 节点选择
-      - ♻️ 自动选择
+      - 🔯 故障转移
       - 🇭🇰 香港节点
       - 🇨🇳 台湾节点
       - 🇸🇬 狮城节点
@@ -471,13 +474,13 @@ proxy-groups:
     proxies:
       - DIRECT
       - 🚀 节点选择
-      - ♻️ 自动选择
+      - 🔯 故障转移
   - name: 🎯 全球直连
     type: select
     proxies:
       - DIRECT
       - 🚀 节点选择
-      - ♻️ 自动选择
+      - 🔯 故障转移
   - name: 🛑 广告拦截
     type: select
     proxies:
@@ -492,7 +495,7 @@ proxy-groups:
     type: select
     proxies:
       - 🚀 节点选择
-      - ♻️ 自动选择
+      - 🔯 故障转移
       - DIRECT
       - 🇭🇰 香港节点
       - 🇨🇳 台湾节点
@@ -502,10 +505,14 @@ proxy-groups:
       - 🇰🇷 韩国节点
       - 🚀 手动切换
   - name: 🇭🇰 香港节点
-    type: url-test
-    url: http://www.gstatic.com/generate_204
+    type: fallback
+    url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
+    timeout: 3
+    packet_loss_detection:
+    enabled: true
+    threshold: 5
+    check_interval: 60
     proxies:
       - 郁垒「香港|传说」「专线X」
       - 九龙「香港|传说」「解锁」
@@ -516,10 +523,14 @@ proxy-groups:
       - 烛照「香港|传说」「解锁」
       - 祝融「香港」「海外专用」
   - name: 🇯🇵 日本节点
-    type: url-test
-    url: http://www.gstatic.com/generate_204
+    type: fallback
+    url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
+    timeout: 3
+    packet_loss_detection:
+    enabled: true
+    threshold: 5
+    check_interval: 60
     proxies:
       - 鲲「日本|传说」「解锁」
       - 青衣「日本|传说」「专线Z」
@@ -529,10 +540,14 @@ proxy-groups:
       - 巫女「日本|传说」「解锁」
       - 巨蟹「日本」「海外专用」
   - name: 🇺🇲 美国节点
-    type: url-test
-    url: http://www.gstatic.com/generate_204
+    type: fallback
+    url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 150
+    timeout: 3
+    packet_loss_detection:
+    enabled: true
+    threshold: 5
+    check_interval: 60
     proxies:
       - 炎帝「美国|传说」「专线Y」
       - 夸父「美国|传说」「解锁」
@@ -547,19 +562,27 @@ proxy-groups:
       - 伏羲「美国|传说」「专线Y」
       - 玄武「美国」「海外专用」
   - name: 🇨🇳 台湾节点
-    type: url-test
-    url: http://www.gstatic.com/generate_204
+    type: fallback
+    url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
+    timeout: 3
+    packet_loss_detection:
+    enabled: true
+    threshold: 5
+    check_interval: 60
     proxies:
       - 担仔面「台湾|传说」「原生」
       - 日月潭「台湾|解锁」
       - 箕伯「台湾」「海外专用」
   - name: 🇸🇬 狮城节点
-    type: url-test
-    url: http://www.gstatic.com/generate_204
+    type: fallback
+    url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
+    timeout: 3
+    packet_loss_detection:
+    enabled: true
+    threshold: 5
+    check_interval: 60
     proxies:
       - 黑森林「新加坡|传说」
       - 狮城「新加坡|传说」「专线X」
@@ -567,16 +590,17 @@ proxy-groups:
       - 南洋「新加坡|传说」「解锁」
       - 摩羯「新加坡」「海外专用」
   - name: 🇰🇷 韩国节点
-    type: url-test
-    url: http://www.gstatic.com/generate_204
+    type: fallback
+    url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
+    timeout: 3
+    packet_loss_detection:
+    enabled: true
+    threshold: 5
+    check_interval: 60
     proxies:
       - 射手「韩国|史诗」
       - 刑天「韩国|传说」「专线X」
-  - name: 🎥 奈飞节点
-    type: select
-    proxies: []
 
 rules:
 # 本地/局域网地址
