@@ -284,7 +284,6 @@ proxy-groups:
       - 🇸🇬 狮城节点
       - 🇯🇵 日本节点
       - 🇺🇲 美国节点
-      - 🇰🇷 韩国节点
       - 🚀 手动切换
       - DIRECT
   - name: 🚀 手动切换
@@ -686,7 +685,6 @@ proxy-groups:
       - 🇨🇳 台湾节点
       - 🇯🇵 日本节点
       - 🇺🇲 美国节点
-      - 🇰🇷 韩国节点
       - 🚀 手动切换
       - DIRECT
   - name: 💬 OpenAi
@@ -699,7 +697,6 @@ proxy-groups:
       - 🇨🇳 台湾节点
       - 🇯🇵 日本节点
       - 🇺🇲 美国节点
-      - 🇰🇷 韩国节点
       - 🚀 手动切换
       - DIRECT
   - name: 📹 油管视频
@@ -712,7 +709,6 @@ proxy-groups:
       - 🇨🇳 台湾节点
       - 🇯🇵 日本节点
       - 🇺🇲 美国节点
-      - 🇰🇷 韩国节点
       - 🚀 手动切换
       - DIRECT
   - name: 🎥 奈飞视频
@@ -725,7 +721,6 @@ proxy-groups:
       - 🇨🇳 台湾节点
       - 🇯🇵 日本节点
       - 🇺🇲 美国节点
-      - 🇰🇷 韩国节点
       - 🚀 手动切换
       - DIRECT
   - name: 📺 巴哈姆特
@@ -751,7 +746,6 @@ proxy-groups:
       - 🇸🇬 狮城节点
       - 🇯🇵 日本节点
       - 🇺🇲 美国节点
-      - 🇰🇷 韩国节点
       - 🚀 手动切换
       - DIRECT
   - name: 🌏 国内媒体
@@ -773,7 +767,6 @@ proxy-groups:
       - 🇨🇳 台湾节点
       - 🇸🇬 狮城节点
       - 🇯🇵 日本节点
-      - 🇰🇷 韩国节点
       - 🚀 手动切换
   - name: Ⓜ️ 微软Bing
     type: select
@@ -785,7 +778,6 @@ proxy-groups:
       - 🇨🇳 台湾节点
       - 🇸🇬 狮城节点
       - 🇯🇵 日本节点
-      - 🇰🇷 韩国节点
       - 🚀 手动切换
   - name: Ⓜ️ 微软云盘
     type: select
@@ -797,7 +789,6 @@ proxy-groups:
       - 🇨🇳 台湾节点
       - 🇸🇬 狮城节点
       - 🇯🇵 日本节点
-      - 🇰🇷 韩国节点
       - 🚀 手动切换
   - name: Ⓜ️ 微软服务
     type: select
@@ -809,7 +800,6 @@ proxy-groups:
       - 🇨🇳 台湾节点
       - 🇸🇬 狮城节点
       - 🇯🇵 日本节点
-      - 🇰🇷 韩国节点
       - 🚀 手动切换
   - name: 🍎 苹果服务
     type: select
@@ -821,7 +811,6 @@ proxy-groups:
       - 🇨🇳 台湾节点
       - 🇸🇬 狮城节点
       - 🇯🇵 日本节点
-      - 🇰🇷 韩国节点
       - 🚀 手动切换
   - name: 🎮 游戏平台
     type: select
@@ -833,7 +822,6 @@ proxy-groups:
       - 🇨🇳 台湾节点
       - 🇸🇬 狮城节点
       - 🇯🇵 日本节点
-      - 🇰🇷 韩国节点
       - 🚀 手动切换
   - name: 🎶 网易音乐
     type: select
@@ -868,7 +856,6 @@ proxy-groups:
       - 🇸🇬 狮城节点
       - 🇯🇵 日本节点
       - 🇺🇲 美国节点
-      - 🇰🇷 韩国节点
       - 🚀 手动切换
   - name: 🇭🇰 香港节点
     type: fallback
@@ -1083,18 +1070,7 @@ proxy-groups:
     threshold: 5
     check_interval: 60
     proxies:
-      - 新加坡+Amazon数据中心
-  - name: 🇰🇷 韩国节点
-    type: fallback
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    timeout: 3
-    packet_loss_detection:
-    enabled: true
-    threshold: 5
-    check_interval: 60
-    proxies: []
-    
+      - 新加坡+Amazon数据中
 
 rules:
 # 本地/局域网地址
