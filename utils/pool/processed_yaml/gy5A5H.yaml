@@ -1,10 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-11-01 21:54:13
+# 创建时间：2024-11-01 22:31:51
 # 使用模版：ACL4SSR_Online_Full_Google.ini
 # 节点数量：188
-# 节点类型：trojan, vmess
+# 节点类型：vmess, trojan
 ####################################
 mixed-port: 7890
 allow-lan: false
@@ -86,31 +86,6 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"美国+Amazon+EC2服务器_1","type":"trojan","server":"3.96.242.102","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"英国+社会保险安全部_1","type":"trojan","server":"51.20.22.202","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+Amazon+EC2服务器_2","type":"trojan","server":"3.146.173.245","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+Amazon数据中心","type":"trojan","server":"18.199.133.247","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+CloudFlare节点_1","type":"trojan","server":"AB_841]&host=trojanfree-76s.pages.dev","port":2083,"udp":true,"password":"auto@104.16.134.27:2083?security=tls&type=ws&sni=trojanfree-76s.pages.dev&path=/trojanfree-76s.pages.dev/&ed=2560..@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@auto@104.16.134.27:2083&security=tls&type=ws&sni=trojanfree-76s.pages.dev&path=/trojanfree-76s.pages.dev/&ed=2560..@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[","sni":"trojanfree-76s.pages.dev","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/trojanfree-76s.pages.dev/","headers":{"host":"trojanfree-76s.pages.dev:2083"}}}
-  - {"name":"日本+V2CROSS.COM_1","type":"trojan","server":"ent1.imyourdaddy.top","port":20985,"udp":true,"password":"64f33df2-4f9d-4cf3-bb69-b82b08cf149a","sni":"sale.alibaba.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+惠普公司_1","type":"trojan","server":"15.236.11.73","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"英国+社会保险安全部_2","type":"trojan","server":"51.20.19.8","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"日本+V2CROSS.COM_2","type":"trojan","server":"ent1.imyourdaddy.top","port":21005,"udp":true,"password":"64f33df2-4f9d-4cf3-bb69-b82b08cf149a","sni":"alibabashop.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"日本+V2CROSS.COM_3","type":"trojan","server":"ent1.imyourdaddy.top","port":20983,"udp":true,"password":"64f33df2-4f9d-4cf3-bb69-b82b08cf149a","sni":"sale.alibaba.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"德国+黑森州法兰克福Amazon数据中心","type":"trojan","server":"35.159.56.144","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"亚太地区+V2CROSS.COM_1","type":"trojan","server":"std1.loadingip.com","port":443,"udp":true,"password":"94d219c9-1afc-4d42-b090-8b3794764380","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"新加坡+Amazon数据中心","type":"trojan","server":"easy-mako.opossum872.cfd","port":443,"udp":true,"password":"3690911436885991424","sni":"easy-mako.opossum872.cfd","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+惠普公司_2","type":"trojan","server":"15.222.175.22","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"法国+巴黎Amazon数据中心","type":"trojan","server":"35.181.133.198","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"亚太地区+V2CROSS.COM_2","type":"trojan","server":"36.50.134.26","port":443,"udp":true,"password":"94d219c9-1afc-4d42-b090-8b3794764380","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+CloudFlare节点_2","type":"trojan","server":"172.67.130.66","port":443,"udp":true,"password":"trojan","sni":"test-a23.pages.dev","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"test-a23.pages.devh2,http/1.1"}}}
-  - {"name":"日本+V2CROSS.COM_4","type":"trojan","server":"ent1.imyourdaddy.top","port":20982,"udp":true,"password":"64f33df2-4f9d-4cf3-bb69-b82b08cf149a","sni":"sale.alibaba.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+Xerox","type":"trojan","server":"13.61.80.19","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"爱尔兰+V2CROSS.COM","type":"trojan","server":"108.128.8.83","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+CloudFlare节点_3","type":"trojan","server":"AB_841]&fp=randomized","port":2087,"udp":true,"password":"auto@104.25.254.4:2087?security=tls&sni=trojanfree-76s.pages.dev&type=ws&host=trojanfree-76s.pages.dev&path=/trojanfree-76s.pages.dev/&ed=2560..@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@auto@104.25.254.4:2087&security=tls&sni=trojanfree-76s.pages.dev&type=ws&host=trojanfree-76s.pages.dev&path=/trojanfree-76s.pages.dev/&ed=2560..@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[","sni":"trojanfree-76s.pages.dev","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/trojanfree-76s.pages.dev/","headers":{"host":"trojanfree-76s.pages.dev"}}}
-  - {"name":"美国+CloudFlare节点_4","type":"trojan","server":"104.16.192.1","port":443,"udp":true,"password":"0ab6c98dae3b48e8b9c4a776b6c9c19a","sni":"sherasheba.com","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6b777a91","headers":{"host":"sherasheba.com"}}}
-  - {"name":"亚太地区+V2CROSS.COM_3","type":"trojan","server":"bs1.loadingip.com","port":443,"udp":true,"password":"94d219c9-1afc-4d42-b090-8b3794764380","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"日本+东京都Amazon数据中心","type":"trojan","server":"bgroup.node1.t.nodelist-airport.com","port":50001,"udp":true,"password":"2155145a-b1b5-443a-8977-670f6bd10f02","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+弗吉尼亚州阿什本Amazon数据中心","type":"trojan","server":"34.196.240.76","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
   - {"name":"丹麦 V2CROSS.COM_1","type":"vmess","server":"195.85.59.95","port":80,"cipher":"auto","uuid":"a94171be-b387-4f02-a5ef-a1b4b7a26c04","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/aries?ed=2048","headers":{"host":"open.alipay.ovh"}}}
   - {"name":"美国 CloudFlare节点_1","type":"vmess","server":"104.19.38.9","port":2082,"cipher":"auto","uuid":"5f3f09ad-89cb-4e94-a7ad-aa8239913555","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip3.6929198.xyz"}}}
   - {"name":"美国 Fastly全球Anycast节点_1","type":"vmess","server":"plex.com","port":80,"cipher":"auto","uuid":"a888b89a-08ac-40e6-8ad7-cfce9569f967","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/racevpn","headers":{"host":"gerMAnyISvP.iR"}}}
@@ -274,6 +249,31 @@ proxies:
   - {"name":"美国 CloudFlare节点_134","type":"vmess","server":"104.21.82.183","port":8880,"cipher":"auto","uuid":"5a7021e0-26b4-45d6-b175-fe551601ca97","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"server26.beheshtbaneh.com"}}}
   - {"name":"印度 V2CROSS.COM_3","type":"vmess","server":"202.78.162.5","port":443,"cipher":"auto","uuid":"716eded6-2201-4dbd-9d63-1638c9e8e677","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/@forwardv2ray","headers":{"host":"pendar.onthewifi.com"}}}
   - {"name":"美国 Fastly全球Anycast节点_7","type":"vmess","server":"gov.uk","port":443,"cipher":"auto","uuid":"77848824-93b7-4b89-ffd0-e91afff406ce","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/77848824","headers":{"host":"zheshiscp.com"}}}
+  - {"name":"美国+Amazon+EC2服务器_1","type":"trojan","server":"3.96.242.102","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"英国+社会保险安全部_1","type":"trojan","server":"51.20.22.202","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国+Amazon+EC2服务器_2","type":"trojan","server":"3.146.173.245","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国+Amazon数据中心","type":"trojan","server":"18.199.133.247","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国+CloudFlare节点_1","type":"trojan","server":"AB_841]&host=trojanfree-76s.pages.dev","port":2083,"udp":true,"password":"auto@104.16.134.27:2083?security=tls&type=ws&sni=trojanfree-76s.pages.dev&path=/trojanfree-76s.pages.dev/&ed=2560..@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@auto@104.16.134.27:2083&security=tls&type=ws&sni=trojanfree-76s.pages.dev&path=/trojanfree-76s.pages.dev/&ed=2560..@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[","sni":"trojanfree-76s.pages.dev","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/trojanfree-76s.pages.dev/","headers":{"host":"trojanfree-76s.pages.dev:2083"}}}
+  - {"name":"日本+V2CROSS.COM_1","type":"trojan","server":"ent1.imyourdaddy.top","port":20985,"udp":true,"password":"64f33df2-4f9d-4cf3-bb69-b82b08cf149a","sni":"sale.alibaba.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国+惠普公司_1","type":"trojan","server":"15.236.11.73","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"英国+社会保险安全部_2","type":"trojan","server":"51.20.19.8","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"日本+V2CROSS.COM_2","type":"trojan","server":"ent1.imyourdaddy.top","port":21005,"udp":true,"password":"64f33df2-4f9d-4cf3-bb69-b82b08cf149a","sni":"alibabashop.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"日本+V2CROSS.COM_3","type":"trojan","server":"ent1.imyourdaddy.top","port":20983,"udp":true,"password":"64f33df2-4f9d-4cf3-bb69-b82b08cf149a","sni":"sale.alibaba.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"德国+黑森州法兰克福Amazon数据中心","type":"trojan","server":"35.159.56.144","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"亚太地区+V2CROSS.COM_1","type":"trojan","server":"std1.loadingip.com","port":443,"udp":true,"password":"94d219c9-1afc-4d42-b090-8b3794764380","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"新加坡+Amazon数据中心","type":"trojan","server":"easy-mako.opossum872.cfd","port":443,"udp":true,"password":"3690911436885991424","sni":"easy-mako.opossum872.cfd","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国+惠普公司_2","type":"trojan","server":"15.222.175.22","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"法国+巴黎Amazon数据中心","type":"trojan","server":"35.181.133.198","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"亚太地区+V2CROSS.COM_2","type":"trojan","server":"36.50.134.26","port":443,"udp":true,"password":"94d219c9-1afc-4d42-b090-8b3794764380","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国+CloudFlare节点_2","type":"trojan","server":"172.67.130.66","port":443,"udp":true,"password":"trojan","sni":"test-a23.pages.dev","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"test-a23.pages.devh2,http/1.1"}}}
+  - {"name":"日本+V2CROSS.COM_4","type":"trojan","server":"ent1.imyourdaddy.top","port":20982,"udp":true,"password":"64f33df2-4f9d-4cf3-bb69-b82b08cf149a","sni":"sale.alibaba.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国+Xerox","type":"trojan","server":"13.61.80.19","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"爱尔兰+V2CROSS.COM_2","type":"trojan","server":"108.128.8.83","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国+CloudFlare节点_3","type":"trojan","server":"AB_841]&fp=randomized","port":2087,"udp":true,"password":"auto@104.25.254.4:2087?security=tls&sni=trojanfree-76s.pages.dev&type=ws&host=trojanfree-76s.pages.dev&path=/trojanfree-76s.pages.dev/&ed=2560..@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@auto@104.25.254.4:2087&security=tls&sni=trojanfree-76s.pages.dev&type=ws&host=trojanfree-76s.pages.dev&path=/trojanfree-76s.pages.dev/&ed=2560..@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[","sni":"trojanfree-76s.pages.dev","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/trojanfree-76s.pages.dev/","headers":{"host":"trojanfree-76s.pages.dev"}}}
+  - {"name":"美国+CloudFlare节点_4","type":"trojan","server":"104.16.192.1","port":443,"udp":true,"password":"0ab6c98dae3b48e8b9c4a776b6c9c19a","sni":"sherasheba.com","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6b777a91","headers":{"host":"sherasheba.com"}}}
+  - {"name":"亚太地区+V2CROSS.COM_3","type":"trojan","server":"bs1.loadingip.com","port":443,"udp":true,"password":"94d219c9-1afc-4d42-b090-8b3794764380","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"日本+东京都Amazon数据中心","type":"trojan","server":"bgroup.node1.t.nodelist-airport.com","port":50001,"udp":true,"password":"2155145a-b1b5-443a-8977-670f6bd10f02","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国+弗吉尼亚州阿什本Amazon数据中心","type":"trojan","server":"34.196.240.76","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -288,31 +288,6 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 美国+Amazon+EC2服务器_1
-      - 英国+社会保险安全部_1
-      - 美国+Amazon+EC2服务器_2
-      - 美国+Amazon数据中心
-      - 美国+CloudFlare节点_1
-      - 日本+V2CROSS.COM_1
-      - 美国+惠普公司_1
-      - 英国+社会保险安全部_2
-      - 日本+V2CROSS.COM_2
-      - 日本+V2CROSS.COM_3
-      - 德国+黑森州法兰克福Amazon数据中心
-      - 亚太地区+V2CROSS.COM_1
-      - 新加坡+Amazon数据中心
-      - 美国+惠普公司_2
-      - 法国+巴黎Amazon数据中心
-      - 亚太地区+V2CROSS.COM_2
-      - 美国+CloudFlare节点_2
-      - 日本+V2CROSS.COM_4
-      - 美国+Xerox
-      - 爱尔兰+V2CROSS.COM
-      - 美国+CloudFlare节点_3
-      - 美国+CloudFlare节点_4
-      - 亚太地区+V2CROSS.COM_3
-      - 日本+东京都Amazon数据中心
-      - 美国+弗吉尼亚州阿什本Amazon数据中心
       - 丹麦 V2CROSS.COM_1
       - 美国 CloudFlare节点_1
       - 美国 Fastly全球Anycast节点_1
@@ -476,7 +451,32 @@ proxy-groups:
       - 美国 CloudFlare节点_134
       - 印度 V2CROSS.COM_3
       - 美国 Fastly全球Anycast节点_7
-  - name: 🔯 故障转移
+      - 美国+Amazon+EC2服务器_1
+      - 英国+社会保险安全部_1
+      - 美国+Amazon+EC2服务器_2
+      - 美国+Amazon数据中心
+      - 美国+CloudFlare节点_1
+      - 日本+V2CROSS.COM_1
+      - 美国+惠普公司_1
+      - 英国+社会保险安全部_2
+      - 日本+V2CROSS.COM_2
+      - 日本+V2CROSS.COM_3
+      - 德国+黑森州法兰克福Amazon数据中心
+      - 亚太地区+V2CROSS.COM_1
+      - 新加坡+Amazon数据中心
+      - 美国+惠普公司_2
+      - 法国+巴黎Amazon数据中心
+      - 亚太地区+V2CROSS.COM_2
+      - 美国+CloudFlare节点_2
+      - 日本+V2CROSS.COM_4
+      - 美国+Xerox
+      - 爱尔兰+V2CROSS.COM_2
+      - 美国+CloudFlare节点_3
+      - 美国+CloudFlare节点_4
+      - 亚太地区+V2CROSS.COM_3
+      - 日本+东京都Amazon数据中心
+      - 美国+弗吉尼亚州阿什本Amazon数据中心
+  - name: ♻️ 自动选择
     type: fallback
     url: https://www.gstatic.com/generate_204
     interval: 300
@@ -486,31 +486,6 @@ proxy-groups:
     threshold: 3
     check_interval: 90
     proxies:
-      - 美国+Amazon+EC2服务器_1
-      - 英国+社会保险安全部_1
-      - 美国+Amazon+EC2服务器_2
-      - 美国+Amazon数据中心
-      - 美国+CloudFlare节点_1
-      - 日本+V2CROSS.COM_1
-      - 美国+惠普公司_1
-      - 英国+社会保险安全部_2
-      - 日本+V2CROSS.COM_2
-      - 日本+V2CROSS.COM_3
-      - 德国+黑森州法兰克福Amazon数据中心
-      - 亚太地区+V2CROSS.COM_1
-      - 新加坡+Amazon数据中心
-      - 美国+惠普公司_2
-      - 法国+巴黎Amazon数据中心
-      - 亚太地区+V2CROSS.COM_2
-      - 美国+CloudFlare节点_2
-      - 日本+V2CROSS.COM_4
-      - 美国+Xerox
-      - 爱尔兰+V2CROSS.COM
-      - 美国+CloudFlare节点_3
-      - 美国+CloudFlare节点_4
-      - 亚太地区+V2CROSS.COM_3
-      - 日本+东京都Amazon数据中心
-      - 美国+弗吉尼亚州阿什本Amazon数据中心
       - 丹麦 V2CROSS.COM_1
       - 美国 CloudFlare节点_1
       - 美国 Fastly全球Anycast节点_1
@@ -674,6 +649,31 @@ proxy-groups:
       - 美国 CloudFlare节点_134
       - 印度 V2CROSS.COM_3
       - 美国 Fastly全球Anycast节点_7
+      - 美国+Amazon+EC2服务器_1
+      - 英国+社会保险安全部_1
+      - 美国+Amazon+EC2服务器_2
+      - 美国+Amazon数据中心
+      - 美国+CloudFlare节点_1
+      - 日本+V2CROSS.COM_1
+      - 美国+惠普公司_1
+      - 英国+社会保险安全部_2
+      - 日本+V2CROSS.COM_2
+      - 日本+V2CROSS.COM_3
+      - 德国+黑森州法兰克福Amazon数据中心
+      - 亚太地区+V2CROSS.COM_1
+      - 新加坡+Amazon数据中心
+      - 美国+惠普公司_2
+      - 法国+巴黎Amazon数据中心
+      - 亚太地区+V2CROSS.COM_2
+      - 美国+CloudFlare节点_2
+      - 日本+V2CROSS.COM_4
+      - 美国+Xerox
+      - 爱尔兰+V2CROSS.COM_2
+      - 美国+CloudFlare节点_3
+      - 美国+CloudFlare节点_4
+      - 亚太地区+V2CROSS.COM_3
+      - 日本+东京都Amazon数据中心
+      - 美国+弗吉尼亚州阿什本Amazon数据中心
   - name: 📲 电报消息
     type: select
     proxies:
@@ -921,17 +921,6 @@ proxy-groups:
     threshold: 3
     check_interval: 90
     proxies:
-      - 美国+Amazon+EC2服务器_1
-      - 美国+Amazon+EC2服务器_2
-      - 美国+Amazon数据中心
-      - 美国+CloudFlare节点_1
-      - 美国+惠普公司_1
-      - 美国+惠普公司_2
-      - 美国+CloudFlare节点_2
-      - 美国+Xerox
-      - 美国+CloudFlare节点_3
-      - 美国+CloudFlare节点_4
-      - 美国+弗吉尼亚州阿什本Amazon数据中心
       - 美国 CloudFlare节点_1
       - 美国 Fastly全球Anycast节点_1
       - 美国 CloudFlare节点_2
@@ -1077,6 +1066,17 @@ proxy-groups:
       - 美国 CloudFlare节点_133
       - 美国 CloudFlare节点_134
       - 美国 Fastly全球Anycast节点_7
+      - 美国+Amazon+EC2服务器_1
+      - 美国+Amazon+EC2服务器_2
+      - 美国+Amazon数据中心
+      - 美国+CloudFlare节点_1
+      - 美国+惠普公司_1
+      - 美国+惠普公司_2
+      - 美国+CloudFlare节点_2
+      - 美国+Xerox
+      - 美国+CloudFlare节点_3
+      - 美国+CloudFlare节点_4
+      - 美国+弗吉尼亚州阿什本Amazon数据中心
   - name: 🇸🇬 狮城节点
     type: fallback
     url: https://www.gstatic.com/generate_204
