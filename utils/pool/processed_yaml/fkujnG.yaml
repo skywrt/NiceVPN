@@ -1,18 +1,18 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-11-01 07:13:44
-# 使用模版：ACL4SSR_Online_Full.ini
+# 创建时间：2024-11-01 21:54:13
+# 使用模版：ACL4SSR_Online_Full_Google.ini
 # 节点数量：188
-# 节点类型：vmess, trojan
+# 节点类型：trojan, vmess
 ####################################
 mixed-port: 7890
-allow-lan: true
-log-level: info
-external-controller: 0.0.0.0:9090
+allow-lan: false
+log-level: silent
+external-controller: 127.0.0.1:9090
 dns:
   enabled: true
-  listen: 0.0.0.0:1053
+  listen: 127.0.0.1:1053
   ipv6: true
   default-nameserver:
     - 223.5.5.5
@@ -80,12 +80,37 @@ dns:
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
   fallback-filter:
-    geoip: false
+    geoip: true
     ipcidr:
       - 240.0.0.0/4
       - 0.0.0.0/32
 
 proxies:
+  - {"name":"美国+Amazon+EC2服务器_1","type":"trojan","server":"3.96.242.102","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"英国+社会保险安全部_1","type":"trojan","server":"51.20.22.202","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国+Amazon+EC2服务器_2","type":"trojan","server":"3.146.173.245","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国+Amazon数据中心","type":"trojan","server":"18.199.133.247","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国+CloudFlare节点_1","type":"trojan","server":"AB_841]&host=trojanfree-76s.pages.dev","port":2083,"udp":true,"password":"auto@104.16.134.27:2083?security=tls&type=ws&sni=trojanfree-76s.pages.dev&path=/trojanfree-76s.pages.dev/&ed=2560..@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@auto@104.16.134.27:2083&security=tls&type=ws&sni=trojanfree-76s.pages.dev&path=/trojanfree-76s.pages.dev/&ed=2560..@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[","sni":"trojanfree-76s.pages.dev","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/trojanfree-76s.pages.dev/","headers":{"host":"trojanfree-76s.pages.dev:2083"}}}
+  - {"name":"日本+V2CROSS.COM_1","type":"trojan","server":"ent1.imyourdaddy.top","port":20985,"udp":true,"password":"64f33df2-4f9d-4cf3-bb69-b82b08cf149a","sni":"sale.alibaba.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国+惠普公司_1","type":"trojan","server":"15.236.11.73","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"英国+社会保险安全部_2","type":"trojan","server":"51.20.19.8","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"日本+V2CROSS.COM_2","type":"trojan","server":"ent1.imyourdaddy.top","port":21005,"udp":true,"password":"64f33df2-4f9d-4cf3-bb69-b82b08cf149a","sni":"alibabashop.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"日本+V2CROSS.COM_3","type":"trojan","server":"ent1.imyourdaddy.top","port":20983,"udp":true,"password":"64f33df2-4f9d-4cf3-bb69-b82b08cf149a","sni":"sale.alibaba.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"德国+黑森州法兰克福Amazon数据中心","type":"trojan","server":"35.159.56.144","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"亚太地区+V2CROSS.COM_1","type":"trojan","server":"std1.loadingip.com","port":443,"udp":true,"password":"94d219c9-1afc-4d42-b090-8b3794764380","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"新加坡+Amazon数据中心","type":"trojan","server":"easy-mako.opossum872.cfd","port":443,"udp":true,"password":"3690911436885991424","sni":"easy-mako.opossum872.cfd","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国+惠普公司_2","type":"trojan","server":"15.222.175.22","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"法国+巴黎Amazon数据中心","type":"trojan","server":"35.181.133.198","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"亚太地区+V2CROSS.COM_2","type":"trojan","server":"36.50.134.26","port":443,"udp":true,"password":"94d219c9-1afc-4d42-b090-8b3794764380","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国+CloudFlare节点_2","type":"trojan","server":"172.67.130.66","port":443,"udp":true,"password":"trojan","sni":"test-a23.pages.dev","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"test-a23.pages.devh2,http/1.1"}}}
+  - {"name":"日本+V2CROSS.COM_4","type":"trojan","server":"ent1.imyourdaddy.top","port":20982,"udp":true,"password":"64f33df2-4f9d-4cf3-bb69-b82b08cf149a","sni":"sale.alibaba.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国+Xerox","type":"trojan","server":"13.61.80.19","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"爱尔兰+V2CROSS.COM","type":"trojan","server":"108.128.8.83","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国+CloudFlare节点_3","type":"trojan","server":"AB_841]&fp=randomized","port":2087,"udp":true,"password":"auto@104.25.254.4:2087?security=tls&sni=trojanfree-76s.pages.dev&type=ws&host=trojanfree-76s.pages.dev&path=/trojanfree-76s.pages.dev/&ed=2560..@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@auto@104.25.254.4:2087&security=tls&sni=trojanfree-76s.pages.dev&type=ws&host=trojanfree-76s.pages.dev&path=/trojanfree-76s.pages.dev/&ed=2560..@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[","sni":"trojanfree-76s.pages.dev","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/trojanfree-76s.pages.dev/","headers":{"host":"trojanfree-76s.pages.dev"}}}
+  - {"name":"美国+CloudFlare节点_4","type":"trojan","server":"104.16.192.1","port":443,"udp":true,"password":"0ab6c98dae3b48e8b9c4a776b6c9c19a","sni":"sherasheba.com","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6b777a91","headers":{"host":"sherasheba.com"}}}
+  - {"name":"亚太地区+V2CROSS.COM_3","type":"trojan","server":"bs1.loadingip.com","port":443,"udp":true,"password":"94d219c9-1afc-4d42-b090-8b3794764380","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"日本+东京都Amazon数据中心","type":"trojan","server":"bgroup.node1.t.nodelist-airport.com","port":50001,"udp":true,"password":"2155145a-b1b5-443a-8977-670f6bd10f02","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国+弗吉尼亚州阿什本Amazon数据中心","type":"trojan","server":"34.196.240.76","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
   - {"name":"丹麦 V2CROSS.COM_1","type":"vmess","server":"195.85.59.95","port":80,"cipher":"auto","uuid":"a94171be-b387-4f02-a5ef-a1b4b7a26c04","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/aries?ed=2048","headers":{"host":"open.alipay.ovh"}}}
   - {"name":"美国 CloudFlare节点_1","type":"vmess","server":"104.19.38.9","port":2082,"cipher":"auto","uuid":"5f3f09ad-89cb-4e94-a7ad-aa8239913555","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip3.6929198.xyz"}}}
   - {"name":"美国 Fastly全球Anycast节点_1","type":"vmess","server":"plex.com","port":80,"cipher":"auto","uuid":"a888b89a-08ac-40e6-8ad7-cfce9569f967","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/racevpn","headers":{"host":"gerMAnyISvP.iR"}}}
@@ -249,229 +274,45 @@ proxies:
   - {"name":"美国 CloudFlare节点_134","type":"vmess","server":"104.21.82.183","port":8880,"cipher":"auto","uuid":"5a7021e0-26b4-45d6-b175-fe551601ca97","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"server26.beheshtbaneh.com"}}}
   - {"name":"印度 V2CROSS.COM_3","type":"vmess","server":"202.78.162.5","port":443,"cipher":"auto","uuid":"716eded6-2201-4dbd-9d63-1638c9e8e677","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/@forwardv2ray","headers":{"host":"pendar.onthewifi.com"}}}
   - {"name":"美国 Fastly全球Anycast节点_7","type":"vmess","server":"gov.uk","port":443,"cipher":"auto","uuid":"77848824-93b7-4b89-ffd0-e91afff406ce","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/77848824","headers":{"host":"zheshiscp.com"}}}
-  - {"name":"美国+Amazon+EC2服务器_1","type":"trojan","server":"3.96.242.102","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"英国+社会保险安全部_1","type":"trojan","server":"51.20.22.202","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+Amazon+EC2服务器_2","type":"trojan","server":"3.146.173.245","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+Amazon数据中心","type":"trojan","server":"18.199.133.247","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+CloudFlare节点_1","type":"trojan","server":"AB_841]&host=trojanfree-76s.pages.dev","port":2083,"udp":true,"password":"auto@104.16.134.27:2083?security=tls&type=ws&sni=trojanfree-76s.pages.dev&path=/trojanfree-76s.pages.dev/&ed=2560..@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@auto@104.16.134.27:2083&security=tls&type=ws&sni=trojanfree-76s.pages.dev&path=/trojanfree-76s.pages.dev/&ed=2560..@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[","sni":"trojanfree-76s.pages.dev","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/trojanfree-76s.pages.dev/","headers":{"host":"trojanfree-76s.pages.dev:2083"}}}
-  - {"name":"日本+V2CROSS.COM_1","type":"trojan","server":"ent1.imyourdaddy.top","port":20985,"udp":true,"password":"64f33df2-4f9d-4cf3-bb69-b82b08cf149a","sni":"sale.alibaba.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+惠普公司_1","type":"trojan","server":"15.236.11.73","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"英国+社会保险安全部_2","type":"trojan","server":"51.20.19.8","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"日本+V2CROSS.COM_2","type":"trojan","server":"ent1.imyourdaddy.top","port":21005,"udp":true,"password":"64f33df2-4f9d-4cf3-bb69-b82b08cf149a","sni":"alibabashop.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"日本+V2CROSS.COM_3","type":"trojan","server":"ent1.imyourdaddy.top","port":20983,"udp":true,"password":"64f33df2-4f9d-4cf3-bb69-b82b08cf149a","sni":"sale.alibaba.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"德国+黑森州法兰克福Amazon数据中心","type":"trojan","server":"35.159.56.144","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"亚太地区+V2CROSS.COM_1","type":"trojan","server":"std1.loadingip.com","port":443,"udp":true,"password":"94d219c9-1afc-4d42-b090-8b3794764380","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"新加坡+Amazon数据中心","type":"trojan","server":"easy-mako.opossum872.cfd","port":443,"udp":true,"password":"3690911436885991424","sni":"easy-mako.opossum872.cfd","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+惠普公司_2","type":"trojan","server":"15.222.175.22","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"法国+巴黎Amazon数据中心","type":"trojan","server":"35.181.133.198","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"亚太地区+V2CROSS.COM_2","type":"trojan","server":"36.50.134.26","port":443,"udp":true,"password":"94d219c9-1afc-4d42-b090-8b3794764380","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+CloudFlare节点_2","type":"trojan","server":"172.67.130.66","port":443,"udp":true,"password":"trojan","sni":"test-a23.pages.dev","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"test-a23.pages.devh2,http/1.1"}}}
-  - {"name":"日本+V2CROSS.COM_4","type":"trojan","server":"ent1.imyourdaddy.top","port":20982,"udp":true,"password":"64f33df2-4f9d-4cf3-bb69-b82b08cf149a","sni":"sale.alibaba.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+Xerox","type":"trojan","server":"13.61.80.19","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"爱尔兰+V2CROSS.COM_2","type":"trojan","server":"108.128.8.83","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+CloudFlare节点_3","type":"trojan","server":"AB_841]&fp=randomized","port":2087,"udp":true,"password":"auto@104.25.254.4:2087?security=tls&sni=trojanfree-76s.pages.dev&type=ws&host=trojanfree-76s.pages.dev&path=/trojanfree-76s.pages.dev/&ed=2560..@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@auto@104.25.254.4:2087&security=tls&sni=trojanfree-76s.pages.dev&type=ws&host=trojanfree-76s.pages.dev&path=/trojanfree-76s.pages.dev/&ed=2560..@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[@AB_841].@BugFreeNet[","sni":"trojanfree-76s.pages.dev","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/trojanfree-76s.pages.dev/","headers":{"host":"trojanfree-76s.pages.dev"}}}
-  - {"name":"美国+CloudFlare节点_4","type":"trojan","server":"104.16.192.1","port":443,"udp":true,"password":"0ab6c98dae3b48e8b9c4a776b6c9c19a","sni":"sherasheba.com","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6b777a91","headers":{"host":"sherasheba.com"}}}
-  - {"name":"亚太地区+V2CROSS.COM_3","type":"trojan","server":"bs1.loadingip.com","port":443,"udp":true,"password":"94d219c9-1afc-4d42-b090-8b3794764380","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"日本+东京都Amazon数据中心","type":"trojan","server":"bgroup.node1.t.nodelist-airport.com","port":50001,"udp":true,"password":"2155145a-b1b5-443a-8977-670f6bd10f02","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+弗吉尼亚州阿什本Amazon数据中心","type":"trojan","server":"34.196.240.76","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
-      - 丹麦 V2CROSS.COM_1
-      - 美国 CloudFlare节点_1
-      - 美国 Fastly全球Anycast节点_1
-      - 美国 CloudFlare节点_2
-      - 美国 CloudFlare节点_3
-      - 美国 CloudFlare节点_4
-      - 美国 CloudFlare节点_5
-      - 美国 CloudFlare节点_6
-      - 美国 CloudFlare节点_7
-      - 北美地区 V2CROSS.COM_1
-      - 巴拿马 V2CROSS.COM
-      - 美国 CloudFlare节点_8
-      - 美国 CloudFlare节点_9
-      - 美国 CloudFlare节点_10
-      - 美国 CloudFlare节点_11
-      - 美国 CloudFlare节点_12
-      - 美国 CloudFlare节点_13
-      - 美国 CloudFlare节点_14
-      - 美国 CloudFlare节点_15
-      - 美国 Fastly全球Anycast节点_2
-      - 美国 CloudFlare节点_16
-      - 美国 CloudFlare节点_17
-      - 美国 Fastly全球Anycast节点_3
-      - 美国 CloudFlare节点_18
-      - 美国 CloudFlare节点_19
-      - 美国 CloudFlare节点_20
-      - 美国 CloudFlare节点_21
-      - 北美地区 V2CROSS.COM_2
-      - 美国 CloudFlare节点_22
-      - 美国 CloudFlare节点_23
-      - 美国 CloudFlare节点_24
-      - 美国 CloudFlare节点_25
-      - 美国 CloudFlare节点_26
-      - 美国 CloudFlare节点_27
-      - 湖北省黄石市 移动
-      - 美国 CloudFlare节点_28
-      - 美国 CloudFlare节点_29
-      - 广东省广州市 移动_1
-      - 美国 CloudFlare节点_30
-      - 美国 Fastly全球Anycast节点_4
-      - 美国 Fastly全球Anycast节点_5
-      - 美国 CloudFlare节点_31
-      - 香港 电讯盈科有限公司_1
-      - 美国 CloudFlare节点_32
-      - 美国 CloudFlare节点_33
-      - 美国 CloudFlare节点_34
-      - 美国 CloudFlare节点_35
-      - 美国 CloudFlare节点_36
-      - 美国 CloudFlare节点_37
-      - 香港 电讯盈科有限公司_2
-      - 美国 CloudFlare节点_38
-      - 美国 V2CROSS.COM_1
-      - 法国 国际航空电讯集团公司(SITA)
-      - 美国 CloudFlare节点_39
-      - 美国 CloudFlare节点_40
-      - 丹麦 V2CROSS.COM_2
-      - 美国 CloudFlare节点_41
-      - 美国 CloudFlare节点_42
-      - 美国 CloudFlare节点_43
-      - 美国 CloudFlare节点_44
-      - 美国 CloudFlare节点_45
-      - 美国 V2CROSS.COM_2
-      - 美国 CloudFlare节点_46
-      - 美国 CloudFlare节点_47
-      - 美国 CloudFlare节点_48
-      - 美国 CloudFlare节点_49
-      - 美国 CloudFlare节点_50
-      - 美国 CloudFlare节点_51
-      - 美国 CloudFlare节点_52
-      - 美国 CloudFlare节点_53
-      - 广东省中山市 移动
-      - 美国 CloudFlare节点_54
-      - 美国 CloudFlare节点_55
-      - 美国 CloudFlare节点_56
-      - 美国 Fastly全球Anycast节点_6
-      - 美国 CloudFlare节点_57
-      - 美国 CloudFlare节点_58
-      - 美国 CloudFlare节点_59
-      - 美国 CloudFlare节点_60
-      - 美国 CloudFlare节点_61
-      - 美国 CloudFlare节点_62
-      - 美国 CloudFlare节点_63
-      - 美国 CloudFlare节点_64
-      - 美国 CloudFlare节点_65
-      - 美国 CloudFlare节点_66
-      - 美国 CloudFlare节点_67
-      - 美国 CloudFlare节点_68
-      - 美国 CloudFlare节点_69
-      - 广东省广州市 移动_2
-      - 美国 CloudFlare节点_70
-      - 美国 CloudFlare节点_71
-      - 美国 CloudFlare节点_72
-      - 美国 CloudFlare节点_73
-      - 美国 CloudFlare节点_74
-      - 美国 CloudFlare节点_75
-      - 美国 CloudFlare节点_76
-      - 美国 CloudFlare节点_77
-      - 巴西圣保罗 CloudFlare节点
-      - 美国 CloudFlare节点_78
-      - 美国 CloudFlare节点_79
-      - 美国 CloudFlare节点_80
-      - 广东省广州市 移动_3
-      - 美国 CloudFlare节点_81
-      - 美国 CloudFlare节点_82
-      - 美国 CloudFlare节点_83
-      - 美国 CloudFlare节点_84
-      - 美国 CloudFlare节点_85
-      - 美国 CloudFlare节点_86
-      - 美国 CloudFlare节点_87
-      - 美国 CloudFlare节点_88
-      - 美国 CloudFlare节点_89
-      - 美国 CloudFlare节点_90
-      - 美国 CloudFlare节点_91
-      - 美国 CloudFlare节点_92
-      - 美国 CloudFlare节点_93
-      - 美国 CloudFlare节点_94
-      - 美国 CloudFlare节点_95
-      - 美国 CloudFlare节点_96
-      - 美国 CloudFlare节点_97
-      - 美国 CloudFlare节点_98
-      - 美国 CloudFlare节点_99
-      - 美国 CloudFlare节点_100
-      - 美国 CloudFlare节点_101
-      - 美国 CloudFlare节点_102
-      - 美国 CloudFlare节点_103
-      - 美国 CloudFlare节点_104
-      - 美国 CloudFlare节点_105
-      - 广东省广州市 移动_4
-      - 美国 CloudFlare节点_106
-      - 美国 CloudFlare节点_107
-      - 美国 CloudFlare节点_108
-      - 美国 CloudFlare节点_109
-      - 俄罗斯 V2CROSS.COM
-      - 美国 CloudFlare节点_110
-      - 美国 CloudFlare节点_111
-      - 美国 CloudFlare节点_112
-      - 美国 CloudFlare节点_113
-      - 美国 CloudFlare节点_114
-      - 美国 CloudFlare节点_115
-      - 美国 CloudFlare节点_116
-      - 美国 CloudFlare节点_117
-      - 美国 CloudFlare节点_118
-      - 美国 CloudFlare节点_119
-      - 美国 CloudFlare节点_120
-      - 美国 CloudFlare节点_121
-      - 美国 CloudFlare节点_122
-      - 美国 CloudFlare节点_123
-      - 广东省 移动
-      - 美国 CloudFlare节点_124
-      - 美国 CloudFlare节点_125
-      - 美国 CloudFlare节点_126
-      - 美国 CloudFlare节点_127
-      - 美国 CloudFlare节点_128
-      - 美国 CloudFlare节点_129
-      - 美国 CloudFlare节点_130
-      - 美国 CloudFlare节点_131
-      - 印度 V2CROSS.COM_1
-      - 印度 V2CROSS.COM_2
-      - 美国 CloudFlare节点_132
-      - 美国 CloudFlare节点_133
-      - 美国 CloudFlare节点_134
-      - 印度 V2CROSS.COM_3
-      - 美国 Fastly全球Anycast节点_7
-      - 美国+Amazon+EC2服务器_1
-      - 英国+社会保险安全部_1
-      - 美国+Amazon+EC2服务器_2
-      - 美国+Amazon数据中心
-      - 美国+CloudFlare节点_1
-      - 日本+V2CROSS.COM_1
-      - 美国+惠普公司_1
-      - 英国+社会保险安全部_2
-      - 日本+V2CROSS.COM_2
-      - 日本+V2CROSS.COM_3
-      - 德国+黑森州法兰克福Amazon数据中心
-      - 亚太地区+V2CROSS.COM_1
-      - 新加坡+Amazon数据中心
-      - 美国+惠普公司_2
-      - 法国+巴黎Amazon数据中心
-      - 亚太地区+V2CROSS.COM_2
-      - 美国+CloudFlare节点_2
-      - 日本+V2CROSS.COM_4
-      - 美国+Xerox
-      - 爱尔兰+V2CROSS.COM_2
-      - 美国+CloudFlare节点_3
-      - 美国+CloudFlare节点_4
-      - 亚太地区+V2CROSS.COM_3
-      - 日本+东京都Amazon数据中心
-      - 美国+弗吉尼亚州阿什本Amazon数据中心
-  - name: ♻️ 自动选择
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+      - 🔯 故障转移
+      - 🇭🇰 香港节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🚀 手动切换
+      - DIRECT
+  - name: 🚀 手动切换
+    type: select
     proxies:
+      - 美国+Amazon+EC2服务器_1
+      - 英国+社会保险安全部_1
+      - 美国+Amazon+EC2服务器_2
+      - 美国+Amazon数据中心
+      - 美国+CloudFlare节点_1
+      - 日本+V2CROSS.COM_1
+      - 美国+惠普公司_1
+      - 英国+社会保险安全部_2
+      - 日本+V2CROSS.COM_2
+      - 日本+V2CROSS.COM_3
+      - 德国+黑森州法兰克福Amazon数据中心
+      - 亚太地区+V2CROSS.COM_1
+      - 新加坡+Amazon数据中心
+      - 美国+惠普公司_2
+      - 法国+巴黎Amazon数据中心
+      - 亚太地区+V2CROSS.COM_2
+      - 美国+CloudFlare节点_2
+      - 日本+V2CROSS.COM_4
+      - 美国+Xerox
+      - 爱尔兰+V2CROSS.COM
+      - 美国+CloudFlare节点_3
+      - 美国+CloudFlare节点_4
+      - 亚太地区+V2CROSS.COM_3
+      - 日本+东京都Amazon数据中心
+      - 美国+弗吉尼亚州阿什本Amazon数据中心
       - 丹麦 V2CROSS.COM_1
       - 美国 CloudFlare节点_1
       - 美国 Fastly全球Anycast节点_1
@@ -635,6 +476,16 @@ proxy-groups:
       - 美国 CloudFlare节点_134
       - 印度 V2CROSS.COM_3
       - 美国 Fastly全球Anycast节点_7
+  - name: 🔯 故障转移
+    type: fallback
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    timeout: 3
+    packet_loss_detection:
+    enabled: true
+    threshold: 3
+    check_interval: 90
+    proxies:
       - 美国+Amazon+EC2服务器_1
       - 英国+社会保险安全部_1
       - 美国+Amazon+EC2服务器_2
@@ -654,30 +505,364 @@ proxy-groups:
       - 美国+CloudFlare节点_2
       - 日本+V2CROSS.COM_4
       - 美国+Xerox
-      - 爱尔兰+V2CROSS.COM_2
+      - 爱尔兰+V2CROSS.COM
       - 美国+CloudFlare节点_3
       - 美国+CloudFlare节点_4
       - 亚太地区+V2CROSS.COM_3
       - 日本+东京都Amazon数据中心
       - 美国+弗吉尼亚州阿什本Amazon数据中心
+      - 丹麦 V2CROSS.COM_1
+      - 美国 CloudFlare节点_1
+      - 美国 Fastly全球Anycast节点_1
+      - 美国 CloudFlare节点_2
+      - 美国 CloudFlare节点_3
+      - 美国 CloudFlare节点_4
+      - 美国 CloudFlare节点_5
+      - 美国 CloudFlare节点_6
+      - 美国 CloudFlare节点_7
+      - 北美地区 V2CROSS.COM_1
+      - 巴拿马 V2CROSS.COM
+      - 美国 CloudFlare节点_8
+      - 美国 CloudFlare节点_9
+      - 美国 CloudFlare节点_10
+      - 美国 CloudFlare节点_11
+      - 美国 CloudFlare节点_12
+      - 美国 CloudFlare节点_13
+      - 美国 CloudFlare节点_14
+      - 美国 CloudFlare节点_15
+      - 美国 Fastly全球Anycast节点_2
+      - 美国 CloudFlare节点_16
+      - 美国 CloudFlare节点_17
+      - 美国 Fastly全球Anycast节点_3
+      - 美国 CloudFlare节点_18
+      - 美国 CloudFlare节点_19
+      - 美国 CloudFlare节点_20
+      - 美国 CloudFlare节点_21
+      - 北美地区 V2CROSS.COM_2
+      - 美国 CloudFlare节点_22
+      - 美国 CloudFlare节点_23
+      - 美国 CloudFlare节点_24
+      - 美国 CloudFlare节点_25
+      - 美国 CloudFlare节点_26
+      - 美国 CloudFlare节点_27
+      - 湖北省黄石市 移动
+      - 美国 CloudFlare节点_28
+      - 美国 CloudFlare节点_29
+      - 广东省广州市 移动_1
+      - 美国 CloudFlare节点_30
+      - 美国 Fastly全球Anycast节点_4
+      - 美国 Fastly全球Anycast节点_5
+      - 美国 CloudFlare节点_31
+      - 香港 电讯盈科有限公司_1
+      - 美国 CloudFlare节点_32
+      - 美国 CloudFlare节点_33
+      - 美国 CloudFlare节点_34
+      - 美国 CloudFlare节点_35
+      - 美国 CloudFlare节点_36
+      - 美国 CloudFlare节点_37
+      - 香港 电讯盈科有限公司_2
+      - 美国 CloudFlare节点_38
+      - 美国 V2CROSS.COM_1
+      - 法国 国际航空电讯集团公司(SITA)
+      - 美国 CloudFlare节点_39
+      - 美国 CloudFlare节点_40
+      - 丹麦 V2CROSS.COM_2
+      - 美国 CloudFlare节点_41
+      - 美国 CloudFlare节点_42
+      - 美国 CloudFlare节点_43
+      - 美国 CloudFlare节点_44
+      - 美国 CloudFlare节点_45
+      - 美国 V2CROSS.COM_2
+      - 美国 CloudFlare节点_46
+      - 美国 CloudFlare节点_47
+      - 美国 CloudFlare节点_48
+      - 美国 CloudFlare节点_49
+      - 美国 CloudFlare节点_50
+      - 美国 CloudFlare节点_51
+      - 美国 CloudFlare节点_52
+      - 美国 CloudFlare节点_53
+      - 广东省中山市 移动
+      - 美国 CloudFlare节点_54
+      - 美国 CloudFlare节点_55
+      - 美国 CloudFlare节点_56
+      - 美国 Fastly全球Anycast节点_6
+      - 美国 CloudFlare节点_57
+      - 美国 CloudFlare节点_58
+      - 美国 CloudFlare节点_59
+      - 美国 CloudFlare节点_60
+      - 美国 CloudFlare节点_61
+      - 美国 CloudFlare节点_62
+      - 美国 CloudFlare节点_63
+      - 美国 CloudFlare节点_64
+      - 美国 CloudFlare节点_65
+      - 美国 CloudFlare节点_66
+      - 美国 CloudFlare节点_67
+      - 美国 CloudFlare节点_68
+      - 美国 CloudFlare节点_69
+      - 广东省广州市 移动_2
+      - 美国 CloudFlare节点_70
+      - 美国 CloudFlare节点_71
+      - 美国 CloudFlare节点_72
+      - 美国 CloudFlare节点_73
+      - 美国 CloudFlare节点_74
+      - 美国 CloudFlare节点_75
+      - 美国 CloudFlare节点_76
+      - 美国 CloudFlare节点_77
+      - 巴西圣保罗 CloudFlare节点
+      - 美国 CloudFlare节点_78
+      - 美国 CloudFlare节点_79
+      - 美国 CloudFlare节点_80
+      - 广东省广州市 移动_3
+      - 美国 CloudFlare节点_81
+      - 美国 CloudFlare节点_82
+      - 美国 CloudFlare节点_83
+      - 美国 CloudFlare节点_84
+      - 美国 CloudFlare节点_85
+      - 美国 CloudFlare节点_86
+      - 美国 CloudFlare节点_87
+      - 美国 CloudFlare节点_88
+      - 美国 CloudFlare节点_89
+      - 美国 CloudFlare节点_90
+      - 美国 CloudFlare节点_91
+      - 美国 CloudFlare节点_92
+      - 美国 CloudFlare节点_93
+      - 美国 CloudFlare节点_94
+      - 美国 CloudFlare节点_95
+      - 美国 CloudFlare节点_96
+      - 美国 CloudFlare节点_97
+      - 美国 CloudFlare节点_98
+      - 美国 CloudFlare节点_99
+      - 美国 CloudFlare节点_100
+      - 美国 CloudFlare节点_101
+      - 美国 CloudFlare节点_102
+      - 美国 CloudFlare节点_103
+      - 美国 CloudFlare节点_104
+      - 美国 CloudFlare节点_105
+      - 广东省广州市 移动_4
+      - 美国 CloudFlare节点_106
+      - 美国 CloudFlare节点_107
+      - 美国 CloudFlare节点_108
+      - 美国 CloudFlare节点_109
+      - 俄罗斯 V2CROSS.COM
+      - 美国 CloudFlare节点_110
+      - 美国 CloudFlare节点_111
+      - 美国 CloudFlare节点_112
+      - 美国 CloudFlare节点_113
+      - 美国 CloudFlare节点_114
+      - 美国 CloudFlare节点_115
+      - 美国 CloudFlare节点_116
+      - 美国 CloudFlare节点_117
+      - 美国 CloudFlare节点_118
+      - 美国 CloudFlare节点_119
+      - 美国 CloudFlare节点_120
+      - 美国 CloudFlare节点_121
+      - 美国 CloudFlare节点_122
+      - 美国 CloudFlare节点_123
+      - 广东省 移动
+      - 美国 CloudFlare节点_124
+      - 美国 CloudFlare节点_125
+      - 美国 CloudFlare节点_126
+      - 美国 CloudFlare节点_127
+      - 美国 CloudFlare节点_128
+      - 美国 CloudFlare节点_129
+      - 美国 CloudFlare节点_130
+      - 美国 CloudFlare节点_131
+      - 印度 V2CROSS.COM_1
+      - 印度 V2CROSS.COM_2
+      - 美国 CloudFlare节点_132
+      - 美国 CloudFlare节点_133
+      - 美国 CloudFlare节点_134
+      - 印度 V2CROSS.COM_3
+      - 美国 Fastly全球Anycast节点_7
+  - name: 📲 电报消息
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🔯 故障转移
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🚀 手动切换
+      - DIRECT
   - name: 💬 OpenAi
     type: select
     proxies:
       - 🚀 节点选择
-      - ♻️ 自动选择
+      - 🔯 故障转移
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
       - 🇺🇲 美国节点
+      - 🚀 手动切换
+      - DIRECT
+  - name: 📢 谷歌FCM
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🚀 手动切换
+  - name: 📢 谷歌🇨🇳Play下载
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - DIRECT
+      - 🔯 故障转移
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🚀 手动切换
+  - name: 📢 谷歌🇨🇳Play服务
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - DIRECT
+      - 🔯 故障转移
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🚀 手动切换
+  - name: 📢 谷歌🇨🇳
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🚀 手动切换
+  - name: 📢 谷歌
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - DIRECT
+      - 🔯 故障转移
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🚀 手动切换
+  - name: 📹 油管视频
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🔯 故障转移
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🚀 手动切换
+      - DIRECT
+  - name: 🎥 奈飞视频
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🔯 故障转移
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🚀 手动切换
+      - DIRECT
+  - name: 📺 巴哈姆特
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🚀 手动切换
+      - DIRECT
+  - name: 📺 哔哩哔哩
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🇭🇰 香港节点
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
-      - ♻️ 自动选择
+      - 🔯 故障转移
+      - 🇭🇰 香港节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
       - 🇺🇲 美国节点
+      - 🚀 手动切换
+      - DIRECT
+  - name: 🌏 国内媒体
+    type: select
+    proxies:
+      - DIRECT
+      - 🇭🇰 香港节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🚀 手动切换
+  - name: Ⓜ️ 微软Bing
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🚀 手动切换
+  - name: Ⓜ️ 微软云盘
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🚀 手动切换
+  - name: Ⓜ️ 微软服务
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🚀 手动切换
+  - name: 🍎 苹果服务
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🚀 手动切换
+  - name: 🎮 游戏平台
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🚀 手动切换
+  - name: 🎶 网易音乐
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - 🔯 故障转移
   - name: 🎯 全球直连
     type: select
     proxies:
       - DIRECT
       - 🚀 节点选择
-      - ♻️ 自动选择
+      - 🔯 故障转移
   - name: 🛑 广告拦截
     type: select
     proxies:
@@ -692,15 +877,61 @@ proxy-groups:
     type: select
     proxies:
       - 🚀 节点选择
-      - ♻️ 自动选择
+      - 🔯 故障转移
       - DIRECT
+      - 🇭🇰 香港节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
       - 🇺🇲 美国节点
-  - name: 🇺🇲 美国节点
-    type: url-test
-    url: http://www.gstatic.com/generate_204
+      - 🚀 手动切换
+  - name: 🇭🇰 香港节点
+    type: fallback
+    url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 150
+    timeout: 3
+    packet_loss_detection:
+    enabled: true
+    threshold: 3
+    check_interval: 90
     proxies:
+      - 香港 电讯盈科有限公司_1
+      - 香港 电讯盈科有限公司_2
+  - name: 🇯🇵 日本节点
+    type: fallback
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    timeout: 3
+    packet_loss_detection:
+    enabled: true
+    threshold: 3
+    check_interval: 90
+    proxies:
+      - 日本+V2CROSS.COM_1
+      - 日本+V2CROSS.COM_2
+      - 日本+V2CROSS.COM_3
+      - 日本+V2CROSS.COM_4
+      - 日本+东京都Amazon数据中心
+  - name: 🇺🇲 美国节点
+    type: fallback
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    timeout: 3
+    packet_loss_detection:
+    enabled: true
+    threshold: 3
+    check_interval: 90
+    proxies:
+      - 美国+Amazon+EC2服务器_1
+      - 美国+Amazon+EC2服务器_2
+      - 美国+Amazon数据中心
+      - 美国+CloudFlare节点_1
+      - 美国+惠普公司_1
+      - 美国+惠普公司_2
+      - 美国+CloudFlare节点_2
+      - 美国+Xerox
+      - 美国+CloudFlare节点_3
+      - 美国+CloudFlare节点_4
+      - 美国+弗吉尼亚州阿什本Amazon数据中心
       - 美国 CloudFlare节点_1
       - 美国 Fastly全球Anycast节点_1
       - 美国 CloudFlare节点_2
@@ -846,17 +1077,17 @@ proxy-groups:
       - 美国 CloudFlare节点_133
       - 美国 CloudFlare节点_134
       - 美国 Fastly全球Anycast节点_7
-      - 美国+Amazon+EC2服务器_1
-      - 美国+Amazon+EC2服务器_2
-      - 美国+Amazon数据中心
-      - 美国+CloudFlare节点_1
-      - 美国+惠普公司_1
-      - 美国+惠普公司_2
-      - 美国+CloudFlare节点_2
-      - 美国+Xerox
-      - 美国+CloudFlare节点_3
-      - 美国+CloudFlare节点_4
-      - 美国+弗吉尼亚州阿什本Amazon数据中心
+  - name: 🇸🇬 狮城节点
+    type: fallback
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    timeout: 3
+    packet_loss_detection:
+    enabled: true
+    threshold: 3
+    check_interval: 90
+    proxies:
+      - 新加坡+Amazon数据中心
 
 rules:
 # 本地/局域网地址
@@ -2647,54 +2878,104 @@ rules:
   - IP-CIDR,173.194.175.188/32,📢 谷歌FCM,no-resolve
   - IP-CIDR,173.194.218.188/32,📢 谷歌FCM,no-resolve
   - IP-CIDR,209.85.233.188/32,📢 谷歌FCM,no-resolve
-# Google China
-  - DOMAIN-SUFFIX,265.com,🎯 全球直连
-  - DOMAIN-SUFFIX,2mdn.net,🎯 全球直连
-  - DOMAIN-SUFFIX,alt1-mtalk.google.com,🎯 全球直连
-  - DOMAIN-SUFFIX,alt2-mtalk.google.com,🎯 全球直连
-  - DOMAIN-SUFFIX,alt3-mtalk.google.com,🎯 全球直连
-  - DOMAIN-SUFFIX,alt4-mtalk.google.com,🎯 全球直连
-  - DOMAIN-SUFFIX,alt5-mtalk.google.com,🎯 全球直连
-  - DOMAIN-SUFFIX,alt6-mtalk.google.com,🎯 全球直连
-  - DOMAIN-SUFFIX,alt7-mtalk.google.com,🎯 全球直连
-  - DOMAIN-SUFFIX,alt8-mtalk.google.com,🎯 全球直连
-  - DOMAIN-SUFFIX,app-measurement.com,🎯 全球直连
-  - DOMAIN-SUFFIX,cache.pack.google.com,🎯 全球直连
-  - DOMAIN-SUFFIX,clickserve.dartsearch.net,🎯 全球直连
-  - DOMAIN-SUFFIX,crl.pki.goog,🎯 全球直连
-  - DOMAIN-SUFFIX,dl.google.com,🎯 全球直连
-  - DOMAIN-SUFFIX,dl.l.google.com,🎯 全球直连
-  - DOMAIN-SUFFIX,googletagmanager.com,🎯 全球直连
-  - DOMAIN-SUFFIX,googletagservices.com,🎯 全球直连
-  - DOMAIN-SUFFIX,gtm.oasisfeng.com,🎯 全球直连
-  - DOMAIN-SUFFIX,mtalk.google.com,🎯 全球直连
-  - DOMAIN-SUFFIX,ocsp.pki.goog,🎯 全球直连
-  - DOMAIN-SUFFIX,recaptcha.net,🎯 全球直连
-  - DOMAIN-SUFFIX,safebrowsing-cache.google.com,🎯 全球直连
-  - DOMAIN-SUFFIX,settings.crashlytics.com,🎯 全球直连
-  - DOMAIN-SUFFIX,ssl-google-analytics.l.google.com,🎯 全球直连
-  - DOMAIN-SUFFIX,toolbarqueries.google.com,🎯 全球直连
-  - DOMAIN-SUFFIX,tools.google.com,🎯 全球直连
-  - DOMAIN-SUFFIX,tools.l.google.com,🎯 全球直连
-  - DOMAIN-SUFFIX,www-googletagmanager.l.google.com,🎯 全球直连
-# 内容：SteamCN
-# 数量：16条
-  - DOMAIN,csgo.wmsj.cn,🎯 全球直连
-  - DOMAIN,dl.steam.clngaa.com,🎯 全球直连
-  - DOMAIN,dl.steam.ksyna.com,🎯 全球直连
-  - DOMAIN,dota2.wmsj.cn,🎯 全球直连
-  - DOMAIN,st.dl.bscstorage.net,🎯 全球直连
-  - DOMAIN,st.dl.eccdnx.com,🎯 全球直连
-  - DOMAIN,st.dl.pinyuncloud.com,🎯 全球直连
-  - DOMAIN,steampipe.steamcontent.tnkjmec.com,🎯 全球直连
-  - DOMAIN,steampowered.com.8686c.com,🎯 全球直连
-  - DOMAIN,steamstatic.com.8686c.com,🎯 全球直连
-  - DOMAIN,wmsjsteam.com,🎯 全球直连
-  - DOMAIN,xz.pphimalayanrt.com,🎯 全球直连
-  - DOMAIN-SUFFIX,cm.steampowered.com,🎯 全球直连
-  - DOMAIN-SUFFIX,steamchina.com,🎯 全球直连
-  - DOMAIN-SUFFIX,steamcontent.com,🎯 全球直连
-  - DOMAIN-SUFFIX,steamusercontent.com,🎯 全球直连
+  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,📢 谷歌🇨🇳Play下载
+  - DOMAIN-SUFFIX,services.googleapis.cn,📢 谷歌🇨🇳Play服务
+# 内容：GoogleCNProxyIP 谷歌中国服务 services.googleapis.cn
+# 数量：18条
+  - IP-CIDR,120.232.181.162/32,📢 谷歌🇨🇳Play服务,no-resolve
+  - IP-CIDR,120.241.147.226/32,📢 谷歌🇨🇳Play服务,no-resolve
+  - IP-CIDR,120.253.253.226/32,📢 谷歌🇨🇳Play服务,no-resolve
+  - IP-CIDR,120.253.255.162/32,📢 谷歌🇨🇳Play服务,no-resolve
+  - IP-CIDR,120.253.255.34/32,📢 谷歌🇨🇳Play服务,no-resolve
+  - IP-CIDR,120.253.255.98/32,📢 谷歌🇨🇳Play服务,no-resolve
+  - IP-CIDR,180.163.150.162/32,📢 谷歌🇨🇳Play服务,no-resolve
+  - IP-CIDR,180.163.150.34/32,📢 谷歌🇨🇳Play服务,no-resolve
+  - IP-CIDR,180.163.151.162/32,📢 谷歌🇨🇳Play服务,no-resolve
+  - IP-CIDR,180.163.151.34/32,📢 谷歌🇨🇳Play服务,no-resolve
+  - IP-CIDR,203.208.39.0/24,📢 谷歌🇨🇳Play服务,no-resolve
+  - IP-CIDR,203.208.40.0/24,📢 谷歌🇨🇳Play服务,no-resolve
+  - IP-CIDR,203.208.41.0/24,📢 谷歌🇨🇳Play服务,no-resolve
+  - IP-CIDR,203.208.43.0/24,📢 谷歌🇨🇳Play服务,no-resolve
+  - IP-CIDR,203.208.50.0/24,📢 谷歌🇨🇳Play服务,no-resolve
+  - IP-CIDR,220.181.174.162/32,📢 谷歌🇨🇳Play服务,no-resolve
+  - IP-CIDR,220.181.174.226/32,📢 谷歌🇨🇳Play服务,no-resolve
+  - IP-CIDR,220.181.174.34/32,📢 谷歌🇨🇳Play服务,no-resolve
+# 内容：GoogleCN
+# 数量：29条
+  - DOMAIN-SUFFIX,265.com,📢 谷歌🇨🇳
+  - DOMAIN-SUFFIX,2mdn.net,📢 谷歌🇨🇳
+  - DOMAIN-SUFFIX,alt1-mtalk.google.com,📢 谷歌🇨🇳
+  - DOMAIN-SUFFIX,alt2-mtalk.google.com,📢 谷歌🇨🇳
+  - DOMAIN-SUFFIX,alt3-mtalk.google.com,📢 谷歌🇨🇳
+  - DOMAIN-SUFFIX,alt4-mtalk.google.com,📢 谷歌🇨🇳
+  - DOMAIN-SUFFIX,alt5-mtalk.google.com,📢 谷歌🇨🇳
+  - DOMAIN-SUFFIX,alt6-mtalk.google.com,📢 谷歌🇨🇳
+  - DOMAIN-SUFFIX,alt7-mtalk.google.com,📢 谷歌🇨🇳
+  - DOMAIN-SUFFIX,alt8-mtalk.google.com,📢 谷歌🇨🇳
+  - DOMAIN-SUFFIX,app-measurement.com,📢 谷歌🇨🇳
+  - DOMAIN-SUFFIX,cache.pack.google.com,📢 谷歌🇨🇳
+  - DOMAIN-SUFFIX,clickserve.dartsearch.net,📢 谷歌🇨🇳
+  - DOMAIN-SUFFIX,crl.pki.goog,📢 谷歌🇨🇳
+  - DOMAIN-SUFFIX,dl.google.com,📢 谷歌🇨🇳
+  - DOMAIN-SUFFIX,dl.l.google.com,📢 谷歌🇨🇳
+  - DOMAIN-SUFFIX,googletagmanager.com,📢 谷歌🇨🇳
+  - DOMAIN-SUFFIX,googletagservices.com,📢 谷歌🇨🇳
+  - DOMAIN-SUFFIX,gtm.oasisfeng.com,📢 谷歌🇨🇳
+  - DOMAIN-SUFFIX,mtalk.google.com,📢 谷歌🇨🇳
+  - DOMAIN-SUFFIX,ocsp.pki.goog,📢 谷歌🇨🇳
+  - DOMAIN-SUFFIX,recaptcha.net,📢 谷歌🇨🇳
+  - DOMAIN-SUFFIX,safebrowsing-cache.google.com,📢 谷歌🇨🇳
+  - DOMAIN-SUFFIX,settings.crashlytics.com,📢 谷歌🇨🇳
+  - DOMAIN-SUFFIX,ssl-google-analytics.l.google.com,📢 谷歌🇨🇳
+  - DOMAIN-SUFFIX,toolbarqueries.google.com,📢 谷歌🇨🇳
+  - DOMAIN-SUFFIX,tools.google.com,📢 谷歌🇨🇳
+  - DOMAIN-SUFFIX,tools.l.google.com,📢 谷歌🇨🇳
+  - DOMAIN-SUFFIX,www-googletagmanager.l.google.com,📢 谷歌🇨🇳
+# 内容：YouTube
+# 数量：17条
+#   - USER-AGENT,*youtube*,📹 油管视频
+#   - USER-AGENT,YouTube*,📹 油管视频
+#   - USER-AGENT,com.google.ios.youtube*,📹 油管视频
+  - DOMAIN-KEYWORD,youtube,📹 油管视频
+  - DOMAIN,youtubei.googleapis.com,📹 油管视频
+  - DOMAIN,yt3.ggpht.com,📹 油管视频
+  - DOMAIN-SUFFIX,googlevideo.com,📹 油管视频
+  - DOMAIN-SUFFIX,gvt2.com,📹 油管视频
+  - DOMAIN-SUFFIX,withyoutube.com,📹 油管视频
+  - DOMAIN-SUFFIX,youtu.be,📹 油管视频
+  - DOMAIN-SUFFIX,youtube-nocookie.com,📹 油管视频
+  - DOMAIN-SUFFIX,youtube.com,📹 油管视频
+  - DOMAIN-SUFFIX,youtubeeducation.com,📹 油管视频
+  - DOMAIN-SUFFIX,youtubegaming.com,📹 油管视频
+  - DOMAIN-SUFFIX,youtubekids.com,📹 油管视频
+  - DOMAIN-SUFFIX,yt.be,📹 油管视频
+  - DOMAIN-SUFFIX,ytimg.com,📹 油管视频
+# 内容：Google
+# 数量：24条
+  - DOMAIN-KEYWORD,gmail,📢 谷歌
+  - DOMAIN-KEYWORD,google,📢 谷歌
+  - DOMAIN-SUFFIX,1e100.net,📢 谷歌
+  - DOMAIN-SUFFIX,2mdn.net,📢 谷歌
+  - DOMAIN-SUFFIX,app-measurement.net,📢 谷歌
+  - DOMAIN-SUFFIX,g.co,📢 谷歌
+  - DOMAIN-SUFFIX,ggpht.com,📢 谷歌
+  - DOMAIN-SUFFIX,goo.gl,📢 谷歌
+  - DOMAIN-SUFFIX,googleapis.cn,📢 谷歌
+  - DOMAIN-SUFFIX,googleapis.com,📢 谷歌
+  - DOMAIN-SUFFIX,gstatic.cn,📢 谷歌
+  - DOMAIN-SUFFIX,gstatic.com,📢 谷歌
+  - DOMAIN-SUFFIX,gvt0.com,📢 谷歌
+  - DOMAIN-SUFFIX,gvt1.com,📢 谷歌
+  - DOMAIN-SUFFIX,gvt2.com,📢 谷歌
+  - DOMAIN-SUFFIX,gvt3.com,📢 谷歌
+  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,📢 谷歌
+  - DOMAIN-SUFFIX,youtu.be,📢 谷歌
+  - DOMAIN-SUFFIX,youtube-nocookie.com,📢 谷歌
+  - DOMAIN-SUFFIX,youtube.com,📢 谷歌
+  - DOMAIN-SUFFIX,yt.be,📢 谷歌
+  - DOMAIN-SUFFIX,ytimg.com,📢 谷歌
+  - IP-CIDR,74.125.0.0/16,📢 谷歌,no-resolve
+  - IP-CIDR,173.194.0.0/16,📢 谷歌,no-resolve
 # Bing
 # From https://github.com/ACL4SSR/ACL4SSR/issues/121#issuecomment-1793673237
   - DOMAIN-SUFFIX,bing.com,Ⓜ️ 微软Bing
@@ -2964,25 +3245,6 @@ rules:
   - DOMAIN-SUFFIX,nintendo.net,🎮 游戏平台
   - DOMAIN-SUFFIX,nintendo.nl,🎮 游戏平台
   - DOMAIN-SUFFIX,nintendowifi.net,🎮 游戏平台
-# 内容：YouTube
-# 数量：17条
-#   - USER-AGENT,*youtube*,📹 油管视频
-#   - USER-AGENT,YouTube*,📹 油管视频
-#   - USER-AGENT,com.google.ios.youtube*,📹 油管视频
-  - DOMAIN-KEYWORD,youtube,📹 油管视频
-  - DOMAIN,youtubei.googleapis.com,📹 油管视频
-  - DOMAIN,yt3.ggpht.com,📹 油管视频
-  - DOMAIN-SUFFIX,googlevideo.com,📹 油管视频
-  - DOMAIN-SUFFIX,gvt2.com,📹 油管视频
-  - DOMAIN-SUFFIX,withyoutube.com,📹 油管视频
-  - DOMAIN-SUFFIX,youtu.be,📹 油管视频
-  - DOMAIN-SUFFIX,youtube-nocookie.com,📹 油管视频
-  - DOMAIN-SUFFIX,youtube.com,📹 油管视频
-  - DOMAIN-SUFFIX,youtubeeducation.com,📹 油管视频
-  - DOMAIN-SUFFIX,youtubegaming.com,📹 油管视频
-  - DOMAIN-SUFFIX,youtubekids.com,📹 油管视频
-  - DOMAIN-SUFFIX,yt.be,📹 油管视频
-  - DOMAIN-SUFFIX,ytimg.com,📹 油管视频
 # 内容：Netflix
 # 数量：41条
 #   - USER-AGENT,Argo*,🎥 奈飞视频
