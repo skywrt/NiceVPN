@@ -2216,15 +2216,11 @@ proxy-groups:
       - Relay_🏁ZZ-🇺🇸US_484 | 4.05Mb
       - 🏁ZZ_485 |16.77Mb
       - 🏁ZZ_486 |19.57Mb
-  - name: 🔯 故障转移
-    type: fallback
-    url: https://www.gstatic.com/generate_204
+  - name: ♻️ 自动选择
+    type: url-test
+    url: http://www.gstatic.com/generate_204
     interval: 300
-    timeout: 3
-    packet_loss_detection:
-    enabled: true
-    threshold: 4
-    check_interval: 60
+    tolerance: 50
     proxies:
       - Relay_-🇩🇪DE_24 |28.47Mb
       - _25 |28.62Mb
@@ -3287,7 +3283,7 @@ proxy-groups:
     type: select
     proxies:
       - 🚀 节点选择
-      - 🔯 故障转移
+      - ♻️ 自动选择
       - 🇸🇬 狮城节点
       - 🇭🇰 香港节点
       - 🇨🇳 台湾节点
@@ -3300,7 +3296,7 @@ proxy-groups:
     type: select
     proxies:
       - 🚀 节点选择
-      - 🔯 故障转移
+      - ♻️ 自动选择
       - 🇸🇬 狮城节点
       - 🇭🇰 香港节点
       - 🇨🇳 台湾节点
@@ -3313,7 +3309,7 @@ proxy-groups:
     type: select
     proxies:
       - 🚀 节点选择
-      - 🔯 故障转移
+      - ♻️ 自动选择
       - 🇸🇬 狮城节点
       - 🇭🇰 香港节点
       - 🇨🇳 台湾节点
@@ -3326,7 +3322,7 @@ proxy-groups:
     type: select
     proxies:
       - 🚀 节点选择
-      - 🔯 故障转移
+      - ♻️ 自动选择
       - 🇸🇬 狮城节点
       - 🇭🇰 香港节点
       - 🇨🇳 台湾节点
@@ -3352,7 +3348,7 @@ proxy-groups:
     type: select
     proxies:
       - 🚀 节点选择
-      - 🔯 故障转移
+      - ♻️ 自动选择
       - 🇭🇰 香港节点
       - 🇨🇳 台湾节点
       - 🇸🇬 狮城节点
@@ -3447,13 +3443,13 @@ proxy-groups:
     proxies:
       - DIRECT
       - 🚀 节点选择
-      - 🔯 故障转移
+      - ♻️ 自动选择
   - name: 🎯 全球直连
     type: select
     proxies:
       - DIRECT
       - 🚀 节点选择
-      - 🔯 故障转移
+      - ♻️ 自动选择
   - name: 🛑 广告拦截
     type: select
     proxies:
@@ -3468,7 +3464,7 @@ proxy-groups:
     type: select
     proxies:
       - 🚀 节点选择
-      - 🔯 故障转移
+      - ♻️ 自动选择
       - DIRECT
       - 🇭🇰 香港节点
       - 🇨🇳 台湾节点
@@ -3478,14 +3474,10 @@ proxy-groups:
       - 🇰🇷 韩国节点
       - 🚀 手动切换
   - name: 🇭🇰 香港节点
-    type: fallback
-    url: https://www.gstatic.com/generate_204
+    type: url-test
+    url: http://www.gstatic.com/generate_204
     interval: 300
-    timeout: 3
-    packet_loss_detection:
-    enabled: true
-    threshold: 4
-    check_interval: 60
+    tolerance: 50
     proxies:
       - Relay_🇭🇰 HK-🇭🇰HK_274 | 9.67Mb
       - 🇭🇰 HK_275
@@ -3542,14 +3534,10 @@ proxy-groups:
       - Relay_🇺🇸US-🇭🇰HK_1142
       - Relay_🇭🇰HK-🇭🇰HK_264
   - name: 🇯🇵 日本节点
-    type: fallback
-    url: https://www.gstatic.com/generate_204
+    type: url-test
+    url: http://www.gstatic.com/generate_204
     interval: 300
-    timeout: 3
-    packet_loss_detection:
-    enabled: true
-    threshold: 4
-    check_interval: 60
+    tolerance: 50
     proxies:
       - 🇯🇵 JP_291 | 6.88Mb
       - Relay_🇯🇵JP-🇯🇵JP_305
@@ -3621,14 +3609,10 @@ proxy-groups:
       - 🇯🇵JP_285 | 8.97Mb
       - Relay_🇯🇵JP-🇯🇵JP_287
   - name: 🇺🇲 美国节点
-    type: fallback
-    url: https://www.gstatic.com/generate_204
+    type: url-test
+    url: http://www.gstatic.com/generate_204
     interval: 300
-    timeout: 3
-    packet_loss_detection:
-    enabled: true
-    threshold: 4
-    check_interval: 60
+    tolerance: 150
     proxies:
       - Relay_-🇺🇸US_26 | 4.87Mb
       - Relay_-🇺🇸US_28 |24.83Mb
@@ -3887,14 +3871,10 @@ proxy-groups:
       - Relay_🇺🇸US-🇺🇸US_449
       - Relay_🏁ZZ-🇺🇸US_484 | 4.05Mb
   - name: 🇨🇳 台湾节点
-    type: fallback
-    url: https://www.gstatic.com/generate_204
+    type: url-test
+    url: http://www.gstatic.com/generate_204
     interval: 300
-    timeout: 3
-    packet_loss_detection:
-    enabled: true
-    threshold: 4
-    check_interval: 60
+    tolerance: 50
     proxies:
       - Relay_🇹🇼TW-🇹🇼TW_671 | 2.20Mb
       - Relay_🇹🇼TW-🇭🇰HK_672 | 3.15Mb
@@ -3921,14 +3901,10 @@ proxy-groups:
       - Relay_🇹🇼TW-🇹🇼TW_769
       - Relay_🇹🇼TW-🇹🇼TW_770
   - name: 🇸🇬 狮城节点
-    type: fallback
-    url: https://www.gstatic.com/generate_204
+    type: url-test
+    url: http://www.gstatic.com/generate_204
     interval: 300
-    timeout: 3
-    packet_loss_detection:
-    enabled: true
-    threshold: 4
-    check_interval: 60
+    tolerance: 50
     proxies:
       - Relay_-🇸🇬SG_44 | 8.52Mb
       - Relay_🇨🇳CN-🇸🇬SG_228 | 6.67Mb
@@ -3990,14 +3966,10 @@ proxy-groups:
       - Pool_🇸🇬SG_331 |10.21Mb
       - Relay_🇺🇸US-🇸🇬SG_425 | 2.83Mb
   - name: 🇰🇷 韩国节点
-    type: fallback
-    url: https://www.gstatic.com/generate_204
+    type: url-test
+    url: http://www.gstatic.com/generate_204
     interval: 300
-    timeout: 3
-    packet_loss_detection:
-    enabled: true
-    threshold: 4
-    check_interval: 60
+    tolerance: 50
     proxies:
       - 🇰🇷 KR_311 | 9.21Mb
       - Relay_🇨🇳CN-🇰🇷KR_256 | 6.56Mb
