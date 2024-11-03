@@ -1,18 +1,18 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-11-03 14:46:50
+# 创建时间：2024-11-03 15:10:28
 # 使用模版：ACL4SSR_Online_MultiCountry.ini
 # 节点数量：341
 # 节点类型：vmess, trojan
 ####################################
 mixed-port: 7890
-allow-lan: false
-log-level: silent
-external-controller: 127.0.0.1:9090
+allow-lan: true
+log-level: info
+external-controller: 0.0.0.0:9090
 dns:
   enabled: true
-  listen: 127.0.0.1:1053
+  listen: 0.0.0.0:1053
   ipv6: true
   default-nameserver:
     - 223.5.5.5
@@ -80,7 +80,7 @@ dns:
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
   fallback-filter:
-    geoip: true
+    geoip: false
     ipcidr:
       - 240.0.0.0/4
       - 0.0.0.0/32
@@ -431,11 +431,15 @@ proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
-      - 🔯 故障转移
+      - ♻️ 自动选择
       - 🇭🇰 香港节点
       - 🇺🇲 美国节点
       - 🇯🇵 日本节点
+      - 🚀 手动切换
       - DIRECT
+  - name: 🚀 手动切换
+    type: select
+    proxies:
       - 美国-3.55MB/s
       - 美国-5.02MB/s
       - 中转节点-18.6MB/s
@@ -777,10 +781,11 @@ proxy-groups:
       - 中转节点-102.5KB/s
       - 印度-64.6MB/s
       - 中转节点-104.2KB/s
-  - name: 🔯 故障转移
-    type: fallback
-    url: https://www.gstatic.com/generate_204
-    interval: 180
+  - name: ♻️ 自动选择
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
     proxies:
       - 美国-3.55MB/s
       - 美国-5.02MB/s
@@ -1127,7 +1132,7 @@ proxy-groups:
     type: select
     proxies:
       - 🚀 节点选择
-      - 🔯 故障转移
+      - ♻️ 自动选择
       - 🎯 全球直连
       - 美国-3.55MB/s
       - 美国-5.02MB/s
@@ -1474,7 +1479,6 @@ proxy-groups:
     type: select
     proxies:
       - 🚀 节点选择
-      - 🔯 故障转移
       - 🎯 全球直连
       - 美国-3.55MB/s
       - 美国-5.02MB/s
@@ -1817,15 +1821,6 @@ proxy-groups:
       - 中转节点-102.5KB/s
       - 印度-64.6MB/s
       - 中转节点-104.2KB/s
-  - name: 💬 OpenAi
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - 🔯 故障转移
-      - 🇭🇰 香港节点
-      - 🇯🇵 日本节点
-      - 🇺🇲 美国节点
-      - DIRECT
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -2523,7 +2518,7 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🔯 故障转移
+      - ♻️ 自动选择
       - 美国-3.55MB/s
       - 美国-5.02MB/s
       - 中转节点-18.6MB/s
@@ -2870,7 +2865,7 @@ proxy-groups:
     proxies:
       - DIRECT
       - 🚀 节点选择
-      - 🔯 故障转移
+      - ♻️ 自动选择
   - name: 🛑 全球拦截
     type: select
     proxies:
@@ -2886,7 +2881,7 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🔯 故障转移
+      - ♻️ 自动选择
       - 美国-3.55MB/s
       - 美国-5.02MB/s
       - 中转节点-18.6MB/s
@@ -3229,9 +3224,10 @@ proxy-groups:
       - 印度-64.6MB/s
       - 中转节点-104.2KB/s
   - name: 🇭🇰 香港节点
-    type: fallback
-    url: https://www.gstatic.com/generate_204
-    interval: 180
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 600
+    tolerance: 50
     proxies:
       - 香港-100.7KB/s
       - 香港-98.1MB/s
@@ -3250,16 +3246,18 @@ proxy-groups:
       - 香港-127.0KB/s_2
       - 香港-24.1MB/s
   - name: 🇯🇵 日本节点
-    type: fallback
-    url: https://www.gstatic.com/generate_204
-    interval: 180
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
     proxies:
       - 日本-2.95MB/s_1
       - 日本-2.95MB/s_2
   - name: 🇺🇲 美国节点
-    type: fallback
-    url: https://www.gstatic.com/generate_204
-    interval: 180
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 150
     proxies:
       - 美国-3.55MB/s
       - 美国-5.02MB/s
