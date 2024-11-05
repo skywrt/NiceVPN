@@ -1,18 +1,18 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-11-05 13:46:31
+# 创建时间：2024-11-05 13:11:39
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：388
 # 节点类型：vmess
 ####################################
 mixed-port: 7890
-allow-lan: false
-log-level: silent
-external-controller: 127.0.0.1:9090
+allow-lan: true
+log-level: info
+external-controller: 0.0.0.0:9090
 dns:
   enabled: true
-  listen: 127.0.0.1:1053
+  listen: 0.0.0.0:1053
   ipv6: true
   default-nameserver:
     - 223.5.5.5
@@ -80,7 +80,7 @@ dns:
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
   fallback-filter:
-    geoip: true
+    geoip: false
     ipcidr:
       - 240.0.0.0/4
       - 0.0.0.0/32
@@ -478,7 +478,7 @@ proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
-      - 🔯 故障转移
+      - ♻️ 自动选择
       - 🇭🇰 香港节点
       - 🇸🇬 狮城节点
       - 🇺🇲 美国节点
@@ -876,10 +876,11 @@ proxy-groups:
       - Relay_🏁ZZ-🇨🇦CA_459 |50.81Mb
       - Relay_🏁ZZ-🇨🇦CA_460 |145.45Mb
       - Relay_🏁ZZ-🇨🇦CA_461 |219.26Mb
-  - name: 🔯 故障转移
-    type: fallback
-    url: https://www.gstatic.com/generate_204
-    interval: 180
+  - name: ♻️ 自动选择
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
     proxies:
       - 🇨🇦CA_08 |13.10Mb
       - Relay_🇨🇦CA-🇨🇦CA_09 |187.94Mb
@@ -1269,23 +1270,12 @@ proxy-groups:
       - Relay_🏁ZZ-🇨🇦CA_459 |50.81Mb
       - Relay_🏁ZZ-🇨🇦CA_460 |145.45Mb
       - Relay_🏁ZZ-🇨🇦CA_461 |219.26Mb
-  - name: 💬 OpenAi
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - 🔯 故障转移
-      - 🇸🇬 狮城节点
-      - 🇭🇰 香港节点
-      - 🇯🇵 日本节点
-      - 🇺🇲 美国节点
-      - 🚀 手动切换
-      - DIRECT
   - name: 🎯 全球直连
     type: select
     proxies:
       - DIRECT
       - 🚀 节点选择
-      - 🔯 故障转移
+      - ♻️ 自动选择
   - name: 🛑 全球拦截
     type: select
     proxies:
@@ -1296,7 +1286,7 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🔯 故障转移
+      - ♻️ 自动选择
       - 🇨🇦CA_08 |13.10Mb
       - Relay_🇨🇦CA-🇨🇦CA_09 |187.94Mb
       - 🇨🇦CA_10 |15.83Mb
@@ -1686,16 +1676,18 @@ proxy-groups:
       - Relay_🏁ZZ-🇨🇦CA_460 |145.45Mb
       - Relay_🏁ZZ-🇨🇦CA_461 |219.26Mb
   - name: 🇭🇰 香港节点
-    type: fallback
-    url: https://www.gstatic.com/generate_204
-    interval: 180
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
     proxies:
       - Pool_🇭🇰HK_55 |14.43Mb
       - Relay_🇭🇰HK-🇭🇰HK_56 |13.87Mb
   - name: 🇯🇵 日本节点
-    type: fallback
-    url: https://www.gstatic.com/generate_204
-    interval: 180
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
     proxies:
       - Relay_🇯🇵JP-🇯🇵JP_61 |40.42Mb
       - 🇯🇵JP_62 |14.32Mb
@@ -1703,18 +1695,20 @@ proxy-groups:
       - Relay_🇯🇵JP-🇯🇵JP_64 |46.31Mb
       - 🇯🇵JP_65 | 6.59Mb
   - name: 🇸🇬 狮城节点
-    type: fallback
-    url: https://www.gstatic.com/generate_204
-    interval: 180
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
     proxies:
       - 🇸🇬SG_78
       - Relay_🏁ZZ-🇸🇬SG_326 |50.21Mb
       - Relay_🏁ZZ-🇸🇬SG_422 |38.74Mb
       - Relay_🏁ZZ-🇸🇬SG_448 | 5.58Mb
   - name: 🇺🇲 美国节点
-    type: fallback
-    url: https://www.gstatic.com/generate_204
-    interval: 180
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
     proxies:
       - Relay_🇨🇳CN-🇺🇸US_19 |61.85Mb
       - Relay_🇨🇳CN-🇺🇸US_23 |311.63Mb
