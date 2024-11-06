@@ -1,10 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-11-06 06:13:21
+# 创建时间：2024-11-06 23:19:15
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
-# 节点数量：161
-# 节点类型：vmess
+# 节点数量：174
+# 节点类型：vmess, trojan
 ####################################
 mixed-port: 7890
 allow-lan: false
@@ -247,6 +247,19 @@ proxies:
   - {"name":"🇺🇸US-38.99.82.203-8316 | 37.838MB","type":"vmess","server":"38.99.82.203","port":443,"cipher":"auto","uuid":"03fcc618-b93d-6796-6aed-8a38c975d581","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
   - {"name":"🇺🇸US-69.50.93.90-2900 | 49.709MB","type":"vmess","server":"69.50.93.90","port":443,"cipher":"auto","uuid":"03fcc618-b93d-6796-6aed-8a38c975d581","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
   - {"name":"🇺🇸US-69.50.93.90-8353 | 42.128MB","type":"vmess","server":"69.50.93.90","port":443,"cipher":"auto","uuid":"03fcc618-b93d-6796-6aed-8a38c975d581","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"🇭🇰 香港_Telegram@kxswa","type":"vmess","server":"114.55.132.202","port":50002,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇭🇰 香港_Telegram@kxswa 2","type":"trojan","server":"42.236.73.72","port":443,"udp":true,"password":"fuck","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇭🇰 香港_Telegram@kxswa 7","type":"vmess","server":"120.232.153.27","port":58002,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇯🇵 日本_Telegram@kxswa","type":"trojan","server":"54.238.135.78","port":443,"udp":true,"password":"64e0ee38-2874-3f3f-b7d2-34f5a03cbaab","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸 美国_Telegram@kxswa","type":"trojan","server":"74.226.136.204","port":443,"udp":true,"password":"8d1e94cd-23cf-4267-b630-c6894e6e1b4d","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸 美国_Telegram@kxswa 2","type":"vmess","server":"23.162.200.227","port":443,"cipher":"auto","uuid":"03fcc618-b93d-6796-6aed-8a38c975d581","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkvws"}}
+  - {"name":"🇺🇸 美国_Telegram@kxswa 4","type":"trojan","server":"tw02.trojanyyds.xyz","port":443,"udp":true,"password":"675821fd-e6d1-4e8e-b56e-efc84bc819a0","sni":"tw02.trojanyyds.xyz","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸 美国_Telegram@kxswa 14","type":"trojan","server":"54.224.185.158","port":22222,"udp":true,"password":"telegram-id-directvpn","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸 美国_Telegram@kxswa 16","type":"vmess","server":"172.64.175.213","port":2082,"cipher":"auto","uuid":"5f3f09ad-89cb-4e94-a7ad-aa8239913555","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999"}}
+  - {"name":"🇨🇦 加拿大_Telegram@kxswa","type":"trojan","server":"168.138.73.206","port":40003,"udp":true,"password":"57edfecf-5694-4a34-8072-54a4f0636a62","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇳🇱 荷兰_Telegram@kxswa","type":"trojan","server":"5.255.118.176","port":443,"udp":true,"password":"auto","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇩🇪 德国_Telegram@kxswa 3","type":"trojan","server":"31.172.87.116","port":443,"udp":true,"password":"8bcd0f06-c7f4-4548-b059-5410926ffac7","sni":"testak.dd.msk.su","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇦🇺 澳大利亚_Telegram@kxswa","type":"trojan","server":"103.100.177.32","port":35005,"udp":true,"password":"de45945e-65ea-4d13-b29d-1835a4281023","skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -422,6 +435,19 @@ proxy-groups:
       - 🇺🇸US-38.99.82.203-8316 | 37.838MB
       - 🇺🇸US-69.50.93.90-2900 | 49.709MB
       - 🇺🇸US-69.50.93.90-8353 | 42.128MB
+      - 🇭🇰 香港_Telegram@kxswa
+      - 🇭🇰 香港_Telegram@kxswa 2
+      - 🇭🇰 香港_Telegram@kxswa 7
+      - 🇯🇵 日本_Telegram@kxswa
+      - 🇺🇸 美国_Telegram@kxswa
+      - 🇺🇸 美国_Telegram@kxswa 2
+      - 🇺🇸 美国_Telegram@kxswa 4
+      - 🇺🇸 美国_Telegram@kxswa 14
+      - 🇺🇸 美国_Telegram@kxswa 16
+      - 🇨🇦 加拿大_Telegram@kxswa
+      - 🇳🇱 荷兰_Telegram@kxswa
+      - 🇩🇪 德国_Telegram@kxswa 3
+      - 🇦🇺 澳大利亚_Telegram@kxswa
   - name: 🔯 故障转移
     type: fallback
     url: https://www.gstatic.com/generate_204
@@ -588,12 +614,27 @@ proxy-groups:
       - 🇺🇸US-38.99.82.203-8316 | 37.838MB
       - 🇺🇸US-69.50.93.90-2900 | 49.709MB
       - 🇺🇸US-69.50.93.90-8353 | 42.128MB
+      - 🇭🇰 香港_Telegram@kxswa
+      - 🇭🇰 香港_Telegram@kxswa 2
+      - 🇭🇰 香港_Telegram@kxswa 7
+      - 🇯🇵 日本_Telegram@kxswa
+      - 🇺🇸 美国_Telegram@kxswa
+      - 🇺🇸 美国_Telegram@kxswa 2
+      - 🇺🇸 美国_Telegram@kxswa 4
+      - 🇺🇸 美国_Telegram@kxswa 14
+      - 🇺🇸 美国_Telegram@kxswa 16
+      - 🇨🇦 加拿大_Telegram@kxswa
+      - 🇳🇱 荷兰_Telegram@kxswa
+      - 🇩🇪 德国_Telegram@kxswa 3
+      - 🇦🇺 澳大利亚_Telegram@kxswa
   - name: 💬 OpenAi
     type: select
     proxies:
       - 🚀 节点选择
       - 🔯 故障转移
       - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
       - 🇺🇲 美国节点
       - 🚀 手动切换
       - DIRECT
@@ -775,6 +816,33 @@ proxy-groups:
       - 🇺🇸US-38.99.82.203-8316 | 37.838MB
       - 🇺🇸US-69.50.93.90-2900 | 49.709MB
       - 🇺🇸US-69.50.93.90-8353 | 42.128MB
+      - 🇭🇰 香港_Telegram@kxswa
+      - 🇭🇰 香港_Telegram@kxswa 2
+      - 🇭🇰 香港_Telegram@kxswa 7
+      - 🇯🇵 日本_Telegram@kxswa
+      - 🇺🇸 美国_Telegram@kxswa
+      - 🇺🇸 美国_Telegram@kxswa 2
+      - 🇺🇸 美国_Telegram@kxswa 4
+      - 🇺🇸 美国_Telegram@kxswa 14
+      - 🇺🇸 美国_Telegram@kxswa 16
+      - 🇨🇦 加拿大_Telegram@kxswa
+      - 🇳🇱 荷兰_Telegram@kxswa
+      - 🇩🇪 德国_Telegram@kxswa 3
+      - 🇦🇺 澳大利亚_Telegram@kxswa
+  - name: 🇭🇰 香港节点
+    type: fallback
+    url: https://www.gstatic.com/generate_204
+    interval: 180
+    proxies:
+      - 🇭🇰 香港_Telegram@kxswa
+      - 🇭🇰 香港_Telegram@kxswa 2
+      - 🇭🇰 香港_Telegram@kxswa 7
+  - name: 🇯🇵 日本节点
+    type: fallback
+    url: https://www.gstatic.com/generate_204
+    interval: 180
+    proxies:
+      - 🇯🇵 日本_Telegram@kxswa
   - name: 🇸🇬 狮城节点
     type: fallback
     url: https://www.gstatic.com/generate_204
@@ -797,6 +865,11 @@ proxy-groups:
       - 🇺🇸US-38.99.82.203-8316 | 37.838MB
       - 🇺🇸US-69.50.93.90-2900 | 49.709MB
       - 🇺🇸US-69.50.93.90-8353 | 42.128MB
+      - 🇺🇸 美国_Telegram@kxswa
+      - 🇺🇸 美国_Telegram@kxswa 2
+      - 🇺🇸 美国_Telegram@kxswa 4
+      - 🇺🇸 美国_Telegram@kxswa 14
+      - 🇺🇸 美国_Telegram@kxswa 16
 
 rules:
 # 本地/局域网地址
