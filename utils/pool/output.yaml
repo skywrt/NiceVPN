@@ -134,6 +134,48 @@ proxies:
   ws-opts:
     path: /anti13.zingfast.vn
   udp: true
+- type: ss
+  name: "\U0001F1E8\U0001F1E6 CA 19 SSS"
+  server: 198.57.27.218
+  port: 5004
+  cipher: aes-256-gcm
+  password: g5MeD6Ft3CWlJId
+- type: vmess
+  name: "\U0001F1FA\U0001F1F8 US 20 VMS"
+  ws-opts:
+    path: /
+  server: 154.23.190.162
+  port: 443
+  uuid: b9984674-f771-4e67-a198-c7e60720ba2c
+  alterId: '0'
+  cipher: auto
+  network: ws
+- type: trojan
+  name: "\U0001F1E8\U0001F1E6 CA 21 TJN"
+  server: ca-trojan.bonds.id
+  port: 443
+  password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY206Q1VuZFNabllzUEtjdTaclWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272
+  udp: true
+  skip-cert-verify: true
+- type: http
+  name: "\U0001F1E8\U0001F1F3 CN 22 HTT"
+  server: 124.15.12.24
+  port: 251
+  username: username
+  password: password
+  udp: true
+- type: socks5
+  name: "\U0001F1E8\U0001F1F3 CN 23 SK5"
+  server: 124.15.12.24
+  port: 2312
+  udp: true
+- type: socks5
+  name: "\U0001F1E6\U0001F1FA AU 24 SK5"
+  server: 1.2.3.4
+  port: 123
+  username: username
+  password: password
+  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -156,6 +198,12 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 16 SSS"
   - "\U0001F1F8\U0001F1EC SG 17 SSS"
   - "\U0001F1F8\U0001F1EC SG 18 VMS"
+  - "\U0001F1E8\U0001F1E6 CA 19 SSS"
+  - "\U0001F1FA\U0001F1F8 US 20 VMS"
+  - "\U0001F1E8\U0001F1E6 CA 21 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 22 HTT"
+  - "\U0001F1E8\U0001F1F3 CN 23 SK5"
+  - "\U0001F1E6\U0001F1FA AU 24 SK5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -180,5 +228,11 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 16 SSS"
   - "\U0001F1F8\U0001F1EC SG 17 SSS"
   - "\U0001F1F8\U0001F1EC SG 18 VMS"
+  - "\U0001F1E8\U0001F1E6 CA 19 SSS"
+  - "\U0001F1FA\U0001F1F8 US 20 VMS"
+  - "\U0001F1E8\U0001F1E6 CA 21 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 22 HTT"
+  - "\U0001F1E8\U0001F1F3 CN 23 SK5"
+  - "\U0001F1E6\U0001F1FA AU 24 SK5"
 rules:
 - "MATCH,\U0001F310 Proxy"
