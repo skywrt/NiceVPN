@@ -134,60 +134,62 @@ proxies:
   ws-opts:
     path: /anti13.zingfast.vn
   udp: true
-- type: ss
-  name: "\U0001F1FA\U0001F1F8 US 19 SSS"
-  server: 54.202.75.206
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
+- type: vmess
+  name: "\U0001F1E8\U0001F1F3 CN 19 VMS"
+  server: 183.236.51.23
+  port: 52112
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 64
+  cipher: auto
+  network: tcp
 - type: ss
   name: "\U0001F1FA\U0001F1F8 US 20 SSS"
-  server: 54.213.164.80
+  server: 54.213.247.125
   port: 443
   cipher: aes-256-cfb
   password: amazonskr05
 - type: ss
-  name: "\U0001F1F1\U0001F1F9 LT 21 SSS"
+  name: "\U0001F1FA\U0001F1F8 US 21 SSS"
+  server: 54.213.228.61
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- type: ss
+  name: "\U0001F1F1\U0001F1F9 LT 22 SSS"
   server: 45.87.175.192
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: cvII85TrW6n0OGyfpHVS1u
 - type: ss
-  name: "\U0001F1FA\U0001F1F8 US 22 SSS"
-  server: 54.149.182.67
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- type: ss
   name: "\U0001F1FA\U0001F1F8 US 23 SSS"
-  server: 34.217.179.211
+  server: 156.146.38.168
   port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- type: ss
-  name: "\U0001F1FA\U0001F1F8 US 24 SSS"
-  server: 54.149.182.67
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- type: ss
-  name: "\U0001F1FA\U0001F1F8 US 25 SSS"
-  server: 54.213.164.80
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- type: ss
-  name: "\U0001F1EA\U0001F1F8 ES 26 SSS"
-  server: 150.241.102.95
-  port: 21771
-  cipher: chacha20-ietf-poly1305
-  password: 5mgZJzPv7hrLX4KMdPIeAW
-- type: ss
-  name: "\U0001F1F3\U0001F1F1 NL 27 SSS"
-  server: 109.201.152.181
-  port: 443
-  cipher: aes-128-cfb
+  cipher: aes-128-gcm
   password: shadowsocks
+- type: ss
+  name: "\U0001F1F1\U0001F1F9 LT 24 SSS"
+  server: 45.87.175.192
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: cvII85TrW6n0OGyfpHVS1u
+- type: ss
+  name: "\U0001F1F1\U0001F1F9 LT 25 SSS"
+  server: 45.87.175.164
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: cvII85TrW6n0OGyfpHVS1u
+- type: ss
+  name: "\U0001F1FA\U0001F1F8 US 26 SSS"
+  server: 34.209.103.254
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- type: ss
+  name: "\U0001F1FA\U0001F1F8 US 27 SSS"
+  server: 54.187.244.22
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
 proxy-groups:
 - name: automatic
   type: url-test
@@ -210,15 +212,15 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 16 SSS"
   - "\U0001F1F8\U0001F1EC SG 17 SSS"
   - "\U0001F1F8\U0001F1EC SG 18 VMS"
-  - "\U0001F1FA\U0001F1F8 US 19 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 19 VMS"
   - "\U0001F1FA\U0001F1F8 US 20 SSS"
-  - "\U0001F1F1\U0001F1F9 LT 21 SSS"
-  - "\U0001F1FA\U0001F1F8 US 22 SSS"
+  - "\U0001F1FA\U0001F1F8 US 21 SSS"
+  - "\U0001F1F1\U0001F1F9 LT 22 SSS"
   - "\U0001F1FA\U0001F1F8 US 23 SSS"
-  - "\U0001F1FA\U0001F1F8 US 24 SSS"
-  - "\U0001F1FA\U0001F1F8 US 25 SSS"
-  - "\U0001F1EA\U0001F1F8 ES 26 SSS"
-  - "\U0001F1F3\U0001F1F1 NL 27 SSS"
+  - "\U0001F1F1\U0001F1F9 LT 24 SSS"
+  - "\U0001F1F1\U0001F1F9 LT 25 SSS"
+  - "\U0001F1FA\U0001F1F8 US 26 SSS"
+  - "\U0001F1FA\U0001F1F8 US 27 SSS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -243,14 +245,14 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 16 SSS"
   - "\U0001F1F8\U0001F1EC SG 17 SSS"
   - "\U0001F1F8\U0001F1EC SG 18 VMS"
-  - "\U0001F1FA\U0001F1F8 US 19 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 19 VMS"
   - "\U0001F1FA\U0001F1F8 US 20 SSS"
-  - "\U0001F1F1\U0001F1F9 LT 21 SSS"
-  - "\U0001F1FA\U0001F1F8 US 22 SSS"
+  - "\U0001F1FA\U0001F1F8 US 21 SSS"
+  - "\U0001F1F1\U0001F1F9 LT 22 SSS"
   - "\U0001F1FA\U0001F1F8 US 23 SSS"
-  - "\U0001F1FA\U0001F1F8 US 24 SSS"
-  - "\U0001F1FA\U0001F1F8 US 25 SSS"
-  - "\U0001F1EA\U0001F1F8 ES 26 SSS"
-  - "\U0001F1F3\U0001F1F1 NL 27 SSS"
+  - "\U0001F1F1\U0001F1F9 LT 24 SSS"
+  - "\U0001F1F1\U0001F1F9 LT 25 SSS"
+  - "\U0001F1FA\U0001F1F8 US 26 SSS"
+  - "\U0001F1FA\U0001F1F8 US 27 SSS"
 rules:
 - "MATCH,\U0001F310 Proxy"
