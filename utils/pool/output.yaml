@@ -134,48 +134,6 @@ proxies:
   ws-opts:
     path: /anti13.zingfast.vn
   udp: true
-- type: ss
-  name: "\U0001F1FA\U0001F1F3 UN 19 SSS"
-  server: 23.157.40.89
-  port: 8118
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
-- type: ss
-  name: "\U0001F1FA\U0001F1F8 US 20 SSS"
-  server: 34.217.179.211
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- type: ss
-  name: "\U0001F1FA\U0001F1F8 US 21 SSS"
-  server: 38.110.1.51
-  port: 8091
-  cipher: aes-256-gcm
-  password: PCnnH6SQSnfoS27
-- type: ss
-  name: "\U0001F1FA\U0001F1F8 US 22 SSS"
-  server: 38.114.114.143
-  port: 2376
-  cipher: aes-256-gcm
-  password: faBAoD54k87UJG7
-- type: ss
-  name: "\U0001F1FA\U0001F1F3 UN 23 SSS"
-  server: 23.157.40.113
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-- type: ss
-  name: "\U0001F1FA\U0001F1F3 UN 24 SSS"
-  server: 23.157.40.89
-  port: 7307
-  cipher: aes-256-gcm
-  password: FoOiGlkAA9yPEGP
-- type: ss
-  name: "\U0001F1FA\U0001F1F3 UN 25 SSS"
-  server: 23.157.40.89
-  port: 8000
-  cipher: aes-256-gcm
-  password: KixLvKzwjekG00rm
 proxy-groups:
 - name: automatic
   type: url-test
@@ -198,13 +156,6 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 16 SSS"
   - "\U0001F1F8\U0001F1EC SG 17 SSS"
   - "\U0001F1F8\U0001F1EC SG 18 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 19 SSS"
-  - "\U0001F1FA\U0001F1F8 US 20 SSS"
-  - "\U0001F1FA\U0001F1F8 US 21 SSS"
-  - "\U0001F1FA\U0001F1F8 US 22 SSS"
-  - "\U0001F1FA\U0001F1F3 UN 23 SSS"
-  - "\U0001F1FA\U0001F1F3 UN 24 SSS"
-  - "\U0001F1FA\U0001F1F3 UN 25 SSS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -229,12 +180,5 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 16 SSS"
   - "\U0001F1F8\U0001F1EC SG 17 SSS"
   - "\U0001F1F8\U0001F1EC SG 18 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 19 SSS"
-  - "\U0001F1FA\U0001F1F8 US 20 SSS"
-  - "\U0001F1FA\U0001F1F8 US 21 SSS"
-  - "\U0001F1FA\U0001F1F8 US 22 SSS"
-  - "\U0001F1FA\U0001F1F3 UN 23 SSS"
-  - "\U0001F1FA\U0001F1F3 UN 24 SSS"
-  - "\U0001F1FA\U0001F1F3 UN 25 SSS"
 rules:
 - "MATCH,\U0001F310 Proxy"
