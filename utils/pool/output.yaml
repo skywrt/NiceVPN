@@ -134,6 +134,196 @@ proxies:
   ws-opts:
     path: /anti13.zingfast.vn
   udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 19 TJN"
+  type: trojan
+  server: 42.236.73.72
+  port: 443
+  udp: true
+  password: fuck
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 20 TJN"
+  type: trojan
+  server: 74.226.136.204
+  port: 443
+  udp: true
+  password: 8d1e94cd-23cf-4267-b630-c6894e6e1b4d
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EF\U0001F1F5 JP 21 TJN"
+  type: trojan
+  server: 35.75.8.137
+  port: 443
+  udp: true
+  password: 8e4248f7-aae5-3a38-b99d-88bf1cd37e0d
+  sni: fastly.cdn.steampipe.steamcontent.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 22 VMS"
+  type: vmess
+  server: speedtest.net
+  port: 443
+  cipher: auto
+  uuid: 57727d7d-8873-4000-b3f4-33a93fcfdd51
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /m28jcoZZUhkqg6pk11
+- name: "\U0001F1FA\U0001F1F3 UN 23 VMS"
+  type: vmess
+  server: 23.162.200.227
+  port: 443
+  cipher: auto
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /linkvws
+- name: "\U0001F1FA\U0001F1F8 US 24 TJN"
+  type: trojan
+  server: tw02.trojanyyds.xyz
+  port: 443
+  udp: true
+  password: 675821fd-e6d1-4e8e-b56e-efc84bc819a0
+  sni: tw02.trojanyyds.xyz
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 25 VMS"
+  type: vmess
+  server: 172.64.171.223
+  port: 443
+  cipher: auto
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /linkws
+- name: "\U0001F1FA\U0001F1F3 UN 26 VMS"
+  type: vmess
+  server: 104.21.31.62
+  port: 443
+  cipher: auto
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /linkws
+- name: "\U0001F1FA\U0001F1F8 US 27 VMS"
+  type: vmess
+  server: 172.67.71.160
+  port: 443
+  cipher: auto
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /linkws
+- name: "\U0001F1FA\U0001F1F8 US 28 VMS"
+  type: vmess
+  server: 104.26.0.95
+  port: 443
+  cipher: auto
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /linkws
+- name: "\U0001F1FA\U0001F1F3 UN 29 VMS"
+  type: vmess
+  server: 162.159.152.2
+  port: 443
+  cipher: auto
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /linkws
+- name: "\U0001F1FA\U0001F1F8 US 30 VMS"
+  type: vmess
+  server: 38.91.100.228
+  port: 443
+  cipher: auto
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /linkvws
+- name: "\U0001F1FA\U0001F1F8 US 31 VMS"
+  type: vmess
+  server: 38.91.100.228
+  port: 443
+  cipher: auto
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /linkvws
+- name: "\U0001F1FA\U0001F1F8 US 32 TJN"
+  type: trojan
+  server: 48.210.29.175
+  port: 443
+  udp: true
+  password: 74400921-f59f-4009-b52a-c2789b49fab6
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1E6 CA 33 TJN"
+  type: trojan
+  server: 168.138.73.206
+  port: 40003
+  udp: true
+  password: 57edfecf-5694-4a34-8072-54a4f0636a62
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F3\U0001F1F1 NL 34 TJN"
+  type: trojan
+  server: 5.255.118.176
+  port: 443
+  udp: true
+  password: auto
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EB\U0001F1F7 FR 35 VMS"
+  type: vmess
+  server: 57.129.25.20
+  port: 443
+  cipher: auto
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: linkvws
+- name: "\U0001F1F3\U0001F1F1 NL 36 VMS"
+  type: vmess
+  server: 188.114.96.3
+  port: 443
+  cipher: auto
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /linkws
 proxy-groups:
 - name: automatic
   type: url-test
@@ -156,6 +346,24 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 16 SSS"
   - "\U0001F1F8\U0001F1EC SG 17 SSS"
   - "\U0001F1F8\U0001F1EC SG 18 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 19 TJN"
+  - "\U0001F1FA\U0001F1F8 US 20 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 21 TJN"
+  - "\U0001F1FA\U0001F1F8 US 22 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 23 VMS"
+  - "\U0001F1FA\U0001F1F8 US 24 TJN"
+  - "\U0001F1FA\U0001F1F8 US 25 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 26 VMS"
+  - "\U0001F1FA\U0001F1F8 US 27 VMS"
+  - "\U0001F1FA\U0001F1F8 US 28 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 29 VMS"
+  - "\U0001F1FA\U0001F1F8 US 30 VMS"
+  - "\U0001F1FA\U0001F1F8 US 31 VMS"
+  - "\U0001F1FA\U0001F1F8 US 32 TJN"
+  - "\U0001F1E8\U0001F1E6 CA 33 TJN"
+  - "\U0001F1F3\U0001F1F1 NL 34 TJN"
+  - "\U0001F1EB\U0001F1F7 FR 35 VMS"
+  - "\U0001F1F3\U0001F1F1 NL 36 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -180,5 +388,23 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 16 SSS"
   - "\U0001F1F8\U0001F1EC SG 17 SSS"
   - "\U0001F1F8\U0001F1EC SG 18 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 19 TJN"
+  - "\U0001F1FA\U0001F1F8 US 20 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 21 TJN"
+  - "\U0001F1FA\U0001F1F8 US 22 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 23 VMS"
+  - "\U0001F1FA\U0001F1F8 US 24 TJN"
+  - "\U0001F1FA\U0001F1F8 US 25 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 26 VMS"
+  - "\U0001F1FA\U0001F1F8 US 27 VMS"
+  - "\U0001F1FA\U0001F1F8 US 28 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 29 VMS"
+  - "\U0001F1FA\U0001F1F8 US 30 VMS"
+  - "\U0001F1FA\U0001F1F8 US 31 VMS"
+  - "\U0001F1FA\U0001F1F8 US 32 TJN"
+  - "\U0001F1E8\U0001F1E6 CA 33 TJN"
+  - "\U0001F1F3\U0001F1F1 NL 34 TJN"
+  - "\U0001F1EB\U0001F1F7 FR 35 VMS"
+  - "\U0001F1F3\U0001F1F1 NL 36 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
