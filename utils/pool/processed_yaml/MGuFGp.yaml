@@ -7,12 +7,12 @@
 # 节点类型：vmess, trojan
 ####################################
 mixed-port: 7890
-allow-lan: false
-log-level: silent
-external-controller: 127.0.0.1:9090
+allow-lan: true
+log-level: info
+external-controller: 0.0.0.0:9090
 dns:
   enabled: true
-  listen: 127.0.0.1:1053
+  listen: 0.0.0.0:1053
   ipv6: true
   default-nameserver:
     - 223.5.5.5
@@ -80,7 +80,7 @@ dns:
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
   fallback-filter:
-    geoip: true
+    geoip: false
     ipcidr:
       - 240.0.0.0/4
       - 0.0.0.0/32
@@ -1512,11 +1512,9 @@ proxy-groups:
       - 中转节点-192.4KB/s_2
   - name: ♻️ 自动选择
     type: url-test
-    url: https://www.gstatic.com/generate_204
-    interval: 600
-    tolerance: 100
-    retries: 2
-    failover: true
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
     proxies:
       - 加拿大-3.46MB/s_1
       - 中转节点-20.0MB/s_1
@@ -2223,17 +2221,6 @@ proxy-groups:
       - 美国-53.8MB/s_2
       - 澳大利亚-45.0MB/s_2
       - 中转节点-192.4KB/s_2
-  - name: 💬 OpenAi
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - ♻️ 自动选择
-      - 🇸🇬 狮城节点
-      - 🇭🇰 香港节点
-      - 🇯🇵 日本节点
-      - 🇺🇲 美国节点
-      - 🚀 手动切换
-      - DIRECT
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -2958,11 +2945,9 @@ proxy-groups:
       - 中转节点-192.4KB/s_2
   - name: 🇭🇰 香港节点
     type: url-test
-    url: https://www.gstatic.com/generate_204
-    interval: 600
-    tolerance: 100
-    retries: 2
-    failover: true
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
     proxies:
       - 香港_1
       - 香港_2
@@ -2990,11 +2975,9 @@ proxy-groups:
       - 香港-24.1MB/s
   - name: 🇯🇵 日本节点
     type: url-test
-    url: https://www.gstatic.com/generate_204
-    interval: 600
-    tolerance: 100
-    retries: 2
-    failover: true
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
     proxies:
       - 日本-13.8MB/s_1
       - 日本-13.8MB/s_2
@@ -3109,11 +3092,9 @@ proxy-groups:
       - 日本-386.2KB/s
   - name: 🇸🇬 狮城节点
     type: url-test
-    url: https://www.gstatic.com/generate_204
-    interval: 600
-    tolerance: 100
-    retries: 2
-    failover: true
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
     proxies:
       - 🇸🇬 中转|新加坡Singtel03|华中隧道[流媒体解锁]
       - 🇸🇬 中转|新加坡Singtel04|华中隧道[流媒体解锁]
@@ -3124,11 +3105,9 @@ proxy-groups:
       - 新加坡-333.9KB/s_2
   - name: 🇺🇲 美国节点
     type: url-test
-    url: https://www.gstatic.com/generate_204
-    interval: 600
-    tolerance: 100
-    retries: 2
-    failover: true
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
     proxies:
       - 美国-64.7MB/s
       - 美国-5.12MB/s_1
