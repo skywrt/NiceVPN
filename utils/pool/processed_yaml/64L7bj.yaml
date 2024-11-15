@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-11-15 15:41:22
+# 创建时间：2024-11-15 16:42:25
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：610
 # 节点类型：trojan, vmess
@@ -1321,7 +1321,7 @@ proxy-groups:
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.gstatic.com/generate_204
-    interval: 600
+    interval: 300
     tolerance: 150
     retries: 2
     failover: true
@@ -1936,15 +1936,6 @@ proxy-groups:
       - 美国_由快嘴科技提供：kkzui.com178_2
       - 美国_由快嘴科技提供：kkzui.com179_2
       - 伊朗_由快嘴科技提供：kkzui.com180
-  - name: 📲 电报消息
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - ♻️ 自动选择
-      - 🇯🇵 日本节点
-      - 🇺🇲 美国节点
-      - 🚀 手动切换
-      - DIRECT
   - name: 💬 OpenAi
     type: select
     proxies:
@@ -1954,56 +1945,20 @@ proxy-groups:
       - 🇺🇲 美国节点
       - 🚀 手动切换
       - DIRECT
-  - name: 📢 谷歌FCM
-    type: select
-    proxies:
-      - DIRECT
-      - 🚀 节点选择
-      - 🇺🇲 美国节点
-      - 🇯🇵 日本节点
-      - 🚀 手动切换
-  - name: 📢 谷歌🇨🇳Play下载
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - DIRECT
-      - ♻️ 自动选择
-      - 🇯🇵 日本节点
-      - 🇺🇲 美国节点
-      - 🚀 手动切换
-  - name: 📢 谷歌🇨🇳Play服务
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - DIRECT
-      - ♻️ 自动选择
-      - 🇯🇵 日本节点
-      - 🇺🇲 美国节点
-      - 🚀 手动切换
-  - name: 📢 谷歌🇨🇳
-    type: select
-    proxies:
-      - DIRECT
-      - 🚀 节点选择
-      - 🇺🇲 美国节点
-      - 🇯🇵 日本节点
-      - 🚀 手动切换
-  - name: 📢 谷歌
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - DIRECT
-      - ♻️ 自动选择
-      - 🇯🇵 日本节点
-      - 🇺🇲 美国节点
-      - 🚀 手动切换
-  - name: 📹 油管视频
+  - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🇯🇵 日本节点
       - 🇺🇲 美国节点
+      - 🚀 手动切换
+      - DIRECT
+  - name: 🌏 国内媒体
+    type: select
+    proxies:
+      - DIRECT
+      - 🇯🇵 日本节点
       - 🚀 手动切换
   - name: 🎯 全球直连
     type: select
