@@ -1,18 +1,18 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-11-17 11:03:13
+# 创建时间：2024-11-17 10:36:16
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：752
 # 节点类型：vmess, trojan
 ####################################
 mixed-port: 7890
-allow-lan: true
-log-level: info
-external-controller: 0.0.0.0:9090
+allow-lan: false
+log-level: silent
+external-controller: 127.0.0.1:9090
 dns:
   enabled: true
-  listen: 0.0.0.0:1053
+  listen: 127.0.0.1:1053
   ipv6: true
   default-nameserver:
     - 223.5.5.5
@@ -80,7 +80,7 @@ dns:
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
   fallback-filter:
-    geoip: false
+    geoip: true
     ipcidr:
       - 240.0.0.0/4
       - 0.0.0.0/32
@@ -1606,9 +1606,11 @@ proxy-groups:
       - 中转节点-45.3MB/s_2
   - name: ♻️ 自动选择
     type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
+    url: https://www.gstatic.com/generate_204
+    interval: 360
     tolerance: 50
+    retries: 3
+    failover: true
     proxies:
       - 美国-4.10MB/s
       - 芬兰-1.36MB/s
@@ -2362,11 +2364,36 @@ proxy-groups:
       - 中转节点-16.0MB/s_2
       - 中转节点-16.2MB/s_2
       - 中转节点-45.3MB/s_2
-  - name: 🎯 全球直连
+  - name: 💬 OpenAi
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🚀 手动切换
+      - DIRECT
+  - name: 🌍 国外媒体
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🚀 手动切换
+      - DIRECT
+  - name: 🌏 国内媒体
     type: select
     proxies:
       - DIRECT
-      - 🚀 节点选择
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🚀 手动切换
       - ♻️ 自动选择
   - name: 🛑 全球拦截
     type: select
@@ -3133,9 +3160,11 @@ proxy-groups:
       - 中转节点-45.3MB/s_2
   - name: 🇭🇰 香港节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
+    retries: 3
+    failover: true
     proxies:
       - 香港-5.00MB/s
       - 香港-57.9MB/s
@@ -3146,9 +3175,11 @@ proxy-groups:
       - 香港-24.1MB/s
   - name: 🇯🇵 日本节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
+    retries: 3
+    failover: true
     proxies:
       - 日本-484.4KB/s_1
       - 日本-484.4KB/s_2
@@ -3219,9 +3250,11 @@ proxy-groups:
       - 日本-31.7MB/s
   - name: 🇸🇬 狮城节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
+    retries: 3
+    failover: true
     proxies:
       - 新加坡-335.0KB/s_1
       - 新加坡-335.0KB/s_2
@@ -3230,9 +3263,11 @@ proxy-groups:
       - 新加坡-333.9KB/s_2
   - name: 🇺🇲 美国节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
+    retries: 3
+    failover: true
     proxies:
       - 美国-4.10MB/s
       - 美国-2.38MB/s
