@@ -1,18 +1,18 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-11-18 19:51:48
+# 创建时间：2024-11-18 20:09:01
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：1049
 # 节点类型：vmess, trojan
 ####################################
 mixed-port: 7890
-allow-lan: false
-log-level: silent
-external-controller: 127.0.0.1:9090
+allow-lan: true
+log-level: info
+external-controller: 0.0.0.0:9090
 dns:
   enabled: true
-  listen: 127.0.0.1:1053
+  listen: 0.0.0.0:1053
   ipv6: true
   default-nameserver:
     - 223.5.5.5
@@ -80,7 +80,7 @@ dns:
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
   fallback-filter:
-    geoip: true
+    geoip: false
     ipcidr:
       - 240.0.0.0/4
       - 0.0.0.0/32
@@ -1140,10 +1140,15 @@ proxy-groups:
     type: select
     proxies:
       - ♻️ 自动选择
+      - 🇭🇰 香港节点
       - 🇸🇬 狮城节点
       - 🇺🇲 美国节点
       - 🇯🇵 日本节点
+      - 🚀 手动切换
       - DIRECT
+  - name: 🚀 手动切换
+    type: select
+    proxies:
       - 澳大利亚_由快嘴科技提供：kkzui.com1
       - 巴西_由快嘴科技提供：kkzui.com2
       - 比利时_由快嘴科技提供：kkzui.com3
@@ -2195,11 +2200,9 @@ proxy-groups:
       - 伊朗_由快嘴科技提供：kkzui.com180
   - name: ♻️ 自动选择
     type: url-test
-    url: https://www.gstatic.com/generate_204
-    interval: 420
+    url: http://www.gstatic.com/generate_204
+    interval: 300
     tolerance: 50
-    retries: 3
-    failover: true
     proxies:
       - 澳大利亚_由快嘴科技提供：kkzui.com1
       - 巴西_由快嘴科技提供：kkzui.com2
@@ -3250,24 +3253,6 @@ proxy-groups:
       - 美国_由快嘴科技提供：kkzui.com178_2
       - 美国_由快嘴科技提供：kkzui.com179_2
       - 伊朗_由快嘴科技提供：kkzui.com180
-  - name: 💬 OpenAi
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - ♻️ 自动选择
-      - 🇸🇬 狮城节点
-      - 🇯🇵 日本节点
-      - 🇺🇲 美国节点
-      - DIRECT
-  - name: 🌍 国外媒体
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - ♻️ 自动选择
-      - 🇸🇬 狮城节点
-      - 🇯🇵 日本节点
-      - 🇺🇲 美国节点
-      - DIRECT
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -4334,24 +4319,33 @@ proxy-groups:
       - 美国_由快嘴科技提供：kkzui.com178_2
       - 美国_由快嘴科技提供：kkzui.com179_2
       - 伊朗_由快嘴科技提供：kkzui.com180
+  - name: 🇭🇰 香港节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies: []
   - name: 🇯🇵 日本节点
-    type: fallback
-    url: https://www.gstatic.com/generate_204
-    interval: 420
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
     proxies:
       - 日本_由快嘴科技提供;kkzui.com29
   - name: 🇸🇬 狮城节点
-    type: fallback
-    url: https://www.gstatic.com/generate_204
-    interval: 420
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
     proxies:
       - 新加坡_由快嘴科技提供：kkzui.com90
       - 49_由快嘴科技提供：kkzui.com新加坡
       - 154_由快嘴科技提供：kkzui.com新加坡
   - name: 🇺🇲 美国节点
-    type: fallback
-    url: https://www.gstatic.com/generate_204
-    interval: 420
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
     proxies:
       - 美国_由快嘴科技提供：kkzui.com4_1
       - 美国_由快嘴科技提供：kkzui.com5_1
