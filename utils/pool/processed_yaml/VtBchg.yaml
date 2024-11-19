@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-11-19 16:51:11
+# 创建时间：2024-11-19 20:15:23
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：1133
 # 节点类型：vmess, trojan
@@ -1230,9 +1230,6 @@ proxy-groups:
       - 🇯🇵 日本节点
       - 🚀 手动切换
       - DIRECT
-  - name: 🚀 手动切换
-    type: select
-    proxies:
       - bngan.com_🇺🇸_US_美国_6-11
       - bngan.com_🇺🇸_US_美国_18-37
       - bngan.com_🇺🇸_US_美国_24-57
@@ -2370,7 +2367,7 @@ proxy-groups:
     type: url-test
     url: https://www.gstatic.com/generate_204
     interval: 600
-    tolerance: 0
+    tolerance: 5
     retries: 3
     failover: true
     proxies:
@@ -3516,18 +3513,6 @@ proxy-groups:
       - 🇭🇰 香港节点
       - 🇯🇵 日本节点
       - 🇺🇲 美国节点
-      - 🚀 手动切换
-      - DIRECT
-  - name: 🌍 国外媒体
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - ♻️ 自动选择
-      - 🇸🇬 狮城节点
-      - 🇭🇰 香港节点
-      - 🇯🇵 日本节点
-      - 🇺🇲 美国节点
-      - 🚀 手动切换
       - DIRECT
   - name: 🎯 全球直连
     type: select
@@ -4680,12 +4665,9 @@ proxy-groups:
       - 🇭🇰 香港_28
       - 🇺🇸 美国_38
   - name: 🇭🇰 香港节点
-    type: url-test
+    type: fallback
     url: https://www.gstatic.com/generate_204
     interval: 600
-    tolerance: 0
-    retries: 2
-    failover: true
     proxies:
       - bngan.com_🇭🇰_HK_香港_3-560
       - t.me/bnganblog_🇭🇰_HK_香港_1-1
@@ -4757,12 +4739,9 @@ proxy-groups:
       - 🇭🇰 香港_27
       - 🇭🇰 香港_28
   - name: 🇯🇵 日本节点
-    type: url-test
+    type: fallback
     url: https://www.gstatic.com/generate_204
     interval: 600
-    tolerance: 0
-    retries: 3
-    failover: true
     proxies:
       - 日本
       - 🇯🇵 中转|日本GMO08|华南隧道[流媒体解锁]
@@ -4845,12 +4824,9 @@ proxy-groups:
       - 🇯🇵 日本_6
       - 🇯🇵 日本_7
   - name: 🇸🇬 狮城节点
-    type: url-test
+    type: fallback
     url: https://www.gstatic.com/generate_204
     interval: 600
-    tolerance: 0
-    retries: 3
-    failover: true
     proxies:
       - bngan.com_🇸🇬_SG_新加坡_1-102
       - bngan.com_🇸🇬_SG_新加坡_2-85
@@ -4888,12 +4864,9 @@ proxy-groups:
       - 🇸🇬 新加坡_21
       - 🇸🇬 新加坡_22
   - name: 🇺🇲 美国节点
-    type: url-test
+    type: fallback
     url: https://www.gstatic.com/generate_204
     interval: 600
-    tolerance: 0
-    retries: 3
-    failover: true
     proxies:
       - bngan.com_🇺🇸_US_美国_6-11
       - bngan.com_🇺🇸_US_美国_18-37
