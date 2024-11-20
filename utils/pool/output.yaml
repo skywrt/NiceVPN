@@ -134,6 +134,151 @@ proxies:
   ws-opts:
     path: /anti13.zingfast.vn
   udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 19 VMS"
+  type: vmess
+  server: 183.236.51.23
+  port: 52112
+  cipher: auto
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 64
+  tls: false
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 20 TJN"
+  type: trojan
+  server: 95.164.85.39
+  port: 443
+  udp: true
+  password: c5691b8f-d833-41e4-9295-769f3edb4cd2
+  sni: customer-95-164-85-39.stark-industries.solutions
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 21 TJN"
+  type: trojan
+  server: customer-94-131-115-71.stark-industries.solutions
+  port: 443
+  udp: true
+  password: c5691b8f-d833-41e4-9295-769f3edb4cd2
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 22 TJN"
+  type: trojan
+  server: 94.131.115.71
+  port: 443
+  udp: true
+  password: c5691b8f-d833-41e4-9295-769f3edb4cd2
+  sni: customer-94-131-115-71.stark-industries.solutions
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 23 TJN"
+  type: trojan
+  server: customer-95-164-85-39.stark-industries.solutions
+  port: 443
+  udp: true
+  password: c5691b8f-d833-41e4-9295-769f3edb4cd2
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 24 TJN"
+  type: trojan
+  server: customer-95-164-38-151.stark-industries.solutions
+  port: 443
+  udp: true
+  password: c5691b8f-d833-41e4-9295-769f3edb4cd2
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 25 TJN"
+  type: trojan
+  server: 95.164.38.151
+  port: 443
+  udp: true
+  password: c5691b8f-d833-41e4-9295-769f3edb4cd2
+  sni: customer-95-164-38-151.stark-industries.solutions
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F7\U0001F1FA RU 26 TJN"
+  type: trojan
+  server: customer-185-231-206-12.stark-industries.solutions
+  port: 443
+  udp: true
+  password: c5691b8f-d833-41e4-9295-769f3edb4cd2
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F7\U0001F1FA RU 27 TJN"
+  type: trojan
+  server: 185.231.206.12
+  port: 443
+  udp: true
+  password: c5691b8f-d833-41e4-9295-769f3edb4cd2
+  sni: customer-185-231-206-12.stark-industries.solutions
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EE\U0001F1F7 IR 28 VMS"
+  type: vmess
+  server: 2.182.174.21
+  port: 9090
+  cipher: auto
+  uuid: fddf88ed-8c70-42ad-c12e-5f40841e6f00
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F2\U0001F1E9 MD 29 TJN"
+  type: trojan
+  server: 45.67.229.222
+  port: 443
+  udp: true
+  password: c5691b8f-d833-41e4-9295-769f3edb4cd2
+  sni: customer-45-67-229-222.stark-industries.solutions
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 30 TJN"
+  type: trojan
+  server: customer-94-131-115-71.stark-industries.solutions
+  port: 443
+  udp: true
+  password: c5691b8f-d833-41e4-9295-769f3edb4cd2
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EB\U0001F1F7 FR 31 TJN"
+  type: trojan
+  server: 51.20.179.154
+  port: 22222
+  udp: true
+  password: telegram-id-privatevpns
+  sni: trojan.burgerip.co.ukhttp/1.1
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 32 TJN"
+  type: trojan
+  server: 94.131.115.71
+  port: 443
+  udp: true
+  password: c5691b8f-d833-41e4-9295-769f3edb4cd2
+  sni: customer-94-131-115-71.stark-industries.solutions
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F3 UN 33 TJN"
+  type: trojan
+  server: 104.19.252.45
+  port: 443
+  udp: true
+  password: WOeXShhJpL
+  sni: 06jzus.zdzdzd.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /juzigongyi
+    headers:
+      host: 06jzus.zdzdzd.xyz
+- name: "\U0001F1F8\U0001F1EA SE 34 TJN"
+  type: trojan
+  server: 16.170.88.44
+  port: 22222
+  udp: true
+  password: telegram-id-privatevpns
+  sni: trojan.burgerip.co.uk
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -156,6 +301,22 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 16 SSS"
   - "\U0001F1F8\U0001F1EC SG 17 SSS"
   - "\U0001F1F8\U0001F1EC SG 18 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 19 VMS"
+  - "\U0001F1FA\U0001F1F8 US 20 TJN"
+  - "\U0001F1FA\U0001F1F8 US 21 TJN"
+  - "\U0001F1FA\U0001F1F8 US 22 TJN"
+  - "\U0001F1FA\U0001F1F8 US 23 TJN"
+  - "\U0001F1FA\U0001F1F8 US 24 TJN"
+  - "\U0001F1FA\U0001F1F8 US 25 TJN"
+  - "\U0001F1F7\U0001F1FA RU 26 TJN"
+  - "\U0001F1F7\U0001F1FA RU 27 TJN"
+  - "\U0001F1EE\U0001F1F7 IR 28 VMS"
+  - "\U0001F1F2\U0001F1E9 MD 29 TJN"
+  - "\U0001F1FA\U0001F1F8 US 30 TJN"
+  - "\U0001F1EB\U0001F1F7 FR 31 TJN"
+  - "\U0001F1FA\U0001F1F8 US 32 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 33 TJN"
+  - "\U0001F1F8\U0001F1EA SE 34 TJN"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -180,5 +341,21 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 16 SSS"
   - "\U0001F1F8\U0001F1EC SG 17 SSS"
   - "\U0001F1F8\U0001F1EC SG 18 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 19 VMS"
+  - "\U0001F1FA\U0001F1F8 US 20 TJN"
+  - "\U0001F1FA\U0001F1F8 US 21 TJN"
+  - "\U0001F1FA\U0001F1F8 US 22 TJN"
+  - "\U0001F1FA\U0001F1F8 US 23 TJN"
+  - "\U0001F1FA\U0001F1F8 US 24 TJN"
+  - "\U0001F1FA\U0001F1F8 US 25 TJN"
+  - "\U0001F1F7\U0001F1FA RU 26 TJN"
+  - "\U0001F1F7\U0001F1FA RU 27 TJN"
+  - "\U0001F1EE\U0001F1F7 IR 28 VMS"
+  - "\U0001F1F2\U0001F1E9 MD 29 TJN"
+  - "\U0001F1FA\U0001F1F8 US 30 TJN"
+  - "\U0001F1EB\U0001F1F7 FR 31 TJN"
+  - "\U0001F1FA\U0001F1F8 US 32 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 33 TJN"
+  - "\U0001F1F8\U0001F1EA SE 34 TJN"
 rules:
 - "MATCH,\U0001F310 Proxy"
