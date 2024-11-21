@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-11-21 18:10:07
+# 创建时间：2024-11-21 18:44:12
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：293
 # 节点类型：vmess, trojan
@@ -383,7 +383,7 @@ proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
-      - ♻️ 自动选择
+      - 🔯 故障转移
       - 🇸🇬 狮城节点
       - 🇺🇲 美国节点
       - 🇯🇵 日本节点
@@ -685,13 +685,10 @@ proxy-groups:
       - 奥地利_由快嘴科技提供：kkzui.com174
       - 伊朗_由快嘴科技提供：kkzui.com175
       - 荷兰_由快嘴科技提供：kkzui.com176
-  - name: ♻️ 自动选择
-    type: url-test
+  - name: 🔯 故障转移
+    type: fallback
     url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
-    retries: 2
-    failover: true
     proxies:
       - 美国-由快嘴科技提供：kkzui.com1
       - 澳大利亚-由快嘴科技提供：kkzui.com2
@@ -991,7 +988,7 @@ proxy-groups:
     proxies:
       - DIRECT
       - 🚀 节点选择
-      - ♻️ 自动选择
+      - 🔯 故障转移
   - name: 🛑 全球拦截
     type: select
     proxies:
@@ -1002,7 +999,7 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - ♻️ 自动选择
+      - 🔯 故障转移
       - 美国-由快嘴科技提供：kkzui.com1
       - 澳大利亚-由快嘴科技提供：kkzui.com2
       - 美国-由快嘴科技提供：kkzui.com3
@@ -1297,33 +1294,24 @@ proxy-groups:
       - 伊朗_由快嘴科技提供：kkzui.com175
       - 荷兰_由快嘴科技提供：kkzui.com176
   - name: 🇯🇵 日本节点
-    type: url-test
+    type: fallback
     url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
-    retries: 2
-    failover: true
     proxies:
       - 日本-由快嘴科技提供：kkzui.com63
       - 日本_由快嘴科技提供：kkzui.com89
   - name: 🇸🇬 狮城节点
-    type: url-test
+    type: fallback
     url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
-    retries: 2
-    failover: true
     proxies:
       - 新加坡-由快嘴科技提供：kkzui.com68
       - 新加坡-由快嘴科技提供：kkzui.com69
       - 新加坡_由快嘴科技提供：kkzui.com99
   - name: 🇺🇲 美国节点
-    type: url-test
+    type: fallback
     url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
-    retries: 2
-    failover: true
     proxies:
       - 美国-由快嘴科技提供：kkzui.com1
       - 美国-由快嘴科技提供：kkzui.com3
