@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-11-22 15:18:57
+# 创建时间：2024-11-22 11:52:51
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：792
 # 节点类型：trojan, vmess
@@ -886,11 +886,7 @@ proxy-groups:
       - 🇸🇬 狮城节点
       - 🇺🇲 美国节点
       - 🇯🇵 日本节点
-      - 🚀 手动切换
       - DIRECT
-  - name: 🚀 手动切换
-    type: select
-    proxies:
       - 美国_由快嘴科技提供：kkzui.com16
       - 中国_由快嘴科技提供：kkzui.com49
       - 巴西_由快嘴科技提供：kkzui.com50
@@ -1687,9 +1683,7 @@ proxy-groups:
     type: url-test
     url: https://www.gstatic.com/generate_204
     interval: 600
-    retries: 8
-    timeout: 5
-    max-failed-times: 7
+    retries: 4
     failover: true
     proxies:
       - 美国_由快嘴科技提供：kkzui.com16
@@ -3296,10 +3290,8 @@ proxy-groups:
   - name: 🇯🇵 日本节点
     type: url-test
     url: https://www.gstatic.com/generate_204
-    interval: 300
-    retries: 8
-    timeout: 5
-    max-failed-times: 7
+    interval: 600
+    retries: 4
     failover: true
     proxies:
       - 日本_由快嘴科技提供;kkzui.com29
@@ -3308,10 +3300,8 @@ proxy-groups:
   - name: 🇸🇬 狮城节点
     type: url-test
     url: https://www.gstatic.com/generate_204
-    interval: 300
-    retries: 8
-    timeout: 5
-    max-failed-times: 7
+    interval: 600
+    retries: 4
     failover: true
     proxies:
       - 新加坡_由快嘴科技提供：kkzui.com123
@@ -3319,10 +3309,8 @@ proxy-groups:
   - name: 🇺🇲 美国节点
     type: url-test
     url: https://www.gstatic.com/generate_204
-    interval: 300
-    retries: 8
-    timeout: 5
-    max-failed-times: 7
+    interval: 600
+    retries: 4
     failover: true
     proxies:
       - 美国_由快嘴科技提供：kkzui.com16
