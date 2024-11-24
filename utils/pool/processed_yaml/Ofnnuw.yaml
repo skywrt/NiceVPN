@@ -7,12 +7,12 @@
 # 节点类型：vmess, trojan
 ####################################
 mixed-port: 7890
-allow-lan: false
-log-level: silent
-external-controller: 127.0.0.1:9090
+allow-lan: true
+log-level: info
+external-controller: 0.0.0.0:9090
 dns:
   enabled: true
-  listen: 127.0.0.1:1053
+  listen: 0.0.0.0:1053
   ipv6: true
   default-nameserver:
     - 223.5.5.5
@@ -80,7 +80,7 @@ dns:
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
   fallback-filter:
-    geoip: true
+    geoip: false
     ipcidr:
       - 240.0.0.0/4
       - 0.0.0.0/32
@@ -2426,12 +2426,9 @@ proxy-groups:
       - 美国+俄勒冈州波特兰Amazon数据中心_886
   - name: ♻️ 自动选择
     type: url-test
-    url: https://www.gstatic.com/generate_204
-    interval: 600
-    retries: 8
-    timeout: 5
-    max-failed-times: 7
-    failover: true
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
     proxies:
       - 亚太地区 V2CROSS.COM
       - 美国 CloudFlare节点_1
@@ -4777,11 +4774,8 @@ proxy-groups:
   - name: 🇭🇰 香港节点
     type: url-test
     url: http://www.gstatic.com/generate_204
-    interval: 600
-    retries: 8
-    timeout: 5
-    max-failed-times: 7
-    failover: true
+    interval: 300
+    tolerance: 50
     proxies:
       - 香港 阿里云_1_374
       - 香港 香港有线电视有限公司_460
@@ -4789,12 +4783,9 @@ proxy-groups:
       - 香港 电讯盈科有限公司_578
   - name: 🇯🇵 日本节点
     type: url-test
-    url: https://www.gstatic.com/generate_204
-    interval: 600
-    retries: 8
-    timeout: 5
-    max-failed-times: 7
-    failover: true
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
     proxies:
       - 日本+V2CROSS.COM
       - 日本 V2CROSS.COM_300
@@ -4805,21 +4796,15 @@ proxy-groups:
   - name: 🇸🇬 狮城节点
     type: url-test
     url: http://www.gstatic.com/generate_204
-    interval: 600
-    retries: 8
-    timeout: 5
-    max-failed-times: 7
-    failover: true
+    interval: 300
+    tolerance: 50
     proxies:
       - 新加坡+亚马逊(Amazon)公司数据中心_255
   - name: 🇺🇲 美国节点
     type: url-test
-    url: https://www.gstatic.com/generate_204
-    interval: 600
-    retries: 8
-    timeout: 5
-    max-failed-times: 7
-    failover: true
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
     proxies:
       - 美国 CloudFlare节点_1
       - 美国 CloudFlare节点_2
