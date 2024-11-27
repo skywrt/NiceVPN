@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-11-27 19:47:56
+# 创建时间：2024-11-28 00:26:24
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：1162
 # 节点类型：vmess, trojan
@@ -13,7 +13,7 @@ external-controller: 127.0.0.1:9090
 dns:
   enabled: true
   listen: 127.0.0.1:1053
-  ipv6: true
+  ipv6: false
   default-nameserver:
     - 223.5.5.5
     - 114.114.114.114
@@ -4775,18 +4775,26 @@ proxy-groups:
       - 美国+V2CROSS.COM_6_885
       - 美国+俄勒冈州波特兰Amazon数据中心_886
   - name: 🇭🇰 香港节点
-    type: fallback
+    type: url-test
     url: https://www.gstatic.com/generate_204
-    interval: 480
+    interval: 600
+    retries: 8
+    timeout: 5
+    max-failed-times: 5
+    failover: true
     proxies:
       - 香港 阿里云_1_374
       - 香港 香港有线电视有限公司_460
       - 香港 阿里云_2_506
       - 香港 电讯盈科有限公司_578
   - name: 🇯🇵 日本节点
-    type: fallback
+    type: url-test
     url: https://www.gstatic.com/generate_204
-    interval: 480
+    interval: 600
+    retries: 8
+    timeout: 5
+    max-failed-times: 5
+    failover: true
     proxies:
       - 日本+V2CROSS.COM
       - 日本 V2CROSS.COM_300
@@ -4795,15 +4803,23 @@ proxy-groups:
       - 日本+V2CROSS.COM_3_882
       - 日本+V2CROSS.COM_4_884
   - name: 🇸🇬 狮城节点
-    type: fallback
+    type: url-test
     url: https://www.gstatic.com/generate_204
-    interval: 480
+    interval: 600
+    retries: 8
+    timeout: 5
+    max-failed-times: 5
+    failover: true
     proxies:
       - 新加坡+亚马逊(Amazon)公司数据中心_255
   - name: 🇺🇲 美国节点
-    type: fallback
+    type: url-test
     url: https://www.gstatic.com/generate_204
-    interval: 480
+    interval: 600
+    retries: 8
+    timeout: 5
+    max-failed-times: 5
+    failover: true
     proxies:
       - 美国 CloudFlare节点_1
       - 美国 CloudFlare节点_2
