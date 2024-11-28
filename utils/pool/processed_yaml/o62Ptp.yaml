@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-11-28 14:07:16
+# 创建时间：2024-11-28 14:20:27
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：1106
 # 节点类型：vmess, trojan
@@ -1196,7 +1196,7 @@ proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
-      - 🔯 故障转移
+      - ♻️ 自动选择
       - 🇸🇬 狮城节点
       - 🇺🇲 美国节点
       - 🇯🇵 日本节点
@@ -2315,7 +2315,7 @@ proxy-groups:
     type: fallback
     url: https://www.gstatic.com/generate_204
     interval: 600
-    fallback-policy: auto
+    fallback-policy: priority
     proxies:
       - 美国_由快嘴科技提供：kkzui.com26_2
       - 澳大利亚_由快嘴科技提供：kkzui.com43
@@ -4550,7 +4550,7 @@ proxy-groups:
     type: fallback
     url: https://www.gstatic.com/generate_204
     interval: 600
-    fallback-policy: auto
+    fallback-policy: priority
     proxies:
       - 日本_由快嘴科技提供：kkzui.com117
       - 日本_由快嘴科技提供;kkzui.com29
@@ -4561,7 +4561,7 @@ proxy-groups:
     type: fallback
     url: https://www.gstatic.com/generate_204
     interval: 600
-    fallback-policy: auto
+    fallback-policy: priority
     proxies:
       - 新加坡_由快嘴科技提供：kkzui.com123
       - 新加坡_由快嘴科技提供：kkzui.com124
@@ -4572,7 +4572,7 @@ proxy-groups:
     type: fallback
     url: https://www.gstatic.com/generate_204
     interval: 600
-    fallback-policy: auto
+    fallback-policy: priority
     proxies:
       - 美国_由快嘴科技提供：kkzui.com26_2
       - 美国_由快嘴科技提供：kkzui.com28_2
