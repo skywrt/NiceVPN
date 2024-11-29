@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-11-30 01:00:47
+# 创建时间：2024-11-30 01:33:33
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：1162
 # 节点类型：vmess, trojan
@@ -80,7 +80,7 @@ dns:
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
   fallback-filter:
-    geoip: false
+    geoip: true
     ipcidr:
       - 240.0.0.0/4
       - 0.0.0.0/32
