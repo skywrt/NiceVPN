@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-12-01 16:57:02
+# 创建时间：2024-12-01 17:14:24
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：496
 # 节点类型：vmess, trojan
@@ -83,7 +83,6 @@ dns:
     geoip: true
     ipcidr:
       - 240.0.0.0/4
-      - 0.0.0.0/32
 
 proxies:
   - {"name":"美国 CloudFlare节点_1","type":"vmess","server":"104.18.114.57","port":2095,"cipher":"auto","uuid":"18d96190-c10f-448f-a82a-2d36df5c3cde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"c3.6016725.xyz"}}}
@@ -2107,7 +2106,7 @@ proxy-groups:
       - 爱尔兰+都柏林Amazon数据中心
       - 斯洛文尼亚+V2CROSS.COM
   - name: 🇺🇲 美国节点
-    type: fallback
+    type: url-test
     url: https://www.gstatic.com/generate_204
     interval: 360
     retries: 2
