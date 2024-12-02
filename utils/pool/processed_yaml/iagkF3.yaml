@@ -1,23 +1,23 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-12-02 09:36:53
+# 创建时间：2024-12-02 09:27:54
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：1192
 # 节点类型：vmess, trojan
 ####################################
 mixed-port: 7890
-allow-lan: true
-log-level: info
-external-controller: 0.0.0.0:9090
+allow-lan: false
+log-level: silent
+external-controller: 127.0.0.1:9090
 dns:
   enabled: true
-  listen: 0.0.0.0:1053
-  ipv6: true
+  listen: 127.0.0.1:1053
+  ipv6: false
   default-nameserver:
     - 223.5.5.5
     - 114.114.114.114
-  enhanced-mode: fake-ip
+  enhanced-mode: redir-host
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
     - '*.lan'
@@ -80,10 +80,9 @@ dns:
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
   fallback-filter:
-    geoip: false
+    geoip: true
     ipcidr:
       - 240.0.0.0/4
-      - 0.0.0.0/32
 
 proxies:
   - {"name":"中转节点-38.1MB/s_1_1","type":"vmess","server":"183.240.253.26","port":30565,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
@@ -2486,9 +2485,11 @@ proxy-groups:
       - 未知国家-420.9KB/s
   - name: ♻️ 自动选择
     type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    url: https://www.gstatic.com/generate_204
+    interval: 420
+    retries: 2
+    timeout: 0.5
+    failover: true
     proxies:
       - 中转节点-38.1MB/s_1_1
       - 中转节点-95.5MB/s_2_2
@@ -4893,9 +4894,11 @@ proxy-groups:
       - 未知国家-420.9KB/s
   - name: 🇭🇰 香港节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    url: https://www.gstatic.com/generate_204
+    interval: 420
+    retries: 2
+    timeout: 0.5
+    failover: true
     proxies:
       - 香港-1.16MB/s_10_10
       - 香港-62.1MB/s_25_25
@@ -4913,9 +4916,11 @@ proxy-groups:
       - 香港-62.1MB/s_1016_1016
   - name: 🇯🇵 日本节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    url: https://www.gstatic.com/generate_204
+    interval: 420
+    retries: 2
+    timeout: 0.5
+    failover: true
     proxies:
       - 日本-360.9KB/s_85_85
       - 日本-54.5MB/s_90_90
@@ -4992,9 +4997,11 @@ proxy-groups:
       - 日本-5.9MB/s
   - name: 🇸🇬 狮城节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    url: https://www.gstatic.com/generate_204
+    interval: 420
+    retries: 2
+    timeout: 0.5
+    failover: true
     proxies:
       - 新加坡-4.10MB/s_84_84
       - 新加坡-335.0KB/s_1_615_615
@@ -5004,9 +5011,11 @@ proxy-groups:
       - 新加坡-333.9KB/s_2_630_630
   - name: 🇺🇲 美国节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    url: https://www.gstatic.com/generate_204
+    interval: 420
+    retries: 2
+    timeout: 0.5
+    failover: true
     proxies:
       - 美国-1.8MB/s_4_4
       - 美国-4.72MB/s_8_8
