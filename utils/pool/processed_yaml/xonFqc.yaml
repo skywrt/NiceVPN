@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-12-02 16:20:46
+# 创建时间：2024-12-02 16:33:06
 # 使用模版：V2RaySE 默认模版
 # 节点数量：12
 ####################################
@@ -86,18 +86,18 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"1bde97a7-singbox_hysteria2","type":"hysteria2","server":"mo.hamajun.xyz","port":11200,"password":"1bde97a7-19a4-4811-8bf0-2db189e7972e","sni":"mo.hamajun.xyz","skip-cert-verify":false,"alpn":["h3"]}
-  - {"name":"d07a5927-singbox_hysteria2","type":"hysteria2","server":"vr.179179.xyz","port":12959,"password":"d07a5927-3ed1-4a1a-b9fa-799e7d09a8e9","sni":"vr.179179.xyz","skip-cert-verify":false,"alpn":["h3"]}
-  - {"name":"5aa778a9-singbox_hysteria2","type":"hysteria2","server":"hy.179179.xyz","port":29800,"password":"5aa778a9-1789-4d2f-b4bb-f182d2b63f57","sni":"hy.179179.xyz","skip-cert-verify":false,"alpn":["h3"]}
-  - {"name":"2ae1d288-VLESS_Reality_gPRC","type":"vless","server":"154.204.56.153","port":18713,"udp":true,"uuid":"2ae1d288-60d4-4994-9b21-e8e06c5755a0","tls":true,"servername":"www.infraserviceonline.com","flow":"xtls-rprx-vision","network":"grpc","grpc-opts":{"grpc-service-name":"grpc"},"reality-opts":{"public-key":"-XAFBoB-zh2IRdr7vhf_xxTgm5ni9HVNcrjHxcGcJRY","short-id":"6ba85179e30d4fc2"},"client-fingerprint":"chrome"}
+  - {"name":"1bde97a7-singbox_hysteria2","type":"hysteria2","server":"mo.hamajun.xyz","port":11200,"password":"1bde97a7-19a4-4811-8bf0-2db189e7972e","skip-cert-verify":true}
+  - {"name":"d07a5927-singbox_hysteria2","type":"hysteria2","server":"vr.179179.xyz","port":12959,"password":"d07a5927-3ed1-4a1a-b9fa-799e7d09a8e9","skip-cert-verify":true}
+  - {"name":"5aa778a9-singbox_hysteria2","type":"hysteria2","server":"hy.179179.xyz","port":29800,"password":"5aa778a9-1789-4d2f-b4bb-f182d2b63f57","skip-cert-verify":true}
+  - {"name":"2ae1d288-VLESS_Reality_gPRC","type":"vless","server":"154.204.56.153","port":18713,"udp":true,"uuid":"2ae1d288-60d4-4994-9b21-e8e06c5755a0","tls":true,"servername":"www.infraserviceonline.com","flow":"xtls-rprx-vision","network":"grpc","reality-opts":{"public-key":"-XAFBoB-zh2IRdr7vhf_xxTgm5ni9HVNcrjHxcGcJRY","short-id":"6ba85179e30d4fc2"},"client-fingerprint":"chrome"}
   - {"name":"2ae1d288-VLESS_Reality_Vision","type":"vless","server":"154.204.56.153","port":30414,"udp":true,"uuid":"2ae1d288-60d4-4994-9b21-e8e06c5755a0","tls":true,"servername":"www.swiers.cn","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"-XAFBoB-zh2IRdr7vhf_xxTgm5ni9HVNcrjHxcGcJRY","short-id":"6ba85179e30d4fc2"},"client-fingerprint":"chrome"}
-  - {"name":"50c74bf0-VLESS_Reality_gPRC","type":"vless","server":"23.105.202.103","port":21122,"udp":true,"uuid":"50c74bf0-f502-4d16-af22-f3f13fde82a6","tls":true,"servername":"www.jorya.top","flow":"xtls-rprx-vision","network":"grpc","grpc-opts":{"grpc-service-name":"grpc"},"reality-opts":{"public-key":"5m86YpAytHADTCSWKlleWGPAp0qq8oFYH_iNu3gtIxA","short-id":"6ba85179e30d4fc2"},"client-fingerprint":"chrome"}
+  - {"name":"50c74bf0-VLESS_Reality_gPRC","type":"vless","server":"23.105.202.103","port":21122,"udp":true,"uuid":"50c74bf0-f502-4d16-af22-f3f13fde82a6","tls":true,"servername":"www.jorya.top","flow":"xtls-rprx-vision","network":"grpc","reality-opts":{"public-key":"5m86YpAytHADTCSWKlleWGPAp0qq8oFYH_iNu3gtIxA","short-id":"6ba85179e30d4fc2"},"client-fingerprint":"chrome"}
   - {"name":"50c74bf0-VLESS_Reality_Vision","type":"vless","server":"23.105.202.103","port":17436,"udp":true,"uuid":"50c74bf0-f502-4d16-af22-f3f13fde82a6","tls":true,"servername":"ddyinuo.net","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"5m86YpAytHADTCSWKlleWGPAp0qq8oFYH_iNu3gtIxA","short-id":"6ba85179e30d4fc2"},"client-fingerprint":"chrome"}
-  - {"name":"78e31733-VLESS_Reality_gPRC","type":"vless","server":"142.171.126.130","port":21922,"udp":true,"uuid":"78e31733-b7a2-4e15-8dbf-8c3ebbb07f8d","tls":true,"servername":"www.damnvape.com","flow":"xtls-rprx-vision","network":"grpc","grpc-opts":{"grpc-service-name":"grpc"},"reality-opts":{"public-key":"JfDMji8dLkJPhozUtqvh0hL34n5-LQR0Fo1NqNu6uDk","short-id":"6ba85179e30d4fc2"},"client-fingerprint":"chrome"}
+  - {"name":"78e31733-VLESS_Reality_gPRC","type":"vless","server":"142.171.126.130","port":21922,"udp":true,"uuid":"78e31733-b7a2-4e15-8dbf-8c3ebbb07f8d","tls":true,"servername":"www.damnvape.com","flow":"xtls-rprx-vision","network":"grpc","reality-opts":{"public-key":"JfDMji8dLkJPhozUtqvh0hL34n5-LQR0Fo1NqNu6uDk","short-id":"6ba85179e30d4fc2"},"client-fingerprint":"chrome"}
   - {"name":"78e31733-VLESS_Reality_Vision","type":"vless","server":"142.171.126.130","port":10003,"udp":true,"uuid":"78e31733-b7a2-4e15-8dbf-8c3ebbb07f8d","tls":true,"servername":"www.yzjswz.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"JfDMji8dLkJPhozUtqvh0hL34n5-LQR0Fo1NqNu6uDk","short-id":"6ba85179e30d4fc2"},"client-fingerprint":"chrome"}
-  - {"name":"defaultName_1","server":"mo.hamajun.xyz","port":39452,"password":"2da694e4-021c-42ff-b524-5ea54fc9d2d0%3A2da694e4-021c-42ff-b524-5ea54fc9d2d0","uuid":"2da694e4-021c-42ff-b524-5ea54fc9d2d0%3A2da694e4-021c-42ff-b524-5ea54fc9d2d0","sni":"mo.hamajun.xyz","alpn":["h3"],"congestion_control":"bbr#Tuic-hk"}
-  - {"name":"defaultName_2","server":"vr.179179.xyz","port":16002,"password":"d07a5927-3ed1-4a1a-b9fa-799e7d09a8e9%3Ad07a5927-3ed1-4a1a-b9fa-799e7d09a8e9","uuid":"d07a5927-3ed1-4a1a-b9fa-799e7d09a8e9%3Ad07a5927-3ed1-4a1a-b9fa-799e7d09a8e9","sni":"vr.179179.xyz","alpn":["h3"],"congestion_control":"bbr#Tuic-bwg"}
-  - {"name":"defaultName_3","server":"hy.179179.xyz","port":42189,"password":"341ed386-38cc-412c-a3c9-bbff24b22ed4%3A341ed386-38cc-412c-a3c9-bbff24b22ed4","uuid":"341ed386-38cc-412c-a3c9-bbff24b22ed4%3A341ed386-38cc-412c-a3c9-bbff24b22ed4","sni":"hy.179179.xyz","alpn":["h3"],"congestion_control":"bbr#Tuic-rc"}
+  - {"name":"defaultName_1","type":"tuic","server":"mo.hamajun.xyz","port":39452,"password":"2da694e4-021c-42ff-b524-5ea54fc9d2d0","uuid":"2da694e4-021c-42ff-b524-5ea54fc9d2d0","alpn":["h3"],"congestion-controller":"bbr"}
+  - {"name":"defaultName_2","type":"tuic","server":"vr.179179.xyz","port":16002,"password":"d07a5927-3ed1-4a1a-b9fa-799e7d09a8e9","uuid":"d07a5927-3ed1-4a1a-b9fa-799e7d09a8e9","alpn":["h3"],"congestion-controller":"bbr"}
+  - {"name":"defaultName_3","type":"tuic","server":"hy.179179.xyz","port":42189,"password":"341ed386-38cc-412c-a3c9-bbff24b22ed4","uuid":"341ed386-38cc-412c-a3c9-bbff24b22ed4","alpn":["h3"],"congestion-controller":"bbr"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
