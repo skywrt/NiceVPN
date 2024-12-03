@@ -134,9 +134,19 @@ proxies:
   ws-opts:
     path: /anti13.zingfast.vn
   udp: true
-- name: "\U0001F1FA\U0001F1F3 UN 19 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 19 VMS"
   type: vmess
-  server: 190.93.245.16
+  server: 120.232.153.27
+  port: 58831
+  cipher: auto
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 64
+  tls: false
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EC\U0001F1E7 GB 20 VMS"
+  type: vmess
+  server: 185.193.30.187
   port: 2082
   cipher: auto
   uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
@@ -148,9 +158,9 @@ proxies:
     path: /github.com/Alvin9999
     headers:
       host: ip18.6929198.xyz
-- name: "\U0001F1E8\U0001F1FE CY 20 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 21 VMS"
   type: vmess
-  server: 195.85.59.158
+  server: 190.93.247.127
   port: 2082
   cipher: auto
   uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
@@ -162,9 +172,9 @@ proxies:
     path: /github.com/Alvin9999
     headers:
       host: ip18.6929198.xyz
-- name: "\U0001F1F1\U0001F1F9 LT 21 VMS"
+- name: "\U0001F1F7\U0001F1FA RU 22 VMS"
   type: vmess
-  server: 146.19.21.61
+  server: 45.8.211.242
   port: 2082
   cipher: auto
   uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
@@ -176,9 +186,9 @@ proxies:
     path: /github.com/Alvin9999
     headers:
       host: ip18.6929198.xyz
-- name: "\U0001F1FA\U0001F1F3 UN 22 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 23 VMS"
   type: vmess
-  server: 190.93.247.203
+  server: 190.93.245.168
   port: 2082
   cipher: auto
   uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
@@ -190,47 +200,33 @@ proxies:
     path: /github.com/Alvin9999
     headers:
       host: ip18.6929198.xyz
-- name: "\U0001F1EC\U0001F1E7 GB 23 VMS"
-  type: vmess
-  server: 5.39.254.196
-  port: 15112
-  cipher: auto
-  uuid: 398ce84e-4849-4e5f-9b1a-a56fbe233b81
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: ws
 - name: "\U0001F1FA\U0001F1F8 US 24 VMS"
   type: vmess
-  server: 170.114.46.219
-  port: 2082
-  cipher: auto
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /github.com/Alvin9999
-    headers:
-      host: ip18.6929198.xyz
-- name: "\U0001F1FA\U0001F1F3 UN 25 VMS"
-  type: vmess
-  server: 190.93.245.103
-  port: 2082
-  cipher: auto
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /github.com/Alvin9999
-    headers:
-      host: ip18.6929198.xyz
-- name: "\U0001F1FA\U0001F1F8 US 26 VMS"
-  type: vmess
   server: 104.254.140.141
+  port: 2082
+  cipher: auto
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /github.com/Alvin9999
+    headers:
+      host: ip18.6929198.xyz
+- name: "\U0001F1ED\U0001F1F0 HK 25 VMS"
+  type: vmess
+  server: 15002.kuaiyin02.top
+  port: 15002
+  cipher: auto
+  uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ''
+- name: "\U0001F1FA\U0001F1F3 UN 26 VMS"
+  type: vmess
+  server: 190.93.244.64
   port: 2082
   cipher: auto
   uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
@@ -256,7 +252,138 @@ proxies:
     path: /github.com/Alvin9999
     headers:
       host: ip18.6929198.xyz
-- name: "\U0001F1FA\U0001F1F3 UN 28 VMS"
+- name: "\U0001F1ED\U0001F1F0 HK 28 TJN"
+  type: trojan
+  server: 18.163.208.26
+  port: 45051
+  udp: true
+  password: 3e5cb4f5-8dcf-492a-b4c8-06bc06f158bb
+  sni: us1.bilibili.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F3 UN 29 VMS"
+  type: vmess
+  server: 190.93.245.16
+  port: 2082
+  cipher: auto
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /github.com/Alvin9999
+    headers:
+      host: ip18.6929198.xyz
+- name: "\U0001F1E8\U0001F1FE CY 30 VMS"
+  type: vmess
+  server: 195.85.59.158
+  port: 2082
+  cipher: auto
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /github.com/Alvin9999
+    headers:
+      host: ip18.6929198.xyz
+- name: "\U0001F1F1\U0001F1F9 LT 31 VMS"
+  type: vmess
+  server: 146.19.21.61
+  port: 2082
+  cipher: auto
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /github.com/Alvin9999
+    headers:
+      host: ip18.6929198.xyz
+- name: "\U0001F1FA\U0001F1F3 UN 32 VMS"
+  type: vmess
+  server: 190.93.247.203
+  port: 2082
+  cipher: auto
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /github.com/Alvin9999
+    headers:
+      host: ip18.6929198.xyz
+- name: "\U0001F1EC\U0001F1E7 GB 33 VMS"
+  type: vmess
+  server: 5.39.254.196
+  port: 15112
+  cipher: auto
+  uuid: 398ce84e-4849-4e5f-9b1a-a56fbe233b81
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+- name: "\U0001F1FA\U0001F1F8 US 34 VMS"
+  type: vmess
+  server: 170.114.46.219
+  port: 2082
+  cipher: auto
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /github.com/Alvin9999
+    headers:
+      host: ip18.6929198.xyz
+- name: "\U0001F1FA\U0001F1F3 UN 35 VMS"
+  type: vmess
+  server: 190.93.245.103
+  port: 2082
+  cipher: auto
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /github.com/Alvin9999
+    headers:
+      host: ip18.6929198.xyz
+- name: "\U0001F1FA\U0001F1F8 US 36 VMS"
+  type: vmess
+  server: 104.254.140.141
+  port: 2082
+  cipher: auto
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /github.com/Alvin9999
+    headers:
+      host: ip18.6929198.xyz
+- name: "\U0001F1FA\U0001F1F3 UN 37 VMS"
+  type: vmess
+  server: 190.93.245.80
+  port: 2082
+  cipher: auto
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /github.com/Alvin9999
+    headers:
+      host: ip18.6929198.xyz
+- name: "\U0001F1FA\U0001F1F3 UN 38 VMS"
   type: vmess
   server: 190.93.244.228
   port: 2082
@@ -270,7 +397,7 @@ proxies:
     path: /github.com/Alvin9999
     headers:
       host: ip18.6929198.xyz
-- name: "\U0001F1FA\U0001F1F8 US 29 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 39 TJN"
   type: trojan
   server: 18.213.138.60
   port: 22222
@@ -279,7 +406,7 @@ proxies:
   sni: trojan.burgerip.co.ukhttp/1.1
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 30 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 40 VMS"
   type: vmess
   server: 190.93.246.196
   port: 2082
@@ -293,7 +420,7 @@ proxies:
     path: /github.com/Alvin9999
     headers:
       host: ip18.6929198.xyz
-- name: "\U0001F1FA\U0001F1F8 US 31 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 41 VMS"
   type: vmess
   server: 159.112.235.35
   port: 2082
@@ -307,9 +434,51 @@ proxies:
     path: /github.com/Alvin9999
     headers:
       host: ip18.6929198.xyz
-- name: "\U0001F1FA\U0001F1F8 US 32 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 42 VMS"
   type: vmess
   server: 154.83.2.121
+  port: 2082
+  cipher: auto
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /github.com/Alvin9999
+    headers:
+      host: ip18.6929198.xyz
+- name: "\U0001F1E8\U0001F1FE CY 43 VMS"
+  type: vmess
+  server: 195.85.59.158
+  port: 2082
+  cipher: auto
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /github.com/Alvin9999
+    headers:
+      host: ip18.6929198.xyz
+- name: "\U0001F1E8\U0001F1FE CY 44 VMS"
+  type: vmess
+  server: 195.85.59.158
+  port: 2082
+  cipher: auto
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /github.com/Alvin9999
+    headers:
+      host: ip18.6929198.xyz
+- name: "\U0001F1FA\U0001F1F3 UN 45 VMS"
+  type: vmess
+  server: 190.93.247.221
   port: 2082
   cipher: auto
   uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
@@ -343,20 +512,33 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 16 SSS"
   - "\U0001F1F8\U0001F1EC SG 17 SSS"
   - "\U0001F1F8\U0001F1EC SG 18 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 19 VMS"
-  - "\U0001F1E8\U0001F1FE CY 20 VMS"
-  - "\U0001F1F1\U0001F1F9 LT 21 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 22 VMS"
-  - "\U0001F1EC\U0001F1E7 GB 23 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 19 VMS"
+  - "\U0001F1EC\U0001F1E7 GB 20 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 21 VMS"
+  - "\U0001F1F7\U0001F1FA RU 22 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 23 VMS"
   - "\U0001F1FA\U0001F1F8 US 24 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 25 VMS"
-  - "\U0001F1FA\U0001F1F8 US 26 VMS"
+  - "\U0001F1ED\U0001F1F0 HK 25 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 26 VMS"
   - "\U0001F1FA\U0001F1F3 UN 27 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 28 VMS"
-  - "\U0001F1FA\U0001F1F8 US 29 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 30 VMS"
-  - "\U0001F1FA\U0001F1F8 US 31 VMS"
-  - "\U0001F1FA\U0001F1F8 US 32 VMS"
+  - "\U0001F1ED\U0001F1F0 HK 28 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 29 VMS"
+  - "\U0001F1E8\U0001F1FE CY 30 VMS"
+  - "\U0001F1F1\U0001F1F9 LT 31 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 32 VMS"
+  - "\U0001F1EC\U0001F1E7 GB 33 VMS"
+  - "\U0001F1FA\U0001F1F8 US 34 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 35 VMS"
+  - "\U0001F1FA\U0001F1F8 US 36 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 37 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 38 VMS"
+  - "\U0001F1FA\U0001F1F8 US 39 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 40 VMS"
+  - "\U0001F1FA\U0001F1F8 US 41 VMS"
+  - "\U0001F1FA\U0001F1F8 US 42 VMS"
+  - "\U0001F1E8\U0001F1FE CY 43 VMS"
+  - "\U0001F1E8\U0001F1FE CY 44 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 45 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -381,19 +563,32 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 16 SSS"
   - "\U0001F1F8\U0001F1EC SG 17 SSS"
   - "\U0001F1F8\U0001F1EC SG 18 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 19 VMS"
-  - "\U0001F1E8\U0001F1FE CY 20 VMS"
-  - "\U0001F1F1\U0001F1F9 LT 21 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 22 VMS"
-  - "\U0001F1EC\U0001F1E7 GB 23 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 19 VMS"
+  - "\U0001F1EC\U0001F1E7 GB 20 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 21 VMS"
+  - "\U0001F1F7\U0001F1FA RU 22 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 23 VMS"
   - "\U0001F1FA\U0001F1F8 US 24 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 25 VMS"
-  - "\U0001F1FA\U0001F1F8 US 26 VMS"
+  - "\U0001F1ED\U0001F1F0 HK 25 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 26 VMS"
   - "\U0001F1FA\U0001F1F3 UN 27 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 28 VMS"
-  - "\U0001F1FA\U0001F1F8 US 29 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 30 VMS"
-  - "\U0001F1FA\U0001F1F8 US 31 VMS"
-  - "\U0001F1FA\U0001F1F8 US 32 VMS"
+  - "\U0001F1ED\U0001F1F0 HK 28 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 29 VMS"
+  - "\U0001F1E8\U0001F1FE CY 30 VMS"
+  - "\U0001F1F1\U0001F1F9 LT 31 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 32 VMS"
+  - "\U0001F1EC\U0001F1E7 GB 33 VMS"
+  - "\U0001F1FA\U0001F1F8 US 34 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 35 VMS"
+  - "\U0001F1FA\U0001F1F8 US 36 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 37 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 38 VMS"
+  - "\U0001F1FA\U0001F1F8 US 39 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 40 VMS"
+  - "\U0001F1FA\U0001F1F8 US 41 VMS"
+  - "\U0001F1FA\U0001F1F8 US 42 VMS"
+  - "\U0001F1E8\U0001F1FE CY 43 VMS"
+  - "\U0001F1E8\U0001F1FE CY 44 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 45 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
