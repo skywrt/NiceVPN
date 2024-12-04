@@ -134,11 +134,10 @@ proxies:
   ws-opts:
     path: /anti13.zingfast.vn
   udp: true
-- name: "\U0001F1E9\U0001F1EA DE 19 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 19 VMS"
   type: vmess
   server: hms08.gwdef.sbs
   port: 443
-  udp: true
   cipher: auto
   uuid: bc864078-dcf3-4bf4-8dbf-ca9f200b56be
   alterId: 0
@@ -150,12 +149,10 @@ proxies:
     path: /linkws
     headers:
       host: gwdef.sbs
-  version: 2
 - name: "\U0001F1E8\U0001F1FF CZ 20 VMS"
   type: vmess
   server: 79.127.229.54
   port: 18000
-  udp: true
   cipher: auto
   uuid: fa1897db-1925-4c86-a495-939a959af900
   alterId: 0
@@ -163,72 +160,61 @@ proxies:
   skip-cert-verify: true
   servername: ''
   network: tcp
-  version: 2
 - name: "\U0001F1FA\U0001F1F8 US 21 SSS"
   type: ss
   server: 69.50.95.191
   port: 8882
-  udp: true
   password: kDWvXYZoTBcGkC4
   cipher: aes-256-gcm
 - name: "\U0001F1ED\U0001F1FA HU 22 SSS"
   type: ss
   server: 91.219.237.102
   port: 990
-  udp: true
   password: f8f7aCzcPKbsF8p3
   cipher: chacha20-ietf-poly1305
-- name: "\U0001F1FA\U0001F1F3 UN 23 SSS"
-  type: ss
-  server: 23.134.94.168
-  port: 3389
-  udp: true
-  password: Y6R9pAtvxxzmGC
-  cipher: aes-256-gcm
-- name: "\U0001F1FA\U0001F1F8 US 24 SSS"
+- name: "\U0001F1FA\U0001F1F8 US 23 SSS"
   type: ss
   server: 69.50.95.191
   port: 6679
-  udp: true
   password: TEzjfAYq2IjtuoS
   cipher: aes-256-gcm
-- name: "\U0001F1FA\U0001F1F3 UN 25 TJN"
+- name: "\U0001F1FA\U0001F1F3 UN 24 TJN"
   type: trojan
   server: 190.93.246.95
   port: 443
   udp: true
   password: bpb-trojan
   sni: zeming13.us.kg
-  skip-cert-verify: false
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /tr?ed=2560
+    path: /tr
     headers:
       host: zeming13.us.kg
-- name: "\U0001F1FA\U0001F1F3 UN 26 TJN"
+- name: "\U0001F1FA\U0001F1F3 UN 25 TJN"
   type: trojan
   server: 190.93.247.232
   port: 443
   udp: true
   password: bpb-trojan
   sni: zeming13.us.kg
-  skip-cert-verify: false
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /tr?ed=2560
+    path: /tr
     headers:
       host: zeming13.us.kg
-- name: "\U0001F1FA\U0001F1F3 UN 27 TJN"
+- name: "\U0001F1FA\U0001F1F3 UN 26 TJN"
   type: trojan
   server: 190.93.246.80
   port: 443
   udp: true
   password: bpb-trojan
   sni: zeming13.us.kg
-  skip-cert-verify: false
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /tr?ed=2560
+    path: /tr
     headers:
       host: zeming13.us.kg
 proxy-groups:
@@ -253,15 +239,14 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 16 SSS"
   - "\U0001F1F8\U0001F1EC SG 17 SSS"
   - "\U0001F1F8\U0001F1EC SG 18 VMS"
-  - "\U0001F1E9\U0001F1EA DE 19 VMS"
+  - "\U0001F1FA\U0001F1F8 US 19 VMS"
   - "\U0001F1E8\U0001F1FF CZ 20 VMS"
   - "\U0001F1FA\U0001F1F8 US 21 SSS"
   - "\U0001F1ED\U0001F1FA HU 22 SSS"
-  - "\U0001F1FA\U0001F1F3 UN 23 SSS"
-  - "\U0001F1FA\U0001F1F8 US 24 SSS"
+  - "\U0001F1FA\U0001F1F8 US 23 SSS"
+  - "\U0001F1FA\U0001F1F3 UN 24 TJN"
   - "\U0001F1FA\U0001F1F3 UN 25 TJN"
   - "\U0001F1FA\U0001F1F3 UN 26 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 27 TJN"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -286,14 +271,13 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 16 SSS"
   - "\U0001F1F8\U0001F1EC SG 17 SSS"
   - "\U0001F1F8\U0001F1EC SG 18 VMS"
-  - "\U0001F1E9\U0001F1EA DE 19 VMS"
+  - "\U0001F1FA\U0001F1F8 US 19 VMS"
   - "\U0001F1E8\U0001F1FF CZ 20 VMS"
   - "\U0001F1FA\U0001F1F8 US 21 SSS"
   - "\U0001F1ED\U0001F1FA HU 22 SSS"
-  - "\U0001F1FA\U0001F1F3 UN 23 SSS"
-  - "\U0001F1FA\U0001F1F8 US 24 SSS"
+  - "\U0001F1FA\U0001F1F8 US 23 SSS"
+  - "\U0001F1FA\U0001F1F3 UN 24 TJN"
   - "\U0001F1FA\U0001F1F3 UN 25 TJN"
   - "\U0001F1FA\U0001F1F3 UN 26 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 27 TJN"
 rules:
 - "MATCH,\U0001F310 Proxy"
