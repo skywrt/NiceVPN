@@ -83,6 +83,7 @@ dns:
     geoip: true
     ipcidr:
       - 240.0.0.0/4
+      - 0.0.0.0/32
 
 proxies:
   - {"name":"🇯🇵_JP_日本->🇨🇦_CA_加拿大","type":"vmess","server":"91.193.58.5","port":2082,"cipher":"auto","uuid":"5f3f09ad-89cb-4e94-a7ad-aa8239913555","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/github.com/Alvin9999","headers":{"host":"ip18.6929198.xyz"}}}
