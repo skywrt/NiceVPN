@@ -134,6 +134,12 @@ proxies:
   ws-opts:
     path: /anti13.zingfast.vn
   udp: true
+- name: "\U0001F1FA\U0001F1F3 UN 19 SSS"
+  type: ss
+  server: 23.134.94.168
+  port: 3389
+  password: Y6R9pAtvxxzmGC
+  cipher: aes-256-gcm
 proxy-groups:
 - name: automatic
   type: url-test
@@ -156,6 +162,7 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 16 SSS"
   - "\U0001F1F8\U0001F1EC SG 17 SSS"
   - "\U0001F1F8\U0001F1EC SG 18 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 19 SSS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -180,5 +187,6 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 16 SSS"
   - "\U0001F1F8\U0001F1EC SG 17 SSS"
   - "\U0001F1F8\U0001F1EC SG 18 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 19 SSS"
 rules:
 - "MATCH,\U0001F310 Proxy"
