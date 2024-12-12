@@ -134,6 +134,87 @@ proxies:
   ws-opts:
     path: /anti13.zingfast.vn
   udp: true
+- name: "\U0001F1EF\U0001F1F5 JP 19 TJN"
+  type: trojan
+  server: jp006.421421.xyz
+  port: 20230
+  udp: true
+  password: 0028109a-37ed-4ded-b858-e566388a904c
+  sni: 421421.xyz
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EF\U0001F1F5 JP 20 TJN"
+  type: trojan
+  server: jp008.421421.xyz
+  port: 20230
+  udp: true
+  password: 0028109a-37ed-4ded-b858-e566388a904c
+  sni: 421421.xyz
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F8\U0001F1EC SG 21 TJN"
+  type: trojan
+  server: sg006.421421.xyz
+  port: 20230
+  udp: true
+  password: 0028109a-37ed-4ded-b858-e566388a904c
+  sni: 421421.xyz
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EF\U0001F1F5 JP 22 TJN"
+  type: trojan
+  server: jp007.421421.xyz
+  port: 20230
+  udp: true
+  password: 0028109a-37ed-4ded-b858-e566388a904c
+  sni: 421421.xyz
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EF\U0001F1F5 JP 23 TJN"
+  type: trojan
+  server: jp005.421421.xyz
+  port: 20230
+  udp: true
+  password: 0028109a-37ed-4ded-b858-e566388a904c
+  sni: 421421.xyz
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F8\U0001F1EC SG 24 TJN"
+  type: trojan
+  server: sg008.421421.xyz
+  port: 20230
+  udp: true
+  password: 0028109a-37ed-4ded-b858-e566388a904c
+  sni: 421421.xyz
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F8\U0001F1EC SG 25 TJN"
+  type: trojan
+  server: sg005.421421.xyz
+  port: 20230
+  udp: true
+  password: 0028109a-37ed-4ded-b858-e566388a904c
+  sni: 421421.xyz
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F8\U0001F1EC SG 26 TJN"
+  type: trojan
+  server: sg007.421421.xyz
+  port: 20230
+  udp: true
+  password: 0028109a-37ed-4ded-b858-e566388a904c
+  sni: 421421.xyz
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 27 TJN"
+  type: trojan
+  server: us003.421421.xyz
+  port: 20230
+  udp: true
+  password: 0028109a-37ed-4ded-b858-e566388a904c
+  sni: 421421.xyz
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -156,6 +237,15 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 16 SSS"
   - "\U0001F1F8\U0001F1EC SG 17 SSS"
   - "\U0001F1F8\U0001F1EC SG 18 VMS"
+  - "\U0001F1EF\U0001F1F5 JP 19 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 20 TJN"
+  - "\U0001F1F8\U0001F1EC SG 21 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 22 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 23 TJN"
+  - "\U0001F1F8\U0001F1EC SG 24 TJN"
+  - "\U0001F1F8\U0001F1EC SG 25 TJN"
+  - "\U0001F1F8\U0001F1EC SG 26 TJN"
+  - "\U0001F1FA\U0001F1F8 US 27 TJN"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -180,5 +270,14 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 16 SSS"
   - "\U0001F1F8\U0001F1EC SG 17 SSS"
   - "\U0001F1F8\U0001F1EC SG 18 VMS"
+  - "\U0001F1EF\U0001F1F5 JP 19 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 20 TJN"
+  - "\U0001F1F8\U0001F1EC SG 21 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 22 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 23 TJN"
+  - "\U0001F1F8\U0001F1EC SG 24 TJN"
+  - "\U0001F1F8\U0001F1EC SG 25 TJN"
+  - "\U0001F1F8\U0001F1EC SG 26 TJN"
+  - "\U0001F1FA\U0001F1F8 US 27 TJN"
 rules:
 - "MATCH,\U0001F310 Proxy"
