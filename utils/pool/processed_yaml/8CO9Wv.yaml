@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-12-13 19:13:51
+# 创建时间：2024-12-13 22:11:45
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：1214
 # 节点类型：trojan, vmess
@@ -77,12 +77,8 @@ dns:
     - stun.*.*.*
     - '*.mcdn.bilivideo.cn'
   nameserver:
-    - https://doh.pub/dns-query
-    - https://dns.alidns.com/dns-query
-    - https://dns.quad9.net/dns-query
-    - https://doh.dns.sb/dns-query
     - https://cloudflare-dns.com/dns-query
-    
+    - https://dns.alidns.com/dns-query
   fallback-filter:
     geoip: true
     ipcidr:
@@ -5006,7 +5002,7 @@ proxy-groups:
   - name: 🇯🇵 日本节点
     type: url-test
     url: https://www.gstatic.com/generate_204
-    interval: 300
+    interval: 360
     tolerance: 50
     disable-udp: true
     proxies:
@@ -5029,7 +5025,7 @@ proxy-groups:
   - name: 🇸🇬 狮城节点
     type: url-test
     url: https://www.gstatic.com/generate_204
-    interval: 300
+    interval: 360
     tolerance: 50
     disable-udp: true
     proxies:
