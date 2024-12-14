@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-12-14 12:27:22
+# 创建时间：2024-12-14 12:44:38
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：1057
 # 节点类型：vmess, trojan
@@ -76,7 +76,7 @@ dns:
     - stun.*.*
     - stun.*.*.*
     - '*.mcdn.bilivideo.cn'
-  nameserver:
+  nanameserver:
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
     - https://cloudflare-dns.com/dns-query
@@ -100,7 +100,6 @@ dns:
       - "+.twitter.com"
       - "+.instagram.com"
       - "+.whatsapp.com"
-      - "+.tiktok.com"
 
 proxies:
   - {"name":"中转节点-38.1MB/s_1_1","type":"vmess","server":"183.240.253.26","port":30565,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
