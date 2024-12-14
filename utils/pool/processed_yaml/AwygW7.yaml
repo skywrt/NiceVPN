@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-12-14 20:49:18
+# 创建时间：2024-12-14 11:51:44
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：1214
 # 节点类型：trojan, vmess
@@ -15,8 +15,8 @@ dns:
   listen: 127.0.0.1:1053
   ipv6: false
   default-nameserver:
-    - 8.8.8.8
-    - 1.0.0.1
+    - 223.5.5.5
+    - 114.114.114.114
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
@@ -76,19 +76,30 @@ dns:
     - stun.*.*
     - stun.*.*.*
     - '*.mcdn.bilivideo.cn'
-  nameserver:
-    - https://dns.google/dns-query
+  nanameserver:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
     - https://cloudflare-dns.com/dns-query
-  fallback: 
-    - tls://185.222.222.222
     - tls://9.9.9.9
+    - tls://185.222.222.222
+
+  fallback:
+    - tls://9.9.9.9
+    - tls://185.222.222.222
+    - https://dns.quad9.net/dns-query
+    - https://doh.dns.sb/dns-query
+
   fallback-filter:
     geoip: true
     ipcidr:
       - 240.0.0.0/4
-  bootstrap:
-    - 1.0.0.1
-    - 8.8.8.8
+    domain:
+      - "+.google.com"
+      - "+.facebook.com"
+      - "+.youtube.com"
+      - "+.twitter.com"
+      - "+.instagram.com"
+      - "+.whatsapp.com"
 
 proxies:
   - {"name":"🇺🇸 www.85la.com 美国 01\r","type":"trojan","server":"89.187.181.172","port":43118,"udp":true,"password":"ypDt8RkT7J","sni":"89.187.181.172","skip-cert-verify":true,"network":"tcp"}
@@ -7604,7 +7615,7 @@ rules:
   - IP-CIDR6,2001:b28:f23d::/48,🚀 节点选择,no-resolve
   - IP-CIDR6,2001:b28:f23f::/48,🚀 节点选择,no-resolve
 # 内容：国外媒体列表
-# 更新：2024-12-14 11:14:53
+# 更新：2024-08-27 13:51:18
 # 数量：367条
 # ABC
 # AbemaTV
