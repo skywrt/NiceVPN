@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-12-14 19:14:20
+# 创建时间：2024-12-14 20:15:28
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：1162
 # 节点类型：vmess, trojan
@@ -14,6 +14,9 @@ dns:
   enabled: true
   listen: 127.0.0.1:1053
   ipv6: false
+  default-nameserver:
+    - 8.8.8.8
+    - 1.0.0.1
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
@@ -74,11 +77,18 @@ dns:
     - stun.*.*.*
     - '*.mcdn.bilivideo.cn'
   nameserver:
+    - https://dns.google/dns-query
     - https://cloudflare-dns.com/dns-query
+  fallback: 
+    - tls://185.222.222.222
+    - tls://9.9.9.9
   fallback-filter:
     geoip: true
     ipcidr:
       - 240.0.0.0/4
+  bootstrap:
+    - 1.0.0.1
+    - 8.8.8.8
 
 proxies:
   - {"name":"亚太地区 V2CROSS.COM","type":"vmess","server":"b.jishuzhai.cloudns.biz","port":443,"cipher":"auto","uuid":"62aa5f80-0328-4004-a375-7f5a59df4022","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/hms19.best-tizi.top:443/linkws","headers":{"host":"jiedian.jishuge.eu.org"}}}
