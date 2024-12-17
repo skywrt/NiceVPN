@@ -134,6 +134,42 @@ proxies:
   ws-opts:
     path: /anti13.zingfast.vn
   udp: true
+- name: "\U0001F1EC\U0001F1E7 GB 19 SSS"
+  type: ss
+  server: 213.109.147.242
+  port: 62685
+  password: VpKABcOpNNA0l5G2AVOmw8
+  cipher: chacha20-ietf-poly1305
+- name: "\U0001F1F5\U0001F1F1 PL 20 SSS"
+  type: ss
+  server: 217.30.10.18
+  port: 9056
+  password: rNBfNuuANFCAk7KB
+  cipher: aes-256-cfb
+- name: "\U0001F1FA\U0001F1F8 US 21 SSS"
+  type: ss
+  server: 54.244.200.142
+  port: 443
+  password: amazonskr05
+  cipher: aes-256-cfb
+- name: "\U0001F1F7\U0001F1FA RU 22 SSS"
+  type: ss
+  server: soonru.soon.guru
+  port: 40031
+  password: 29fefcc3-9ae1-4e01-a1d0-534fc1671121
+  cipher: chacha20-ietf-poly1305
+- name: "\U0001F1F5\U0001F1F1 PL 23 SSS"
+  type: ss
+  server: 217.30.10.18
+  port: 9033
+  password: UTJA57ypk2XKQpnm
+  cipher: aes-256-cfb
+- name: "\U0001F1F1\U0001F1FB LV 24 SSS"
+  type: ss
+  server: 46.183.217.232
+  port: 990
+  password: f8f7aCzcPKbsF8p3
+  cipher: chacha20-ietf-poly1305
 proxy-groups:
 - name: automatic
   type: url-test
@@ -156,6 +192,12 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 16 SSS"
   - "\U0001F1F8\U0001F1EC SG 17 SSS"
   - "\U0001F1F8\U0001F1EC SG 18 VMS"
+  - "\U0001F1EC\U0001F1E7 GB 19 SSS"
+  - "\U0001F1F5\U0001F1F1 PL 20 SSS"
+  - "\U0001F1FA\U0001F1F8 US 21 SSS"
+  - "\U0001F1F7\U0001F1FA RU 22 SSS"
+  - "\U0001F1F5\U0001F1F1 PL 23 SSS"
+  - "\U0001F1F1\U0001F1FB LV 24 SSS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -180,5 +222,11 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 16 SSS"
   - "\U0001F1F8\U0001F1EC SG 17 SSS"
   - "\U0001F1F8\U0001F1EC SG 18 VMS"
+  - "\U0001F1EC\U0001F1E7 GB 19 SSS"
+  - "\U0001F1F5\U0001F1F1 PL 20 SSS"
+  - "\U0001F1FA\U0001F1F8 US 21 SSS"
+  - "\U0001F1F7\U0001F1FA RU 22 SSS"
+  - "\U0001F1F5\U0001F1F1 PL 23 SSS"
+  - "\U0001F1F1\U0001F1FB LV 24 SSS"
 rules:
 - "MATCH,\U0001F310 Proxy"
