@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-12-19 22:19:40
+# 创建时间：2024-12-19 22:53:48
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：1057
 # 节点类型：vmess, trojan
@@ -13,9 +13,9 @@ external-controller: 0.0.0.0:9090
 dns:
   enable: true
   ipv6: false
-  listen: 127.0.0.1:1053
+  listen: 0.0.0.0:1053
   use-hosts: true
-  use-system-hosts: true
+  use-system-hosts: false
   respect-rules: true
   enhanced-mode: fake-ip
   fake-ip-range: '198.18.0.1/16'
@@ -32,7 +32,6 @@ dns:
     - https://dns.quad9.net/dns-query
   fallback:
     - tls://1.1.1.1
-    - tls://dns.adguard.com
     - tls://dns.quad9.net
   fallback-filter:
     geoip: true
@@ -44,11 +43,11 @@ dns:
       - '+.youtube.com'
   nameserver-policy:
     "rule-set:cn_domain,private_domain":
-    - https://dns.alidns.com/dns-query
-    - https://doh.pub/dns-query
-  "rule-set:geolocation-!cn":
-    - https://dns.quad9.net/dns-query
-    - https://1.1.1.1/dns-query
+      - https://1.1.1.1/dns-query
+      - https://dns.quad9.net/dns-query
+    "rule-set:geolocation-!cn":
+      - https://dns.quad9.net/dns-query
+      - https://1.1.1.1/dns-query
 
 proxies:
   - {"name":"中转节点-38.1MB/s_1_1","type":"vmess","server":"183.240.253.26","port":30565,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
