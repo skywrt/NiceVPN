@@ -4654,6 +4654,12 @@ proxy-groups:
       - 美国-745.8KB/s_1056_1056
 
 rules:
+  - DOMAIN-SUFFIX,local,DIRECT # 本地请求直接
+  - DOMAIN-SUFFIX,cloudflare-dns.com,PROXY # 指定使用代理
+  - DOMAIN-SUFFIX,google.com,PROXY # 直接走代理
+  - DOMAIN-SUFFIX,youtube.com,PROXY # 直接走代理
+  - GEOIP,CN,DIRECT # 国内流量直连
+  - MATCH,PROXY # 其他请求走代理
 # 本地/局域网地址
 # 参考：https://en.wikipedia.org/wiki/Reserved_IP_addresses
 # ACL4SSR标志 如没有，代表不是用ACL4SSR规则
@@ -7356,12 +7362,6 @@ rules:
   - DOMAIN-SUFFIX,ocnttv.com,🚀 节点选择
   - DOMAIN-SUFFIX,vikacg.com,🚀 节点选择
   - DOMAIN-SUFFIX,picjs.xyz,🚀 节点选择
-  - DOMAIN-SUFFIX,local,DIRECT # 本地请求直接
-  - DOMAIN-SUFFIX,cloudflare-dns.com,PROXY # 指定使用代理
-  - DOMAIN-SUFFIX,google.com,PROXY # 直接走代理
-  - DOMAIN-SUFFIX,youtube.com,PROXY # 直接走代理
-  - GEOIP,CN,DIRECT # 国内流量直连
-  - MATCH,PROXY # 其他请求走代理
 # 直连列表
 # MyList
 # CN域名直连(中国|公司|网络)
