@@ -3249,7 +3249,7 @@ proxy-groups:
     proxies:
       - DIRECT
       - 🚀 节点选择
-      - 🔯 故障转移
+      - ♻️ 自动选择
   - name: 🛑 全球拦截
     type: select
     proxies:
@@ -3260,7 +3260,7 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🔯 故障转移
+      - ♻️ 自动选择
       - 中转节点-38.1MB/s_1_1
       - 中转节点-95.5MB/s_2_2
       - 中转节点-30.7MB/s_3_3
@@ -4654,17 +4654,17 @@ proxy-groups:
       - 美国-745.8KB/s_1056_1056
 
 rules:
-# 本地/局域网地址
-# 参考：https://en.wikipedia.org/wiki/Reserved_IP_addresses
-# ACL4SSR标志 如没有，代表不是用ACL4SSR规则
-# 本地/局域网地址
-# Router managed 路由器管理域名
   - DOMAIN-SUFFIX,local,DIRECT # 本地请求直接
   - DOMAIN-SUFFIX,cloudflare-dns.com,PROXY # 指定使用代理
   - DOMAIN-SUFFIX,google.com,PROXY # 直接走代理
   - DOMAIN-SUFFIX,youtube.com,PROXY # 直接走代理
   - GEOIP,CN,DIRECT # 国内流量直连
   - MATCH,PROXY # 其他请求走代理
+# 本地/局域网地址
+# 参考：https://en.wikipedia.org/wiki/Reserved_IP_addresses
+# ACL4SSR标志 如没有，代表不是用ACL4SSR规则
+# 本地/局域网地址
+# Router managed 路由器管理域名
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-loopback,🎯 全球直连
