@@ -1,7 +1,7 @@
 #
 #-------------------------------------------------------------#
 #  创建者：https://v2rayse.com
-#  创建时间：2024-12-24 20:20:48
+#  创建时间：2024-12-24 20:21:52
 #  模版：v2rayse默认模版
 #  节点数量：10
 #-------------------------------------------------------------#
@@ -13,8 +13,6 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"type":"ss","name":"🇵🇱PL-217.30.10.18-0872","server":"217.30.10.18","port":9093,"cipher":"aes-256-cfb","password":"wfLC2y7rzZyCmuyt"}
-  - {"type":"ss","name":"🇬🇧GB-3.11.87.77-0441","server":"series-a1.samanehha.co","port":443,"cipher":"chacha20-ietf-poly1305","password":"W74XFALLLuw6m5IA"}
   - {"type":"trojan","name":"🇺🇸US-38.99.82.225-0893","server":"38.99.82.225","port":443,"password":"71409d3e488548e8bb076d229778f008","udp":true,"skip-cert-verify":true,"sni":"jobsfortheworldtoday.com"}
   - {"type":"ss","name":"🇺🇸US-52.89.164.115-5497","server":"52.89.164.115","port":443,"cipher":"aes-256-cfb","password":"amazonskr05"}
   - {"type":"ss","name":"_281","server":"185.123.101.241","port":989,"cipher":"aes-256-cfb","password":"f8f7aCzcPKbsF8p3"}
@@ -23,14 +21,14 @@ proxies:
   - {"type":"vless","name":"🔒VL-WS-NONE🇺🇸US-151.101.2.219:80","server":"151.101.2.219","port":80,"uuid":"41833031-8832-4eea-ae0c-784197692ef4","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"foffmelo.com","ws-opts":{"path":"/olem/ws?ed=1024@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi","headers":{"host":"foffmelo.com"}}}
   - {"type":"vless","name":"🔒VL-WS-NONE🇺🇸US-151.101.2.133:80","server":"151.101.2.133","port":80,"uuid":"3b1e2c98-6025-41df-b82d-b539757f903f","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"plex.com","ws-opts":{"path":"/vless/","headers":{"host":"plex.com"}}}
   - {"type":"vless","name":"ir--@V2ray_Alpha--10","server":"173.245.58.100","port":80,"uuid":"860bf99f-6817-4892-aa77-1877ec73a57b","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"knOtNrmV2rayOtanOtrmNnOtenOtl.terminal-kaneop-none.SARBAZIT.COM","ws-opts":{"path":"/","headers":{"host":"knOtNrmV2rayOtanOtrmNnOtenOtl.terminal-kaneop-none.SARBAZIT.COM"}}}
+  - {"type":"ss","name":"🇬🇧GB-3.11.87.77-0441","server":"series-a1.samanehha.co","port":443,"cipher":"chacha20-ietf-poly1305","password":"W74XFALLLuw6m5IA"}
+  - {"type":"ss","name":"🇫🇷FR-51.15.15.82-0742","server":"51.15.15.82","port":989,"cipher":"aes-256-cfb","password":"f8f7aCzcPKbsF8p3"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇵🇱PL-217.30.10.18-0872
-      - 🇬🇧GB-3.11.87.77-0441
       - 🇺🇸US-38.99.82.225-0893
       - 🇺🇸US-52.89.164.115-5497
       - _281
@@ -39,14 +37,14 @@ proxy-groups:
       - 🔒VL-WS-NONE🇺🇸US-151.101.2.219:80
       - 🔒VL-WS-NONE🇺🇸US-151.101.2.133:80
       - ir--@V2ray_Alpha--10
+      - 🇬🇧GB-3.11.87.77-0441
+      - 🇫🇷FR-51.15.15.82-0742
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇵🇱PL-217.30.10.18-0872
-      - 🇬🇧GB-3.11.87.77-0441
       - 🇺🇸US-38.99.82.225-0893
       - 🇺🇸US-52.89.164.115-5497
       - _281
@@ -55,14 +53,14 @@ proxy-groups:
       - 🔒VL-WS-NONE🇺🇸US-151.101.2.219:80
       - 🔒VL-WS-NONE🇺🇸US-151.101.2.133:80
       - ir--@V2ray_Alpha--10
+      - 🇬🇧GB-3.11.87.77-0441
+      - 🇫🇷FR-51.15.15.82-0742
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇵🇱PL-217.30.10.18-0872
-      - 🇬🇧GB-3.11.87.77-0441
       - 🇺🇸US-38.99.82.225-0893
       - 🇺🇸US-52.89.164.115-5497
       - _281
@@ -71,13 +69,13 @@ proxy-groups:
       - 🔒VL-WS-NONE🇺🇸US-151.101.2.219:80
       - 🔒VL-WS-NONE🇺🇸US-151.101.2.133:80
       - ir--@V2ray_Alpha--10
+      - 🇬🇧GB-3.11.87.77-0441
+      - 🇫🇷FR-51.15.15.82-0742
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇵🇱PL-217.30.10.18-0872
-      - 🇬🇧GB-3.11.87.77-0441
       - 🇺🇸US-38.99.82.225-0893
       - 🇺🇸US-52.89.164.115-5497
       - _281
@@ -86,13 +84,13 @@ proxy-groups:
       - 🔒VL-WS-NONE🇺🇸US-151.101.2.219:80
       - 🔒VL-WS-NONE🇺🇸US-151.101.2.133:80
       - ir--@V2ray_Alpha--10
+      - 🇬🇧GB-3.11.87.77-0441
+      - 🇫🇷FR-51.15.15.82-0742
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇵🇱PL-217.30.10.18-0872
-      - 🇬🇧GB-3.11.87.77-0441
       - 🇺🇸US-38.99.82.225-0893
       - 🇺🇸US-52.89.164.115-5497
       - _281
@@ -101,13 +99,13 @@ proxy-groups:
       - 🔒VL-WS-NONE🇺🇸US-151.101.2.219:80
       - 🔒VL-WS-NONE🇺🇸US-151.101.2.133:80
       - ir--@V2ray_Alpha--10
+      - 🇬🇧GB-3.11.87.77-0441
+      - 🇫🇷FR-51.15.15.82-0742
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇵🇱PL-217.30.10.18-0872
-      - 🇬🇧GB-3.11.87.77-0441
       - 🇺🇸US-38.99.82.225-0893
       - 🇺🇸US-52.89.164.115-5497
       - _281
@@ -116,6 +114,8 @@ proxy-groups:
       - 🔒VL-WS-NONE🇺🇸US-151.101.2.219:80
       - 🔒VL-WS-NONE🇺🇸US-151.101.2.133:80
       - ir--@V2ray_Alpha--10
+      - 🇬🇧GB-3.11.87.77-0441
+      - 🇫🇷FR-51.15.15.82-0742
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -138,8 +138,6 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇵🇱PL-217.30.10.18-0872
-      - 🇬🇧GB-3.11.87.77-0441
       - 🇺🇸US-38.99.82.225-0893
       - 🇺🇸US-52.89.164.115-5497
       - _281
@@ -148,6 +146,8 @@ proxy-groups:
       - 🔒VL-WS-NONE🇺🇸US-151.101.2.219:80
       - 🔒VL-WS-NONE🇺🇸US-151.101.2.133:80
       - ir--@V2ray_Alpha--10
+      - 🇬🇧GB-3.11.87.77-0441
+      - 🇫🇷FR-51.15.15.82-0742
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连

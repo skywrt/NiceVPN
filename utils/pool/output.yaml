@@ -149,20 +149,8 @@ proxies:
     headers:
       Host: aaaa.wxx.gay
   udp: true
-- type: ss
-  name: "\U0001F1F5\U0001F1F1 PL 20 SSS"
-  server: 217.30.10.18
-  port: 9093
-  cipher: aes-256-cfb
-  password: wfLC2y7rzZyCmuyt
-- type: ss
-  name: "\U0001F1EC\U0001F1E7 GB 21 SSS"
-  server: series-a1.samanehha.co
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: W74XFALLLuw6m5IA
 - type: trojan
-  name: "\U0001F1FA\U0001F1F8 US 22 TJN"
+  name: "\U0001F1FA\U0001F1F8 US 20 TJN"
   server: 38.99.82.225
   port: 443
   password: 71409d3e488548e8bb076d229778f008
@@ -170,29 +158,41 @@ proxies:
   skip-cert-verify: true
   sni: jobsfortheworldtoday.com
 - type: ss
-  name: "\U0001F1FA\U0001F1F8 US 23 SSS"
+  name: "\U0001F1FA\U0001F1F8 US 21 SSS"
   server: 52.89.164.115
   port: 443
   cipher: aes-256-cfb
   password: amazonskr05
 - type: ss
-  name: "\U0001F1F9\U0001F1F7 TR 24 SSS"
+  name: "\U0001F1F9\U0001F1F7 TR 22 SSS"
   server: 185.123.101.241
   port: 989
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
 - type: ss
-  name: "\U0001F1F5\U0001F1F1 PL 25 SSS"
+  name: "\U0001F1F5\U0001F1F1 PL 23 SSS"
   server: 217.30.10.18
   port: 9010
   cipher: aes-256-cfb
   password: f63gg8EruDnUrmz4
 - type: ss
-  name: "\U0001F1FA\U0001F1F8 US 26 SSS"
+  name: "\U0001F1FA\U0001F1F8 US 24 SSS"
   server: 107.155.57.11
   port: 8080
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
+- type: ss
+  name: "\U0001F1EC\U0001F1E7 GB 25 SSS"
+  server: series-a1.samanehha.co
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: W74XFALLLuw6m5IA
+- type: ss
+  name: "\U0001F1F3\U0001F1F1 NL 26 SSS"
+  server: 51.15.15.82
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
 proxy-groups:
 - name: automatic
   type: url-test
@@ -216,13 +216,13 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 17 SSS"
   - "\U0001F1F8\U0001F1EC SG 18 VMS"
   - "\U0001F1FA\U0001F1F8 US 19 VMS"
-  - "\U0001F1F5\U0001F1F1 PL 20 SSS"
-  - "\U0001F1EC\U0001F1E7 GB 21 SSS"
-  - "\U0001F1FA\U0001F1F8 US 22 TJN"
-  - "\U0001F1FA\U0001F1F8 US 23 SSS"
-  - "\U0001F1F9\U0001F1F7 TR 24 SSS"
-  - "\U0001F1F5\U0001F1F1 PL 25 SSS"
-  - "\U0001F1FA\U0001F1F8 US 26 SSS"
+  - "\U0001F1FA\U0001F1F8 US 20 TJN"
+  - "\U0001F1FA\U0001F1F8 US 21 SSS"
+  - "\U0001F1F9\U0001F1F7 TR 22 SSS"
+  - "\U0001F1F5\U0001F1F1 PL 23 SSS"
+  - "\U0001F1FA\U0001F1F8 US 24 SSS"
+  - "\U0001F1EC\U0001F1E7 GB 25 SSS"
+  - "\U0001F1F3\U0001F1F1 NL 26 SSS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -248,12 +248,12 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 17 SSS"
   - "\U0001F1F8\U0001F1EC SG 18 VMS"
   - "\U0001F1FA\U0001F1F8 US 19 VMS"
-  - "\U0001F1F5\U0001F1F1 PL 20 SSS"
-  - "\U0001F1EC\U0001F1E7 GB 21 SSS"
-  - "\U0001F1FA\U0001F1F8 US 22 TJN"
-  - "\U0001F1FA\U0001F1F8 US 23 SSS"
-  - "\U0001F1F9\U0001F1F7 TR 24 SSS"
-  - "\U0001F1F5\U0001F1F1 PL 25 SSS"
-  - "\U0001F1FA\U0001F1F8 US 26 SSS"
+  - "\U0001F1FA\U0001F1F8 US 20 TJN"
+  - "\U0001F1FA\U0001F1F8 US 21 SSS"
+  - "\U0001F1F9\U0001F1F7 TR 22 SSS"
+  - "\U0001F1F5\U0001F1F1 PL 23 SSS"
+  - "\U0001F1FA\U0001F1F8 US 24 SSS"
+  - "\U0001F1EC\U0001F1E7 GB 25 SSS"
+  - "\U0001F1F3\U0001F1F1 NL 26 SSS"
 rules:
 - "MATCH,\U0001F310 Proxy"
