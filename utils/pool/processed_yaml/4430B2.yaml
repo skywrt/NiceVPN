@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-12-26 22:52:33
+# 创建时间：2024-12-26 16:24:52
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：241
 # 节点类型：vmess, trojan
@@ -11,82 +11,46 @@ allow-lan: false
 log-level: silent
 external-controller: 127.0.0.1:9090
 dns:
-  enabled: true
-  listen: 127.0.0.1:1053
+  enable: true
   ipv6: false
-  default-nameserver:
-    - https://8.8.8.8/dns-query
-    - https://1.1.1.1/dns-query
+  listen: 0.0.0.0:1053
+  use-hosts: true
+  use-system-hosts: false
+  respect-rules: true
   enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
+  fake-ip-range: '198.18.0.1/16'
   fake-ip-filter:
     - '*.lan'
-    - '*.linksys.com'
-    - '*.linksyssmartwifi.com'
-    - swscan.apple.com
-    - mesu.apple.com
-    - '*.msftconnecttest.com'
-    - '*.msftncsi.com'
-    - time.*.com
-    - time.*.gov
-    - time.*.edu.cn
-    - time.*.apple.com
-    - time1.*.com
-    - time2.*.com
-    - time3.*.com
-    - time4.*.com
-    - time5.*.com
-    - time6.*.com
-    - time7.*.com
-    - ntp.*.com
-    - ntp.*.com
-    - ntp1.*.com
-    - ntp2.*.com
-    - ntp3.*.com
-    - ntp4.*.com
-    - ntp5.*.com
-    - ntp6.*.com
-    - ntp7.*.com
-    - '*.time.edu.cn'
-    - '*.ntp.org.cn'
-    - +.pool.ntp.org
-    - time1.cloud.tencent.com
-    - +.music.163.com
-    - '*.126.net'
-    - musicapi.taihe.com
-    - music.taihe.com
-    - songsearch.kugou.com
-    - trackercdn.kugou.com
-    - '*.kuwo.cn'
-    - api-jooxtt.sanook.com
-    - api.joox.com
-    - joox.com
-    - +.y.qq.com
-    - +.music.tc.qq.com
-    - aqqmusic.tc.qq.com
-    - +.stream.qqmusic.qq.com
-    - '*.xiami.com'
-    - +.music.migu.cn
-    - +.srv.nintendo.net
-    - +.stun.playstation.net
-    - xbox.*.microsoft.com
-    - +.xboxlive.com
-    - localhost.ptlogin2.qq.com
-    - proxy.golang.org
-    - stun.*.*
-    - stun.*.*.*
-    - '*.mcdn.bilivideo.cn'
+    - '*.local'
+    - '*.market.xiaomi.com'
   nameserver:
-    - https://1.1.1.1/dns-query
-    - https://8.8.8.8/dns-query
-  fallback:
-    - https://1.1.1.1/dns-query
-    - https://8.8.8.8/dns-query
+    - https://cloudflare-dns.com/dns-query
+    - https://dns.google/dns-query
+    - https://doh.pub/dns-query
+    - tls://dns.riseup.net
+  proxy-server-nameserver:
+    - https://cloudflare-dns.com/dns-query
+    - https://dns.google/dns-query
   fallback-filter:
     geoip: true
+    geoip-code: CN
+    geosite:
+      - gfw
     ipcidr:
       - 240.0.0.0/4
-      - 0.0.0.0/32
+    domain:
+      - '+.google.com'
+      - '+.youtube.com'
+      - '+.example.com'
+  nameserver-policy:
+    "rule-set:cn_domain":
+      - tls://119.29.29.29
+    "rule-set:geolocation-!cn":
+      - https://cloudflare-dns.com/dns-query
+      - https://dns.google/dns-query
+    "rule-set:all":
+      - https://cloudflare-dns.com/dns-query
+      - https://dns.google/dns-query
 
 proxies:
   - {"name":"未知国家-862.3KB/s_1","type":"vmess","server":"104.18.114.68","port":2095,"cipher":"auto","uuid":"18d96190-c10f-448f-a82a-2d36df5c3cde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":""}}
@@ -587,7 +551,7 @@ proxy-groups:
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.gstatic.com/generate_204
-    interval: 300
+    interval: 360
     tolerance: 5
     proxies:
       - 未知国家-862.3KB/s_1
@@ -1092,7 +1056,7 @@ proxy-groups:
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.gstatic.com/generate_204
-    interval: 300
+    interval: 360
     tolerance: 5
     proxies:
       - 香港-953.5KB/s
@@ -1107,14 +1071,14 @@ proxy-groups:
   - name: 🇸🇬 狮城节点
     type: url-test
     url: https://www.gstatic.com/generate_204
-    interval: 300
+    interval: 360
     tolerance: 5
     proxies:
       - 新加坡-14.0MB/s
   - name: 🇺🇲 美国节点
     type: url-test
     url: https://www.gstatic.com/generate_204
-    interval: 300
+    interval: 360
     tolerance: 5
     proxies:
       - 美国-319.3KB/s
