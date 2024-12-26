@@ -1,44 +1,89 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-12-26 12:05:31
+# 创建时间：2024-12-26 11:36:09
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：439
 # 节点类型：trojan, vmess
 ####################################
 mixed-port: 7890
-allow-lan: false
-log-level: silent
-external-controller: 127.0.0.1:9090
+allow-lan: true
+log-level: info
+external-controller: 0.0.0.0:9090
 dns:
-  enable: true
+  enabled: true
+  listen: 0.0.0.0:1053
   ipv6: true
-  listen: 127.0.0.1:1053
-  use-hosts: true
-  use-system-hosts: true
-  respect-rules: true
+  default-nameserver:
+    - 223.5.5.5
+    - 114.114.114.114
   enhanced-mode: fake-ip
-  fake-ip-range: '198.18.0.1/16'
+  fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
-    - "*"
-    - "+.lan"
-    - "+.local"
-    - "+.market.xiaomi.com"
+    - '*.lan'
+    - '*.linksys.com'
+    - '*.linksyssmartwifi.com'
+    - swscan.apple.com
+    - mesu.apple.com
+    - '*.msftconnecttest.com'
+    - '*.msftncsi.com'
+    - time.*.com
+    - time.*.gov
+    - time.*.edu.cn
+    - time.*.apple.com
+    - time1.*.com
+    - time2.*.com
+    - time3.*.com
+    - time4.*.com
+    - time5.*.com
+    - time6.*.com
+    - time7.*.com
+    - ntp.*.com
+    - ntp.*.com
+    - ntp1.*.com
+    - ntp2.*.com
+    - ntp3.*.com
+    - ntp4.*.com
+    - ntp5.*.com
+    - ntp6.*.com
+    - ntp7.*.com
+    - '*.time.edu.cn'
+    - '*.ntp.org.cn'
+    - +.pool.ntp.org
+    - time1.cloud.tencent.com
+    - +.music.163.com
+    - '*.126.net'
+    - musicapi.taihe.com
+    - music.taihe.com
+    - songsearch.kugou.com
+    - trackercdn.kugou.com
+    - '*.kuwo.cn'
+    - api-jooxtt.sanook.com
+    - api.joox.com
+    - joox.com
+    - +.y.qq.com
+    - +.music.tc.qq.com
+    - aqqmusic.tc.qq.com
+    - +.stream.qqmusic.qq.com
+    - '*.xiami.com'
+    - +.music.migu.cn
+    - +.srv.nintendo.net
+    - +.stun.playstation.net
+    - xbox.*.microsoft.com
+    - +.xboxlive.com
+    - localhost.ptlogin2.qq.com
+    - proxy.golang.org
+    - stun.*.*
+    - stun.*.*.*
+    - '*.mcdn.bilivideo.cn'
   nameserver:
-    - https://1.1.1.1/dns-query
-    - https://9.9.9.9/dns-query
-  proxy-server-nameserver:
-    - https://120.53.53.53/dns-query
-    - https://223.5.5.5/dns-query
-  nameserver-policy:
-    "rule-set:cn_domain,private_domain":
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
-    - https://120.53.53.53/dns-query
-    - https://223.5.5.5/dns-query
-    "rule-set:geolocation-!cn":
-    - "https://dns.cloudflare.com/dns-query"
-    - "https://dns.quad9.net/dns-query"
+  fallback-filter:
+    geoip: false
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
 
 proxies:
   - {"name":"🇺🇸 www.85la.com 美国 01","type":"trojan","server":"89.187.181.172","port":43118,"udp":true,"password":"ypDt8RkT7J","sni":"89.187.181.172","skip-cert-verify":true,"network":"tcp"}
@@ -935,9 +980,9 @@ proxy-groups:
       - 🇮🇷 www.85la.com 伊朗 01
   - name: ♻️ 自动选择
     type: url-test
-    url: https://www.gstatic.com/generate_204
+    url: http://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 5
+    tolerance: 50
     proxies:
       - 🇺🇸 www.85la.com 美国 01
       - 🇺🇸 www.85la.com 美国 02_1
@@ -1836,9 +1881,9 @@ proxy-groups:
       - 🇮🇷 www.85la.com 伊朗 01
   - name: 🇭🇰 香港节点
     type: url-test
-    url: https://www.gstatic.com/generate_204
+    url: http://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 5
+    tolerance: 50
     proxies:
       - 🇭🇰 www.85la.com 香港 79
       - 🇭🇰 www.85la.com 香港 81
@@ -1847,9 +1892,9 @@ proxy-groups:
       - 🇭🇰 www.85la.com 香港 06
   - name: 🇯🇵 日本节点
     type: url-test
-    url: https://www.gstatic.com/generate_204
+    url: http://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 5
+    tolerance: 50
     proxies:
       - 🇯🇵 www.85la.com 日本 01
       - 🇯🇵 www.85la.com 日本 02
@@ -1894,9 +1939,9 @@ proxy-groups:
       - 🇯🇵 www.85la.com 日本 87
   - name: 🇸🇬 狮城节点
     type: url-test
-    url: https://www.gstatic.com/generate_204
+    url: http://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 5
+    tolerance: 50
     proxies:
       - 🇸🇬 www.85la.com 新加坡 01
       - 🇸🇬 www.85la.com 新加坡 02
@@ -1957,9 +2002,9 @@ proxy-groups:
       - 🇸🇬 www.85la.com 新加坡 21_2
   - name: 🇺🇲 美国节点
     type: url-test
-    url: https://www.gstatic.com/generate_204
+    url: http://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 5
+    tolerance: 50
     proxies:
       - 🇺🇸 www.85la.com 美国 01
       - 🇺🇸 www.85la.com 美国 02_1
