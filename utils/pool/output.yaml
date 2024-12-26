@@ -149,65 +149,6 @@ proxies:
     headers:
       Host: aaaa.wxx.gay
   udp: true
-- type: trojan
-  name: "\U0001F1FA\U0001F1E6 UA 20 TJN"
-  server: 193.106.248.196
-  port: 443
-  password: Julius
-  udp: true
-  skip-cert-verify: true
-  sni: miami.juliusnet.com
-- type: ss
-  name: "\U0001F1FA\U0001F1F8 US 21 SSS"
-  server: 35.88.126.102
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- type: ss
-  name: "\U0001F1F5\U0001F1F1 PL 22 SSS"
-  server: 217.30.10.18
-  port: 9038
-  cipher: aes-256-cfb
-  password: gYCYXfkUQEs2TaJQ
-- type: trojan
-  name: "\U0001F1FA\U0001F1F8 US 23 TJN"
-  server: sj.5216818.xyz
-  port: 443
-  password: 15c33952
-  udp: true
-  skip-cert-verify: true
-- type: trojan
-  name: "\U0001F1FA\U0001F1F8 US 24 TJN"
-  server: 63.176.35.126
-  port: 22222
-  password: telegram-id-privatevpns
-  udp: true
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-- type: ss
-  name: "\U0001F1F5\U0001F1F1 PL 25 SSS"
-  server: 217.30.10.18
-  port: 9060
-  cipher: aes-256-cfb
-  password: ueLXVkvh4hckhErQ
-- type: ss
-  name: "\U0001F1EE\U0001F1F7 IR 26 SSS"
-  server: 85.133.241.75
-  port: 1935
-  cipher: chacha20-ietf-poly1305
-  password: 21586aab-3a37-4f55-b8b7-5ae69572d403
-- type: vmess
-  name: "\U0001F1E8\U0001F1FF CZ 27 VMS"
-  ws-opts:
-    path: /
-    headers:
-      host: 195.58.49.50
-  server: 195.58.49.50
-  port: 29025
-  uuid: 727d1e03-2aed-4190-bff5-30890097c1c4
-  alterId: '0'
-  cipher: auto
-  network: ws
 proxy-groups:
 - name: automatic
   type: url-test
@@ -231,14 +172,6 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 17 SSS"
   - "\U0001F1F8\U0001F1EC SG 18 VMS"
   - "\U0001F1FA\U0001F1F8 US 19 VMS"
-  - "\U0001F1FA\U0001F1E6 UA 20 TJN"
-  - "\U0001F1FA\U0001F1F8 US 21 SSS"
-  - "\U0001F1F5\U0001F1F1 PL 22 SSS"
-  - "\U0001F1FA\U0001F1F8 US 23 TJN"
-  - "\U0001F1FA\U0001F1F8 US 24 TJN"
-  - "\U0001F1F5\U0001F1F1 PL 25 SSS"
-  - "\U0001F1EE\U0001F1F7 IR 26 SSS"
-  - "\U0001F1E8\U0001F1FF CZ 27 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -264,13 +197,5 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 17 SSS"
   - "\U0001F1F8\U0001F1EC SG 18 VMS"
   - "\U0001F1FA\U0001F1F8 US 19 VMS"
-  - "\U0001F1FA\U0001F1E6 UA 20 TJN"
-  - "\U0001F1FA\U0001F1F8 US 21 SSS"
-  - "\U0001F1F5\U0001F1F1 PL 22 SSS"
-  - "\U0001F1FA\U0001F1F8 US 23 TJN"
-  - "\U0001F1FA\U0001F1F8 US 24 TJN"
-  - "\U0001F1F5\U0001F1F1 PL 25 SSS"
-  - "\U0001F1EE\U0001F1F7 IR 26 SSS"
-  - "\U0001F1E8\U0001F1FF CZ 27 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
