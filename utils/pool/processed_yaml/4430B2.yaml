@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-12-26 14:31:49
+# 创建时间：2024-12-26 16:24:52
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：241
 # 节点类型：vmess, trojan
@@ -24,13 +24,13 @@ dns:
     - '*.local'
     - '*.market.xiaomi.com'
   nameserver:
-    - tls://1.1.1.1
-    - tls://8.8.8.8
+    - https://cloudflare-dns.com/dns-query
+    - https://dns.google/dns-query
     - https://doh.pub/dns-query
     - tls://dns.riseup.net
   proxy-server-nameserver:
-    - tls://1.1.1.1
-    - tls://8.8.8.8
+    - https://cloudflare-dns.com/dns-query
+    - https://dns.google/dns-query
   fallback-filter:
     geoip: true
     geoip-code: CN
@@ -46,11 +46,11 @@ dns:
     "rule-set:cn_domain":
       - tls://119.29.29.29
     "rule-set:geolocation-!cn":
-      - tls://1.1.1.1
-      - tls://8.8.8.8
+      - https://cloudflare-dns.com/dns-query
+      - https://dns.google/dns-query
     "rule-set:all":
-      - tls://1.1.1.1
-      - tls://8.8.8.8
+      - https://cloudflare-dns.com/dns-query
+      - https://dns.google/dns-query
 
 proxies:
   - {"name":"未知国家-862.3KB/s_1","type":"vmess","server":"104.18.114.68","port":2095,"cipher":"auto","uuid":"18d96190-c10f-448f-a82a-2d36df5c3cde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":""}}
@@ -551,7 +551,7 @@ proxy-groups:
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.gstatic.com/generate_204
-    interval: 300
+    interval: 360
     tolerance: 5
     proxies:
       - 未知国家-862.3KB/s_1
@@ -1056,7 +1056,7 @@ proxy-groups:
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.gstatic.com/generate_204
-    interval: 300
+    interval: 360
     tolerance: 5
     proxies:
       - 香港-953.5KB/s
@@ -1070,15 +1070,15 @@ proxy-groups:
       - 香港-6.28MB/s
   - name: 🇸🇬 狮城节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    url: https://www.gstatic.com/generate_204
+    interval: 360
+    tolerance: 5
     proxies:
       - 新加坡-14.0MB/s
   - name: 🇺🇲 美国节点
     type: url-test
     url: https://www.gstatic.com/generate_204
-    interval: 300
+    interval: 360
     tolerance: 5
     proxies:
       - 美国-319.3KB/s
