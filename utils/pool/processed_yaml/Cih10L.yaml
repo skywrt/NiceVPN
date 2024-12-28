@@ -1,56 +1,89 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-12-28 23:47:09
+# 创建时间：2024-12-28 23:53:19
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
-# 节点数量：214
+# 节点数量：209
 # 节点类型：vmess, trojan
 ####################################
 mixed-port: 7890
-allow-lan: false
-log-level: silent
-external-controller: 127.0.0.1:9090
+allow-lan: true
+log-level: info
+external-controller: 0.0.0.0:9090
 dns:
-  enable: true
-  ipv6: false
-  listen: 127.0.0.1:1053
-  use-hosts: true
-  use-system-hosts: false
-  respect-rules: true
+  enabled: true
+  listen: 0.0.0.0:1053
+  ipv6: true
+  default-nameserver:
+    - 223.5.5.5
+    - 114.114.114.114
   enhanced-mode: fake-ip
-  fake-ip-range: '198.18.0.1/16'
+  fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
     - '*.lan'
-    - '*.local'
-    - '*.market.xiaomi.com'
+    - '*.linksys.com'
+    - '*.linksyssmartwifi.com'
+    - swscan.apple.com
+    - mesu.apple.com
+    - '*.msftconnecttest.com'
+    - '*.msftncsi.com'
+    - time.*.com
+    - time.*.gov
+    - time.*.edu.cn
+    - time.*.apple.com
+    - time1.*.com
+    - time2.*.com
+    - time3.*.com
+    - time4.*.com
+    - time5.*.com
+    - time6.*.com
+    - time7.*.com
+    - ntp.*.com
+    - ntp.*.com
+    - ntp1.*.com
+    - ntp2.*.com
+    - ntp3.*.com
+    - ntp4.*.com
+    - ntp5.*.com
+    - ntp6.*.com
+    - ntp7.*.com
+    - '*.time.edu.cn'
+    - '*.ntp.org.cn'
+    - +.pool.ntp.org
+    - time1.cloud.tencent.com
+    - +.music.163.com
+    - '*.126.net'
+    - musicapi.taihe.com
+    - music.taihe.com
+    - songsearch.kugou.com
+    - trackercdn.kugou.com
+    - '*.kuwo.cn'
+    - api-jooxtt.sanook.com
+    - api.joox.com
+    - joox.com
+    - +.y.qq.com
+    - +.music.tc.qq.com
+    - aqqmusic.tc.qq.com
+    - +.stream.qqmusic.qq.com
+    - '*.xiami.com'
+    - +.music.migu.cn
+    - +.srv.nintendo.net
+    - +.stun.playstation.net
+    - xbox.*.microsoft.com
+    - +.xboxlive.com
+    - localhost.ptlogin2.qq.com
+    - proxy.golang.org
+    - stun.*.*
+    - stun.*.*.*
+    - '*.mcdn.bilivideo.cn'
   nameserver:
-    - https://1.1.1.1/dns-query
-    - https://8.8.8.8/dns-query
     - https://doh.pub/dns-query
-    - tls://dns.riseup.net
-  proxy-server-nameserver:
-    - https://1.1.1.1/dns-query
-    - https://8.8.8.8/dns-query
+    - https://dns.alidns.com/dns-query
   fallback-filter:
-    geoip: true
-    geoip-code: CN
-    geosite:
-      - gfw
+    geoip: false
     ipcidr:
       - 240.0.0.0/4
-    domain:
-      - '+.google.com'
-      - '+.youtube.com'
-      - '+.example.com'
-  nameserver-policy:
-    "rule-set:cn_domain":
-      - tls://119.29.29.29
-    "rule-set:geolocation-!cn":
-      - https://1.1.1.1/dns-query
-      - https://8.8.8.8/dns-query
-    "rule-set:all":
-      - https://1.1.1.1/dns-query
-      - https://8.8.8.8/dns-query
+      - 0.0.0.0/32
 
 proxies:
   - {"name":"未知国家-2.03MB/s","type":"vmess","server":"104.26.0.73","port":2086,"cipher":"auto","uuid":"7d92ffc9-02e1-4087-8a46-cc4d76560917","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
@@ -71,7 +104,7 @@ proxies:
   - {"name":"未知国家-1.96MB/s_3","type":"vmess","server":"104.18.114.69","port":2086,"cipher":"auto","uuid":"7d92ffc9-02e1-4087-8a46-cc4d76560917","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
   - {"name":"未知国家-1.89MB/s_1","type":"vmess","server":"104.26.0.154","port":2086,"cipher":"auto","uuid":"7d92ffc9-02e1-4087-8a46-cc4d76560917","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
   - {"name":"未知国家-1.96MB/s_4","type":"vmess","server":"104.18.114.124","port":2086,"cipher":"auto","uuid":"7d92ffc9-02e1-4087-8a46-cc4d76560917","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"未知国家-1.66MB/s","type":"vmess","server":"104.26.0.190","port":2086,"cipher":"auto","uuid":"7d92ffc9-02e1-4087-8a46-cc4d76560917","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"未知国家-603.7KB/s","type":"vmess","server":"104.26.0.190","port":2086,"cipher":"auto","uuid":"bc65fac2-7dc7-426f-acdd-0779a5035bde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
   - {"name":"未知国家-1.95MB/s_5","type":"vmess","server":"104.21.238.129","port":2086,"cipher":"auto","uuid":"7d92ffc9-02e1-4087-8a46-cc4d76560917","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
   - {"name":"未知国家-1.62MB/s","type":"vmess","server":"104.21.238.204","port":2086,"cipher":"auto","uuid":"7d92ffc9-02e1-4087-8a46-cc4d76560917","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
   - {"name":"未知国家-877.2KB/s","type":"vmess","server":"104.18.114.177","port":2095,"cipher":"auto","uuid":"18d96190-c10f-448f-a82a-2d36df5c3cde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
@@ -114,7 +147,6 @@ proxies:
   - {"name":"美国-7.64MB/s","type":"trojan","server":"d893d66e1001600227b0688b8b49cd5e.v1.cac.node-is.green","port":42349,"udp":true,"password":"aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856","sni":"us1.bilibili.com","skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国-4.57MB/s","type":"trojan","server":"8dab945f6519cada5b92a0149679c88d.v1.cac.node-is.green","port":47249,"udp":true,"password":"aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856","sni":"ca1.bilibili.com","skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国-3.81MB/s","type":"trojan","server":"70e79034ad58a5cefae4615ec8e84404.v1.cac.node-is.green","port":45181,"udp":true,"password":"aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856","sni":"de1.bilibili.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"未知国家-603.7KB/s","type":"vmess","server":"104.26.0.190","port":2086,"cipher":"auto","uuid":"bc65fac2-7dc7-426f-acdd-0779a5035bde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
   - {"name":"未知国家-1.96MB/s_8","type":"vmess","server":"104.21.238.94","port":2086,"cipher":"auto","uuid":"7d92ffc9-02e1-4087-8a46-cc4d76560917","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
   - {"name":"未知国家-1.23MB/s","type":"vmess","server":"104.26.0.25","port":8880,"cipher":"auto","uuid":"90f8f4dc-8092-4355-9047-05f506f5e9ab","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
   - {"name":"未知国家-1.93MB/s_2","type":"vmess","server":"104.21.238.96","port":2086,"cipher":"auto","uuid":"bc65fac2-7dc7-426f-acdd-0779a5035bde","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
@@ -153,9 +185,9 @@ proxies:
   - {"name":"未知国家-464.5KB/s","type":"vmess","server":"104.21.238.28","port":2095,"cipher":"auto","uuid":"f0758bf9-454b-4331-bb45-e56dd390f743","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
   - {"name":"未知国家-491.7KB/s","type":"vmess","server":"104.21.238.43","port":2095,"cipher":"auto","uuid":"f0758bf9-454b-4331-bb45-e56dd390f743","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
   - {"name":"美国-1.54MB/s","type":"vmess","server":"cdn1.bpcdn.cc","port":2086,"cipher":"auto","uuid":"b2295415-b953-4959-8be0-88b358111e95","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"中转节点-108.3KB/s","type":"vmess","server":"sg1.tiljkc.top","port":34843,"cipher":"auto","uuid":"8995f5b8-6ad5-3c29-836f-ec8baa292ba0","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"中转节点-12.13MB/s","type":"vmess","server":"sg1.tiljkc.top","port":34843,"cipher":"auto","uuid":"d1063964-2b13-372c-9b45-28f356e844aa","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"中转节点-11.65MB/s","type":"vmess","server":"hk1.tiljkc.top","port":39041,"cipher":"auto","uuid":"8995f5b8-6ad5-3c29-836f-ec8baa292ba0","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"中转节点-19.41MB/s","type":"vmess","server":"jp1.tiljkc.top","port":38953,"cipher":"auto","uuid":"8995f5b8-6ad5-3c29-836f-ec8baa292ba0","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"中转节点-18.77MB/s","type":"vmess","server":"jp1.tiljkc.top","port":38953,"cipher":"auto","uuid":"869760fe-7f4f-320c-b223-697f8e870088","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"中转节点-17.97MB/s","type":"trojan","server":"36.151.192.239","port":42395,"udp":true,"password":"DNUMdmnJ","skip-cert-verify":true,"network":"tcp"}
   - {"name":"中转节点-73.4MB/s","type":"vmess","server":"183.236.51.23","port":53002,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"未知国家-450.4KB/s","type":"vmess","server":"104.18.114.147","port":8880,"cipher":"auto","uuid":"90f8f4dc-8092-4355-9047-05f506f5e9ab","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
@@ -176,7 +208,6 @@ proxies:
   - {"name":"中转节点-2.67MB/s","type":"trojan","server":"36.151.192.198","port":38698,"udp":true,"password":"QwwHvrnN","skip-cert-verify":true,"network":"tcp"}
   - {"name":"韩国-1.21MB/s","type":"trojan","server":"146.56.158.235","port":20982,"udp":true,"password":"061a01f1-704b-4712-8e12-6d3fc95a127d","sni":"gevent.gmarket.co.kr","skip-cert-verify":true,"network":"tcp"}
   - {"name":"中转节点-16.21MB/s","type":"trojan","server":"naiu-other.05vr9nyqg5.download","port":13035,"udp":true,"password":"3bb73c5b-2500-484a-8ee4-68aaca381a6d","sni":"cloudflare.node-ssl.cdn-alibaba.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"中转节点-12.13MB/s","type":"vmess","server":"sg1.tiljkc.top","port":34843,"cipher":"auto","uuid":"d1063964-2b13-372c-9b45-28f356e844aa","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"香港-4.93MB/s","type":"trojan","server":"218.190.230.207","port":45970,"udp":true,"password":"aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856","sni":"hk12.bilibili.com","skip-cert-verify":true,"network":"tcp"}
   - {"name":"香港-472.9KB/s_1","type":"vmess","server":"91.199.84.112","port":40380,"cipher":"auto","uuid":"13364789-a8b2-4bcd-8df7-a794fb6f87e5","alterId":0,"tls":true,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"中转节点-1.40MB/s","type":"trojan","server":"naiu-hk.05vr9nyqg5.download","port":13007,"udp":true,"password":"3bb73c5b-2500-484a-8ee4-68aaca381a6d","sni":"cloudflare.node-ssl.cdn-alibaba.com","skip-cert-verify":true,"network":"tcp"}
@@ -206,7 +237,6 @@ proxies:
   - {"name":"德国-122.3KB/s","type":"trojan","server":"3.73.110.196","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
   - {"name":"英国-81.6MB/s","type":"vmess","server":"149.7.16.174","port":443,"cipher":"auto","uuid":"03fcc618-b93d-6796-6aed-8a38c975d581","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
   - {"name":"英国-33.9MB/s","type":"trojan","server":"18.168.25.133","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"中转节点-18.77MB/s","type":"vmess","server":"jp1.tiljkc.top","port":38953,"cipher":"auto","uuid":"869760fe-7f4f-320c-b223-697f8e870088","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"法国-19.5MB/s","type":"trojan","server":"15.236.137.181","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
   - {"name":"法国-23.2MB/s","type":"trojan","server":"51.21.73.169","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
   - {"name":"德国-2.74MB/s","type":"vmess","server":"78.47.102.195","port":44484,"cipher":"auto","uuid":"8a2ce574-2b74-4f10-a28e-b6d852e3f725","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
@@ -225,8 +255,8 @@ proxies:
   - {"name":"未知国家-1.89MB/s_5","type":"trojan","server":"160.30.21.105","port":443,"udp":true,"password":"94d219c9-1afc-4d42-b090-8b3794764380","sni":"std1.loadingip.com","skip-cert-verify":true,"network":"tcp"}
   - {"name":"中转节点-126.7KB/s_1","type":"vmess","server":"183.236.51.23","port":51704,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"中转节点-2.81MB/s","type":"trojan","server":"36.151.192.201","port":34185,"udp":true,"password":"QwwHvrnN","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"英国-2.67MB/s","type":"trojan","server":"51.38.65.155","port":443,"udp":true,"password":"419298f0-bf0c-11ef-bc6c-1239d0255272","sni":"speedtest.net","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"未知国家-4.01MB/s","type":"vmess","server":"104.16.61.8","port":8880,"cipher":"auto","uuid":"950db6aa-4926-4616-816e-ec0312dcb87b","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"英国-2.20MB/s","type":"trojan","server":"51.38.65.155","port":443,"udp":true,"password":"8fcb2b40-c110-11ef-8b94-1239d0255272","sni":"telewebion.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"未知国家-5.41MB/s","type":"vmess","server":"104.16.61.8","port":8880,"cipher":"auto","uuid":"f584de15-2034-4170-a723-f48c2bae5e0f","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
   - {"name":"未知国家-2.60MB/s","type":"vmess","server":"104.16.60.8","port":8880,"cipher":"auto","uuid":"f584de15-2034-4170-a723-f48c2bae5e0f","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
   - {"name":"美国-66.3MB/s","type":"trojan","server":"18.219.88.64","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国-4.88MB/s","type":"vmess","server":"142.0.134.245","port":45017,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
@@ -242,9 +272,7 @@ proxies:
   - {"name":"美国-2.02MB/s","type":"trojan","server":"63.176.29.99","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
   - {"name":"法国-4.09MB/s","type":"trojan","server":"15.237.79.116","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
   - {"name":"中转节点-4.60MB/s","type":"vmess","server":"120.234.102.229","port":52908,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"未知国家-5.41MB/s","type":"vmess","server":"104.16.61.8","port":8880,"cipher":"auto","uuid":"f584de15-2034-4170-a723-f48c2bae5e0f","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
   - {"name":"法国-15.5MB/s","type":"trojan","server":"51.21.119.187","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"英国-2.20MB/s","type":"trojan","server":"51.38.65.155","port":443,"udp":true,"password":"8fcb2b40-c110-11ef-8b94-1239d0255272","sni":"telewebion.com","skip-cert-verify":true,"network":"tcp"}
   - {"name":"德国-15.0MB/s","type":"trojan","server":"18.184.36.129","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国-1.90MB/s","type":"trojan","server":"38.99.82.225","port":443,"udp":true,"password":"71409d3e488548e8bb076d229778f008","sni":"jobsfortheworldtoday.com","skip-cert-verify":true,"network":"tcp"}
   - {"name":"越南-11.9MB/s","type":"trojan","server":"cmc3.5gsieuvip.vn","port":443,"udp":true,"password":"25a0ffa0-725c-4d6f-b0d5-c74579753075","skip-cert-verify":true,"network":"tcp"}
@@ -275,6 +303,7 @@ proxy-groups:
       - 🇭🇰 香港节点
       - 🇸🇬 狮城节点
       - 🇺🇲 美国节点
+      - 🇯🇵 日本节点
       - 🚀 手动切换
       - DIRECT
   - name: 🚀 手动切换
@@ -298,7 +327,7 @@ proxy-groups:
       - 未知国家-1.96MB/s_3
       - 未知国家-1.89MB/s_1
       - 未知国家-1.96MB/s_4
-      - 未知国家-1.66MB/s
+      - 未知国家-603.7KB/s
       - 未知国家-1.95MB/s_5
       - 未知国家-1.62MB/s
       - 未知国家-877.2KB/s
@@ -341,7 +370,6 @@ proxy-groups:
       - 美国-7.64MB/s
       - 美国-4.57MB/s
       - 美国-3.81MB/s
-      - 未知国家-603.7KB/s
       - 未知国家-1.96MB/s_8
       - 未知国家-1.23MB/s
       - 未知国家-1.93MB/s_2
@@ -380,9 +408,9 @@ proxy-groups:
       - 未知国家-464.5KB/s
       - 未知国家-491.7KB/s
       - 美国-1.54MB/s
-      - 中转节点-108.3KB/s
+      - 中转节点-12.13MB/s
       - 中转节点-11.65MB/s
-      - 中转节点-19.41MB/s
+      - 中转节点-18.77MB/s
       - 中转节点-17.97MB/s
       - 中转节点-73.4MB/s
       - 未知国家-450.4KB/s
@@ -403,7 +431,6 @@ proxy-groups:
       - 中转节点-2.67MB/s
       - 韩国-1.21MB/s
       - 中转节点-16.21MB/s
-      - 中转节点-12.13MB/s
       - 香港-4.93MB/s
       - 香港-472.9KB/s_1
       - 中转节点-1.40MB/s
@@ -433,7 +460,6 @@ proxy-groups:
       - 德国-122.3KB/s
       - 英国-81.6MB/s
       - 英国-33.9MB/s
-      - 中转节点-18.77MB/s
       - 法国-19.5MB/s
       - 法国-23.2MB/s
       - 德国-2.74MB/s
@@ -452,8 +478,8 @@ proxy-groups:
       - 未知国家-1.89MB/s_5
       - 中转节点-126.7KB/s_1
       - 中转节点-2.81MB/s
-      - 英国-2.67MB/s
-      - 未知国家-4.01MB/s
+      - 英国-2.20MB/s
+      - 未知国家-5.41MB/s
       - 未知国家-2.60MB/s
       - 美国-66.3MB/s
       - 美国-4.88MB/s
@@ -469,9 +495,7 @@ proxy-groups:
       - 美国-2.02MB/s
       - 法国-4.09MB/s
       - 中转节点-4.60MB/s
-      - 未知国家-5.41MB/s
       - 法国-15.5MB/s
-      - 英国-2.20MB/s
       - 德国-15.0MB/s
       - 美国-1.90MB/s
       - 越南-11.9MB/s
@@ -496,10 +520,9 @@ proxy-groups:
       - 法国-40.6MB/s
   - name: ♻️ 自动选择
     type: url-test
-    url: https://www.gstatic.com/generate_204
+    url: http://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 5
-    disable-udp: true
+    tolerance: 50
     proxies:
       - 未知国家-2.03MB/s
       - 未知国家-1.96MB/s_1
@@ -519,7 +542,7 @@ proxy-groups:
       - 未知国家-1.96MB/s_3
       - 未知国家-1.89MB/s_1
       - 未知国家-1.96MB/s_4
-      - 未知国家-1.66MB/s
+      - 未知国家-603.7KB/s
       - 未知国家-1.95MB/s_5
       - 未知国家-1.62MB/s
       - 未知国家-877.2KB/s
@@ -562,7 +585,6 @@ proxy-groups:
       - 美国-7.64MB/s
       - 美国-4.57MB/s
       - 美国-3.81MB/s
-      - 未知国家-603.7KB/s
       - 未知国家-1.96MB/s_8
       - 未知国家-1.23MB/s
       - 未知国家-1.93MB/s_2
@@ -601,9 +623,9 @@ proxy-groups:
       - 未知国家-464.5KB/s
       - 未知国家-491.7KB/s
       - 美国-1.54MB/s
-      - 中转节点-108.3KB/s
+      - 中转节点-12.13MB/s
       - 中转节点-11.65MB/s
-      - 中转节点-19.41MB/s
+      - 中转节点-18.77MB/s
       - 中转节点-17.97MB/s
       - 中转节点-73.4MB/s
       - 未知国家-450.4KB/s
@@ -624,7 +646,6 @@ proxy-groups:
       - 中转节点-2.67MB/s
       - 韩国-1.21MB/s
       - 中转节点-16.21MB/s
-      - 中转节点-12.13MB/s
       - 香港-4.93MB/s
       - 香港-472.9KB/s_1
       - 中转节点-1.40MB/s
@@ -654,7 +675,6 @@ proxy-groups:
       - 德国-122.3KB/s
       - 英国-81.6MB/s
       - 英国-33.9MB/s
-      - 中转节点-18.77MB/s
       - 法国-19.5MB/s
       - 法国-23.2MB/s
       - 德国-2.74MB/s
@@ -673,8 +693,8 @@ proxy-groups:
       - 未知国家-1.89MB/s_5
       - 中转节点-126.7KB/s_1
       - 中转节点-2.81MB/s
-      - 英国-2.67MB/s
-      - 未知国家-4.01MB/s
+      - 英国-2.20MB/s
+      - 未知国家-5.41MB/s
       - 未知国家-2.60MB/s
       - 美国-66.3MB/s
       - 美国-4.88MB/s
@@ -690,9 +710,7 @@ proxy-groups:
       - 美国-2.02MB/s
       - 法国-4.09MB/s
       - 中转节点-4.60MB/s
-      - 未知国家-5.41MB/s
       - 法国-15.5MB/s
-      - 英国-2.20MB/s
       - 德国-15.0MB/s
       - 美国-1.90MB/s
       - 越南-11.9MB/s
@@ -750,7 +768,7 @@ proxy-groups:
       - 未知国家-1.96MB/s_3
       - 未知国家-1.89MB/s_1
       - 未知国家-1.96MB/s_4
-      - 未知国家-1.66MB/s
+      - 未知国家-603.7KB/s
       - 未知国家-1.95MB/s_5
       - 未知国家-1.62MB/s
       - 未知国家-877.2KB/s
@@ -793,7 +811,6 @@ proxy-groups:
       - 美国-7.64MB/s
       - 美国-4.57MB/s
       - 美国-3.81MB/s
-      - 未知国家-603.7KB/s
       - 未知国家-1.96MB/s_8
       - 未知国家-1.23MB/s
       - 未知国家-1.93MB/s_2
@@ -832,9 +849,9 @@ proxy-groups:
       - 未知国家-464.5KB/s
       - 未知国家-491.7KB/s
       - 美国-1.54MB/s
-      - 中转节点-108.3KB/s
+      - 中转节点-12.13MB/s
       - 中转节点-11.65MB/s
-      - 中转节点-19.41MB/s
+      - 中转节点-18.77MB/s
       - 中转节点-17.97MB/s
       - 中转节点-73.4MB/s
       - 未知国家-450.4KB/s
@@ -855,7 +872,6 @@ proxy-groups:
       - 中转节点-2.67MB/s
       - 韩国-1.21MB/s
       - 中转节点-16.21MB/s
-      - 中转节点-12.13MB/s
       - 香港-4.93MB/s
       - 香港-472.9KB/s_1
       - 中转节点-1.40MB/s
@@ -885,7 +901,6 @@ proxy-groups:
       - 德国-122.3KB/s
       - 英国-81.6MB/s
       - 英国-33.9MB/s
-      - 中转节点-18.77MB/s
       - 法国-19.5MB/s
       - 法国-23.2MB/s
       - 德国-2.74MB/s
@@ -904,8 +919,8 @@ proxy-groups:
       - 未知国家-1.89MB/s_5
       - 中转节点-126.7KB/s_1
       - 中转节点-2.81MB/s
-      - 英国-2.67MB/s
-      - 未知国家-4.01MB/s
+      - 英国-2.20MB/s
+      - 未知国家-5.41MB/s
       - 未知国家-2.60MB/s
       - 美国-66.3MB/s
       - 美国-4.88MB/s
@@ -921,9 +936,7 @@ proxy-groups:
       - 美国-2.02MB/s
       - 法国-4.09MB/s
       - 中转节点-4.60MB/s
-      - 未知国家-5.41MB/s
       - 法国-15.5MB/s
-      - 英国-2.20MB/s
       - 德国-15.0MB/s
       - 美国-1.90MB/s
       - 越南-11.9MB/s
@@ -948,10 +961,9 @@ proxy-groups:
       - 法国-40.6MB/s
   - name: 🇭🇰 香港节点
     type: url-test
-    url: https://www.gstatic.com/generate_204
+    url: http://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 5
-    disable-udp: true
+    tolerance: 50
     proxies:
       - 香港-953.5KB/s
       - 香港-3.27MB/s
@@ -962,21 +974,25 @@ proxy-groups:
       - 香港-4.82MB/s
       - 香港-3.10MB/s
       - 香港-6.28MB/s
+  - name: 🇯🇵 日本节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies: []
   - name: 🇸🇬 狮城节点
     type: url-test
-    url: https://www.gstatic.com/generate_204
+    url: http://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 5
-    disable-udp: true
+    tolerance: 50
     proxies:
       - 新加坡-14.0MB/s
       - 新加坡-268.3KB/s
   - name: 🇺🇲 美国节点
     type: url-test
-    url: https://www.gstatic.com/generate_204
+    url: http://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 5
-    disable-udp: true
+    tolerance: 50
     proxies:
       - 美国-768.7KB/s
       - 美国-2.27MB/s
