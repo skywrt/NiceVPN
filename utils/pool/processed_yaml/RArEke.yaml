@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-12-29 13:59:44
+# 创建时间：2024-12-29 12:31:08
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
-# 节点数量：18
+# 节点数量：72
 # 节点类型：vmess, trojan
 ####################################
 mixed-port: 7890
@@ -86,24 +86,78 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"伊朗-128.6KB/s","type":"vmess","server":"185.29.223.164","port":32718,"cipher":"auto","uuid":"185.29.223.164:32718?type=tcp&encryption=auto#%E4%BC%8A%E6%9C%97-128.6KB%2Fs","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"中转节点-649.5KB/s","type":"vmess","server":"120.232.153.63","port":40565,"cipher":"auto","uuid":"120.232.153.63:40565?type=tcp&encryption=auto#%E4%B8%AD%E8%BD%AC%E8%8A%82%E7%82%B9-649.5KB%2Fs","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"荷兰-18.1MB/s","type":"vmess","server":"188.114.96.3","port":443,"cipher":"auto","uuid":"188.114.96.3:443?type=ws&encryption=auto&host=b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top&path=%2Fazumase.ren&security=tls#%E8%8D%B7%E5%85%B0-18.1MB%2Fs","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/azumase.ren","headers":{"host":"b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top"}}}
-  - {"name":"中转节点-165.5KB/s","type":"vmess","server":"183.236.51.23","port":56601,"cipher":"auto","uuid":"183.236.51.23:56601?type=tcp&encryption=auto#%E4%B8%AD%E8%BD%AC%E8%8A%82%E7%82%B9-165.5KB%2Fs","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"中转节点-2.49MB/s","type":"trojan","server":"223.113.54.145","port":36442,"udp":true,"password":"QwwHvrnN","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"俄罗斯联邦-108.4KB/s","type":"vmess","server":"195.58.49.42","port":29025,"cipher":"auto","uuid":"195.58.49.42:29025?type=ws&encryption=auto&path=%2F#%E4%BF%84%E7%BD%97%E6%96%AF%E8%81%94%E9%82%A6-108.4KB%2Fs","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"中转节点-50.1MB/s","type":"vmess","server":"120.198.71.214","port":34493,"cipher":"auto","uuid":"120.198.71.214:34493?type=tcp&encryption=auto#%E4%B8%AD%E8%BD%AC%E8%8A%82%E7%82%B9-50.1MB%2Fs","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"中转节点-57.3MB/s","type":"vmess","server":"183.236.51.23","port":51704,"cipher":"auto","uuid":"183.236.51.23:51704?type=tcp&encryption=auto#%E4%B8%AD%E8%BD%AC%E8%8A%82%E7%82%B9-57.3MB%2Fs","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"中转节点-39.3MB/s","type":"vmess","server":"183.236.51.23","port":46602,"cipher":"auto","uuid":"183.236.51.23:46602?type=tcp&encryption=auto#%E4%B8%AD%E8%BD%AC%E8%8A%82%E7%82%B9-39.3MB%2Fs","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"德国-23.4MB/s","type":"vmess","server":"57.129.24.142","port":443,"cipher":"auto","uuid":"57.129.24.142:443?type=ws&encryption=auto&path=%2Flinkvws&security=tls#%E5%BE%B7%E5%9B%BD-23.4MB%2Fs","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkvws"}}
-  - {"name":"法国-2.94MB/s","type":"vmess","server":"51.77.20.137","port":443,"cipher":"auto","uuid":"51.77.20.137:443?type=ws&encryption=auto&path=%2Flinkvws&security=tls#%E6%B3%95%E5%9B%BD-2.94MB%2Fs","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkvws"}}
-  - {"name":"中转节点-339.0KB/s","type":"vmess","server":"120.198.71.214","port":34493,"cipher":"auto","uuid":"120.198.71.214:34493?type=tcp&encryption=auto#%E4%B8%AD%E8%BD%AC%E8%8A%82%E7%82%B9-339.0KB%2Fs","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"新加坡-268.3KB/s","type":"vmess","server":"8.222.180.229","port":443,"cipher":"auto","uuid":"8.222.180.229:443?type=ws&encryption=auto&host=beyonddsz.cfd&path=%2Flinkws&security=tls#%E6%96%B0%E5%8A%A0%E5%9D%A1-268.3KB%2Fs","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"beyonddsz.cfd"}}}
-  - {"name":"美国-962.2KB/s","type":"vmess","server":"151.101.2.216","port":80,"cipher":"auto","uuid":"151.101.2.216:80?type=ws&encryption=auto&host=6606.com&path=%2Fracevpn#%E7%BE%8E%E5%9B%BD-962.2KB%2Fs","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/racevpn","headers":{"host":"6606.com"}}}
-  - {"name":"德国-2.92MB/s","type":"vmess","server":"57.129.24.141","port":443,"cipher":"auto","uuid":"57.129.24.141:443?type=ws&encryption=auto&path=%2Flinkvws&security=tls#%E5%BE%B7%E5%9B%BD-2.92MB%2Fs","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkvws"}}
-  - {"name":"英国-724.4KB/s","type":"trojan","server":"35.179.23.7","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"法国-40.6MB/s","type":"trojan","server":"13.37.111.100","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国-247.7KB/s","type":"vmess","server":"142.0.134.245","port":45017,"cipher":"auto","uuid":"142.0.134.245:45017?type=tcp&encryption=auto#%E7%BE%8E%E5%9B%BD-247.7KB%2Fs","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_US_美国_63-105_1","type":"vmess","server":"us02.uuv2.uk","port":2053,"cipher":"auto","uuid":"us02.uuv2.uk:2053?type=ws&encryption=auto&security=tls#%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_63-105","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"香港_1_2","type":"vmess","server":"120.232.214.25","port":9444,"cipher":"auto","uuid":"120.232.214.25:9444?type=tcp&encryption=auto&security=tls#%E9%A6%99%E6%B8%AF_1","alterId":0,"tls":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"日本_3","type":"vmess","server":"120.232.214.25","port":113,"cipher":"auto","uuid":"120.232.214.25:113?type=tcp&encryption=auto&security=tls#%E6%97%A5%E6%9C%AC","alterId":0,"tls":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"香港_2_4","type":"trojan","server":"t5.ssrsub.one","port":8443,"udp":true,"password":"a88b0aa2-b6d3-487c-bada-5da80c3b928e","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"bngan.com_5","type":"vmess","server":"185.247.138.25","port":15079,"cipher":"auto","uuid":"185.247.138.25:15079?type=tcp&encryption=auto#bngan.com","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇭🇰HK_1_6","type":"vmess","server":"32.ssrj.xyz","port":65132,"cipher":"auto","uuid":"32.ssrj.xyz:65132?type=tcp&encryption=auto#%F0%9F%87%AD%F0%9F%87%B0HK_1","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇭🇰HK_2_7","type":"vmess","server":"33.ssrj.xyz","port":65133,"cipher":"auto","uuid":"33.ssrj.xyz:65133?type=tcp&encryption=auto#%F0%9F%87%AD%F0%9F%87%B0HK_2","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇭🇰HK_3_8","type":"vmess","server":"44.ssrj.xyz","port":61144,"cipher":"auto","uuid":"44.ssrj.xyz:61144?type=tcp&encryption=auto#%F0%9F%87%AD%F0%9F%87%B0HK_3","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇭🇰HK_4_9","type":"vmess","server":"64.ssrj.xyz","port":65164,"cipher":"auto","uuid":"64.ssrj.xyz:65164?type=tcp&encryption=auto#%F0%9F%87%AD%F0%9F%87%B0HK_4","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇭🇰 中转|香港CMHK06|华南隧道[流媒体解锁]_10","type":"vmess","server":"cm-jm.okvpn.cc","port":20001,"cipher":"auto","uuid":"cm-jm.okvpn.cc:20001?type=ws&encryption=auto#%F0%9F%87%AD%F0%9F%87%B0%20%E4%B8%AD%E8%BD%AC%7C%E9%A6%99%E6%B8%AFCMHK06%7C%E5%8D%8E%E5%8D%97%E9%9A%A7%E9%81%93%5B%E6%B5%81%E5%AA%92%E4%BD%93%E8%A7%A3%E9%94%81%5D","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"🇭🇰 中转|香港CMHK08|华中隧道[流媒体解锁]_11","type":"vmess","server":"cu-cs.okvpn.xyz","port":30011,"cipher":"auto","uuid":"cu-cs.okvpn.xyz:30011?type=ws&encryption=auto#%F0%9F%87%AD%F0%9F%87%B0%20%E4%B8%AD%E8%BD%AC%7C%E9%A6%99%E6%B8%AFCMHK08%7C%E5%8D%8E%E4%B8%AD%E9%9A%A7%E9%81%93%5B%E6%B5%81%E5%AA%92%E4%BD%93%E8%A7%A3%E9%94%81%5D","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"🇭🇰 中转|香港Azure20|华南隧道-x0.7_12","type":"vmess","server":"cm-jm.okvpn.xyz","port":20047,"cipher":"auto","uuid":"cm-jm.okvpn.xyz:20047?type=ws&encryption=auto#%F0%9F%87%AD%F0%9F%87%B0%20%E4%B8%AD%E8%BD%AC%7C%E9%A6%99%E6%B8%AFAzure20%7C%E5%8D%8E%E5%8D%97%E9%9A%A7%E9%81%93-x0.7","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"🇸🇬 中转|新加坡Singtel03|华中隧道[流媒体解锁]_13","type":"vmess","server":"cm-jm.okvpn.xyz","port":20049,"cipher":"auto","uuid":"cm-jm.okvpn.xyz:20049?type=ws&encryption=auto#%F0%9F%87%B8%F0%9F%87%AC%20%E4%B8%AD%E8%BD%AC%7C%E6%96%B0%E5%8A%A0%E5%9D%A1Singtel03%7C%E5%8D%8E%E4%B8%AD%E9%9A%A7%E9%81%93%5B%E6%B5%81%E5%AA%92%E4%BD%93%E8%A7%A3%E9%94%81%5D","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"🇸🇬 中转|新加坡Singtel04|华中隧道[流媒体解锁]_14","type":"vmess","server":"cu-cs.okvpn.xyz","port":30014,"cipher":"auto","uuid":"cu-cs.okvpn.xyz:30014?type=ws&encryption=auto#%F0%9F%87%B8%F0%9F%87%AC%20%E4%B8%AD%E8%BD%AC%7C%E6%96%B0%E5%8A%A0%E5%9D%A1Singtel04%7C%E5%8D%8E%E4%B8%AD%E9%9A%A7%E9%81%93%5B%E6%B5%81%E5%AA%92%E4%BD%93%E8%A7%A3%E9%94%81%5D","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"🇸🇬 中转|新加坡Singtel05|华北隧道[流媒体解锁]_15","type":"vmess","server":"cu-sy.okvpn.xyz","port":50003,"cipher":"auto","uuid":"cu-sy.okvpn.xyz:50003?type=ws&encryption=auto#%F0%9F%87%B8%F0%9F%87%AC%20%E4%B8%AD%E8%BD%AC%7C%E6%96%B0%E5%8A%A0%E5%9D%A1Singtel05%7C%E5%8D%8E%E5%8C%97%E9%9A%A7%E9%81%93%5B%E6%B5%81%E5%AA%92%E4%BD%93%E8%A7%A3%E9%94%81%5D","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"🇯🇵 中转|日本GMO08|华南隧道[流媒体解锁]_16","type":"vmess","server":"cm-jm.okvpn.cc","port":20015,"cipher":"auto","uuid":"cm-jm.okvpn.cc:20015?type=ws&encryption=auto#%F0%9F%87%AF%F0%9F%87%B5%20%E4%B8%AD%E8%BD%AC%7C%E6%97%A5%E6%9C%ACGMO08%7C%E5%8D%8E%E5%8D%97%E9%9A%A7%E9%81%93%5B%E6%B5%81%E5%AA%92%E4%BD%93%E8%A7%A3%E9%94%81%5D","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"🇯🇵 中转|日本GMO09|华中隧道[流媒体解锁]_17","type":"vmess","server":"cu-cs.okvpn.xyz","port":30019,"cipher":"auto","uuid":"cu-cs.okvpn.xyz:30019?type=ws&encryption=auto#%F0%9F%87%AF%F0%9F%87%B5%20%E4%B8%AD%E8%BD%AC%7C%E6%97%A5%E6%9C%ACGMO09%7C%E5%8D%8E%E4%B8%AD%E9%9A%A7%E9%81%93%5B%E6%B5%81%E5%AA%92%E4%BD%93%E8%A7%A3%E9%94%81%5D","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"🇭🇰 HK_香港_18","type":"vmess","server":"hk2.free80ml.tk","port":80,"cipher":"auto","uuid":"hk2.free80ml.tk:80?type=ws&encryption=auto#%F0%9F%87%AD%F0%9F%87%B0%20HK_%E9%A6%99%E6%B8%AF","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"🇭🇰_HK_香港_19","type":"vmess","server":"hkml.jjyun.ren","port":88,"cipher":"auto","uuid":"hkml.jjyun.ren:88?type=ws&encryption=auto#%F0%9F%87%AD%F0%9F%87%B0_HK_%E9%A6%99%E6%B8%AF","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"美国_1_20","type":"vmess","server":"uss222.liuwei01.tk","port":443,"cipher":"auto","uuid":"uss222.liuwei01.tk:443?type=ws&encryption=auto&security=tls#%E7%BE%8E%E5%9B%BD_1","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"美国_2_21","type":"vmess","server":"67.21.72.42","port":443,"cipher":"auto","uuid":"67.21.72.42:443?type=ws&encryption=auto&security=tls#%E7%BE%8E%E5%9B%BD_2","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"美国_3_22","type":"vmess","server":"96.43.91.58","port":443,"cipher":"auto","uuid":"96.43.91.58:443?type=ws&encryption=auto&security=tls#%E7%BE%8E%E5%9B%BD_3","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"英国_23","type":"vmess","server":"ukml.52jjyun.top","port":88,"cipher":"auto","uuid":"ukml.52jjyun.top:88?type=ws&encryption=auto#%E8%8B%B1%E5%9B%BD","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"美国_4_24","type":"vmess","server":"67.21.72.41","port":443,"cipher":"auto","uuid":"67.21.72.41:443?type=ws&encryption=auto&security=tls#%E7%BE%8E%E5%9B%BD_4","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"美国_5_25","type":"vmess","server":"67.21.72.44","port":443,"cipher":"auto","uuid":"67.21.72.44:443?type=ws&encryption=auto&security=tls#%E7%BE%8E%E5%9B%BD_5","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"14 美国_26","type":"vmess","server":"v1.ssrsub.one","port":156,"cipher":"auto","uuid":"v1.ssrsub.one:156?type=ws&encryption=auto&security=tls#14%20%E7%BE%8E%E5%9B%BD","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"15_27","type":"vmess","server":"v7.ssrsub.one","port":157,"cipher":"auto","uuid":"v7.ssrsub.one:157?type=ws&encryption=auto&security=tls#15","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"谷歌云_28","type":"vmess","server":"34.96.150.194","port":25083,"cipher":"auto","uuid":"34.96.150.194:25083?type=tcp&encryption=auto#%E8%B0%B7%E6%AD%8C%E4%BA%91","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"甲骨文_29","type":"vmess","server":"152.70.39.9","port":26022,"cipher":"auto","uuid":"152.70.39.9:26022?type=tcp&encryption=auto#%E7%94%B2%E9%AA%A8%E6%96%87","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"HK_1_30","type":"vmess","server":"shcu01.iplc188.com","port":10004,"cipher":"auto","uuid":"shcu01.iplc188.com:10004?type=tcp&encryption=auto#HK_1","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"US_2_31","type":"vmess","server":"v1.ssrsub.com","port":8443,"cipher":"auto","uuid":"v1.ssrsub.com:8443?type=ws&encryption=auto&security=tls#US_2","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"US_3_32","type":"vmess","server":"usa-sanfrancisco.lvuft.com","port":443,"cipher":"auto","uuid":"usa-sanfrancisco.lvuft.com:443?type=ws&encryption=auto&security=tls#US_3","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"FL_1_33","type":"vmess","server":"1222mnl.fans8.xyz","port":80,"cipher":"auto","uuid":"1222mnl.fans8.xyz:80?type=ws&encryption=auto#FL_1","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"JP_1_34","type":"trojan","server":"awsjp10.pluscloud.top","port":443,"udp":true,"password":"d0c1a047-97f4-445b-955e-1e32a9e042cd","sni":"awsjp10.pluscloud.top","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"US_4_35","type":"vmess","server":"free-us01.antlink.cyou","port":39948,"cipher":"auto","uuid":"free-us01.antlink.cyou:39948?type=ws&encryption=auto#US_4","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"SG_1_36","type":"vmess","server":"sg1.pikap.one","port":30030,"cipher":"auto","uuid":"sg1.pikap.one:30030?type=ws&encryption=auto#SG_1","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"HK_2_37","type":"vmess","server":"1.zhuzhu12.com","port":443,"cipher":"auto","uuid":"1.zhuzhu12.com:443?type=ws&encryption=auto&security=tls#HK_2","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"HK_3_38","type":"vmess","server":"2.zhuzhu12.com","port":44301,"cipher":"auto","uuid":"2.zhuzhu12.com:44301?type=ws&encryption=auto&security=tls#HK_3","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"HK_4_39","type":"vmess","server":"3.zhuzhu12.com","port":443,"cipher":"auto","uuid":"3.zhuzhu12.com:443?type=ws&encryption=auto&security=tls#HK_4","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"JP_2_40","type":"vmess","server":"zhuzhu12.com","port":21649,"cipher":"auto","uuid":"zhuzhu12.com:21649?type=ws&encryption=auto#JP_2","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"FL_2_41","type":"vmess","server":"1222mnl.fans8.xyz","port":80,"cipher":"auto","uuid":"1222mnl.fans8.xyz:80?type=ws&encryption=auto#FL_2","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"US_6_42","type":"vmess","server":"us02.fanqianga.top","port":667,"cipher":"auto","uuid":"us02.fanqianga.top:667?type=ws&encryption=auto#US_6","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"JP_3_43","type":"trojan","server":"awsjp10.pluscloud.top","port":443,"udp":true,"password":"d0c1a047-97f4-445b-955e-1e32a9e042cd","sni":"awsjp10.pluscloud.top","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"HK_5_44","type":"trojan","server":"azhk.jietiyun.xyz","port":1080,"udp":true,"password":"3b005336-26f8-4da6-9f7c-df1d7c359440","sni":"azhk.jietiyun.xyz","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"Relay_ |22.27Mb_45","type":"vmess","server":"183.232.56.161","port":8004,"cipher":"auto","uuid":"183.232.56.161:8004?type=ws&encryption=auto#Relay_%20%7C22.27Mb","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"Relay_ | 4.94Mb_46","type":"vmess","server":"183.232.56.161","port":1615,"cipher":"auto","uuid":"183.232.56.161:1615?type=ws&encryption=auto#Relay_%20%7C%204.94Mb","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"Relay_ | 4.61Mb_47","type":"vmess","server":"183.232.56.161","port":1504,"cipher":"auto","uuid":"183.232.56.161:1504?type=ws&encryption=auto#Relay_%20%7C%204.61Mb","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"Relay_ |12.12Mb_48","type":"vmess","server":"183.232.56.161","port":1952,"cipher":"auto","uuid":"183.232.56.161:1952?type=ws&encryption=auto#Relay_%20%7C12.12Mb","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"Relay_ |22.01Mb_49","type":"vmess","server":"183.232.56.161","port":1202,"cipher":"auto","uuid":"183.232.56.161:1202?type=ws&encryption=auto#Relay_%20%7C22.01Mb","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"Relay_ | 4.52Mb_50","type":"vmess","server":"183.232.56.161","port":1202,"cipher":"auto","uuid":"183.232.56.161:1202?type=ws&encryption=auto#Relay_%20%7C%204.52Mb","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"HK_6_51","type":"vmess","server":"13.75.126.219","port":15072,"cipher":"auto","uuid":"13.75.126.219:15072?type=ws&encryption=auto#HK_6","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"HK_7_52","type":"vmess","server":"13.75.126.219","port":15085,"cipher":"auto","uuid":"13.75.126.219:15085?type=ws&encryption=auto#HK_7","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"HK_8_53","type":"vmess","server":"20.187.116.91","port":36104,"cipher":"auto","uuid":"20.187.116.91:36104?type=ws&encryption=auto#HK_8","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"US_9_54","type":"vmess","server":"20.239.51.22","port":15078,"cipher":"auto","uuid":"20.239.51.22:15078?type=ws&encryption=auto#US_9","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"HK_9_55","type":"vmess","server":"13.75.126.219","port":15071,"cipher":"auto","uuid":"13.75.126.219:15071?type=ws&encryption=auto#HK_9","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"US_10_56","type":"vmess","server":"oz.moonfree.top","port":443,"cipher":"auto","uuid":"oz.moonfree.top:443?type=ws&encryption=auto&security=tls#US_10","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"US_11_57","type":"vmess","server":"cloudflare.xrenblog.com","port":443,"cipher":"auto","uuid":"cloudflare.xrenblog.com:443?type=ws&encryption=auto&security=tls#US_11","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"US_12_58","type":"vmess","server":"www.zhangss.xyz","port":59627,"cipher":"auto","uuid":"www.zhangss.xyz:59627?type=ws&encryption=auto&security=tls#US_12","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"US_13_59","type":"vmess","server":"v2ray.788644.xyz","port":443,"cipher":"auto","uuid":"v2ray.788644.xyz:443?type=ws&encryption=auto&security=tls#US_13","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"SG_2_60","type":"vmess","server":"eu.licom.ga","port":62013,"cipher":"auto","uuid":"eu.licom.ga:62013?type=ws&encryption=auto&security=tls#SG_2","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"SG_3_61","type":"vmess","server":"eu.licom.ga","port":62012,"cipher":"auto","uuid":"eu.licom.ga:62012?type=ws&encryption=auto&security=tls#SG_3","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"🇯🇵_99_62","type":"vmess","server":"jp.dsaver.site","port":443,"cipher":"auto","uuid":"jp.dsaver.site:443?type=ws&encryption=auto#%F0%9F%87%AF%F0%9F%87%B5_99","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"🇯🇵_100_63","type":"vmess","server":"jp.dsaver.site","port":443,"cipher":"auto","uuid":"jp.dsaver.site:443?type=ws&encryption=auto#%F0%9F%87%AF%F0%9F%87%B5_100","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"🇯🇵_101_64","type":"vmess","server":"sh.moonfree.top","port":11263,"cipher":"auto","uuid":"sh.moonfree.top:11263?type=ws&encryption=auto&security=tls#%F0%9F%87%AF%F0%9F%87%B5_101","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"🇯🇵_102_65","type":"vmess","server":"sh.moonfree.top","port":11262,"cipher":"auto","uuid":"sh.moonfree.top:11262?type=ws&encryption=auto&security=tls#%F0%9F%87%AF%F0%9F%87%B5_102","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"🇬🇧_105_66","type":"trojan","server":"jgwld2.gaox.ml","port":443,"udp":true,"password":"d7fd8aaa-4581-4281-80aa-4b63e5e1f157","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"US_17_67","type":"trojan","server":"us.tcpbbr.net","port":443,"udp":true,"password":"80bcf4f2-12f7-11ed-bb74-f23c9164ca5d","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"IN_68","type":"vmess","server":"147.139.7.71","port":888,"cipher":"auto","uuid":"147.139.7.71:888?type=ws&encryption=auto#IN","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"NL_69","type":"trojan","server":"th1-trojan.bonds.id","port":443,"udp":true,"password":"f8df13a0-2272-11ed-92f8-1239d0255272","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_US_美国_2_70","type":"trojan","server":"104.16.1.10","port":443,"udp":true,"password":"qj1Dz1CJmFQRhWr1SP80aA","sni":"cdn-21.gsmxreality.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_US_美国_16_71","type":"vmess","server":"104.19.46.233","port":2086,"cipher":"auto","uuid":"104.19.46.233:2086?type=ws&encryption=auto#%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_16","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"🇺🇸_US_美国_18_72","type":"vmess","server":"104.19.55.49","port":2086,"cipher":"auto","uuid":"104.19.55.49:2086?type=ws&encryption=auto#%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_18","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -118,48 +172,156 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 伊朗-128.6KB/s
-      - 中转节点-649.5KB/s
-      - 荷兰-18.1MB/s
-      - 中转节点-165.5KB/s
-      - 中转节点-2.49MB/s
-      - 俄罗斯联邦-108.4KB/s
-      - 中转节点-50.1MB/s
-      - 中转节点-57.3MB/s
-      - 中转节点-39.3MB/s
-      - 德国-23.4MB/s
-      - 法国-2.94MB/s
-      - 中转节点-339.0KB/s
-      - 新加坡-268.3KB/s
-      - 美国-962.2KB/s
-      - 德国-2.92MB/s
-      - 英国-724.4KB/s
-      - 法国-40.6MB/s
-      - 美国-247.7KB/s
+      - 🇺🇸_US_美国_63-105_1
+      - 香港_1_2
+      - 日本_3
+      - 香港_2_4
+      - bngan.com_5
+      - 🇭🇰HK_1_6
+      - 🇭🇰HK_2_7
+      - 🇭🇰HK_3_8
+      - 🇭🇰HK_4_9
+      - 🇭🇰 中转|香港CMHK06|华南隧道[流媒体解锁]_10
+      - 🇭🇰 中转|香港CMHK08|华中隧道[流媒体解锁]_11
+      - 🇭🇰 中转|香港Azure20|华南隧道-x0.7_12
+      - 🇸🇬 中转|新加坡Singtel03|华中隧道[流媒体解锁]_13
+      - 🇸🇬 中转|新加坡Singtel04|华中隧道[流媒体解锁]_14
+      - 🇸🇬 中转|新加坡Singtel05|华北隧道[流媒体解锁]_15
+      - 🇯🇵 中转|日本GMO08|华南隧道[流媒体解锁]_16
+      - 🇯🇵 中转|日本GMO09|华中隧道[流媒体解锁]_17
+      - 🇭🇰 HK_香港_18
+      - 🇭🇰_HK_香港_19
+      - 美国_1_20
+      - 美国_2_21
+      - 美国_3_22
+      - 英国_23
+      - 美国_4_24
+      - 美国_5_25
+      - 14 美国_26
+      - '15_27'
+      - 谷歌云_28
+      - 甲骨文_29
+      - HK_1_30
+      - US_2_31
+      - US_3_32
+      - FL_1_33
+      - JP_1_34
+      - US_4_35
+      - SG_1_36
+      - HK_2_37
+      - HK_3_38
+      - HK_4_39
+      - JP_2_40
+      - FL_2_41
+      - US_6_42
+      - JP_3_43
+      - HK_5_44
+      - Relay_ |22.27Mb_45
+      - Relay_ | 4.94Mb_46
+      - Relay_ | 4.61Mb_47
+      - Relay_ |12.12Mb_48
+      - Relay_ |22.01Mb_49
+      - Relay_ | 4.52Mb_50
+      - HK_6_51
+      - HK_7_52
+      - HK_8_53
+      - US_9_54
+      - HK_9_55
+      - US_10_56
+      - US_11_57
+      - US_12_58
+      - US_13_59
+      - SG_2_60
+      - SG_3_61
+      - 🇯🇵_99_62
+      - 🇯🇵_100_63
+      - 🇯🇵_101_64
+      - 🇯🇵_102_65
+      - 🇬🇧_105_66
+      - US_17_67
+      - IN_68
+      - NL_69
+      - 🇺🇸_US_美国_2_70
+      - 🇺🇸_US_美国_16_71
+      - 🇺🇸_US_美国_18_72
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 伊朗-128.6KB/s
-      - 中转节点-649.5KB/s
-      - 荷兰-18.1MB/s
-      - 中转节点-165.5KB/s
-      - 中转节点-2.49MB/s
-      - 俄罗斯联邦-108.4KB/s
-      - 中转节点-50.1MB/s
-      - 中转节点-57.3MB/s
-      - 中转节点-39.3MB/s
-      - 德国-23.4MB/s
-      - 法国-2.94MB/s
-      - 中转节点-339.0KB/s
-      - 新加坡-268.3KB/s
-      - 美国-962.2KB/s
-      - 德国-2.92MB/s
-      - 英国-724.4KB/s
-      - 法国-40.6MB/s
-      - 美国-247.7KB/s
+      - 🇺🇸_US_美国_63-105_1
+      - 香港_1_2
+      - 日本_3
+      - 香港_2_4
+      - bngan.com_5
+      - 🇭🇰HK_1_6
+      - 🇭🇰HK_2_7
+      - 🇭🇰HK_3_8
+      - 🇭🇰HK_4_9
+      - 🇭🇰 中转|香港CMHK06|华南隧道[流媒体解锁]_10
+      - 🇭🇰 中转|香港CMHK08|华中隧道[流媒体解锁]_11
+      - 🇭🇰 中转|香港Azure20|华南隧道-x0.7_12
+      - 🇸🇬 中转|新加坡Singtel03|华中隧道[流媒体解锁]_13
+      - 🇸🇬 中转|新加坡Singtel04|华中隧道[流媒体解锁]_14
+      - 🇸🇬 中转|新加坡Singtel05|华北隧道[流媒体解锁]_15
+      - 🇯🇵 中转|日本GMO08|华南隧道[流媒体解锁]_16
+      - 🇯🇵 中转|日本GMO09|华中隧道[流媒体解锁]_17
+      - 🇭🇰 HK_香港_18
+      - 🇭🇰_HK_香港_19
+      - 美国_1_20
+      - 美国_2_21
+      - 美国_3_22
+      - 英国_23
+      - 美国_4_24
+      - 美国_5_25
+      - 14 美国_26
+      - '15_27'
+      - 谷歌云_28
+      - 甲骨文_29
+      - HK_1_30
+      - US_2_31
+      - US_3_32
+      - FL_1_33
+      - JP_1_34
+      - US_4_35
+      - SG_1_36
+      - HK_2_37
+      - HK_3_38
+      - HK_4_39
+      - JP_2_40
+      - FL_2_41
+      - US_6_42
+      - JP_3_43
+      - HK_5_44
+      - Relay_ |22.27Mb_45
+      - Relay_ | 4.94Mb_46
+      - Relay_ | 4.61Mb_47
+      - Relay_ |12.12Mb_48
+      - Relay_ |22.01Mb_49
+      - Relay_ | 4.52Mb_50
+      - HK_6_51
+      - HK_7_52
+      - HK_8_53
+      - US_9_54
+      - HK_9_55
+      - US_10_56
+      - US_11_57
+      - US_12_58
+      - US_13_59
+      - SG_2_60
+      - SG_3_61
+      - 🇯🇵_99_62
+      - 🇯🇵_100_63
+      - 🇯🇵_101_64
+      - 🇯🇵_102_65
+      - 🇬🇧_105_66
+      - US_17_67
+      - IN_68
+      - NL_69
+      - 🇺🇸_US_美国_2_70
+      - 🇺🇸_US_美国_16_71
+      - 🇺🇸_US_美国_18_72
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -177,51 +339,154 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 伊朗-128.6KB/s
-      - 中转节点-649.5KB/s
-      - 荷兰-18.1MB/s
-      - 中转节点-165.5KB/s
-      - 中转节点-2.49MB/s
-      - 俄罗斯联邦-108.4KB/s
-      - 中转节点-50.1MB/s
-      - 中转节点-57.3MB/s
-      - 中转节点-39.3MB/s
-      - 德国-23.4MB/s
-      - 法国-2.94MB/s
-      - 中转节点-339.0KB/s
-      - 新加坡-268.3KB/s
-      - 美国-962.2KB/s
-      - 德国-2.92MB/s
-      - 英国-724.4KB/s
-      - 法国-40.6MB/s
-      - 美国-247.7KB/s
+      - 🇺🇸_US_美国_63-105_1
+      - 香港_1_2
+      - 日本_3
+      - 香港_2_4
+      - bngan.com_5
+      - 🇭🇰HK_1_6
+      - 🇭🇰HK_2_7
+      - 🇭🇰HK_3_8
+      - 🇭🇰HK_4_9
+      - 🇭🇰 中转|香港CMHK06|华南隧道[流媒体解锁]_10
+      - 🇭🇰 中转|香港CMHK08|华中隧道[流媒体解锁]_11
+      - 🇭🇰 中转|香港Azure20|华南隧道-x0.7_12
+      - 🇸🇬 中转|新加坡Singtel03|华中隧道[流媒体解锁]_13
+      - 🇸🇬 中转|新加坡Singtel04|华中隧道[流媒体解锁]_14
+      - 🇸🇬 中转|新加坡Singtel05|华北隧道[流媒体解锁]_15
+      - 🇯🇵 中转|日本GMO08|华南隧道[流媒体解锁]_16
+      - 🇯🇵 中转|日本GMO09|华中隧道[流媒体解锁]_17
+      - 🇭🇰 HK_香港_18
+      - 🇭🇰_HK_香港_19
+      - 美国_1_20
+      - 美国_2_21
+      - 美国_3_22
+      - 英国_23
+      - 美国_4_24
+      - 美国_5_25
+      - 14 美国_26
+      - '15_27'
+      - 谷歌云_28
+      - 甲骨文_29
+      - HK_1_30
+      - US_2_31
+      - US_3_32
+      - FL_1_33
+      - JP_1_34
+      - US_4_35
+      - SG_1_36
+      - HK_2_37
+      - HK_3_38
+      - HK_4_39
+      - JP_2_40
+      - FL_2_41
+      - US_6_42
+      - JP_3_43
+      - HK_5_44
+      - Relay_ |22.27Mb_45
+      - Relay_ | 4.94Mb_46
+      - Relay_ | 4.61Mb_47
+      - Relay_ |12.12Mb_48
+      - Relay_ |22.01Mb_49
+      - Relay_ | 4.52Mb_50
+      - HK_6_51
+      - HK_7_52
+      - HK_8_53
+      - US_9_54
+      - HK_9_55
+      - US_10_56
+      - US_11_57
+      - US_12_58
+      - US_13_59
+      - SG_2_60
+      - SG_3_61
+      - 🇯🇵_99_62
+      - 🇯🇵_100_63
+      - 🇯🇵_101_64
+      - 🇯🇵_102_65
+      - 🇬🇧_105_66
+      - US_17_67
+      - IN_68
+      - NL_69
+      - 🇺🇸_US_美国_2_70
+      - 🇺🇸_US_美国_16_71
+      - 🇺🇸_US_美国_18_72
   - name: 🇭🇰 香港节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
-    proxies: []
+    proxies:
+      - 香港_1_2
+      - 香港_2_4
+      - 🇭🇰HK_1_6
+      - 🇭🇰HK_2_7
+      - 🇭🇰HK_3_8
+      - 🇭🇰HK_4_9
+      - 🇭🇰 中转|香港CMHK06|华南隧道[流媒体解锁]_10
+      - 🇭🇰 中转|香港CMHK08|华中隧道[流媒体解锁]_11
+      - 🇭🇰 中转|香港Azure20|华南隧道-x0.7_12
+      - 🇭🇰 HK_香港_18
+      - 🇭🇰_HK_香港_19
+      - HK_1_30
+      - HK_2_37
+      - HK_3_38
+      - HK_4_39
+      - HK_5_44
+      - HK_6_51
+      - HK_7_52
+      - HK_8_53
+      - HK_9_55
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
-    proxies: []
+    proxies:
+      - 日本_3
+      - 🇯🇵 中转|日本GMO08|华南隧道[流媒体解锁]_16
+      - 🇯🇵 中转|日本GMO09|华中隧道[流媒体解锁]_17
+      - JP_1_34
+      - JP_2_40
+      - JP_3_43
   - name: 🇸🇬 狮城节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 新加坡-268.3KB/s
+      - 🇸🇬 中转|新加坡Singtel03|华中隧道[流媒体解锁]_13
+      - 🇸🇬 中转|新加坡Singtel04|华中隧道[流媒体解锁]_14
+      - 🇸🇬 中转|新加坡Singtel05|华北隧道[流媒体解锁]_15
+      - SG_1_36
+      - SG_2_60
+      - SG_3_61
   - name: 🇺🇲 美国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 美国-962.2KB/s
-      - 美国-247.7KB/s
+      - 🇺🇸_US_美国_63-105_1
+      - 美国_1_20
+      - 美国_2_21
+      - 美国_3_22
+      - 美国_4_24
+      - 美国_5_25
+      - 14 美国_26
+      - US_2_31
+      - US_3_32
+      - US_4_35
+      - US_6_42
+      - US_9_54
+      - US_10_56
+      - US_11_57
+      - US_12_58
+      - US_13_59
+      - US_17_67
+      - 🇺🇸_US_美国_2_70
+      - 🇺🇸_US_美国_16_71
+      - 🇺🇸_US_美国_18_72
 
 rules:
 # 本地/局域网地址
