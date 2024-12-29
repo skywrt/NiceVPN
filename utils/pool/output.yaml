@@ -149,6 +149,38 @@ proxies:
     headers:
       Host: aaaa.wxx.gay
   udp: true
+- name: "\U0001F1EC\U0001F1E7 GB 20 SSS"
+  type: ss
+  server: series-a2.samanehha.co
+  port: 443
+  password: W74XFALLLuw6m5IA
+  cipher: chacha20-ietf-poly1305
+- name: "\U0001F1FA\U0001F1F3 UN 21 TJN"
+  type: trojan
+  server: 162.159.12.65
+  port: 443
+  udp: true
+  password: b75b5cd5-9acf-5556-a65b-b5c59b2d5813
+  sni: saeedddddddmmmm.saeed-salmani1386.woRKeRS.Dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: trojan-ws/
+    headers:
+      host: saeedddddddmmmm.saeed-salmani1386.woRKeRS.Devhttp/1.1
+- name: "\U0001F1FA\U0001F1F3 UN 22 TJN"
+  type: trojan
+  server: auto@185.146.173.158:443?security=tls&sni=esetsecuritylicense.bwnsmv.workers.dev&type=ws&host=esetsecuritylicense.bwnsmv.workers.dev&path=/Telegram@auto@185.146.173.158:443&security=tls&sni=esetsecuritylicense.bwnsmv.workers.dev&type=ws&host=esetsecuritylicense.bwnsmv.workers.dev&path=/Telegram@proxy_mtm/&ed=2560:443&type=ws&sni=esetsecuritylicense.bwnsmv.workers.dev&allowInsecure=1&path=/Telegram@proxy_mtm/&host=esetsecuritylicense.bwnsmv.workers.dev
+  port: 443
+  udp: true
+  password: auto@185.146.173.158:443?security=tls&sni=esetsecuritylicense.bwnsmv.workers.dev&type=ws&host=esetsecuritylicense.bwnsmv.workers.dev&path=/Telegram@auto@185.146.173.158:443&security=tls&sni=esetsecuritylicense.bwnsmv.workers.dev&type=ws&host=esetsecuritylicense.bwnsmv.workers.dev&path=/Telegram@proxy_mtm/&ed=2560:443&type=ws&sni=esetsecuritylicense.bwnsmv.workers.dev&allowInsecure=1&path=/Telegram
+  sni: esetsecuritylicense.bwnsmv.workers.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /Telegram@auto@185.146.173.158:443
+    headers:
+      host: esetsecuritylicense.bwnsmv.workers.dev
 proxy-groups:
 - name: automatic
   type: url-test
@@ -172,6 +204,9 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 17 SSS"
   - "\U0001F1F8\U0001F1EC SG 18 VMS"
   - "\U0001F1FA\U0001F1F8 US 19 VMS"
+  - "\U0001F1EC\U0001F1E7 GB 20 SSS"
+  - "\U0001F1FA\U0001F1F3 UN 21 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 22 TJN"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -197,5 +232,8 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 17 SSS"
   - "\U0001F1F8\U0001F1EC SG 18 VMS"
   - "\U0001F1FA\U0001F1F8 US 19 VMS"
+  - "\U0001F1EC\U0001F1E7 GB 20 SSS"
+  - "\U0001F1FA\U0001F1F3 UN 21 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 22 TJN"
 rules:
 - "MATCH,\U0001F310 Proxy"
