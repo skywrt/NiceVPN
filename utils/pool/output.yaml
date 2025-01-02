@@ -149,70 +149,6 @@ proxies:
     headers:
       Host: aaaa.wxx.gay
   udp: true
-- type: vmess
-  name: "\U0001F1F3\U0001F1F1 NL 20 VMS"
-  ws-opts:
-    path: /2a4fa40f
-    headers:
-      host: luodi.davesuen.store
-  server: 45.131.7.1
-  port: 8080
-  uuid: 2a4fa40f-97f4-4ea9-b959-b148c4197d15
-  alterId: 0
-  cipher: auto
-  network: ws
-- type: vmess
-  name: "\U0001F1F3\U0001F1F1 NL 21 VMS"
-  ws-opts:
-    path: /2a4fa40f
-    headers:
-      host: luodi.davesuen.store
-  server: 45.131.7.230
-  port: 8080
-  uuid: 2a4fa40f-97f4-4ea9-b959-b148c4197d15
-  alterId: 0
-  cipher: auto
-  network: ws
-- type: vmess
-  name: "\U0001F1F3\U0001F1F1 NL 22 VMS"
-  ws-opts:
-    path: /2a4fa40f
-    headers:
-      host: luodi.davesuen.store
-  server: 45.131.7.239
-  port: 8080
-  uuid: 2a4fa40f-97f4-4ea9-b959-b148c4197d15
-  alterId: 0
-  cipher: auto
-  network: ws
-- type: ss
-  name: "\U0001F1F5\U0001F1F1 PL 23 SSS"
-  server: 217.30.10.18
-  port: 9038
-  cipher: aes-256-cfb
-  password: gYCYXfkUQEs2TaJQ
-- type: ss
-  name: "\U0001F1FA\U0001F1F8 US 24 SSS"
-  server: 23.251.121.242
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- type: trojan
-  name: "\U0001F1FA\U0001F1F8 US 25 TJN"
-  server: 18.189.79.192
-  port: 22222
-  password: telegram-id-directvpn
-  udp: true
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-- type: trojan
-  name: "\U0001F1F8\U0001F1EA SE 26 TJN"
-  server: 13.50.254.223
-  port: 22222
-  password: telegram-id-privatevpns
-  udp: true
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
 proxy-groups:
 - name: automatic
   type: url-test
@@ -236,13 +172,6 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 17 SSS"
   - "\U0001F1F8\U0001F1EC SG 18 VMS"
   - "\U0001F1FA\U0001F1F8 US 19 VMS"
-  - "\U0001F1F3\U0001F1F1 NL 20 VMS"
-  - "\U0001F1F3\U0001F1F1 NL 21 VMS"
-  - "\U0001F1F3\U0001F1F1 NL 22 VMS"
-  - "\U0001F1F5\U0001F1F1 PL 23 SSS"
-  - "\U0001F1FA\U0001F1F8 US 24 SSS"
-  - "\U0001F1FA\U0001F1F8 US 25 TJN"
-  - "\U0001F1F8\U0001F1EA SE 26 TJN"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -268,12 +197,5 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 17 SSS"
   - "\U0001F1F8\U0001F1EC SG 18 VMS"
   - "\U0001F1FA\U0001F1F8 US 19 VMS"
-  - "\U0001F1F3\U0001F1F1 NL 20 VMS"
-  - "\U0001F1F3\U0001F1F1 NL 21 VMS"
-  - "\U0001F1F3\U0001F1F1 NL 22 VMS"
-  - "\U0001F1F5\U0001F1F1 PL 23 SSS"
-  - "\U0001F1FA\U0001F1F8 US 24 SSS"
-  - "\U0001F1FA\U0001F1F8 US 25 TJN"
-  - "\U0001F1F8\U0001F1EA SE 26 TJN"
 rules:
 - "MATCH,\U0001F310 Proxy"
