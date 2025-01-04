@@ -149,12 +149,6 @@ proxies:
     headers:
       Host: aaaa.wxx.gay
   udp: true
-- name: "\U0001F1F7\U0001F1FA RU 20 SSS"
-  type: ss
-  server: 77.83.246.74
-  port: 443
-  password: o1WWniuLrY7MnWf9R57rLT
-  cipher: chacha20-ietf-poly1305
 proxy-groups:
 - name: automatic
   type: url-test
@@ -178,7 +172,6 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 17 SSS"
   - "\U0001F1F8\U0001F1EC SG 18 VMS"
   - "\U0001F1FA\U0001F1F8 US 19 VMS"
-  - "\U0001F1F7\U0001F1FA RU 20 SSS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -204,6 +197,5 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 17 SSS"
   - "\U0001F1F8\U0001F1EC SG 18 VMS"
   - "\U0001F1FA\U0001F1F8 US 19 VMS"
-  - "\U0001F1F7\U0001F1FA RU 20 SSS"
 rules:
 - "MATCH,\U0001F310 Proxy"
