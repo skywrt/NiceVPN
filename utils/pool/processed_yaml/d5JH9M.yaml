@@ -7,83 +7,114 @@
 # 节点类型：ss, trojan, vmess
 ####################################
 mixed-port: 7890
-allow-lan: true
-log-level: info
-external-controller: 0.0.0.0:9090
+allow-lan: false
+log-level: silent
+external-controller: 127.0.0.1:9090
 dns:
-  enabled: true
-  listen: 0.0.0.0:1053
-  ipv6: true
-  default-nameserver:
-    - 223.5.5.5
-    - 114.114.114.114
+  enable: true
+  ipv6: false
+  listen: 127.0.0.1:1053
+  use-hosts: true
+  use-system-hosts: false
+  respect-rules: true
   enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
+  fake-ip-range: '198.19.0.1/24'
   fake-ip-filter:
     - '*.lan'
-    - '*.linksys.com'
-    - '*.linksyssmartwifi.com'
-    - swscan.apple.com
-    - mesu.apple.com
-    - '*.msftconnecttest.com'
-    - '*.msftncsi.com'
-    - time.*.com
-    - time.*.gov
-    - time.*.edu.cn
-    - time.*.apple.com
-    - time1.*.com
-    - time2.*.com
-    - time3.*.com
-    - time4.*.com
-    - time5.*.com
-    - time6.*.com
-    - time7.*.com
-    - ntp.*.com
-    - ntp.*.com
-    - ntp1.*.com
-    - ntp2.*.com
-    - ntp3.*.com
-    - ntp4.*.com
-    - ntp5.*.com
-    - ntp6.*.com
-    - ntp7.*.com
-    - '*.time.edu.cn'
-    - '*.ntp.org.cn'
-    - +.pool.ntp.org
-    - time1.cloud.tencent.com
-    - +.music.163.com
-    - '*.126.net'
-    - musicapi.taihe.com
-    - music.taihe.com
-    - songsearch.kugou.com
-    - trackercdn.kugou.com
-    - '*.kuwo.cn'
-    - api-jooxtt.sanook.com
-    - api.joox.com
-    - joox.com
-    - +.y.qq.com
-    - +.music.tc.qq.com
-    - aqqmusic.tc.qq.com
-    - +.stream.qqmusic.qq.com
-    - '*.xiami.com'
-    - +.music.migu.cn
-    - +.srv.nintendo.net
-    - +.stun.playstation.net
-    - xbox.*.microsoft.com
-    - +.xboxlive.com
-    - localhost.ptlogin2.qq.com
-    - proxy.golang.org
-    - stun.*.*
-    - stun.*.*.*
-    - '*.mcdn.bilivideo.cn'
+    - '*.local'
+    - '*.market.xiaomi.com'
+    - '*.example.com'
+    - 'localhost'
+    - '127.0.0.1'
+    - '::1'
+    - '192.168.*.*'
+    - '10.*.*.*'
+    - '172.16.*.*'
+    - '169.254.*.*'
+    - '*.invalid'
+    - '*.test'
+    - '*.localhost'
+    - '*.example'
+    - '::/0'
+    - '*.router'
+    - '*.home'
+    - '*.gateway'
+    - '*.iqiyi.com'
+    - '*.youku.com'
+    - '*.tencentvideo.com'
+    - '*.bilibili.com'
+    - '*.mgtv.com'
+    - '*.douyin.com'
+    - '*.taobao.com'
+    - '*.jd.com'
+    - '*.tmall.com'
+    - '*.pinduoduo.com'
+    - '*.kaola.com'
+    - '*.xiaomi.com'
+    - '*.wechat.com'
+    - '*.qq.com'
+    - '*.weibo.com'
+    - '*.alipay.com'
+    - '*.zhihu.com'
+    - '*.cmbchina.com'
+    - '*.icbc.com.cn'
+    - '*.bankcomm.com'
+    - '*.pingan.com'
+    - '*.alipay.com'
+    - '*.unionpay.com'
+    - '*.alicdn.com'
+    - '*.huawei.com'
+    - '*.qiniu.com'
+    - '*.360buyimg.com'
+
   nameserver:
-    - https://doh.pub/dns-query
-    - https://dns.alidns.com/dns-query
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+
+  proxy-server-nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+
+  cache-size: 4096
+  dns-timeout: 5
+
   fallback-filter:
-    geoip: false
-    ipcidr:
-      - 240.0.0.0/4
-      - 0.0.0.0/32
+    geoip: true
+    geoip-code: CN
+    geosite:
+      - gfw
+    domain:
+      - '+gfw'
+      - '!*.cn'
+      - '!*.local'
+
+  nameserver-policy:
+    "rule-set:cn_domain":
+      - tls://119.29.29.29
+      - tls://223.5.5.5
+    "rule-set:geolocation-!cn":
+      - https://1.1.1.1/dns-query
+      - https://8.8.8.8/dns-query
+
+  rule-providers:
+    gfwlist:
+      type: http
+      behavior: domain
+      url: "https://example.com/gfwlist.txt"
+      path: "./ruleset/gfwlist.yaml"
+      interval: 86400
+    adblock:
+      type: http
+      behavior: domain
+      url: "https://example.com/adblock.txt"
+      path: "./ruleset/adblock.yaml"
+      interval: 86400
+    cn_domain:
+      type: http
+      behavior: domain
+      url: "https://example.com/cn_domains.txt"
+      path: "./ruleset/cn_domain.yaml"
+      interval: 86400
 
 proxies:
   - {"name":"加拿大-623.8KB/s","type":"ss","server":"38.114.114.77","port":5500,"password":"KixLvKzwjekG00rm","cipher":"aes-256-gcm"}
@@ -1892,9 +1923,9 @@ proxy-groups:
       - 荷兰-4.7MB/s_3
   - name: ♻️ 自动选择
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
+    tolerance: 1
     proxies:
       - 加拿大-623.8KB/s
       - 中转节点-13.8MB/s
@@ -3705,9 +3736,9 @@ proxy-groups:
       - 荷兰-4.7MB/s_3
   - name: 🇭🇰 香港节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
+    tolerance: 1
     proxies:
       - 香港-175.8KB/s
       - 香港-4.82MB/s
@@ -3719,9 +3750,9 @@ proxy-groups:
       - 香港-67.4MB/s
   - name: 🇯🇵 日本节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
+    tolerance: 1
     proxies:
       - 日本-211.4KB/s
       - 日本-95.2MB/s
@@ -3748,9 +3779,9 @@ proxy-groups:
       - 日本-2.44MB/s
   - name: 🇸🇬 狮城节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
+    tolerance: 1
     proxies:
       - 新加坡-212.6KB/s
       - 新加坡-14.0MB/s
@@ -3759,9 +3790,9 @@ proxy-groups:
       - 新加坡-16.0MB/s
   - name: 🇺🇲 美国节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
+    tolerance: 1
     proxies:
       - 美国-26.1MB/s
       - 美国-2.63MB/s
