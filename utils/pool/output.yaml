@@ -171,6 +171,9 @@ proxies:
   port: 2377
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   cipher: chacha20-ietf-poly1305
+  plugin: obfs-local
+  plugin-opts:
+    mode: websocket
 - name: "\U0001F1E8\U0001F1F3 CN 23 TJN"
   type: trojan
   server: 112.29.94.23
@@ -247,7 +250,7 @@ proxies:
   server: 183.232.199.28
   port: 21006
   cipher: auto
-  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
+  uuid: 183.232.199.28:21006?type=tcp&encryption=auto#%F0%9F%87%AD%F0%9F%87%B0%20%E9%A6%99%E6%B8%AF_Telegram%40kxswa%2011
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -257,7 +260,7 @@ proxies:
   server: 183.232.199.61
   port: 15603
   cipher: auto
-  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
+  uuid: 183.232.199.61:15603?type=tcp&encryption=auto#%F0%9F%87%AD%F0%9F%87%B0%20%E9%A6%99%E6%B8%AF_Telegram%40kxswa%2012
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -267,7 +270,7 @@ proxies:
   server: 04.kccic2pa.xyz
   port: 50004
   cipher: auto
-  uuid: 1d8963ab-0cd8-4091-93ca-4c6a7dbcd1f2
+  uuid: 04.kccic2pa.xyz:50004?type=tcp&encryption=auto#%F0%9F%87%AD%F0%9F%87%B0%20%E9%A6%99%E6%B8%AF_Telegram%40kxswa%2013
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -277,7 +280,7 @@ proxies:
   server: 183.240.255.91
   port: 44001
   cipher: auto
-  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
+  uuid: 183.240.255.91:44001?type=tcp&encryption=auto#%F0%9F%87%AD%F0%9F%87%B0%20%E9%A6%99%E6%B8%AF_Telegram%40kxswa%2014
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -287,7 +290,7 @@ proxies:
   server: vip3.niuniupremium.xyz
   port: 16928
   cipher: auto
-  uuid: 2ab54438-8af9-3711-bf1a-676fcc144586
+  uuid: vip3.niuniupremium.xyz:16928?type=ws&encryption=auto&path=%2Fv2ray#%F0%9F%87%AD%F0%9F%87%B0%20%E9%A6%99%E6%B8%AF_Telegram%40kxswa%2015
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -299,7 +302,7 @@ proxies:
   server: vip3.niuniupremium.xyz
   port: 16928
   cipher: auto
-  uuid: 2ab54438-8af9-3711-bf1a-676fcc144586
+  uuid: vip3.niuniupremium.xyz:16928?type=ws&encryption=auto&path=%2Fv2ray#%F0%9F%87%AD%F0%9F%87%B0%20%E9%A6%99%E6%B8%AF_Telegram%40kxswa%2016
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -311,7 +314,7 @@ proxies:
   server: data-hk-v1.usabooks.com.cn
   port: 20206
   cipher: auto
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  uuid: data-hk-v1.usabooks.com.cn:20206?type=ws&encryption=auto&path=%2Fdebian#%F0%9F%87%AD%F0%9F%87%B0%20%E9%A6%99%E6%B8%AF_Telegram%40kxswa%2017
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -323,7 +326,7 @@ proxies:
   server: 120.233.42.83
   port: 20207
   cipher: auto
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  uuid: 120.233.42.83:20207?type=ws&encryption=auto&path=%2Fdebian#%F0%9F%87%AD%F0%9F%87%B0%20%E9%A6%99%E6%B8%AF_Telegram%40kxswa%2018
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -336,18 +339,27 @@ proxies:
   port: 2377
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   cipher: chacha20-ietf-poly1305
+  plugin: obfs-local
+  plugin-opts:
+    mode: websocket
 - name: "\U0001F1F9\U0001F1FC TW 41 SSS"
   type: ss
   server: 60.249.3.230
   port: 2377
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   cipher: chacha20-ietf-poly1305
+  plugin: obfs-local
+  plugin-opts:
+    mode: websocket
 - name: "\U0001F1F9\U0001F1FC TW 42 SSS"
   type: ss
   server: 60.249.3.231
   port: 2377
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   cipher: chacha20-ietf-poly1305
+  plugin: obfs-local
+  plugin-opts:
+    mode: websocket
 - name: "\U0001F1F0\U0001F1F7 KR 43 TJN"
   type: trojan
   server: vip.kbcloud.club
@@ -407,6 +419,9 @@ proxies:
   port: 2377
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   cipher: chacha20-ietf-poly1305
+  plugin: obfs-local
+  plugin-opts:
+    mode: websocket
 - name: "\U0001F1E7\U0001F1E9 BD 51 SSS"
   type: ss
   server: 103.106.3.170
@@ -1375,12 +1390,15 @@ proxies:
   port: 2377
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   cipher: chacha20-ietf-poly1305
+  plugin: obfs-local
+  plugin-opts:
+    mode: websocket
 - name: "\U0001F1FA\U0001F1F3 UN 170 VMS"
   type: vmess
   server: t1.db-link.in
   port: 2052
   cipher: auto
-  uuid: 7ae32b19-ebf9-34b0-9145-c388797acacf
+  uuid: t1.db-link.in:2052?type=ws&encryption=auto&path=%2Fdabai.in#%F0%9F%87%BA%F0%9F%87%B8%20%E7%BE%8E%E5%9B%BD_Telegram%40kxswa%20121
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -1392,7 +1410,7 @@ proxies:
   server: t1.db-link.in
   port: 33451
   cipher: auto
-  uuid: 7ae32b19-ebf9-34b0-9145-c388797acacf
+  uuid: t1.db-link.in:33451?type=ws&encryption=auto&path=%2Fdabai.in#%F0%9F%87%BA%F0%9F%87%B8%20%E7%BE%8E%E5%9B%BD_Telegram%40kxswa%20122
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -1404,7 +1422,7 @@ proxies:
   server: t1.db-link.in
   port: 2082
   cipher: auto
-  uuid: 7ae32b19-ebf9-34b0-9145-c388797acacf
+  uuid: t1.db-link.in:2082?type=ws&encryption=auto&path=%2Fdabai.in#%F0%9F%87%BA%F0%9F%87%B8%20%E7%BE%8E%E5%9B%BD_Telegram%40kxswa%20123
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -1440,7 +1458,7 @@ proxies:
   server: 23.162.200.227
   port: 443
   cipher: auto
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: 23.162.200.227:443?type=ws&encryption=auto&path=%2Flinkvws&security=tls#%F0%9F%87%A8%F0%9F%87%A6%20%E5%8A%A0%E6%8B%BF%E5%A4%A7_Telegram%40kxswa%204
   alterId: 0
   tls: true
   skip-cert-verify: true
@@ -1452,7 +1470,7 @@ proxies:
   server: 158.51.121.36
   port: 443
   cipher: auto
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: 158.51.121.36:443?type=ws&encryption=auto&path=%2Flinkvws&security=tls#%F0%9F%87%A8%F0%9F%87%A6%20%E5%8A%A0%E6%8B%BF%E5%A4%A7_Telegram%40kxswa%205
   alterId: 0
   tls: true
   skip-cert-verify: true
@@ -1502,7 +1520,7 @@ proxies:
   server: 23.158.56.50
   port: 443
   cipher: auto
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: 23.158.56.50:443?type=ws&encryption=auto&path=%2Flinkvws&security=tls#%F0%9F%87%A9%F0%9F%87%AA%20%E5%BE%B7%E6%84%8F%E5%BF%97%E8%81%94%E9%82%A6%E5%85%B1%E5%92%8C%E5%9B%BD_Telegram%40kxswa
   alterId: 0
   tls: true
   skip-cert-verify: true
@@ -1547,6 +1565,9 @@ proxies:
   port: 2377
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   cipher: chacha20-ietf-poly1305
+  plugin: obfs-local
+  plugin-opts:
+    mode: websocket
 - name: "\U0001F1E8\U0001F1ED CH 189 SSS"
   type: ss
   server: 156.146.62.161
@@ -1589,7 +1610,7 @@ proxies:
   port: 8080
   password: 1RWwXhwfAB5gAEozU4G2Pg
   cipher: chacha20-ietf-poly1305
-- name: "\U0001F1F1\U0001F1F9 LT 196 SSS"
+- name: "\U0001F1FA\U0001F1F8 US 196 SSS"
   type: ss
   server: beesyar.org
   port: 8080
@@ -1642,7 +1663,7 @@ proxies:
   server: 104.16.155.10
   port: 80
   cipher: auto
-  uuid: e6543319-0574-42ac-b778-1c4325d626f5
+  uuid: 104.16.155.10:80?type=ws&encryption=auto&path=%2F#RELAY-104.16.155.10-0295%20%7C%2029.944MB
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -1654,7 +1675,7 @@ proxies:
   server: s1.cn-db.top
   port: 2052
   cipher: auto
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  uuid: s1.cn-db.top:2052?type=ws&encryption=auto&path=%2F#RELAY-104.16.155.10-0901%20%7C%209.601MB
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -1666,7 +1687,7 @@ proxies:
   server: s1.db-link01.top
   port: 8880
   cipher: auto
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  uuid: s1.db-link01.top:8880?type=ws&encryption=auto&path=%2F#RELAY-104.17.213.241-0821%20%7C%208.553MB
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -1678,7 +1699,7 @@ proxies:
   server: 104.17.221.248
   port: 80
   cipher: auto
-  uuid: e6543319-0574-42ac-b778-1c4325d626f5
+  uuid: 104.17.221.248:80?type=ws&encryption=auto&path=%2F#RELAY-104.17.221.248-0527%20%7C%2027.968MB
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -1690,7 +1711,7 @@ proxies:
   server: 104.17.221.248
   port: 80
   cipher: auto
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  uuid: 104.17.221.248:80?type=ws&encryption=auto&path=%2F#RELAY-104.17.221.248-0900%20%7C%207.244MB
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -1702,7 +1723,7 @@ proxies:
   server: 104.19.48.236
   port: 80
   cipher: auto
-  uuid: e6543319-0574-42ac-b778-1c4325d626f5
+  uuid: 104.19.48.236:80?type=ws&encryption=auto&path=%2F#RELAY-104.19.48.236-0296%20%7C%2031.59MB
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -1714,7 +1735,7 @@ proxies:
   server: vip3.pmy666.xyz
   port: 8080
   cipher: auto
-  uuid: 20666f30-0add-4da4-bba0-28f985426978
+  uuid: vip3.pmy666.xyz:8080?type=ws&encryption=auto&path=%2F#RELAY-104.21.72.233-1441%20%7C%2039.484MB
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -1726,7 +1747,7 @@ proxies:
   server: 104.21.81.115
   port: 443
   cipher: auto
-  uuid: de04add9-5c68-8bab-950c-08cd5320df18
+  uuid: 104.21.81.115:443?type=ws&encryption=auto&path=%2F&security=tls#RELAY-104.21.81.115-0818%20%7C%2016.25MB
   alterId: 0
   tls: true
   skip-cert-verify: true
@@ -1738,19 +1759,19 @@ proxies:
   server: vip3.pmy666.xyz
   port: 8080
   cipher: auto
-  uuid: 20666f30-0add-4da4-bba0-28f985426978
+  uuid: vip3.pmy666.xyz:8080?type=ws&encryption=auto&path=%2F#RELAY-172.67.155.172-0420%20%7C%2042.846MB
   alterId: 0
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /
-- name: "\U0001F1FA\U0001F1F3 UN 213 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 213 VMS"
   type: vmess
   server: vip3.pmy666.xyz
   port: 8080
   cipher: auto
-  uuid: 20666f30-0add-4da4-bba0-28f985426978
+  uuid: vip3.pmy666.xyz:8080?type=ws&encryption=auto&path=%2F#RELAY-172.67.155.172-1439%20%7C%2040.072MB
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -1762,19 +1783,19 @@ proxies:
   server: 172.67.165.53
   port: 2086
   cipher: auto
-  uuid: 3fd7b958-2161-46e1-b6fc-bd6bb2165312
+  uuid: 172.67.165.53:2086?type=ws&encryption=auto&path=%2F#RELAY-172.67.165.53-0552%20%7C%2019.362MB
   alterId: 0
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /
-- name: "\U0001F1FA\U0001F1F3 UN 215 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 215 VMS"
   type: vmess
   server: yaml777.133010.xyz
   port: 80
   cipher: auto
-  uuid: 4a1cb611-381c-4fff-ca35-99be316eee17
+  uuid: yaml777.133010.xyz:80?type=ws&encryption=auto&path=%2F#RELAY-172.67.209.14-0797%20%7C%2031.712MB
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -1786,7 +1807,7 @@ proxies:
   server: 198.41.209.70
   port: 80
   cipher: auto
-  uuid: e6543319-0574-42ac-b778-1c4325d626f5
+  uuid: 198.41.209.70:80?type=ws&encryption=auto&path=%2F#RELAY-198.41.209.70-0530%20%7C%2031.148MB
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -1813,7 +1834,7 @@ proxies:
   server: 134.195.198.147
   port: 443
   cipher: auto
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: 134.195.198.147:443?type=ws&encryption=auto&path=%2F&security=tls#%F0%9F%87%A8%F0%9F%87%A6CA-134.195.198.147-8311%20%7C%2010.797MB
   alterId: 0
   tls: true
   skip-cert-verify: true
@@ -1843,7 +1864,7 @@ proxies:
   server: frankfurt03.zgjok.com
   port: 443
   cipher: auto
-  uuid: 4f7c2243-a38a-4672-983b-f1378aee0a7f
+  uuid: frankfurt03.zgjok.com:443?type=ws&encryption=auto&path=%2F&security=tls#%F0%9F%87%A9%F0%9F%87%AADE-130.61.156.132-5731%20%7C%2031.829MB
   alterId: 0
   tls: true
   skip-cert-verify: true
@@ -1855,7 +1876,7 @@ proxies:
   server: 57.129.24.125
   port: 443
   cipher: auto
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: 57.129.24.125:443?type=ws&encryption=auto&path=%2F&security=tls#%F0%9F%87%A9%F0%9F%87%AADE-57.129.24.125-8273%20%7C%2020.096MB
   alterId: 0
   tls: true
   skip-cert-verify: true
@@ -1867,7 +1888,7 @@ proxies:
   server: 57.129.24.141
   port: 443
   cipher: auto
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: 57.129.24.141:443?type=ws&encryption=auto&path=%2F&security=tls#%F0%9F%87%A9%F0%9F%87%AADE-57.129.24.141-5722%20%7C%2020.098MB
   alterId: 0
   tls: true
   skip-cert-verify: true
@@ -1894,7 +1915,7 @@ proxies:
   server: 51.77.20.137
   port: 443
   cipher: auto
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: 51.77.20.137:443?type=ws&encryption=auto&path=%2F&security=tls#%F0%9F%87%AB%F0%9F%87%B7FR-51.77.20.137-8307%20%7C%2018.582MB
   alterId: 0
   tls: true
   skip-cert-verify: true
@@ -2340,7 +2361,7 @@ proxies:
   server: 23.162.200.227
   port: 443
   cipher: auto
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: 23.162.200.227:443?type=ws&encryption=auto&path=%2F&security=tls#%F0%9F%87%BA%F0%9F%87%B8US-23.162.200.227-8275%20%7C%2033.113MB
   alterId: 0
   tls: true
   skip-cert-verify: true
@@ -2424,7 +2445,7 @@ proxies:
   server: 38.91.106.227
   port: 443
   cipher: auto
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: 38.91.106.227:443?type=ws&encryption=auto&path=%2F&security=tls#%F0%9F%87%BA%F0%9F%87%B8US-38.91.106.227-8304%20%7C%2018.005MB
   alterId: 0
   tls: true
   skip-cert-verify: true
@@ -2466,7 +2487,7 @@ proxies:
   server: 96.126.102.150
   port: 443
   cipher: auto
-  uuid: 051e3f0c-c139-4c7c-9559-41222b72ca20
+  uuid: 96.126.102.150:443?type=ws&encryption=auto&path=%2F&security=tls#%F0%9F%87%BA%F0%9F%87%B8US-96.126.102.150-1444%20%7C%2040.295MB
   alterId: 0
   tls: true
   skip-cert-verify: true
@@ -2478,7 +2499,7 @@ proxies:
   server: 96.126.102.150
   port: 443
   cipher: auto
-  uuid: 051e3f0c-c139-4c7c-9559-41222b72ca20
+  uuid: 96.126.102.150:443?type=ws&encryption=auto&path=%2F&security=tls#%F0%9F%87%BA%F0%9F%87%B8US-96.126.102.150-1446%20%7C%2041.082MB
   alterId: 0
   tls: true
   skip-cert-verify: true
@@ -2684,7 +2705,7 @@ proxy-groups:
   - "\U0001F1E8\U0001F1FF CZ 193 SSS"
   - "\U0001F1F1\U0001F1F9 LT 194 SSS"
   - "\U0001F1F1\U0001F1F9 LT 195 SSS"
-  - "\U0001F1F1\U0001F1F9 LT 196 SSS"
+  - "\U0001F1FA\U0001F1F8 US 196 SSS"
   - "\U0001F1F1\U0001F1F9 LT 197 SSS"
   - "\U0001F1F1\U0001F1F9 LT 198 SSS"
   - "\U0001F1E7\U0001F1E9 BD 199 SSS"
@@ -2701,9 +2722,9 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 210 VMS"
   - "\U0001F1FA\U0001F1F3 UN 211 VMS"
   - "\U0001F1FA\U0001F1F8 US 212 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 213 VMS"
+  - "\U0001F1FA\U0001F1F8 US 213 VMS"
   - "\U0001F1FA\U0001F1F8 US 214 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 215 VMS"
+  - "\U0001F1FA\U0001F1F8 US 215 VMS"
   - "\U0001F1FA\U0001F1F3 UN 216 VMS"
   - "\U0001F1FA\U0001F1F8 US 217 TJN"
   - "\U0001F1F8\U0001F1EA SE 218 SSS"
@@ -3011,7 +3032,7 @@ proxy-groups:
   - "\U0001F1E8\U0001F1FF CZ 193 SSS"
   - "\U0001F1F1\U0001F1F9 LT 194 SSS"
   - "\U0001F1F1\U0001F1F9 LT 195 SSS"
-  - "\U0001F1F1\U0001F1F9 LT 196 SSS"
+  - "\U0001F1FA\U0001F1F8 US 196 SSS"
   - "\U0001F1F1\U0001F1F9 LT 197 SSS"
   - "\U0001F1F1\U0001F1F9 LT 198 SSS"
   - "\U0001F1E7\U0001F1E9 BD 199 SSS"
@@ -3028,9 +3049,9 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 210 VMS"
   - "\U0001F1FA\U0001F1F3 UN 211 VMS"
   - "\U0001F1FA\U0001F1F8 US 212 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 213 VMS"
+  - "\U0001F1FA\U0001F1F8 US 213 VMS"
   - "\U0001F1FA\U0001F1F8 US 214 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 215 VMS"
+  - "\U0001F1FA\U0001F1F8 US 215 VMS"
   - "\U0001F1FA\U0001F1F3 UN 216 VMS"
   - "\U0001F1FA\U0001F1F8 US 217 TJN"
   - "\U0001F1F8\U0001F1EA SE 218 SSS"
