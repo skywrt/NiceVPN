@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2025-01-25 20:27:39
+# 创建时间：2025-01-25 20:34:43
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
-# 节点数量：206
+# 节点数量：149
 # 节点类型：ss, vmess, trojan
 ####################################
 mixed-port: 7890
@@ -11,40 +11,79 @@ allow-lan: false
 log-level: silent
 external-controller: 127.0.0.1:9090
 dns:
-  enable: true
-  ipv6: false
-  listen: 127.0.0.1:1053
-  use-hosts: true
+  enabled: true
+  listen: 0.0.0.0:1053
+  ipv6: true
+  default-nameserver:
+    - 223.5.5.5
+    - 114.114.114.114
   enhanced-mode: fake-ip
-  cache-size: 4096
-  fake-ip-range: '198.19.0.1/24'
+  fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
     - '*.lan'
-    - '*.local'
-    - '*.example.com'
-    - 'localhost'
-    - '127.0.0.1'
+    - '*.linksys.com'
+    - '*.linksyssmartwifi.com'
+    - swscan.apple.com
+    - mesu.apple.com
+    - '*.msftconnecttest.com'
+    - '*.msftncsi.com'
+    - time.*.com
+    - time.*.gov
+    - time.*.edu.cn
+    - time.*.apple.com
+    - time1.*.com
+    - time2.*.com
+    - time3.*.com
+    - time4.*.com
+    - time5.*.com
+    - time6.*.com
+    - time7.*.com
+    - ntp.*.com
+    - ntp.*.com
+    - ntp1.*.com
+    - ntp2.*.com
+    - ntp3.*.com
+    - ntp4.*.com
+    - ntp5.*.com
+    - ntp6.*.com
+    - ntp7.*.com
+    - '*.time.edu.cn'
+    - '*.ntp.org.cn'
+    - +.pool.ntp.org
+    - time1.cloud.tencent.com
+    - +.music.163.com
+    - '*.126.net'
+    - musicapi.taihe.com
+    - music.taihe.com
+    - songsearch.kugou.com
+    - trackercdn.kugou.com
+    - '*.kuwo.cn'
+    - api-jooxtt.sanook.com
+    - api.joox.com
+    - joox.com
+    - +.y.qq.com
+    - +.music.tc.qq.com
+    - aqqmusic.tc.qq.com
+    - +.stream.qqmusic.qq.com
+    - '*.xiami.com'
+    - +.music.migu.cn
+    - +.srv.nintendo.net
+    - +.stun.playstation.net
+    - xbox.*.microsoft.com
+    - +.xboxlive.com
+    - localhost.ptlogin2.qq.com
+    - proxy.golang.org
+    - stun.*.*
+    - stun.*.*.*
+    - '*.mcdn.bilivideo.cn'
   nameserver:
-    - https://1.1.1.1/dns-query
-    - https://8.8.8.8/dns-query
-  proxy-server-nameserver:
-    - https://1.1.1.1/dns-query
-    - https://8.8.8.8/dns-query
-  fallback:
-    - https://8.8.4.4/dns-query
-    - https://1.0.0.1/dns-query
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
   fallback-filter:
-    geoip: true
-    geoip-code: CN
-    geosite:
-      - gfw
-  nameserver-policy:
-    'rule-set:cn_domain':
-      - https://119.29.29.29/dns-query
-      - https://223.5.5.5/dns-query
-    'rule-set:geolocation-!cn':
-      - https://1.1.1.1/dns-query
-      - https://8.8.8.8/dns-query
+    geoip: false
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
 
 proxies:
   - {"name":"加拿大_由快嘴科技提供;kkzui.com3","type":"ss","server":"ca225.vpnbook.com","port":80,"password":"JIhN6rBKkaEboLNXVSv5rq","cipher":"chacha20-ietf-poly1305"}
@@ -57,10 +96,8 @@ proxies:
   - {"name":"美国_由快嘴科技提供;kkzui.com10","type":"vmess","server":"104.17.213.241","port":80,"cipher":"auto","uuid":"e6543319-0574-42ac-b778-1c4325d626f5","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
   - {"name":"比利时_由快嘴科技提供;kkzui.com11","type":"vmess","server":"57.129.24.124","port":443,"cipher":"auto","uuid":"03fcc618-b93d-6796-6aed-8a38c975d581","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
   - {"name":"美国_由快嘴科技提供;kkzui.com12","type":"trojan","server":"ru01.trojanyyds.xyz","port":443,"udp":true,"password":"243eab52-9ac1-405c-887c-eb112c0985b8","sni":"ru01.trojanyyds.xyz","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国_由快嘴科技提供;kkzui.com13","type":"vmess","server":"104.17.213.241","port":80,"cipher":"auto","uuid":"e6543319-0574-42ac-b778-1c4325d626f5","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
   - {"name":"中国_由快嘴科技提供;kkzui.com14","type":"trojan","server":"ru0195.alibabaokz.com","port":60194,"udp":true,"password":"38571ca6-6692-4559-b901-0bc5826b7661","sni":"ru0195.alibabaokz.com","skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国_由快嘴科技提供;kkzui.com15","type":"trojan","server":"tw02.trojanyyds.xyz","port":443,"udp":true,"password":"243eab52-9ac1-405c-887c-eb112c0985b8","sni":"tw02.trojanyyds.xyz","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国_由快嘴科技提供;kkzui.com16","type":"vmess","server":"198.41.209.70","port":80,"cipher":"auto","uuid":"e6543319-0574-42ac-b778-1c4325d626f5","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
   - {"name":"美国_由快嘴科技提供;kkzui.com17","type":"trojan","server":"us3.p9999.space","port":443,"udp":true,"password":"bc5cf4d1-2efb-49f5-98c3-c350f08c1f51","sni":"us3.p9999.space","skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国_由快嘴科技提供;kkzui.com18","type":"trojan","server":"hk03.trojanyyds.xyz","port":443,"udp":true,"password":"243eab52-9ac1-405c-887c-eb112c0985b8","sni":"hk03.trojanyyds.xyz","skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国_由快嘴科技提供;kkzui.com19","type":"trojan","server":"74.226.136.204","port":443,"udp":true,"password":"243eab52-9ac1-405c-887c-eb112c0985b8","skip-cert-verify":true,"network":"tcp"}
@@ -123,8 +160,6 @@ proxies:
   - {"name":"英国_由快嘴科技提供;kkzui.com83","type":"ss","server":"141.98.101.182","port":443,"password":"shadowsocks","cipher":"aes-128-gcm"}
   - {"name":"英国_由快嘴科技提供;kkzui.com84","type":"ss","server":"141.98.101.180","port":443,"password":"shadowsocks","cipher":"aes-128-gcm"}
   - {"name":"德国_由快嘴科技提供;kkzui.com85","type":"vmess","server":"frankfurt03.zgjok.com","port":443,"cipher":"auto","uuid":"4f7c2243-a38a-4672-983b-f1378aee0a7f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"美国_由快嘴科技提供;kkzui.com87","type":"vmess","server":"104.17.221.248","port":80,"cipher":"auto","uuid":"e6543319-0574-42ac-b778-1c4325d626f5","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"美国_由快嘴科技提供;kkzui.com88","type":"vmess","server":"104.16.155.10","port":80,"cipher":"auto","uuid":"e6543319-0574-42ac-b778-1c4325d626f5","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
   - {"name":"美国_由快嘴科技提供;kkzui.com89","type":"vmess","server":"104.19.48.236","port":80,"cipher":"auto","uuid":"e6543319-0574-42ac-b778-1c4325d626f5","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
   - {"name":"德国_由快嘴科技提供;kkzui.com90","type":"trojan","server":"3.122.86.99","port":443,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
   - {"name":"中国_由快嘴科技提供;kkzui.com91","type":"trojan","server":"221.131.165.210","port":60194,"udp":true,"password":"38571ca6-6692-4559-b901-0bc5826b7661","skip-cert-verify":true,"network":"tcp"}
@@ -150,7 +185,6 @@ proxies:
   - {"name":"伊朗_由快嘴科技提供;kkzui.com115","type":"vmess","server":"94.182.150.230","port":80,"cipher":"auto","uuid":"2b7ce1d2-0372-4104-aa06-f7d999f26e1d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国_由快嘴科技提供;kkzui.com116","type":"vmess","server":"172.67.204.19","port":443,"cipher":"auto","uuid":"5f726fe3-d82e-4da5-a711-8af0cbb2b682","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
   - {"name":"美国_由快嘴科技提供;kkzui.com117","type":"vmess","server":"23.94.243.79","port":443,"cipher":"auto","uuid":"4b36625c-b9d9-3ea6-aed5-86d62c70e16d","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"美国_由快嘴科技提供;kkzui.com118","type":"vmess","server":"104.19.48.236","port":80,"cipher":"auto","uuid":"e6543319-0574-42ac-b778-1c4325d626f5","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
   - {"name":"美国_由快嘴科技提供;kkzui.com119","type":"vmess","server":"tokyo.899994.xyz","port":443,"cipher":"auto","uuid":"a0605527-28e4-449c-80ee-5642cc16a8af","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
   - {"name":"美国_由快嘴科技提供;kkzui.com120","type":"vmess","server":"se.899994.xyz","port":443,"cipher":"auto","uuid":"a0605527-28e4-449c-80ee-5642cc16a8af","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
   - {"name":"美国_由快嘴科技提供;kkzui.com121","type":"vmess","server":"us.cowvpn.org","port":443,"cipher":"auto","uuid":"11a805f2-41a7-4cd8-8406-0470c3cde0d3","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
@@ -173,12 +207,8 @@ proxies:
   - {"name":"美国_由快嘴科技提供;kkzui.com143","type":"ss","server":"212.102.47.131","port":443,"password":"shadowsocks","cipher":"aes-128-gcm"}
   - {"name":"美国_由快嘴科技提供;kkzui.com145","type":"ss","server":"149.22.87.241","port":443,"password":"shadowsocks","cipher":"aes-128-gcm"}
   - {"name":"美国_由快嘴科技提供;kkzui.com148","type":"ss","server":"149.22.87.240","port":443,"password":"shadowsocks","cipher":"aes-128-gcm"}
-  - {"name":"美国_由快嘴科技提供;kkzui.com154","type":"vmess","server":"64.225.109.206","port":2082,"cipher":"auto","uuid":"48264b45-64b8-4e9f-8a88-cef41f20c736","alterId":0,"tls":false,"skip-cert-verify":true,"network":"h2","h2-opts":{"path":"/"}}
   - {"name":"俄罗斯_由快嘴科技提供;kkzui.com155","type":"ss","server":"85.192.28.213","port":6650,"password":"2f75IeSgXRNglLdvO61gIR","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"波兰_由快嘴科技提供;kkzui.com158","type":"ss","server":"185.255.123.92","port":990,"password":"f8f7aCzcPKbsF8p3","cipher":"chacha20-ietf-poly1305"}
   - {"name":"荷兰_由快嘴科技提供;kkzui.com160","type":"ss","server":"193.29.139.189","port":8080,"password":"cvII85TrW6n0OGyfpHVS1u","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"加拿大_由快嘴科技提供;kkzui.com166","type":"ss","server":"ca225.vpnbook.com","port":80,"password":"JIhN6rBKkaEboLNXVSv5rq","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"加拿大_由快嘴科技提供;kkzui.com167","type":"ss","server":"142.4.216.225","port":80,"password":"JIhN6rBKkaEboLNXVSv5rq","cipher":"chacha20-ietf-poly1305"}
   - {"name":"美国_由快嘴科技提供;kkzui.com168","type":"vmess","server":"198.41.209.70","port":80,"cipher":"auto","uuid":"e6543319-0574-42ac-b778-1c4325d626f5","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"chunchuan.kejixiaoqi666.store"}}}
   - {"name":"美国_由快嘴科技提供;kkzui.com169","type":"vmess","server":"s4.db-link02.top","port":80,"cipher":"auto","uuid":"4b36625c-b9d9-3ea6-aed5-86d62c70e16d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"100-21-178-246.s4.db-link02.top"}}}
   - {"name":"美国_由快嘴科技提供;kkzui.com170","type":"vmess","server":"br.899994.xyz","port":443,"cipher":"auto","uuid":"a0605527-28e4-449c-80ee-5642cc16a8af","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"br.899994.xyz"}}}
@@ -186,26 +216,6 @@ proxies:
   - {"name":"中国_由快嘴科技提供;kkzui.com172","type":"vmess","server":"cm1.awslcn.info","port":25230,"cipher":"auto","uuid":"243eab52-9ac1-405c-887c-eb112c0985b8","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cm1.awslcn.info"}}}
   - {"name":"美国_由快嘴科技提供;kkzui.com173","type":"vmess","server":"104.17.213.241","port":80,"cipher":"auto","uuid":"e6543319-0574-42ac-b778-1c4325d626f5","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"chunchuan.kejixiaoqi666.store"}}}
   - {"name":"比利时_由快嘴科技提供;kkzui.com174","type":"vmess","server":"57.129.24.124","port":443,"cipher":"auto","uuid":"03fcc618-b93d-6796-6aed-8a38c975d581","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"}}}
-  - {"name":"美国_由快嘴科技提供;kkzui.com175","type":"trojan","server":"ru01.trojanyyds.xyz","port":443,"udp":true,"password":"243eab52-9ac1-405c-887c-eb112c0985b8","sni":"ru01.trojanyyds.xyz","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国_由快嘴科技提供;kkzui.com176","type":"vmess","server":"104.17.213.241","port":80,"cipher":"auto","uuid":"e6543319-0574-42ac-b778-1c4325d626f5","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"chunchuan.kejixiaoqi666.store"}}}
-  - {"name":"中国_由快嘴科技提供;kkzui.com177","type":"trojan","server":"ru0195.alibabaokz.com","port":60194,"udp":true,"password":"38571ca6-6692-4559-b901-0bc5826b7661","sni":"ru0195.alibabaokz.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国_由快嘴科技提供;kkzui.com178","type":"trojan","server":"tw02.trojanyyds.xyz","port":443,"udp":true,"password":"243eab52-9ac1-405c-887c-eb112c0985b8","sni":"tw02.trojanyyds.xyz","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国_由快嘴科技提供;kkzui.com179","type":"vmess","server":"198.41.209.70","port":80,"cipher":"auto","uuid":"e6543319-0574-42ac-b778-1c4325d626f5","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"chunchuan.kejixiaoqi666.store"}}}
-  - {"name":"美国_由快嘴科技提供;kkzui.com180","type":"trojan","server":"us3.p9999.space","port":443,"udp":true,"password":"bc5cf4d1-2efb-49f5-98c3-c350f08c1f51","sni":"us3.p9999.space","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国_由快嘴科技提供;kkzui.com181","type":"trojan","server":"hk03.trojanyyds.xyz","port":443,"udp":true,"password":"243eab52-9ac1-405c-887c-eb112c0985b8","sni":"hk03.trojanyyds.xyz","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国_由快嘴科技提供;kkzui.com182","type":"trojan","server":"74.226.136.204","port":443,"udp":true,"password":"243eab52-9ac1-405c-887c-eb112c0985b8","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国_由快嘴科技提供;kkzui.com184","type":"vmess","server":"64.225.109.206","port":2082,"cipher":"auto","uuid":"48264b45-64b8-4e9f-8a88-cef41f20c736","alterId":0,"tls":false,"skip-cert-verify":true,"network":"h2","h2-opts":{"path":"/"}}
-  - {"name":"新加坡_由快嘴科技提供;kkzui.com185","type":"trojan","server":"dear-sunbeam.treefrog761.one","port":443,"udp":true,"password":"3760559353321758720","sni":"dear-sunbeam.treefrog761.one","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国_由快嘴科技提供;kkzui.com186","type":"trojan","server":"us01.trojanyyds.xyz","port":443,"udp":true,"password":"243eab52-9ac1-405c-887c-eb112c0985b8","sni":"us01.trojanyyds.xyz","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国_由快嘴科技提供;kkzui.com187","type":"trojan","server":"tw01.trojanyyds.xyz","port":443,"udp":true,"password":"243eab52-9ac1-405c-887c-eb112c0985b8","sni":"tw01.trojanyyds.xyz","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国_由快嘴科技提供;kkzui.com188","type":"trojan","server":"sg02.trojanyyds.xyz","port":443,"udp":true,"password":"243eab52-9ac1-405c-887c-eb112c0985b8","sni":"sg02.trojanyyds.xyz","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国_由快嘴科技提供;kkzui.com189","type":"trojan","server":"in01.trojanyyds.xyz","port":443,"udp":true,"password":"243eab52-9ac1-405c-887c-eb112c0985b8","sni":"in01.trojanyyds.xyz","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"韩国_由快嘴科技提供;kkzui.com190","type":"trojan","server":"crisp-collie.treefrog761.one","port":443,"udp":true,"password":"3760559353321758720","sni":"crisp-collie.treefrog761.one","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"中国_由快嘴科技提供;kkzui.com191","type":"ss","server":"ctmm.gscloud.bond","port":31620,"password":"f16d3752-7bae-474e-87dc-f892df2caeaf","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"中国_由快嘴科技提供;kkzui.com192","type":"ss","server":"219.135.227.210","port":16002,"password":"BS6J1MEQANXXVHQL","cipher":"aes-256-gcm"}
-  - {"name":"中国_由快嘴科技提供;kkzui.com195","type":"trojan","server":"223.113.54.145","port":36442,"udp":true,"password":"phXKwfrd","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"中国_由快嘴科技提供;kkzui.com196","type":"trojan","server":"36.150.215.196","port":18681,"udp":true,"password":"phXKwfrd","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国_由快嘴科技提供;kkzui.com197","type":"trojan","server":"sg.mjt000.com","port":443,"udp":true,"password":"61834c10-4218-4918-b836-9b852b7add70","sni":"sg.mjt000.com","skip-cert-verify":true,"network":"tcp"}
   - {"name":"法国_由快嘴科技提供;kkzui.com198","type":"vmess","server":"beyonddbc.sbs","port":443,"cipher":"auto","uuid":"8d90c129-4156-4d6c-9115-24df25f26a02","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"beyonddbc.sbs"}}}
   - {"name":"巴西_由快嘴科技提供;kkzui.com199","type":"vmess","server":"188.114.96.3","port":443,"cipher":"auto","uuid":"5f726fe3-d82e-4da5-a711-8af0cbb2b682","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top"}}}
   - {"name":"美国_由快嘴科技提供;kkzui.com200","type":"vmess","server":"00.likelike.us.kg","port":443,"cipher":"auto","uuid":"680e91d7-01ff-4082-b71a-472d5236adee","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"00.likelike.us.kg"}}}
@@ -224,34 +234,6 @@ proxies:
   - {"name":"美国_由快嘴科技提供;kkzui.com213","type":"vmess","server":"104.17.213.241","port":80,"cipher":"auto","uuid":"4b36625c-b9d9-3ea6-aed5-86d62c70e16d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"100-49-141-209.s1.db-link02.top"}}}
   - {"name":"美国_由快嘴科技提供;kkzui.com214","type":"vmess","server":"104.16.155.10","port":80,"cipher":"auto","uuid":"4b36625c-b9d9-3ea6-aed5-86d62c70e16d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"100-49-141-209.s1.db-link02.top"}}}
   - {"name":"美国_由快嘴科技提供;kkzui.com215","type":"vmess","server":"104.17.221.248","port":80,"cipher":"auto","uuid":"e6543319-0574-42ac-b778-1c4325d626f5","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"chunchuan.kejixiaoqi666.store"}}}
-  - {"name":"美国_由快嘴科技提供;kkzui.com218","type":"ss","server":"156.146.38.168","port":443,"password":"shadowsocks","cipher":"aes-128-gcm"}
-  - {"name":"美国_由快嘴科技提供;kkzui.com219","type":"ss","server":"156.146.38.169","port":443,"password":"shadowsocks","cipher":"aes-128-gcm"}
-  - {"name":"美国_由快嘴科技提供;kkzui.com220","type":"ss","server":"149.22.87.204","port":443,"password":"shadowsocks","cipher":"aes-128-gcm"}
-  - {"name":"美国_由快嘴科技提供;kkzui.com222","type":"trojan","server":"us02.trojanyyds.xyz","port":443,"udp":true,"password":"243eab52-9ac1-405c-887c-eb112c0985b8","sni":"us02.trojanyyds.xyz","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"德国_由快嘴科技提供;kkzui.com223","type":"trojan","server":"nextstepcareer.online","port":443,"udp":true,"password":"4732adfa16c6450bbef87264e41332db","sni":"nextstepcareer.online","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"英国_由快嘴科技提供;kkzui.com224","type":"ss","server":"212.102.53.194","port":443,"password":"shadowsocks","cipher":"aes-128-gcm"}
-  - {"name":"保加利亚_由快嘴科技提供;kkzui.com225","type":"ss","server":"149.34.244.68","port":443,"password":"shadowsocks","cipher":"aes-128-gcm"}
-  - {"name":"英国_由快嘴科技提供;kkzui.com226","type":"ss","server":"uk-dc1.yangon.club","port":443,"password":"shadowsocks","cipher":"aes-128-gcm"}
-  - {"name":"英国_由快嘴科技提供;kkzui.com227","type":"ss","server":"212.102.53.78","port":443,"password":"shadowsocks","cipher":"aes-128-gcm"}
-  - {"name":"英国_由快嘴科技提供;kkzui.com228","type":"ss","server":"212.102.53.198","port":443,"password":"shadowsocks","cipher":"aes-128-gcm"}
-  - {"name":"英国_由快嘴科技提供;kkzui.com229","type":"ss","server":"212.102.53.79","port":443,"password":"shadowsocks","cipher":"aes-128-gcm"}
-  - {"name":"保加利亚_由快嘴科技提供;kkzui.com230","type":"ss","server":"149.34.244.77","port":443,"password":"shadowsocks","cipher":"aes-128-gcm"}
-  - {"name":"英国_由快嘴科技提供;kkzui.com231","type":"ss","server":"212.102.53.80","port":443,"password":"shadowsocks","cipher":"aes-128-gcm"}
-  - {"name":"保加利亚_由快嘴科技提供;kkzui.com232","type":"ss","server":"149.34.244.82","port":443,"password":"shadowsocks","cipher":"aes-128-gcm"}
-  - {"name":"英国_由快嘴科技提供;kkzui.com233","type":"ss","server":"212.102.53.196","port":443,"password":"shadowsocks","cipher":"aes-128-gcm"}
-  - {"name":"英国_由快嘴科技提供;kkzui.com234","type":"ss","server":"212.102.53.197","port":443,"password":"shadowsocks","cipher":"aes-128-gcm"}
-  - {"name":"英国_由快嘴科技提供;kkzui.com235","type":"ss","server":"212.102.53.193","port":443,"password":"shadowsocks","cipher":"aes-128-gcm"}
-  - {"name":"英国_由快嘴科技提供;kkzui.com236","type":"ss","server":"212.102.53.195","port":443,"password":"shadowsocks","cipher":"aes-128-gcm"}
-  - {"name":"瑞士_由快嘴科技提供;kkzui.com238","type":"ss","server":"156.146.62.162","port":443,"password":"shadowsocks","cipher":"aes-128-gcm"}
-  - {"name":"英国_由快嘴科技提供;kkzui.com239","type":"ss","server":"212.102.53.81","port":443,"password":"shadowsocks","cipher":"aes-128-gcm"}
-  - {"name":"瑞士_由快嘴科技提供;kkzui.com240","type":"ss","server":"156.146.62.161","port":443,"password":"shadowsocks","cipher":"aes-128-gcm"}
-  - {"name":"瑞士_由快嘴科技提供;kkzui.com241","type":"ss","server":"156.146.62.164","port":443,"password":"shadowsocks","cipher":"aes-128-gcm"}
-  - {"name":"新加坡_由快嘴科技提供;kkzui.com242","type":"trojan","server":"connectwithemployers.online","port":443,"udp":true,"password":"0ab6c98dae3b48e8b9c4a776b6c9c19a","sni":"connectwithemployers.online","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"英国_由快嘴科技提供;kkzui.com243","type":"ss","server":"141.98.101.178","port":443,"password":"shadowsocks","cipher":"aes-128-gcm"}
-  - {"name":"英国_由快嘴科技提供;kkzui.com244","type":"ss","server":"141.98.101.179","port":443,"password":"shadowsocks","cipher":"aes-128-gcm"}
-  - {"name":"瑞士_由快嘴科技提供;kkzui.com245","type":"ss","server":"156.146.62.163","port":443,"password":"shadowsocks","cipher":"aes-128-gcm"}
-  - {"name":"英国_由快嘴科技提供;kkzui.com246","type":"ss","server":"141.98.101.182","port":443,"password":"shadowsocks","cipher":"aes-128-gcm"}
-  - {"name":"英国_由快嘴科技提供;kkzui.com247","type":"ss","server":"141.98.101.180","port":443,"password":"shadowsocks","cipher":"aes-128-gcm"}
   - {"name":"德国_由快嘴科技提供;kkzui.com248","type":"vmess","server":"frankfurt03.zgjok.com","port":443,"cipher":"auto","uuid":"4f7c2243-a38a-4672-983b-f1378aee0a7f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"frankfurt03.zgjok.com"}}}
 proxy-groups:
   - name: 🚀 节点选择
@@ -275,10 +257,8 @@ proxy-groups:
       - 美国_由快嘴科技提供;kkzui.com10
       - 比利时_由快嘴科技提供;kkzui.com11
       - 美国_由快嘴科技提供;kkzui.com12
-      - 美国_由快嘴科技提供;kkzui.com13
       - 中国_由快嘴科技提供;kkzui.com14
       - 美国_由快嘴科技提供;kkzui.com15
-      - 美国_由快嘴科技提供;kkzui.com16
       - 美国_由快嘴科技提供;kkzui.com17
       - 美国_由快嘴科技提供;kkzui.com18
       - 美国_由快嘴科技提供;kkzui.com19
@@ -341,8 +321,6 @@ proxy-groups:
       - 英国_由快嘴科技提供;kkzui.com83
       - 英国_由快嘴科技提供;kkzui.com84
       - 德国_由快嘴科技提供;kkzui.com85
-      - 美国_由快嘴科技提供;kkzui.com87
-      - 美国_由快嘴科技提供;kkzui.com88
       - 美国_由快嘴科技提供;kkzui.com89
       - 德国_由快嘴科技提供;kkzui.com90
       - 中国_由快嘴科技提供;kkzui.com91
@@ -368,7 +346,6 @@ proxy-groups:
       - 伊朗_由快嘴科技提供;kkzui.com115
       - 美国_由快嘴科技提供;kkzui.com116
       - 美国_由快嘴科技提供;kkzui.com117
-      - 美国_由快嘴科技提供;kkzui.com118
       - 美国_由快嘴科技提供;kkzui.com119
       - 美国_由快嘴科技提供;kkzui.com120
       - 美国_由快嘴科技提供;kkzui.com121
@@ -391,12 +368,8 @@ proxy-groups:
       - 美国_由快嘴科技提供;kkzui.com143
       - 美国_由快嘴科技提供;kkzui.com145
       - 美国_由快嘴科技提供;kkzui.com148
-      - 美国_由快嘴科技提供;kkzui.com154
       - 俄罗斯_由快嘴科技提供;kkzui.com155
-      - 波兰_由快嘴科技提供;kkzui.com158
       - 荷兰_由快嘴科技提供;kkzui.com160
-      - 加拿大_由快嘴科技提供;kkzui.com166
-      - 加拿大_由快嘴科技提供;kkzui.com167
       - 美国_由快嘴科技提供;kkzui.com168
       - 美国_由快嘴科技提供;kkzui.com169
       - 美国_由快嘴科技提供;kkzui.com170
@@ -404,26 +377,6 @@ proxy-groups:
       - 中国_由快嘴科技提供;kkzui.com172
       - 美国_由快嘴科技提供;kkzui.com173
       - 比利时_由快嘴科技提供;kkzui.com174
-      - 美国_由快嘴科技提供;kkzui.com175
-      - 美国_由快嘴科技提供;kkzui.com176
-      - 中国_由快嘴科技提供;kkzui.com177
-      - 美国_由快嘴科技提供;kkzui.com178
-      - 美国_由快嘴科技提供;kkzui.com179
-      - 美国_由快嘴科技提供;kkzui.com180
-      - 美国_由快嘴科技提供;kkzui.com181
-      - 美国_由快嘴科技提供;kkzui.com182
-      - 美国_由快嘴科技提供;kkzui.com184
-      - 新加坡_由快嘴科技提供;kkzui.com185
-      - 美国_由快嘴科技提供;kkzui.com186
-      - 美国_由快嘴科技提供;kkzui.com187
-      - 美国_由快嘴科技提供;kkzui.com188
-      - 美国_由快嘴科技提供;kkzui.com189
-      - 韩国_由快嘴科技提供;kkzui.com190
-      - 中国_由快嘴科技提供;kkzui.com191
-      - 中国_由快嘴科技提供;kkzui.com192
-      - 中国_由快嘴科技提供;kkzui.com195
-      - 中国_由快嘴科技提供;kkzui.com196
-      - 美国_由快嘴科技提供;kkzui.com197
       - 法国_由快嘴科技提供;kkzui.com198
       - 巴西_由快嘴科技提供;kkzui.com199
       - 美国_由快嘴科技提供;kkzui.com200
@@ -442,41 +395,12 @@ proxy-groups:
       - 美国_由快嘴科技提供;kkzui.com213
       - 美国_由快嘴科技提供;kkzui.com214
       - 美国_由快嘴科技提供;kkzui.com215
-      - 美国_由快嘴科技提供;kkzui.com218
-      - 美国_由快嘴科技提供;kkzui.com219
-      - 美国_由快嘴科技提供;kkzui.com220
-      - 美国_由快嘴科技提供;kkzui.com222
-      - 德国_由快嘴科技提供;kkzui.com223
-      - 英国_由快嘴科技提供;kkzui.com224
-      - 保加利亚_由快嘴科技提供;kkzui.com225
-      - 英国_由快嘴科技提供;kkzui.com226
-      - 英国_由快嘴科技提供;kkzui.com227
-      - 英国_由快嘴科技提供;kkzui.com228
-      - 英国_由快嘴科技提供;kkzui.com229
-      - 保加利亚_由快嘴科技提供;kkzui.com230
-      - 英国_由快嘴科技提供;kkzui.com231
-      - 保加利亚_由快嘴科技提供;kkzui.com232
-      - 英国_由快嘴科技提供;kkzui.com233
-      - 英国_由快嘴科技提供;kkzui.com234
-      - 英国_由快嘴科技提供;kkzui.com235
-      - 英国_由快嘴科技提供;kkzui.com236
-      - 瑞士_由快嘴科技提供;kkzui.com238
-      - 英国_由快嘴科技提供;kkzui.com239
-      - 瑞士_由快嘴科技提供;kkzui.com240
-      - 瑞士_由快嘴科技提供;kkzui.com241
-      - 新加坡_由快嘴科技提供;kkzui.com242
-      - 英国_由快嘴科技提供;kkzui.com243
-      - 英国_由快嘴科技提供;kkzui.com244
-      - 瑞士_由快嘴科技提供;kkzui.com245
-      - 英国_由快嘴科技提供;kkzui.com246
-      - 英国_由快嘴科技提供;kkzui.com247
       - 德国_由快嘴科技提供;kkzui.com248
   - name: ♻️ 自动选择
     type: url-test
-    url: https://www.gstatic.com/generate_204
+    url: http://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 5
-    timeout: 3
+    tolerance: 50
     proxies:
       - 加拿大_由快嘴科技提供;kkzui.com3
       - 加拿大_由快嘴科技提供;kkzui.com4
@@ -488,10 +412,8 @@ proxy-groups:
       - 美国_由快嘴科技提供;kkzui.com10
       - 比利时_由快嘴科技提供;kkzui.com11
       - 美国_由快嘴科技提供;kkzui.com12
-      - 美国_由快嘴科技提供;kkzui.com13
       - 中国_由快嘴科技提供;kkzui.com14
       - 美国_由快嘴科技提供;kkzui.com15
-      - 美国_由快嘴科技提供;kkzui.com16
       - 美国_由快嘴科技提供;kkzui.com17
       - 美国_由快嘴科技提供;kkzui.com18
       - 美国_由快嘴科技提供;kkzui.com19
@@ -554,8 +476,6 @@ proxy-groups:
       - 英国_由快嘴科技提供;kkzui.com83
       - 英国_由快嘴科技提供;kkzui.com84
       - 德国_由快嘴科技提供;kkzui.com85
-      - 美国_由快嘴科技提供;kkzui.com87
-      - 美国_由快嘴科技提供;kkzui.com88
       - 美国_由快嘴科技提供;kkzui.com89
       - 德国_由快嘴科技提供;kkzui.com90
       - 中国_由快嘴科技提供;kkzui.com91
@@ -581,7 +501,6 @@ proxy-groups:
       - 伊朗_由快嘴科技提供;kkzui.com115
       - 美国_由快嘴科技提供;kkzui.com116
       - 美国_由快嘴科技提供;kkzui.com117
-      - 美国_由快嘴科技提供;kkzui.com118
       - 美国_由快嘴科技提供;kkzui.com119
       - 美国_由快嘴科技提供;kkzui.com120
       - 美国_由快嘴科技提供;kkzui.com121
@@ -604,12 +523,8 @@ proxy-groups:
       - 美国_由快嘴科技提供;kkzui.com143
       - 美国_由快嘴科技提供;kkzui.com145
       - 美国_由快嘴科技提供;kkzui.com148
-      - 美国_由快嘴科技提供;kkzui.com154
       - 俄罗斯_由快嘴科技提供;kkzui.com155
-      - 波兰_由快嘴科技提供;kkzui.com158
       - 荷兰_由快嘴科技提供;kkzui.com160
-      - 加拿大_由快嘴科技提供;kkzui.com166
-      - 加拿大_由快嘴科技提供;kkzui.com167
       - 美国_由快嘴科技提供;kkzui.com168
       - 美国_由快嘴科技提供;kkzui.com169
       - 美国_由快嘴科技提供;kkzui.com170
@@ -617,26 +532,6 @@ proxy-groups:
       - 中国_由快嘴科技提供;kkzui.com172
       - 美国_由快嘴科技提供;kkzui.com173
       - 比利时_由快嘴科技提供;kkzui.com174
-      - 美国_由快嘴科技提供;kkzui.com175
-      - 美国_由快嘴科技提供;kkzui.com176
-      - 中国_由快嘴科技提供;kkzui.com177
-      - 美国_由快嘴科技提供;kkzui.com178
-      - 美国_由快嘴科技提供;kkzui.com179
-      - 美国_由快嘴科技提供;kkzui.com180
-      - 美国_由快嘴科技提供;kkzui.com181
-      - 美国_由快嘴科技提供;kkzui.com182
-      - 美国_由快嘴科技提供;kkzui.com184
-      - 新加坡_由快嘴科技提供;kkzui.com185
-      - 美国_由快嘴科技提供;kkzui.com186
-      - 美国_由快嘴科技提供;kkzui.com187
-      - 美国_由快嘴科技提供;kkzui.com188
-      - 美国_由快嘴科技提供;kkzui.com189
-      - 韩国_由快嘴科技提供;kkzui.com190
-      - 中国_由快嘴科技提供;kkzui.com191
-      - 中国_由快嘴科技提供;kkzui.com192
-      - 中国_由快嘴科技提供;kkzui.com195
-      - 中国_由快嘴科技提供;kkzui.com196
-      - 美国_由快嘴科技提供;kkzui.com197
       - 法国_由快嘴科技提供;kkzui.com198
       - 巴西_由快嘴科技提供;kkzui.com199
       - 美国_由快嘴科技提供;kkzui.com200
@@ -655,34 +550,6 @@ proxy-groups:
       - 美国_由快嘴科技提供;kkzui.com213
       - 美国_由快嘴科技提供;kkzui.com214
       - 美国_由快嘴科技提供;kkzui.com215
-      - 美国_由快嘴科技提供;kkzui.com218
-      - 美国_由快嘴科技提供;kkzui.com219
-      - 美国_由快嘴科技提供;kkzui.com220
-      - 美国_由快嘴科技提供;kkzui.com222
-      - 德国_由快嘴科技提供;kkzui.com223
-      - 英国_由快嘴科技提供;kkzui.com224
-      - 保加利亚_由快嘴科技提供;kkzui.com225
-      - 英国_由快嘴科技提供;kkzui.com226
-      - 英国_由快嘴科技提供;kkzui.com227
-      - 英国_由快嘴科技提供;kkzui.com228
-      - 英国_由快嘴科技提供;kkzui.com229
-      - 保加利亚_由快嘴科技提供;kkzui.com230
-      - 英国_由快嘴科技提供;kkzui.com231
-      - 保加利亚_由快嘴科技提供;kkzui.com232
-      - 英国_由快嘴科技提供;kkzui.com233
-      - 英国_由快嘴科技提供;kkzui.com234
-      - 英国_由快嘴科技提供;kkzui.com235
-      - 英国_由快嘴科技提供;kkzui.com236
-      - 瑞士_由快嘴科技提供;kkzui.com238
-      - 英国_由快嘴科技提供;kkzui.com239
-      - 瑞士_由快嘴科技提供;kkzui.com240
-      - 瑞士_由快嘴科技提供;kkzui.com241
-      - 新加坡_由快嘴科技提供;kkzui.com242
-      - 英国_由快嘴科技提供;kkzui.com243
-      - 英国_由快嘴科技提供;kkzui.com244
-      - 瑞士_由快嘴科技提供;kkzui.com245
-      - 英国_由快嘴科技提供;kkzui.com246
-      - 英国_由快嘴科技提供;kkzui.com247
       - 德国_由快嘴科技提供;kkzui.com248
   - name: 🎯 全球直连
     type: select
@@ -711,10 +578,8 @@ proxy-groups:
       - 美国_由快嘴科技提供;kkzui.com10
       - 比利时_由快嘴科技提供;kkzui.com11
       - 美国_由快嘴科技提供;kkzui.com12
-      - 美国_由快嘴科技提供;kkzui.com13
       - 中国_由快嘴科技提供;kkzui.com14
       - 美国_由快嘴科技提供;kkzui.com15
-      - 美国_由快嘴科技提供;kkzui.com16
       - 美国_由快嘴科技提供;kkzui.com17
       - 美国_由快嘴科技提供;kkzui.com18
       - 美国_由快嘴科技提供;kkzui.com19
@@ -777,8 +642,6 @@ proxy-groups:
       - 英国_由快嘴科技提供;kkzui.com83
       - 英国_由快嘴科技提供;kkzui.com84
       - 德国_由快嘴科技提供;kkzui.com85
-      - 美国_由快嘴科技提供;kkzui.com87
-      - 美国_由快嘴科技提供;kkzui.com88
       - 美国_由快嘴科技提供;kkzui.com89
       - 德国_由快嘴科技提供;kkzui.com90
       - 中国_由快嘴科技提供;kkzui.com91
@@ -804,7 +667,6 @@ proxy-groups:
       - 伊朗_由快嘴科技提供;kkzui.com115
       - 美国_由快嘴科技提供;kkzui.com116
       - 美国_由快嘴科技提供;kkzui.com117
-      - 美国_由快嘴科技提供;kkzui.com118
       - 美国_由快嘴科技提供;kkzui.com119
       - 美国_由快嘴科技提供;kkzui.com120
       - 美国_由快嘴科技提供;kkzui.com121
@@ -827,12 +689,8 @@ proxy-groups:
       - 美国_由快嘴科技提供;kkzui.com143
       - 美国_由快嘴科技提供;kkzui.com145
       - 美国_由快嘴科技提供;kkzui.com148
-      - 美国_由快嘴科技提供;kkzui.com154
       - 俄罗斯_由快嘴科技提供;kkzui.com155
-      - 波兰_由快嘴科技提供;kkzui.com158
       - 荷兰_由快嘴科技提供;kkzui.com160
-      - 加拿大_由快嘴科技提供;kkzui.com166
-      - 加拿大_由快嘴科技提供;kkzui.com167
       - 美国_由快嘴科技提供;kkzui.com168
       - 美国_由快嘴科技提供;kkzui.com169
       - 美国_由快嘴科技提供;kkzui.com170
@@ -840,26 +698,6 @@ proxy-groups:
       - 中国_由快嘴科技提供;kkzui.com172
       - 美国_由快嘴科技提供;kkzui.com173
       - 比利时_由快嘴科技提供;kkzui.com174
-      - 美国_由快嘴科技提供;kkzui.com175
-      - 美国_由快嘴科技提供;kkzui.com176
-      - 中国_由快嘴科技提供;kkzui.com177
-      - 美国_由快嘴科技提供;kkzui.com178
-      - 美国_由快嘴科技提供;kkzui.com179
-      - 美国_由快嘴科技提供;kkzui.com180
-      - 美国_由快嘴科技提供;kkzui.com181
-      - 美国_由快嘴科技提供;kkzui.com182
-      - 美国_由快嘴科技提供;kkzui.com184
-      - 新加坡_由快嘴科技提供;kkzui.com185
-      - 美国_由快嘴科技提供;kkzui.com186
-      - 美国_由快嘴科技提供;kkzui.com187
-      - 美国_由快嘴科技提供;kkzui.com188
-      - 美国_由快嘴科技提供;kkzui.com189
-      - 韩国_由快嘴科技提供;kkzui.com190
-      - 中国_由快嘴科技提供;kkzui.com191
-      - 中国_由快嘴科技提供;kkzui.com192
-      - 中国_由快嘴科技提供;kkzui.com195
-      - 中国_由快嘴科技提供;kkzui.com196
-      - 美国_由快嘴科技提供;kkzui.com197
       - 法国_由快嘴科技提供;kkzui.com198
       - 巴西_由快嘴科技提供;kkzui.com199
       - 美国_由快嘴科技提供;kkzui.com200
@@ -878,52 +716,20 @@ proxy-groups:
       - 美国_由快嘴科技提供;kkzui.com213
       - 美国_由快嘴科技提供;kkzui.com214
       - 美国_由快嘴科技提供;kkzui.com215
-      - 美国_由快嘴科技提供;kkzui.com218
-      - 美国_由快嘴科技提供;kkzui.com219
-      - 美国_由快嘴科技提供;kkzui.com220
-      - 美国_由快嘴科技提供;kkzui.com222
-      - 德国_由快嘴科技提供;kkzui.com223
-      - 英国_由快嘴科技提供;kkzui.com224
-      - 保加利亚_由快嘴科技提供;kkzui.com225
-      - 英国_由快嘴科技提供;kkzui.com226
-      - 英国_由快嘴科技提供;kkzui.com227
-      - 英国_由快嘴科技提供;kkzui.com228
-      - 英国_由快嘴科技提供;kkzui.com229
-      - 保加利亚_由快嘴科技提供;kkzui.com230
-      - 英国_由快嘴科技提供;kkzui.com231
-      - 保加利亚_由快嘴科技提供;kkzui.com232
-      - 英国_由快嘴科技提供;kkzui.com233
-      - 英国_由快嘴科技提供;kkzui.com234
-      - 英国_由快嘴科技提供;kkzui.com235
-      - 英国_由快嘴科技提供;kkzui.com236
-      - 瑞士_由快嘴科技提供;kkzui.com238
-      - 英国_由快嘴科技提供;kkzui.com239
-      - 瑞士_由快嘴科技提供;kkzui.com240
-      - 瑞士_由快嘴科技提供;kkzui.com241
-      - 新加坡_由快嘴科技提供;kkzui.com242
-      - 英国_由快嘴科技提供;kkzui.com243
-      - 英国_由快嘴科技提供;kkzui.com244
-      - 瑞士_由快嘴科技提供;kkzui.com245
-      - 英国_由快嘴科技提供;kkzui.com246
-      - 英国_由快嘴科技提供;kkzui.com247
       - 德国_由快嘴科技提供;kkzui.com248
   - name: 🇸🇬 狮城节点
     type: url-test
-    url: https://www.gstatic.com/generate_204
+    url: http://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 5
-    timeout: 3
+    tolerance: 50
     proxies:
       - 新加坡_由快嘴科技提供;kkzui.com22
       - 新加坡_由快嘴科技提供;kkzui.com79
-      - 新加坡_由快嘴科技提供;kkzui.com185
-      - 新加坡_由快嘴科技提供;kkzui.com242
   - name: 🇺🇲 美国节点
     type: url-test
-    url: https://www.gstatic.com/generate_204
+    url: http://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 5
-    timeout: 3
+    tolerance: 50
     proxies:
       - 美国_由快嘴科技提供;kkzui.com5
       - 美国_由快嘴科技提供;kkzui.com6
@@ -931,9 +737,7 @@ proxy-groups:
       - 美国_由快嘴科技提供;kkzui.com8
       - 美国_由快嘴科技提供;kkzui.com10
       - 美国_由快嘴科技提供;kkzui.com12
-      - 美国_由快嘴科技提供;kkzui.com13
       - 美国_由快嘴科技提供;kkzui.com15
-      - 美国_由快嘴科技提供;kkzui.com16
       - 美国_由快嘴科技提供;kkzui.com17
       - 美国_由快嘴科技提供;kkzui.com18
       - 美国_由快嘴科技提供;kkzui.com19
@@ -962,8 +766,6 @@ proxy-groups:
       - 美国_由快嘴科技提供;kkzui.com56
       - 美国_由快嘴科技提供;kkzui.com57
       - 美国_由快嘴科技提供;kkzui.com59
-      - 美国_由快嘴科技提供;kkzui.com87
-      - 美国_由快嘴科技提供;kkzui.com88
       - 美国_由快嘴科技提供;kkzui.com89
       - 美国_由快嘴科技提供;kkzui.com101
       - 美国_由快嘴科技提供;kkzui.com102
@@ -973,7 +775,6 @@ proxy-groups:
       - 美国_由快嘴科技提供;kkzui.com112
       - 美国_由快嘴科技提供;kkzui.com116
       - 美国_由快嘴科技提供;kkzui.com117
-      - 美国_由快嘴科技提供;kkzui.com118
       - 美国_由快嘴科技提供;kkzui.com119
       - 美国_由快嘴科技提供;kkzui.com120
       - 美国_由快嘴科技提供;kkzui.com121
@@ -987,25 +788,11 @@ proxy-groups:
       - 美国_由快嘴科技提供;kkzui.com143
       - 美国_由快嘴科技提供;kkzui.com145
       - 美国_由快嘴科技提供;kkzui.com148
-      - 美国_由快嘴科技提供;kkzui.com154
       - 美国_由快嘴科技提供;kkzui.com168
       - 美国_由快嘴科技提供;kkzui.com169
       - 美国_由快嘴科技提供;kkzui.com170
       - 美国_由快嘴科技提供;kkzui.com171
       - 美国_由快嘴科技提供;kkzui.com173
-      - 美国_由快嘴科技提供;kkzui.com175
-      - 美国_由快嘴科技提供;kkzui.com176
-      - 美国_由快嘴科技提供;kkzui.com178
-      - 美国_由快嘴科技提供;kkzui.com179
-      - 美国_由快嘴科技提供;kkzui.com180
-      - 美国_由快嘴科技提供;kkzui.com181
-      - 美国_由快嘴科技提供;kkzui.com182
-      - 美国_由快嘴科技提供;kkzui.com184
-      - 美国_由快嘴科技提供;kkzui.com186
-      - 美国_由快嘴科技提供;kkzui.com187
-      - 美国_由快嘴科技提供;kkzui.com188
-      - 美国_由快嘴科技提供;kkzui.com189
-      - 美国_由快嘴科技提供;kkzui.com197
       - 美国_由快嘴科技提供;kkzui.com200
       - 美国_由快嘴科技提供;kkzui.com202
       - 美国_由快嘴科技提供;kkzui.com203
@@ -1021,10 +808,6 @@ proxy-groups:
       - 美国_由快嘴科技提供;kkzui.com213
       - 美国_由快嘴科技提供;kkzui.com214
       - 美国_由快嘴科技提供;kkzui.com215
-      - 美国_由快嘴科技提供;kkzui.com218
-      - 美国_由快嘴科技提供;kkzui.com219
-      - 美国_由快嘴科技提供;kkzui.com220
-      - 美国_由快嘴科技提供;kkzui.com222
 
 rules:
 # 本地/局域网地址
