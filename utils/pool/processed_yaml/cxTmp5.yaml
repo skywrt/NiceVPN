@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2025-01-27 16:58:48
+# 创建时间：2025-01-27 22:26:06
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：30
 # 节点类型：trojan, vmess, ss
@@ -48,7 +48,7 @@ dns:
 
 proxies:
   - {"name":"爱尔兰-3.80MB/s","type":"trojan","server":"3.250.247.186","port":443,"udp":true,"password":"3763495894587285504","sni":"daring-puma.goat627.mom","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"俄罗斯联邦-861.2KB/s","type":"vmess","server":"185.22.153.73","port":49663,"cipher":"auto","uuid":"185.22.153.73:49663?type=ws&encryption=auto&host=185.22.153.73&path=github.com%2FAlvin9999#%E4%BF%84%E7%BD%97%E6%96%AF%E8%81%94%E9%82%A6-861.2KB%2Fs","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"185.22.153.73"}}}
+  - {"name":"俄罗斯联邦-861.2KB/s","type":"vmess","server":"185.22.153.73","port":49663,"cipher":"auto","uuid":"af7f07dc-d726-4b1e-967d-dbb6c594999f","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"185.22.153.73"}}}
   - {"name":"爱尔兰-3.87MB/s","type":"trojan","server":"daring-puma.goat627.mom","port":443,"udp":true,"password":"3763495894587285504","sni":"daring-puma.goat627.mom","skip-cert-verify":true,"network":"tcp"}
   - {"name":"比利时-147.5KB/s","type":"ss","server":"a-config.96hezar.ir","port":4017,"password":"o9v9NS2O0sxebNmxvZ06sg","cipher":"chacha20-ietf-poly1305"}
   - {"name":"法国-3.98MB/s","type":"trojan","server":"grown-urchin.treefrog761.one","port":443,"udp":true,"password":"3763495894587285504","sni":"grown-urchin.treefrog761.one","skip-cert-verify":true,"network":"tcp"}
@@ -124,7 +124,7 @@ proxy-groups:
     type: url-test
     url: https://www.gstatic.com/generate_204
     interval: 300
-    timeout: 5
+    timeout: 3
     proxies:
       - 爱尔兰-3.80MB/s
       - 俄罗斯联邦-861.2KB/s
@@ -207,14 +207,14 @@ proxy-groups:
     type: url-test
     url: https://www.gstatic.com/generate_204
     interval: 300
-    timeout: 5
+    timeout: 3
     proxies:
       - 香港-1.4MB/s
   - name: 🇯🇵 日本节点
     type: url-test
     url: https://www.gstatic.com/generate_204
     interval: 300
-    timeout: 5
+    timeout: 3
     proxies:
       - 日本-273.8KB/s
       - 日本-5.01MB/s
@@ -229,7 +229,7 @@ proxy-groups:
     type: url-test
     url: https://www.gstatic.com/generate_204
     interval: 300
-    timeout: 5
+    timeout: 3
     proxies:
       - 美国-218.9KB/s
       - 美国-255.8KB/s
