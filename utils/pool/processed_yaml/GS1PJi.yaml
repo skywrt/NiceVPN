@@ -1,10 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2025-01-27 22:38:43
+# 创建时间：2025-01-27 22:32:56
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
-# 节点数量：25
-# 节点类型：ss, trojan, vmess
+# 节点数量：26
+# 节点类型：vmess, trojan, ss
 ####################################
 mixed-port: 7890
 allow-lan: false
@@ -47,98 +47,103 @@ dns:
       - https://8.8.8.8/dns-query
 
 proxies:
-  - {"name":"法国_由快嘴科技提供：kkzui.com5","type":"ss","server":"195.154.200.156","port":12345,"password":"dongtaiwang.com","cipher":"aes-256-gcm"}
-  - {"name":"法国_由快嘴科技提供：kkzui.com127","type":"ss","server":"195.154.200.156","port":12345,"password":"dongtaiwang.com","cipher":"aes-256-gcm"}
-  - {"name":"保加利亚_由快嘴科技提供：kkzui.com106","type":"trojan","server":"closing-phoenix.goat627.mom","port":443,"udp":true,"password":"3763495982449565696","sni":"closing-phoenix.goat627.mom","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国_由快嘴科技提供：kkzui.com30","type":"trojan","server":"tw01.trojanyyds.xyz","port":443,"udp":true,"password":"243eab52-9ac1-405c-887c-eb112c0985b8","sni":"tw01.trojanyyds.xyz","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"比利时_由快嘴科技提供：kkzui.com153","type":"ss","server":"146.103.40.29","port":4017,"password":"o9v9NS2O0sxebNmxvZ06sg","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"未知_由快嘴科技提供：kkzui.com1","type":"trojan","server":"46.229.253.79","port":443,"udp":true,"password":"3763495894587285504","sni":"right-goldfish.goat627.mom","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"比利时_由快嘴科技提供：kkzui.com146","type":"ss","server":"a-config.96hezar.ir","port":4017,"password":"o9v9NS2O0sxebNmxvZ06sg","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"罗马尼亚_由快嘴科技提供：kkzui.com4","type":"trojan","server":"89.39.70.207","port":443,"udp":true,"password":"3763495894587285504","sni":"pet-bulldog.goat627.mom","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"罗马尼亚_由快嘴科技提供：kkzui.com3","type":"trojan","server":"pet-bulldog.goat627.mom","port":443,"udp":true,"password":"3763495894587285504","sni":"pet-bulldog.goat627.mom","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"匈牙利_由快嘴科技提供：kkzui.com113","type":"trojan","server":"sensible-crow.goat627.mom","port":443,"udp":true,"password":"3763495982449565696","sni":"sensible-crow.goat627.mom","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"匈牙利_由快嘴科技提供：kkzui.com6","type":"trojan","server":"enabling-cat.goat627.mom","port":443,"udp":true,"password":"3763495894587285504","sni":"enabling-cat.goat627.mom","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"匈牙利_由快嘴科技提供：kkzui.com147","type":"trojan","server":"enabling-cat.goat627.mom","port":443,"udp":true,"password":"3763495894587285504","sni":"enabling-cat.goat627.mom","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国_由快嘴科技提供：kkzui.com29","type":"trojan","server":"us01.trojanyyds.xyz","port":443,"udp":true,"password":"243eab52-9ac1-405c-887c-eb112c0985b8","sni":"us01.trojanyyds.xyz","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国_由快嘴科技提供：kkzui.com31","type":"trojan","server":"in01.trojanyyds.xyz","port":443,"udp":true,"password":"243eab52-9ac1-405c-887c-eb112c0985b8","sni":"in01.trojanyyds.xyz","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"俄罗斯_由快嘴科技提供：kkzui.com158","type":"vmess","server":"185.22.153.73","port":49663,"cipher":"auto","uuid":"af7f07dc-d726-4b1e-967d-dbb6c594999f","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"185.22.153.73"}}}
-  - {"name":"美国_由快嘴科技提供：kkzui.com88","type":"vmess","server":"hsj.lbxjc.online","port":80,"cipher":"auto","uuid":"e6543319-0574-42ac-b778-1c4325d626f5","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"chunchuan.kejixiaoqi666.store"}}}
-  - {"name":"保加利亚_由快嘴科技提供：kkzui.com145","type":"trojan","server":"closing-phoenix.goat627.mom","port":443,"udp":true,"password":"3763495894587285504","sni":"closing-phoenix.goat627.mom","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"伊朗_由快嘴科技提供：kkzui.com184","type":"ss","server":"sgp.fastsoonlink.com","port":40005,"password":"3FB23A19-9424-40C7-9139-3540228283FA","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"荷兰_由快嘴科技提供：kkzui.com122","type":"ss","server":"45.158.171.66","port":8080,"password":"oZIoA69Q8yhcQV8ka3Pa3A","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"美国_由快嘴科技提供：kkzui.com126","type":"vmess","server":"hsj.lbxjc.online","port":80,"cipher":"auto","uuid":"e6543319-0574-42ac-b778-1c4325d626f5","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"chunchuan.kejixiaoqi666.store"}}}
-  - {"name":"阿根廷_由快嘴科技提供：kkzui.com179","type":"ss","server":"181.119.30.20","port":990,"password":"f8f7aCzcPKbsF8p3","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"俄罗斯_由快嘴科技提供：kkzui.com117","type":"vmess","server":"195.58.49.42","port":23532,"cipher":"auto","uuid":"d6bece99-5990-4c69-8c8f-86111061c916","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"195.58.49.42"}}}
-  - {"name":"中国_由快嘴科技提供：kkzui.com185","type":"vmess","server":"183.236.51.60","port":25230,"cipher":"auto","uuid":"243eab52-9ac1-405c-887c-eb112c0985b8","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"183.236.51.60"}}}
-  - {"name":"美国_由快嘴科技提供：kkzui.com84","type":"vmess","server":"1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top","port":443,"cipher":"auto","uuid":"5f726fe3-d82e-4da5-a711-8af0cbb2b682","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/azumase.ren","headers":{"host":"1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top"}}}
-  - {"name":"荷兰_由快嘴科技提供：kkzui.com166","type":"ss","server":"45.158.171.110","port":8080,"password":"oZIoA69Q8yhcQV8ka3Pa3A","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"英国(yudou66.com 玉豆免费节点)","type":"vmess","server":"5.39.254.196","port":25385,"cipher":"auto","uuid":"398ce84e-4849-4e5f-9b1a-a56fbe233b81","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"俄罗斯(yudou66.com 玉豆免费节点) 3","type":"vmess","server":"195.58.49.50","port":23532,"cipher":"auto","uuid":"969ae3e4-10ca-4b95-bfb4-90d70d18a4b8","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"俄罗斯(yudou66.com 玉豆免费节点) 4","type":"vmess","server":"195.58.49.50","port":23532,"cipher":"auto","uuid":"e872e9b2-5415-4fcd-8c71-3fa89a087063","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"俄罗斯(yudou66.com 玉豆免费节点) 5","type":"vmess","server":"195.58.49.50","port":23532,"cipher":"auto","uuid":"8cfdae2d-c229-48cd-b6b3-ee2f54376aed","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"美国(yudou66.com+玉豆免费节点)+7","type":"trojan","server":"sensible-crow.goat627.mom","port":443,"udp":true,"password":"3763495982449565696","sni":"sensible-crow.goat627.mom","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国(yudou66.com 玉豆免费节点) 8","type":"vmess","server":"118.193.34.158","port":52825,"cipher":"auto","uuid":"67ff500a-8484-4ed8-cf8f-b8d341534140","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"俄罗斯(yudou66.com 玉豆免费节点) 14","type":"vmess","server":"195.58.49.50","port":23532,"cipher":"auto","uuid":"59d7b3fb-d028-40c9-8bc6-8852c4c3d19a","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"新加坡(yudou66.com+玉豆免费节点)","type":"ss","server":"ctmm.gscloud.bond","port":31620,"password":"f16d3752-7bae-474e-87dc-f892df2caeaf","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"美国(yudou66.com+玉豆免费节点)+11","type":"trojan","server":"topical-gibbon.goat627.mom","port":443,"udp":true,"password":"3763495982449565696","sni":"topical-gibbon.goat627.mom","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国(yudou66.com 玉豆免费节点) 12","type":"vmess","server":"118.193.38.173","port":21066,"cipher":"auto","uuid":"f11cf8ff-89b3-4c4c-fdf8-b47111d852d8","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国(yudou66.com 玉豆免费节点) 13","type":"vmess","server":"118.193.34.236","port":13688,"cipher":"auto","uuid":"93127065-1a5b-4816-d009-5bf5e0aa10b6","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国(yudou66.com+玉豆免费节点)+16","type":"trojan","server":"sje.5216818.xyz","port":443,"udp":true,"password":"696cfe79","sni":"sje.5216818.xyz","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"日本(yudou66.com+玉豆免费节点)","type":"ss","server":"arxfw2b78fi2q9hzylhn.freesocks.work","port":443,"password":"Nk9asglDzHzjktVzTkvhaA","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"美国(yudou66.com+玉豆免费节点)+19","type":"trojan","server":"closing-phoenix.goat627.mom","port":443,"udp":true,"password":"3763495982449565696","sni":"closing-phoenix.goat627.mom","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"俄罗斯(yudou66.com+玉豆免费节点)\r_3","type":"trojan","server":"open-baboon.goat627.mom","port":443,"udp":true,"password":"3763495894587285504","sni":"open-baboon.goat627.mom","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"英国(yudou66.com 玉豆免费节点)_1","type":"vmess","server":"5.39.254.196","port":25385,"cipher":"auto","uuid":"398ce84e-4849-4e5f-9b1a-a56fbe233b81","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"5.39.254.196"}}}
+  - {"name":"美国(yudou66.com 玉豆免费节点)_4","type":"vmess","server":"hsj.lbxjc.online","port":80,"cipher":"auto","uuid":"e6543319-0574-42ac-b778-1c4325d626f5","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"chunchuan.kejixiaoqi666.store"}}}
+  - {"name":"美国(yudou66.com+玉豆免费节点)\r_70","type":"trojan","server":"optimal-owl.goat627.mom","port":443,"udp":true,"password":"3763495894587285504","sni":"optimal-owl.goat627.mom","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"荷兰(yudou66.com+玉豆免费节点)\r_17","type":"ss","server":"45.158.171.66","port":8080,"password":"oZIoA69Q8yhcQV8ka3Pa3A","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"美国(yudou66.com+玉豆免费节点)\r_105","type":"trojan","server":"first-leech.treefrog761.one","port":443,"udp":true,"password":"3763495894587285504","sni":"first-leech.treefrog761.one","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"澳洲(yudou66.com 玉豆免费节点)","type":"vmess","server":"43.154.34.74","port":1935,"cipher":"auto","uuid":"5ee5f222-f3b3-4f6a-b3ac-83b7c71a0212","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/5ee5f222-f3b3-4f6a-b3ac-83b7c71a0212-vmess","headers":{"host":"letgo.soranokiseki.v6.army"}}}
+  - {"name":"法国(yudou66.com+玉豆免费节点)\r_4","type":"ss","server":"78.129.140.11","port":443,"password":"pDExaycAIr2Pim7P3oPSIH","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"法国(yudou66.com+玉豆免费节点)\r_5","type":"ss","server":"195.154.200.156","port":12345,"password":"dongtaiwang.com","cipher":"aes-256-gcm"}
+  - {"name":"美国(yudou66.com 玉豆免费节点)_10","type":"vmess","server":"s2.db-link02.top","port":2052,"cipher":"auto","uuid":"f8c1f8ed-14b5-329d-b57d-61407783ee84","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/dabai.in172.67.14.233","headers":{"host":"100-196-88-104.s2.db-link02.top"}}}
+  - {"name":"美国(yudou66.com+玉豆免费节点)\r_174","type":"trojan","server":"sje.5216818.xyz","port":443,"udp":true,"password":"696cfe79","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国(yudou66.com 玉豆免费节点)_12","type":"vmess","server":"45.8.159.241","port":33895,"cipher":"auto","uuid":"398ce84e-4849-4e5f-9b1a-a56fbe233b81","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
+      - 🇸🇬 狮城节点
       - 🇺🇲 美国节点
+      - 🇯🇵 日本节点
       - 🚀 手动切换
       - DIRECT
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 法国_由快嘴科技提供：kkzui.com5
-      - 法国_由快嘴科技提供：kkzui.com127
-      - 保加利亚_由快嘴科技提供：kkzui.com106
-      - 美国_由快嘴科技提供：kkzui.com30
-      - 比利时_由快嘴科技提供：kkzui.com153
-      - 未知_由快嘴科技提供：kkzui.com1
-      - 比利时_由快嘴科技提供：kkzui.com146
-      - 罗马尼亚_由快嘴科技提供：kkzui.com4
-      - 罗马尼亚_由快嘴科技提供：kkzui.com3
-      - 匈牙利_由快嘴科技提供：kkzui.com113
-      - 匈牙利_由快嘴科技提供：kkzui.com6
-      - 匈牙利_由快嘴科技提供：kkzui.com147
-      - 美国_由快嘴科技提供：kkzui.com29
-      - 美国_由快嘴科技提供：kkzui.com31
-      - 俄罗斯_由快嘴科技提供：kkzui.com158
-      - 美国_由快嘴科技提供：kkzui.com88
-      - 保加利亚_由快嘴科技提供：kkzui.com145
-      - 伊朗_由快嘴科技提供：kkzui.com184
-      - 荷兰_由快嘴科技提供：kkzui.com122
-      - 美国_由快嘴科技提供：kkzui.com126
-      - 阿根廷_由快嘴科技提供：kkzui.com179
-      - 俄罗斯_由快嘴科技提供：kkzui.com117
-      - 中国_由快嘴科技提供：kkzui.com185
-      - 美国_由快嘴科技提供：kkzui.com84
-      - 荷兰_由快嘴科技提供：kkzui.com166
+      - 英国(yudou66.com 玉豆免费节点)
+      - 俄罗斯(yudou66.com 玉豆免费节点) 3
+      - 俄罗斯(yudou66.com 玉豆免费节点) 4
+      - 俄罗斯(yudou66.com 玉豆免费节点) 5
+      - 美国(yudou66.com+玉豆免费节点)+7
+      - 美国(yudou66.com 玉豆免费节点) 8
+      - 俄罗斯(yudou66.com 玉豆免费节点) 14
+      - 新加坡(yudou66.com+玉豆免费节点)
+      - 美国(yudou66.com+玉豆免费节点)+11
+      - 美国(yudou66.com 玉豆免费节点) 12
+      - 美国(yudou66.com 玉豆免费节点) 13
+      - 美国(yudou66.com+玉豆免费节点)+16
+      - 日本(yudou66.com+玉豆免费节点)
+      - 美国(yudou66.com+玉豆免费节点)+19
+      - "俄罗斯(yudou66.com+玉豆免费节点)\r_3"
+      - 英国(yudou66.com 玉豆免费节点)_1
+      - 美国(yudou66.com 玉豆免费节点)_4
+      - "美国(yudou66.com+玉豆免费节点)\r_70"
+      - "荷兰(yudou66.com+玉豆免费节点)\r_17"
+      - "美国(yudou66.com+玉豆免费节点)\r_105"
+      - 澳洲(yudou66.com 玉豆免费节点)
+      - "法国(yudou66.com+玉豆免费节点)\r_4"
+      - "法国(yudou66.com+玉豆免费节点)\r_5"
+      - 美国(yudou66.com 玉豆免费节点)_10
+      - "美国(yudou66.com+玉豆免费节点)\r_174"
+      - 美国(yudou66.com 玉豆免费节点)_12
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.gstatic.com/generate_204
     interval: 300
     timeout: 3
     proxies:
-      - 法国_由快嘴科技提供：kkzui.com5
-      - 法国_由快嘴科技提供：kkzui.com127
-      - 保加利亚_由快嘴科技提供：kkzui.com106
-      - 美国_由快嘴科技提供：kkzui.com30
-      - 比利时_由快嘴科技提供：kkzui.com153
-      - 未知_由快嘴科技提供：kkzui.com1
-      - 比利时_由快嘴科技提供：kkzui.com146
-      - 罗马尼亚_由快嘴科技提供：kkzui.com4
-      - 罗马尼亚_由快嘴科技提供：kkzui.com3
-      - 匈牙利_由快嘴科技提供：kkzui.com113
-      - 匈牙利_由快嘴科技提供：kkzui.com6
-      - 匈牙利_由快嘴科技提供：kkzui.com147
-      - 美国_由快嘴科技提供：kkzui.com29
-      - 美国_由快嘴科技提供：kkzui.com31
-      - 俄罗斯_由快嘴科技提供：kkzui.com158
-      - 美国_由快嘴科技提供：kkzui.com88
-      - 保加利亚_由快嘴科技提供：kkzui.com145
-      - 伊朗_由快嘴科技提供：kkzui.com184
-      - 荷兰_由快嘴科技提供：kkzui.com122
-      - 美国_由快嘴科技提供：kkzui.com126
-      - 阿根廷_由快嘴科技提供：kkzui.com179
-      - 俄罗斯_由快嘴科技提供：kkzui.com117
-      - 中国_由快嘴科技提供：kkzui.com185
-      - 美国_由快嘴科技提供：kkzui.com84
-      - 荷兰_由快嘴科技提供：kkzui.com166
+      - 英国(yudou66.com 玉豆免费节点)
+      - 俄罗斯(yudou66.com 玉豆免费节点) 3
+      - 俄罗斯(yudou66.com 玉豆免费节点) 4
+      - 俄罗斯(yudou66.com 玉豆免费节点) 5
+      - 美国(yudou66.com+玉豆免费节点)+7
+      - 美国(yudou66.com 玉豆免费节点) 8
+      - 俄罗斯(yudou66.com 玉豆免费节点) 14
+      - 新加坡(yudou66.com+玉豆免费节点)
+      - 美国(yudou66.com+玉豆免费节点)+11
+      - 美国(yudou66.com 玉豆免费节点) 12
+      - 美国(yudou66.com 玉豆免费节点) 13
+      - 美国(yudou66.com+玉豆免费节点)+16
+      - 日本(yudou66.com+玉豆免费节点)
+      - 美国(yudou66.com+玉豆免费节点)+19
+      - "俄罗斯(yudou66.com+玉豆免费节点)\r_3"
+      - 英国(yudou66.com 玉豆免费节点)_1
+      - 美国(yudou66.com 玉豆免费节点)_4
+      - "美国(yudou66.com+玉豆免费节点)\r_70"
+      - "荷兰(yudou66.com+玉豆免费节点)\r_17"
+      - "美国(yudou66.com+玉豆免费节点)\r_105"
+      - 澳洲(yudou66.com 玉豆免费节点)
+      - "法国(yudou66.com+玉豆免费节点)\r_4"
+      - "法国(yudou66.com+玉豆免费节点)\r_5"
+      - 美国(yudou66.com 玉豆免费节点)_10
+      - "美国(yudou66.com+玉豆免费节点)\r_174"
+      - 美国(yudou66.com 玉豆免费节点)_12
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -156,43 +161,65 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 法国_由快嘴科技提供：kkzui.com5
-      - 法国_由快嘴科技提供：kkzui.com127
-      - 保加利亚_由快嘴科技提供：kkzui.com106
-      - 美国_由快嘴科技提供：kkzui.com30
-      - 比利时_由快嘴科技提供：kkzui.com153
-      - 未知_由快嘴科技提供：kkzui.com1
-      - 比利时_由快嘴科技提供：kkzui.com146
-      - 罗马尼亚_由快嘴科技提供：kkzui.com4
-      - 罗马尼亚_由快嘴科技提供：kkzui.com3
-      - 匈牙利_由快嘴科技提供：kkzui.com113
-      - 匈牙利_由快嘴科技提供：kkzui.com6
-      - 匈牙利_由快嘴科技提供：kkzui.com147
-      - 美国_由快嘴科技提供：kkzui.com29
-      - 美国_由快嘴科技提供：kkzui.com31
-      - 俄罗斯_由快嘴科技提供：kkzui.com158
-      - 美国_由快嘴科技提供：kkzui.com88
-      - 保加利亚_由快嘴科技提供：kkzui.com145
-      - 伊朗_由快嘴科技提供：kkzui.com184
-      - 荷兰_由快嘴科技提供：kkzui.com122
-      - 美国_由快嘴科技提供：kkzui.com126
-      - 阿根廷_由快嘴科技提供：kkzui.com179
-      - 俄罗斯_由快嘴科技提供：kkzui.com117
-      - 中国_由快嘴科技提供：kkzui.com185
-      - 美国_由快嘴科技提供：kkzui.com84
-      - 荷兰_由快嘴科技提供：kkzui.com166
+      - 英国(yudou66.com 玉豆免费节点)
+      - 俄罗斯(yudou66.com 玉豆免费节点) 3
+      - 俄罗斯(yudou66.com 玉豆免费节点) 4
+      - 俄罗斯(yudou66.com 玉豆免费节点) 5
+      - 美国(yudou66.com+玉豆免费节点)+7
+      - 美国(yudou66.com 玉豆免费节点) 8
+      - 俄罗斯(yudou66.com 玉豆免费节点) 14
+      - 新加坡(yudou66.com+玉豆免费节点)
+      - 美国(yudou66.com+玉豆免费节点)+11
+      - 美国(yudou66.com 玉豆免费节点) 12
+      - 美国(yudou66.com 玉豆免费节点) 13
+      - 美国(yudou66.com+玉豆免费节点)+16
+      - 日本(yudou66.com+玉豆免费节点)
+      - 美国(yudou66.com+玉豆免费节点)+19
+      - "俄罗斯(yudou66.com+玉豆免费节点)\r_3"
+      - 英国(yudou66.com 玉豆免费节点)_1
+      - 美国(yudou66.com 玉豆免费节点)_4
+      - "美国(yudou66.com+玉豆免费节点)\r_70"
+      - "荷兰(yudou66.com+玉豆免费节点)\r_17"
+      - "美国(yudou66.com+玉豆免费节点)\r_105"
+      - 澳洲(yudou66.com 玉豆免费节点)
+      - "法国(yudou66.com+玉豆免费节点)\r_4"
+      - "法国(yudou66.com+玉豆免费节点)\r_5"
+      - 美国(yudou66.com 玉豆免费节点)_10
+      - "美国(yudou66.com+玉豆免费节点)\r_174"
+      - 美国(yudou66.com 玉豆免费节点)_12
+  - name: 🇯🇵 日本节点
+    type: url-test
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    timeout: 3
+    proxies:
+      - 日本(yudou66.com+玉豆免费节点)
+  - name: 🇸🇬 狮城节点
+    type: url-test
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    timeout: 3
+    proxies:
+      - 新加坡(yudou66.com+玉豆免费节点)
   - name: 🇺🇲 美国节点
     type: url-test
     url: https://www.gstatic.com/generate_204
     interval: 300
     timeout: 3
     proxies:
-      - 美国_由快嘴科技提供：kkzui.com30
-      - 美国_由快嘴科技提供：kkzui.com29
-      - 美国_由快嘴科技提供：kkzui.com31
-      - 美国_由快嘴科技提供：kkzui.com88
-      - 美国_由快嘴科技提供：kkzui.com126
-      - 美国_由快嘴科技提供：kkzui.com84
+      - 美国(yudou66.com+玉豆免费节点)+7
+      - 美国(yudou66.com 玉豆免费节点) 8
+      - 美国(yudou66.com+玉豆免费节点)+11
+      - 美国(yudou66.com 玉豆免费节点) 12
+      - 美国(yudou66.com 玉豆免费节点) 13
+      - 美国(yudou66.com+玉豆免费节点)+16
+      - 美国(yudou66.com+玉豆免费节点)+19
+      - 美国(yudou66.com 玉豆免费节点)_4
+      - "美国(yudou66.com+玉豆免费节点)\r_70"
+      - "美国(yudou66.com+玉豆免费节点)\r_105"
+      - 美国(yudou66.com 玉豆免费节点)_10
+      - "美国(yudou66.com+玉豆免费节点)\r_174"
+      - 美国(yudou66.com 玉豆免费节点)_12
 
 rules:
 # 本地/局域网地址
