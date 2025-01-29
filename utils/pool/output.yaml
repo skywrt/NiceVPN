@@ -165,7 +165,7 @@ proxies:
   udp: true
   password: Aimer
   sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
+  skip-cert-verify: true
   network: tcp
 - name: "\U0001F1F7\U0001F1FA RU 22 TJN"
   type: trojan
@@ -198,7 +198,7 @@ proxies:
   udp: true
   password: Aimer
   sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
+  skip-cert-verify: true
   network: tcp
 - name: "\U0001F1EE\U0001F1F9 IT 26 TJN"
   type: trojan
@@ -216,7 +216,7 @@ proxies:
   udp: true
   password: telegram-id-directvpn
   sni: trojan.burgerip.co.uk
-  skip-cert-verify: false
+  skip-cert-verify: true
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 28 TJN"
   type: trojan
@@ -246,6 +246,8 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: ws
+  ws-opts:
+    path: /
 - name: "\U0001F1E9\U0001F1EA DE 31 TJN"
   type: trojan
   server: 51.116.121.75
@@ -271,7 +273,7 @@ proxies:
   udp: true
   password: Aimer
   sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
+  skip-cert-verify: true
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 34 TJN"
   type: trojan
@@ -280,7 +282,7 @@ proxies:
   udp: true
   password: Aimer
   sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
+  skip-cert-verify: true
   network: tcp
 - name: "\U0001F1FA\U0001F1F3 UN 35 TJN"
   type: trojan
@@ -289,7 +291,7 @@ proxies:
   udp: true
   password: Aimer
   sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
+  skip-cert-verify: true
   network: tcp
 - name: "\U0001F1EE\U0001F1F7 IR 36 VMS"
   type: vmess
@@ -350,7 +352,7 @@ proxies:
   udp: true
   password: Aimer
   sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
+  skip-cert-verify: true
   network: tcp
 - name: "\U0001F1F8\U0001F1EC SG 43 TJN"
   type: trojan
@@ -359,7 +361,7 @@ proxies:
   udp: true
   password: Aimer
   sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
+  skip-cert-verify: true
   network: tcp
 - name: "\U0001F1ED\U0001F1FA HU 44 TJN"
   type: trojan
@@ -405,6 +407,8 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: ws
+  ws-opts:
+    path: /
 - name: "\U0001F1F0\U0001F1F7 KR 49 TJN"
   type: trojan
   server: 211.227.87.99
@@ -426,8 +430,6 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      host: 183.236.51.60
 - name: "\U0001F1F3\U0001F1F1 NL 51 TJN"
   type: trojan
   server: 45.134.21.8
@@ -480,7 +482,7 @@ proxies:
   udp: true
   password: Aimer
   sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
+  skip-cert-verify: true
   network: tcp
 - name: "\U0001F1EE\U0001F1F7 IR 57 TJN"
   type: trojan
@@ -498,7 +500,7 @@ proxies:
   udp: true
   password: Aimer
   sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
+  skip-cert-verify: true
   network: tcp
 - name: "\U0001F1E9\U0001F1EA DE 59 TJN"
   type: trojan
@@ -579,7 +581,7 @@ proxies:
   udp: true
   password: Aimer
   sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
+  skip-cert-verify: true
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 68 TJN"
   type: trojan
@@ -660,7 +662,7 @@ proxies:
   udp: true
   password: Aimer
   sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
+  skip-cert-verify: true
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 77 TJN"
   type: trojan
@@ -717,7 +719,7 @@ proxies:
   udp: true
   password: Aimer
   sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
+  skip-cert-verify: true
   network: tcp
 - name: "\U0001F1F0\U0001F1F7 KR 84 TJN"
   type: trojan
@@ -786,7 +788,7 @@ proxies:
   udp: true
   password: Aimer
   sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
+  skip-cert-verify: true
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 92 TJN"
   type: trojan
@@ -840,7 +842,7 @@ proxies:
   udp: true
   password: Aimer
   sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
+  skip-cert-verify: true
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 98 TJN"
   type: trojan
@@ -864,7 +866,7 @@ proxies:
   udp: true
   password: Aimer
   sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
+  skip-cert-verify: true
   network: tcp
 - name: "\U0001F1F8\U0001F1EC SG 101 TJN"
   type: trojan
@@ -900,7 +902,7 @@ proxies:
   udp: true
   password: Aimer
   sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
+  skip-cert-verify: true
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 105 TJN"
   type: trojan
@@ -963,7 +965,7 @@ proxies:
   udp: true
   password: Aimer
   sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
+  skip-cert-verify: true
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 112 TJN"
   type: trojan
@@ -990,7 +992,7 @@ proxies:
   udp: true
   password: Aimer
   sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
+  skip-cert-verify: true
   network: tcp
 - name: "\U0001F1F8\U0001F1EC SG 115 TJN"
   type: trojan
@@ -1026,7 +1028,7 @@ proxies:
   udp: true
   password: Aimer
   sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
+  skip-cert-verify: true
   network: tcp
 - name: "\U0001F1FA\U0001F1F3 UN 119 SSS"
   type: ss
@@ -1041,7 +1043,7 @@ proxies:
   udp: true
   password: Aimer
   sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
+  skip-cert-verify: true
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 121 TJN"
   type: trojan
@@ -1061,7 +1063,7 @@ proxies:
   sni: ngepx.ambercc.filegear-sg.me
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 123 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 123 TJN"
   type: trojan
   server: damien.ns.cloudflare.com
   port: 443
@@ -1089,6 +1091,8 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: ws
+  ws-opts:
+    path: /
 - name: "\U0001F1FA\U0001F1F8 US 126 TJN"
   type: trojan
   server: 199.34.228.190
@@ -1186,7 +1190,7 @@ proxies:
   udp: true
   password: Aimer
   sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
+  skip-cert-verify: true
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 137 TJN"
   type: trojan
@@ -1195,7 +1199,7 @@ proxies:
   udp: true
   password: Aimer
   sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
+  skip-cert-verify: true
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 138 TJN"
   type: trojan
@@ -1204,7 +1208,7 @@ proxies:
   udp: true
   password: Aimer
   sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
+  skip-cert-verify: true
   network: tcp
 - name: "\U0001F1F7\U0001F1FA RU 139 TJN"
   type: trojan
@@ -1231,9 +1235,9 @@ proxies:
   udp: true
   password: Aimer
   sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
+  skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 142 TJN"
+- name: "\U0001F1FA\U0001F1F3 UN 142 TJN"
   type: trojan
   server: pranab.ns.cloudflare.com
   port: 443
@@ -1258,7 +1262,7 @@ proxies:
   udp: true
   password: Aimer
   sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
+  skip-cert-verify: true
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 145 TJN"
   type: trojan
@@ -1348,6 +1352,8 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: ws
+  ws-opts:
+    path: /
 - name: "\U0001F1FA\U0001F1F8 US 155 TJN"
   type: trojan
   server: 108.165.152.202
@@ -1518,7 +1524,7 @@ proxies:
   sni: ngepx.ambercc.filegear-sg.me
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 175 TJN"
+- name: "\U0001F1FA\U0001F1F3 UN 175 TJN"
   type: trojan
   server: arvind.ns.cloudflare.com
   port: 443
@@ -1617,7 +1623,7 @@ proxies:
   sni: ngepx.ambercc.filegear-sg.me
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 186 TJN"
+- name: "\U0001F1FA\U0001F1F3 UN 186 TJN"
   type: trojan
   server: sage.ns.cloudflare.com
   port: 443
@@ -1689,61 +1695,7 @@ proxies:
   sni: ngepx.ambercc.filegear-sg.me
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F8\U0001F1EC SG 194 TJN"
-  type: trojan
-  server: 27.50.49.154
-  port: 2083
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1F7\U0001F1FA RU 195 TJN"
-  type: trojan
-  server: 46.254.93.52
-  port: 8443
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1F8\U0001F1EC SG 196 TJN"
-  type: trojan
-  server: 27.50.48.154
-  port: 8443
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1EE\U0001F1F9 IT 197 TJN"
-  type: trojan
-  server: 91.193.5.121
-  port: 8443
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 198 TJN"
-  type: trojan
-  server: 167.68.4.10
-  port: 2096
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 199 TJN"
-  type: trojan
-  server: 199.34.228.164
-  port: 2087
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 200 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 194 VMS"
   type: vmess
   server: cm1.awslcn.info
   port: 25230
@@ -1755,54 +1707,7 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      host: cm1.awslcn.info
-- name: "\U0001F1E9\U0001F1EA DE 201 TJN"
-  type: trojan
-  server: 51.116.121.75
-  port: 443
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1ED\U0001F1FA HU 202 TJN"
-  type: trojan
-  server: 109.61.16.83
-  port: 443
-  udp: true
-  password: '3763495982449565696'
-  sni: sensible-crow.goat627.mom
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1ED\U0001F1F7 HR 203 TJN"
-  type: trojan
-  server: right-goldfish.goat627.mom
-  port: 443
-  udp: true
-  password: '3763495894587285504'
-  sni: right-goldfish.goat627.mom
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1F7\U0001F1F4 RO 204 TJN"
-  type: trojan
-  server: pet-bulldog.goat627.mom
-  port: 443
-  udp: true
-  password: '3763495894587285504'
-  sni: pet-bulldog.goat627.mom
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1ED\U0001F1F7 HR 205 TJN"
-  type: trojan
-  server: 46.229.253.79
-  port: 443
-  udp: true
-  password: '3763495894587285504'
-  sni: right-goldfish.goat627.mom
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1ED\U0001F1FA HU 206 TJN"
+- name: "\U0001F1ED\U0001F1FA HU 195 TJN"
   type: trojan
   server: sensible-crow.goat627.mom
   port: 443
@@ -1811,31 +1716,7 @@ proxies:
   sni: sensible-crow.goat627.mom
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F7\U0001F1F4 RO 207 TJN"
-  type: trojan
-  server: 89.39.70.207
-  port: 443
-  udp: true
-  password: '3763495894587285504'
-  sni: pet-bulldog.goat627.mom
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FF\U0001F1E6 ZA 208 SSS"
-  type: ss
-  server: 129.232.134.112
-  port: 990
-  password: f8f7aCzcPKbsF8p3
-  cipher: chacha20-ietf-poly1305
-- name: "\U0001F1ED\U0001F1FA HU 209 TJN"
-  type: trojan
-  server: sensible-crow.goat627.mom
-  port: 443
-  udp: true
-  password: '3763495982449565696'
-  sni: sensible-crow.goat627.mom
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 210 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 196 VMS"
   type: vmess
   server: hsj.lbxjc.online
   port: 80
@@ -1847,9 +1728,7 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      host: chunchuan.kejixiaoqi666.store
-- name: "\U0001F1FA\U0001F1F3 UN 211 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 197 VMS"
   type: vmess
   server: hsj.lbxjc.online
   port: 80
@@ -1861,27 +1740,7 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      host: chunchuan.kejixiaoqi666.store
-- name: "\U0001F1F0\U0001F1F7 KR 212 TJN"
-  type: trojan
-  server: 211.227.87.99
-  port: 50000
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1F3\U0001F1F1 NL 213 TJN"
-  type: trojan
-  server: 45.134.21.8
-  port: 2053
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 214 VMS"
+- name: "\U0001F1E8\U0001F1F3 CN 198 VMS"
   type: vmess
   server: cm1.awslcn.info
   port: 25230
@@ -1893,510 +1752,7 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      host: cm1.awslcn.info
-- name: "\U0001F1EC\U0001F1E7 GB 215 TJN"
-  type: trojan
-  server: 194.164.32.27
-  port: 2053
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1E9\U0001F1EA DE 216 TJN"
-  type: trojan
-  server: 3.73.124.222
-  port: 2083
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1F7\U0001F1FA RU 217 TJN"
-  type: trojan
-  server: 77.238.236.134
-  port: 8443
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1F0\U0001F1F7 KR 218 TJN"
-  type: trojan
-  server: 183.102.181.112
-  port: 50000
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1EE\U0001F1F7 IR 219 TJN"
-  type: trojan
-  server: 91.107.253.14
-  port: 8443
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1E9\U0001F1EA DE 220 TJN"
-  type: trojan
-  server: 3.122.86.99
-  port: 443
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 221 TJN"
-  type: trojan
-  server: 23.169.184.125
-  port: 25526
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1E9\U0001F1EA DE 222 TJN"
-  type: trojan
-  server: 3.64.205.189
-  port: 443
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1F0\U0001F1F7 KR 223 TJN"
-  type: trojan
-  server: 121.162.29.88
-  port: 11443
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1E9\U0001F1EA DE 224 TJN"
-  type: trojan
-  server: 18.199.141.141
-  port: 8443
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1E9\U0001F1EA DE 225 TJN"
-  type: trojan
-  server: 3.75.149.151
-  port: 443
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 226 TJN"
-  type: trojan
-  server: 154.17.227.138
-  port: 587
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1F0\U0001F1F7 KR 227 TJN"
-  type: trojan
-  server: 118.45.113.48
-  port: 16064
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 228 TJN"
-  type: trojan
-  server: 38.59.240.9
-  port: 587
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 229 TJN"
-  type: trojan
-  server: 192.0.54.7
-  port: 443
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1FF\U0001F1E6 ZA 230 TJN"
-  type: trojan
-  server: 206.238.236.137
-  port: 8443
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1E9\U0001F1EA DE 231 TJN"
-  type: trojan
-  server: 18.159.111.125
-  port: 2053
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 232 TJN"
-  type: trojan
-  server: 38.59.242.169
-  port: 27738
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 233 TJN"
-  type: trojan
-  server: 199.34.228.187
-  port: 443
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 234 TJN"
-  type: trojan
-  server: 135.84.76.152
-  port: 2087
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1F0\U0001F1F7 KR 235 TJN"
-  type: trojan
-  server: 220.81.10.138
-  port: 12243
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 236 TJN"
-  type: trojan
-  server: 154.26.238.70
-  port: 8443
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 237 TJN"
-  type: trojan
-  server: 51.44.86.78
-  port: 443
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1F0\U0001F1F7 KR 238 TJN"
-  type: trojan
-  server: 152.70.245.66
-  port: 12693
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 239 TJN"
-  type: trojan
-  server: 63.141.128.66
-  port: 2087
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1F0\U0001F1F7 KR 240 TJN"
-  type: trojan
-  server: 119.194.117.229
-  port: 50000
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 241 TJN"
-  type: trojan
-  server: 92.53.190.161
-  port: 2087
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1E6\U0001F1F2 AM 242 TJN"
-  type: trojan
-  server: 188.164.159.69
-  port: 2083
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1F7\U0001F1FA RU 243 TJN"
-  type: trojan
-  server: 5.182.84.22
-  port: 2096
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 244 TJN"
-  type: trojan
-  server: 108.165.152.1
-  port: 2087
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1E6\U0001F1F2 AM 245 TJN"
-  type: trojan
-  server: 188.164.159.138
-  port: 2083
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 246 TJN"
-  type: trojan
-  server: 209.94.90.64
-  port: 443
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 247 TJN"
-  type: trojan
-  server: 103.116.7.189
-  port: 443
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1F0\U0001F1F7 KR 248 TJN"
-  type: trojan
-  server: 119.196.155.50
-  port: 12159
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1F7\U0001F1FA RU 249 TJN"
-  type: trojan
-  server: 176.124.223.50
-  port: 8443
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 250 TJN"
-  type: trojan
-  server: 173.245.59.202
-  port: 2083
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 251 TJN"
-  type: trojan
-  server: 154.219.5.249
-  port: 8443
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1F8\U0001F1EC SG 252 TJN"
-  type: trojan
-  server: 27.50.49.166
-  port: 8443
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 253 TJN"
-  type: trojan
-  server: 108.165.152.239
-  port: 8443
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1F7\U0001F1FA RU 254 TJN"
-  type: trojan
-  server: 45.67.214.140
-  port: 8443
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 255 TJN"
-  type: trojan
-  server: 108.165.152.58
-  port: 2087
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1E6\U0001F1F2 AM 256 TJN"
-  type: trojan
-  server: 188.164.159.214
-  port: 2083
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1EC\U0001F1E7 GB 257 TJN"
-  type: trojan
-  server: 213.109.205.55
-  port: 2096
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1E6\U0001F1F2 AM 258 TJN"
-  type: trojan
-  server: 188.164.159.174
-  port: 2053
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1E6\U0001F1F2 AM 259 TJN"
-  type: trojan
-  server: 188.164.159.185
-  port: 8443
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 260 TJN"
-  type: trojan
-  server: 67.226.221.102
-  port: 80
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 261 TJN"
-  type: trojan
-  server: 135.84.64.36
-  port: 2083
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1E6\U0001F1F2 AM 262 TJN"
-  type: trojan
-  server: 188.164.159.248
-  port: 2053
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1F8\U0001F1EC SG 263 TJN"
-  type: trojan
-  server: 27.50.49.188
-  port: 2096
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1F7\U0001F1FA RU 264 TJN"
-  type: trojan
-  server: 92.243.74.2
-  port: 8443
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1F7\U0001F1FA RU 265 TJN"
-  type: trojan
-  server: 46.254.92.201
-  port: 2053
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 266 SSS"
-  type: ss
-  server: arxfw2b78fi2q9hzylhn.freesocks.work
-  port: 443
-  password: Nk9asglDzHzjktVzTkvhaA
-  cipher: chacha20-ietf-poly1305
-- name: "\U0001F1FA\U0001F1F8 US 267 TJN"
-  type: trojan
-  server: 108.165.152.130
-  port: 2083
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 268 TJN"
-  type: trojan
-  server: 154.219.5.255
-  port: 2087
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 269 TJN"
-  type: trojan
-  server: damien.ns.cloudflare.com
-  port: 443
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 270 TJN"
-  type: trojan
-  server: 216.198.53.212
-  port: 8443
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 271 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 199 VMS"
   type: vmess
   server: s1.cn-db.top
   port: 2052
@@ -2407,208 +1763,8 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /dabai.in172.67.88.211
-    headers:
-      host: 100-50-244-43.s1.cn-db.top
-- name: "\U0001F1FA\U0001F1F8 US 272 TJN"
-  type: trojan
-  server: 199.34.228.190
-  port: 2083
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1F8\U0001F1E8 SC 273 TJN"
-  type: trojan
-  server: 154.197.64.104
-  port: 8443
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 274 TJN"
-  type: trojan
-  server: 45.153.7.216
-  port: 2053
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1FA\U0001F1E6 UA 275 TJN"
-  type: trojan
-  server: 45.67.215.250
-  port: 2096
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1F8\U0001F1EC SG 276 TJN"
-  type: trojan
-  server: 27.50.48.61
-  port: 2083
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1F8\U0001F1E8 SC 277 TJN"
-  type: trojan
-  server: 154.197.64.233
-  port: 443
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1F8\U0001F1EC SG 278 TJN"
-  type: trojan
-  server: 27.50.49.37
-  port: 2053
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 279 TJN"
-  type: trojan
-  server: 162.159.44.230
-  port: 2053
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1E6\U0001F1F2 AM 280 TJN"
-  type: trojan
-  server: 188.164.159.25
-  port: 2053
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 281 TJN"
-  type: trojan
-  server: 162.159.44.233
-  port: 8443
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1F7\U0001F1FA RU 282 TJN"
-  type: trojan
-  server: 176.124.223.40
-  port: 2053
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 283 TJN"
-  type: trojan
-  server: 135.84.74.27
-  port: 8443
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 284 TJN"
-  type: trojan
-  server: pranab.ns.cloudflare.com
-  port: 443
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 285 TJN"
-  type: trojan
-  server: 108.165.152.143
-  port: 2087
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 286 TJN"
-  type: trojan
-  server: duke.ns.cloudflare.com
-  port: 443
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1F8\U0001F1EC SG 287 TJN"
-  type: trojan
-  server: 43.156.253.94
-  port: 443
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1F8\U0001F1E8 SC 288 TJN"
-  type: trojan
-  server: 154.197.64.206
-  port: 443
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 289 TJN"
-  type: trojan
-  server: 108.165.152.104
-  port: 2053
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 290 TJN"
-  type: trojan
-  server: 103.116.7.103
-  port: 2083
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 291 TJN"
-  type: trojan
-  server: 104.19.4.237
-  port: 8443
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 292 TJN"
-  type: trojan
-  server: 141.11.203.191
-  port: 8443
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 293 TJN"
-  type: trojan
-  server: 154.219.5.55
-  port: 443
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 294 VMS"
+    path: /
+- name: "\U0001F1FA\U0001F1F3 UN 200 VMS"
   type: vmess
   server: s2.cn-db.top
   port: 2082
@@ -2619,28 +1775,8 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /dabai.in172.64.53.101
-    headers:
-      host: 100-119-106-139.s2.cn-db.top
-- name: "\U0001F1FA\U0001F1F8 US 295 TJN"
-  type: trojan
-  server: 108.165.152.202
-  port: 2083
-  udp: true
-  password: Aimer
-  sni: ngepx.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1ED\U0001F1FA HU 296 TJN"
-  type: trojan
-  server: sensible-crow.goat627.mom
-  port: 443
-  udp: true
-  password: '3763495894587285504'
-  sni: sensible-crow.goat627.mom
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 297 VMS"
+    path: /
+- name: "\U0001F1FA\U0001F1F3 UN 201 VMS"
   type: vmess
   server: hsj.lbxjc.online
   port: 80
@@ -2650,6 +1786,8 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: automatic
   type: url-test
@@ -2776,7 +1914,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 120 TJN"
   - "\U0001F1FA\U0001F1F8 US 121 TJN"
   - "\U0001F1FA\U0001F1F8 US 122 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 123 TJN"
+  - "\U0001F1FA\U0001F1F8 US 123 TJN"
   - "\U0001F1FA\U0001F1F8 US 124 TJN"
   - "\U0001F1FA\U0001F1F3 UN 125 VMS"
   - "\U0001F1FA\U0001F1F8 US 126 TJN"
@@ -2795,7 +1933,7 @@ proxy-groups:
   - "\U0001F1F7\U0001F1FA RU 139 TJN"
   - "\U0001F1FA\U0001F1F8 US 140 TJN"
   - "\U0001F1F8\U0001F1E8 SC 141 TJN"
-  - "\U0001F1FA\U0001F1F8 US 142 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 142 TJN"
   - "\U0001F1FA\U0001F1F8 US 143 TJN"
   - "\U0001F1F8\U0001F1EC SG 144 TJN"
   - "\U0001F1FA\U0001F1F8 US 145 TJN"
@@ -2828,7 +1966,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 172 TJN"
   - "\U0001F1FA\U0001F1F8 US 173 TJN"
   - "\U0001F1F7\U0001F1FA RU 174 TJN"
-  - "\U0001F1FA\U0001F1F8 US 175 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 175 TJN"
   - "\U0001F1FA\U0001F1F8 US 176 TJN"
   - "\U0001F1FA\U0001F1F3 UN 177 TJN"
   - "\U0001F1E6\U0001F1F2 AM 178 TJN"
@@ -2839,7 +1977,7 @@ proxy-groups:
   - "\U0001F1EC\U0001F1E7 GB 183 TJN"
   - "\U0001F1F8\U0001F1EA SE 184 TJN"
   - "\U0001F1FA\U0001F1F8 US 185 TJN"
-  - "\U0001F1FA\U0001F1F8 US 186 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 186 TJN"
   - "\U0001F1FA\U0001F1F8 US 187 TJN"
   - "\U0001F1FA\U0001F1F8 US 188 TJN"
   - "\U0001F1FA\U0001F1F8 US 189 TJN"
@@ -2847,110 +1985,14 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 191 TJN"
   - "\U0001F1FA\U0001F1F8 US 192 TJN"
   - "\U0001F1ED\U0001F1F0 HK 193 TJN"
-  - "\U0001F1F8\U0001F1EC SG 194 TJN"
-  - "\U0001F1F7\U0001F1FA RU 195 TJN"
-  - "\U0001F1F8\U0001F1EC SG 196 TJN"
-  - "\U0001F1EE\U0001F1F9 IT 197 TJN"
-  - "\U0001F1FA\U0001F1F8 US 198 TJN"
-  - "\U0001F1FA\U0001F1F8 US 199 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 200 VMS"
-  - "\U0001F1E9\U0001F1EA DE 201 TJN"
-  - "\U0001F1ED\U0001F1FA HU 202 TJN"
-  - "\U0001F1ED\U0001F1F7 HR 203 TJN"
-  - "\U0001F1F7\U0001F1F4 RO 204 TJN"
-  - "\U0001F1ED\U0001F1F7 HR 205 TJN"
-  - "\U0001F1ED\U0001F1FA HU 206 TJN"
-  - "\U0001F1F7\U0001F1F4 RO 207 TJN"
-  - "\U0001F1FF\U0001F1E6 ZA 208 SSS"
-  - "\U0001F1ED\U0001F1FA HU 209 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 210 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 211 VMS"
-  - "\U0001F1F0\U0001F1F7 KR 212 TJN"
-  - "\U0001F1F3\U0001F1F1 NL 213 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 214 VMS"
-  - "\U0001F1EC\U0001F1E7 GB 215 TJN"
-  - "\U0001F1E9\U0001F1EA DE 216 TJN"
-  - "\U0001F1F7\U0001F1FA RU 217 TJN"
-  - "\U0001F1F0\U0001F1F7 KR 218 TJN"
-  - "\U0001F1EE\U0001F1F7 IR 219 TJN"
-  - "\U0001F1E9\U0001F1EA DE 220 TJN"
-  - "\U0001F1FA\U0001F1F8 US 221 TJN"
-  - "\U0001F1E9\U0001F1EA DE 222 TJN"
-  - "\U0001F1F0\U0001F1F7 KR 223 TJN"
-  - "\U0001F1E9\U0001F1EA DE 224 TJN"
-  - "\U0001F1E9\U0001F1EA DE 225 TJN"
-  - "\U0001F1FA\U0001F1F8 US 226 TJN"
-  - "\U0001F1F0\U0001F1F7 KR 227 TJN"
-  - "\U0001F1FA\U0001F1F8 US 228 TJN"
-  - "\U0001F1FA\U0001F1F8 US 229 TJN"
-  - "\U0001F1FF\U0001F1E6 ZA 230 TJN"
-  - "\U0001F1E9\U0001F1EA DE 231 TJN"
-  - "\U0001F1FA\U0001F1F8 US 232 TJN"
-  - "\U0001F1FA\U0001F1F8 US 233 TJN"
-  - "\U0001F1FA\U0001F1F8 US 234 TJN"
-  - "\U0001F1F0\U0001F1F7 KR 235 TJN"
-  - "\U0001F1FA\U0001F1F8 US 236 TJN"
-  - "\U0001F1FA\U0001F1F8 US 237 TJN"
-  - "\U0001F1F0\U0001F1F7 KR 238 TJN"
-  - "\U0001F1FA\U0001F1F8 US 239 TJN"
-  - "\U0001F1F0\U0001F1F7 KR 240 TJN"
-  - "\U0001F1FA\U0001F1F8 US 241 TJN"
-  - "\U0001F1E6\U0001F1F2 AM 242 TJN"
-  - "\U0001F1F7\U0001F1FA RU 243 TJN"
-  - "\U0001F1FA\U0001F1F8 US 244 TJN"
-  - "\U0001F1E6\U0001F1F2 AM 245 TJN"
-  - "\U0001F1FA\U0001F1F8 US 246 TJN"
-  - "\U0001F1EF\U0001F1F5 JP 247 TJN"
-  - "\U0001F1F0\U0001F1F7 KR 248 TJN"
-  - "\U0001F1F7\U0001F1FA RU 249 TJN"
-  - "\U0001F1FA\U0001F1F8 US 250 TJN"
-  - "\U0001F1FA\U0001F1F8 US 251 TJN"
-  - "\U0001F1F8\U0001F1EC SG 252 TJN"
-  - "\U0001F1FA\U0001F1F8 US 253 TJN"
-  - "\U0001F1F7\U0001F1FA RU 254 TJN"
-  - "\U0001F1FA\U0001F1F8 US 255 TJN"
-  - "\U0001F1E6\U0001F1F2 AM 256 TJN"
-  - "\U0001F1EC\U0001F1E7 GB 257 TJN"
-  - "\U0001F1E6\U0001F1F2 AM 258 TJN"
-  - "\U0001F1E6\U0001F1F2 AM 259 TJN"
-  - "\U0001F1FA\U0001F1F8 US 260 TJN"
-  - "\U0001F1FA\U0001F1F8 US 261 TJN"
-  - "\U0001F1E6\U0001F1F2 AM 262 TJN"
-  - "\U0001F1F8\U0001F1EC SG 263 TJN"
-  - "\U0001F1F7\U0001F1FA RU 264 TJN"
-  - "\U0001F1F7\U0001F1FA RU 265 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 266 SSS"
-  - "\U0001F1FA\U0001F1F8 US 267 TJN"
-  - "\U0001F1FA\U0001F1F8 US 268 TJN"
-  - "\U0001F1FA\U0001F1F8 US 269 TJN"
-  - "\U0001F1FA\U0001F1F8 US 270 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 271 VMS"
-  - "\U0001F1FA\U0001F1F8 US 272 TJN"
-  - "\U0001F1F8\U0001F1E8 SC 273 TJN"
-  - "\U0001F1FA\U0001F1F8 US 274 TJN"
-  - "\U0001F1FA\U0001F1E6 UA 275 TJN"
-  - "\U0001F1F8\U0001F1EC SG 276 TJN"
-  - "\U0001F1F8\U0001F1E8 SC 277 TJN"
-  - "\U0001F1F8\U0001F1EC SG 278 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 279 TJN"
-  - "\U0001F1E6\U0001F1F2 AM 280 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 281 TJN"
-  - "\U0001F1F7\U0001F1FA RU 282 TJN"
-  - "\U0001F1FA\U0001F1F8 US 283 TJN"
-  - "\U0001F1FA\U0001F1F8 US 284 TJN"
-  - "\U0001F1FA\U0001F1F8 US 285 TJN"
-  - "\U0001F1FA\U0001F1F8 US 286 TJN"
-  - "\U0001F1F8\U0001F1EC SG 287 TJN"
-  - "\U0001F1F8\U0001F1E8 SC 288 TJN"
-  - "\U0001F1FA\U0001F1F8 US 289 TJN"
-  - "\U0001F1EF\U0001F1F5 JP 290 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 291 TJN"
-  - "\U0001F1FA\U0001F1F8 US 292 TJN"
-  - "\U0001F1FA\U0001F1F8 US 293 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 294 VMS"
-  - "\U0001F1FA\U0001F1F8 US 295 TJN"
-  - "\U0001F1ED\U0001F1FA HU 296 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 297 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 194 VMS"
+  - "\U0001F1ED\U0001F1FA HU 195 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 196 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 197 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 198 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 199 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 200 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 201 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -3079,7 +2121,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 120 TJN"
   - "\U0001F1FA\U0001F1F8 US 121 TJN"
   - "\U0001F1FA\U0001F1F8 US 122 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 123 TJN"
+  - "\U0001F1FA\U0001F1F8 US 123 TJN"
   - "\U0001F1FA\U0001F1F8 US 124 TJN"
   - "\U0001F1FA\U0001F1F3 UN 125 VMS"
   - "\U0001F1FA\U0001F1F8 US 126 TJN"
@@ -3098,7 +2140,7 @@ proxy-groups:
   - "\U0001F1F7\U0001F1FA RU 139 TJN"
   - "\U0001F1FA\U0001F1F8 US 140 TJN"
   - "\U0001F1F8\U0001F1E8 SC 141 TJN"
-  - "\U0001F1FA\U0001F1F8 US 142 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 142 TJN"
   - "\U0001F1FA\U0001F1F8 US 143 TJN"
   - "\U0001F1F8\U0001F1EC SG 144 TJN"
   - "\U0001F1FA\U0001F1F8 US 145 TJN"
@@ -3131,7 +2173,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 172 TJN"
   - "\U0001F1FA\U0001F1F8 US 173 TJN"
   - "\U0001F1F7\U0001F1FA RU 174 TJN"
-  - "\U0001F1FA\U0001F1F8 US 175 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 175 TJN"
   - "\U0001F1FA\U0001F1F8 US 176 TJN"
   - "\U0001F1FA\U0001F1F3 UN 177 TJN"
   - "\U0001F1E6\U0001F1F2 AM 178 TJN"
@@ -3142,7 +2184,7 @@ proxy-groups:
   - "\U0001F1EC\U0001F1E7 GB 183 TJN"
   - "\U0001F1F8\U0001F1EA SE 184 TJN"
   - "\U0001F1FA\U0001F1F8 US 185 TJN"
-  - "\U0001F1FA\U0001F1F8 US 186 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 186 TJN"
   - "\U0001F1FA\U0001F1F8 US 187 TJN"
   - "\U0001F1FA\U0001F1F8 US 188 TJN"
   - "\U0001F1FA\U0001F1F8 US 189 TJN"
@@ -3150,109 +2192,13 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 191 TJN"
   - "\U0001F1FA\U0001F1F8 US 192 TJN"
   - "\U0001F1ED\U0001F1F0 HK 193 TJN"
-  - "\U0001F1F8\U0001F1EC SG 194 TJN"
-  - "\U0001F1F7\U0001F1FA RU 195 TJN"
-  - "\U0001F1F8\U0001F1EC SG 196 TJN"
-  - "\U0001F1EE\U0001F1F9 IT 197 TJN"
-  - "\U0001F1FA\U0001F1F8 US 198 TJN"
-  - "\U0001F1FA\U0001F1F8 US 199 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 200 VMS"
-  - "\U0001F1E9\U0001F1EA DE 201 TJN"
-  - "\U0001F1ED\U0001F1FA HU 202 TJN"
-  - "\U0001F1ED\U0001F1F7 HR 203 TJN"
-  - "\U0001F1F7\U0001F1F4 RO 204 TJN"
-  - "\U0001F1ED\U0001F1F7 HR 205 TJN"
-  - "\U0001F1ED\U0001F1FA HU 206 TJN"
-  - "\U0001F1F7\U0001F1F4 RO 207 TJN"
-  - "\U0001F1FF\U0001F1E6 ZA 208 SSS"
-  - "\U0001F1ED\U0001F1FA HU 209 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 210 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 211 VMS"
-  - "\U0001F1F0\U0001F1F7 KR 212 TJN"
-  - "\U0001F1F3\U0001F1F1 NL 213 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 214 VMS"
-  - "\U0001F1EC\U0001F1E7 GB 215 TJN"
-  - "\U0001F1E9\U0001F1EA DE 216 TJN"
-  - "\U0001F1F7\U0001F1FA RU 217 TJN"
-  - "\U0001F1F0\U0001F1F7 KR 218 TJN"
-  - "\U0001F1EE\U0001F1F7 IR 219 TJN"
-  - "\U0001F1E9\U0001F1EA DE 220 TJN"
-  - "\U0001F1FA\U0001F1F8 US 221 TJN"
-  - "\U0001F1E9\U0001F1EA DE 222 TJN"
-  - "\U0001F1F0\U0001F1F7 KR 223 TJN"
-  - "\U0001F1E9\U0001F1EA DE 224 TJN"
-  - "\U0001F1E9\U0001F1EA DE 225 TJN"
-  - "\U0001F1FA\U0001F1F8 US 226 TJN"
-  - "\U0001F1F0\U0001F1F7 KR 227 TJN"
-  - "\U0001F1FA\U0001F1F8 US 228 TJN"
-  - "\U0001F1FA\U0001F1F8 US 229 TJN"
-  - "\U0001F1FF\U0001F1E6 ZA 230 TJN"
-  - "\U0001F1E9\U0001F1EA DE 231 TJN"
-  - "\U0001F1FA\U0001F1F8 US 232 TJN"
-  - "\U0001F1FA\U0001F1F8 US 233 TJN"
-  - "\U0001F1FA\U0001F1F8 US 234 TJN"
-  - "\U0001F1F0\U0001F1F7 KR 235 TJN"
-  - "\U0001F1FA\U0001F1F8 US 236 TJN"
-  - "\U0001F1FA\U0001F1F8 US 237 TJN"
-  - "\U0001F1F0\U0001F1F7 KR 238 TJN"
-  - "\U0001F1FA\U0001F1F8 US 239 TJN"
-  - "\U0001F1F0\U0001F1F7 KR 240 TJN"
-  - "\U0001F1FA\U0001F1F8 US 241 TJN"
-  - "\U0001F1E6\U0001F1F2 AM 242 TJN"
-  - "\U0001F1F7\U0001F1FA RU 243 TJN"
-  - "\U0001F1FA\U0001F1F8 US 244 TJN"
-  - "\U0001F1E6\U0001F1F2 AM 245 TJN"
-  - "\U0001F1FA\U0001F1F8 US 246 TJN"
-  - "\U0001F1EF\U0001F1F5 JP 247 TJN"
-  - "\U0001F1F0\U0001F1F7 KR 248 TJN"
-  - "\U0001F1F7\U0001F1FA RU 249 TJN"
-  - "\U0001F1FA\U0001F1F8 US 250 TJN"
-  - "\U0001F1FA\U0001F1F8 US 251 TJN"
-  - "\U0001F1F8\U0001F1EC SG 252 TJN"
-  - "\U0001F1FA\U0001F1F8 US 253 TJN"
-  - "\U0001F1F7\U0001F1FA RU 254 TJN"
-  - "\U0001F1FA\U0001F1F8 US 255 TJN"
-  - "\U0001F1E6\U0001F1F2 AM 256 TJN"
-  - "\U0001F1EC\U0001F1E7 GB 257 TJN"
-  - "\U0001F1E6\U0001F1F2 AM 258 TJN"
-  - "\U0001F1E6\U0001F1F2 AM 259 TJN"
-  - "\U0001F1FA\U0001F1F8 US 260 TJN"
-  - "\U0001F1FA\U0001F1F8 US 261 TJN"
-  - "\U0001F1E6\U0001F1F2 AM 262 TJN"
-  - "\U0001F1F8\U0001F1EC SG 263 TJN"
-  - "\U0001F1F7\U0001F1FA RU 264 TJN"
-  - "\U0001F1F7\U0001F1FA RU 265 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 266 SSS"
-  - "\U0001F1FA\U0001F1F8 US 267 TJN"
-  - "\U0001F1FA\U0001F1F8 US 268 TJN"
-  - "\U0001F1FA\U0001F1F8 US 269 TJN"
-  - "\U0001F1FA\U0001F1F8 US 270 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 271 VMS"
-  - "\U0001F1FA\U0001F1F8 US 272 TJN"
-  - "\U0001F1F8\U0001F1E8 SC 273 TJN"
-  - "\U0001F1FA\U0001F1F8 US 274 TJN"
-  - "\U0001F1FA\U0001F1E6 UA 275 TJN"
-  - "\U0001F1F8\U0001F1EC SG 276 TJN"
-  - "\U0001F1F8\U0001F1E8 SC 277 TJN"
-  - "\U0001F1F8\U0001F1EC SG 278 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 279 TJN"
-  - "\U0001F1E6\U0001F1F2 AM 280 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 281 TJN"
-  - "\U0001F1F7\U0001F1FA RU 282 TJN"
-  - "\U0001F1FA\U0001F1F8 US 283 TJN"
-  - "\U0001F1FA\U0001F1F8 US 284 TJN"
-  - "\U0001F1FA\U0001F1F8 US 285 TJN"
-  - "\U0001F1FA\U0001F1F8 US 286 TJN"
-  - "\U0001F1F8\U0001F1EC SG 287 TJN"
-  - "\U0001F1F8\U0001F1E8 SC 288 TJN"
-  - "\U0001F1FA\U0001F1F8 US 289 TJN"
-  - "\U0001F1EF\U0001F1F5 JP 290 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 291 TJN"
-  - "\U0001F1FA\U0001F1F8 US 292 TJN"
-  - "\U0001F1FA\U0001F1F8 US 293 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 294 VMS"
-  - "\U0001F1FA\U0001F1F8 US 295 TJN"
-  - "\U0001F1ED\U0001F1FA HU 296 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 297 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 194 VMS"
+  - "\U0001F1ED\U0001F1FA HU 195 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 196 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 197 VMS"
+  - "\U0001F1E8\U0001F1F3 CN 198 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 199 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 200 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 201 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
