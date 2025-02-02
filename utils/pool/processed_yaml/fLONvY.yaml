@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2025-02-02 09:32:37
+# 创建时间：2025-02-02 09:53:14
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：280
 # 节点类型：trojan, ss, vmess
@@ -370,7 +370,7 @@ proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
-      - ♻️ 自动选择
+      - 🔯 故障转移
       - 🇭🇰 香港节点
       - 🇸🇬 狮城节点
       - 🇺🇲 美国节点
@@ -660,11 +660,10 @@ proxy-groups:
       - 美国(yudou66.com+玉豆免费节点)+(214)
       - 美国(yudou66.com 玉豆免费节点) (215)
       - 美国(yudou66.com 玉豆免费节点) (216)
-  - name: ♻️ 自动选择
-    type: auto
+  - name: 🔯 故障转移
+    type: fallback
     url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
     timeout: 2000
     strategy: latency
     proxies:
@@ -953,7 +952,7 @@ proxy-groups:
     proxies:
       - DIRECT
       - 🚀 节点选择
-      - ♻️ 自动选择
+      - 🔯 故障转移
   - name: 🛑 全球拦截
     type: select
     proxies:
@@ -964,7 +963,7 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - ♻️ 自动选择
+      - 🔯 故障转移
       - 英国(yudou66.com+玉豆免费节点)_1
       - 美国(yudou66.com+玉豆免费节点)
       - 美国(yudou66.com+玉豆免费节点)+(2)_1
@@ -1246,12 +1245,10 @@ proxy-groups:
       - 美国(yudou66.com 玉豆免费节点) (215)
       - 美国(yudou66.com 玉豆免费节点) (216)
   - name: 🇭🇰 香港节点
-    type: auto
-    url: https://www.gstatic.com/generate_204
+    type: url-test
+    url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
-    timeout: 2000
-    strategy: latency
     proxies:
       - 香港(yudou66.com+玉豆免费节点)
       - 香港(yudou66.com+玉豆免费节点)+(1)_1
@@ -1268,12 +1265,10 @@ proxy-groups:
       - 香港(yudou66.com+玉豆免费节点)+(6)
       - 香港(yudou66.com+玉豆免费节点)+(7)
   - name: 🇯🇵 日本节点
-    type: auto
-    url: https://www.gstatic.com/generate_204
+    type: url-test
+    url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
-    timeout: 2000
-    strategy: latency
     proxies:
       - 日本(yudou66.com+玉豆免费节点)
       - 日本(yudou66.com+玉豆免费节点)+(3)
@@ -1286,12 +1281,10 @@ proxy-groups:
       - 日本(yudou66.com+玉豆免费节点)+(7)
       - 日本(yudou66.com+玉豆免费节点)+(8)
   - name: 🇸🇬 狮城节点
-    type: auto
-    url: https://www.gstatic.com/generate_204
+    type: url-test
+    url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
-    timeout: 2000
-    strategy: latency
     proxies:
       - 新加坡(yudou66.com+玉豆免费节点)_1
       - 新加坡(yudou66.com+玉豆免费节点)+(1)_1
@@ -1306,12 +1299,10 @@ proxy-groups:
       - 新加坡(yudou66.com+玉豆免费节点)+(4)_2
       - 新加坡(yudou66.com+玉豆免费节点)+(5)_2
   - name: 🇺🇲 美国节点
-    type: auto
-    url: https://www.gstatic.com/generate_204
+    type: url-test
+    url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
-    timeout: 2000
-    strategy: latency
     proxies:
       - 美国(yudou66.com+玉豆免费节点)
       - 美国(yudou66.com+玉豆免费节点)+(2)_1
