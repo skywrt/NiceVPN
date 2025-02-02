@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2025-02-02 09:42:49
+# 创建时间：2025-02-02 09:41:00
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：280
 # 节点类型：trojan, ss, vmess
@@ -660,11 +660,11 @@ proxy-groups:
       - 美国(yudou66.com+玉豆免费节点)+(214)
       - 美国(yudou66.com 玉豆免费节点) (215)
       - 美国(yudou66.com 玉豆免费节点) (216)
-  - name: 🔯 故障转移
-    type: fallback
+  - name: ♻️ 自动选择
+    type: auto
     url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 100
+    tolerance: 50
     timeout: 2000
     strategy: latency
     proxies:
