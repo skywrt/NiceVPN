@@ -1,100 +1,86 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2025-02-07 12:47:26
+# 创建时间：2025-02-07 19:09:54
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
-# 节点数量：225
+# 节点数量：233
 # 节点类型：ss, trojan
 ####################################
 mixed-port: 7890
-allow-lan: true
-log-level: info
-external-controller: 0.0.0.0:9090
+allow-lan: false
+log-level: silent
+external-controller: 127.0.0.1:9090
+tun:
+  enable: true
+  stack: system
+  dns-hijack:
+    - 198.18.0.2:53
+    - 8.8.8.8:53
+    - 8.8.4.4:53
+    - 1.1.1.1:53
+    - 1.0.0.1:53
 dns:
-  enabled: true
-  listen: 0.0.0.0:1053
-  ipv6: true
-  default-nameserver:
-    - 223.5.5.5
-    - 114.114.114.114
+  enable: true
+  ipv6: false
+  listen: 127.0.0.1:1053
+  use-hosts: true
   enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
+  cache-size: 4096
+  fake-ip-range: '198.19.0.1/24'
   fake-ip-filter:
     - '*.lan'
-    - '*.linksys.com'
-    - '*.linksyssmartwifi.com'
-    - swscan.apple.com
-    - mesu.apple.com
-    - '*.msftconnecttest.com'
-    - '*.msftncsi.com'
-    - time.*.com
-    - time.*.gov
-    - time.*.edu.cn
-    - time.*.apple.com
-    - time1.*.com
-    - time2.*.com
-    - time3.*.com
-    - time4.*.com
-    - time5.*.com
-    - time6.*.com
-    - time7.*.com
-    - ntp.*.com
-    - ntp.*.com
-    - ntp1.*.com
-    - ntp2.*.com
-    - ntp3.*.com
-    - ntp4.*.com
-    - ntp5.*.com
-    - ntp6.*.com
-    - ntp7.*.com
-    - '*.time.edu.cn'
-    - '*.ntp.org.cn'
-    - +.pool.ntp.org
-    - time1.cloud.tencent.com
-    - +.music.163.com
-    - '*.126.net'
-    - musicapi.taihe.com
-    - music.taihe.com
-    - songsearch.kugou.com
-    - trackercdn.kugou.com
-    - '*.kuwo.cn'
-    - api-jooxtt.sanook.com
-    - api.joox.com
-    - joox.com
-    - +.y.qq.com
-    - +.music.tc.qq.com
-    - aqqmusic.tc.qq.com
-    - +.stream.qqmusic.qq.com
-    - '*.xiami.com'
-    - +.music.migu.cn
-    - +.srv.nintendo.net
-    - +.stun.playstation.net
-    - xbox.*.microsoft.com
-    - +.xboxlive.com
-    - localhost.ptlogin2.qq.com
-    - proxy.golang.org
-    - stun.*.*
-    - stun.*.*.*
-    - '*.mcdn.bilivideo.cn'
+    - '*.local'
+    - '*.example.com'
+    - 'localhost'
+    - '127.0.0.1'
+    - 'stun.*'
+    - '*.stun.*'
+    - 'stun.l.google.com'
+    - 'stun1.l.google.com'
+    - 'stun2.l.google.com'
+    - 'stun3.l.google.com'
+    - 'stun4.l.google.com'
+    - '*.webrtc.org'
+    - 'webrtc.org'
+    - 'turn.*'
+    - '*.turn.*'
+    - 'turn.anyfirewall.com'
+    - 'turn.bistri.com'
+    - 'turn.openh264.org'
   nameserver:
-    - https://doh.pub/dns-query
-    - https://dns.alidns.com/dns-query
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+  proxy-server-nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+  fallback:
+    - https://8.8.4.4/dns-query
+    - https://1.0.0.1/dns-query
   fallback-filter:
-    geoip: false
-    ipcidr:
-      - 240.0.0.0/4
-      - 0.0.0.0/32
+    geoip: true
+    geoip-code: CN
+    geosite:
+      - gfw
+  nameserver-policy:
+    'rule-set:cn_domain':
+      - https://119.29.29.29/dns-query
+      - https://223.5.5.5/dns-query
+    'rule-set:geolocation-!cn':
+      - https://1.1.1.1/dns-query
+      - https://8.8.8.8/dns-query
 
 proxies:
-  - {"name":"中转节点-24.2MB/s","type":"ss","server":"qh62onjn.slashdevslashnetslashtun.net","port":16007,"password":"TOU9PB2B767TFQVU","cipher":"aes-256-gcm"}
-  - {"name":"摩尔多瓦-31.5MB/s","type":"ss","server":"45.140.146.223","port":8388,"password":"YjJiYzBj","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"卢森堡-261.9KB/s","type":"ss","server":"109.104.154.146","port":33333,"password":"dongtaiwang.com","cipher":"aes-256-gcm"}
-  - {"name":"以色列-244.6KB/s","type":"ss","server":"188.191.147.127","port":31348,"password":"6IVOuzMfH5ROpgwtRTcNJKYJvYe9FDVaU7wAYYh8PRLxxZs6","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"爱尔兰-26.3MB/s","type":"ss","server":"13.79.171.214","port":25444,"password":"drqi55BCvwi3nOXulYjGLQ","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"以色列-87.4MB/s","type":"ss","server":"188.191.147.127","port":31348,"password":"6IVOuzMfH5ROpgwtRTcNJKYJvYe9FDVaU7wAYYh8PRLxxZs6","cipher":"chacha20-ietf-poly1305"}
   - {"name":"中转节点-14.6MB/s","type":"ss","server":"w72tapyb.slashdevslashnetslashtun.net","port":15008,"password":"D8TQ0D993NS6XK0K","cipher":"aes-256-gcm"}
   - {"name":"中转节点-15.5MB/s","type":"ss","server":"8tv68qhq.slashdevslashnetslashtun.net","port":15005,"password":"K09H5MS4WFZH4414","cipher":"aes-256-gcm"}
   - {"name":"中转节点-8.5MB/s","type":"ss","server":"w72tapyb.slashdevslashnetslashtun.net","port":18012,"password":"2T2TOL67SAUD3SME","cipher":"aes-256-gcm"}
   - {"name":"中转节点-24.3MB/s","type":"ss","server":"w72tapyb.slashdevslashnetslashtun.net","port":17008,"password":"1XQDHG7MU61NKDX2","cipher":"aes-256-gcm"}
+  - {"name":"卢森堡-237.8KB/s","type":"ss","server":"109.104.154.146","port":33333,"password":"dongtaiwang.com","cipher":"aes-256-gcm"}
+  - {"name":"美国-3.41MB/s","type":"ss","server":"23.157.40.102","port":5001,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
+  - {"name":"日本-83.0MB/s","type":"trojan","server":"us01.trojanyyds.xyz","port":443,"udp":true,"password":"243eab52-9ac1-405c-887c-eb112c0985b8","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"中转节点-20.7MB/s","type":"ss","server":"qh62onjn.slashdevslashnetslashtun.net","port":16007,"password":"TOU9PB2B767TFQVU","cipher":"aes-256-gcm"}
+  - {"name":"中转节点-14.4MB/s","type":"ss","server":"w72tapyb.slashdevslashnetslashtun.net","port":18008,"password":"9KGIJUHW23WGZMHJ","cipher":"aes-256-gcm"}
+  - {"name":"中转节点-15.4MB/s","type":"ss","server":"ti3hyra4.slashdevslashnetslashtun.net","port":17002,"password":"8FW4QUIM9HH9WV1I","cipher":"aes-256-gcm"}
   - {"name":"美国-1.14MB/s","type":"trojan","server":"86.38.247.109","port":2083,"udp":true,"password":"u201424980","sni":"fast.com","skip-cert-verify":true,"network":"tcp"}
   - {"name":"波兰-17.8MB/s","type":"ss","server":"77.83.246.74","port":443,"password":"WcfzJr8NIZaFY6OCitU1Cy","cipher":"chacha20-ietf-poly1305"}
   - {"name":"俄罗斯联邦-15.2MB/s","type":"ss","server":"87.251.79.34","port":20684,"password":"wR1wbS4OheiVYOPVzLAGNK","cipher":"chacha20-ietf-poly1305"}
@@ -119,7 +105,6 @@ proxies:
   - {"name":"立陶宛-409.7KB/s","type":"ss","server":"45.87.175.157","port":8080,"password":"QCXDxuDlTTMD7jtgHUjIoj","cipher":"chacha20-ietf-poly1305"}
   - {"name":"英国-270.7KB/s","type":"ss","server":"213.109.147.242","port":62685,"password":"VpKABcOpNNA0l5G2AVOmw8","cipher":"chacha20-ietf-poly1305"}
   - {"name":"新加坡-165.7KB/s","type":"trojan","server":"dear-sunbeam.treefrog761.one","port":443,"udp":true,"password":"3760559353321758720","sni":"dear-sunbeam.treefrog761.one","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"日本-2.51MB/s","type":"trojan","server":"us01.trojanyyds.xyz","port":443,"udp":true,"password":"243eab52-9ac1-405c-887c-eb112c0985b8","skip-cert-verify":true,"network":"tcp"}
   - {"name":"荷兰-29.7MB/s","type":"ss","server":"193.29.139.179","port":8080,"password":"4a2rfixophdjffa8KVA4Aa","cipher":"chacha20-ietf-poly1305"}
   - {"name":"中转节点-18.1MB/s","type":"ss","server":"qh62onjn.slashdevslashnetslashtun.net","port":18003,"password":"9OAJ48AFCGC9UHFK","cipher":"aes-256-gcm"}
   - {"name":"日本-5.66MB/s","type":"trojan","server":"74.226.136.204","port":443,"udp":true,"password":"243eab52-9ac1-405c-887c-eb112c0985b8","sni":"us01.trojanyyds.xyz","skip-cert-verify":true,"network":"tcp"}
@@ -238,7 +223,7 @@ proxies:
   - {"name":"新加坡-195.9KB/s","type":"trojan","server":"18.141.59.72","port":443,"udp":true,"password":"3760559353321758720","sni":"dear-sunbeam.treefrog761.one","skip-cert-verify":true,"network":"tcp"}
   - {"name":"中转节点-4.68MB/s","type":"trojan","server":"high.eb.defehaita.xyz","port":22332,"udp":true,"password":"3bcaef9b-af27-4e23-8e18-91be0774ba89","sni":"douyin.com","skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国-53.9MB/s","type":"ss","server":"156.231.104.17","port":18007,"password":"Y7YAFIFIFLS9Z3PX","cipher":"aes-256-gcm"}
-  - {"name":"未知国家-1.45MB/s","type":"trojan","server":"36.50.135.142","port":443,"udp":true,"password":"94d219c9-1afc-4d42-b090-8b3794764380","sni":"bs1.loadingip.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"未知国家-1.45MB/s_2","type":"trojan","server":"36.50.135.142","port":443,"udp":true,"password":"94d219c9-1afc-4d42-b090-8b3794764380","sni":"bs1.loadingip.com","skip-cert-verify":true,"network":"tcp"}
   - {"name":"法国-3.31MB/s","type":"ss","server":"213.156.138.138","port":31348,"password":"oVfvPkqJFCjOEbBsbmOtIiAuqgmEFOEf332F26C8lwEwQng9","cipher":"chacha20-ietf-poly1305"}
   - {"name":"越南-162.5KB/s","type":"trojan","server":"103.173.66.191","port":443,"udp":true,"password":"5f7be901-1bb7-4cc5-9c7d-e33bd7e407ad","sni":"103.173.66.191","skip-cert-verify":true,"network":"tcp"}
   - {"name":"英国-2.91MB/s","type":"trojan","server":"uk1.test3.net","port":443,"udp":true,"password":"03bb7640-df39-11ef-a9b1-1239d0255272","sni":"uk1.test3.net","skip-cert-verify":true,"network":"tcp"}
@@ -311,11 +296,19 @@ proxies:
   - {"name":"中转节点-232.5KB/s","type":"ss","server":"ti3hyra4.slashdevslashnetslashtun.net","port":20002,"password":"1T5BLKXJ0M1WF2W4","cipher":"aes-256-gcm"}
   - {"name":"未知国家-5.10MB/s","type":"trojan","server":"robust-insect.insect388.motorcycles","port":443,"udp":true,"password":"3774827088566296576","sni":"robust-insect.insect388.motorcycles","skip-cert-verify":true,"network":"tcp"}
   - {"name":"中转节点-3.60MB/s","type":"ss","server":"gdgs.tarioblink.me","port":30003,"password":"25bb46e8-d80f-4b48-9272-7129e88366b2","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"中转节点-65.6MB/s","type":"ss","server":"ti3hyra4.slashdevslashnetslashtun.net","port":17004,"password":"LJSU1P9549K09CVE","cipher":"aes-256-gcm"}
+  - {"name":"中转节点-124.8KB/s","type":"ss","server":"w72tapyb.slashdevslashnetslashtun.net","port":18004,"password":"8RS3Y3L50W6YNV8V","cipher":"aes-256-gcm"}
+  - {"name":"中转节点-52.2MB/s","type":"ss","server":"w72tapyb.slashdevslashnetslashtun.net","port":15008,"password":"8OCJMAVUOSVBYS7V","cipher":"aes-256-gcm"}
+  - {"name":"中转节点-23.7MB/s","type":"ss","server":"qh62onjn.slashdevslashnetslashtun.net","port":17007,"password":"MXNFC7XS62Z7R729","cipher":"aes-256-gcm"}
+  - {"name":"中转节点-74.5MB/s","type":"ss","server":"183.61.177.234","port":18002,"password":"8UB3I39KM113QT9N","cipher":"aes-256-gcm"}
+  - {"name":"中转节点-92.7MB/s","type":"trojan","server":"zfa01.333210.xyz","port":40383,"udp":true,"password":"3aec9607-0136-4ca1-90c2-553a0322b25e","sni":"cdn.alibaba.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"中转节点-202.2KB/s","type":"ss","server":"183.61.177.234","port":16002,"password":"0HBGSZP1UCOGQDZW","cipher":"aes-256-gcm"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
-      - ♻️ 自动选择
+      - ♻ 自动选择
+      - 🔰 延迟最低
       - 🇭🇰 香港节点
       - 🇸🇬 狮城节点
       - 🇺🇲 美国节点
@@ -325,15 +318,17 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 中转节点-24.2MB/s
-      - 摩尔多瓦-31.5MB/s
-      - 卢森堡-261.9KB/s
-      - 以色列-244.6KB/s
-      - 爱尔兰-26.3MB/s
+      - 以色列-87.4MB/s
       - 中转节点-14.6MB/s
       - 中转节点-15.5MB/s
       - 中转节点-8.5MB/s
       - 中转节点-24.3MB/s
+      - 卢森堡-237.8KB/s
+      - 美国-3.41MB/s
+      - 日本-83.0MB/s
+      - 中转节点-20.7MB/s
+      - 中转节点-14.4MB/s
+      - 中转节点-15.4MB/s
       - 美国-1.14MB/s
       - 波兰-17.8MB/s
       - 俄罗斯联邦-15.2MB/s
@@ -358,7 +353,6 @@ proxy-groups:
       - 立陶宛-409.7KB/s
       - 英国-270.7KB/s
       - 新加坡-165.7KB/s
-      - 日本-2.51MB/s
       - 荷兰-29.7MB/s
       - 中转节点-18.1MB/s
       - 日本-5.66MB/s
@@ -477,7 +471,7 @@ proxy-groups:
       - 新加坡-195.9KB/s
       - 中转节点-4.68MB/s
       - 美国-53.9MB/s
-      - 未知国家-1.45MB/s
+      - 未知国家-1.45MB/s_2
       - 法国-3.31MB/s
       - 越南-162.5KB/s
       - 英国-2.91MB/s
@@ -550,237 +544,257 @@ proxy-groups:
       - 中转节点-232.5KB/s
       - 未知国家-5.10MB/s
       - 中转节点-3.60MB/s
-  - name: ♻️ 自动选择
+      - 中转节点-65.6MB/s
+      - 中转节点-124.8KB/s
+      - 中转节点-52.2MB/s
+      - 中转节点-23.7MB/s
+      - 中转节点-74.5MB/s
+      - 中转节点-92.7MB/s
+      - 中转节点-202.2KB/s
+  - interval: 300
+    name: ♻ 自动选择
+    proxies: &id001
+      - 以色列-87.4MB/s
+      - 中转节点-14.6MB/s
+      - 中转节点-15.5MB/s
+      - 中转节点-8.5MB/s
+      - 中转节点-24.3MB/s
+      - 卢森堡-237.8KB/s
+      - 美国-3.41MB/s
+      - 日本-83.0MB/s
+      - 中转节点-20.7MB/s
+      - 中转节点-14.4MB/s
+      - 中转节点-15.4MB/s
+      - 美国-1.14MB/s
+      - 波兰-17.8MB/s
+      - 俄罗斯联邦-15.2MB/s
+      - 墨西哥-53.6MB/s
+      - 中转节点-8.65MB/s
+      - 中转节点-10.6MB/s_1
+      - 美国-1.73MB/s
+      - 加拿大-641.4KB/s
+      - 英国-1.58MB/s
+      - 美国-4.11MB/s
+      - 中转节点-5.63MB/s
+      - 中转节点-17.99MB/s
+      - 中转节点-214.6KB/s
+      - 中转节点-19.4MB/s
+      - 日本-13.6MB/s
+      - 日本-1.58MB/s
+      - 日本-5.01MB/s
+      - 日本-986.7KB/s
+      - 拉脱维亚-122.0KB/s
+      - 中转节点-54.2MB/s
+      - 立陶宛-3.02MB/s
+      - 立陶宛-409.7KB/s
+      - 英国-270.7KB/s
+      - 新加坡-165.7KB/s
+      - 荷兰-29.7MB/s
+      - 中转节点-18.1MB/s
+      - 日本-5.66MB/s
+      - 荷兰-78.0MB/s
+      - 中转节点-18.2MB/s
+      - 中转节点-10.6MB/s_2
+      - 中转节点-15.7MB/s
+      - 俄罗斯联邦-27.9MB/s
+      - 中转节点-43.7MB/s
+      - 法国-720.1KB/s
+      - 美国-4.37MB/s
+      - 荷兰-400.7KB/s
+      - 美国-3.75MB/s
+      - 英国-3.57MB/s
+      - 中转节点-29.08MB/s
+      - 越南-426.2KB/s
+      - 中转节点-4.83MB/s
+      - 越南-1.81MB/s
+      - 中转节点-27.38MB/s
+      - 中转节点-8.26MB/s
+      - 法国-831.8KB/s
+      - 法国-2.37MB/s
+      - 韩国-3.61MB/s
+      - 美国-603.6KB/s
+      - 印度-1.88MB/s
+      - 德国-3.90MB/s
+      - 越南-185.4KB/s
+      - 法国-1007.3KB/s
+      - 罗马尼亚-2.93MB/s
+      - 新加坡-337.4KB/s
+      - 卢森堡-68.2MB/s
+      - 罗马尼亚-1.27MB/s
+      - 德国-3.94MB/s
+      - 美国-2.54MB/s
+      - 匈牙利-1.98MB/s
+      - 印度-261.9KB/s
+      - 卢森堡-52.9MB/s
+      - 英国-54.2MB/s
+      - 德国-18.5MB/s
+      - 新加坡-1.33MB/s
+      - 美国-69.4MB/s
+      - 英国-3.47MB/s
+      - 韩国-3.47MB/s
+      - 中转节点-4.76MB/s
+      - 中转节点-17.25MB/s
+      - 英国-3.88MB/s
+      - 爱尔兰-3.80MB/s
+      - 爱尔兰-3.87MB/s
+      - 比利时-147.5KB/s
+      - 法国-3.98MB/s
+      - 塞舌尔-44.2MB/s
+      - 菲律宾-3.3MB/s
+      - 越南-394.7KB/s
+      - 匈牙利-11.9MB/s
+      - 越南-15.8MB/s
+      - 越南-84.8MB/s
+      - 匈牙利-17.2MB/s
+      - 意大利-385.5KB/s
+      - 立陶宛-180.5KB/s
+      - 立陶宛-146.0KB/s
+      - 立陶宛-180.2KB/s
+      - 中转节点-310.5KB/s
+      - 中转节点-145.1KB/s
+      - 德国-4.03MB/s
+      - 德国-3.25MB/s
+      - 中转节点-26.9MB/s
+      - 捷克-4.03MB/s
+      - 日本-7.26MB/s
+      - 英国-3.61MB/s
+      - 新加坡-3.4MB/s
+      - 日本-10.01MB/s
+      - 立陶宛-4.78MB/s
+      - 新加坡-3.0MB/s
+      - 中转节点-24.5MB/s
+      - 韩国-2.27MB/s
+      - 英国-3.23MB/s
+      - 中转节点-13.3MB/s
+      - 德国-2.36MB/s
+      - 新加坡-2.2MB/s
+      - 越南-101.2KB/s
+      - 日本-2.05MB/s
+      - 波兰-42.6MB/s
+      - 匈牙利-3.59MB/s
+      - 中转节点-11.6MB/s
+      - 香港-2.94MB/s
+      - 韩国-4.25MB/s_1
+      - 日本-3.40MB/s
+      - 意大利-3.04MB/s
+      - 俄罗斯联邦-2.45MB/s
+      - 瑞典-3.71MB/s
+      - 美国-4.52MB/s
+      - 美国-3.78MB/s
+      - 奥地利-139.4KB/s
+      - 中转节点-1.17MB/s
+      - 中转节点-11.14MB/s
+      - 中转节点-37.5MB/s
+      - 塞舌尔-460.4KB/s
+      - 俄罗斯联邦-632.4KB/s
+      - 匈牙利-13.2MB/s
+      - 中转节点-11.4MB/s
+      - 美国-48.5MB/s
+      - 美国-9.1MB/s
+      - 美国-105.9KB/s
+      - 立陶宛-201.7KB/s
+      - 乌克兰-141.5KB/s
+      - 立陶宛-4.10MB/s
+      - 立陶宛-3.71MB/s
+      - 土耳其-3.24MB/s
+      - 中转节点-25.3MB/s
+      - 中转节点-21.9MB/s
+      - 英国-174.4KB/s
+      - 中转节点-23.6MB/s
+      - 荷兰-82.9MB/s
+      - 俄罗斯联邦-92.2MB/s
+      - 英国-456.1KB/s
+      - 新加坡-195.9KB/s
+      - 中转节点-4.68MB/s
+      - 美国-53.9MB/s
+      - 未知国家-1.45MB/s_2
+      - 法国-3.31MB/s
+      - 越南-162.5KB/s
+      - 英国-2.91MB/s
+      - 新加坡-5.9MB/s_1
+      - 新加坡-25.1MB/s
+      - 未知国家-14.4MB/s_1
+      - 新加坡-4.65MB/s
+      - 瑞典-125.2KB/s
+      - 未知国家-10.4MB/s
+      - 德国-20.8MB/s
+      - 未知国家-2.26MB/s
+      - 香港-2.07MB/s
+      - 法国-3.66MB/s
+      - 新加坡-16.2MB/s
+      - 未知国家-14.4MB/s_2
+      - 香港-3.61MB/s
+      - 香港-20.1MB/s
+      - 澳大利亚-797.9KB/s
+      - 未知国家-13.6MB/s
+      - 西班牙-1.76MB/s
+      - 香港-33.3MB/s
+      - 美国-22.5MB/s
+      - 香港-304.2KB/s
+      - 英国-3.99MB/s
+      - 未知国家-2.32MB/s
+      - 越南-359.8KB/s
+      - 新加坡-5.9MB/s_2
+      - 美国-13.8MB/s
+      - 美国-179.3KB/s
+      - 香港-22.1MB/s
+      - 新加坡-46.8MB/s
+      - 美国-3.58MB/s
+      - 法国-3.49MB/s
+      - 立陶宛-4.34MB/s
+      - 未知国家-477.5KB/s
+      - 乌克兰-211.4KB/s
+      - 法国-3.34MB/s
+      - 立陶宛-4.60MB/s
+      - 伊朗-1018.2KB/s
+      - 台湾-9.4MB/s
+      - 台湾-456.0KB/s
+      - 越南-29.3MB/s
+      - 中转节点-2.00MB/s
+      - 韩国-367.7KB/s
+      - 韩国-2.88MB/s
+      - 新加坡-992.7KB/s
+      - 美国-238.6KB/s
+      - 新加坡-17.5MB/s
+      - 新加坡-4.4MB/s
+      - 俄罗斯联邦-116.4KB/s
+      - 中转节点-6.67MB/s
+      - 未知国家-2.30MB/s
+      - 波兰-69.1MB/s
+      - 未知国家-1.32MB/s
+      - 新加坡-150.6KB/s
+      - 立陶宛-135.7KB/s
+      - 立陶宛-310.0KB/s
+      - 美国-81.9MB/s
+      - 韩国-39.0MB/s
+      - 荷兰-54.3MB/s
+      - 韩国-19.5MB/s
+      - 新加坡-14.4MB/s
+      - 中转节点-82.3MB/s
+      - 波兰-16.9MB/s
+      - 美国-8.1MB/s
+      - 韩国-4.25MB/s_2
+      - 中转节点-101.7KB/s
+      - 中转节点-111.9KB/s
+      - 中转节点-48.9MB/s
+      - 中转节点-232.5KB/s
+      - 未知国家-5.10MB/s
+      - 中转节点-3.60MB/s
+      - 中转节点-65.6MB/s
+      - 中转节点-124.8KB/s
+      - 中转节点-52.2MB/s
+      - 中转节点-23.7MB/s
+      - 中转节点-74.5MB/s
+      - 中转节点-92.7MB/s
+      - 中转节点-202.2KB/s
+    type: fallback
+    url: https://www.gstatic.com/generate_204
+  - interval: 300
+    name: 🔰 延迟最低
+    proxies: *id001
+    tolerance: 20
     type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
-    proxies:
-      - 中转节点-24.2MB/s
-      - 摩尔多瓦-31.5MB/s
-      - 卢森堡-261.9KB/s
-      - 以色列-244.6KB/s
-      - 爱尔兰-26.3MB/s
-      - 中转节点-14.6MB/s
-      - 中转节点-15.5MB/s
-      - 中转节点-8.5MB/s
-      - 中转节点-24.3MB/s
-      - 美国-1.14MB/s
-      - 波兰-17.8MB/s
-      - 俄罗斯联邦-15.2MB/s
-      - 墨西哥-53.6MB/s
-      - 中转节点-8.65MB/s
-      - 中转节点-10.6MB/s_1
-      - 美国-1.73MB/s
-      - 加拿大-641.4KB/s
-      - 英国-1.58MB/s
-      - 美国-4.11MB/s
-      - 中转节点-5.63MB/s
-      - 中转节点-17.99MB/s
-      - 中转节点-214.6KB/s
-      - 中转节点-19.4MB/s
-      - 日本-13.6MB/s
-      - 日本-1.58MB/s
-      - 日本-5.01MB/s
-      - 日本-986.7KB/s
-      - 拉脱维亚-122.0KB/s
-      - 中转节点-54.2MB/s
-      - 立陶宛-3.02MB/s
-      - 立陶宛-409.7KB/s
-      - 英国-270.7KB/s
-      - 新加坡-165.7KB/s
-      - 日本-2.51MB/s
-      - 荷兰-29.7MB/s
-      - 中转节点-18.1MB/s
-      - 日本-5.66MB/s
-      - 荷兰-78.0MB/s
-      - 中转节点-18.2MB/s
-      - 中转节点-10.6MB/s_2
-      - 中转节点-15.7MB/s
-      - 俄罗斯联邦-27.9MB/s
-      - 中转节点-43.7MB/s
-      - 法国-720.1KB/s
-      - 美国-4.37MB/s
-      - 荷兰-400.7KB/s
-      - 美国-3.75MB/s
-      - 英国-3.57MB/s
-      - 中转节点-29.08MB/s
-      - 越南-426.2KB/s
-      - 中转节点-4.83MB/s
-      - 越南-1.81MB/s
-      - 中转节点-27.38MB/s
-      - 中转节点-8.26MB/s
-      - 法国-831.8KB/s
-      - 法国-2.37MB/s
-      - 韩国-3.61MB/s
-      - 美国-603.6KB/s
-      - 印度-1.88MB/s
-      - 德国-3.90MB/s
-      - 越南-185.4KB/s
-      - 法国-1007.3KB/s
-      - 罗马尼亚-2.93MB/s
-      - 新加坡-337.4KB/s
-      - 卢森堡-68.2MB/s
-      - 罗马尼亚-1.27MB/s
-      - 德国-3.94MB/s
-      - 美国-2.54MB/s
-      - 匈牙利-1.98MB/s
-      - 印度-261.9KB/s
-      - 卢森堡-52.9MB/s
-      - 英国-54.2MB/s
-      - 德国-18.5MB/s
-      - 新加坡-1.33MB/s
-      - 美国-69.4MB/s
-      - 英国-3.47MB/s
-      - 韩国-3.47MB/s
-      - 中转节点-4.76MB/s
-      - 中转节点-17.25MB/s
-      - 英国-3.88MB/s
-      - 爱尔兰-3.80MB/s
-      - 爱尔兰-3.87MB/s
-      - 比利时-147.5KB/s
-      - 法国-3.98MB/s
-      - 塞舌尔-44.2MB/s
-      - 菲律宾-3.3MB/s
-      - 越南-394.7KB/s
-      - 匈牙利-11.9MB/s
-      - 越南-15.8MB/s
-      - 越南-84.8MB/s
-      - 匈牙利-17.2MB/s
-      - 意大利-385.5KB/s
-      - 立陶宛-180.5KB/s
-      - 立陶宛-146.0KB/s
-      - 立陶宛-180.2KB/s
-      - 中转节点-310.5KB/s
-      - 中转节点-145.1KB/s
-      - 德国-4.03MB/s
-      - 德国-3.25MB/s
-      - 中转节点-26.9MB/s
-      - 捷克-4.03MB/s
-      - 日本-7.26MB/s
-      - 英国-3.61MB/s
-      - 新加坡-3.4MB/s
-      - 日本-10.01MB/s
-      - 立陶宛-4.78MB/s
-      - 新加坡-3.0MB/s
-      - 中转节点-24.5MB/s
-      - 韩国-2.27MB/s
-      - 英国-3.23MB/s
-      - 中转节点-13.3MB/s
-      - 德国-2.36MB/s
-      - 新加坡-2.2MB/s
-      - 越南-101.2KB/s
-      - 日本-2.05MB/s
-      - 波兰-42.6MB/s
-      - 匈牙利-3.59MB/s
-      - 中转节点-11.6MB/s
-      - 香港-2.94MB/s
-      - 韩国-4.25MB/s_1
-      - 日本-3.40MB/s
-      - 意大利-3.04MB/s
-      - 俄罗斯联邦-2.45MB/s
-      - 瑞典-3.71MB/s
-      - 美国-4.52MB/s
-      - 美国-3.78MB/s
-      - 奥地利-139.4KB/s
-      - 中转节点-1.17MB/s
-      - 中转节点-11.14MB/s
-      - 中转节点-37.5MB/s
-      - 塞舌尔-460.4KB/s
-      - 俄罗斯联邦-632.4KB/s
-      - 匈牙利-13.2MB/s
-      - 中转节点-11.4MB/s
-      - 美国-48.5MB/s
-      - 美国-9.1MB/s
-      - 美国-105.9KB/s
-      - 立陶宛-201.7KB/s
-      - 乌克兰-141.5KB/s
-      - 立陶宛-4.10MB/s
-      - 立陶宛-3.71MB/s
-      - 土耳其-3.24MB/s
-      - 中转节点-25.3MB/s
-      - 中转节点-21.9MB/s
-      - 英国-174.4KB/s
-      - 中转节点-23.6MB/s
-      - 荷兰-82.9MB/s
-      - 俄罗斯联邦-92.2MB/s
-      - 英国-456.1KB/s
-      - 新加坡-195.9KB/s
-      - 中转节点-4.68MB/s
-      - 美国-53.9MB/s
-      - 未知国家-1.45MB/s
-      - 法国-3.31MB/s
-      - 越南-162.5KB/s
-      - 英国-2.91MB/s
-      - 新加坡-5.9MB/s_1
-      - 新加坡-25.1MB/s
-      - 未知国家-14.4MB/s_1
-      - 新加坡-4.65MB/s
-      - 瑞典-125.2KB/s
-      - 未知国家-10.4MB/s
-      - 德国-20.8MB/s
-      - 未知国家-2.26MB/s
-      - 香港-2.07MB/s
-      - 法国-3.66MB/s
-      - 新加坡-16.2MB/s
-      - 未知国家-14.4MB/s_2
-      - 香港-3.61MB/s
-      - 香港-20.1MB/s
-      - 澳大利亚-797.9KB/s
-      - 未知国家-13.6MB/s
-      - 西班牙-1.76MB/s
-      - 香港-33.3MB/s
-      - 美国-22.5MB/s
-      - 香港-304.2KB/s
-      - 英国-3.99MB/s
-      - 未知国家-2.32MB/s
-      - 越南-359.8KB/s
-      - 新加坡-5.9MB/s_2
-      - 美国-13.8MB/s
-      - 美国-179.3KB/s
-      - 香港-22.1MB/s
-      - 新加坡-46.8MB/s
-      - 美国-3.58MB/s
-      - 法国-3.49MB/s
-      - 立陶宛-4.34MB/s
-      - 未知国家-477.5KB/s
-      - 乌克兰-211.4KB/s
-      - 法国-3.34MB/s
-      - 立陶宛-4.60MB/s
-      - 伊朗-1018.2KB/s
-      - 台湾-9.4MB/s
-      - 台湾-456.0KB/s
-      - 越南-29.3MB/s
-      - 中转节点-2.00MB/s
-      - 韩国-367.7KB/s
-      - 韩国-2.88MB/s
-      - 新加坡-992.7KB/s
-      - 美国-238.6KB/s
-      - 新加坡-17.5MB/s
-      - 新加坡-4.4MB/s
-      - 俄罗斯联邦-116.4KB/s
-      - 中转节点-6.67MB/s
-      - 未知国家-2.30MB/s
-      - 波兰-69.1MB/s
-      - 未知国家-1.32MB/s
-      - 新加坡-150.6KB/s
-      - 立陶宛-135.7KB/s
-      - 立陶宛-310.0KB/s
-      - 美国-81.9MB/s
-      - 韩国-39.0MB/s
-      - 荷兰-54.3MB/s
-      - 韩国-19.5MB/s
-      - 新加坡-14.4MB/s
-      - 中转节点-82.3MB/s
-      - 波兰-16.9MB/s
-      - 美国-8.1MB/s
-      - 韩国-4.25MB/s_2
-      - 中转节点-101.7KB/s
-      - 中转节点-111.9KB/s
-      - 中转节点-48.9MB/s
-      - 中转节点-232.5KB/s
-      - 未知国家-5.10MB/s
-      - 中转节点-3.60MB/s
+    url: https://www.gstatic.com/generate_204
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -798,15 +812,17 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中转节点-24.2MB/s
-      - 摩尔多瓦-31.5MB/s
-      - 卢森堡-261.9KB/s
-      - 以色列-244.6KB/s
-      - 爱尔兰-26.3MB/s
+      - 以色列-87.4MB/s
       - 中转节点-14.6MB/s
       - 中转节点-15.5MB/s
       - 中转节点-8.5MB/s
       - 中转节点-24.3MB/s
+      - 卢森堡-237.8KB/s
+      - 美国-3.41MB/s
+      - 日本-83.0MB/s
+      - 中转节点-20.7MB/s
+      - 中转节点-14.4MB/s
+      - 中转节点-15.4MB/s
       - 美国-1.14MB/s
       - 波兰-17.8MB/s
       - 俄罗斯联邦-15.2MB/s
@@ -831,7 +847,6 @@ proxy-groups:
       - 立陶宛-409.7KB/s
       - 英国-270.7KB/s
       - 新加坡-165.7KB/s
-      - 日本-2.51MB/s
       - 荷兰-29.7MB/s
       - 中转节点-18.1MB/s
       - 日本-5.66MB/s
@@ -950,7 +965,7 @@ proxy-groups:
       - 新加坡-195.9KB/s
       - 中转节点-4.68MB/s
       - 美国-53.9MB/s
-      - 未知国家-1.45MB/s
+      - 未知国家-1.45MB/s_2
       - 法国-3.31MB/s
       - 越南-162.5KB/s
       - 英国-2.91MB/s
@@ -1023,11 +1038,18 @@ proxy-groups:
       - 中转节点-232.5KB/s
       - 未知国家-5.10MB/s
       - 中转节点-3.60MB/s
+      - 中转节点-65.6MB/s
+      - 中转节点-124.8KB/s
+      - 中转节点-52.2MB/s
+      - 中转节点-23.7MB/s
+      - 中转节点-74.5MB/s
+      - 中转节点-92.7MB/s
+      - 中转节点-202.2KB/s
   - name: 🇭🇰 香港节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
+    tolerance: 20
     proxies:
       - 香港-2.94MB/s
       - 香港-2.07MB/s
@@ -1038,15 +1060,15 @@ proxy-groups:
       - 香港-22.1MB/s
   - name: 🇯🇵 日本节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
+    tolerance: 20
     proxies:
+      - 日本-83.0MB/s
       - 日本-13.6MB/s
       - 日本-1.58MB/s
       - 日本-5.01MB/s
       - 日本-986.7KB/s
-      - 日本-2.51MB/s
       - 日本-5.66MB/s
       - 日本-7.26MB/s
       - 日本-10.01MB/s
@@ -1054,9 +1076,9 @@ proxy-groups:
       - 日本-3.40MB/s
   - name: 🇸🇬 狮城节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
+    tolerance: 20
     proxies:
       - 新加坡-165.7KB/s
       - 新加坡-337.4KB/s
@@ -1078,10 +1100,11 @@ proxy-groups:
       - 新加坡-14.4MB/s
   - name: 🇺🇲 美国节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
+    tolerance: 20
     proxies:
+      - 美国-3.41MB/s
       - 美国-1.14MB/s
       - 美国-1.73MB/s
       - 美国-4.11MB/s
