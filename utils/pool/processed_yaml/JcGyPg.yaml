@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2025-02-13 21:32:21
+# 创建时间：2025-02-13 17:16:58
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：1288
 # 节点类型：trojan, ss, vmess
@@ -3953,16 +3953,17 @@ proxy-groups:
       - '@Hope_Net-join-us-on-Telegram_247'
       - '@Hope_Net-join-us-on-Telegram_248'
     type: fallback
-    url: https://www.google.com/generate_204
-    timeout: 3000
+    timeout: 2000
     max-failed-times: 1
-  - interval: 300
+    url: https://www.google.com/generate_204
+  - interval: 480
     name: 🔰 延迟最低
     proxies: *id001
     tolerance: 50
+    timeout: 2000
+    max-failed-times: 1
     type: url-test
     url: https://www.google.com/generate_204
-    timeout: 3000
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -5274,7 +5275,8 @@ proxy-groups:
     url: https://www.google.com/generate_204
     interval: 480
     tolerance: 50
-    timeout: 3000
+    timeout: 2000
+    max-failed-times: 1
     proxies:
       - 🇭🇰HK-141.98.234.93-0485
       - 🇭🇰HK-91.217.139.227-1430
@@ -5283,7 +5285,8 @@ proxy-groups:
     url: https://www.google.com/generate_204
     interval: 480
     tolerance: 50
-    timeout: 3000
+    timeout: 2000
+    max-failed-times: 1
     proxies:
       - 🇯🇵JP-74.226.136.204-0701
       - 🇯🇵JP-13.114.143.115-6193
@@ -5297,7 +5300,8 @@ proxy-groups:
     url: https://www.google.com/generate_204
     interval: 480
     tolerance: 50
-    timeout: 3000
+    timeout: 2000
+    max-failed-times: 1
     proxies:
       - 🇸🇬SG-206.238.236.90-1439
       - 🇸🇬SG-206.238.236.134-0865
@@ -5313,7 +5317,8 @@ proxy-groups:
     url: https://www.google.com/generate_204
     interval: 480
     tolerance: 50
-    timeout: 3000
+    timeout: 2000
+    max-failed-times: 1
     proxies:
       - 🇺🇸US-103.224.182.249-4631
       - 🇺🇸US-23.150.152.16-2880
