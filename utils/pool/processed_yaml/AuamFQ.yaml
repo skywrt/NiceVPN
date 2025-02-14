@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2025-02-14 18:41:43
+# 创建时间：2025-02-14 18:44:12
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：115
 # 节点类型：ss, vmess, trojan
@@ -206,7 +206,6 @@ proxy-groups:
     type: select
     proxies:
       - ♻️ 自动选择
-      - 🇭🇰 香港节点
       - 🇸🇬 狮城节点
       - 🇺🇲 美国节点
       - 🇯🇵 日本节点
@@ -583,12 +582,6 @@ proxy-groups:
       - 加拿大+魁北克省蒙特利尔Amazon数据中心_2
       - 澳大利亚+V2CROSS.COM_2
       - 美国+Amazon数据中心_4
-  - name: 🇭🇰 香港节点
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
-    proxies: []
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.gstatic.com/generate_204
