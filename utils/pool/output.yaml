@@ -288,7 +288,7 @@ proxies:
   sni: us03.ssr.ee
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 36 TJN"
+- name: "\U0001F1EF\U0001F1F5 JP 36 TJN"
   type: trojan
   server: sg02.trojanyyds.xyz
   port: 443
@@ -305,7 +305,7 @@ proxies:
   password: 243eab52-9ac1-405c-887c-eb112c0985b8
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 38 TJN"
+- name: "\U0001F1EF\U0001F1F5 JP 38 TJN"
   type: trojan
   server: sg01.trojanyyds.xyz
   port: 443
@@ -336,7 +336,7 @@ proxies:
   server: 20.213.20.185
   port: 17718
   cipher: auto
-  uuid: 20.213.20.185:17718?type=tcp&encryption=auto#%40Hope_Net-join-us-on-Telegram_10
+  uuid: c206e022-34c6-4fe3-a232-b9c07ba3165d
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -408,37 +408,43 @@ proxies:
   server: 198.41.209.70
   port: 80
   cipher: auto
-  uuid: 198.41.209.70:80?type=ws&encryption=auto&host=chunchuan.kejixiaoqi666.store&path=%2F#%F0%9F%8F%81RELAY-198.41.209.70-0751
+  uuid: e6543319-0574-42ac-b778-1c4325d626f5
   alterId: 0
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /
+    headers:
+      host: chunchuan.kejixiaoqi666.store
 - name: "\U0001F1FA\U0001F1F3 UN 52 VMS"
   type: vmess
   server: 104.16.155.10
   port: 80
   cipher: auto
-  uuid: 104.16.155.10:80?type=ws&encryption=auto&host=chunchuan.kejixiaoqi666.store&path=%2F#%F0%9F%8F%81RELAY-104.16.155.10-0651
+  uuid: e6543319-0574-42ac-b778-1c4325d626f5
   alterId: 0
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /
+    headers:
+      host: chunchuan.kejixiaoqi666.store
 - name: "\U0001F1FA\U0001F1F3 UN 53 VMS"
   type: vmess
   server: 104.17.221.248
   port: 80
   cipher: auto
-  uuid: 104.17.221.248:80?type=ws&encryption=auto&host=chunchuan.kejixiaoqi666.store&path=%2F#%F0%9F%8F%81RELAY-104.17.221.248-0653
+  uuid: e6543319-0574-42ac-b778-1c4325d626f5
   alterId: 0
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /
+    headers:
+      host: chunchuan.kejixiaoqi666.store
 - name: "\U0001F1FA\U0001F1F3 UN 54 SSS"
   type: ss
   server: 23.150.152.16
@@ -660,7 +666,7 @@ proxies:
   server: 79.127.229.54
   port: 18000
   cipher: auto
-  uuid: 79.127.229.54:18000?type=tcp&encryption=auto#%40Hope_Net-join-us-on-Telegram_34
+  uuid: fa1897db-1925-4c86-a495-939a959af900
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -782,7 +788,7 @@ proxies:
   sni: ta.promote.icu
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 94 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 94 TJN"
   type: trojan
   server: icook.tw
   port: 443
@@ -847,85 +853,99 @@ proxies:
   server: 172.67.133.78
   port: 8443
   cipher: auto
-  uuid: 172.67.133.78:8443?type=ws&encryption=auto&host=lax2.ibgfw.top&path=%2Fdyajvws&security=tls&sni=lax2.ibgfw.top#%40Hope_Net-join-us-on-Telegram_54
+  uuid: e88b85c6-93b4-47f6-b3fb-2c55dcb1289f
   alterId: 0
   tls: true
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /dyajvws
+    headers:
+      host: lax2.ibgfw.top
 - name: "\U0001F1FA\U0001F1F8 US 102 VMS"
   type: vmess
   server: 185.148.106.108
   port: 8443
   cipher: auto
-  uuid: 185.148.106.108:8443?type=ws&encryption=auto&host=lax2.ibgfw.top&path=%2Fdyajvws&security=tls&sni=lax2.ibgfw.top#%40Hope_Net-join-us-on-Telegram_55
+  uuid: e88b85c6-93b4-47f6-b3fb-2c55dcb1289f
   alterId: 0
   tls: true
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /dyajvws
+    headers:
+      host: lax2.ibgfw.top
 - name: "\U0001F1EA\U0001F1F8 ES 103 VMS"
   type: vmess
   server: 185.251.83.248
   port: 8443
   cipher: auto
-  uuid: 185.251.83.248:8443?type=ws&encryption=auto&host=lax1.ibgfw.top&path=%2Fxrenvws&security=tls&sni=lax1.ibgfw.top#%40Hope_Net-join-us-on-Telegram_56
+  uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e
   alterId: 0
   tls: true
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /xrenvws
+    headers:
+      host: lax1.ibgfw.top
 - name: "\U0001F1FA\U0001F1F8 US 104 VMS"
   type: vmess
   server: 167.68.42.137
   port: 8443
   cipher: auto
-  uuid: 167.68.42.137:8443?type=ws&encryption=auto&host=lax2.ibgfw.top&path=%2Fdyajvws&security=tls&sni=lax2.ibgfw.top#%40Hope_Net-join-us-on-Telegram_57
+  uuid: e88b85c6-93b4-47f6-b3fb-2c55dcb1289f
   alterId: 0
   tls: true
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /dyajvws
+    headers:
+      host: lax2.ibgfw.top
 - name: "\U0001F1F7\U0001F1FA RU 105 VMS"
   type: vmess
   server: 213.241.198.57
   port: 8443
   cipher: auto
-  uuid: 213.241.198.57:8443?type=ws&encryption=auto&host=lax1.ibgfw.top&path=%2Fxrenvws&security=tls&sni=lax1.ibgfw.top#%40Hope_Net-join-us-on-Telegram_58
+  uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e
   alterId: 0
   tls: true
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /xrenvws
+    headers:
+      host: lax1.ibgfw.top
 - name: "\U0001F1FA\U0001F1F8 US 106 VMS"
   type: vmess
   server: 86.38.214.52
   port: 8443
   cipher: auto
-  uuid: 86.38.214.52:8443?type=ws&encryption=auto&host=lax1.ibgfw.top&path=%2Fxrenvws&security=tls&sni=lax1.ibgfw.top#%40Hope_Net-join-us-on-Telegram_59
+  uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e
   alterId: 0
   tls: true
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /xrenvws
+    headers:
+      host: lax1.ibgfw.top
 - name: "\U0001F1EE\U0001F1F9 IT 107 VMS"
   type: vmess
   server: 92.60.74.148
   port: 8443
   cipher: auto
-  uuid: 92.60.74.148:8443?type=ws&encryption=auto&host=lax2.ibgfw.top&path=%2Fdyajvws&security=tls&sni=lax2.ibgfw.top#%40Hope_Net-join-us-on-Telegram_60
+  uuid: e88b85c6-93b4-47f6-b3fb-2c55dcb1289f
   alterId: 0
   tls: true
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /dyajvws
+    headers:
+      host: lax2.ibgfw.top
 - name: "\U0001F1FA\U0001F1F8 US 108 SSS"
   type: ss
   server: 173.244.56.6
@@ -967,7 +987,7 @@ proxies:
   server: 103.149.183.178
   port: 54675
   cipher: auto
-  uuid: 103.149.183.178:54675?type=tcp&encryption=auto#%F0%9F%A7%8A70%40oneclickvpnkeys
+  uuid: 3a907956-f668-4e6b-ea03-0949f0c9c0a5
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -977,7 +997,7 @@ proxies:
   server: 103.149.183.178
   port: 27512
   cipher: auto
-  uuid: 103.149.183.178:27512?type=tcp&encryption=auto#%F0%9F%A7%8A71%40oneclickvpnkeys
+  uuid: 96d38683-0817-4d91-bffa-6f03df18d9dc
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -1982,25 +2002,29 @@ proxies:
   server: 104.17.213.241
   port: 80
   cipher: auto
-  uuid: 104.17.213.241:80?type=ws&encryption=auto&host=chunchuan.kejixiaoqi666.store&path=%2F#%40Hope_Net-join-us-on-Telegram_93
+  uuid: e6543319-0574-42ac-b778-1c4325d626f5
   alterId: 0
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /
+    headers:
+      host: chunchuan.kejixiaoqi666.store
 - name: "\U0001F1FA\U0001F1F3 UN 259 VMS"
   type: vmess
   server: 104.21.96.1
   port: 8443
   cipher: auto
-  uuid: 104.21.96.1:8443?type=ws&encryption=auto&host=portland.899994.xyz&path=%2Findex&security=tls&sni=portland.899994.xyz#%40Hope_Net-join-us-on-Telegram_94
+  uuid: a0605527-28e4-449c-80ee-5642cc16a8af
   alterId: 0
   tls: true
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /index
+    headers:
+      host: portland.899994.xyz
 - name: "\U0001F1FA\U0001F1F8 US 260 TJN"
   type: trojan
   server: 108.165.152.55
@@ -2010,7 +2034,7 @@ proxies:
   sni: ngepx.ambercc.filegear-sg.me
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 261 TJN"
+- name: "\U0001F1FA\U0001F1F3 UN 261 TJN"
   type: trojan
   server: damien.ns.cloudflare.com
   port: 443
@@ -2111,25 +2135,27 @@ proxies:
   server: 104.19.48.236
   port: 80
   cipher: auto
-  uuid: 104.19.48.236:80?type=ws&encryption=auto&host=chunchuan.kejixiaoqi666.store&path=%2F#%F0%9F%8F%81RELAY-104.19.48.236-0284
+  uuid: e6543319-0574-42ac-b778-1c4325d626f5
   alterId: 0
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /
+    headers:
+      host: chunchuan.kejixiaoqi666.store
 - name: "\U0001F1FA\U0001F1F8 US 274 VMS"
   type: vmess
   server: 192.227.237.60
   port: 80
   cipher: auto
-  uuid: 192.227.237.60:80?type=ws&encryption=auto&path=%2Fdabai.in104.21.158.149#%F0%9F%87%BA%F0%9F%87%B8US-192.227.237.60-6253
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
   alterId: 0
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /dabai.in104.21.158.149
 - name: "\U0001F1FA\U0001F1F8 US 275 SSS"
   type: ss
   server: 38.68.135.112
@@ -3266,13 +3292,15 @@ proxies:
   server: 185.176.26.209
   port: 8443
   cipher: auto
-  uuid: 185.176.26.209:8443?type=ws&encryption=auto&host=lax1.ibgfw.top&path=%2Fxrenvws&security=tls&sni=lax1.ibgfw.top#%F0%9F%8F%81RELAY-185.176.26.209-0842
+  uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e
   alterId: 0
   tls: true
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /xrenvws
+    headers:
+      host: lax1.ibgfw.top
 - name: "\U0001F1FA\U0001F1F3 UN 434 TJN"
   type: trojan
   server: 162.159.21.210
@@ -3371,13 +3399,15 @@ proxies:
   server: az05.beyondy.cfd
   port: 443
   cipher: auto
-  uuid: az05.beyondy.cfd:443?type=ws&encryption=auto&host=az05.beyondy.cfd&path=%2Flink&security=tls&sni=az05.beyondy.cfd#%F0%9F%87%AB%F0%9F%87%B7FR-146.19.168.161-5699
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
   alterId: 0
   tls: true
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /link
+    headers:
+      host: az05.beyondy.cfd
 - name: "\U0001F1FA\U0001F1F8 US 449 TJN"
   type: trojan
   server: kip.ns.cloudflare.com
@@ -3530,13 +3560,15 @@ proxies:
   server: 104.21.64.1
   port: 8443
   cipher: auto
-  uuid: 104.21.64.1:8443?type=ws&encryption=auto&host=nl.899994.xyz&path=%2Findex&security=tls&sni=nl.899994.xyz#%40Hope_Net-join-us-on-Telegram_122
+  uuid: a0605527-28e4-449c-80ee-5642cc16a8af
   alterId: 0
   tls: true
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /index
+    headers:
+      host: nl.899994.xyz
 - name: "\U0001F1EE\U0001F1F3 IN 467 SSS"
   type: ss
   server: 103.174.86.113
@@ -3566,13 +3598,15 @@ proxies:
   server: 104.17.213.241
   port: 2095
   cipher: auto
-  uuid: 104.17.213.241:2095?type=ws&encryption=auto&host=100-33-108-197.s1.db-link02.top&path=%2Fdabai.in104.24.248.64#%40Hope_Net-join-us-on-Telegram_123
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
   alterId: 0
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /dabai.in104.24.248.64
+    headers:
+      host: 100-33-108-197.s1.db-link02.top
 - name: "\U0001F1FA\U0001F1F8 US 472 TJN"
   type: trojan
   server: 45.59.187.105
@@ -3656,13 +3690,15 @@ proxies:
   server: 0000000000000000000000000080.cgroup-node-for-bigairport.sbs
   port: 42360
   cipher: auto
-  uuid: 0000000000000000000000000080.cgroup-node-for-bigairport.sbs:42360?type=ws&encryption=auto&host=0000000000000000000000000080.cgroup-node-for-bigairport.sbs&path=%2F&security=tls&sni=0000000000000000000000000080.cgroup-node-for-bigairport.sbs#%F0%9F%87%AF%F0%9F%87%B5JP-13.114.143.115-6193
+  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
   alterId: 0
   tls: true
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /
+    headers:
+      host: 0000000000000000000000000080.cgroup-node-for-bigairport.sbs
 - name: "\U0001F1FA\U0001F1F3 UN 484 SSS"
   type: ss
   server: 23.157.40.87
@@ -3873,7 +3909,7 @@ proxies:
   sni: td.promote.icu
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 509 TJN"
+- name: "\U0001F1FA\U0001F1F3 UN 509 TJN"
   type: trojan
   server: abdullah.ns.cloudflare.com
   port: 443
@@ -3934,7 +3970,7 @@ proxies:
   udp: true
   password: bpb-trojan
   sni: bpb-hd.aaronchin.xyz
-  skip-cert-verify: true
+  skip-cert-verify: false
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 518 SSS"
   type: ss
@@ -3954,7 +3990,7 @@ proxies:
   port: 8000
   password: KixLvKzwjekG00rm
   cipher: aes-256-gcm
-- name: "\U0001F1FA\U0001F1F8 US 521 TJN"
+- name: "\U0001F1EF\U0001F1F5 JP 521 TJN"
   type: trojan
   server: hk03.trojanyyds.xyz
   port: 443
@@ -3990,7 +4026,7 @@ proxies:
   sni: ssjj.esslh.filegear-sg.me
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 525 TJN"
+- name: "\U0001F1EF\U0001F1F5 JP 525 TJN"
   type: trojan
   server: us02.trojanyyds.xyz
   port: 443
@@ -4165,13 +4201,15 @@ proxies:
   server: 104.21.112.1
   port: 8443
   cipher: auto
-  uuid: 104.21.112.1:8443?type=ws&encryption=auto&host=it0.899994.xyz&path=%2Findex&security=tls&sni=it0.899994.xyz#%40Hope_Net-join-us-on-Telegram_150
+  uuid: a0605527-28e4-449c-80ee-5642cc16a8af
   alterId: 0
   tls: true
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /index
+    headers:
+      host: it0.899994.xyz
 - name: "\U0001F1FA\U0001F1F8 US 549 TJN"
   type: trojan
   server: 104.26.15.85
@@ -4204,13 +4242,15 @@ proxies:
   server: ovhwuxian.pai50288.uk
   port: 8443
   cipher: auto
-  uuid: ovhwuxian.pai50288.uk:8443?type=ws&encryption=auto&host=ovhwuxian.pai50288.uk&path=%2F&security=tls&sni=ovhwuxian.pai50288.uk#%40Hope_Net-join-us-on-Telegram_154
+  uuid: 86455bfc-dd02-4a3b-9f03-7668f39375d6
   alterId: 0
   tls: true
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /
+    headers:
+      host: ovhwuxian.pai50288.uk
 - name: "\U0001F1F7\U0001F1FA RU 553 TJN"
   type: trojan
   server: 5.182.84.22
@@ -4264,13 +4304,15 @@ proxies:
   server: 104.21.80.1
   port: 8443
   cipher: auto
-  uuid: 104.21.80.1:8443?type=ws&encryption=auto&host=it0.899994.xyz&path=%2Findex&security=tls&sni=it0.899994.xyz#%F0%9F%8F%81RELAY-104.21.80.1-0849
+  uuid: a0605527-28e4-449c-80ee-5642cc16a8af
   alterId: 0
   tls: true
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /index
+    headers:
+      host: it0.899994.xyz
 - name: "\U0001F1FA\U0001F1F8 US 561 TJN"
   type: trojan
   server: 167.68.4.10
@@ -4519,13 +4561,15 @@ proxies:
   server: 198.41.209.70
   port: 8880
   cipher: auto
-  uuid: 198.41.209.70:8880?type=ws&encryption=auto&host=100-103-58-39.s1.db-link02.top&path=%2Fdabai.in104.25.249.215#%40Hope_Net-join-us-on-Telegram_160
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
   alterId: 0
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /dabai.in104.25.249.215
+    headers:
+      host: 100-103-58-39.s1.db-link02.top
 - name: "\U0001F1EA\U0001F1F8 ES 590 TJN"
   type: trojan
   server: 194.62.96.160
@@ -4555,13 +4599,15 @@ proxies:
   server: 104.17.213.241
   port: 2086
   cipher: auto
-  uuid: 104.17.213.241:2086?type=ws&encryption=auto&host=100-171-104-238.s2.db-link02.top&path=%2Fdabai.in172.64.43.14#%40Hope_Net-join-us-on-Telegram_165
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
   alterId: 0
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /dabai.in172.64.43.14
+    headers:
+      host: 100-171-104-238.s2.db-link02.top
 - name: "\U0001F1F0\U0001F1F7 KR 594 TJN"
   type: trojan
   server: 211.222.211.60
@@ -4797,7 +4843,7 @@ proxies:
   port: 8080
   password: 1RWwXhwfAB5gAEozU4G2Pg
   cipher: chacha20-ietf-poly1305
-- name: "\U0001F1FA\U0001F1F8 US 625 TJN"
+- name: "\U0001F1EF\U0001F1F5 JP 625 TJN"
   type: trojan
   server: tw02.trojanyyds.xyz
   port: 443
@@ -4847,25 +4893,29 @@ proxies:
   server: 5.10.246.166
   port: 8443
   cipher: auto
-  uuid: 5.10.246.166:8443?type=ws&encryption=auto&host=lax1.ibgfw.top&path=%2Fxrenvws&security=tls&sni=lax1.ibgfw.top#%40Hope_Net-join-us-on-Telegram_182
+  uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e
   alterId: 0
   tls: true
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /xrenvws
+    headers:
+      host: lax1.ibgfw.top
 - name: "\U0001F1FA\U0001F1F3 UN 632 VMS"
   type: vmess
   server: 104.21.13.222
   port: 8443
   cipher: auto
-  uuid: 104.21.13.222:8443?type=ws&encryption=auto&host=lax2.ibgfw.top&path=%2Fdyajvws&security=tls&sni=lax2.ibgfw.top#%40Hope_Net-join-us-on-Telegram_183
+  uuid: e88b85c6-93b4-47f6-b3fb-2c55dcb1289f
   alterId: 0
   tls: true
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /dyajvws
+    headers:
+      host: lax2.ibgfw.top
 - name: "\U0001F1FA\U0001F1F8 US 633 SSS"
   type: ss
   server: 67.220.95.102
@@ -5126,25 +5176,29 @@ proxies:
   server: 163.5.159.231
   port: 443
   cipher: auto
-  uuid: 163.5.159.231:443?type=ws&encryption=auto&host=irvideo.cfd&path=%2Flinkws&security=tls&sni=irvideo.cfd#%F0%9F%87%AB%F0%9F%87%B7FR-163.5.159.231-0842
+  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
   alterId: 0
   tls: true
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /linkws
+    headers:
+      host: irvideo.cfd
 - name: "\U0001F1EB\U0001F1F7 FR 676 VMS"
   type: vmess
   server: irvideo.cfd
   port: 443
   cipher: auto
-  uuid: irvideo.cfd:443?type=ws&encryption=auto&host=irvideo.cfd&path=%2Flinkws&security=tls&sni=irvideo.cfd#%F0%9F%87%AB%F0%9F%87%B7FR-163.5.159.231-0873
+  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
   alterId: 0
   tls: true
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /linkws
+    headers:
+      host: irvideo.cfd
 - name: "\U0001F1F8\U0001F1EC SG 677 TJN"
   type: trojan
   server: 27.50.48.115
@@ -5160,7 +5214,7 @@ proxies:
   port: 443
   password: Nk9asglDzHzjktVzTkvhaA
   cipher: chacha20-ietf-poly1305
-- name: "\U0001F1F3\U0001F1F1 NL 679 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 679 TJN"
   type: trojan
   server: trus.moonfree.top
   port: 443
@@ -5182,13 +5236,15 @@ proxies:
   server: 104.21.81.115
   port: 443
   cipher: auto
-  uuid: 104.21.81.115:443?type=ws&encryption=auto&host=northflank.107421.xyz&path=%2Fvmess&security=tls&sni=northflank.107421.xyz#%40Hope_Net-join-us-on-Telegram_188
+  uuid: de04add9-5c68-8bab-950c-08cd5320df18
   alterId: 0
   tls: true
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /vmess
+    headers:
+      host: northflank.107421.xyz
 - name: "\U0001F1FA\U0001F1F8 US 682 TJN"
   type: trojan
   server: 172.67.130.66
@@ -5215,13 +5271,15 @@ proxies:
   server: 172.67.213.110
   port: 443
   cipher: auto
-  uuid: 172.67.213.110:443?type=ws&encryption=auto&host=sgfqkqmltcy.site&path=%2Frbqqvws&security=tls&sni=sgfqkqmltcy.site#%40Hope_Net-join-us-on-Telegram_192
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   tls: true
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /rbqqvws
+    headers:
+      host: sgfqkqmltcy.site
 - name: "\U0001F1FA\U0001F1F3 UN 686 SSS"
   type: ss
   server: 23.157.40.120
@@ -5476,13 +5534,15 @@ proxies:
   server: 104.21.48.1
   port: 8443
   cipher: auto
-  uuid: 104.21.48.1:8443?type=ws&encryption=auto&host=it0.899994.xyz&path=%2Findex&security=tls&sni=it0.899994.xyz#%40Hope_Net-join-us-on-Telegram_208
+  uuid: a0605527-28e4-449c-80ee-5642cc16a8af
   alterId: 0
   tls: true
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /index
+    headers:
+      host: it0.899994.xyz
 - name: "\U0001F1F0\U0001F1F7 KR 719 TJN"
   type: trojan
   server: 121.180.184.145
@@ -5499,7 +5559,7 @@ proxies:
   udp: true
   password: telegram-id-privatevpns
   sni: trojan.burgerip.co.uk
-  skip-cert-verify: true
+  skip-cert-verify: false
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 721 TJN"
   type: trojan
@@ -5508,7 +5568,7 @@ proxies:
   udp: true
   password: telegram-id-directvpn
   sni: trojan.burgerip.co.uk
-  skip-cert-verify: true
+  skip-cert-verify: false
   network: tcp
 - name: "\U0001F1EB\U0001F1F7 FR 722 TJN"
   type: trojan
@@ -5517,7 +5577,7 @@ proxies:
   udp: true
   password: telegram-id-directvpn
   sni: trojan.burgerip.co.uk
-  skip-cert-verify: true
+  skip-cert-verify: false
   network: tcp
 - name: "\U0001F1EC\U0001F1E7 GB 723 TJN"
   type: trojan
@@ -5526,7 +5586,7 @@ proxies:
   udp: true
   password: telegram-id-directvpn
   sni: trojan.burgerip.co.uk
-  skip-cert-verify: true
+  skip-cert-verify: false
   network: tcp
 - name: "\U0001F1EE\U0001F1EA IE 724 TJN"
   type: trojan
@@ -5535,7 +5595,7 @@ proxies:
   udp: true
   password: telegram-id-directvpn
   sni: trojan.burgerip.co.uk
-  skip-cert-verify: true
+  skip-cert-verify: false
   network: tcp
 - name: "\U0001F1F0\U0001F1F7 KR 725 TJN"
   type: trojan
@@ -5580,7 +5640,7 @@ proxies:
   udp: true
   password: telegram-id-privatevpns
   sni: trojan.burgerip.co.uk
-  skip-cert-verify: true
+  skip-cert-verify: false
   network: tcp
 - name: "\U0001F1F8\U0001F1EC SG 730 TJN"
   type: trojan
@@ -5613,7 +5673,7 @@ proxies:
   udp: true
   password: telegram-id-privatevpns
   sni: trojan.burgerip.co.uk
-  skip-cert-verify: true
+  skip-cert-verify: false
   network: tcp
 - name: "\U0001F1F8\U0001F1EA SE 734 TJN"
   type: trojan
@@ -5622,7 +5682,7 @@ proxies:
   udp: true
   password: telegram-id-privatevpns
   sni: trojan.burgerip.co.uk
-  skip-cert-verify: true
+  skip-cert-verify: false
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 735 TJN"
   type: trojan
@@ -5631,7 +5691,7 @@ proxies:
   udp: true
   password: telegram-id-privatevpns
   sni: trojan.burgerip.co.uk
-  skip-cert-verify: true
+  skip-cert-verify: false
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 736 TJN"
   type: trojan
@@ -5640,7 +5700,7 @@ proxies:
   udp: true
   password: telegram-id-directvpn
   sni: trojan.burgerip.co.uk
-  skip-cert-verify: true
+  skip-cert-verify: false
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 737 TJN"
   type: trojan
@@ -5649,7 +5709,7 @@ proxies:
   udp: true
   password: telegram-id-directvpn
   sni: trojan.burgerip.co.uk
-  skip-cert-verify: true
+  skip-cert-verify: false
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 738 TJN"
   type: trojan
@@ -5658,7 +5718,7 @@ proxies:
   udp: true
   password: telegram-id-directvpn
   sni: trojan.burgerip.co.uk
-  skip-cert-verify: true
+  skip-cert-verify: false
   network: tcp
 - name: "\U0001F1F8\U0001F1EA SE 739 TJN"
   type: trojan
@@ -5667,7 +5727,7 @@ proxies:
   udp: true
   password: telegram-id-directvpn
   sni: trojan.burgerip.co.uk
-  skip-cert-verify: true
+  skip-cert-verify: false
   network: tcp
 - name: "\U0001F1E7\U0001F1ED BH 740 SSS"
   type: ss
@@ -5733,7 +5793,7 @@ proxies:
   server: 206.206.80.66
   port: 23423
   cipher: auto
-  uuid: 206.206.80.66:23423?type=tcp&encryption=auto#%F0%9F%8E%8178%40oneclickvpnkeys
+  uuid: 8825fd04-9005-4410-b48c-d2f345ec7fee
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -5758,7 +5818,7 @@ proxies:
   server: 5.196.29.123
   port: 2082
   cipher: auto
-  uuid: 5.196.29.123:2082?type=ws&encryption=auto&path=%2F#%F0%9F%95%B9%EF%B8%8F30%40oneclickvpnkeys
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -5772,7 +5832,7 @@ proxies:
   udp: true
   password: Aimer
   sni: ngepz.ambercc.filegear-sg.me
-  skip-cert-verify: true
+  skip-cert-verify: false
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 754 TJN"
   type: trojan
@@ -5794,7 +5854,7 @@ proxies:
   server: 159.69.120.98
   port: 41391
   cipher: auto
-  uuid: 159.69.120.98:41391?type=tcp&encryption=auto#%F0%9F%8F%806%40oneclickvpnkeys
+  uuid: b5c3e2e8-dfb6-4a0a-b656-87e997610785
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -5813,7 +5873,7 @@ proxies:
   server: 108.162.192.154
   port: 2087
   cipher: auto
-  uuid: 108.162.192.154:2087?type=grpc&encryption=auto&security=tls#%F0%9F%9B%A0%EF%B8%8F49%40oneclickvpnkeys_1
+  uuid: 01945160-adf2-7000-9f6c-902b7bc250aa
   alterId: 0
   tls: true
   skip-cert-verify: true
@@ -5862,7 +5922,7 @@ proxies:
   server: elma.ns.cloudflare.com
   port: 2087
   cipher: auto
-  uuid: elma.ns.cloudflare.com:2087?type=grpc&encryption=auto&security=tls#%F0%9F%9B%A0%EF%B8%8F49%40oneclickvpnkeys_2
+  uuid: 01945160-adf2-7000-9f6c-902b7bc250aa
   alterId: 0
   tls: true
   skip-cert-verify: true
@@ -5914,7 +5974,7 @@ proxies:
   server: 46.29.166.237
   port: 47555
   cipher: auto
-  uuid: 46.29.166.237:47555?type=tcp&encryption=auto#%40Hope_Net-join-us-on-Telegram_218
+  uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -5948,25 +6008,29 @@ proxies:
   server: sg2.cowvpn.org
   port: 443
   cipher: auto
-  uuid: sg2.cowvpn.org:443?type=ws&encryption=auto&host=sg2cf.cowvpn.org&path=%2Fcctv13%2Fvmess_sg2cf&security=tls&sni=sg2cf.cowvpn.org#%40Hope_Net-join-us-on-Telegram_219
+  uuid: 11a805f2-41a7-4cd8-8406-0470c3cde0d3
   alterId: 0
   tls: true
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /cctv13/vmess_sg2cf
+    headers:
+      host: sg2cf.cowvpn.org
 - name: "\U0001F1EB\U0001F1F7 FR 778 VMS"
   type: vmess
   server: indiavideo.sbs
   port: 443
   cipher: auto
-  uuid: indiavideo.sbs:443?type=ws&encryption=auto&host=indiavideo.sbs&path=%2Flinkws&security=tls&sni=indiavideo.sbs#%F0%9F%87%AB%F0%9F%87%B7FR-45.145.167.103-5897
+  uuid: 425c5e6e-30a0-4984-8a13-ee6f72053162
   alterId: 0
   tls: true
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /linkws
+    headers:
+      host: indiavideo.sbs
 - name: "\U0001F1F1\U0001F1F9 LT 779 SSS"
   type: ss
   server: 45.87.175.192
@@ -6070,7 +6134,7 @@ proxies:
   udp: true
   password: telegram-id-privatevpns
   sni: trojan.burgerip.co.uk
-  skip-cert-verify: true
+  skip-cert-verify: false
   network: tcp
 - name: "\U0001F1EC\U0001F1E7 GB 796 TJN"
   type: trojan
@@ -6079,7 +6143,7 @@ proxies:
   udp: true
   password: telegram-id-directvpn
   sni: trojan.burgerip.co.uk
-  skip-cert-verify: true
+  skip-cert-verify: false
   network: tcp
 - name: "\U0001F1E9\U0001F1EA DE 797 TJN"
   type: trojan
@@ -6088,7 +6152,7 @@ proxies:
   udp: true
   password: telegram-id-privatevpns
   sni: trojan.burgerip.co.uk
-  skip-cert-verify: true
+  skip-cert-verify: false
   network: tcp
 - name: "\U0001F1EE\U0001F1EA IE 798 TJN"
   type: trojan
@@ -6097,7 +6161,7 @@ proxies:
   udp: true
   password: telegram-id-directvpn
   sni: trojan.burgerip.co.uk
-  skip-cert-verify: true
+  skip-cert-verify: false
   network: tcp
 - name: "\U0001F1E8\U0001F1E6 CA 799 TJN"
   type: trojan
@@ -6106,7 +6170,7 @@ proxies:
   udp: true
   password: telegram-id-directvpn
   sni: trojan.burgerip.co.uk
-  skip-cert-verify: true
+  skip-cert-verify: false
   network: tcp
 - name: "\U0001F1E8\U0001F1ED CH 800 TJN"
   type: trojan
@@ -6115,7 +6179,7 @@ proxies:
   udp: true
   password: Aimer
   sni: ngepz.ambercc.filegear-sg.me
-  skip-cert-verify: true
+  skip-cert-verify: false
   network: tcp
 - name: "\U0001F1EC\U0001F1EE GI 801 SSS"
   type: ss
@@ -6135,204 +6199,6 @@ proxies:
   port: 1866
   password: oXGp1+ihlfKg826H
   cipher: chacha20-ietf-poly1305
-- name: "\U0001F1FA\U0001F1F3 UN 804 VMS"
-  type: vmess
-  server: ovhwuxian.pai50288.uk
-  port: 8443
-  cipher: auto
-  uuid: 86455bfc-dd02-4a3b-9f03-7668f39375d6
-  alterId: 0
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-- name: "\U0001F1E6\U0001F1FA AU 805 VMS"
-  type: vmess
-  server: 20.213.20.185
-  port: 17718
-  cipher: auto
-  uuid: c206e022-34c6-4fe3-a232-b9c07ba3165d
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1F7\U0001F1FA RU 806 VMS"
-  type: vmess
-  server: 46.29.166.237
-  port: 47555
-  cipher: auto
-  uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1FF CZ 807 VMS"
-  type: vmess
-  server: 79.127.229.54
-  port: 18000
-  cipher: auto
-  uuid: fa1897db-1925-4c86-a495-939a959af900
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 808 VMS"
-  type: vmess
-  server: 104.21.48.1
-  port: 8443
-  cipher: auto
-  uuid: a0605527-28e4-449c-80ee-5642cc16a8af
-  alterId: 0
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-- name: "\U0001F1FA\U0001F1F3 UN 809 VMS"
-  type: vmess
-  server: 104.21.112.1
-  port: 8443
-  cipher: auto
-  uuid: a0605527-28e4-449c-80ee-5642cc16a8af
-  alterId: 0
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-- name: "\U0001F1FA\U0001F1F3 UN 810 VMS"
-  type: vmess
-  server: 104.21.13.222
-  port: 8443
-  cipher: auto
-  uuid: e88b85c6-93b4-47f6-b3fb-2c55dcb1289f
-  alterId: 0
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-- name: "\U0001F1FA\U0001F1F8 US 811 VMS"
-  type: vmess
-  server: 167.68.42.137
-  port: 8443
-  cipher: auto
-  uuid: e88b85c6-93b4-47f6-b3fb-2c55dcb1289f
-  alterId: 0
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-- name: "\U0001F1FA\U0001F1F3 UN 812 VMS"
-  type: vmess
-  server: 104.17.213.241
-  port: 2095
-  cipher: auto
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-- name: "\U0001F1E6\U0001F1FF AZ 813 VMS"
-  type: vmess
-  server: 5.10.246.166
-  port: 8443
-  cipher: auto
-  uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e
-  alterId: 0
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-- name: "\U0001F1FA\U0001F1F8 US 814 VMS"
-  type: vmess
-  server: 86.38.214.52
-  port: 8443
-  cipher: auto
-  uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e
-  alterId: 0
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-- name: "\U0001F1EE\U0001F1F9 IT 815 VMS"
-  type: vmess
-  server: 92.60.74.148
-  port: 8443
-  cipher: auto
-  uuid: e88b85c6-93b4-47f6-b3fb-2c55dcb1289f
-  alterId: 0
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-- name: "\U0001F1EA\U0001F1F8 ES 816 VMS"
-  type: vmess
-  server: 185.251.83.248
-  port: 8443
-  cipher: auto
-  uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e
-  alterId: 0
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-- name: "\U0001F1FA\U0001F1F8 US 817 VMS"
-  type: vmess
-  server: 172.67.133.78
-  port: 8443
-  cipher: auto
-  uuid: e88b85c6-93b4-47f6-b3fb-2c55dcb1289f
-  alterId: 0
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-- name: "\U0001F1F7\U0001F1FA RU 818 VMS"
-  type: vmess
-  server: 213.241.198.57
-  port: 8443
-  cipher: auto
-  uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e
-  alterId: 0
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-- name: "\U0001F1FA\U0001F1F3 UN 819 VMS"
-  type: vmess
-  server: 198.41.209.70
-  port: 8880
-  cipher: auto
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-- name: "\U0001F1FA\U0001F1F3 UN 820 VMS"
-  type: vmess
-  server: 104.17.213.241
-  port: 2086
-  cipher: auto
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
 proxy-groups:
 - name: automatic
   type: url-test
@@ -6372,9 +6238,9 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 33 TJN"
   - "\U0001F1FA\U0001F1F8 US 34 TJN"
   - "\U0001F1FA\U0001F1F8 US 35 TJN"
-  - "\U0001F1FA\U0001F1F8 US 36 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 36 TJN"
   - "\U0001F1FA\U0001F1F8 US 37 TJN"
-  - "\U0001F1FA\U0001F1F8 US 38 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 38 TJN"
   - "\U0001F1E6\U0001F1FA AU 39 TJN"
   - "\U0001F1E6\U0001F1FA AU 40 TJN"
   - "\U0001F1E6\U0001F1FA AU 41 VMS"
@@ -6430,7 +6296,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 91 TJN"
   - "\U0001F1FA\U0001F1F8 US 92 TJN"
   - "\U0001F1FA\U0001F1F3 UN 93 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 94 TJN"
+  - "\U0001F1FA\U0001F1F8 US 94 TJN"
   - "\U0001F1FA\U0001F1F3 UN 95 TJN"
   - "\U0001F1FA\U0001F1F8 US 96 TJN"
   - "\U0001F1FA\U0001F1F3 UN 97 TJN"
@@ -6597,7 +6463,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 258 VMS"
   - "\U0001F1FA\U0001F1F3 UN 259 VMS"
   - "\U0001F1FA\U0001F1F8 US 260 TJN"
-  - "\U0001F1FA\U0001F1F8 US 261 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 261 TJN"
   - "\U0001F1F8\U0001F1E8 SC 262 TJN"
   - "\U0001F1F7\U0001F1FA RU 263 TJN"
   - "\U0001F1E6\U0001F1F2 AM 264 TJN"
@@ -6845,7 +6711,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 506 TJN"
   - "\U0001F1FA\U0001F1F3 UN 507 TJN"
   - "\U0001F1FA\U0001F1F3 UN 508 TJN"
-  - "\U0001F1FA\U0001F1F8 US 509 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 509 TJN"
   - "\U0001F1FA\U0001F1F8 US 510 TJN"
   - "\U0001F1FA\U0001F1F8 US 511 SSS"
   - "\U0001F1FA\U0001F1F8 US 512 SSS"
@@ -6857,11 +6723,11 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 518 SSS"
   - "\U0001F1FA\U0001F1F3 UN 519 SSS"
   - "\U0001F1FA\U0001F1F8 US 520 SSS"
-  - "\U0001F1FA\U0001F1F8 US 521 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 521 TJN"
   - "\U0001F1FF\U0001F1E6 ZA 522 TJN"
   - "\U0001F1FA\U0001F1F8 US 523 TJN"
   - "\U0001F1EE\U0001F1F7 IR 524 TJN"
-  - "\U0001F1FA\U0001F1F8 US 525 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 525 TJN"
   - "\U0001F1FA\U0001F1F8 US 526 SSS"
   - "\U0001F1FA\U0001F1F3 UN 527 SSS"
   - "\U0001F1FA\U0001F1F3 UN 528 SSS"
@@ -6961,7 +6827,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 622 SSS"
   - "\U0001F1FA\U0001F1F3 UN 623 SSS"
   - "\U0001F1F1\U0001F1F9 LT 624 SSS"
-  - "\U0001F1FA\U0001F1F8 US 625 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 625 TJN"
   - "\U0001F1F7\U0001F1FA RU 626 SSS"
   - "\U0001F1FA\U0001F1F3 UN 627 SSS"
   - "\U0001F1FA\U0001F1F8 US 628 TJN"
@@ -7015,7 +6881,7 @@ proxy-groups:
   - "\U0001F1EB\U0001F1F7 FR 676 VMS"
   - "\U0001F1F8\U0001F1EC SG 677 TJN"
   - "\U0001F1FA\U0001F1F3 UN 678 SSS"
-  - "\U0001F1F3\U0001F1F1 NL 679 TJN"
+  - "\U0001F1FA\U0001F1F8 US 679 TJN"
   - "\U0001F1EF\U0001F1F5 JP 680 TJN"
   - "\U0001F1FA\U0001F1F3 UN 681 VMS"
   - "\U0001F1FA\U0001F1F8 US 682 TJN"
@@ -7140,23 +7006,6 @@ proxy-groups:
   - "\U0001F1EC\U0001F1EE GI 801 SSS"
   - "\U0001F1FA\U0001F1F3 UN 802 SSS"
   - "\U0001F1FA\U0001F1F8 US 803 SSS"
-  - "\U0001F1FA\U0001F1F3 UN 804 VMS"
-  - "\U0001F1E6\U0001F1FA AU 805 VMS"
-  - "\U0001F1F7\U0001F1FA RU 806 VMS"
-  - "\U0001F1E8\U0001F1FF CZ 807 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 808 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 809 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 810 VMS"
-  - "\U0001F1FA\U0001F1F8 US 811 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 812 VMS"
-  - "\U0001F1E6\U0001F1FF AZ 813 VMS"
-  - "\U0001F1FA\U0001F1F8 US 814 VMS"
-  - "\U0001F1EE\U0001F1F9 IT 815 VMS"
-  - "\U0001F1EA\U0001F1F8 ES 816 VMS"
-  - "\U0001F1FA\U0001F1F8 US 817 VMS"
-  - "\U0001F1F7\U0001F1FA RU 818 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 819 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 820 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -7198,9 +7047,9 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 33 TJN"
   - "\U0001F1FA\U0001F1F8 US 34 TJN"
   - "\U0001F1FA\U0001F1F8 US 35 TJN"
-  - "\U0001F1FA\U0001F1F8 US 36 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 36 TJN"
   - "\U0001F1FA\U0001F1F8 US 37 TJN"
-  - "\U0001F1FA\U0001F1F8 US 38 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 38 TJN"
   - "\U0001F1E6\U0001F1FA AU 39 TJN"
   - "\U0001F1E6\U0001F1FA AU 40 TJN"
   - "\U0001F1E6\U0001F1FA AU 41 VMS"
@@ -7256,7 +7105,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 91 TJN"
   - "\U0001F1FA\U0001F1F8 US 92 TJN"
   - "\U0001F1FA\U0001F1F3 UN 93 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 94 TJN"
+  - "\U0001F1FA\U0001F1F8 US 94 TJN"
   - "\U0001F1FA\U0001F1F3 UN 95 TJN"
   - "\U0001F1FA\U0001F1F8 US 96 TJN"
   - "\U0001F1FA\U0001F1F3 UN 97 TJN"
@@ -7423,7 +7272,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 258 VMS"
   - "\U0001F1FA\U0001F1F3 UN 259 VMS"
   - "\U0001F1FA\U0001F1F8 US 260 TJN"
-  - "\U0001F1FA\U0001F1F8 US 261 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 261 TJN"
   - "\U0001F1F8\U0001F1E8 SC 262 TJN"
   - "\U0001F1F7\U0001F1FA RU 263 TJN"
   - "\U0001F1E6\U0001F1F2 AM 264 TJN"
@@ -7671,7 +7520,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 506 TJN"
   - "\U0001F1FA\U0001F1F3 UN 507 TJN"
   - "\U0001F1FA\U0001F1F3 UN 508 TJN"
-  - "\U0001F1FA\U0001F1F8 US 509 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 509 TJN"
   - "\U0001F1FA\U0001F1F8 US 510 TJN"
   - "\U0001F1FA\U0001F1F8 US 511 SSS"
   - "\U0001F1FA\U0001F1F8 US 512 SSS"
@@ -7683,11 +7532,11 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 518 SSS"
   - "\U0001F1FA\U0001F1F3 UN 519 SSS"
   - "\U0001F1FA\U0001F1F8 US 520 SSS"
-  - "\U0001F1FA\U0001F1F8 US 521 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 521 TJN"
   - "\U0001F1FF\U0001F1E6 ZA 522 TJN"
   - "\U0001F1FA\U0001F1F8 US 523 TJN"
   - "\U0001F1EE\U0001F1F7 IR 524 TJN"
-  - "\U0001F1FA\U0001F1F8 US 525 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 525 TJN"
   - "\U0001F1FA\U0001F1F8 US 526 SSS"
   - "\U0001F1FA\U0001F1F3 UN 527 SSS"
   - "\U0001F1FA\U0001F1F3 UN 528 SSS"
@@ -7787,7 +7636,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 622 SSS"
   - "\U0001F1FA\U0001F1F3 UN 623 SSS"
   - "\U0001F1F1\U0001F1F9 LT 624 SSS"
-  - "\U0001F1FA\U0001F1F8 US 625 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 625 TJN"
   - "\U0001F1F7\U0001F1FA RU 626 SSS"
   - "\U0001F1FA\U0001F1F3 UN 627 SSS"
   - "\U0001F1FA\U0001F1F8 US 628 TJN"
@@ -7841,7 +7690,7 @@ proxy-groups:
   - "\U0001F1EB\U0001F1F7 FR 676 VMS"
   - "\U0001F1F8\U0001F1EC SG 677 TJN"
   - "\U0001F1FA\U0001F1F3 UN 678 SSS"
-  - "\U0001F1F3\U0001F1F1 NL 679 TJN"
+  - "\U0001F1FA\U0001F1F8 US 679 TJN"
   - "\U0001F1EF\U0001F1F5 JP 680 TJN"
   - "\U0001F1FA\U0001F1F3 UN 681 VMS"
   - "\U0001F1FA\U0001F1F8 US 682 TJN"
@@ -7966,22 +7815,5 @@ proxy-groups:
   - "\U0001F1EC\U0001F1EE GI 801 SSS"
   - "\U0001F1FA\U0001F1F3 UN 802 SSS"
   - "\U0001F1FA\U0001F1F8 US 803 SSS"
-  - "\U0001F1FA\U0001F1F3 UN 804 VMS"
-  - "\U0001F1E6\U0001F1FA AU 805 VMS"
-  - "\U0001F1F7\U0001F1FA RU 806 VMS"
-  - "\U0001F1E8\U0001F1FF CZ 807 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 808 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 809 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 810 VMS"
-  - "\U0001F1FA\U0001F1F8 US 811 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 812 VMS"
-  - "\U0001F1E6\U0001F1FF AZ 813 VMS"
-  - "\U0001F1FA\U0001F1F8 US 814 VMS"
-  - "\U0001F1EE\U0001F1F9 IT 815 VMS"
-  - "\U0001F1EA\U0001F1F8 ES 816 VMS"
-  - "\U0001F1FA\U0001F1F8 US 817 VMS"
-  - "\U0001F1F7\U0001F1FA RU 818 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 819 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 820 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
