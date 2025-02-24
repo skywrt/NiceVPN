@@ -311,6 +311,9 @@ proxies:
   port: 45905
   password: 777bc05be0dd624959fb
   cipher: aes-128-gcm
+  plugin: obfs-local
+  plugin-opts:
+    mode: websocket
 - name: "\U0001F1E8\U0001F1F3 CN 44 SSS"
   type: ss
   server: 8tv68qhq.slashdevslashnetslashtun.net
@@ -371,7 +374,7 @@ proxies:
   server: 31.58.137.67
   port: 39119
   cipher: auto
-  uuid: 00dedc77-59b9-42f1-a9ce-3f33af694f5e
+  uuid: 31.58.137.67:39119?type=tcp&encryption=auto#%E4%BC%8A%E6%9C%97-2.88MB%2Fs
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -462,7 +465,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /linkvws
 - name: "\U0001F1EC\U0001F1E7 GB 66 SSS"
   type: ss
   server: 77.239.99.180
@@ -589,7 +592,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: github.com/Alvin9999
 - name: "\U0001F1FA\U0001F1F8 US 84 SSS"
   type: ss
   server: 64.74.163.130
@@ -697,7 +700,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /L0229-16
 - name: "\U0001F1FA\U0001F1F8 US 101 SSS"
   type: ss
   server: 38.121.43.97
@@ -725,6 +728,8 @@ proxies:
   network: ws
   ws-opts:
     path: /
+    headers:
+      host: sahand.serveminecraft.net
 - name: "\U0001F1FA\U0001F1E6 UA 104 SSS"
   type: ss
   server: 185.234.64.35
@@ -762,7 +767,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /linkvws
 - name: "\U0001F1FA\U0001F1F8 US 109 SSS"
   type: ss
   server: 38.121.43.97
@@ -994,7 +999,7 @@ proxies:
   port: 8388
   password: MzZjN
   cipher: chacha20-ietf-poly1305
-- name: "\U0001F1FA\U0001F1F8 US 140 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 140 VMS"
   type: vmess
   server: uswuxian.pai50288.uk
   port: 8443
@@ -1006,6 +1011,8 @@ proxies:
   network: ws
   ws-opts:
     path: /
+    headers:
+      host: uswuxian.pai50288.uk
 - name: "\U0001F1ED\U0001F1F0 HK 141 SSS"
   type: ss
   server: 154.196.244.22
@@ -1024,6 +1031,8 @@ proxies:
   network: ws
   ws-opts:
     path: /
+    headers:
+      host: chunchuan.kejixiaoqi666.store
 - name: "\U0001F1FA\U0001F1F8 US 143 SSS"
   type: ss
   server: uk1.ssocks.wiki
@@ -1118,6 +1127,8 @@ proxies:
   network: ws
   ws-opts:
     path: /
+    headers:
+      host: chunchuan.kejixiaoqi666.store
 - name: "\U0001F1FA\U0001F1F8 US 157 SSS"
   type: ss
   server: 45.158.171.141
@@ -1181,7 +1192,9 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /iphone
+    headers:
+      host: www.apple.com
 - name: "\U0001F1EE\U0001F1EA IE 166 TJN"
   type: trojan
   server: 34.248.168.61
@@ -1328,7 +1341,9 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /linkvws
+    headers:
+      host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
 - name: "\U0001F1F1\U0001F1F9 LT 186 SSS"
   type: ss
   server: 45.87.175.65
@@ -1448,7 +1463,9 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /dabai.in172.64.55.203
+    headers:
+      host: 100-79-28-26.s1.db-link01.top
 - name: "\U0001F1FA\U0001F1F8 US 205 SSS"
   type: ss
   server: 38.121.43.71
@@ -1472,7 +1489,9 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /dabai.in104.18.42.172
+    headers:
+      host: 100-38-62-25.s5.db-link02.top
 - name: "\U0001F1FA\U0001F1F3 UN 208 VMS"
   type: vmess
   server: 104.16.155.10
@@ -1484,7 +1503,9 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /dabai.in104.20.130.8
+    headers:
+      host: 100-57-35-141.s2.db-link02.top
 - name: "\U0001F1FA\U0001F1F8 US 209 SSS"
   type: ss
   server: 38.121.43.71
@@ -1568,7 +1589,9 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /kr
+    headers:
+      host: kr.niskakowski.ggff.net
 - name: "\U0001F1FA\U0001F1F8 US 221 VMS"
   type: vmess
   server: burt.ns.cloudflare.com
@@ -1580,8 +1603,10 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
-- name: "\U0001F1FA\U0001F1F8 US 222 VMS"
+    path: /tunnelnyc.875578.xyz
+    headers:
+      host: tunnelnyc.875578.xyz
+- name: "\U0001F1FA\U0001F1F3 UN 222 VMS"
   type: vmess
   server: jose.ns.cloudflare.com
   port: 443
@@ -1592,7 +1617,9 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /tunneljp.875578.xyz
+    headers:
+      host: tunneljp.875578.xyz
 - name: "\U0001F1EB\U0001F1F7 FR 223 VMS"
   type: vmess
   server: 51.77.20.137
@@ -1604,7 +1631,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /linkvws
 - name: "\U0001F1FA\U0001F1F8 US 224 VMS"
   type: vmess
   server: 38.33.34.50
@@ -1616,7 +1643,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /path/1739892314173
 proxy-groups:
 - name: automatic
   type: url-test
@@ -1760,7 +1787,7 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 137 VMS"
   - "\U0001F1ED\U0001F1FA HU 138 TJN"
   - "\U0001F1E8\U0001F1E6 CA 139 SSS"
-  - "\U0001F1FA\U0001F1F8 US 140 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 140 VMS"
   - "\U0001F1ED\U0001F1F0 HK 141 SSS"
   - "\U0001F1FA\U0001F1F3 UN 142 VMS"
   - "\U0001F1FA\U0001F1F8 US 143 SSS"
@@ -1842,7 +1869,7 @@ proxy-groups:
   - "\U0001F1FF\U0001F1E6 ZA 219 SSS"
   - "\U0001F1FA\U0001F1F3 UN 220 VMS"
   - "\U0001F1FA\U0001F1F8 US 221 VMS"
-  - "\U0001F1FA\U0001F1F8 US 222 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 222 VMS"
   - "\U0001F1EB\U0001F1F7 FR 223 VMS"
   - "\U0001F1FA\U0001F1F8 US 224 VMS"
   url: https://www.google.com/favicon.ico
@@ -1990,7 +2017,7 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 137 VMS"
   - "\U0001F1ED\U0001F1FA HU 138 TJN"
   - "\U0001F1E8\U0001F1E6 CA 139 SSS"
-  - "\U0001F1FA\U0001F1F8 US 140 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 140 VMS"
   - "\U0001F1ED\U0001F1F0 HK 141 SSS"
   - "\U0001F1FA\U0001F1F3 UN 142 VMS"
   - "\U0001F1FA\U0001F1F8 US 143 SSS"
@@ -2072,7 +2099,7 @@ proxy-groups:
   - "\U0001F1FF\U0001F1E6 ZA 219 SSS"
   - "\U0001F1FA\U0001F1F3 UN 220 VMS"
   - "\U0001F1FA\U0001F1F8 US 221 VMS"
-  - "\U0001F1FA\U0001F1F8 US 222 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 222 VMS"
   - "\U0001F1EB\U0001F1F7 FR 223 VMS"
   - "\U0001F1FA\U0001F1F8 US 224 VMS"
 rules:
