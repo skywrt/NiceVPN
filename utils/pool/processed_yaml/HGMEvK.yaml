@@ -1,4 +1,12 @@
-
+####################################
+# 创建者：v2rayse.com
+# 客户端：Clash.Meta
+# 创建时间：2025-03-09 17:46:36
+# 使用模版：ACL4SSR_Mini.ini
+# 节点数量：53
+# 节点类型：hysteria2, ss
+# !!当前配置文件请使用基于 Clash.Meta 内核程序
+####################################
 mixed-port: 7890
 allow-lan: true
 log-level: info
@@ -84,14 +92,14 @@ proxies:
   - {"name":"套餐到期：2025-03-25","type":"hysteria2","server":"surfboard-hk.aisu.cyou","port":12477,"password":"eb6acfb9-01f1-423e-a862-8914eaf655a1","skip-cert-verify":true}
   - {"name":"官网：aisu.me","type":"hysteria2","server":"surfboard-hk.aisu.cyou","port":12477,"password":"eb6acfb9-01f1-423e-a862-8914eaf655a1","skip-cert-verify":true}
   - {"name":"群组：@aisuchat","type":"hysteria2","server":"surfboard-hk.aisu.cyou","port":12547,"password":"eb6acfb9-01f1-423e-a862-8914eaf655a1","skip-cert-verify":true}
-  - {"name":"🇭🇰 香港1 原生ip","type":"ss","server":"surfboard-hk.aisu.cyou","port":11629,"password":"ZWI2YWNmYjktMDFmMS00MjNlLWE4NjItODkxNGVhZjY="}
-  - {"name":"🇭🇰 香港2 解锁流媒体","type":"ss","server":"surfboard-hk.aisu.cyou","port":11320,"password":"ZWI2YWNmYjktMDFmMS00MjNlLWE4NjItODkxNGVhZjY="}
-  - {"name":"🇭🇰 香港3 原生ip","type":"ss","server":"surfboard-hk.aisu.cyou","port":11314,"password":"ZWI2YWNmYjktMDFmMS00MjNlLWE4NjItODkxNGVhZjY="}
-  - {"name":"🇭🇰 香港4 解锁流媒体","type":"ss","server":"surfboard-hk.aisu.cyou","port":11380,"password":"ZWI2YWNmYjktMDFmMS00MjNlLWE4NjItODkxNGVhZjY="}
-  - {"name":"🇹🇼 台湾1 原生ip","type":"ss","server":"surfboard-tw.aisu.cyou","port":11530,"password":"ZWI2YWNmYjktMDFmMS00MjNlLWE4NjItODkxNGVhZjY="}
-  - {"name":"🇹🇼 台湾2 解锁流媒体","type":"ss","server":"surfboard-tw.aisu.cyou","port":11008,"password":"ZWI2YWNmYjktMDFmMS00MjNlLWE4NjItODkxNGVhZjY="}
-  - {"name":"🇹🇼 台湾3 原生ip","type":"ss","server":"surfboard-tw.aisu.cyou","port":11173,"password":"ZWI2YWNmYjktMDFmMS00MjNlLWE4NjItODkxNGVhZjY="}
-  - {"name":"🇹🇼 台湾4 解锁流媒体","type":"ss","server":"surfboard-tw.aisu.cyou","port":11743,"password":"ZWI2YWNmYjktMDFmMS00MjNlLWE4NjItODkxNGVhZjY="}
+  - {"name":"🇭🇰 香港1 原生ip","type":"ss","server":"surfboard-hk.aisu.cyou","port":11629,"password":"ZWI2YWNmYjktMDFmMS00MjNlLWE4NjItODkxNGVhZjY=","cipher":"2022-blake3-aes-256-gcm:NzNlYjgyNDI1NDdhMDMwZTFiOGEyZjZmNGY3MmFiMDU="}
+  - {"name":"🇭🇰 香港2 解锁流媒体","type":"ss","server":"surfboard-hk.aisu.cyou","port":11320,"password":"ZWI2YWNmYjktMDFmMS00MjNlLWE4NjItODkxNGVhZjY=","cipher":"2022-blake3-aes-256-gcm:NzNlYjgyNDI1NDdhMDMwZTFiOGEyZjZmNGY3MmFiMDU="}
+  - {"name":"🇭🇰 香港3 原生ip","type":"ss","server":"surfboard-hk.aisu.cyou","port":11314,"password":"ZWI2YWNmYjktMDFmMS00MjNlLWE4NjItODkxNGVhZjY=","cipher":"2022-blake3-aes-256-gcm:NzNlYjgyNDI1NDdhMDMwZTFiOGEyZjZmNGY3MmFiMDU="}
+  - {"name":"🇭🇰 香港4 解锁流媒体","type":"ss","server":"surfboard-hk.aisu.cyou","port":11380,"password":"ZWI2YWNmYjktMDFmMS00MjNlLWE4NjItODkxNGVhZjY=","cipher":"2022-blake3-aes-256-gcm:NzNlYjgyNDI1NDdhMDMwZTFiOGEyZjZmNGY3MmFiMDU="}
+  - {"name":"🇹🇼 台湾1 原生ip","type":"ss","server":"surfboard-tw.aisu.cyou","port":11530,"password":"ZWI2YWNmYjktMDFmMS00MjNlLWE4NjItODkxNGVhZjY=","cipher":"2022-blake3-aes-256-gcm:NzNlYjgyNDI1NDdhMDMwZTFiOGEyZjZmNGY3MmFiMDU="}
+  - {"name":"🇹🇼 台湾2 解锁流媒体","type":"ss","server":"surfboard-tw.aisu.cyou","port":11008,"password":"ZWI2YWNmYjktMDFmMS00MjNlLWE4NjItODkxNGVhZjY=","cipher":"2022-blake3-aes-256-gcm:NzNlYjgyNDI1NDdhMDMwZTFiOGEyZjZmNGY3MmFiMDU="}
+  - {"name":"🇹🇼 台湾3 原生ip","type":"ss","server":"surfboard-tw.aisu.cyou","port":11173,"password":"ZWI2YWNmYjktMDFmMS00MjNlLWE4NjItODkxNGVhZjY=","cipher":"2022-blake3-aes-256-gcm:NzNlYjgyNDI1NDdhMDMwZTFiOGEyZjZmNGY3MmFiMDU="}
+  - {"name":"🇹🇼 台湾4 解锁流媒体","type":"ss","server":"surfboard-tw.aisu.cyou","port":11743,"password":"ZWI2YWNmYjktMDFmMS00MjNlLWE4NjItODkxNGVhZjY=","cipher":"2022-blake3-aes-256-gcm:NzNlYjgyNDI1NDdhMDMwZTFiOGEyZjZmNGY3MmFiMDU="}
   - {"name":"🇭🇰 香港1 HKT家宽","type":"hysteria2","server":"surfboard-hk.aisu.cyou","port":12792,"password":"eb6acfb9-01f1-423e-a862-8914eaf655a1","skip-cert-verify":true}
   - {"name":"🇭🇰 香港2 HKT家宽","type":"hysteria2","server":"surfboard-hk.aisu.cyou","port":12887,"password":"eb6acfb9-01f1-423e-a862-8914eaf655a1","skip-cert-verify":true}
   - {"name":"🇭🇰 香港3 HKT家宽","type":"hysteria2","server":"surfboard-hk.aisu.cyou","port":12795,"password":"eb6acfb9-01f1-423e-a862-8914eaf655a1","skip-cert-verify":true}
