@@ -329,7 +329,7 @@ proxy-groups:
       - 🔰 延迟最低
       - 🇭🇰 香港节点
       - 🇸🇬 狮城节点
-      - 🇺🇲 美国节点
+      - 🇺🇸 美国节点
       - 🇯🇵 日本节点
       - 🚀 手动切换
       - DIRECT
@@ -1192,7 +1192,7 @@ proxy-groups:
       - 美国-2.65MB/s
   - interval: 300
     name: 🇭🇰 香港节点
-    proxies: *id001
+    proxies:
     filter: "香港"
     tolerance: 50
     timeout: 1000
@@ -1201,8 +1201,8 @@ proxy-groups:
     url: https://www.gstatic.com/generate_204
   - interval: 300
     name: 🇯🇵 日本节点
-    proxies: *id001
-    filter: "日本"
+    proxies:
+    filter: ＂日本＂
     tolerance: 50
     timeout: 1000
     max-failed-times: 1
@@ -1210,7 +1210,7 @@ proxy-groups:
     url: https://www.gstatic.com/generate_204
   - interval: 300
     name: 🇸🇬 狮城节点
-    proxies: *id001
+    proxies:
     filter: "新加坡"
     tolerance: 50
     timeout: 1000
@@ -1219,7 +1219,7 @@ proxy-groups:
     url: https://www.gstatic.com/generate_204
   - interval: 300
     name: 🇺🇸 美国节点
-    proxies: *id001
+    proxies:
     filter: "美国"
     tolerance: 50
     timeout: 1000
