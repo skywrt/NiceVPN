@@ -1214,11 +1214,12 @@ proxy-groups:
       - 美国-5.79MB/s
       - 法国-15.0MB/s
       - 美国-2.65MB/s
-  - name: 香港
-    type: select
-    include-all: true
-    exclude-type: direct
+  - interval: 300
+    name: 🇭🇰 香港节点
     filter: "(?i)港|hk|hongkong|hong kong"
+    timeout: 1000
+    type: fallback
+    url: https://www.gstatic.com/generate_204
 
 rules:
 # 本地/局域网地址
