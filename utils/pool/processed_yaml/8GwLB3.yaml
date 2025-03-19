@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2025-03-19 13:13:00
+# 创建时间：2025-03-19 14:07:26
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：1109
 # 节点类型：ss, vmess, trojan
@@ -3395,6 +3395,7 @@ proxy-groups:
   - interval: 360
     name: 🔰 延迟最低
     proxies: *id001
+    tolerance: 50
     timeout: 1500
     max-failed-times: 1
     type: url-test
@@ -4537,6 +4538,7 @@ proxy-groups:
     type: url-test
     url: https://www.gstatic.com/generate_204
     interval: 360
+    tolerance: 50
     timeout: 1500
     max-failed-times: 1
     proxies:
@@ -4557,6 +4559,7 @@ proxy-groups:
     type: url-test
     url: https://www.gstatic.com/generate_204
     interval: 360
+    tolerance: 50
     timeout: 1500
     max-failed-times: 1
     proxies:
@@ -4585,6 +4588,7 @@ proxy-groups:
     type: url-test
     url: https://www.gstatic.com/generate_204
     interval: 360
+    tolerance: 50
     timeout: 1500
     max-failed-times: 1
     proxies:
@@ -4604,6 +4608,7 @@ proxy-groups:
     type: url-test
     url: https://www.gstatic.com/generate_204
     interval: 360
+    tolerance: 50
     timeout: 1500
     max-failed-times: 1
     proxies:
