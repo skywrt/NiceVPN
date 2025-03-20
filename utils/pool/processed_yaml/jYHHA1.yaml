@@ -7,83 +7,53 @@
 # 节点类型：ss, vmess, trojan
 ####################################
 mixed-port: 7890
-allow-lan: true
-log-level: info
-external-controller: 0.0.0.0:9090
+allow-lan: false
+log-level: silent
+external-controller: 127.0.0.1:9090
 dns:
-  enabled: true
-  listen: 0.0.0.0:1053
-  ipv6: true
-  default-nameserver:
-    - 223.5.5.5
-    - 114.114.114.114
+  enable: true
+  ipv6: false
+  listen: 127.0.0.1:1053
+  use-hosts: true
+  use-system-hosts: false
+  respect-rules: true
   enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
+  fake-ip-range: '198.19.0.1/24'
   fake-ip-filter:
     - '*.lan'
-    - '*.linksys.com'
-    - '*.linksyssmartwifi.com'
-    - swscan.apple.com
-    - mesu.apple.com
-    - '*.msftconnecttest.com'
-    - '*.msftncsi.com'
-    - time.*.com
-    - time.*.gov
-    - time.*.edu.cn
-    - time.*.apple.com
-    - time1.*.com
-    - time2.*.com
-    - time3.*.com
-    - time4.*.com
-    - time5.*.com
-    - time6.*.com
-    - time7.*.com
-    - ntp.*.com
-    - ntp.*.com
-    - ntp1.*.com
-    - ntp2.*.com
-    - ntp3.*.com
-    - ntp4.*.com
-    - ntp5.*.com
-    - ntp6.*.com
-    - ntp7.*.com
-    - '*.time.edu.cn'
-    - '*.ntp.org.cn'
-    - +.pool.ntp.org
-    - time1.cloud.tencent.com
-    - +.music.163.com
-    - '*.126.net'
-    - musicapi.taihe.com
-    - music.taihe.com
-    - songsearch.kugou.com
-    - trackercdn.kugou.com
-    - '*.kuwo.cn'
-    - api-jooxtt.sanook.com
-    - api.joox.com
-    - joox.com
-    - +.y.qq.com
-    - +.music.tc.qq.com
-    - aqqmusic.tc.qq.com
-    - +.stream.qqmusic.qq.com
-    - '*.xiami.com'
-    - +.music.migu.cn
-    - +.srv.nintendo.net
-    - +.stun.playstation.net
-    - xbox.*.microsoft.com
-    - +.xboxlive.com
-    - localhost.ptlogin2.qq.com
-    - proxy.golang.org
-    - stun.*.*
-    - stun.*.*.*
-    - '*.mcdn.bilivideo.cn'
+    - '*.local'
+    - '*.home.arpa'
+    - '*.market.xiaomi.com'
+    - '*.icloud.com'
+    - '*.apple.com'
+    - '*.windowsupdate.com'
   nameserver:
-    - https://doh.pub/dns-query
-    - https://dns.alidns.com/dns-query
+    - tls://8.8.8.8
+    - tls://1.1.1.1
+    - https://8.8.8.8/dns-query
+    - https://1.1.1.1/dns-query
+  proxy-server-nameserver:
+    - https://8.8.8.8/dns-query
+    - https://1.1.1.1/dns-query
+  cache-size: 8192
+  dns-timeout: 3s
+  fallback:
+    - tls://8.8.4.4
+    - tls://1.0.0.1
+    - https://8.8.4.4/dns-query
+    - https://1.0.0.1/dns-query
   fallback-filter:
-    geoip: false
-    ipcidr:
-      - 240.0.0.0/4
-      - 0.0.0.0/32
+    geoip: false  # 避免 geoip 误判影响解析
+    geoip-code: CN
+    geosite:
+      - gfw
+  nameserver-policy:
+    "*.cn":
+      - tls://119.29.29.29
+      - tls://223.5.5.5  # 仅国内域名用国内DNS
+    "geoip-cn":
+      - tls://119.29.29.29
+      - tls://223.5.5.5
 
 proxies:
   - {"name":"中转节点-24.6MB/s","type":"ss","server":"qh62onjn.slashdevslashnetslashtun.net","port":15011,"password":"TCEL1H0XD7TWAKI0","cipher":"aes-256-gcm"}
@@ -278,15 +248,8 @@ proxy-groups:
     type: select
     proxies:
       - ♻️ 自动选择
-      - 🇭🇰 香港节点
-      - 🇸🇬 狮城节点
-      - 🇺🇲 美国节点
-      - 🇯🇵 日本节点
-      - 🚀 手动切换
+      - 🗺️ 选择地区
       - DIRECT
-  - name: 🚀 手动切换
-    type: select
-    proxies:
       - 中转节点-24.6MB/s
       - 中转节点-11.1MB/s_6
       - 中转节点-55.5MB/s
@@ -474,11 +437,11 @@ proxy-groups:
       - 加拿大-178.2KB/s
       - 美国-6.4MB/s
       - 未知国家-20.7MB/s
-  - name: ♻️ 自动选择
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
+  - interval: 300
+    name: ♻️ 自动选择
     tolerance: 50
+    timeout: 1500
+    max-failed-times: 1
     proxies:
       - 中转节点-24.6MB/s
       - 中转节点-11.1MB/s_6
@@ -667,6 +630,8 @@ proxy-groups:
       - 加拿大-178.2KB/s
       - 美国-6.4MB/s
       - 未知国家-20.7MB/s
+    type: url-test
+    url: https://www.gstatic.com/generate_204
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -871,30 +836,41 @@ proxy-groups:
       - 加拿大-178.2KB/s
       - 美国-6.4MB/s
       - 未知国家-20.7MB/s
-  - name: 🇭🇰 香港节点
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
+  - name: 🗺️ 选择地区
+    type: select
+    proxies:
+      - 🇭🇰 香港节点
+      - 🇸🇬 狮城节点
+      - 🇺🇲 美国节点
+      - 🇯🇵 日本节点
+  - interval: 300 
+    name: 🇭🇰 香港节点
     tolerance: 50
+    timeout: 1500
+    max-failed-times: 1
     proxies:
       - 香港-6.80MB/s
       - 香港-37.2MB/s
       - 香港-16.4MB/s
-  - name: 🇯🇵 日本节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
+    url: https://www.gstatic.com/generate_204
+  - interval: 300
+    name: 🇯🇵 日本节点
     tolerance: 50
+    timeout: 1500
+    max-failed-times: 1
     proxies:
       - 日本-16.5MB/s
       - 日本-13.73MB/s
       - 日本-356.7KB/s
       - 日本-13.54MB/s
-  - name: 🇸🇬 狮城节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
+    url: https://www.gstatic.com/generate_204
+  - interval: 300
+    name: 🇸🇬 狮城节点
     tolerance: 50
+    timeout: 1500
+    max-failed-times: 1
     proxies:
       - 新加坡-58.9MB/s
       - 新加坡-305.3KB/s
@@ -902,11 +878,13 @@ proxy-groups:
       - 新加坡-15.88MB/s
       - 新加坡-262.2KB/s
       - 新加坡-925.5KB/s
-  - name: 🇺🇲 美国节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
+    url: https://www.gstatic.com/generate_204
+  - interval: 300
+    name: 🇺🇲 美国节点
     tolerance: 50
+    timeout: 1500
+    max-failed-times: 1
     proxies:
       - 美国-2.45MB/s
       - 美国-86.2MB/s
@@ -946,6 +924,8 @@ proxy-groups:
       - 美国-8.1MB/s_4
       - 美国-2.71MB/s_2
       - 美国-6.4MB/s
+    type: url-test
+    url: https://www.gstatic.com/generate_204
 
 rules:
 # 本地/局域网地址
