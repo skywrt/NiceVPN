@@ -400,7 +400,7 @@ proxies:
   server: 185.22.152.236
   port: 23012
   cipher: auto
-  uuid: 185.22.152.236:23012?type=ws&encryption=auto&path=%2F#%E4%BF%84%E7%BD%97%E6%96%AF%E8%81%94%E9%82%A6-1.72MB%2Fs
+  uuid: c1db97a7-0ba2-4ae0-a4db-d58deded1b39
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -493,7 +493,7 @@ proxies:
   server: 57.129.24.141
   port: 443
   cipher: auto
-  uuid: 57.129.24.141:443?type=ws&encryption=auto&path=%2Flinkvws&security=tls#%E5%BE%B7%E5%9B%BD-118.2KB%2Fs
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
   tls: true
   skip-cert-verify: true
@@ -505,7 +505,7 @@ proxies:
   server: 183.236.51.38
   port: 51754
   cipher: auto
-  uuid: 183.236.51.38:51754?type=tcp&encryption=auto#%E4%B8%AD%E8%BD%AC%E8%8A%82%E7%82%B9-51.9MB%2Fs
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -515,7 +515,7 @@ proxies:
   server: 120.198.71.214
   port: 35565
   cipher: auto
-  uuid: 120.198.71.214:35565?type=tcp&encryption=auto#%E4%B8%AD%E8%BD%AC%E8%8A%82%E7%82%B9-45.3MB%2Fs
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -531,7 +531,7 @@ proxies:
   server: 183.236.51.38
   port: 59104
   cipher: auto
-  uuid: 183.236.51.38:59104?type=tcp&encryption=auto#%E4%B8%AD%E8%BD%AC%E8%8A%82%E7%82%B9-193.1KB%2Fs
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -541,7 +541,7 @@ proxies:
   server: 38.209.65.51
   port: 32246
   cipher: auto
-  uuid: 38.209.65.51:32246?type=tcp&encryption=auto#%E7%BE%8E%E5%9B%BD-2.22MB%2Fs
+  uuid: 3ded5f28-0704-4369-c011-68309fd94cd0
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -551,11 +551,13 @@ proxies:
   server: 212.192.13.68
   port: 23013
   cipher: auto
-  uuid: 212.192.13.68:23013?type=ws&encryption=auto#%E6%8D%B7%E5%85%8B-525.8KB%2Fs
+  uuid: 6ede9de9-f53e-4391-879a-202a6fc8b543
   alterId: 0
   tls: false
   skip-cert-verify: true
   network: ws
+  ws-opts:
+    path: /
 - name: "\U0001F1EB\U0001F1F7 FR 81 SSS"
   type: ss
   server: 57.128.190.214
@@ -611,11 +613,13 @@ proxies:
   server: 185.22.152.236
   port: 23015
   cipher: auto
-  uuid: 185.22.152.236:23015?type=ws&encryption=auto#%E4%BF%84%E7%BD%97%E6%96%AF%E8%81%94%E9%82%A6-40.0MB%2Fs
+  uuid: 45a83fe0-dd8b-46d1-a672-e20547158aa6
   alterId: 0
   tls: false
   skip-cert-verify: true
   network: ws
+  ws-opts:
+    path: /
 - name: "\U0001F1FA\U0001F1F8 US 90 TJN"
   type: trojan
   server: us003.421421.xyz
@@ -638,11 +642,13 @@ proxies:
   server: 207.90.238.136
   port: 20010
   cipher: auto
-  uuid: 207.90.238.136:20010?type=ws&encryption=auto#%E7%BE%8E%E5%9B%BD-78.3MB%2Fs
+  uuid: d70f67ae-135c-4a78-a245-4cc81c93983d
   alterId: 0
   tls: false
   skip-cert-verify: true
   network: ws
+  ws-opts:
+    path: /
 - name: "\U0001F1F8\U0001F1EC SG 93 TJN"
   type: trojan
   server: 47.130.23.75
@@ -657,11 +663,13 @@ proxies:
   server: 51.77.20.132
   port: 443
   cipher: auto
-  uuid: 51.77.20.132:443?type=ws&encryption=auto&security=tls#%E6%B3%95%E5%9B%BD-39.6MB%2Fs
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
   tls: true
   skip-cert-verify: true
   network: ws
+  ws-opts:
+    path: /
 - name: "\U0001F1E8\U0001F1F3 CN 95 SSS"
   type: ss
   server: w72tapyb.slashdevslashnetslashtun.net
@@ -673,11 +681,13 @@ proxies:
   server: 45.144.174.90
   port: 22015
   cipher: auto
-  uuid: 45.144.174.90:22015?type=ws&encryption=auto#%E8%8D%B7%E5%85%B0-1001.2KB%2Fs
+  uuid: 1b908e8f-88b4-467c-a535-73e92c4e7038
   alterId: 0
   tls: false
   skip-cert-verify: true
   network: ws
+  ws-opts:
+    path: /
 - name: "\U0001F1FA\U0001F1F8 US 97 TJN"
   type: trojan
   server: 89.187.181.172
@@ -703,11 +713,13 @@ proxies:
   server: cloudgd.coemn.com
   port: 46003
   cipher: auto
-  uuid: cloudgd.coemn.com:46003?type=ws&encryption=auto#%E4%B8%AD%E8%BD%AC%E8%8A%82%E7%82%B9-58.3MB%2Fs
+  uuid: 4c5a8a75-7d65-40a9-8c3b-a67abae08534
   alterId: 0
   tls: false
   skip-cert-verify: true
   network: ws
+  ws-opts:
+    path: /
 - name: "\U0001F1FA\U0001F1F8 US 101 TJN"
   type: trojan
   server: 15.204.58.214
@@ -779,7 +791,7 @@ proxies:
   server: bgp1.bgp1.miaomiaowu114514.org
   port: 11003
   cipher: auto
-  uuid: bgp1.bgp1.miaomiaowu114514.org:11003?type=tcp&encryption=auto#%E4%B8%AD%E8%BD%AC%E8%8A%82%E7%82%B9-138.5KB%2Fs
+  uuid: 035374e8-60ff-34b3-9e7a-cca4cce31013
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -798,7 +810,7 @@ proxies:
   server: 120.234.102.229
   port: 31998
   cipher: auto
-  uuid: 120.234.102.229:31998?type=tcp&encryption=auto#%E4%B8%AD%E8%BD%AC%E8%8A%82%E7%82%B9-1.17MB%2Fs_2
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -808,11 +820,13 @@ proxies:
   server: 172.67.169.40
   port: 443
   cipher: auto
-  uuid: 172.67.169.40:443?type=ws&encryption=auto&security=tls#%E7%BE%8E%E5%9B%BD-2.77MB%2Fs
+  uuid: fa5b55cd-cafc-4de0-a4c8-722e02a9f58e
   alterId: 0
   tls: true
   skip-cert-verify: true
   network: ws
+  ws-opts:
+    path: /
 - name: "\U0001F1FA\U0001F1F8 US 113 TJN"
   type: trojan
   server: landder.wireshop.net
@@ -985,11 +999,13 @@ proxies:
   server: 23.158.56.241
   port: 443
   cipher: auto
-  uuid: 23.158.56.241:443?type=ws&encryption=auto&security=tls#%E5%BE%B7%E5%9B%BD-2.65MB%2Fs_2
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
   tls: true
   skip-cert-verify: true
   network: ws
+  ws-opts:
+    path: /
 - name: "\U0001F1EC\U0001F1E7 GB 134 SSS"
   type: ss
   server: 206.245.211.22
@@ -1078,7 +1094,7 @@ proxies:
   server: 120.232.153.40
   port: 51182
   cipher: auto
-  uuid: 120.232.153.40:51182?type=tcp&encryption=auto#%E4%B8%AD%E8%BD%AC%E8%8A%82%E7%82%B9-10.2MB%2Fs_2
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -1094,7 +1110,7 @@ proxies:
   server: 183.236.51.38
   port: 59554
   cipher: auto
-  uuid: 183.236.51.38:59554?type=tcp&encryption=auto#%E4%B8%AD%E8%BD%AC%E8%8A%82%E7%82%B9-23.7MB%2Fs
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -1133,41 +1149,49 @@ proxies:
   server: la03.890603.xyz
   port: 443
   cipher: auto
-  uuid: la03.890603.xyz:443?type=ws&encryption=auto&security=tls#%E6%9C%AA%E7%9F%A5%E5%9B%BD%E5%AE%B6-465.0KB%2Fs
+  uuid: 60cdd89e-a9cf-4850-8577-e3c6abf5515d
   alterId: 0
   tls: true
   skip-cert-verify: true
   network: ws
+  ws-opts:
+    path: /
 - name: "\U0001F1FA\U0001F1F8 US 153 VMS"
   type: vmess
   server: support.sabapardaziran.ir
   port: 8443
   cipher: auto
-  uuid: support.sabapardaziran.ir:8443?type=ws&encryption=auto&security=tls#%E6%9C%AA%E7%9F%A5%E5%9B%BD%E5%AE%B6-3.44MB%2Fs
+  uuid: 53415815-7037-49af-a5f9-2809a4e7ddbc
   alterId: 0
   tls: true
   skip-cert-verify: true
   network: ws
+  ws-opts:
+    path: /
 - name: "\U0001F1FA\U0001F1F3 UN 154 VMS"
   type: vmess
   server: la03.890614.filegear-sg.me
   port: 443
   cipher: auto
-  uuid: la03.890614.filegear-sg.me:443?type=ws&encryption=auto&security=tls#%E6%9C%AA%E7%9F%A5%E5%9B%BD%E5%AE%B6-1.49MB%2Fs
+  uuid: 60cdd89e-a9cf-4850-8577-e3c6abf5515d
   alterId: 0
   tls: true
   skip-cert-verify: true
   network: ws
-- name: "\U0001F1FA\U0001F1F8 US 155 VMS"
+  ws-opts:
+    path: /
+- name: "\U0001F1FA\U0001F1F3 UN 155 VMS"
   type: vmess
   server: iran.farsonline24.ir
   port: 8443
   cipher: auto
-  uuid: iran.farsonline24.ir:8443?type=ws&encryption=auto&security=tls#%E6%9C%AA%E7%9F%A5%E5%9B%BD%E5%AE%B6-4.69MB%2Fs
+  uuid: b3b23f49-b3d7-4bd9-efd3-8bdbe54fba61
   alterId: 0
   tls: true
   skip-cert-verify: true
   network: ws
+  ws-opts:
+    path: /
 - name: "\U0001F1EB\U0001F1F7 FR 156 TJN"
   type: trojan
   server: 13.38.175.48
@@ -1182,11 +1206,13 @@ proxies:
   server: 172.67.154.84
   port: 443
   cipher: auto
-  uuid: 172.67.154.84:443?type=ws&encryption=auto&security=tls#%E7%BE%8E%E5%9B%BD-4.27MB%2Fs
+  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
   alterId: 0
   tls: true
   skip-cert-verify: true
   network: ws
+  ws-opts:
+    path: /
 - name: "\U0001F1FF\U0001F1E6 ZA 158 SSS"
   type: ss
   server: 156.231.104.16
@@ -1233,7 +1259,7 @@ proxies:
   server: alm1.the-galgo.top
   port: 32006
   cipher: auto
-  uuid: alm1.the-galgo.top:32006?type=tcp&encryption=auto#%E4%B8%AD%E8%BD%AC%E8%8A%82%E7%82%B9-157.4KB%2Fs
+  uuid: f01f4ecd-3d4b-44f2-9b9b-1438a5f40098
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -1320,27 +1346,29 @@ proxies:
   server: iplc01.dns2024.org
   port: 3204
   cipher: auto
-  uuid: iplc01.dns2024.org:3204?type=tcp&encryption=auto&security=tls#%E4%B8%AD%E8%BD%AC%E8%8A%82%E7%82%B9-7.13MB%2Fs
+  uuid: d9f14a88-9b82-3380-bba0-29c46e775e2e
   alterId: 0
   tls: true
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 177 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 177 VMS"
   type: vmess
   server: cfcdn1.sanfencdn9.com
   port: 8080
   cipher: auto
-  uuid: cfcdn1.sanfencdn9.com:8080?type=ws&encryption=auto#%E6%9C%AA%E7%9F%A5%E5%9B%BD%E5%AE%B6-192.5KB%2Fs
+  uuid: d22e082c-3742-421f-aabd-2511eec9148c
   alterId: 0
   tls: false
   skip-cert-verify: true
   network: ws
+  ws-opts:
+    path: /
 - name: "\U0001F1E8\U0001F1F3 CN 178 VMS"
   type: vmess
   server: pro01.dns2024.org
   port: 3314
   cipher: auto
-  uuid: pro01.dns2024.org:3314?type=tcp&encryption=auto&security=tls#%E4%B8%AD%E8%BD%AC%E8%8A%82%E7%82%B9-3.90MB%2Fs
+  uuid: d9f14a88-9b82-3380-bba0-29c46e775e2e
   alterId: 0
   tls: true
   skip-cert-verify: true
@@ -1358,7 +1386,7 @@ proxies:
   server: pro01.dns2024.org
   port: 3284
   cipher: auto
-  uuid: pro01.dns2024.org:3284?type=tcp&encryption=auto&security=tls#%E4%B8%AD%E8%BD%AC%E8%8A%82%E7%82%B9-6.73MB%2Fs
+  uuid: d9f14a88-9b82-3380-bba0-29c46e775e2e
   alterId: 0
   tls: true
   skip-cert-verify: true
@@ -1368,27 +1396,31 @@ proxies:
   server: 120.232.240.56
   port: 16928
   cipher: auto
-  uuid: 120.232.240.56:16928?type=ws&encryption=auto#%E4%B8%AD%E8%BD%AC%E8%8A%82%E7%82%B9-1000.2KB%2Fs_2
+  uuid: 5f6b3c3f-b0a8-33f5-95c6-371f8c6af973
   alterId: 0
   tls: false
   skip-cert-verify: true
   network: ws
+  ws-opts:
+    path: /
 - name: "\U0001F1FA\U0001F1F3 UN 182 VMS"
   type: vmess
   server: 104.21.8.157
   port: 2082
   cipher: auto
-  uuid: 104.21.8.157:2082?type=ws&encryption=auto#%E6%9C%AA%E7%9F%A5%E5%9B%BD%E5%AE%B6-472.5KB%2Fs
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   alterId: 0
   tls: false
   skip-cert-verify: true
   network: ws
+  ws-opts:
+    path: /
 - name: "\U0001F1E8\U0001F1F3 CN 183 VMS"
   type: vmess
   server: pro01.dns2024.org
   port: 3014
   cipher: auto
-  uuid: pro01.dns2024.org:3014?type=tcp&encryption=auto&security=tls#%E4%B8%AD%E8%BD%AC%E8%8A%82%E7%82%B9-3.28MB%2Fs_1
+  uuid: d9f14a88-9b82-3380-bba0-29c46e775e2e
   alterId: 0
   tls: true
   skip-cert-verify: true
@@ -1398,7 +1430,7 @@ proxies:
   server: iplc01.dns2024.org
   port: 3214
   cipher: auto
-  uuid: iplc01.dns2024.org:3214?type=tcp&encryption=auto&security=tls#%E4%B8%AD%E8%BD%AC%E8%8A%82%E7%82%B9-5.41MB%2Fs_1
+  uuid: d9f14a88-9b82-3380-bba0-29c46e775e2e
   alterId: 0
   tls: true
   skip-cert-verify: true
@@ -1408,7 +1440,7 @@ proxies:
   server: pro01.dns2024.org
   port: 3294
   cipher: auto
-  uuid: pro01.dns2024.org:3294?type=tcp&encryption=auto&security=tls#%E4%B8%AD%E8%BD%AC%E8%8A%82%E7%82%B9-22.14MB%2Fs
+  uuid: d9f14a88-9b82-3380-bba0-29c46e775e2e
   alterId: 0
   tls: true
   skip-cert-verify: true
@@ -1418,7 +1450,7 @@ proxies:
   server: in06.dns2024.org
   port: 64003
   cipher: auto
-  uuid: in06.dns2024.org:64003?type=tcp&encryption=auto#%E4%B8%AD%E8%BD%AC%E8%8A%82%E7%82%B9-5.61MB%2Fs
+  uuid: d9f14a88-9b82-3380-bba0-29c46e775e2e
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -1463,7 +1495,7 @@ proxies:
   server: in06.dns2024.org
   port: 64016
   cipher: auto
-  uuid: in06.dns2024.org:64016?type=tcp&encryption=auto#%E4%B8%AD%E8%BD%AC%E8%8A%82%E7%82%B9-880.8KB%2Fs
+  uuid: d9f14a88-9b82-3380-bba0-29c46e775e2e
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -1473,7 +1505,7 @@ proxies:
   server: pro01.dns2024.org
   port: 3254
   cipher: auto
-  uuid: pro01.dns2024.org:3254?type=tcp&encryption=auto&security=tls#%E4%B8%AD%E8%BD%AC%E8%8A%82%E7%82%B9-8.35MB%2Fs
+  uuid: d9f14a88-9b82-3380-bba0-29c46e775e2e
   alterId: 0
   tls: true
   skip-cert-verify: true
@@ -1516,11 +1548,13 @@ proxies:
   server: s5.956256.xyz
   port: 30006
   cipher: auto
-  uuid: s5.956256.xyz:30006?type=ws&encryption=auto#%E9%9F%A9%E5%9B%BD-1.18MB%2Fs
+  uuid: bfc552e8-2607-4386-9c90-81437ac5ba23
   alterId: 0
   tls: false
   skip-cert-verify: true
   network: ws
+  ws-opts:
+    path: /
 - name: "\U0001F1E8\U0001F1F3 CN 200 SSS"
   type: ss
   server: 58.242.130.105
@@ -1541,27 +1575,31 @@ proxies:
   server: cfcdn2.sanfencdn9.com
   port: 2052
   cipher: auto
-  uuid: cfcdn2.sanfencdn9.com:2052?type=ws&encryption=auto#%E6%9C%AA%E7%9F%A5%E5%9B%BD%E5%AE%B6-5.75MB%2Fs
+  uuid: ab1ee1ac-884c-44dc-ab65-d533d32e2b1a
   alterId: 0
   tls: false
   skip-cert-verify: true
   network: ws
-- name: "\U0001F1FA\U0001F1F8 US 203 VMS"
+  ws-opts:
+    path: /
+- name: "\U0001F1FA\U0001F1F3 UN 203 VMS"
   type: vmess
   server: cfcdn1.sanfencdn9.com
   port: 2082
   cipher: auto
-  uuid: cfcdn1.sanfencdn9.com:2082?type=ws&encryption=auto#%E6%9C%AA%E7%9F%A5%E5%9B%BD%E5%AE%B6-4.75MB%2Fs
+  uuid: a174de4b-6126-4b88-b21e-1388004a2e02
   alterId: 0
   tls: false
   skip-cert-verify: true
   network: ws
+  ws-opts:
+    path: /
 - name: "\U0001F1E8\U0001F1F3 CN 204 VMS"
   type: vmess
   server: in06.dns2024.org
   port: 61097
   cipher: auto
-  uuid: in06.dns2024.org:61097?type=tcp&encryption=auto#%E4%B8%AD%E8%BD%AC%E8%8A%82%E7%82%B9-9.26MB%2Fs_2
+  uuid: 4b804301-23ce-378f-87df-af85f73c611f
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -1577,7 +1615,7 @@ proxies:
   server: pro01.dns2024.org
   port: 3071
   cipher: auto
-  uuid: pro01.dns2024.org:3071?type=tcp&encryption=auto&security=tls#%E4%B8%AD%E8%BD%AC%E8%8A%82%E7%82%B9-23.26MB%2Fs_2
+  uuid: 4b804301-23ce-378f-87df-af85f73c611f
   alterId: 0
   tls: true
   skip-cert-verify: true
@@ -1587,7 +1625,7 @@ proxies:
   server: pro01.dns2024.org
   port: 3111
   cipher: auto
-  uuid: pro01.dns2024.org:3111?type=tcp&encryption=auto&security=tls#%E4%B8%AD%E8%BD%AC%E8%8A%82%E7%82%B9-2.02MB%2Fs_2
+  uuid: 4b804301-23ce-378f-87df-af85f73c611f
   alterId: 0
   tls: true
   skip-cert-verify: true
@@ -1609,11 +1647,13 @@ proxies:
   server: cfcdn3.sanfencdn9.com
   port: 80
   cipher: auto
-  uuid: cfcdn3.sanfencdn9.com:80?type=ws&encryption=auto#%E6%9C%AA%E7%9F%A5%E5%9B%BD%E5%AE%B6-1.04MB%2Fs
+  uuid: c712c725-149f-414a-a684-1e17d137fe4f
   alterId: 0
   tls: false
   skip-cert-verify: true
   network: ws
+  ws-opts:
+    path: /
 - name: "\U0001F1EE\U0001F1F3 IN 211 SSS"
   type: ss
   server: 165.22.208.240
@@ -1652,11 +1692,13 @@ proxies:
   server: 23.105.220.235
   port: 9306
   cipher: auto
-  uuid: 23.105.220.235:9306?type=ws&encryption=auto&security=tls#%E7%BE%8E%E5%9B%BD-4.44MB%2Fs
+  uuid: 33e3f07a-b82b-4629-bd6a-e720da213afd
   alterId: 0
   tls: true
   skip-cert-verify: true
   network: ws
+  ws-opts:
+    path: /
 - name: "\U0001F1FA\U0001F1F3 UN 216 SSS"
   type: ss
   server: 23.157.40.101
@@ -1709,11 +1751,13 @@ proxies:
   server: tgqyjc2024.qyjc.xyz
   port: 2052
   cipher: auto
-  uuid: tgqyjc2024.qyjc.xyz:2052?type=ws&encryption=auto#%E6%9C%AA%E7%9F%A5%E5%9B%BD%E5%AE%B6-3.89MB%2Fs_2
+  uuid: 1e3e82b2-36c0-44aa-80ad-5c3f693824f1
   alterId: 0
   tls: false
   skip-cert-verify: true
   network: ws
+  ws-opts:
+    path: /
 - name: "\U0001F1FA\U0001F1F8 US 223 SSS"
   type: ss
   server: 69.50.93.111
@@ -1838,21 +1882,25 @@ proxies:
   server: 104.19.46.233
   port: 2086
   cipher: auto
-  uuid: 104.19.46.233:2086?type=ws&encryption=auto#%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_16
+  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
   alterId: 0
   tls: false
   skip-cert-verify: true
   network: ws
+  ws-opts:
+    path: /
 - name: "\U0001F1FA\U0001F1F3 UN 240 VMS"
   type: vmess
   server: 104.19.55.49
   port: 2086
   cipher: auto
-  uuid: 104.19.55.49:2086?type=ws&encryption=auto#%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_18
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
   tls: false
   skip-cert-verify: true
   network: ws
+  ws-opts:
+    path: /
 - name: "\U0001F1FA\U0001F1F8 US 241 SSS"
   type: ss
   server: 169.197.142.216
@@ -1939,7 +1987,7 @@ proxies:
   server: alm2.the-galgo.top
   port: 32012
   cipher: auto
-  uuid: alm2.the-galgo.top:32012?type=tcp&encryption=auto#%E4%B8%AD%E8%BD%AC%E8%8A%82%E7%82%B9-19.64MB%2Fs
+  uuid: 242c0dc5-f692-4f52-baa1-16add40c801e
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -2140,36 +2188,42 @@ proxies:
   port: 10599
   password: d7fcff5d-e3c6-4d26-aa0a-2af2ab876757
   cipher: aes-128-gcm
-- name: "\U0001F1FA\U0001F1F8 US 278 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 278 VMS"
   type: vmess
   server: cfcdn1.sanfencdn9.com
   port: 2052
   cipher: auto
-  uuid: cfcdn1.sanfencdn9.com:2052?type=ws&encryption=auto#%E6%9C%AA%E7%9F%A5%E5%9B%BD%E5%AE%B6-213.6KB%2Fs
+  uuid: c712c725-149f-414a-a684-1e17d137fe4f
   alterId: 0
   tls: false
   skip-cert-verify: true
   network: ws
-- name: "\U0001F1FA\U0001F1F8 US 279 VMS"
+  ws-opts:
+    path: /
+- name: "\U0001F1FA\U0001F1F3 UN 279 VMS"
   type: vmess
   server: cfcdn1.sanfencdn9.com
   port: 8880
   cipher: auto
-  uuid: cfcdn1.sanfencdn9.com:8880?type=ws&encryption=auto#%E6%9C%AA%E7%9F%A5%E5%9B%BD%E5%AE%B6-4.51MB%2Fs_2
+  uuid: ab1ee1ac-884c-44dc-ab65-d533d32e2b1a
   alterId: 0
   tls: false
   skip-cert-verify: true
   network: ws
+  ws-opts:
+    path: /
 - name: "\U0001F1FA\U0001F1F3 UN 280 VMS"
   type: vmess
   server: 104.19.38.18
   port: 2052
   cipher: auto
-  uuid: 104.19.38.18:2052?type=ws&encryption=auto#%E6%9C%AA%E7%9F%A5%E5%9B%BD%E5%AE%B6-2.17MB%2Fs
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
   alterId: 0
   tls: false
   skip-cert-verify: true
   network: ws
+  ws-opts:
+    path: /
 - name: "\U0001F1FA\U0001F1F8 US 281 TJN"
   type: trojan
   server: 45.63.110.20
@@ -2190,7 +2244,7 @@ proxies:
   server: ca-v2ray.ipracevpn.com
   port: 443
   cipher: auto
-  uuid: ca-v2ray.ipracevpn.com:443?type=tcp&encryption=auto&security=tls#%E5%8A%A0%E6%8B%BF%E5%A4%A7-168.6KB%2Fs
+  uuid: 1b3d460b-91cc-46f9-909d-73823128ee0a
   alterId: 0
   tls: true
   skip-cert-verify: true
@@ -2254,21 +2308,25 @@ proxies:
   server: 23.162.200.227
   port: 443
   cipher: auto
-  uuid: 23.162.200.227:443?type=ws&encryption=auto&security=tls#%E5%8A%A0%E6%8B%BF%E5%A4%A7-139.9KB%2Fs
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
   tls: true
   skip-cert-verify: true
   network: ws
+  ws-opts:
+    path: /
 - name: "\U0001F1FA\U0001F1F3 UN 294 VMS"
   type: vmess
   server: 104.19.51.232
   port: 2086
   cipher: auto
-  uuid: 104.19.51.232:2086?type=ws&encryption=auto#%E6%9C%AA%E7%9F%A5%E5%9B%BD%E5%AE%B6-3.70MB%2Fs
+  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
   alterId: 0
   tls: false
   skip-cert-verify: true
   network: ws
+  ws-opts:
+    path: /
 - name: "\U0001F1E8\U0001F1F3 CN 295 TJN"
   type: trojan
   server: 223.113.54.154
@@ -2303,11 +2361,13 @@ proxies:
   server: www.digitalocean.com
   port: 8080
   cipher: auto
-  uuid: www.digitalocean.com:8080?type=ws&encryption=auto#%E6%9C%AA%E7%9F%A5%E5%9B%BD%E5%AE%B6-3.65MB%2Fs_2
+  uuid: 0a3eafb9-99da-409f-a61b-b26570c8a643
   alterId: 0
   tls: false
   skip-cert-verify: true
   network: ws
+  ws-opts:
+    path: /
 - name: "\U0001F1EC\U0001F1E7 GB 300 SSS"
   type: ss
   server: 51.141.73.244
@@ -2477,7 +2537,7 @@ proxies:
   server: svip.hongxingdl.vip
   port: 25747
   cipher: auto
-  uuid: svip.hongxingdl.vip:25747?type=tcp&encryption=auto#%E4%B8%AD%E8%BD%AC%E8%8A%82%E7%82%B9-1.06MB%2Fs_4
+  uuid: afb152b7-3f81-4b96-83d6-3decbbf2d757
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -2514,7 +2574,7 @@ proxies:
   server: 154.64.232.177
   port: 19134
   cipher: auto
-  uuid: 154.64.232.177:19134?type=tcp&encryption=auto#%E7%BE%8E%E5%9B%BD-3.37MB%2Fs
+  uuid: d9650c23-8cd1-4fe0-b272-1fa9caaa4b9f
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -2524,7 +2584,7 @@ proxies:
   server: 154.64.232.40
   port: 35661
   cipher: auto
-  uuid: 154.64.232.40:35661?type=tcp&encryption=auto#%E7%BE%8E%E5%9B%BD-3.63MB%2Fs
+  uuid: 15705f6f-9c7a-4702-9348-6a4b007d2b09
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -2543,7 +2603,7 @@ proxies:
   server: 23.162.152.6
   port: 22324
   cipher: auto
-  uuid: 23.162.152.6:22324?type=tcp&encryption=auto#%E7%BE%8E%E5%9B%BD-3.33MB%2Fs
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -2553,11 +2613,13 @@ proxies:
   server: 188.114.97.3
   port: 80
   cipher: auto
-  uuid: 188.114.97.3:80?type=ws&encryption=auto#%E8%8D%B7%E5%85%B0-4.77MB%2Fs
+  uuid: b79a6959-6feb-43ba-b3c7-f1afae9ea32c
   alterId: 0
   tls: false
   skip-cert-verify: true
   network: ws
+  ws-opts:
+    path: /
 - name: "\U0001F1FA\U0001F1F8 US 335 SSS"
   type: ss
   server: 45.158.171.131
@@ -2587,11 +2649,13 @@ proxies:
   server: 172.67.171.43
   port: 80
   cipher: auto
-  uuid: 172.67.171.43:80?type=ws&encryption=auto#%E7%BE%8E%E5%9B%BD-3.54MB%2Fs
+  uuid: b79a6959-6feb-43ba-b3c7-f1afae9ea32c
   alterId: 0
   tls: false
   skip-cert-verify: true
   network: ws
+  ws-opts:
+    path: /
 - name: "\U0001F1F7\U0001F1FA RU 340 SSS"
   type: ss
   server: 46.29.238.83
@@ -2609,7 +2673,7 @@ proxies:
   server: 23.157.88.35
   port: 22324
   cipher: auto
-  uuid: 23.157.88.35:22324?type=tcp&encryption=auto#%E5%BE%B7%E5%9B%BD-2.83MB%2Fs
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -2625,11 +2689,13 @@ proxies:
   server: 38.95.115.176
   port: 16424
   cipher: auto
-  uuid: 38.95.115.176:16424?type=ws&encryption=auto#%E7%BE%8E%E5%9B%BD-4.55MB%2Fs
+  uuid: 9eedb0d4-27fb-47e6-b3b5-301712337ecf
   alterId: 0
   tls: false
   skip-cert-verify: true
   network: ws
+  ws-opts:
+    path: /
 - name: "\U0001F1FA\U0001F1F3 UN 345 SSS"
   type: ss
   server: 23.162.200.28
@@ -2647,7 +2713,7 @@ proxies:
   server: 154.64.232.124
   port: 33878
   cipher: auto
-  uuid: 154.64.232.124:33878?type=tcp&encryption=auto#%E7%BE%8E%E5%9B%BD-324.8KB%2Fs
+  uuid: 680726bd-f683-4664-fdcd-e47170921014
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -2663,11 +2729,13 @@ proxies:
   server: 104.26.0.56
   port: 2086
   cipher: auto
-  uuid: 104.26.0.56:2086?type=ws&encryption=auto#%E6%9C%AA%E7%9F%A5%E5%9B%BD%E5%AE%B6-222.1KB%2Fs
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
   tls: false
   skip-cert-verify: true
   network: ws
+  ws-opts:
+    path: /
 - name: "\U0001F1FA\U0001F1F8 US 350 SSS"
   type: ss
   server: 69.50.93.10
@@ -2685,11 +2753,13 @@ proxies:
   server: max.mankadmu.com
   port: 443
   cipher: auto
-  uuid: max.mankadmu.com:443?type=ws&encryption=auto&security=tls#%E6%9C%AA%E7%9F%A5%E5%9B%BD%E5%AE%B6-3.19MB%2Fs
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
   tls: true
   skip-cert-verify: true
   network: ws
+  ws-opts:
+    path: /
 - name: "\U0001F1F9\U0001F1FC TW 353 TJN"
   type: trojan
   server: sg1111.156786.xyz
@@ -2710,11 +2780,13 @@ proxies:
   server: hk.rweek.top
   port: 2052
   cipher: auto
-  uuid: hk.rweek.top:2052?type=ws&encryption=auto#%E9%A6%99%E6%B8%AF-1.68MB%2Fs
+  uuid: a14fd489-6bf4-40bb-fb74-efb137ac1d42
   alterId: 0
   tls: false
   skip-cert-verify: true
   network: ws
+  ws-opts:
+    path: /
 - name: "\U0001F1E7\U0001F1F7 BR 356 SSS"
   type: ss
   server: fell3.dogsvpn.top
@@ -2726,11 +2798,13 @@ proxies:
   server: 172.67.171.56
   port: 80
   cipher: auto
-  uuid: 172.67.171.56:80?type=ws&encryption=auto#%E7%BE%8E%E5%9B%BD-1.77MB%2Fs
+  uuid: 27d46493-8693-4dc0-af97-0776591ad1a7
   alterId: 0
   tls: false
   skip-cert-verify: true
   network: ws
+  ws-opts:
+    path: /
 - name: "\U0001F1FA\U0001F1F3 UN 358 SSS"
   type: ss
   server: 23.157.40.19
@@ -2879,11 +2953,13 @@ proxies:
   server: eedp257bubu2wefy1.lovebaipiao.net
   port: 54321
   cipher: auto
-  uuid: eedp257bubu2wefy1.lovebaipiao.net:54321?type=ws&encryption=auto#%E4%BF%84%E7%BD%97%E6%96%AF%E8%81%94%E9%82%A6-189.1KB%2Fs
+  uuid: c8f92a11-9760-4574-96f4-d0c5165fef96
   alterId: 0
   tls: false
   skip-cert-verify: true
   network: ws
+  ws-opts:
+    path: /
 - name: "\U0001F1FA\U0001F1F3 UN 381 SSS"
   type: ss
   server: 23.162.200.215
@@ -2895,11 +2971,13 @@ proxies:
   server: 104.19.174.68
   port: 80
   cipher: auto
-  uuid: 104.19.174.68:80?type=ws&encryption=auto#%E6%9C%AA%E7%9F%A5%E5%9B%BD%E5%AE%B6-1.77MB%2Fs
+  uuid: c8f92a11-9760-4574-96f4-d0c5165fef96
   alterId: 0
   tls: false
   skip-cert-verify: true
   network: ws
+  ws-opts:
+    path: /
 - name: "\U0001F1E9\U0001F1EA DE 383 SSS"
   type: ss
   server: iepl5.forlive.live
@@ -2911,7 +2989,7 @@ proxies:
   server: 15073.kuaiyin02.top
   port: 15073
   cipher: auto
-  uuid: 15073.kuaiyin02.top:15073?type=tcp&encryption=auto#%E4%B8%AD%E8%BD%AC%E8%8A%82%E7%82%B9-112.3KB%2Fs
+  uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -3119,7 +3197,7 @@ proxies:
   server: in06.dns2024.org
   port: 63082
   cipher: auto
-  uuid: in06.dns2024.org:63082?type=tcp&encryption=auto#%E4%B8%AD%E8%BD%AC%E8%8A%82%E7%82%B9-1.22MB%2Fs
+  uuid: 6cf559be-8e10-3c59-ad8c-7345fa164ab8
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -3158,11 +3236,13 @@ proxies:
   server: id1.ubaistore.my.id
   port: 80
   cipher: auto
-  uuid: id1.ubaistore.my.id:80?type=ws&encryption=auto#%E5%8D%B0%E5%BA%A6%E5%B0%BC%E8%A5%BF%E4%BA%9A-2.45MB%2Fs
+  uuid: 7e872fff-2f77-4fa1-813b-70b2f41dd128
   alterId: 0
   tls: false
   skip-cert-verify: true
   network: ws
+  ws-opts:
+    path: /
 - name: "\U0001F1EE\U0001F1EA IE 423 SSS"
   type: ss
   server: 13.74.171.103
@@ -3180,11 +3260,13 @@ proxies:
   server: cfcdn3.sanfencdn9.com
   port: 2052
   cipher: auto
-  uuid: cfcdn3.sanfencdn9.com:2052?type=ws&encryption=auto#%E6%9C%AA%E7%9F%A5%E5%9B%BD%E5%AE%B6-2.96MB%2Fs_3
+  uuid: a174de4b-6126-4b88-b21e-1388004a2e02
   alterId: 0
   tls: false
   skip-cert-verify: true
   network: ws
+  ws-opts:
+    path: /
 - name: "\U0001F1E9\U0001F1EA DE 426 SSS"
   type: ss
   server: 37.1.192.68
@@ -3204,7 +3286,7 @@ proxies:
   server: in06.dns2024.org
   port: 63004
   cipher: auto
-  uuid: in06.dns2024.org:63004?type=tcp&encryption=auto#%E4%B8%AD%E8%BD%AC%E8%8A%82%E7%82%B9-4.78MB%2Fs
+  uuid: 6cf559be-8e10-3c59-ad8c-7345fa164ab8
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -3220,7 +3302,7 @@ proxies:
   server: in06.dns2024.org
   port: 63007
   cipher: auto
-  uuid: in06.dns2024.org:63007?type=tcp&encryption=auto#%E4%B8%AD%E8%BD%AC%E8%8A%82%E7%82%B9-2.69MB%2Fs_2
+  uuid: 6cf559be-8e10-3c59-ad8c-7345fa164ab8
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -3230,7 +3312,7 @@ proxies:
   server: in06.dns2024.org
   port: 63003
   cipher: auto
-  uuid: in06.dns2024.org:63003?type=tcp&encryption=auto#%E4%B8%AD%E8%BD%AC%E8%8A%82%E7%82%B9-4.34MB%2Fs
+  uuid: 6cf559be-8e10-3c59-ad8c-7345fa164ab8
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -3254,7 +3336,7 @@ proxies:
   server: in06.dns2024.org
   port: 63097
   cipher: auto
-  uuid: in06.dns2024.org:63097?type=tcp&encryption=auto#%E4%B8%AD%E8%BD%AC%E8%8A%82%E7%82%B9-10.62MB%2Fs
+  uuid: 6cf559be-8e10-3c59-ad8c-7345fa164ab8
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -3417,7 +3499,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 152 VMS"
   - "\U0001F1FA\U0001F1F8 US 153 VMS"
   - "\U0001F1FA\U0001F1F3 UN 154 VMS"
-  - "\U0001F1FA\U0001F1F8 US 155 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 155 VMS"
   - "\U0001F1EB\U0001F1F7 FR 156 TJN"
   - "\U0001F1FA\U0001F1F8 US 157 VMS"
   - "\U0001F1FF\U0001F1E6 ZA 158 SSS"
@@ -3439,7 +3521,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 174 SSS"
   - "\U0001F1FA\U0001F1F8 US 175 SSS"
   - "\U0001F1E8\U0001F1F3 CN 176 VMS"
-  - "\U0001F1FA\U0001F1F8 US 177 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 177 VMS"
   - "\U0001F1E8\U0001F1F3 CN 178 VMS"
   - "\U0001F1E8\U0001F1F3 CN 179 TJN"
   - "\U0001F1E8\U0001F1F3 CN 180 VMS"
@@ -3465,7 +3547,7 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 200 SSS"
   - "\U0001F1ED\U0001F1F0 HK 201 TJN"
   - "\U0001F1FA\U0001F1F3 UN 202 VMS"
-  - "\U0001F1FA\U0001F1F8 US 203 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 203 VMS"
   - "\U0001F1E8\U0001F1F3 CN 204 VMS"
   - "\U0001F1FA\U0001F1F3 UN 205 SSS"
   - "\U0001F1E8\U0001F1F3 CN 206 VMS"
@@ -3540,8 +3622,8 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 275 TJN"
   - "\U0001F1EB\U0001F1F7 FR 276 TJN"
   - "\U0001F1FA\U0001F1F3 UN 277 SSS"
-  - "\U0001F1FA\U0001F1F8 US 278 VMS"
-  - "\U0001F1FA\U0001F1F8 US 279 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 278 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 279 VMS"
   - "\U0001F1FA\U0001F1F3 UN 280 VMS"
   - "\U0001F1FA\U0001F1F8 US 281 TJN"
   - "\U0001F1FA\U0001F1F8 US 282 SSS"
@@ -3857,7 +3939,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 152 VMS"
   - "\U0001F1FA\U0001F1F8 US 153 VMS"
   - "\U0001F1FA\U0001F1F3 UN 154 VMS"
-  - "\U0001F1FA\U0001F1F8 US 155 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 155 VMS"
   - "\U0001F1EB\U0001F1F7 FR 156 TJN"
   - "\U0001F1FA\U0001F1F8 US 157 VMS"
   - "\U0001F1FF\U0001F1E6 ZA 158 SSS"
@@ -3879,7 +3961,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 174 SSS"
   - "\U0001F1FA\U0001F1F8 US 175 SSS"
   - "\U0001F1E8\U0001F1F3 CN 176 VMS"
-  - "\U0001F1FA\U0001F1F8 US 177 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 177 VMS"
   - "\U0001F1E8\U0001F1F3 CN 178 VMS"
   - "\U0001F1E8\U0001F1F3 CN 179 TJN"
   - "\U0001F1E8\U0001F1F3 CN 180 VMS"
@@ -3905,7 +3987,7 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 200 SSS"
   - "\U0001F1ED\U0001F1F0 HK 201 TJN"
   - "\U0001F1FA\U0001F1F3 UN 202 VMS"
-  - "\U0001F1FA\U0001F1F8 US 203 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 203 VMS"
   - "\U0001F1E8\U0001F1F3 CN 204 VMS"
   - "\U0001F1FA\U0001F1F3 UN 205 SSS"
   - "\U0001F1E8\U0001F1F3 CN 206 VMS"
@@ -3980,8 +4062,8 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 275 TJN"
   - "\U0001F1EB\U0001F1F7 FR 276 TJN"
   - "\U0001F1FA\U0001F1F3 UN 277 SSS"
-  - "\U0001F1FA\U0001F1F8 US 278 VMS"
-  - "\U0001F1FA\U0001F1F8 US 279 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 278 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 279 VMS"
   - "\U0001F1FA\U0001F1F3 UN 280 VMS"
   - "\U0001F1FA\U0001F1F8 US 281 TJN"
   - "\U0001F1FA\U0001F1F8 US 282 SSS"
