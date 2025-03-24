@@ -1,89 +1,59 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2025-03-24 18:10:07
+# 创建时间：2025-03-24 18:21:26
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：314
 # 节点类型：ss, vmess, trojan
 ####################################
 mixed-port: 7890
-allow-lan: true
-log-level: info
-external-controller: 0.0.0.0:9090
+allow-lan: false
+log-level: silent
+external-controller: 127.0.0.1:9090
 dns:
-  enabled: true
-  listen: 0.0.0.0:1053
-  ipv6: true
-  default-nameserver:
-    - 223.5.5.5
-    - 114.114.114.114
+  enable: true
+  ipv6: false
+  listen: 127.0.0.1:1053
+  use-hosts: true
+  use-system-hosts: false
+  respect-rules: true
   enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
+  fake-ip-range: '198.19.0.1/24'
   fake-ip-filter:
     - '*.lan'
-    - '*.linksys.com'
-    - '*.linksyssmartwifi.com'
-    - swscan.apple.com
-    - mesu.apple.com
-    - '*.msftconnecttest.com'
-    - '*.msftncsi.com'
-    - time.*.com
-    - time.*.gov
-    - time.*.edu.cn
-    - time.*.apple.com
-    - time1.*.com
-    - time2.*.com
-    - time3.*.com
-    - time4.*.com
-    - time5.*.com
-    - time6.*.com
-    - time7.*.com
-    - ntp.*.com
-    - ntp.*.com
-    - ntp1.*.com
-    - ntp2.*.com
-    - ntp3.*.com
-    - ntp4.*.com
-    - ntp5.*.com
-    - ntp6.*.com
-    - ntp7.*.com
-    - '*.time.edu.cn'
-    - '*.ntp.org.cn'
-    - +.pool.ntp.org
-    - time1.cloud.tencent.com
-    - +.music.163.com
-    - '*.126.net'
-    - musicapi.taihe.com
-    - music.taihe.com
-    - songsearch.kugou.com
-    - trackercdn.kugou.com
-    - '*.kuwo.cn'
-    - api-jooxtt.sanook.com
-    - api.joox.com
-    - joox.com
-    - +.y.qq.com
-    - +.music.tc.qq.com
-    - aqqmusic.tc.qq.com
-    - +.stream.qqmusic.qq.com
-    - '*.xiami.com'
-    - +.music.migu.cn
-    - +.srv.nintendo.net
-    - +.stun.playstation.net
-    - xbox.*.microsoft.com
-    - +.xboxlive.com
-    - localhost.ptlogin2.qq.com
-    - proxy.golang.org
-    - stun.*.*
-    - stun.*.*.*
-    - '*.mcdn.bilivideo.cn'
+    - '*.local'
+    - '*.home.arpa'
+    - '*.market.xiaomi.com'
+    - '*.icloud.com'
+    - '*.apple.com'
+    - '*.windowsupdate.com'
   nameserver:
-    - https://doh.pub/dns-query
-    - https://dns.alidns.com/dns-query
+    - tls://8.8.8.8
+    - tls://1.1.1.1
+    - https://8.8.8.8/dns-query
+    - https://1.1.1.1/dns-query
+  proxy-server-nameserver:
+    - https://8.8.8.8/dns-query
+    - https://1.1.1.1/dns-query
+  cache-size: 8192
+  dns-timeout: 3s
+  fallback:
+    - tls://8.8.4.4
+    - tls://1.0.0.1
+    - https://8.8.4.4/dns-query
+    - https://1.0.0.1/dns-query
   fallback-filter:
-    geoip: false
-    ipcidr:
-      - 240.0.0.0/4
-      - 0.0.0.0/32
+    geoip: true
+    geoip-code: CN
+    geosite:
+      - gfw
+  nameserver-policy:
+    "*.cn":
+      - tls://119.29.29.29
+      - tls://223.5.5.5
+    "geoip-cn":
+      - tls://119.29.29.29
+      - tls://223.5.5.5
 
 proxies:
   - {"name":"广东省广州市+移动_1","type":"ss","server":"120.232.150.248","port":11008,"password":"ee19fceb-cedc-4832-b460-fccf24fdc8be","cipher":"chacha20-ietf-poly1305"}
@@ -405,15 +375,8 @@ proxy-groups:
     type: select
     proxies:
       - ♻️ 自动选择
-      - 🇭🇰 香港节点
-      - 🇸🇬 狮城节点
-      - 🇺🇲 美国节点
-      - 🇯🇵 日本节点
-      - 🚀 手动切换
+      - 🗺️ 选择地区
       - DIRECT
-  - name: 🚀 手动切换
-    type: select
-    proxies:
       - 广东省广州市+移动_1
       - 广东省广州市+移动_2_1
       - 广东省广州市+移动_2_2
@@ -730,9 +693,11 @@ proxy-groups:
       - 美国+CloudFlare节点_7
   - name: ♻️ 自动选择
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
+    timeout: 1500
+    max-failed-times: 1
     proxies:
       - 广东省广州市+移动_1
       - 广东省广州市+移动_2_1
@@ -1379,19 +1344,30 @@ proxy-groups:
       - 美国 CloudFlare节点_14
       - 美国 CloudFlare节点_15
       - 美国+CloudFlare节点_7
+  - name: 🗺️ 选择地区
+    type: select
+    proxies:
+      - 🇭🇰 香港节点
+      - 🇸🇬 狮城节点
+      - 🇺🇲 美国节点
+      - 🇯🇵 日本节点
   - name: 🇭🇰 香港节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
+    timeout: 1500
+    max-failed-times: 1
     proxies:
       - 香港+特别行政区
       - 香港+特别行政区_2
   - name: 🇯🇵 日本节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
+    timeout: 1500
+    max-failed-times: 1
     proxies:
       - 日本东京都+cogentco.com_3
       - 日本东京都+cogentco.com_1_2
@@ -1402,16 +1378,20 @@ proxy-groups:
       - 日本东京都+cogentco.com_2_2
   - name: 🇸🇬 狮城节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
+    timeout: 1500
+    max-failed-times: 1
     proxies:
       - 新加坡+Amazon数据中心_2
   - name: 🇺🇲 美国节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
+    timeout: 1500
+    max-failed-times: 1
     proxies:
       - 北美地区+V2CROSS.COM
       - 美国 CloudFlare节点_83
