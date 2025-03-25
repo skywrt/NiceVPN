@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2025-03-25 14:14:57
+# 创建时间：2025-03-25 14:12:37
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
-# 节点数量：379
+# 节点数量：380
 # 节点类型：ss, vmess, trojan
 ####################################
 mixed-port: 7890
@@ -110,6 +110,7 @@ proxies:
   - {"name":"荷兰 V2CROSS.COM_1","type":"vmess","server":"188.164.248.120","port":8443,"cipher":"auto","uuid":"e88b85c6-93b4-47f6-b3fb-2c55dcb1289f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
   - {"name":"俄罗斯 V2CROSS.COM_2_1","type":"vmess","server":"46.254.92.45","port":8443,"cipher":"auto","uuid":"e88b85c6-93b4-47f6-b3fb-2c55dcb1289f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
   - {"name":"美国 CloudFlare节点_1_2_2","type":"vmess","server":"us7-07.890624.xyz","port":80,"cipher":"auto","uuid":"4d04b30c-ef7b-4a07-8f9e-f581ec171f8a","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"湖南省 移动","type":"vmess","server":"tk.hzlt.tkddns.xyz","port":22643,"cipher":"auto","uuid":"98e96c9f-4bb3-39d4-9a2c-fac04257f7c7","alterId":2,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"zxjp-c.tkong.cc"}}}
   - {"name":"美国 CloudFlare节点_9_1","type":"vmess","server":"104.21.96.1","port":80,"cipher":"auto","uuid":"4d04b30c-ef7b-4a07-8f9e-f581ec171f8a","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
   - {"name":"美国 CloudFlare节点_90","type":"vmess","server":"us7-01.890624.xyz","port":443,"cipher":"auto","uuid":"4d04b30c-ef7b-4a07-8f9e-f581ec171f8a","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
   - {"name":"广东省广州市 移动_4","type":"vmess","server":"120.232.153.40","port":51182,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
@@ -503,6 +504,7 @@ proxy-groups:
       - 荷兰 V2CROSS.COM_1
       - 俄罗斯 V2CROSS.COM_2_1
       - 美国 CloudFlare节点_1_2_2
+      - 湖南省 移动
       - 美国 CloudFlare节点_9_1
       - 美国 CloudFlare节点_90
       - 广东省广州市 移动_4
@@ -888,6 +890,7 @@ proxy-groups:
       - 荷兰 V2CROSS.COM_1
       - 俄罗斯 V2CROSS.COM_2_1
       - 美国 CloudFlare节点_1_2_2
+      - 湖南省 移动
       - 美国 CloudFlare节点_9_1
       - 美国 CloudFlare节点_90
       - 广东省广州市 移动_4
@@ -1284,6 +1287,7 @@ proxy-groups:
       - 荷兰 V2CROSS.COM_1
       - 俄罗斯 V2CROSS.COM_2_1
       - 美国 CloudFlare节点_1_2_2
+      - 湖南省 移动
       - 美国 CloudFlare节点_9_1
       - 美国 CloudFlare节点_90
       - 广东省广州市 移动_4
