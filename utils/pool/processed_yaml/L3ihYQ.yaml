@@ -1,89 +1,59 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2025-03-27 07:39:53
+# 创建时间：2025-03-27 07:46:44
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：488
 # 节点类型：ss, vmess, trojan
 ####################################
 mixed-port: 7890
-allow-lan: true
-log-level: info
-external-controller: 0.0.0.0:9090
+allow-lan: false
+log-level: silent
+external-controller: 127.0.0.1:9090
 dns:
-  enabled: true
-  listen: 0.0.0.0:1053
-  ipv6: true
-  default-nameserver:
-    - 223.5.5.5
-    - 114.114.114.114
+  enable: true
+  ipv6: false
+  listen: 127.0.0.1:1053
+  use-hosts: true
+  use-system-hosts: false
+  respect-rules: true
   enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
+  fake-ip-range: '198.19.0.1/24'
   fake-ip-filter:
     - '*.lan'
-    - '*.linksys.com'
-    - '*.linksyssmartwifi.com'
-    - swscan.apple.com
-    - mesu.apple.com
-    - '*.msftconnecttest.com'
-    - '*.msftncsi.com'
-    - time.*.com
-    - time.*.gov
-    - time.*.edu.cn
-    - time.*.apple.com
-    - time1.*.com
-    - time2.*.com
-    - time3.*.com
-    - time4.*.com
-    - time5.*.com
-    - time6.*.com
-    - time7.*.com
-    - ntp.*.com
-    - ntp.*.com
-    - ntp1.*.com
-    - ntp2.*.com
-    - ntp3.*.com
-    - ntp4.*.com
-    - ntp5.*.com
-    - ntp6.*.com
-    - ntp7.*.com
-    - '*.time.edu.cn'
-    - '*.ntp.org.cn'
-    - +.pool.ntp.org
-    - time1.cloud.tencent.com
-    - +.music.163.com
-    - '*.126.net'
-    - musicapi.taihe.com
-    - music.taihe.com
-    - songsearch.kugou.com
-    - trackercdn.kugou.com
-    - '*.kuwo.cn'
-    - api-jooxtt.sanook.com
-    - api.joox.com
-    - joox.com
-    - +.y.qq.com
-    - +.music.tc.qq.com
-    - aqqmusic.tc.qq.com
-    - +.stream.qqmusic.qq.com
-    - '*.xiami.com'
-    - +.music.migu.cn
-    - +.srv.nintendo.net
-    - +.stun.playstation.net
-    - xbox.*.microsoft.com
-    - +.xboxlive.com
-    - localhost.ptlogin2.qq.com
-    - proxy.golang.org
-    - stun.*.*
-    - stun.*.*.*
-    - '*.mcdn.bilivideo.cn'
+    - '*.local'
+    - '*.home.arpa'
+    - '*.market.xiaomi.com'
+    - '*.icloud.com'
+    - '*.apple.com'
+    - '*.windowsupdate.com'
   nameserver:
-    - https://doh.pub/dns-query
-    - https://dns.alidns.com/dns-query
+    - tls://8.8.8.8
+    - tls://1.1.1.1
+    - https://8.8.8.8/dns-query
+    - https://1.1.1.1/dns-query
+  proxy-server-nameserver:
+    - https://8.8.8.8/dns-query
+    - https://1.1.1.1/dns-query
+  cache-size: 8192
+  dns-timeout: 3s
+  fallback:
+    - tls://8.8.4.4
+    - tls://1.0.0.1
+    - https://8.8.4.4/dns-query
+    - https://1.0.0.1/dns-query
   fallback-filter:
-    geoip: false
-    ipcidr:
-      - 240.0.0.0/4
-      - 0.0.0.0/32
+    geoip: true
+    geoip-code: CN
+    geosite:
+      - gfw
+  nameserver-policy:
+    "*.cn":
+      - tls://119.29.29.29
+      - tls://223.5.5.5
+    "geoip-cn":
+      - tls://119.29.29.29
+      - tls://223.5.5.5
 
 proxies:
   - {"name":"江苏省+移动_2","type":"ss","server":"zf1.10101251.xyz","port":41705,"password":"4bccdfb7-f45b-44bb-9cd3-fb6f8fc8072f","cipher":"aes-256-gcm"}
@@ -155,11 +125,11 @@ proxies:
   - {"name":"美国+CloudFlare节点_22","type":"trojan","server":"172.67.200.238","port":443,"udp":true,"password":"a8fce442-ae9a-4cc1-a0cc-20308ff0a0db","sni":"1P.890689.xyZ","skip-cert-verify":true,"network":"tcp"}
   - {"name":"日本东京都+cogentco.com_1_2","type":"trojan","server":"visual.superpokemon.com","port":443,"udp":true,"password":"6aqnYj7NA2CAeSeZpY34RIC3KzNzDO33aOOaZSxFSc5ETBcwXeyaDF3qC9A907y2nXT8S","sni":"visual.superpokemon.com","skip-cert-verify":true,"network":"tcp"}
   - {"name":"香港+腾讯云_2","type":"trojan","server":"43.129.171.137","port":443,"udp":true,"password":"Aimer","sni":"agepm.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+Amazon+EC2服务器","type":"trojan","server":"3.76.235.109","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
+  - {"name":"美国+Amazon+EC2服务器","type":"trojan","server":"3.76.235.109","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
   - {"name":"俄罗斯+V2CROSS.COM_6","type":"trojan","server":"91.184.242.218","port":443,"udp":true,"password":"NEHZp72yf2","sni":"dr-ping.io","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"爱尔兰都柏林+亚马逊云_1","type":"trojan","server":"3.248.37.227","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"美国+Xerox_2_1","type":"trojan","server":"13.51.239.111","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"瑞典+斯德哥尔摩Amazon数据中心_1","type":"trojan","server":"13.49.86.91","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
+  - {"name":"爱尔兰都柏林+亚马逊云_1","type":"trojan","server":"3.248.37.227","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国+Xerox_2_1","type":"trojan","server":"13.51.239.111","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"瑞典+斯德哥尔摩Amazon数据中心_1","type":"trojan","server":"13.49.86.91","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
   - {"name":"香港+Amazon数据中心_2","type":"trojan","server":"18.163.41.207","port":42168,"udp":true,"password":"c017fb27-a4b4-48f9-80f6-2bdb504adf75","sni":"data.bilibili.com","skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国+惠普HP_2_1","type":"trojan","server":"16.163.41.182","port":42168,"udp":true,"password":"c017fb27-a4b4-48f9-80f6-2bdb504adf75","sni":"data.bilibili.com","skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国+CloudFlare节点_26","type":"trojan","server":"104.21.21.226","port":443,"udp":true,"password":"a8fce442-ae9a-4cc1-a0cc-20308ff0a0db","sni":"1P.890689.xyZ","skip-cert-verify":true,"network":"tcp"}
@@ -187,13 +157,13 @@ proxies:
   - {"name":"波兰 V2CROSS.COM_1","type":"vmess","server":"91.185.184.61","port":52181,"cipher":"auto","uuid":"7d9473cc-1cfb-492b-bdcd-b25011a3cb11","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess-argo?ed=2048"}}
   - {"name":"美国+俄勒冈州波特兰Amazon数据中心_2_2","type":"trojan","server":"us004.421421.xyz","port":20230,"udp":true,"password":"5a81db08-7af3-49a4-b089-b7a5b2c24c38","skip-cert-verify":true,"network":"tcp"}
   - {"name":"英国+伦敦Amazon数据中心_1","type":"trojan","server":"35.179.211.231","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"英国+伦敦Amazon数据中心_2_1","type":"trojan","server":"3.9.88.217","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
+  - {"name":"英国+伦敦Amazon数据中心_2_1","type":"trojan","server":"3.9.88.217","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
   - {"name":"英国+V2CROSS.COM_2","type":"trojan","server":"85.234.83.214","port":443,"udp":true,"password":"74260704627805900","sni":"many-macaque.shiner427.skin","skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国+V2CROSS.COM_2","type":"trojan","server":"192.3.130.96","port":443,"udp":true,"password":"0cda5f7e-cc55-4ff2-8ad8-268b9b99dd01","sni":"us6-01zl.huangshang.ggff.net","skip-cert-verify":true,"network":"tcp"}
   - {"name":"英国+社会保险安全部","type":"trojan","server":"51.20.49.172","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+弗吉尼亚州阿什本Amazon数据中心","type":"trojan","server":"34.199.59.221","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
+  - {"name":"美国+弗吉尼亚州阿什本Amazon数据中心","type":"trojan","server":"34.199.59.221","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国+CloudFlare节点_3_2","type":"trojan","server":"104.21.6.179","port":443,"udp":true,"password":"0cda5f7e-cc55-4ff2-8ad8-268b9b99dd01","sni":"uS6-16.890601.xyz","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+Sprint网络","type":"trojan","server":"63.177.4.177","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
+  - {"name":"美国+Sprint网络","type":"trojan","server":"63.177.4.177","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国+伊利诺伊州芝加哥CDN77节点_1","type":"trojan","server":"89.187.181.179","port":43118,"udp":true,"password":"ypDt8RkT7J","skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国+惠普公司","type":"trojan","server":"15.236.215.26","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
   - {"name":"广东省深圳市+移动_3_2","type":"trojan","server":"vt-bana2-cn-11.ghpgwqswodgzv.com","port":40021,"udp":true,"password":"a38c9e28-9960-4e31-9f18-ed2495a756aa","sni":"vt-bana2-cn-11.ghpgwqswodgzv.com","skip-cert-verify":true,"network":"tcp"}
@@ -201,7 +171,7 @@ proxies:
   - {"name":"美国+CloudFlare节点_5_2","type":"trojan","server":"104.21.69.41","port":443,"udp":true,"password":"6040a753-e35b-4384-8713-96f3c639b621","sni":"kju84.890602.XYZ","skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国+Amazon数据中心","type":"trojan","server":"13.42.192.193","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
   - {"name":"英国+V2CROSS.COM_4","type":"trojan","server":"many-macaque.shiner427.skin","port":443,"udp":true,"password":"74260704627805900","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"英国+伦敦Amazon数据中心_3","type":"trojan","server":"3.10.73.239","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
+  - {"name":"英国+伦敦Amazon数据中心_3","type":"trojan","server":"3.10.73.239","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
   - {"name":"广东省+移动_2_2","type":"ss","server":"okanc.node-is.green","port":21115,"password":"9acfc574-acc3-4c2b-ab3b-491d43a6eb83","cipher":"aes-256-gcm"}
   - {"name":"美国 CloudFlare节点_51_1","type":"vmess","server":"104.21.48.1","port":80,"cipher":"auto","uuid":"4d04b30c-ef7b-4a07-8f9e-f581ec171f8a","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
   - {"name":"美国 CloudFlare节点_2_2","type":"vmess","server":"104.21.32.1","port":80,"cipher":"auto","uuid":"e936e1fa-ed0c-4e20-b2d8-880f02a8fb35","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
@@ -579,15 +549,8 @@ proxy-groups:
     type: select
     proxies:
       - ♻️ 自动选择
-      - 🇭🇰 香港节点
-      - 🇸🇬 狮城节点
-      - 🇺🇲 美国节点
-      - 🇯🇵 日本节点
-      - 🚀 手动切换
+      - 🗺️ 选择地区
       - DIRECT
-  - name: 🚀 手动切换
-    type: select
-    proxies:
       - 江苏省+移动_2
       - 欧盟+V2CROSS.COM_4
       - 广东省广州市+移动_1_2
@@ -1078,9 +1041,11 @@ proxy-groups:
       - 美国+CloudFlare节点_7_2
   - name: ♻️ 自动选择
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
+    timeout: 1500
+    max-failed-times: 1
     proxies:
       - 江苏省+移动_2
       - 欧盟+V2CROSS.COM_4
@@ -2075,11 +2040,20 @@ proxy-groups:
       - 美国 CloudFlare节点_14_2_2
       - 美国 CloudFlare节点_15_2_2
       - 美国+CloudFlare节点_7_2
+  - name: 🗺️ 选择地区
+    type: select
+    proxies:
+      - 🇭🇰 香港节点
+      - 🇸🇬 狮城节点
+      - 🇺🇲 美国节点
+      - 🇯🇵 日本节点
   - name: 🇭🇰 香港节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
+    timeout: 1500
+    max-failed-times: 1
     proxies:
       - 香港+Amazon数据中心_1
       - 香港+腾讯云_2
@@ -2090,9 +2064,11 @@ proxy-groups:
       - 香港+特别行政区_2
   - name: 🇯🇵 日本节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
+    timeout: 1500
+    max-failed-times: 1
     proxies:
       - 日本东京都+cogentco.com_3_2
       - 日本东京都+cogentco.com_1_2
@@ -2103,17 +2079,21 @@ proxy-groups:
       - 日本东京都+cogentco.com_2_2
   - name: 🇸🇬 狮城节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
+    timeout: 1500
+    max-failed-times: 1
     proxies:
       - 新加坡+Amazon数据中心_2_1
       - 新加坡+Amazon数据中心_2_2
   - name: 🇺🇲 美国节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
+    timeout: 1500
+    max-failed-times: 1
     proxies:
       - 美国+华盛顿Cogent通信公司_2_2
       - 北美地区+V2CROSS.COM_3_1
