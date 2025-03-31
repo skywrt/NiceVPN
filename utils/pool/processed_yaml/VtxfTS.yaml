@@ -469,6 +469,8 @@ proxy-groups:
     url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 20
+    timeout: 2000
+    max-failed-times: 1
     proxies:
       - 俄罗斯+V2CROSS.COM_1
       - 美国+V2CROSS.COM
