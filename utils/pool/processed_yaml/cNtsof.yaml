@@ -1,469 +1,257 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2025-04-03 12:21:46
+# 创建时间：2025-04-03 15:16:34
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
-# 节点数量：120
-# 节点类型：ss, vmess, trojan
+# 节点数量：55
+# 节点类型：vmess, ss
 ####################################
 mixed-port: 7890
-allow-lan: true
-log-level: info
-external-controller: 0.0.0.0:9090
+allow-lan: false
+log-level: silent
+external-controller: 127.0.0.1:9090
 dns:
-  enabled: true
-  listen: 0.0.0.0:1053
-  ipv6: true
-  default-nameserver:
-    - 223.5.5.5
-    - 114.114.114.114
+  enable: true
+  ipv6: false 
+  listen: 127.0.0.1:1053
+  use-hosts: true
+  use-system-hosts: false
+  respect-rules: true
   enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
+  fake-ip-range: '198.19.0.1/24'
   fake-ip-filter:
     - '*.lan'
-    - '*.linksys.com'
-    - '*.linksyssmartwifi.com'
+    - '*.local'
+    - '*.home.arpa'
+    - '*.icloud.com'
+    - '*.apple.com'
+    - '*.windowsupdate.com'
     - swscan.apple.com
     - mesu.apple.com
     - '*.msftconnecttest.com'
     - '*.msftncsi.com'
-    - time.*.com
-    - time.*.gov
-    - time.*.edu.cn
-    - time.*.apple.com
-    - time1.*.com
-    - time2.*.com
-    - time3.*.com
-    - time4.*.com
-    - time5.*.com
-    - time6.*.com
-    - time7.*.com
-    - ntp.*.com
-    - ntp.*.com
-    - ntp1.*.com
-    - ntp2.*.com
-    - ntp3.*.com
-    - ntp4.*.com
-    - ntp5.*.com
-    - ntp6.*.com
-    - ntp7.*.com
-    - '*.time.edu.cn'
-    - '*.ntp.org.cn'
-    - +.pool.ntp.org
-    - time1.cloud.tencent.com
-    - +.music.163.com
-    - '*.126.net'
-    - musicapi.taihe.com
-    - music.taihe.com
-    - songsearch.kugou.com
-    - trackercdn.kugou.com
-    - '*.kuwo.cn'
-    - api-jooxtt.sanook.com
-    - api.joox.com
-    - joox.com
-    - +.y.qq.com
-    - +.music.tc.qq.com
-    - aqqmusic.tc.qq.com
-    - +.stream.qqmusic.qq.com
-    - '*.xiami.com'
-    - +.music.migu.cn
+    - stun.*.*
+    - stun.*.*.*
     - +.srv.nintendo.net
     - +.stun.playstation.net
     - xbox.*.microsoft.com
     - +.xboxlive.com
-    - localhost.ptlogin2.qq.com
-    - proxy.golang.org
-    - stun.*.*
-    - stun.*.*.*
-    - '*.mcdn.bilivideo.cn'
   nameserver:
-    - https://doh.pub/dns-query
-    - https://dns.alidns.com/dns-query
+    - tls://8.8.8.8
+    - tls://1.1.1.1
+    - https://8.8.8.8/dns-query
+    - https://1.1.1.1/dns-query
+  proxy-server-nameserver:
+    - https://8.8.8.8/dns-query
+    - https://1.1.1.1/dns-query
+  cache-size: 8192
+  dns-timeout: 3s
+  fallback:
+    - tls://8.8.4.4
+    - tls://1.0.0.1
+    - https://8.8.4.4/dns-query
+    - https://1.0.0.1/dns-query
   fallback-filter:
-    geoip: false
-    ipcidr:
-      - 240.0.0.0/4
-      - 0.0.0.0/32
+    geoip: true
+    geoip-code: CN
+    geosite:
+      - gfw
+  nameserver-policy:
+    "*.cn":
+      - tls://119.29.29.29
+      - tls://223.5.5.5
+    "geoip-cn":
+      - tls://119.29.29.29
+      - tls://223.5.5.5
+  disable-udp: true
 
 proxies:
-  - {"name":"广东省广州市+移动_1","type":"ss","server":"free.2apzhfa.xyz","port":31271,"password":"d2b87515-4d85-4b70-8879-41ac1f85b2e5","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"欧盟+V2CROSS.COM","type":"ss","server":"45.80.181.77","port":28187,"password":"sgg7vReHnfEtUtAsWFPeeFOSJ6Q3d9owYfCQSwQMPnk=","cipher":"aes-256-gcm"}
-  - {"name":"广东省广州市+移动_2","type":"ss","server":"free.2apzhfa.xyz","port":31211,"password":"d2b87515-4d85-4b70-8879-41ac1f85b2e5","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"广东省广州市+移动_3","type":"ss","server":"free.2apzhfa.xyz","port":31241,"password":"d2b87515-4d85-4b70-8879-41ac1f85b2e5","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"广东省广州市+移动_4","type":"ss","server":"free.2apzhfa.xyz","port":31511,"password":"d2b87515-4d85-4b70-8879-41ac1f85b2e5","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"广东省+移动","type":"ss","server":"okanc.node-is.green","port":21114,"password":"9acfc574-acc3-4c2b-ab3b-491d43a6eb83","cipher":"aes-256-gcm"}
-  - {"name":"广东省广州市+移动_5","type":"ss","server":"rk1.nynode0.cc","port":19873,"password":"9b0ea2c9-c013-4b13-9ba6-fceae06e69f4","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"江苏省+移动","type":"ss","server":"bgp-xdd.blue-bgp.xyz","port":50103,"password":"f203200f-f6a4-49d8-893e-6559804d79ae","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"广东省广州市+移动_6","type":"ss","server":"gy01.hunheiydd.xyz","port":56277,"password":"VMhGp5wEIyCDf90T","cipher":"aes-128-gcm"}
-  - {"name":"广东省广州市+移动_7","type":"ss","server":"gysz0000.dynu.net","port":56277,"password":"VMhGp5wEIyCDf90T","cipher":"aes-128-gcm"}
-  - {"name":"广东省广州市+移动_8","type":"ss","server":"rk1.nynode0.cc","port":52134,"password":"bc2c6c43-ead0-422d-ae03-a211523a34e9","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"俄罗斯+V2CROSS.COM","type":"ss","server":"185.242.86.156","port":54170,"password":"36ZCHeabUSfKjfQEvJ4HDV","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"波兰+V2CROSS.COM","type":"ss","server":"193.243.147.128","port":40368,"password":"7BcLdsO1WweoGD0X","cipher":"aes-256-gcm"}
-  - {"name":"台湾省 V2CROSS.COM","type":"vmess","server":"45.121.50.116","port":27228,"cipher":"auto","uuid":"1d4d8fb8-c73c-4474-e301-dcb9570943ca","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"广东省广州市 移动_1","type":"vmess","server":"120.232.153.40","port":41002,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国 CloudFlare节点_1","type":"vmess","server":"s2.db-link01.top","port":2052,"cipher":"auto","uuid":"4b36625c-b9d9-3ea6-aed5-86d62c70e16d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/dabai.in104.24.227.22","headers":{"host":"100-189-132-241.s2.db-link01.top"}}}
-  - {"name":"美国 CloudFlare节点_2","type":"vmess","server":"s2.db-link02.top","port":8080,"cipher":"auto","uuid":"4b36625c-b9d9-3ea6-aed5-86d62c70e16d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/dabai.in172.64.41.150","headers":{"host":"100-119-151-248.s2.db-link02.top"}}}
-  - {"name":"巴西圣保罗 CloudFlare节点","type":"vmess","server":"188.114.96.3","port":443,"cipher":"auto","uuid":"d13fc2f5-3e05-4795-81eb-44143a09e552","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/sgfqkqmltcy.site/rbqqvws","headers":{"host":"ayanjlizi.yiwis32762.workers.dev"}}}
-  - {"name":"美国 CloudFlare节点_3","type":"vmess","server":"104.21.48.1","port":2087,"cipher":"auto","uuid":"41963e6b-295d-45a0-b6cc-38fbdd3e3f75","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/lon1-sub.890699.xyz","headers":{"host":"lon1-sub.890699.xyz"}}}
-  - {"name":"美国 CloudFlare节点_4","type":"vmess","server":"104.16.60.8","port":2095,"cipher":"auto","uuid":"f584de15-2034-4170-a723-f48c2bae5e0f","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/afrhms16v.bestxray.buzz/linkws","headers":{"host":"worker-mute-bar-1719.nifotok993.workers.dev"}}}
-  - {"name":"美国 CloudFlare节点_5","type":"vmess","server":"s2.db-link02.top","port":2052,"cipher":"auto","uuid":"4b36625c-b9d9-3ea6-aed5-86d62c70e16d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/dabai.in172.64.6.224","headers":{"host":"100-34-100-44.s2.db-link02.top"}}}
-  - {"name":"美国 CloudFlare节点_6","type":"vmess","server":"104.19.32.0","port":443,"cipher":"auto","uuid":"93ea486a-bada-42a4-ac38-d088b320fa1e","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"xmivideo.cfd"}}}
-  - {"name":"美国 CloudFlare节点_7","type":"vmess","server":"s4.cn-db.top","port":2052,"cipher":"auto","uuid":"4b36625c-b9d9-3ea6-aed5-86d62c70e16d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/dabai.in104.25.124.184","headers":{"host":"100-106-60-74.s4.cn-db.top"}}}
-  - {"name":"美国 CloudFlare节点_8","type":"vmess","server":"s2.db-link02.top","port":2095,"cipher":"auto","uuid":"4b36625c-b9d9-3ea6-aed5-86d62c70e16d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/dabai.in104.20.27.115","headers":{"host":"100-209-47-141.s2.db-link02.top"}}}
-  - {"name":"美国 CloudFlare节点_9","type":"vmess","server":"fk2-bash.890617.xyz","port":2083,"cipher":"auto","uuid":"feddc326-da70-4fab-95a9-8f98be6da633","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/fj2-1","headers":{"host":"fk2-1.890617.xyz"}}}
-  - {"name":"美国 CloudFlare节点_10","type":"vmess","server":"lon1-dash.890699.xyz","port":8443,"cipher":"auto","uuid":"41963e6b-295d-45a0-b6cc-38fbdd3e3f75","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/lon1-sub.890699.xyz","headers":{"host":"lon1-sub.890699.xyz"}}}
-  - {"name":"伊朗 V2CROSS.COM","type":"vmess","server":"2.189.59.5","port":443,"cipher":"auto","uuid":"05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"obdii.cfd"}}}
-  - {"name":"广东省广州市 移动_2","type":"vmess","server":"120.232.153.63","port":40105,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国 CloudFlare节点_11","type":"vmess","server":"Us7-01.890624.xyz","port":443,"cipher":"auto","uuid":"4d04b30c-ef7b-4a07-8f9e-f581ec171f8a","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/bua2hMcbA8wMzbGFtV","headers":{"host":"us7-01.890624.xyz"}}}
-  - {"name":"美国 CloudFlare节点_12","type":"vmess","server":"172.67.71.217","port":443,"cipher":"auto","uuid":"9072d339-3885-4fe1-b0bc-29fa7505410e","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/fixedfloati.cfd/linkwsd","headers":{"host":"1t3chx0.zed23.web1337.net"}}}
-  - {"name":"美国 CloudFlare节点_13","type":"vmess","server":"s4.db-link01.top","port":2095,"cipher":"auto","uuid":"4b36625c-b9d9-3ea6-aed5-86d62c70e16d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/dabai.in104.17.28.240","headers":{"host":"100-114-107-221.s4.db-link01.top"}}}
-  - {"name":"美国 CloudFlare节点_14","type":"vmess","server":"172.67.175.56","port":443,"cipher":"auto","uuid":"05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"obdii.cfd"}}}
-  - {"name":"广东省汕头市 移动_1","type":"vmess","server":"b268cf3c-su7xc0-swx10p-cw9v.b.fosant.com","port":3683,"cipher":"auto","uuid":"f39baabc-ef78-11ef-b714-f23c93136cb3","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国 CloudFlare节点_15","type":"vmess","server":"s4.db-link02.top","port":80,"cipher":"auto","uuid":"4b36625c-b9d9-3ea6-aed5-86d62c70e16d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/dabai.in104.24.152.253","headers":{"host":"100-21-178-246.s4.db-link02.top"}}}
-  - {"name":"美国 CloudFlare节点_16","type":"vmess","server":"US7-07.890624.xyz","port":80,"cipher":"auto","uuid":"4d04b30c-ef7b-4a07-8f9e-f581ec171f8a","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/bua2hMcbA8wMzbGFtV","headers":{"host":"us7-07.890624.xyz"}}}
-  - {"name":"美国 CloudFlare节点_17","type":"vmess","server":"104.17.221.248","port":2082,"cipher":"auto","uuid":"4b36625c-b9d9-3ea6-aed5-86d62c70e16d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/dabai.in172.67.8.3","headers":{"host":"100-116-85-183.s4.db-link02.top"}}}
-  - {"name":"广东省汕头市 移动_2","type":"vmess","server":"1387ebdd-su7b40-su6828-eme.b.fosant.com","port":3683,"cipher":"auto","uuid":"16d93f14-af0e-11ee-8ebe-f23c93136cb3","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国 CloudFlare节点_18","type":"vmess","server":"104.21.48.1","port":2096,"cipher":"auto","uuid":"75a0885f-0ca5-42a4-8651-391cf8193154","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"de01.sh-cloudflare.sbs"}}}
-  - {"name":"美国 CloudFlare节点_19","type":"vmess","server":"kr2.ttcc.tech","port":443,"cipher":"auto","uuid":"4664df84-15cf-4e57-828b-0782f125e898","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"kr2.ttcc.tech"}}}
-  - {"name":"美国 CloudFlare节点_20","type":"vmess","server":"lon1-dash.890699.xyz","port":2087,"cipher":"auto","uuid":"41963e6b-295d-45a0-b6cc-38fbdd3e3f75","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/lon1-sub.890699.xyz","headers":{"host":"lon1-sub.890699.xyz"}}}
-  - {"name":"美国 CloudFlare节点_21","type":"vmess","server":"s2.db-link01.top","port":80,"cipher":"auto","uuid":"4b36625c-b9d9-3ea6-aed5-86d62c70e16d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/dabai.in172.67.60.154","headers":{"host":"100-55-60-174.s2.db-link01.top"}}}
-  - {"name":"美国 CloudFlare节点_22","type":"vmess","server":"104.21.96.1","port":80,"cipher":"auto","uuid":"4d04b30c-ef7b-4a07-8f9e-f581ec171f8a","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/bua2hMcbA8wMzbGFtV","headers":{"host":"us7-01.890624.xyz"}}}
-  - {"name":"美国 CloudFlare节点_23","type":"vmess","server":"s4.db-link02.top","port":8080,"cipher":"auto","uuid":"4b36625c-b9d9-3ea6-aed5-86d62c70e16d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/dabai.in104.25.238.226","headers":{"host":"100-217-184-172.s4.db-link02.top"}}}
-  - {"name":"美国 CloudFlare节点_24","type":"vmess","server":"us7-03.890624.xyz","port":80,"cipher":"auto","uuid":"4d04b30c-ef7b-4a07-8f9e-f581ec171f8a","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/bua2hMcbA8wMzbGFtV","headers":{"host":"us7-03.890624.xyz"}}}
-  - {"name":"美国 CloudFlare节点_25","type":"vmess","server":"sanjose05.852224.ggff.net","port":443,"cipher":"auto","uuid":"89c1aea7-4d0d-4013-b663-0f94a3e6bdbd","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/YfB29GXf4cThJQeJb","headers":{"host":"sanjose05.852224.ggff.net"}}}
-  - {"name":"广东省广州市 移动_3","type":"vmess","server":"183.236.51.38","port":55754,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国 CloudFlare节点_26","type":"vmess","server":"us2vmess.rnmcnm.com","port":80,"cipher":"auto","uuid":"7f8a1bb9-bee0-40a8-f908-21a65da0f3cc","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/123qwe","headers":{"host":"us2vmess.rnmcnm.com"}}}
-  - {"name":"美国 CloudFlare节点_27","type":"vmess","server":"s4.cn-db.top","port":2095,"cipher":"auto","uuid":"4b36625c-b9d9-3ea6-aed5-86d62c70e16d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/dabai.in104.25.36.93","headers":{"host":"100-78-250-146.s4.cn-db.top"}}}
-  - {"name":"美国 CloudFlare节点_28","type":"vmess","server":"s4.db-link02.top","port":8880,"cipher":"auto","uuid":"4b36625c-b9d9-3ea6-aed5-86d62c70e16d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/dabai.in104.25.239.131","headers":{"host":"100-128-12-180.s4.db-link02.top"}}}
-  - {"name":"美国 CloudFlare节点_29","type":"vmess","server":"leader.twn24.ir","port":2053,"cipher":"auto","uuid":"9e4515ad-2035-4281-833a-633bf61c9dd9","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/🆔@M3HDIO1","headers":{"host":"leader.twn24.ir"}}}
-  - {"name":"美国 V2CROSS.COM","type":"vmess","server":"45.142.120.190","port":2082,"cipher":"auto","uuid":"3f638f34-8dba-4186-bc43-2716a7ddd4be","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/az05.beyondy.cfd/link#","headers":{"host":"yellow-paper-029c.yvonna.workers.dev"}}}
-  - {"name":"美国 CloudFlare节点_30","type":"vmess","server":"172.67.170.13","port":443,"cipher":"auto","uuid":"76221bfb-e92f-4e80-81c5-6fe48f50ac0b","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"glweidf.sbs"}}}
-  - {"name":"美国 CloudFlare节点_31","type":"vmess","server":"172.67.220.10","port":443,"cipher":"auto","uuid":"39cec18f-a439-427c-9a4e-aeb6fcdf6f53","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"linja05.hwcar.sbs"}}}
-  - {"name":"美国 CloudFlare节点_32","type":"vmess","server":"104.21.64.1","port":2096,"cipher":"auto","uuid":"75a0885f-0ca5-42a4-8651-391cf8193154","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"de01.sh-cloudflare.sbs"}}}
-  - {"name":"广东省湛江市 移动","type":"vmess","server":"120.198.71.214","port":34093,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国 CloudFlare节点_33","type":"vmess","server":"172.67.179.199","port":443,"cipher":"auto","uuid":"edbb1059-1633-4271-b66e-ed4fba47a1bf","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"linde06.indiavideo.sbs"}}}
-  - {"name":"广东省广州市 移动_4","type":"vmess","server":"183.236.51.38","port":51039,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国 CloudFlare节点_34","type":"vmess","server":"US7-02.890624.Xyz","port":443,"cipher":"auto","uuid":"4d04b30c-ef7b-4a07-8f9e-f581ec171f8a","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/bua2hMcbA8wMzbGFtV","headers":{"host":"us7-02.890624.xyz"}}}
-  - {"name":"美国 CloudFlare节点_35","type":"vmess","server":"104.21.96.1","port":2096,"cipher":"auto","uuid":"75a0885f-0ca5-42a4-8651-391cf8193154","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"de01.sh-cloudflare.sbs"}}}
-  - {"name":"美国 CloudFlare节点_36","type":"vmess","server":"104.18.149.75","port":443,"cipher":"auto","uuid":"de94cc0a-0592-4969-b1fc-97ea8f0ea0b3","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/aa","headers":{"host":"us.insbot.filegear-sg.me"}}}
-  - {"name":"美国 CloudFlare节点_37","type":"vmess","server":"104.19.48.236","port":2052,"cipher":"auto","uuid":"4b36625c-b9d9-3ea6-aed5-86d62c70e16d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/dabai.in172.67.71.198","headers":{"host":"100-41-36-35.s2.db-link01.top"}}}
-  - {"name":"美国 CloudFlare节点_38","type":"vmess","server":"s2.db-link02.top","port":8880,"cipher":"auto","uuid":"4b36625c-b9d9-3ea6-aed5-86d62c70e16d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/dabai.in104.24.114.165","headers":{"host":"100-9-89-92.s2.db-link02.top"}}}
-  - {"name":"美国 CloudFlare节点_39","type":"vmess","server":"104.21.21.226","port":80,"cipher":"auto","uuid":"a8fce442-ae9a-4cc1-a0cc-20308ff0a0db","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/lsUVr8VBxF4ylXngZ","headers":{"host":"1c.890689.xyz"}}}
-  - {"name":"美国 CloudFlare节点_40","type":"vmess","server":"ny1-dash.890699.xyz","port":2087,"cipher":"auto","uuid":"658b87e0-5d92-4424-d344-c167acd6a77f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ny1-sub.890699.xyz","headers":{"host":"ny1-sub.890699.xyz"}}}
-  - {"name":"美国 CloudFlare节点_41","type":"vmess","server":"de01.sh-cloudflare.sbs","port":2096,"cipher":"auto","uuid":"1e2e8430-9c0e-4394-a9ea-4d845e978757","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"de01.sh-cloudflare.sbs"}}}
-  - {"name":"美国 CloudFlare节点_42","type":"vmess","server":"104.21.64.1","port":80,"cipher":"auto","uuid":"4d04b30c-ef7b-4a07-8f9e-f581ec171f8a","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/bua2hMcbA8wMzbGFtV","headers":{"host":"us7-01.890624.xyz"}}}
-  - {"name":"美国 CloudFlare节点_43","type":"vmess","server":"172.67.220.83","port":443,"cipher":"auto","uuid":"39cec18f-a439-427c-9a4e-aeb6fcdf6f53","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"linja05.hwcar.sbs"}}}
-  - {"name":"美国 CloudFlare节点_44","type":"vmess","server":"s4.db-link01.top","port":8880,"cipher":"auto","uuid":"4b36625c-b9d9-3ea6-aed5-86d62c70e16d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/dabai.in172.67.5.70","headers":{"host":"100-44-229-26.s4.db-link01.top"}}}
-  - {"name":"美国 CloudFlare节点_45","type":"vmess","server":"uS7-09.890606.xYz","port":80,"cipher":"auto","uuid":"4d04b30c-ef7b-4a07-8f9e-f581ec171f8a","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/bua2hMcbA8wMzbGFtV","headers":{"host":"us7-09.890606.xyz"}}}
-  - {"name":"美国 CloudFlare节点_46","type":"vmess","server":"s2.cn-db.top","port":2095,"cipher":"auto","uuid":"4b36625c-b9d9-3ea6-aed5-86d62c70e16d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/dabai.in172.64.13.172","headers":{"host":"100-51-243-128.s2.cn-db.top"}}}
-  - {"name":"美国 CloudFlare节点_47","type":"vmess","server":"s4.cn-db.top","port":2082,"cipher":"auto","uuid":"4b36625c-b9d9-3ea6-aed5-86d62c70e16d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/dabai.in104.19.101.110","headers":{"host":"100-59-178-247.s4.cn-db.top"}}}
-  - {"name":"美国 CloudFlare节点_48","type":"vmess","server":"104.21.32.1","port":2096,"cipher":"auto","uuid":"75a0885f-0ca5-42a4-8651-391cf8193154","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"de01.sh-cloudflare.sbs"}}}
-  - {"name":"广东省广州市 移动_5","type":"vmess","server":"183.236.51.38","port":53102,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国 CloudFlare节点_49","type":"vmess","server":"172.67.170.11","port":443,"cipher":"auto","uuid":"edbb1059-1633-4271-b66e-ed4fba47a1bf","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"linde06.indiavideo.sbs"}}}
-  - {"name":"德国 萨克森自由州法尔肯施泰因Hetnzer数据中心","type":"vmess","server":"144.76.231.27","port":23173,"cipher":"auto","uuid":"4c2dafb9-222c-481c-9695-1ebe4bc0b692","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国 CloudFlare节点_50","type":"vmess","server":"s4.db-link02.top","port":2095,"cipher":"auto","uuid":"4b36625c-b9d9-3ea6-aed5-86d62c70e16d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/dabai.in104.19.97.91","headers":{"host":"100-187-244-205.s4.db-link02.top"}}}
-  - {"name":"印度 V2CROSS.COM_3","type":"vmess","server":"202.78.162.5","port":443,"cipher":"auto","uuid":"716eded6-2201-4dbd-9d63-1638c9e8e677","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/@forwardv2ray","headers":{"host":"pendar.onthewifi.com"}}}
-  - {"name":"美国 CloudFlare节点_51","type":"vmess","server":"104.21.82.183","port":8880,"cipher":"auto","uuid":"5a7021e0-26b4-45d6-b175-fe551601ca97","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"server26.beheshtbaneh.com"}}}
-  - {"name":"美国 Fastly全球Anycast节点","type":"vmess","server":"gov.uk","port":443,"cipher":"auto","uuid":"77848824-93b7-4b89-ffd0-e91afff406ce","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/77848824","headers":{"host":"zheshiscp.com"}}}
-  - {"name":"美国+弗吉尼亚州阿什本Amazon数据中心","type":"trojan","server":"50.17.121.229","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"美国+CloudFlare节点_1","type":"trojan","server":"172.67.204.120","port":443,"udp":true,"password":"0cda5f7e-cc55-4ff2-8ad8-268b9b99dd01","sni":"Us6-05.890603.XYZ","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ILLcisbMYUd6MQzxVoMQ","headers":{"host":"us6-05.890603.xyzhttp/1.1"}}}
-  - {"name":"法国+巴黎Amazon数据中心_1","type":"trojan","server":"15.188.226.27","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+CloudFlare节点_2","type":"trojan","server":"172.67.68.204","port":443,"udp":true,"password":"vs6f8hvt","sni":"trojan.cchappy.eu.org","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"trojan.cchappy.eu.org"}}}
-  - {"name":"法国+巴黎Amazon数据中心_2","type":"trojan","server":"35.180.183.189","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心","type":"trojan","server":"35.177.223.124","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"美国+惠普HP_1","type":"trojan","server":"16.170.192.19","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+CloudFlare节点_3","type":"trojan","server":"104.18.3.150","port":443,"udp":true,"password":"trojan","sni":"main.xicun.us.kg","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"host":"main.xicun.us.kg"}}}
-  - {"name":"美国加利福尼亚州圣克拉拉+腾讯云","type":"trojan","server":"43.162.127.44","port":443,"udp":true,"password":"oIwjHDXpKePvYIg8","sni":"myvps.cfd","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+CloudFlare节点_4","type":"trojan","server":"172.66.45.2","port":443,"udp":true,"password":"auto","sni":"dcf741e8.epeius-2gy.pages.dev","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"dcf741e8.epeius-2gy.pages.dev"}}}
-  - {"name":"美国+CloudFlare节点_5","type":"trojan","server":"104.21.21.226","port":443,"udp":true,"password":"6040a753-e35b-4384-8713-96f3c639b621","sni":"uK803.890689.Xyz","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/WxWOWO1YA9bs2HOmaeWimvT3","headers":{"host":"uk803.890689.xyzhttp/1.1"}}}
-  - {"name":"美国+CloudFlare节点_6","type":"trojan","server":"104.21.21.190","port":443,"udp":true,"password":"0cda5f7e-cc55-4ff2-8ad8-268b9b99dd01","sni":"Us6-08.890606.xYZ","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ILLcisbMYUd6MQzxVoMQ","headers":{"host":"us6-08.890606.xyzhttp/1.1"}}}
-  - {"name":"法国+巴黎Amazon数据中心_3","type":"trojan","server":"35.181.179.44","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"美国+CloudFlare节点_7","type":"trojan","server":"172.67.204.22","port":443,"udp":true,"password":"6040a753-e35b-4384-8713-96f3c639b621","sni":"kju84.890602.XYZ","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/WxWOWO1YA9bs2HOmaeWimvT3","headers":{"host":"kju84.890602.xyzhttp/1.1"}}}
-  - {"name":"美国+CloudFlare节点_8","type":"trojan","server":"104.17.147.22","port":null,"udp":true,"password":"s8xwZ]|?V>cH","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/tr9CJrMkockZObhHjc","headers":{"host":"fl9f9zcnhrfnvka1oya84yy6p44dhfqp.turbooserver.workers.dev"}}}
-  - {"name":"美国+CloudFlare节点_9","type":"trojan","server":"2024-us2a.88888806.xyz","port":443,"udp":true,"password":"c97cf46e-1554-36cb-8b36-c3556b883dc4","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/92024db4-eadf-4cd1-b7e5-87d047d353f0"}}
-  - {"name":"美国+CloudFlare节点_10","type":"trojan","server":"104.26.13.54","port":2087,"udp":true,"password":"vs6f8hvt","sni":"trojan.cchappy.eu.org","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"trojan.cchappy.eu.org"}}}
-  - {"name":"美国+CloudFlare节点_11","type":"trojan","server":"2025-us4a.88888806.xyz","port":443,"udp":true,"password":"c97cf46e-1554-36cb-8b36-c3556b883dc4","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/92024db4-eadf-4cd1-b7e5-87d047d353f0"}}
-  - {"name":"俄罗斯新西伯利亚+justhost.ru","type":"trojan","server":"195.133.52.153","port":8443,"udp":true,"password":"@NoForcedHeaven@NoForcedHeaven@NoForcedHeaven","sni":"ru2.asc-sam.io","skip-cert-verify":true,"network":"tcp","ws-opts":{"headers":{"host":"ru2.asc-sam.io"}}}
-  - {"name":"广东省广州市+移动_9","type":"trojan","server":"gysz0000.dynu.net","port":38340,"udp":true,"password":"VMhGp5wEIyCDf90T","sni":"hk39.work.gd","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"广东省肇庆市+中移铁通","type":"trojan","server":"csuzhou01.1cooldns.com","port":42303,"udp":true,"password":"VMhGp5wEIyCDf90T","sni":"hk06.run.place","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+CloudFlare节点_12","type":"trojan","server":"172.67.135.23","port":443,"udp":true,"password":"0cda5f7e-cc55-4ff2-8ad8-268b9b99dd01","sni":"uS6-16.890601.xyz","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ILLcisbMYUd6MQzxVoMQ","headers":{"host":"us6-16.890601.xyzhttp/1.1"}}}
-  - {"name":"美国+CloudFlare节点_13","type":"trojan","server":"162.159.140.159","port":2087,"udp":true,"password":"vs6f8hvt","sni":"trojan.cchappy.eu.org","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"trojan.cchappy.eu.org"}}}
-  - {"name":"美国+CloudFlare节点_14","type":"trojan","server":"172.67.163.14","port":443,"udp":true,"password":"85950277-f447-48f0-9ead-aaf6d5ff3cad","sni":"df5tym.2031.pp.ua","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/I4L1BP2DQVYmx5NYQ76MGGq","headers":{"host":"df5tym.2031.pp.uahttp/1.1"}}}
-  - {"name":"日本+V2CROSS.COM","type":"trojan","server":"jp008.421421.xyz","port":20230,"udp":true,"password":"fdd1d613-f234-40f6-b63d-97517e0fc4b3","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+CloudFlare节点_15","type":"trojan","server":"104.17.249.203","port":2096,"udp":true,"password":"vs6f8hvt","sni":"trojan.cchappy.eu.org","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"trojan.cchappy.eu.org"}}}
-  - {"name":"乌克兰+V2CROSS.COM","type":"trojan","server":"185.234.66.155","port":443,"udp":true,"password":"e86c7146-bd09-409c-a532-f41aed042f8d","sni":"tr1.safecdn.site","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tr1.safecdn.site"}}}
-  - {"name":"爱尔兰+都柏林Amazon数据中心_1","type":"trojan","server":"34.250.59.38","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"美国+CloudFlare节点_16","type":"trojan","server":"fr2a.88888806.xyz","port":443,"udp":true,"password":"c97cf46e-1554-36cb-8b36-c3556b883dc4","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/3f741a9f-3c66-4102-838c-c77524d32d85"}}
-  - {"name":"美国+CloudFlare节点_17","type":"trojan","server":"172.66.44.230","port":8443,"udp":true,"password":"8r<[9'l6hAO#8ZQi","sni":"Koma-YT.PAGeS.Dev","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/tro8sFW1S91B6sZrM1","headers":{"host":"koma-yt.pages.devh2,http/1.1"}}}
-  - {"name":"美国+CloudFlare节点_18","type":"trojan","server":"172.67.208.155","port":443,"udp":true,"password":"2fec7227-9abe-46f2-af18-78302b836c45","sni":"3r.2030.pp.ua","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/XjTi1NYwi9A2bckpqdDoAgkondVWl","headers":{"host":"3r.2030.pp.uahttp/1.1"}}}
-  - {"name":"德国+黑森州法兰克福Amazon数据中心","type":"trojan","server":"35.158.81.171","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"英国+V2CROSS.COM","type":"trojan","server":"powerful-grackle.shiner427.skin","port":443,"udp":true,"password":"74260700211203800","sni":"powerful-grackle.shiner427.skin","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+CloudFlare节点_19","type":"trojan","server":"104.16.237.15","port":443,"udp":true,"password":"vs6f8hvt","sni":"trojan.cchappy.eu.org","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"trojan.cchappy.eu.org"}}}
-  - {"name":"日本东京+Amazon数据中心","type":"trojan","server":"jp007.421421.xyz","port":20230,"udp":true,"password":"fdd1d613-f234-40f6-b63d-97517e0fc4b3","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+CloudFlare节点_20","type":"trojan","server":"172.67.159.56","port":443,"udp":true,"password":"d67cfeaf-b277-44ac-ab99-9dd02a7c5299","sni":"Fgh9JkR5.890617.xYz","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/lWljHWvIMOj85lz42MdhsCLV","headers":{"host":"fgh9jkr5.890617.xyzhttp/1.1"}}}
-  - {"name":"美国+CloudFlare节点_21","type":"trojan","server":"104.17.148.22","port":null,"udp":true,"password":"s8xwZ]|?V>cH","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/tr9CJrMkockZObhHjc","headers":{"host":"fl9f9zcnhrfnvka1oya84yy6p44dhfqp.turbooserver.workers.dev"}}}
-  - {"name":"爱尔兰+都柏林Amazon数据中心_2","type":"trojan","server":"52.214.60.9","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+CloudFlare节点_22","type":"trojan","server":"104.21.48.61","port":443,"udp":true,"password":"auto","sni":"nameless-term-9c25.vpnconnect202020.workers.dev","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"nameless-term-9c25.vpnconnect202020.workers.dev"}}}
-  - {"name":"美国+CloudFlare节点_23","type":"trojan","server":"104.21.49.59","port":443,"udp":true,"password":"d67cfeaf-b277-44ac-ab99-9dd02a7c5299","sni":"Fgh9JkR5.890617.xYz","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/lWljHWvIMOj85lz42MdhsCLV","headers":{"host":"fgh9jkr5.890617.xyzhttp/1.1"}}}
-  - {"name":"美国+惠普HP_2","type":"trojan","server":"16.170.122.230","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"@Hope_Net-join-us-on-Telegram_1","type":"vmess","server":"186.190.215.93","port":22324,"cipher":"auto","uuid":"04621bae-ab36-11ec-b909-0242ac120002","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇭CH-156.146.62.162-0429","type":"ss","server":"156.146.62.162","port":443,"password":"shadowsocks","cipher":"aes-128-gcm"}
+  - {"name":"@Hope_Net-join-us-on-Telegram_2","type":"vmess","server":"51.77.20.131","port":22324,"cipher":"auto","uuid":"04621bae-ab36-11ec-b909-0242ac120002","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇬🇧GB-212.102.53.197-0380","type":"ss","server":"212.102.53.197","port":443,"password":"shadowsocks","cipher":"aes-128-gcm"}
+  - {"name":"🇨🇭CH-23.166.88.20-6287","type":"ss","server":"23.166.88.20","port":8119,"password":"cdBIDV42DCwnfIN","cipher":"aes-256-gcm"}
+  - {"name":"🇳🇱NL-213.109.147.242-1363","type":"ss","server":"213.109.147.242","port":62685,"password":"VpKABcOpNNA0l5G2AVOmw8","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇺🇸US-204.136.10.115-1195","type":"ss","server":"204.136.10.115","port":1866,"password":"oXGp1+ihlfKg826H","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇬🇧GB-212.102.53.81-0381+|+31.847MB","type":"ss","server":"212.102.53.81","port":443,"password":"shadowsocks","cipher":"aes-128-gcm"}
+  - {"name":"🇱🇹LT-45.87.175.166-5868","type":"ss","server":"45.87.175.166","port":8080,"password":"1RWwXhwfAB5gAEozU4G2Pg","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"36⭐️@oneclickvpnkeys","type":"vmess","server":"31.129.105.239","port":16231,"cipher":"auto","uuid":"793e03cc-2b08-4d1b-bb0b-592567d19043","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"🇬🇧GB-131.145.96.67-5668","type":"ss","server":"series-a2.varzesh360.co","port":443,"password":"mps3FwmDjLrWaOVg","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇷🇺RU-185.126.239.250-5450","type":"ss","server":"185.126.239.250","port":990,"password":"f8f7aCzcPKbsF8p3","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇬🇧GB-85.210.222.88-0416","type":"ss","server":"series-a2.samanehha.co","port":443,"password":"W74XFALLLuw6m5IA","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"@Hope_Net_1","type":"ss","server":"45.154.206.192","port":990,"password":"f8f7aCzcPKbsF8p3","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇬🇧GB-131.145.82.84-5789","type":"ss","server":"api.namasha.co","port":443,"password":"u17T3BvpYaaiuW2c","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇬🇧GB-74.177.120.52-0333","type":"ss","server":"series-a1.samanehha.co","port":443,"password":"mps3FwmDjLrWaOVg","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🏁RELAY-104.21.64.1-5786","type":"vmess","server":"leader.twn24.ir","port":2053,"cipher":"auto","uuid":"9e4515ad-2035-4281-833a-633bf61c9dd9","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/🆔@M3HDIO1","headers":{"host":"leader.twn24.ir"}}}
+  - {"name":"🇺🇸US-67.220.95.102-6811","type":"ss","server":"67.220.95.102","port":7002,"password":"RexnBgU7EV5ADxG","cipher":"aes-256-gcm"}
+  - {"name":"MD-103.106.1.92-0430+|+16.89MB","type":"ss","server":"103.106.1.92","port":23492,"password":"yMX9WGPgUEcRZmlaa0YHHC","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇻🇳VN-166.88.131.195-5995","type":"ss","server":"exchange.gameaurela.click","port":52952,"password":"LMSNh21TrXjR2ok25Q2nE8ENT2zoBmPvka3RCCUAHZELCnWoekVjvaf89qwcRkdbxEfep2bc2aUtmnxqvF1ayQRez1JHjULj","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"@Hope_Net-join-us-on-Telegram_3","type":"vmess","server":"23.158.56.21","port":48961,"cipher":"auto","uuid":"6eef3448-bbc0-4933-894a-72b3e8786109","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸US-166.1.157.228-5790","type":"ss","server":"166.1.157.228","port":55330,"password":"rtR4YX74vwqRJu9MGH3e1N3CQdGMWCUFkyLisijiFuvhkU9McV5TpygfkernJ4UQe63JtcDQkrQ9HfchzqQz1kLCnTRor8jg","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"@Hope_Net_2","type":"ss","server":"67.220.95.102","port":8090,"password":"PCnnH6SQSnfoS27","cipher":"aes-256-gcm"}
+  - {"name":"🇺🇸US-67.220.95.102-6386","type":"ss","server":"67.220.95.102","port":7307,"password":"FoOiGlkAA9yPEGP","cipher":"aes-256-gcm"}
+  - {"name":"🇺🇸US-67.220.95.102-6668","type":"ss","server":"67.220.95.102","port":8118,"password":"cdBIDV42DCwnfIN","cipher":"aes-256-gcm"}
+  - {"name":"🇺🇸US-67.220.95.102-6199+|+1.179MB","type":"ss","server":"67.220.95.102","port":8000,"password":"KixLvKzwjekG00rm","cipher":"aes-256-gcm"}
+  - {"name":"🇺🇸US-67.220.95.102-6708","type":"ss","server":"67.220.95.102","port":5004,"password":"g5MeD6Ft3CWlJId","cipher":"aes-256-gcm"}
+  - {"name":"🇺🇸US-216.39.248.133-6002","type":"ss","server":"216.39.248.133","port":7001,"password":"RexnBgU7EV5ADxG","cipher":"aes-256-gcm"}
+  - {"name":"🇭🇰HK-20.189.122.198-0468","type":"vmess","server":"20.189.122.198","port":2052,"cipher":"auto","uuid":"84ab761a-9f51-42bf-83ab-8a6b4885ca27","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"20.189.122.198"}}}
+  - {"name":"🇺🇸US-23.150.248.235-5724","type":"ss","server":"23.150.248.235","port":2376,"password":"faBAoD54k87UJG7","cipher":"aes-256-gcm"}
+  - {"name":"🇸🇬SG-64.176.85.73-0493","type":"ss","server":"64.176.85.73","port":1866,"password":"oXGp1+ihlfKg826H","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"@Hope_Net_3","type":"ss","server":"142.4.216.225","port":80,"password":"JIhN6rBKkaEboLNXVSv5rq","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇷🇺RU-45.151.62.54-0438+|+12.146MB","type":"ss","server":"45.151.62.54","port":28825,"password":"0zyDRZ1XmNXaaCAN7KEA8a","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🐍30@oneclickvpnkeys","type":"vmess","server":"visa.org","port":443,"cipher":"auto","uuid":"d13fc2f5-3e05-4795-81eb-44143a09e552","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/sgfqkqmltcy.site/rbqqvws","headers":{"host":"join---bede.mosiv2-com.workers.dev"}}}
+  - {"name":"🇺🇸US-23.150.248.235-5728","type":"ss","server":"23.150.248.235","port":8091,"password":"PCnnH6SQSnfoS27","cipher":"aes-256-gcm"}
+  - {"name":"🖲️94@oneclickvpnkeys","type":"ss","server":"79.127.233.170","port":990,"password":"f8f7aCzcPKbsF8p3","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇵🇱PL-45.144.48.63-0420","type":"ss","server":"45.144.48.63","port":57456,"password":"d3837224ed465f00","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"@Hope_Net_4","type":"ss","server":"172.232.171.192","port":1866,"password":"oXGp1+ihlfKg826H","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🏁RELAY-104.21.3.219-0318","type":"vmess","server":"104.21.3.219","port":8443,"cipher":"auto","uuid":"c313606f-98c2-4d7b-ba74-48b94f61b11d","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"uswuxian.pai50288.uk"}}}
+  - {"name":"🇺🇸US-67.220.95.102-6836","type":"ss","server":"67.220.95.102","port":5600,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
+  - {"name":"🇵🇱PL-45.144.48.63-0415","type":"ss","server":"war.ssvpnapp.win","port":57456,"password":"d3837224ed465f00","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇺🇸US-173.244.56.6-0377","type":"ss","server":"173.244.56.6","port":443,"password":"shadowsocks","cipher":"aes-128-gcm"}
+  - {"name":"🇺🇸US-23.150.248.235-5727","type":"ss","server":"23.150.248.235","port":7306,"password":"FoOiGlkAA9yPEGP","cipher":"aes-256-gcm"}
+  - {"name":"🇺🇸US-23.150.248.235-5725","type":"ss","server":"23.150.248.235","port":5003,"password":"g5MeD6Ft3CWlJId","cipher":"aes-256-gcm"}
+  - {"name":"🇺🇸US-23.150.248.235-5726","type":"ss","server":"23.150.248.235","port":6679,"password":"TEzjfAYq2IjtuoS","cipher":"aes-256-gcm"}
+  - {"name":"@Hope_Net-join-us-on-Telegram_4","type":"vmess","server":"23.158.56.184","port":22324,"cipher":"auto","uuid":"04621bae-ab36-11ec-b909-0242ac120002","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🧫6@oneclickvpnkeys","type":"ss","server":"45.158.171.141","port":8080,"password":"cvII85TrW6n0OGyfpHVS1u","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🐻42@oneclickvpnkeys","type":"vmess","server":"101.99.91.234","port":36700,"cipher":"auto","uuid":"127ff43c-1851-4b2d-ba8c-6afba21ec04d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"@Hope_Net-join-us-on-Telegram_5","type":"vmess","server":"15.204.248.92","port":30562,"cipher":"auto","uuid":"82466715-6a58-4046-a363-a0d18e5b2ab4","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"54🫧@oneclickvpnkeys","type":"vmess","server":"172.67.153.156","port":8443,"cipher":"auto","uuid":"c313606f-98c2-4d7b-ba74-48b94f61b11d","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"uswuxian.pai50288.uk"}}}
+  - {"name":"@Hope_Net-join-us-on-Telegram_6","type":"vmess","server":"38.114.120.12","port":47567,"cipher":"auto","uuid":"cda5dfaa-99e8-42d6-9f0b-6ef30f76e92c","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🐰12@oneclickvpnkeys","type":"vmess","server":"15.204.249.0","port":48160,"cipher":"auto","uuid":"5b113c12-4dd4-4bb5-9c01-cff092b559e3","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇦CA-51.79.103.76-0774","type":"vmess","server":"51.79.103.76","port":80,"cipher":"auto","uuid":"58fe1542-5290-40ad-815a-77707a81afe5","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/IOebhLMhl1CTbFHbL95myfRX2","headers":{"host":"wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"}}}
+  - {"name":"🧊71@oneclickvpnkeys","type":"vmess","server":"103.149.183.178","port":27512,"cipher":"auto","uuid":"96d38683-0817-4d91-bffa-6f03df18d9dc","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🐻44@oneclickvpnkeys","type":"vmess","server":"38.111.114.153","port":14812,"cipher":"auto","uuid":"0146fc40-5962-4e9a-b36a-2b606d001467","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
+      - 🇭🇰 香港节点
+      - 🇸🇬 狮城节点
       - 🇺🇲 美国节点
-      - 🇯🇵 日本节点
       - 🚀 手动切换
       - DIRECT
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 广东省广州市+移动_1
-      - 欧盟+V2CROSS.COM
-      - 广东省广州市+移动_2
-      - 广东省广州市+移动_3
-      - 广东省广州市+移动_4
-      - 广东省+移动
-      - 广东省广州市+移动_5
-      - 江苏省+移动
-      - 广东省广州市+移动_6
-      - 广东省广州市+移动_7
-      - 广东省广州市+移动_8
-      - 俄罗斯+V2CROSS.COM
-      - 波兰+V2CROSS.COM
-      - 台湾省 V2CROSS.COM
-      - 广东省广州市 移动_1
-      - 美国 CloudFlare节点_1
-      - 美国 CloudFlare节点_2
-      - 巴西圣保罗 CloudFlare节点
-      - 美国 CloudFlare节点_3
-      - 美国 CloudFlare节点_4
-      - 美国 CloudFlare节点_5
-      - 美国 CloudFlare节点_6
-      - 美国 CloudFlare节点_7
-      - 美国 CloudFlare节点_8
-      - 美国 CloudFlare节点_9
-      - 美国 CloudFlare节点_10
-      - 伊朗 V2CROSS.COM
-      - 广东省广州市 移动_2
-      - 美国 CloudFlare节点_11
-      - 美国 CloudFlare节点_12
-      - 美国 CloudFlare节点_13
-      - 美国 CloudFlare节点_14
-      - 广东省汕头市 移动_1
-      - 美国 CloudFlare节点_15
-      - 美国 CloudFlare节点_16
-      - 美国 CloudFlare节点_17
-      - 广东省汕头市 移动_2
-      - 美国 CloudFlare节点_18
-      - 美国 CloudFlare节点_19
-      - 美国 CloudFlare节点_20
-      - 美国 CloudFlare节点_21
-      - 美国 CloudFlare节点_22
-      - 美国 CloudFlare节点_23
-      - 美国 CloudFlare节点_24
-      - 美国 CloudFlare节点_25
-      - 广东省广州市 移动_3
-      - 美国 CloudFlare节点_26
-      - 美国 CloudFlare节点_27
-      - 美国 CloudFlare节点_28
-      - 美国 CloudFlare节点_29
-      - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点_30
-      - 美国 CloudFlare节点_31
-      - 美国 CloudFlare节点_32
-      - 广东省湛江市 移动
-      - 美国 CloudFlare节点_33
-      - 广东省广州市 移动_4
-      - 美国 CloudFlare节点_34
-      - 美国 CloudFlare节点_35
-      - 美国 CloudFlare节点_36
-      - 美国 CloudFlare节点_37
-      - 美国 CloudFlare节点_38
-      - 美国 CloudFlare节点_39
-      - 美国 CloudFlare节点_40
-      - 美国 CloudFlare节点_41
-      - 美国 CloudFlare节点_42
-      - 美国 CloudFlare节点_43
-      - 美国 CloudFlare节点_44
-      - 美国 CloudFlare节点_45
-      - 美国 CloudFlare节点_46
-      - 美国 CloudFlare节点_47
-      - 美国 CloudFlare节点_48
-      - 广东省广州市 移动_5
-      - 美国 CloudFlare节点_49
-      - 德国 萨克森自由州法尔肯施泰因Hetnzer数据中心
-      - 美国 CloudFlare节点_50
-      - 印度 V2CROSS.COM_3
-      - 美国 CloudFlare节点_51
-      - 美国 Fastly全球Anycast节点
-      - 美国+弗吉尼亚州阿什本Amazon数据中心
-      - 美国+CloudFlare节点_1
-      - 法国+巴黎Amazon数据中心_1
-      - 美国+CloudFlare节点_2
-      - 法国+巴黎Amazon数据中心_2
-      - 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
-      - 美国+惠普HP_1
-      - 美国+CloudFlare节点_3
-      - 美国加利福尼亚州圣克拉拉+腾讯云
-      - 美国+CloudFlare节点_4
-      - 美国+CloudFlare节点_5
-      - 美国+CloudFlare节点_6
-      - 法国+巴黎Amazon数据中心_3
-      - 美国+CloudFlare节点_7
-      - 美国+CloudFlare节点_8
-      - 美国+CloudFlare节点_9
-      - 美国+CloudFlare节点_10
-      - 美国+CloudFlare节点_11
-      - 俄罗斯新西伯利亚+justhost.ru
-      - 广东省广州市+移动_9
-      - 广东省肇庆市+中移铁通
-      - 美国+CloudFlare节点_12
-      - 美国+CloudFlare节点_13
-      - 美国+CloudFlare节点_14
-      - 日本+V2CROSS.COM
-      - 美国+CloudFlare节点_15
-      - 乌克兰+V2CROSS.COM
-      - 爱尔兰+都柏林Amazon数据中心_1
-      - 美国+CloudFlare节点_16
-      - 美国+CloudFlare节点_17
-      - 美国+CloudFlare节点_18
-      - 德国+黑森州法兰克福Amazon数据中心
-      - 英国+V2CROSS.COM
-      - 美国+CloudFlare节点_19
-      - 日本东京+Amazon数据中心
-      - 美国+CloudFlare节点_20
-      - 美国+CloudFlare节点_21
-      - 爱尔兰+都柏林Amazon数据中心_2
-      - 美国+CloudFlare节点_22
-      - 美国+CloudFlare节点_23
-      - 美国+惠普HP_2
+      - '@Hope_Net-join-us-on-Telegram_1'
+      - 🇨🇭CH-156.146.62.162-0429
+      - '@Hope_Net-join-us-on-Telegram_2'
+      - 🇬🇧GB-212.102.53.197-0380
+      - 🇨🇭CH-23.166.88.20-6287
+      - 🇳🇱NL-213.109.147.242-1363
+      - 🇺🇸US-204.136.10.115-1195
+      - 🇬🇧GB-212.102.53.81-0381+|+31.847MB
+      - 🇱🇹LT-45.87.175.166-5868
+      - 36⭐️@oneclickvpnkeys
+      - 🇬🇧GB-131.145.96.67-5668
+      - 🇷🇺RU-185.126.239.250-5450
+      - 🇬🇧GB-85.210.222.88-0416
+      - '@Hope_Net_1'
+      - 🇬🇧GB-131.145.82.84-5789
+      - 🇬🇧GB-74.177.120.52-0333
+      - 🏁RELAY-104.21.64.1-5786
+      - 🇺🇸US-67.220.95.102-6811
+      - MD-103.106.1.92-0430+|+16.89MB
+      - 🇻🇳VN-166.88.131.195-5995
+      - '@Hope_Net-join-us-on-Telegram_3'
+      - 🇺🇸US-166.1.157.228-5790
+      - '@Hope_Net_2'
+      - 🇺🇸US-67.220.95.102-6386
+      - 🇺🇸US-67.220.95.102-6668
+      - 🇺🇸US-67.220.95.102-6199+|+1.179MB
+      - 🇺🇸US-67.220.95.102-6708
+      - 🇺🇸US-216.39.248.133-6002
+      - 🇭🇰HK-20.189.122.198-0468
+      - 🇺🇸US-23.150.248.235-5724
+      - 🇸🇬SG-64.176.85.73-0493
+      - '@Hope_Net_3'
+      - 🇷🇺RU-45.151.62.54-0438+|+12.146MB
+      - 🐍30@oneclickvpnkeys
+      - 🇺🇸US-23.150.248.235-5728
+      - 🖲️94@oneclickvpnkeys
+      - 🇵🇱PL-45.144.48.63-0420
+      - '@Hope_Net_4'
+      - 🏁RELAY-104.21.3.219-0318
+      - 🇺🇸US-67.220.95.102-6836
+      - 🇵🇱PL-45.144.48.63-0415
+      - 🇺🇸US-173.244.56.6-0377
+      - 🇺🇸US-23.150.248.235-5727
+      - 🇺🇸US-23.150.248.235-5725
+      - 🇺🇸US-23.150.248.235-5726
+      - '@Hope_Net-join-us-on-Telegram_4'
+      - 🧫6@oneclickvpnkeys
+      - 🐻42@oneclickvpnkeys
+      - '@Hope_Net-join-us-on-Telegram_5'
+      - 54🫧@oneclickvpnkeys
+      - '@Hope_Net-join-us-on-Telegram_6'
+      - 🐰12@oneclickvpnkeys
+      - 🇨🇦CA-51.79.103.76-0774
+      - 🧊71@oneclickvpnkeys
+      - 🐻44@oneclickvpnkeys
   - name: ♻️ 自动选择
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
+    timeout: 1500
+    max-failed-times: 2
     proxies:
-      - 广东省广州市+移动_1
-      - 欧盟+V2CROSS.COM
-      - 广东省广州市+移动_2
-      - 广东省广州市+移动_3
-      - 广东省广州市+移动_4
-      - 广东省+移动
-      - 广东省广州市+移动_5
-      - 江苏省+移动
-      - 广东省广州市+移动_6
-      - 广东省广州市+移动_7
-      - 广东省广州市+移动_8
-      - 俄罗斯+V2CROSS.COM
-      - 波兰+V2CROSS.COM
-      - 台湾省 V2CROSS.COM
-      - 广东省广州市 移动_1
-      - 美国 CloudFlare节点_1
-      - 美国 CloudFlare节点_2
-      - 巴西圣保罗 CloudFlare节点
-      - 美国 CloudFlare节点_3
-      - 美国 CloudFlare节点_4
-      - 美国 CloudFlare节点_5
-      - 美国 CloudFlare节点_6
-      - 美国 CloudFlare节点_7
-      - 美国 CloudFlare节点_8
-      - 美国 CloudFlare节点_9
-      - 美国 CloudFlare节点_10
-      - 伊朗 V2CROSS.COM
-      - 广东省广州市 移动_2
-      - 美国 CloudFlare节点_11
-      - 美国 CloudFlare节点_12
-      - 美国 CloudFlare节点_13
-      - 美国 CloudFlare节点_14
-      - 广东省汕头市 移动_1
-      - 美国 CloudFlare节点_15
-      - 美国 CloudFlare节点_16
-      - 美国 CloudFlare节点_17
-      - 广东省汕头市 移动_2
-      - 美国 CloudFlare节点_18
-      - 美国 CloudFlare节点_19
-      - 美国 CloudFlare节点_20
-      - 美国 CloudFlare节点_21
-      - 美国 CloudFlare节点_22
-      - 美国 CloudFlare节点_23
-      - 美国 CloudFlare节点_24
-      - 美国 CloudFlare节点_25
-      - 广东省广州市 移动_3
-      - 美国 CloudFlare节点_26
-      - 美国 CloudFlare节点_27
-      - 美国 CloudFlare节点_28
-      - 美国 CloudFlare节点_29
-      - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点_30
-      - 美国 CloudFlare节点_31
-      - 美国 CloudFlare节点_32
-      - 广东省湛江市 移动
-      - 美国 CloudFlare节点_33
-      - 广东省广州市 移动_4
-      - 美国 CloudFlare节点_34
-      - 美国 CloudFlare节点_35
-      - 美国 CloudFlare节点_36
-      - 美国 CloudFlare节点_37
-      - 美国 CloudFlare节点_38
-      - 美国 CloudFlare节点_39
-      - 美国 CloudFlare节点_40
-      - 美国 CloudFlare节点_41
-      - 美国 CloudFlare节点_42
-      - 美国 CloudFlare节点_43
-      - 美国 CloudFlare节点_44
-      - 美国 CloudFlare节点_45
-      - 美国 CloudFlare节点_46
-      - 美国 CloudFlare节点_47
-      - 美国 CloudFlare节点_48
-      - 广东省广州市 移动_5
-      - 美国 CloudFlare节点_49
-      - 德国 萨克森自由州法尔肯施泰因Hetnzer数据中心
-      - 美国 CloudFlare节点_50
-      - 印度 V2CROSS.COM_3
-      - 美国 CloudFlare节点_51
-      - 美国 Fastly全球Anycast节点
-      - 美国+弗吉尼亚州阿什本Amazon数据中心
-      - 美国+CloudFlare节点_1
-      - 法国+巴黎Amazon数据中心_1
-      - 美国+CloudFlare节点_2
-      - 法国+巴黎Amazon数据中心_2
-      - 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
-      - 美国+惠普HP_1
-      - 美国+CloudFlare节点_3
-      - 美国加利福尼亚州圣克拉拉+腾讯云
-      - 美国+CloudFlare节点_4
-      - 美国+CloudFlare节点_5
-      - 美国+CloudFlare节点_6
-      - 法国+巴黎Amazon数据中心_3
-      - 美国+CloudFlare节点_7
-      - 美国+CloudFlare节点_8
-      - 美国+CloudFlare节点_9
-      - 美国+CloudFlare节点_10
-      - 美国+CloudFlare节点_11
-      - 俄罗斯新西伯利亚+justhost.ru
-      - 广东省广州市+移动_9
-      - 广东省肇庆市+中移铁通
-      - 美国+CloudFlare节点_12
-      - 美国+CloudFlare节点_13
-      - 美国+CloudFlare节点_14
-      - 日本+V2CROSS.COM
-      - 美国+CloudFlare节点_15
-      - 乌克兰+V2CROSS.COM
-      - 爱尔兰+都柏林Amazon数据中心_1
-      - 美国+CloudFlare节点_16
-      - 美国+CloudFlare节点_17
-      - 美国+CloudFlare节点_18
-      - 德国+黑森州法兰克福Amazon数据中心
-      - 英国+V2CROSS.COM
-      - 美国+CloudFlare节点_19
-      - 日本东京+Amazon数据中心
-      - 美国+CloudFlare节点_20
-      - 美国+CloudFlare节点_21
-      - 爱尔兰+都柏林Amazon数据中心_2
-      - 美国+CloudFlare节点_22
-      - 美国+CloudFlare节点_23
-      - 美国+惠普HP_2
+      - '@Hope_Net-join-us-on-Telegram_1'
+      - 🇨🇭CH-156.146.62.162-0429
+      - '@Hope_Net-join-us-on-Telegram_2'
+      - 🇬🇧GB-212.102.53.197-0380
+      - 🇨🇭CH-23.166.88.20-6287
+      - 🇳🇱NL-213.109.147.242-1363
+      - 🇺🇸US-204.136.10.115-1195
+      - 🇬🇧GB-212.102.53.81-0381+|+31.847MB
+      - 🇱🇹LT-45.87.175.166-5868
+      - 36⭐️@oneclickvpnkeys
+      - 🇬🇧GB-131.145.96.67-5668
+      - 🇷🇺RU-185.126.239.250-5450
+      - 🇬🇧GB-85.210.222.88-0416
+      - '@Hope_Net_1'
+      - 🇬🇧GB-131.145.82.84-5789
+      - 🇬🇧GB-74.177.120.52-0333
+      - 🏁RELAY-104.21.64.1-5786
+      - 🇺🇸US-67.220.95.102-6811
+      - MD-103.106.1.92-0430+|+16.89MB
+      - 🇻🇳VN-166.88.131.195-5995
+      - '@Hope_Net-join-us-on-Telegram_3'
+      - 🇺🇸US-166.1.157.228-5790
+      - '@Hope_Net_2'
+      - 🇺🇸US-67.220.95.102-6386
+      - 🇺🇸US-67.220.95.102-6668
+      - 🇺🇸US-67.220.95.102-6199+|+1.179MB
+      - 🇺🇸US-67.220.95.102-6708
+      - 🇺🇸US-216.39.248.133-6002
+      - 🇭🇰HK-20.189.122.198-0468
+      - 🇺🇸US-23.150.248.235-5724
+      - 🇸🇬SG-64.176.85.73-0493
+      - '@Hope_Net_3'
+      - 🇷🇺RU-45.151.62.54-0438+|+12.146MB
+      - 🐍30@oneclickvpnkeys
+      - 🇺🇸US-23.150.248.235-5728
+      - 🖲️94@oneclickvpnkeys
+      - 🇵🇱PL-45.144.48.63-0420
+      - '@Hope_Net_4'
+      - 🏁RELAY-104.21.3.219-0318
+      - 🇺🇸US-67.220.95.102-6836
+      - 🇵🇱PL-45.144.48.63-0415
+      - 🇺🇸US-173.244.56.6-0377
+      - 🇺🇸US-23.150.248.235-5727
+      - 🇺🇸US-23.150.248.235-5725
+      - 🇺🇸US-23.150.248.235-5726
+      - '@Hope_Net-join-us-on-Telegram_4'
+      - 🧫6@oneclickvpnkeys
+      - 🐻42@oneclickvpnkeys
+      - '@Hope_Net-join-us-on-Telegram_5'
+      - 54🫧@oneclickvpnkeys
+      - '@Hope_Net-join-us-on-Telegram_6'
+      - 🐰12@oneclickvpnkeys
+      - 🇨🇦CA-51.79.103.76-0774
+      - 🧊71@oneclickvpnkeys
+      - 🐻44@oneclickvpnkeys
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -481,221 +269,102 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 广东省广州市+移动_1
-      - 欧盟+V2CROSS.COM
-      - 广东省广州市+移动_2
-      - 广东省广州市+移动_3
-      - 广东省广州市+移动_4
-      - 广东省+移动
-      - 广东省广州市+移动_5
-      - 江苏省+移动
-      - 广东省广州市+移动_6
-      - 广东省广州市+移动_7
-      - 广东省广州市+移动_8
-      - 俄罗斯+V2CROSS.COM
-      - 波兰+V2CROSS.COM
-      - 台湾省 V2CROSS.COM
-      - 广东省广州市 移动_1
-      - 美国 CloudFlare节点_1
-      - 美国 CloudFlare节点_2
-      - 巴西圣保罗 CloudFlare节点
-      - 美国 CloudFlare节点_3
-      - 美国 CloudFlare节点_4
-      - 美国 CloudFlare节点_5
-      - 美国 CloudFlare节点_6
-      - 美国 CloudFlare节点_7
-      - 美国 CloudFlare节点_8
-      - 美国 CloudFlare节点_9
-      - 美国 CloudFlare节点_10
-      - 伊朗 V2CROSS.COM
-      - 广东省广州市 移动_2
-      - 美国 CloudFlare节点_11
-      - 美国 CloudFlare节点_12
-      - 美国 CloudFlare节点_13
-      - 美国 CloudFlare节点_14
-      - 广东省汕头市 移动_1
-      - 美国 CloudFlare节点_15
-      - 美国 CloudFlare节点_16
-      - 美国 CloudFlare节点_17
-      - 广东省汕头市 移动_2
-      - 美国 CloudFlare节点_18
-      - 美国 CloudFlare节点_19
-      - 美国 CloudFlare节点_20
-      - 美国 CloudFlare节点_21
-      - 美国 CloudFlare节点_22
-      - 美国 CloudFlare节点_23
-      - 美国 CloudFlare节点_24
-      - 美国 CloudFlare节点_25
-      - 广东省广州市 移动_3
-      - 美国 CloudFlare节点_26
-      - 美国 CloudFlare节点_27
-      - 美国 CloudFlare节点_28
-      - 美国 CloudFlare节点_29
-      - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点_30
-      - 美国 CloudFlare节点_31
-      - 美国 CloudFlare节点_32
-      - 广东省湛江市 移动
-      - 美国 CloudFlare节点_33
-      - 广东省广州市 移动_4
-      - 美国 CloudFlare节点_34
-      - 美国 CloudFlare节点_35
-      - 美国 CloudFlare节点_36
-      - 美国 CloudFlare节点_37
-      - 美国 CloudFlare节点_38
-      - 美国 CloudFlare节点_39
-      - 美国 CloudFlare节点_40
-      - 美国 CloudFlare节点_41
-      - 美国 CloudFlare节点_42
-      - 美国 CloudFlare节点_43
-      - 美国 CloudFlare节点_44
-      - 美国 CloudFlare节点_45
-      - 美国 CloudFlare节点_46
-      - 美国 CloudFlare节点_47
-      - 美国 CloudFlare节点_48
-      - 广东省广州市 移动_5
-      - 美国 CloudFlare节点_49
-      - 德国 萨克森自由州法尔肯施泰因Hetnzer数据中心
-      - 美国 CloudFlare节点_50
-      - 印度 V2CROSS.COM_3
-      - 美国 CloudFlare节点_51
-      - 美国 Fastly全球Anycast节点
-      - 美国+弗吉尼亚州阿什本Amazon数据中心
-      - 美国+CloudFlare节点_1
-      - 法国+巴黎Amazon数据中心_1
-      - 美国+CloudFlare节点_2
-      - 法国+巴黎Amazon数据中心_2
-      - 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
-      - 美国+惠普HP_1
-      - 美国+CloudFlare节点_3
-      - 美国加利福尼亚州圣克拉拉+腾讯云
-      - 美国+CloudFlare节点_4
-      - 美国+CloudFlare节点_5
-      - 美国+CloudFlare节点_6
-      - 法国+巴黎Amazon数据中心_3
-      - 美国+CloudFlare节点_7
-      - 美国+CloudFlare节点_8
-      - 美国+CloudFlare节点_9
-      - 美国+CloudFlare节点_10
-      - 美国+CloudFlare节点_11
-      - 俄罗斯新西伯利亚+justhost.ru
-      - 广东省广州市+移动_9
-      - 广东省肇庆市+中移铁通
-      - 美国+CloudFlare节点_12
-      - 美国+CloudFlare节点_13
-      - 美国+CloudFlare节点_14
-      - 日本+V2CROSS.COM
-      - 美国+CloudFlare节点_15
-      - 乌克兰+V2CROSS.COM
-      - 爱尔兰+都柏林Amazon数据中心_1
-      - 美国+CloudFlare节点_16
-      - 美国+CloudFlare节点_17
-      - 美国+CloudFlare节点_18
-      - 德国+黑森州法兰克福Amazon数据中心
-      - 英国+V2CROSS.COM
-      - 美国+CloudFlare节点_19
-      - 日本东京+Amazon数据中心
-      - 美国+CloudFlare节点_20
-      - 美国+CloudFlare节点_21
-      - 爱尔兰+都柏林Amazon数据中心_2
-      - 美国+CloudFlare节点_22
-      - 美国+CloudFlare节点_23
-      - 美国+惠普HP_2
-  - name: 🇯🇵 日本节点
+      - '@Hope_Net-join-us-on-Telegram_1'
+      - 🇨🇭CH-156.146.62.162-0429
+      - '@Hope_Net-join-us-on-Telegram_2'
+      - 🇬🇧GB-212.102.53.197-0380
+      - 🇨🇭CH-23.166.88.20-6287
+      - 🇳🇱NL-213.109.147.242-1363
+      - 🇺🇸US-204.136.10.115-1195
+      - 🇬🇧GB-212.102.53.81-0381+|+31.847MB
+      - 🇱🇹LT-45.87.175.166-5868
+      - 36⭐️@oneclickvpnkeys
+      - 🇬🇧GB-131.145.96.67-5668
+      - 🇷🇺RU-185.126.239.250-5450
+      - 🇬🇧GB-85.210.222.88-0416
+      - '@Hope_Net_1'
+      - 🇬🇧GB-131.145.82.84-5789
+      - 🇬🇧GB-74.177.120.52-0333
+      - 🏁RELAY-104.21.64.1-5786
+      - 🇺🇸US-67.220.95.102-6811
+      - MD-103.106.1.92-0430+|+16.89MB
+      - 🇻🇳VN-166.88.131.195-5995
+      - '@Hope_Net-join-us-on-Telegram_3'
+      - 🇺🇸US-166.1.157.228-5790
+      - '@Hope_Net_2'
+      - 🇺🇸US-67.220.95.102-6386
+      - 🇺🇸US-67.220.95.102-6668
+      - 🇺🇸US-67.220.95.102-6199+|+1.179MB
+      - 🇺🇸US-67.220.95.102-6708
+      - 🇺🇸US-216.39.248.133-6002
+      - 🇭🇰HK-20.189.122.198-0468
+      - 🇺🇸US-23.150.248.235-5724
+      - 🇸🇬SG-64.176.85.73-0493
+      - '@Hope_Net_3'
+      - 🇷🇺RU-45.151.62.54-0438+|+12.146MB
+      - 🐍30@oneclickvpnkeys
+      - 🇺🇸US-23.150.248.235-5728
+      - 🖲️94@oneclickvpnkeys
+      - 🇵🇱PL-45.144.48.63-0420
+      - '@Hope_Net_4'
+      - 🏁RELAY-104.21.3.219-0318
+      - 🇺🇸US-67.220.95.102-6836
+      - 🇵🇱PL-45.144.48.63-0415
+      - 🇺🇸US-173.244.56.6-0377
+      - 🇺🇸US-23.150.248.235-5727
+      - 🇺🇸US-23.150.248.235-5725
+      - 🇺🇸US-23.150.248.235-5726
+      - '@Hope_Net-join-us-on-Telegram_4'
+      - 🧫6@oneclickvpnkeys
+      - 🐻42@oneclickvpnkeys
+      - '@Hope_Net-join-us-on-Telegram_5'
+      - 54🫧@oneclickvpnkeys
+      - '@Hope_Net-join-us-on-Telegram_6'
+      - 🐰12@oneclickvpnkeys
+      - 🇨🇦CA-51.79.103.76-0774
+      - 🧊71@oneclickvpnkeys
+      - 🐻44@oneclickvpnkeys
+  - name: 🇭🇰 香港节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
+    timeout: 1500
+    max-failed-times: 2
     proxies:
-      - 日本+V2CROSS.COM
-      - 日本东京+Amazon数据中心
+      - 🇭🇰HK-20.189.122.198-0468
+  - name: 🇸🇬 狮城节点
+    type: url-test
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    timeout: 1500
+    max-failed-times: 2
+    proxies:
+      - 🇸🇬SG-64.176.85.73-0493
   - name: 🇺🇲 美国节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
+    timeout: 1500
+    max-failed-times: 2
     proxies:
-      - 美国 CloudFlare节点_1
-      - 美国 CloudFlare节点_2
-      - 美国 CloudFlare节点_3
-      - 美国 CloudFlare节点_4
-      - 美国 CloudFlare节点_5
-      - 美国 CloudFlare节点_6
-      - 美国 CloudFlare节点_7
-      - 美国 CloudFlare节点_8
-      - 美国 CloudFlare节点_9
-      - 美国 CloudFlare节点_10
-      - 美国 CloudFlare节点_11
-      - 美国 CloudFlare节点_12
-      - 美国 CloudFlare节点_13
-      - 美国 CloudFlare节点_14
-      - 美国 CloudFlare节点_15
-      - 美国 CloudFlare节点_16
-      - 美国 CloudFlare节点_17
-      - 美国 CloudFlare节点_18
-      - 美国 CloudFlare节点_19
-      - 美国 CloudFlare节点_20
-      - 美国 CloudFlare节点_21
-      - 美国 CloudFlare节点_22
-      - 美国 CloudFlare节点_23
-      - 美国 CloudFlare节点_24
-      - 美国 CloudFlare节点_25
-      - 美国 CloudFlare节点_26
-      - 美国 CloudFlare节点_27
-      - 美国 CloudFlare节点_28
-      - 美国 CloudFlare节点_29
-      - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点_30
-      - 美国 CloudFlare节点_31
-      - 美国 CloudFlare节点_32
-      - 美国 CloudFlare节点_33
-      - 美国 CloudFlare节点_34
-      - 美国 CloudFlare节点_35
-      - 美国 CloudFlare节点_36
-      - 美国 CloudFlare节点_37
-      - 美国 CloudFlare节点_38
-      - 美国 CloudFlare节点_39
-      - 美国 CloudFlare节点_40
-      - 美国 CloudFlare节点_41
-      - 美国 CloudFlare节点_42
-      - 美国 CloudFlare节点_43
-      - 美国 CloudFlare节点_44
-      - 美国 CloudFlare节点_45
-      - 美国 CloudFlare节点_46
-      - 美国 CloudFlare节点_47
-      - 美国 CloudFlare节点_48
-      - 美国 CloudFlare节点_49
-      - 美国 CloudFlare节点_50
-      - 美国 CloudFlare节点_51
-      - 美国 Fastly全球Anycast节点
-      - 美国+弗吉尼亚州阿什本Amazon数据中心
-      - 美国+CloudFlare节点_1
-      - 美国+CloudFlare节点_2
-      - 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
-      - 美国+惠普HP_1
-      - 美国+CloudFlare节点_3
-      - 美国加利福尼亚州圣克拉拉+腾讯云
-      - 美国+CloudFlare节点_4
-      - 美国+CloudFlare节点_5
-      - 美国+CloudFlare节点_6
-      - 美国+CloudFlare节点_7
-      - 美国+CloudFlare节点_8
-      - 美国+CloudFlare节点_9
-      - 美国+CloudFlare节点_10
-      - 美国+CloudFlare节点_11
-      - 美国+CloudFlare节点_12
-      - 美国+CloudFlare节点_13
-      - 美国+CloudFlare节点_14
-      - 美国+CloudFlare节点_15
-      - 美国+CloudFlare节点_16
-      - 美国+CloudFlare节点_17
-      - 美国+CloudFlare节点_18
-      - 美国+CloudFlare节点_19
-      - 美国+CloudFlare节点_20
-      - 美国+CloudFlare节点_21
-      - 美国+CloudFlare节点_22
-      - 美国+CloudFlare节点_23
-      - 美国+惠普HP_2
+      - 🇺🇸US-204.136.10.115-1195
+      - 🇺🇸US-67.220.95.102-6811
+      - 🇺🇸US-166.1.157.228-5790
+      - 🇺🇸US-67.220.95.102-6386
+      - 🇺🇸US-67.220.95.102-6668
+      - 🇺🇸US-67.220.95.102-6199+|+1.179MB
+      - 🇺🇸US-67.220.95.102-6708
+      - 🇺🇸US-216.39.248.133-6002
+      - 🇺🇸US-23.150.248.235-5724
+      - 🇺🇸US-23.150.248.235-5728
+      - 🇺🇸US-67.220.95.102-6836
+      - 🇺🇸US-173.244.56.6-0377
+      - 🇺🇸US-23.150.248.235-5727
+      - 🇺🇸US-23.150.248.235-5725
+      - 🇺🇸US-23.150.248.235-5726
 
 rules:
 # 本地/局域网地址
