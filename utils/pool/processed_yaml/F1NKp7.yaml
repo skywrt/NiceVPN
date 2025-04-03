@@ -1,89 +1,69 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2025-04-03 13:20:09
-# 使用模版：ACL4SSR_Mini.ini
+# 创建时间：2025-04-03 13:53:16
+# 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：125
 # 节点类型：ss, vmess, trojan
 ####################################
 mixed-port: 7890
-allow-lan: true
-log-level: info
-external-controller: 0.0.0.0:9090
+allow-lan: false
+log-level: silent
+external-controller: 127.0.0.1:9090
 dns:
-  enabled: true
-  listen: 0.0.0.0:1053
-  ipv6: true
-  default-nameserver:
-    - 223.5.5.5
-    - 114.114.114.114
+  enable: true
+  ipv6: false 
+  listen: 127.0.0.1:1053
+  use-hosts: true
+  use-system-hosts: false
+  respect-rules: true
   enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
+  fake-ip-range: '198.19.0.1/24'
   fake-ip-filter:
     - '*.lan'
-    - '*.linksys.com'
-    - '*.linksyssmartwifi.com'
+    - '*.local'
+    - '*.home.arpa'
+    - '*.icloud.com'
+    - '*.apple.com'
+    - '*.windowsupdate.com'
     - swscan.apple.com
     - mesu.apple.com
     - '*.msftconnecttest.com'
     - '*.msftncsi.com'
-    - time.*.com
-    - time.*.gov
-    - time.*.edu.cn
-    - time.*.apple.com
-    - time1.*.com
-    - time2.*.com
-    - time3.*.com
-    - time4.*.com
-    - time5.*.com
-    - time6.*.com
-    - time7.*.com
-    - ntp.*.com
-    - ntp.*.com
-    - ntp1.*.com
-    - ntp2.*.com
-    - ntp3.*.com
-    - ntp4.*.com
-    - ntp5.*.com
-    - ntp6.*.com
-    - ntp7.*.com
-    - '*.time.edu.cn'
-    - '*.ntp.org.cn'
-    - +.pool.ntp.org
-    - time1.cloud.tencent.com
-    - +.music.163.com
-    - '*.126.net'
-    - musicapi.taihe.com
-    - music.taihe.com
-    - songsearch.kugou.com
-    - trackercdn.kugou.com
-    - '*.kuwo.cn'
-    - api-jooxtt.sanook.com
-    - api.joox.com
-    - joox.com
-    - +.y.qq.com
-    - +.music.tc.qq.com
-    - aqqmusic.tc.qq.com
-    - +.stream.qqmusic.qq.com
-    - '*.xiami.com'
-    - +.music.migu.cn
+    - stun.*.*
+    - stun.*.*.*
     - +.srv.nintendo.net
     - +.stun.playstation.net
     - xbox.*.microsoft.com
     - +.xboxlive.com
-    - localhost.ptlogin2.qq.com
-    - proxy.golang.org
-    - stun.*.*
-    - stun.*.*.*
-    - '*.mcdn.bilivideo.cn'
   nameserver:
-    - https://doh.pub/dns-query
-    - https://dns.alidns.com/dns-query
+    - tls://8.8.8.8
+    - tls://1.1.1.1
+    - https://8.8.8.8/dns-query
+    - https://1.1.1.1/dns-query
+  proxy-server-nameserver:
+    - https://8.8.8.8/dns-query
+    - https://1.1.1.1/dns-query
+  cache-size: 8192
+  dns-timeout: 3s
+  fallback:
+    - tls://8.8.4.4
+    - tls://1.0.0.1
+    - https://8.8.4.4/dns-query
+    - https://1.0.0.1/dns-query
   fallback-filter:
-    geoip: false
-    ipcidr:
-      - 240.0.0.0/4
-      - 0.0.0.0/32
+    geoip: true
+    geoip-code: CN
+    geosite:
+      - gfw
+  nameserver-policy:
+    "*.cn":
+      - tls://119.29.29.29
+      - tls://223.5.5.5
+    "geoip-cn":
+      - tls://119.29.29.29
+      - tls://223.5.5.5
+  disable-udp: true
 
 proxies:
   - {"name":"欧盟+V2CROSS.COM_1","type":"ss","server":"45.87.175.188","port":8080,"password":"1RWwXhwfAB5gAEozU4G2Pg","cipher":"chacha20-ietf-poly1305"}
@@ -182,12 +162,12 @@ proxies:
   - {"name":"美国+伊利诺伊州芝加哥CDN77节点","type":"trojan","server":"89.187.181.179","port":43118,"udp":true,"password":"ypDt8RkT7J","skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国+CloudFlare节点_10","type":"trojan","server":"104.26.13.54","port":2087,"udp":true,"password":"vs6f8hvt","sni":"trojan.cchappy.eu.org","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"trojan.cchappy.eu.org"}}}
   - {"name":"美国+CloudFlare节点_11","type":"trojan","server":"172.66.46.254","port":443,"udp":true,"password":"auto","sni":"dcf741e8.epeius-2gy.pages.dev","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"dcf741e8.epeius-2gy.pages.dev"}}}
-  - {"name":"美国+Sprint网络","type":"trojan","server":"63.177.163.91","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
+  - {"name":"美国+Sprint网络","type":"trojan","server":"63.177.163.91","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国+惠普HP_1","type":"trojan","server":"16.170.192.19","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国+CloudFlare节点_12","type":"trojan","server":"104.26.13.54","port":443,"udp":true,"password":"vs6f8hvt","sni":"trojan.cchappy.eu.org","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"trojan.cchappy.eu.org"}}}
   - {"name":"日本+东京都Amazon数据中心_1","type":"trojan","server":"jp005.421421.xyz","port":20230,"udp":true,"password":"a124e41a-0fb8-4543-a0ab-a127c7b515a9","skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国+麻省理工学院","type":"trojan","server":"18.135.244.149","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国+弗吉尼亚州阿什本Amazon数据中心","type":"trojan","server":"50.17.121.229","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
+  - {"name":"美国+弗吉尼亚州阿什本Amazon数据中心","type":"trojan","server":"50.17.121.229","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国+CloudFlare节点_13","type":"trojan","server":"104.18.3.150","port":443,"udp":true,"password":"trojan","sni":"main.xicun.us.kg","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"host":"main.xicun.us.kg"}}}
   - {"name":"美国+CloudFlare节点_14","type":"trojan","server":"104.17.246.203","port":2053,"udp":true,"password":"vs6f8hvt","sni":"trojan.cchappy.eu.org","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"trojan.cchappy.eu.org"}}}
   - {"name":"美国+CloudFlare节点_15","type":"trojan","server":"172.67.135.23","port":443,"udp":true,"password":"0cda5f7e-cc55-4ff2-8ad8-268b9b99dd01","sni":"uS6-16.890601.xyz","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ILLcisbMYUd6MQzxVoMQ","headers":{"host":"us6-16.890601.xyzhttp/1.1"}}}
@@ -207,7 +187,7 @@ proxies:
   - {"name":"广东省肇庆市+中移铁通","type":"trojan","server":"csuzhou01.1cooldns.com","port":42303,"udp":true,"password":"VMhGp5wEIyCDf90T","sni":"hk06.run.place","skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国+CloudFlare节点_21","type":"trojan","server":"162.159.140.1","port":2087,"udp":true,"password":"vs6f8hvt","sni":"trojan.cchappy.eu.org","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"trojan.cchappy.eu.org"}}}
   - {"name":"美国+CloudFlare节点_22","type":"trojan","server":"172.67.204.22","port":443,"udp":true,"password":"6040a753-e35b-4384-8713-96f3c639b621","sni":"kju84.890602.XYZ","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/WxWOWO1YA9bs2HOmaeWimvT3","headers":{"host":"kju84.890602.xyzhttp/1.1"}}}
-  - {"name":"美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心","type":"trojan","server":"35.177.223.124","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
+  - {"name":"美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心","type":"trojan","server":"35.177.223.124","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国+CloudFlare节点_23","type":"trojan","server":"104.17.247.203","port":2083,"udp":true,"password":"vs6f8hvt","sni":"trojan.cchappy.eu.org","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"trojan.cchappy.eu.org"}}}
   - {"name":"德国+黑森州法兰克福Amazon数据中心","type":"trojan","server":"35.158.81.171","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国+CloudFlare节点_24","type":"trojan","server":"172.66.45.2","port":443,"udp":true,"password":"auto","sni":"dcf741e8.epeius-2gy.pages.dev","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"dcf741e8.epeius-2gy.pages.devh3"}}}
@@ -216,7 +196,13 @@ proxy-groups:
     type: select
     proxies:
       - ♻️ 自动选择
+      - 🇺🇲 美国节点
+      - 🇯🇵 日本节点
+      - 🚀 手动切换
       - DIRECT
+  - name: 🚀 手动切换
+    type: select
+    proxies:
       - 欧盟+V2CROSS.COM_1
       - 欧盟+V2CROSS.COM_2
       - 广东省广州市+移动_1
@@ -344,9 +330,11 @@ proxy-groups:
       - 美国+CloudFlare节点_24
   - name: ♻️ 自动选择
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
+    timeout: 1500
+    max-failed-times: 2
     proxies:
       - 欧盟+V2CROSS.COM_1
       - 欧盟+V2CROSS.COM_2
@@ -615,6 +603,108 @@ proxy-groups:
       - 美国+CloudFlare节点_23
       - 德国+黑森州法兰克福Amazon数据中心
       - 美国+CloudFlare节点_24
+  - name: 🇯🇵 日本节点
+    type: url-test
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    timeout: 1500
+    max-failed-times: 2
+    proxies:
+      - 日本+东京都Amazon数据中心_1
+      - 日本+东京Amazon数据中心
+      - 日本+东京都Amazon数据中心_2
+  - name: 🇺🇲 美国节点
+    type: url-test
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    timeout: 1500
+    max-failed-times: 2
+    proxies:
+      - 美国 CloudFlare节点_1
+      - 美国 CloudFlare节点_2
+      - 美国 CloudFlare节点_3
+      - 美国 CloudFlare节点_4
+      - 美国 CloudFlare节点_5
+      - 美国 CloudFlare节点_6
+      - 美国 CloudFlare节点_7
+      - 美国 CloudFlare节点_8
+      - 美国 CloudFlare节点_9
+      - 美国 CloudFlare节点_10
+      - 美国 CloudFlare节点_11
+      - 美国 CloudFlare节点_12
+      - 美国 CloudFlare节点_13
+      - 美国 CloudFlare节点_14
+      - 美国 CloudFlare节点_15
+      - 美国 CloudFlare节点_16
+      - 美国 CloudFlare节点_17
+      - 美国 CloudFlare节点_18
+      - 美国 CloudFlare节点_19
+      - 美国 CloudFlare节点_20
+      - 美国 CloudFlare节点_21
+      - 美国 CloudFlare节点_22
+      - 美国 CloudFlare节点_23
+      - 美国 CloudFlare节点_24
+      - 美国 CloudFlare节点_25
+      - 美国 CloudFlare节点_26
+      - 美国 CloudFlare节点_27
+      - 美国 CloudFlare节点_28
+      - 美国 CloudFlare节点_29
+      - 美国 CloudFlare节点_30
+      - 美国 CloudFlare节点_31
+      - 美国 CloudFlare节点_32
+      - 美国 CloudFlare节点_33
+      - 美国 CloudFlare节点_34
+      - 美国 CloudFlare节点_35
+      - 美国 CloudFlare节点_36
+      - 美国 CloudFlare节点_37
+      - 美国 CloudFlare节点_38
+      - 美国 CloudFlare节点_39
+      - 美国 CloudFlare节点_40
+      - 美国 CloudFlare节点_41
+      - 美国 CloudFlare节点_42
+      - 美国 CloudFlare节点_43
+      - 美国 CloudFlare节点_44
+      - 美国 CloudFlare节点_45
+      - 美国 CloudFlare节点_46
+      - 美国 CloudFlare节点_47
+      - 美国 CloudFlare节点_48
+      - 美国 CloudFlare节点_49
+      - 美国 CloudFlare节点_50
+      - 美国 Fastly全球Anycast节点
+      - 美国+CloudFlare节点_1
+      - 美国加利福尼亚州圣克拉拉+腾讯云
+      - 美国+CloudFlare节点_2
+      - 美国+CloudFlare节点_3
+      - 美国+CloudFlare节点_4
+      - 美国+CloudFlare节点_5
+      - 美国+CloudFlare节点_6
+      - 美国+CloudFlare节点_7
+      - 美国+CloudFlare节点_8
+      - 美国+CloudFlare节点_9
+      - 美国+伊利诺伊州芝加哥CDN77节点
+      - 美国+CloudFlare节点_10
+      - 美国+CloudFlare节点_11
+      - 美国+Sprint网络
+      - 美国+惠普HP_1
+      - 美国+CloudFlare节点_12
+      - 美国+麻省理工学院
+      - 美国+弗吉尼亚州阿什本Amazon数据中心
+      - 美国+CloudFlare节点_13
+      - 美国+CloudFlare节点_14
+      - 美国+CloudFlare节点_15
+      - 美国+CloudFlare节点_16
+      - 美国+CloudFlare节点_17
+      - 美国+惠普HP_2
+      - 美国+CloudFlare节点_18
+      - 美国+CloudFlare节点_19
+      - 美国+CloudFlare节点_20
+      - 美国+CloudFlare节点_21
+      - 美国+CloudFlare节点_22
+      - 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+      - 美国+CloudFlare节点_23
+      - 美国+CloudFlare节点_24
 
 rules:
 # 本地/局域网地址
@@ -657,6 +747,37 @@ rules:
   - DOMAIN-SUFFIX,zte.home,🎯 全球直连
   - DOMAIN-SUFFIX,tplogin.cn,🎯 全球直连
   - DOMAIN-SUFFIX,wifi.cmcc,🎯 全球直连
+# Unbreak 白名单 不应该被广告链接的网站
+# Epicgames
+# Getui
+# Google
+# Mozilla
+# Origin
+# Tencent
+# Strava
+# Umeng
+# Miui 小米
+# General
+# Hypixel Network
+# Koodo Mobile
+  - DOMAIN-SUFFIX,ol.epicgames.com,🎯 全球直连
+  - DOMAIN-SUFFIX,dizhensubao.getui.com,🎯 全球直连
+  - DOMAIN,dl.google.com,🎯 全球直连
+  - DOMAIN-SUFFIX,googletraveladservices.com,🎯 全球直连
+  - DOMAIN-SUFFIX,tracking-protection.cdn.mozilla.net,🎯 全球直连
+  - DOMAIN,origin-a.akamaihd.net,🎯 全球直连
+  - DOMAIN,fairplay.l.qq.com,🎯 全球直连
+  - DOMAIN,livew.l.qq.com,🎯 全球直连
+  - DOMAIN,vd.l.qq.com,🎯 全球直连
+  - DOMAIN,errlog.umeng.com,🎯 全球直连
+  - DOMAIN,msg.umeng.com,🎯 全球直连
+  - DOMAIN,msg.umengcloud.com,🎯 全球直连
+  - DOMAIN,tracking.miui.com,🎯 全球直连
+  - DOMAIN,app.adjust.com,🎯 全球直连
+  - DOMAIN,bdtj.tagtic.cn,🎯 全球直连
+  - DOMAIN,rewards.hypixel.net,🎯 全球直连
+  - DOMAIN-SUFFIX,koodomobile.com,🎯 全球直连
+  - DOMAIN-SUFFIX,koodomobile.ca,🎯 全球直连
 # 本碎片只包含常见广告关键字、广告联盟。无副作用，放心使用
 # 广告关键词
 # 广告联盟-国内****************
