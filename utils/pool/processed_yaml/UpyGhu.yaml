@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2025-04-07 15:23:05
+# 创建时间：2025-04-07 14:55:27
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：411
 # 节点类型：ss, vmess, trojan
@@ -19,6 +19,8 @@ dns:
   respect-rules: false
   listen: 127.0.0.1:1053
   ipv6: false
+  default-nameserver:
+    - 223.5.5.5
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter-mode: blacklist
@@ -32,16 +34,15 @@ dns:
     - 'connectivitycheck.gstatic.com'
     - 'detectportal.firefox.com'
     - 'generate_204'
-  default-nameserver:
-    - 223.5.5.5
   nameserver:
     - tls://dns.google
     - tls://dns.cloudflare.com
   nameserver-policy:
     '+.arpa': '10.0.0.1'
+    'rule-set:cn':
+      - https://doh.pub/dns-query
+      - https://dns.alidns.com/dns-query
   fallback:
-    - https://doh.pub/dns-query
-    - https://dns.alidns.com/dns-query
     - tls://1.1.1.1
     - tls://dns.quad9.net
     - https://dns.google/dns-query
@@ -58,7 +59,6 @@ dns:
     geoip-code: CN
     geosite:
       - gfw
-      - greatfire
     ipcidr:
       - 240.0.0.0/4
     domain:
@@ -67,8 +67,6 @@ dns:
       - '+.youtube.com'
       - '+.gstatic.com'
       - '+.githubusercontent.com'
-      - '+.twitter.com'
-      - '+.telegram.org'
 
 proxies:
   - {"name":"安徽省滁州市+电信_8","type":"ss","server":"hk02.x.quickcht3.club","port":52612,"password":"2be0c954-4291-45ea-b47d-ca713180550b","cipher":"chacha20-ietf-poly1305"}
