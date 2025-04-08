@@ -1,217 +1,174 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2025-04-08 23:09:36
+# 创建时间：2025-04-08 14:23:14
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
-# 节点数量：119
-# 节点类型：trojan, ss, vmess
+# 节点数量：116
+# 节点类型：ss, vmess, trojan
 ####################################
 mixed-port: 7890
-allow-lan: true
-log-level: info
-external-controller: 0.0.0.0:9090
+allow-lan: false
+bind-address: '*'
+log-level: silent
+external-controller: 127.0.0.1:9090
+secret: "your_password"
+mode: rule
+ipv6: false
+tun:
+  enable: true
+  stack: system
+  auto-route: true
+  auto-detect-interface: true
+  dns-hijack:
+    - 198.18.0.2:53
 dns:
   enabled: true
-  listen: 0.0.0.0:1053
-  ipv6: true
-  default-nameserver:
-    - 223.5.5.5
-    - 114.114.114.114
+  listen: 127.0.0.1:1053
+  ipv6: false
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
     - '*.lan'
-    - '*.linksys.com'
-    - '*.linksyssmartwifi.com'
-    - swscan.apple.com
-    - mesu.apple.com
-    - '*.msftconnecttest.com'
-    - '*.msftncsi.com'
-    - time.*.com
-    - time.*.gov
-    - time.*.edu.cn
-    - time.*.apple.com
-    - time1.*.com
-    - time2.*.com
-    - time3.*.com
-    - time4.*.com
-    - time5.*.com
-    - time6.*.com
-    - time7.*.com
-    - ntp.*.com
-    - ntp.*.com
-    - ntp1.*.com
-    - ntp2.*.com
-    - ntp3.*.com
-    - ntp4.*.com
-    - ntp5.*.com
-    - ntp6.*.com
-    - ntp7.*.com
-    - '*.time.edu.cn'
-    - '*.ntp.org.cn'
+    - '*.local'
+    - time.*.*
+    - ntp.*.*
     - +.pool.ntp.org
-    - time1.cloud.tencent.com
-    - +.music.163.com
-    - '*.126.net'
-    - musicapi.taihe.com
-    - music.taihe.com
-    - songsearch.kugou.com
-    - trackercdn.kugou.com
-    - '*.kuwo.cn'
-    - api-jooxtt.sanook.com
-    - api.joox.com
-    - joox.com
-    - +.y.qq.com
-    - +.music.tc.qq.com
-    - aqqmusic.tc.qq.com
-    - +.stream.qqmusic.qq.com
-    - '*.xiami.com'
-    - +.music.migu.cn
-    - +.srv.nintendo.net
-    - +.stun.playstation.net
-    - xbox.*.microsoft.com
-    - +.xboxlive.com
-    - localhost.ptlogin2.qq.com
-    - proxy.golang.org
-    - stun.*.*
-    - stun.*.*.*
-    - '*.mcdn.bilivideo.cn'
   nameserver:
+    - tls://1.1.1.1
+    - tls://dns.google
     - https://doh.pub/dns-query
-    - https://dns.alidns.com/dns-query
+  fallback:
+    - https://cloudflare-dns.com/dns-query
+    - https://dns.quad9.net/dns-query
   fallback-filter:
-    geoip: false
+    geoip: true
+    geoip-code: CN
     ipcidr:
       - 240.0.0.0/4
-      - 0.0.0.0/32
 
 proxies:
-  - {"name":"香港(yudou66.com+玉豆免费节点)","type":"trojan","server":"154.197.64.189","port":2087,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)","type":"trojan","server":"sage.ns.cloudflare.com","port":443,"udp":true,"password":"Aimer","sni":"sage.ns.cloudflare.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+2","type":"trojan","server":"45.87.103.154","port":52001,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+3","type":"ss","server":"38.107.226.14","port":7001,"password":"RexnBgU7EV5ADxG","cipher":"aes-256-gcm"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+4","type":"ss","server":"23.150.248.199","port":2375,"password":"faBAoD54k87UJG7","cipher":"aes-256-gcm"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+5","type":"ss","server":"38.110.1.146","port":2376,"password":"faBAoD54k87UJG7","cipher":"aes-256-gcm"}
-  - {"name":"美国(yudou66.com 玉豆免费节点) 6","type":"vmess","server":"183.236.51.38","port":55754,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com 玉豆免费节点) 7","type":"vmess","server":"s2.db-link01.top","port":2095,"cipher":"auto","uuid":"4b36625c-b9d9-3ea6-aed5-86d62c70e16d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/dabai.in104.17.133.52","headers":{"host":"100-65-56-224.s2.db-link01.top"}}}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+8","type":"ss","server":"38.107.226.14","port":8091,"password":"PCnnH6SQSnfoS27","cipher":"aes-256-gcm"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+9","type":"ss","server":"38.110.1.146","port":8882,"password":"kDWvXYZoTBcGkC4","cipher":"aes-256-gcm"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+10","type":"ss","server":"38.110.1.146","port":8090,"password":"PCnnH6SQSnfoS27","cipher":"aes-256-gcm"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+11","type":"trojan","server":"188.164.159.55","port":2096,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"新加坡(yudou66.com+玉豆免费节点)","type":"trojan","server":"27.50.49.188","port":2096,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com 玉豆免费节点) 12","type":"vmess","server":"us7-03.890606.xyz","port":443,"cipher":"auto","uuid":"4d04b30c-ef7b-4a07-8f9e-f581ec171f8a","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/bua2hMcbA8wMzbGFtV","headers":{"host":"us7-03.890606.xyz"}}}
-  - {"name":"俄罗斯(yudou66.com+玉豆免费节点)","type":"trojan","server":"92.243.74.239","port":8443,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+13","type":"trojan","server":"lynn.ns.cloudflare.com","port":443,"udp":true,"password":"Aimer","sni":"lynn.ns.cloudflare.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"俄罗斯(yudou66.com+玉豆免费节点)+2","type":"trojan","server":"45.67.214.41","port":2083,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+14","type":"trojan","server":"216.24.57.1","port":2053,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com 玉豆免费节点) 15","type":"vmess","server":"120.232.153.63","port":40105,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com 玉豆免费节点) 16","type":"vmess","server":"s3.db-link01.top","port":2082,"cipher":"auto","uuid":"4b36625c-b9d9-3ea6-aed5-86d62c70e16d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/dabai.in104.25.204.117","headers":{"host":"100-6-204-129.s3.db-link01.top"}}}
-  - {"name":"新加坡(yudou66.com+玉豆免费节点)+2","type":"trojan","server":"13.250.14.76","port":443,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+17","type":"ss","server":"38.110.1.146","port":443,"password":"pKEW8JPByTVTLtM","cipher":"aes-256-gcm"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+18","type":"ss","server":"23.150.248.199","port":7307,"password":"FoOiGlkAA9yPEGP","cipher":"aes-256-gcm"}
-  - {"name":"香港(yudou66.com 玉豆免费节点) 2","type":"vmess","server":"183.236.51.38","port":42550,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+19","type":"ss","server":"38.110.1.146","port":8118,"password":"cdBIDV42DCwnfIN","cipher":"aes-256-gcm"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+20","type":"ss","server":"38.110.1.146","port":8881,"password":"kDWvXYZoTBcGkC4","cipher":"aes-256-gcm"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+21","type":"ss","server":"38.110.1.146","port":8119,"password":"cdBIDV42DCwnfIN","cipher":"aes-256-gcm"}
-  - {"name":"美国(yudou66.com 玉豆免费节点) 22","type":"vmess","server":"tk.hzlt.tkddns.xyz","port":22642,"cipher":"auto","uuid":"98e96c9f-4bb3-39d4-9a2c-fac04257f7c7","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"zxjp-b.tkong.cc"}}}
-  - {"name":"香港(yudou66.com 玉豆免费节点) 3","type":"vmess","server":"b268cf3c-su7xc0-swx10p-cw9v.b.fosant.com","port":3683,"cipher":"auto","uuid":"f39baabc-ef78-11ef-b714-f23c93136cb3","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com 玉豆免费节点) 23","type":"vmess","server":"183.236.51.38","port":56901,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"香港(yudou66.com+玉豆免费节点)+4","type":"trojan","server":"154.197.64.67","port":443,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"日本(yudou66.com+玉豆免费节点)","type":"trojan","server":"103.116.7.103","port":2083,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+24","type":"ss","server":"hk01.x.quickcht3.club","port":52611,"password":"2be0c954-4291-45ea-b47d-ca713180550b","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"香港(yudou66.com+玉豆免费节点)+5","type":"trojan","server":"154.197.64.248","port":8443,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"香港(yudou66.com+玉豆免费节点)+6","type":"trojan","server":"154.197.64.240","port":8443,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com 玉豆免费节点) 25","type":"vmess","server":"120.234.102.229","port":31998,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"香港(yudou66.com+玉豆免费节点)+7","type":"trojan","server":"154.197.64.67","port":443,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+26","type":"trojan","server":"kip.ns.cloudflare.com","port":443,"udp":true,"password":"Aimer","sni":"kip.ns.cloudflare.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"香港(yudou66.com+玉豆免费节点)+8","type":"ss","server":"zf1.10101251.xyz","port":41705,"password":"4bccdfb7-f45b-44bb-9cd3-fb6f8fc8072f","cipher":"aes-256-gcm"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+27","type":"ss","server":"38.107.226.14","port":2375,"password":"faBAoD54k87UJG7","cipher":"aes-256-gcm"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+28","type":"trojan","server":"209.94.90.64","port":443,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+29","type":"ss","server":"38.107.226.14","port":7306,"password":"FoOiGlkAA9yPEGP","cipher":"aes-256-gcm"}
-  - {"name":"美国(yudou66.com 玉豆免费节点) 30","type":"vmess","server":"v40.heduian.link","port":30840,"cipher":"auto","uuid":"cbb3f877-d1fb-344c-87a9-d153bffd5484","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/index","headers":{"host":"api100-core-quic-lf.amemv.com"}}}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+31","type":"ss","server":"38.110.1.146","port":8091,"password":"PCnnH6SQSnfoS27","cipher":"aes-256-gcm"}
-  - {"name":"香港(yudou66.com 玉豆免费节点) 9","type":"vmess","server":"120.232.153.40","port":41002,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+32","type":"ss","server":"38.110.1.146","port":7306,"password":"FoOiGlkAA9yPEGP","cipher":"aes-256-gcm"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+33","type":"trojan","server":"108.165.152.80","port":2083,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+34","type":"ss","server":"38.107.226.14","port":8090,"password":"PCnnH6SQSnfoS27","cipher":"aes-256-gcm"}
-  - {"name":"美国(yudou66.com 玉豆免费节点) 35","type":"vmess","server":"183.236.51.38","port":59554,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+36","type":"trojan","server":"38.59.228.139","port":443,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"香港(yudou66.com 玉豆免费节点) 10","type":"vmess","server":"120.198.71.219","port":51095,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"韩国(yudou66.com+玉豆免费节点)","type":"trojan","server":"183.102.173.114","port":10032,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"韩国(yudou66.com+玉豆免费节点)+2","type":"trojan","server":"121.175.42.160","port":32443,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"韩国(yudou66.com+玉豆免费节点)+3","type":"trojan","server":"222.107.236.137","port":25005,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"韩国(yudou66.com+玉豆免费节点)+4","type":"trojan","server":"125.141.54.180","port":16030,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"韩国(yudou66.com+玉豆免费节点)+5","type":"trojan","server":"221.165.64.92","port":50000,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+37","type":"trojan","server":"135.84.74.27","port":8443,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+38","type":"trojan","server":"thaddeus.ns.cloudflare.com","port":443,"udp":true,"password":"Aimer","sni":"thaddeus.ns.cloudflare.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"韩国(yudou66.com+玉豆免费节点)+6","type":"trojan","server":"211.196.12.95","port":12344,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"乌克兰(yudou66.com+玉豆免费节点)","type":"trojan","server":"89.110.86.132","port":2053,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"韩国(yudou66.com+玉豆免费节点)+7","type":"trojan","server":"121.150.230.201","port":12136,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"韩国(yudou66.com+玉豆免费节点)+8","type":"trojan","server":"112.160.54.82","port":21316,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+39","type":"trojan","server":"198.62.62.61","port":2083,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com 玉豆免费节点) 40","type":"vmess","server":"quiz.int.vidio.com","port":443,"cipher":"auto","uuid":"9c7c7039-a5f1-47b2-9225-cbb5bf03b9e6","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"serv1.idks1.web.id"}}}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+41","type":"trojan","server":"45.194.53.81","port":2087,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+42","type":"trojan","server":"108.165.152.78","port":2083,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+43","type":"trojan","server":"167.68.5.85","port":2053,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"韩国(yudou66.com+玉豆免费节点)+9","type":"trojan","server":"222.97.135.19","port":21242,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+44","type":"trojan","server":"188.164.159.171","port":443,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com 玉豆免费节点) 45","type":"vmess","server":"v7.heduian.link","port":30807,"cipher":"auto","uuid":"cbb3f877-d1fb-344c-87a9-d153bffd5484","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/oooo","headers":{"host":"ocbc.com"}}}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+46","type":"trojan","server":"167.68.4.131","port":8443,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"日本(yudou66.com+玉豆免费节点)+2","type":"ss","server":"arxfw2b78fi2q9hzylhn.freesocks.work","port":443,"password":"Nk9asglDzHzjktVzTkvhaA","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+47","type":"trojan","server":"188.164.159.107","port":2096,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+48","type":"trojan","server":"108.165.152.131","port":443,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"俄罗斯(yudou66.com+玉豆免费节点)+3","type":"trojan","server":"77.232.140.114","port":2053,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+49","type":"trojan","server":"kip.ns.cloudflare.com","port":443,"udp":true,"password":"Aimer","sni":"kip.ns.cloudflare.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+50","type":"trojan","server":"45.194.53.81","port":2087,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+51","type":"trojan","server":"213.109.205.45","port":443,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+52","type":"trojan","server":"damien.ns.cloudflare.com","port":443,"udp":true,"password":"Aimer","sni":"damien.ns.cloudflare.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"韩国(yudou66.com+玉豆免费节点)+10","type":"trojan","server":"175.196.105.220","port":12209,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+53","type":"trojan","server":"188.164.159.171","port":443,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+54","type":"ss","server":"38.107.226.14","port":443,"password":"pKEW8JPByTVTLtM","cipher":"aes-256-gcm"}
-  - {"name":"俄罗斯(yudou66.com+玉豆免费节点)+4","type":"trojan","server":"46.254.92.191","port":443,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+55","type":"trojan","server":"188.164.159.91","port":2083,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"俄罗斯(yudou66.com+玉豆免费节点)+5","type":"trojan","server":"5.182.85.189","port":2096,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+56","type":"ss","server":"38.107.226.14","port":8882,"password":"kDWvXYZoTBcGkC4","cipher":"aes-256-gcm"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+57","type":"trojan","server":"188.164.159.74","port":8443,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"俄罗斯(yudou66.com+玉豆免费节点)+6","type":"trojan","server":"77.232.140.101","port":2053,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"俄罗斯(yudou66.com+玉豆免费节点)+7","type":"trojan","server":"5.182.85.255","port":2096,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+58","type":"trojan","server":"108.165.152.59","port":2087,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+59","type":"trojan","server":"188.164.159.25","port":2053,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"俄罗斯(yudou66.com+玉豆免费节点)+8","type":"trojan","server":"176.124.223.50","port":8443,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"俄罗斯(yudou66.com+玉豆免费节点)+9","type":"trojan","server":"213.241.198.56","port":2083,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+60","type":"trojan","server":"108.165.152.202","port":2083,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+61","type":"ss","server":"38.107.226.14","port":7002,"password":"RexnBgU7EV5ADxG","cipher":"aes-256-gcm"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+62","type":"trojan","server":"47.79.88.27","port":443,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"俄罗斯(yudou66.com+玉豆免费节点)+10","type":"trojan","server":"5.182.84.66","port":2083,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+63","type":"trojan","server":"188.164.159.171","port":443,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+64","type":"trojan","server":"damien.ns.cloudflare.com","port":443,"udp":true,"password":"Aimer","sni":"damien.ns.cloudflare.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+65","type":"trojan","server":"theo.ns.cloudflare.com","port":443,"udp":true,"password":"Aimer","sni":"theo.ns.cloudflare.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"俄罗斯(yudou66.com+玉豆免费节点)+11","type":"trojan","server":"213.241.198.189","port":2053,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+66","type":"trojan","server":"188.164.159.175","port":8443,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"香港(yudou66.com+玉豆免费节点)+11","type":"trojan","server":"154.197.64.248","port":8443,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"俄罗斯(yudou66.com+玉豆免费节点)+12","type":"trojan","server":"5.182.84.66","port":2083,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+67","type":"trojan","server":"duke.ns.cloudflare.com","port":443,"udp":true,"password":"Aimer","sni":"duke.ns.cloudflare.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"香港(yudou66.com+玉豆免费节点)+12","type":"trojan","server":"154.197.64.248","port":8443,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"香港(yudou66.com+玉豆免费节点)+13","type":"trojan","server":"154.211.8.155","port":443,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+68","type":"trojan","server":"188.164.159.220","port":2083,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+69","type":"trojan","server":"167.68.5.248","port":2087,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+70","type":"ss","server":"38.110.1.146","port":5004,"password":"g5MeD6Ft3CWlJId","cipher":"aes-256-gcm"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+71","type":"trojan","server":"arvind.ns.cloudflare.com","port":443,"udp":true,"password":"Aimer","sni":"arvind.ns.cloudflare.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+72","type":"trojan","server":"108.165.152.82","port":8443,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"俄罗斯(yudou66.com+玉豆免费节点)+13","type":"trojan","server":"5.182.84.120","port":443,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+73","type":"trojan","server":"108.165.152.67","port":2053,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+74","type":"trojan","server":"pranab.ns.cloudflare.com","port":443,"udp":true,"password":"Aimer","sni":"pranab.ns.cloudflare.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+75","type":"trojan","server":"154.9.207.173","port":443,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+76","type":"trojan","server":"199.34.228.143","port":2096,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+77","type":"trojan","server":"sage.ns.cloudflare.com","port":443,"udp":true,"password":"Aimer","sni":"sage.ns.cloudflare.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com+玉豆免费节点)+78","type":"trojan","server":"209.94.90.64","port":443,"udp":true,"password":"Aimer","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"海南省+移动(全省通用)","type":"ss","server":"111.29.57.125","port":52612,"password":"2be0c954-4291-45ea-b47d-ca713180550b","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"海南省+移动(全省通用)+(1)","type":"ss","server":"hk02.x.quickcht3.club","port":52612,"password":"2be0c954-4291-45ea-b47d-ca713180550b","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"俄罗斯+V2CROSS.COM","type":"ss","server":"185.242.86.156","port":54170,"password":"36ZCHeabUSfKjfQEvJ4HDV","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"波兰+V2CROSS.COM","type":"ss","server":"193.243.147.128","port":40368,"password":"7BcLdsO1WweoGD0X","cipher":"aes-256-gcm"}
+  - {"name":"广东省 移动","type":"vmess","server":"629b1be0-suh6o0-svqrrs-4cwg.d.volczijie.com","port":4136,"cipher":"auto","uuid":"03c1d503-4803-11ef-8f3d-f23c9313b177","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国 CloudFlare节点","type":"vmess","server":"172.67.163.102","port":2087,"cipher":"auto","uuid":"0e4c8497-749c-4cac-ebd1-4266b2ad9c75","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"山东省 电信","type":"vmess","server":"dxv4.pai50288.uk","port":14100,"cipher":"auto","uuid":"f6866b0b-f946-4a03-8df0-c7e0016b55ad","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"吉林省 移动(全省通用)","type":"vmess","server":"v28.heduian.link","port":30828,"cipher":"auto","uuid":"cbb3f877-d1fb-344c-87a9-d153bffd5484","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"吉林省 移动(全省通用) (1)","type":"vmess","server":"v9.heduian.link","port":30809,"cipher":"auto","uuid":"cbb3f877-d1fb-344c-87a9-d153bffd5484","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"广东省 移动 (1)","type":"vmess","server":"285c04c5-suh6o0-sv6d5y-ddgs.d.volczijie.com","port":4136,"cipher":"auto","uuid":"c870fe5a-0729-11f0-8cf9-f23c93136cb3","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"日本 大阪Google云计算数据中心","type":"vmess","server":"34.97.245.204","port":30251,"cipher":"auto","uuid":"86c9c119-c46d-45a9-82a6-75a886e5e795","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国 CloudFlare节点 (1)","type":"vmess","server":"104.21.32.1","port":443,"cipher":"auto","uuid":"4664df84-15cf-4e57-828b-0782f125e898","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"美国 CloudFlare节点 (2)","type":"vmess","server":"104.21.64.1","port":8443,"cipher":"auto","uuid":"41963e6b-295d-45a0-b6cc-38fbdd3e3f75","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"美国 CloudFlare节点 (3)","type":"vmess","server":"lon1-dash.890699.xyz","port":8443,"cipher":"auto","uuid":"41963e6b-295d-45a0-b6cc-38fbdd3e3f75","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"美国 CloudFlare节点 (4)","type":"vmess","server":"s4.db-link02.top","port":2052,"cipher":"auto","uuid":"4b36625c-b9d9-3ea6-aed5-86d62c70e16d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"美国 3COM公司企业网","type":"vmess","server":"152.67.251.232","port":443,"cipher":"auto","uuid":"e537f2f5-2a0c-4f59-92c9-832ca6433bf3","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"美国 CloudFlare节点 (5)","type":"vmess","server":"141.101.120.41","port":2053,"cipher":"auto","uuid":"381cb6d1-6ad4-4909-8494-b8d786cf78ce","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"广东省江门市 移动","type":"vmess","server":"120.234.102.229","port":31998,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"巴西圣保罗 CloudFlare节点","type":"vmess","server":"188.114.96.3","port":443,"cipher":"auto","uuid":"edbb1059-1633-4271-b66e-ed4fba47a1bf","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"广东省广州市 移动","type":"vmess","server":"183.236.51.38","port":39039,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国 CloudFlare节点 (6)","type":"vmess","server":"104.18.149.75","port":443,"cipher":"auto","uuid":"cae97b1c-35e8-4cf2-dc1b-52032c3d3fa7","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"美国 CloudFlare节点 (7)","type":"vmess","server":"172.67.204.19","port":443,"cipher":"auto","uuid":"5f726fe3-d82e-4da5-a711-8af0cbb2b682","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"美国 CloudFlare节点 (8)","type":"vmess","server":"us2vmess.rnmcnm.com","port":80,"cipher":"auto","uuid":"7f8a1bb9-bee0-40a8-f908-21a65da0f3cc","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"美国 CloudFlare节点 (9)","type":"vmess","server":"lon1-dash.890699.xyz","port":2087,"cipher":"auto","uuid":"41963e6b-295d-45a0-b6cc-38fbdd3e3f75","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"吉林省 移动(全省通用) (2)","type":"vmess","server":"v25.heduian.link","port":30825,"cipher":"auto","uuid":"cbb3f877-d1fb-344c-87a9-d153bffd5484","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"美国 CloudFlare节点 (10)","type":"vmess","server":"us7-07.890624.xyz","port":80,"cipher":"auto","uuid":"4d04b30c-ef7b-4a07-8f9e-f581ec171f8a","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"美国 CloudFlare节点 (11)","type":"vmess","server":"104.18.118.195","port":8443,"cipher":"auto","uuid":"3bb3c730-e107-49c5-a0b2-b576d1b26a5e","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"广东省 移动 (2)","type":"vmess","server":"a8065e22-suh6o0-tbivr5-6lkd.c.volczijie.com","port":4137,"cipher":"auto","uuid":"9c03319a-2701-11ef-b512-f23c93136cb3","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国 CloudFlare节点 (12)","type":"vmess","server":"1744007541.tencentapp.cn","port":8443,"cipher":"auto","uuid":"381cb6d1-6ad4-4909-8494-b8d786cf78ce","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"英国 V2CROSS.COM","type":"vmess","server":"193.122.58.158","port":443,"cipher":"auto","uuid":"e537f2f5-2a0c-4f59-92c9-832ca6433bf3","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"美国 CloudFlare节点 (13)","type":"vmess","server":"172.67.154.84","port":443,"cipher":"auto","uuid":"e537f2f5-2a0c-4f59-92c9-832ca6433bf3","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"美国 CloudFlare节点 (14)","type":"vmess","server":"ny1-dash.890699.xyz","port":2087,"cipher":"auto","uuid":"658b87e0-5d92-4424-d344-c167acd6a77f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"美国 CloudFlare节点 (15)","type":"vmess","server":"s4.db-link02.top","port":2095,"cipher":"auto","uuid":"4b36625c-b9d9-3ea6-aed5-86d62c70e16d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"美国 CloudFlare节点 (16)","type":"vmess","server":"104.21.48.1","port":80,"cipher":"auto","uuid":"4d04b30c-ef7b-4a07-8f9e-f581ec171f8a","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"美国 CloudFlare节点 (17)","type":"vmess","server":"ny1-dash.890699.xyz","port":2096,"cipher":"auto","uuid":"658b87e0-5d92-4424-d344-c167acd6a77f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"美国 CloudFlare节点 (18)","type":"vmess","server":"1744007541.tencentapp.cn","port":2053,"cipher":"auto","uuid":"381cb6d1-6ad4-4909-8494-b8d786cf78ce","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"俄罗斯 Rubtsovsk Branch of Altai State University","type":"vmess","server":"212.192.12.154","port":23001,"cipher":"auto","uuid":"87278e01-a3c2-4178-9468-75abdbd309ec","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"广东省湛江市 移动","type":"vmess","server":"120.198.71.219","port":51095,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国 CloudFlare节点 (19)","type":"vmess","server":"s2.db-link02.top","port":2082,"cipher":"auto","uuid":"4b36625c-b9d9-3ea6-aed5-86d62c70e16d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"美国 CloudFlare节点 (20)","type":"vmess","server":"us7-02.890624.xyz","port":443,"cipher":"auto","uuid":"4d04b30c-ef7b-4a07-8f9e-f581ec171f8a","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"希腊 V2CROSS.COM","type":"vmess","server":"77.83.141.171","port":443,"cipher":"auto","uuid":"35379219-6535-4f2e-a4fe-3e44f61e0eee","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"美国 CloudFlare节点 (21)","type":"vmess","server":"104.18.119.222","port":2096,"cipher":"auto","uuid":"3bb3c730-e107-49c5-a0b2-b576d1b26a5e","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"广东省湛江市 移动 (1)","type":"vmess","server":"120.198.71.219","port":42355,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国 CloudFlare节点 (22)","type":"vmess","server":"kr2.ttcc.tech","port":443,"cipher":"auto","uuid":"4664df84-15cf-4e57-828b-0782f125e898","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"俄罗斯 V2CROSS.COM","type":"vmess","server":"195.58.49.84","port":22001,"cipher":"auto","uuid":"46afe023-db88-4d69-b1d5-7a486ee1962e","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"美国 CloudFlare节点 (23)","type":"vmess","server":"ny1-dash.890699.xyz","port":8443,"cipher":"auto","uuid":"658b87e0-5d92-4424-d344-c167acd6a77f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"巴西圣保罗 CloudFlare节点 (1)","type":"vmess","server":"188.114.97.3","port":443,"cipher":"auto","uuid":"edbb1059-1633-4271-b66e-ed4fba47a1bf","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"吉林省 移动(全省通用) (3)","type":"vmess","server":"v7.heduian.link","port":30807,"cipher":"auto","uuid":"cbb3f877-d1fb-344c-87a9-d153bffd5484","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"美国 CloudFlare节点 (24)","type":"vmess","server":"104.26.2.223","port":80,"cipher":"auto","uuid":"be9ac665-07b8-45b7-b99e-8b913b50da99","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"美国 CloudFlare节点 (25)","type":"vmess","server":"141.101.120.64","port":2053,"cipher":"auto","uuid":"381cb6d1-6ad4-4909-8494-b8d786cf78ce","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"广东省湛江市 移动 (2)","type":"vmess","server":"120.198.71.216","port":35001,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国 CloudFlare节点 (26)","type":"vmess","server":"us7-01.890624.xyz","port":443,"cipher":"auto","uuid":"4d04b30c-ef7b-4a07-8f9e-f581ec171f8a","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"美国 CloudFlare节点 (27)","type":"vmess","server":"s4.db-link02.top","port":2086,"cipher":"auto","uuid":"4b36625c-b9d9-3ea6-aed5-86d62c70e16d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"美国 CloudFlare节点 (28)","type":"vmess","server":"104.21.18.227","port":443,"cipher":"auto","uuid":"950db6aa-4926-4616-816e-ec0312dcb87b","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"广东省广州市 移动 (1)","type":"vmess","server":"183.236.51.38","port":59554,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"海南省 移动(全省通用)","type":"vmess","server":"cm1.awslcn.info","port":25230,"cipher":"auto","uuid":"b784f479-32c2-4fa9-a6f9-0e8d3f8cb4ae","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"吉林省 移动(全省通用) (4)","type":"vmess","server":"v40.heduian.link","port":30840,"cipher":"auto","uuid":"cbb3f877-d1fb-344c-87a9-d153bffd5484","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"广东省广州市 移动 (2)","type":"vmess","server":"183.236.51.38","port":55754,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国 CloudFlare节点 (29)","type":"vmess","server":"ny2-dash.930.pp.ua","port":2096,"cipher":"auto","uuid":"f082eeca-e068-45f9-d1bf-46e9de9bdf57","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"香港 Google云计算数据中心","type":"vmess","server":"35.220.230.251","port":30251,"cipher":"auto","uuid":"86c9c119-c46d-45a9-82a6-75a886e5e795","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国 CloudFlare节点 (30)","type":"vmess","server":"172.67.189.27","port":2096,"cipher":"auto","uuid":"f082eeca-e068-45f9-d1bf-46e9de9bdf57","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"韩国 V2CROSS.COM","type":"vmess","server":"175.215.154.208","port":11184,"cipher":"auto","uuid":"0ee75dd1-5e59-4615-a6a8-6fe7aa0b6f17","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"山东省济南市 联通IDC机房","type":"vmess","server":"119.188.66.248","port":22643,"cipher":"auto","uuid":"98e96c9f-4bb3-39d4-9a2c-fac04257f7c7","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"美国 CloudFlare节点 (31)","type":"vmess","server":"s4.cn-db.top","port":2086,"cipher":"auto","uuid":"4b36625c-b9d9-3ea6-aed5-86d62c70e16d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"美国 CloudFlare节点 (32)","type":"vmess","server":"s2.db-link02.top","port":80,"cipher":"auto","uuid":"4b36625c-b9d9-3ea6-aed5-86d62c70e16d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"美国 CloudFlare节点 (33)","type":"vmess","server":"172.67.163.102","port":2096,"cipher":"auto","uuid":"0e4c8497-749c-4cac-ebd1-4266b2ad9c75","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"希腊 V2CROSS.COM (1)","type":"vmess","server":"vc.fly.dev","port":443,"cipher":"auto","uuid":"35379219-6535-4f2e-a4fe-3e44f61e0eee","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"广东省广州市 移动 (3)","type":"vmess","server":"183.236.51.38","port":42550,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国 CloudFlare节点 (34)","type":"vmess","server":"de01.sh-cloudflare.sbs","port":2096,"cipher":"auto","uuid":"b3928f8d-ea81-4d75-bcec-4016a072adff","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"美国 CloudFlare节点 (35)","type":"vmess","server":"104.17.213.241","port":2086,"cipher":"auto","uuid":"4b36625c-b9d9-3ea6-aed5-86d62c70e16d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"美国 CloudFlare节点 (36)","type":"vmess","server":"104.21.73.150","port":2083,"cipher":"auto","uuid":"0e4c8497-749c-4cac-ebd1-4266b2ad9c75","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"美国 CloudFlare节点 (37)","type":"vmess","server":"s2.cn-db.top","port":2086,"cipher":"auto","uuid":"4b36625c-b9d9-3ea6-aed5-86d62c70e16d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"巴西圣保罗 CloudFlare节点 (2)","type":"vmess","server":"188.114.96.5","port":443,"cipher":"auto","uuid":"edbb1059-1633-4271-b66e-ed4fba47a1bf","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"美国 CloudFlare节点 (38)","type":"vmess","server":"qwe.852224.ggff.net","port":443,"cipher":"auto","uuid":"cd0e795a-4f26-4f8c-9981-ed8b7dcb6126","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"江苏省南京市 移动","type":"vmess","server":"tk.hzlt.tkddns.xyz","port":22641,"cipher":"auto","uuid":"98e96c9f-4bb3-39d4-9a2c-fac04257f7c7","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"印度 V2CROSS.COM","type":"vmess","server":"202.78.162.5","port":443,"cipher":"auto","uuid":"2ff97c6d-8557-42a4-b43f-19c77c5959ea","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"印度 V2CROSS.COM (1)","type":"vmess","server":"202.78.162.5","port":443,"cipher":"auto","uuid":"118287d2-e968-42e1-80d0-12fa2f5d38d6","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"美国 CloudFlare节点 (39)","type":"vmess","server":"104.21.82.183","port":8880,"cipher":"auto","uuid":"5a7021e0-26b4-45d6-b175-fe551601ca97","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"印度 V2CROSS.COM (2)","type":"vmess","server":"202.78.162.5","port":443,"cipher":"auto","uuid":"716eded6-2201-4dbd-9d63-1638c9e8e677","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"美国 Fastly全球Anycast节点","type":"vmess","server":"gov.uk","port":443,"cipher":"auto","uuid":"77848824-93b7-4b89-ffd0-e91afff406ce","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"美国+CloudFlare节点","type":"trojan","server":"104.21.64.1","port":443,"udp":true,"password":"a8fce442-ae9a-4cc1-a0cc-20308ff0a0db","sni":"1g.890699.xyZ","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"英国+伦敦Amazon数据中心","type":"trojan","server":"52.56.98.27","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国+CloudFlare节点+(1)","type":"trojan","server":"104.21.69.41","port":443,"udp":true,"password":"4d04b30c-ef7b-4a07-8f9e-f581ec171f8a","sni":"uS7-06.890602.xyz","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国加利福尼亚州洛杉矶+Cloudinnovation数据中心","type":"trojan","server":"156.238.19.69","port":2096,"udp":true,"password":"amclubs","sni":"tran.amclubstest.nyc.mn","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国+CloudFlare节点+(2)","type":"trojan","server":"104.21.112.1","port":443,"udp":true,"password":"a8fce442-ae9a-4cc1-a0cc-20308ff0a0db","sni":"1g.890699.xyZ","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"广东省肇庆市+中移铁通","type":"trojan","server":"csuzhou01.1cooldns.com","port":42303,"udp":true,"password":"VMhGp5wEIyCDf90T","sni":"hk06.run.place","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国+惠普HP","type":"trojan","server":"16.171.252.33","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国+Xerox","type":"trojan","server":"13.51.248.178","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国+CloudFlare节点+(3)","type":"trojan","server":"198.41.208.69","port":8443,"udp":true,"password":"123456","sni":"top-azx.pages.dev","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国+CloudFlare节点+(4)","type":"trojan","server":"104.21.73.150","port":443,"udp":true,"password":"cd0e795a-4f26-4f8c-9981-ed8b7dcb6126","sni":"sDFgHU.931.pP.ua","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国+CloudFlare节点+(5)","type":"trojan","server":"104.21.6.179","port":443,"udp":true,"password":"0cda5f7e-cc55-4ff2-8ad8-268b9b99dd01","sni":"uS6-16.890601.xyz","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国+CloudFlare节点+(6)","type":"trojan","server":"104.25.165.83","port":8443,"udp":true,"password":"123456","sni":"top-azx.pages.dev","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"德国+黑森州法兰克福Amazon数据中心","type":"trojan","server":"52.59.180.235","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国+CloudFlare节点+(7)","type":"trojan","server":"172.66.44.230","port":8443,"udp":true,"password":"8r<[9'l6hAO#8ZQi","sni":"Koma-YT.PAGeS.Dev","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"广东省广州市+电信","type":"trojan","server":"aafrtpfxr.twl01i9zjfegelp.5xfsur8v62.gosdk.xyz","port":27201,"udp":true,"password":"32b598e2-2bf7-4af1-8d17-306f839dde74","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国+CloudFlare节点+(8)","type":"trojan","server":"172.67.135.23","port":443,"udp":true,"password":"0cda5f7e-cc55-4ff2-8ad8-268b9b99dd01","sni":"uS6-16.890601.xyz","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国+V2CROSS.COM","type":"trojan","server":"45.146.232.172","port":27201,"udp":true,"password":"32b598e2-2bf7-4af1-8d17-306f839dde74","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国+CloudFlare节点+(9)","type":"trojan","server":"104.25.97.27","port":8443,"udp":true,"password":"123456","sni":"top-azx.pages.dev","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国+V2CROSS.COM+(1)","type":"trojan","server":"45.146.232.173","port":27201,"udp":true,"password":"32b598e2-2bf7-4af1-8d17-306f839dde74","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国+V2CROSS.COM+(2)","type":"trojan","server":"45.146.232.171","port":27201,"udp":true,"password":"32b598e2-2bf7-4af1-8d17-306f839dde74","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"哥斯达黎加+V2CROSS.COM","type":"trojan","server":"144.22.250.122","port":443,"udp":true,"password":"02926f9e-153a-42c8-8ecd-8fade7009ad1","sni":"golinkwuxian.top","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国+CloudFlare节点+(10)","type":"trojan","server":"104.21.16.1","port":443,"udp":true,"password":"a8fce442-ae9a-4cc1-a0cc-20308ff0a0db","sni":"1g.890699.xyZ","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国+CloudFlare节点+(11)","type":"trojan","server":"172.67.200.238","port":443,"udp":true,"password":"2fec7227-9abe-46f2-af18-78302b836c45","sni":"3s.890689.xyz","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国+Sprint网络","type":"trojan","server":"63.177.172.235","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国+CloudFlare节点+(13)","type":"trojan","server":"104.25.165.81","port":8443,"udp":true,"password":"123456","sni":"top-azx.pages.dev","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"澳大利亚+V2CROSS.COM","type":"trojan","server":"192.65.217.53","port":8443,"udp":true,"password":"123456","sni":"top-azx.pages.dev","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国+CloudFlare节点+(15)","type":"trojan","server":"172.66.45.2","port":443,"udp":true,"password":"auto","sni":"dcf741e8.epeius-2gy.pages.dev","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国+Amazon数据中心","type":"trojan","server":"18.203.200.20","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国+CloudFlare节点+(16)","type":"trojan","server":"172.67.163.102","port":443,"udp":true,"password":"cd0e795a-4f26-4f8c-9981-ed8b7dcb6126","sni":"sDFgHU.931.pP.ua","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国+CloudFlare节点+(17)","type":"trojan","server":"104.18.3.150","port":443,"udp":true,"password":"trojan","sni":"main.xicun.us.kg","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"俄罗斯新西伯利亚+justhost.ru","type":"trojan","server":"195.133.52.153","port":8443,"udp":true,"password":"@NoForcedHeaven@NoForcedHeaven@NoForcedHeaven@NoForcedHeaven@NoForcedHeaven@NoForcedHeaven","sni":"ru2.asc-sam.io","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国+Amazon数据中心+(1)","type":"trojan","server":"18.169.137.169","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"爱尔兰+都柏林Amazon数据中心","type":"trojan","server":"34.252.218.166","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国+Xerox+(1)","type":"trojan","server":"13.61.253.63","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国+CloudFlare节点+(19)","type":"trojan","server":"104.21.48.1","port":443,"udp":true,"password":"a8fce442-ae9a-4cc1-a0cc-20308ff0a0db","sni":"1g.890699.xyZ","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"南非+V2CROSS.COM","type":"ss","server":"45.207.157.83","port":30001,"password":"fbdba310-1139-4de7-a4e4-05c0f1462241","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🇭🇰 香港节点
-      - 🇸🇬 狮城节点
       - 🇺🇲 美国节点
       - 🇯🇵 日本节点
       - 🚀 手动切换
@@ -219,250 +176,244 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 香港(yudou66.com+玉豆免费节点)
-      - 美国(yudou66.com+玉豆免费节点)
-      - 美国(yudou66.com+玉豆免费节点)+2
-      - 美国(yudou66.com+玉豆免费节点)+3
-      - 美国(yudou66.com+玉豆免费节点)+4
-      - 美国(yudou66.com+玉豆免费节点)+5
-      - 美国(yudou66.com 玉豆免费节点) 6
-      - 美国(yudou66.com 玉豆免费节点) 7
-      - 美国(yudou66.com+玉豆免费节点)+8
-      - 美国(yudou66.com+玉豆免费节点)+9
-      - 美国(yudou66.com+玉豆免费节点)+10
-      - 美国(yudou66.com+玉豆免费节点)+11
-      - 新加坡(yudou66.com+玉豆免费节点)
-      - 美国(yudou66.com 玉豆免费节点) 12
-      - 俄罗斯(yudou66.com+玉豆免费节点)
-      - 美国(yudou66.com+玉豆免费节点)+13
-      - 俄罗斯(yudou66.com+玉豆免费节点)+2
-      - 美国(yudou66.com+玉豆免费节点)+14
-      - 美国(yudou66.com 玉豆免费节点) 15
-      - 美国(yudou66.com 玉豆免费节点) 16
-      - 新加坡(yudou66.com+玉豆免费节点)+2
-      - 美国(yudou66.com+玉豆免费节点)+17
-      - 美国(yudou66.com+玉豆免费节点)+18
-      - 香港(yudou66.com 玉豆免费节点) 2
-      - 美国(yudou66.com+玉豆免费节点)+19
-      - 美国(yudou66.com+玉豆免费节点)+20
-      - 美国(yudou66.com+玉豆免费节点)+21
-      - 美国(yudou66.com 玉豆免费节点) 22
-      - 香港(yudou66.com 玉豆免费节点) 3
-      - 美国(yudou66.com 玉豆免费节点) 23
-      - 香港(yudou66.com+玉豆免费节点)+4
-      - 日本(yudou66.com+玉豆免费节点)
-      - 美国(yudou66.com+玉豆免费节点)+24
-      - 香港(yudou66.com+玉豆免费节点)+5
-      - 香港(yudou66.com+玉豆免费节点)+6
-      - 美国(yudou66.com 玉豆免费节点) 25
-      - 香港(yudou66.com+玉豆免费节点)+7
-      - 美国(yudou66.com+玉豆免费节点)+26
-      - 香港(yudou66.com+玉豆免费节点)+8
-      - 美国(yudou66.com+玉豆免费节点)+27
-      - 美国(yudou66.com+玉豆免费节点)+28
-      - 美国(yudou66.com+玉豆免费节点)+29
-      - 美国(yudou66.com 玉豆免费节点) 30
-      - 美国(yudou66.com+玉豆免费节点)+31
-      - 香港(yudou66.com 玉豆免费节点) 9
-      - 美国(yudou66.com+玉豆免费节点)+32
-      - 美国(yudou66.com+玉豆免费节点)+33
-      - 美国(yudou66.com+玉豆免费节点)+34
-      - 美国(yudou66.com 玉豆免费节点) 35
-      - 美国(yudou66.com+玉豆免费节点)+36
-      - 香港(yudou66.com 玉豆免费节点) 10
-      - 韩国(yudou66.com+玉豆免费节点)
-      - 韩国(yudou66.com+玉豆免费节点)+2
-      - 韩国(yudou66.com+玉豆免费节点)+3
-      - 韩国(yudou66.com+玉豆免费节点)+4
-      - 韩国(yudou66.com+玉豆免费节点)+5
-      - 美国(yudou66.com+玉豆免费节点)+37
-      - 美国(yudou66.com+玉豆免费节点)+38
-      - 韩国(yudou66.com+玉豆免费节点)+6
-      - 乌克兰(yudou66.com+玉豆免费节点)
-      - 韩国(yudou66.com+玉豆免费节点)+7
-      - 韩国(yudou66.com+玉豆免费节点)+8
-      - 美国(yudou66.com+玉豆免费节点)+39
-      - 美国(yudou66.com 玉豆免费节点) 40
-      - 美国(yudou66.com+玉豆免费节点)+41
-      - 美国(yudou66.com+玉豆免费节点)+42
-      - 美国(yudou66.com+玉豆免费节点)+43
-      - 韩国(yudou66.com+玉豆免费节点)+9
-      - 美国(yudou66.com+玉豆免费节点)+44
-      - 美国(yudou66.com 玉豆免费节点) 45
-      - 美国(yudou66.com+玉豆免费节点)+46
-      - 日本(yudou66.com+玉豆免费节点)+2
-      - 美国(yudou66.com+玉豆免费节点)+47
-      - 美国(yudou66.com+玉豆免费节点)+48
-      - 俄罗斯(yudou66.com+玉豆免费节点)+3
-      - 美国(yudou66.com+玉豆免费节点)+49
-      - 美国(yudou66.com+玉豆免费节点)+50
-      - 美国(yudou66.com+玉豆免费节点)+51
-      - 美国(yudou66.com+玉豆免费节点)+52
-      - 韩国(yudou66.com+玉豆免费节点)+10
-      - 美国(yudou66.com+玉豆免费节点)+53
-      - 美国(yudou66.com+玉豆免费节点)+54
-      - 俄罗斯(yudou66.com+玉豆免费节点)+4
-      - 美国(yudou66.com+玉豆免费节点)+55
-      - 俄罗斯(yudou66.com+玉豆免费节点)+5
-      - 美国(yudou66.com+玉豆免费节点)+56
-      - 美国(yudou66.com+玉豆免费节点)+57
-      - 俄罗斯(yudou66.com+玉豆免费节点)+6
-      - 俄罗斯(yudou66.com+玉豆免费节点)+7
-      - 美国(yudou66.com+玉豆免费节点)+58
-      - 美国(yudou66.com+玉豆免费节点)+59
-      - 俄罗斯(yudou66.com+玉豆免费节点)+8
-      - 俄罗斯(yudou66.com+玉豆免费节点)+9
-      - 美国(yudou66.com+玉豆免费节点)+60
-      - 美国(yudou66.com+玉豆免费节点)+61
-      - 美国(yudou66.com+玉豆免费节点)+62
-      - 俄罗斯(yudou66.com+玉豆免费节点)+10
-      - 美国(yudou66.com+玉豆免费节点)+63
-      - 美国(yudou66.com+玉豆免费节点)+64
-      - 美国(yudou66.com+玉豆免费节点)+65
-      - 俄罗斯(yudou66.com+玉豆免费节点)+11
-      - 美国(yudou66.com+玉豆免费节点)+66
-      - 香港(yudou66.com+玉豆免费节点)+11
-      - 俄罗斯(yudou66.com+玉豆免费节点)+12
-      - 美国(yudou66.com+玉豆免费节点)+67
-      - 香港(yudou66.com+玉豆免费节点)+12
-      - 香港(yudou66.com+玉豆免费节点)+13
-      - 美国(yudou66.com+玉豆免费节点)+68
-      - 美国(yudou66.com+玉豆免费节点)+69
-      - 美国(yudou66.com+玉豆免费节点)+70
-      - 美国(yudou66.com+玉豆免费节点)+71
-      - 美国(yudou66.com+玉豆免费节点)+72
-      - 俄罗斯(yudou66.com+玉豆免费节点)+13
-      - 美国(yudou66.com+玉豆免费节点)+73
-      - 美国(yudou66.com+玉豆免费节点)+74
-      - 美国(yudou66.com+玉豆免费节点)+75
-      - 美国(yudou66.com+玉豆免费节点)+76
-      - 美国(yudou66.com+玉豆免费节点)+77
-      - 美国(yudou66.com+玉豆免费节点)+78
-  - name: ♻️ 自动选择
+      - 海南省+移动(全省通用)
+      - 海南省+移动(全省通用)+(1)
+      - 俄罗斯+V2CROSS.COM
+      - 波兰+V2CROSS.COM
+      - 广东省 移动
+      - 美国 CloudFlare节点
+      - 山东省 电信
+      - 吉林省 移动(全省通用)
+      - 吉林省 移动(全省通用) (1)
+      - 广东省 移动 (1)
+      - 日本 大阪Google云计算数据中心
+      - 美国 CloudFlare节点 (1)
+      - 美国 CloudFlare节点 (2)
+      - 美国 CloudFlare节点 (3)
+      - 美国 CloudFlare节点 (4)
+      - 美国 3COM公司企业网
+      - 美国 CloudFlare节点 (5)
+      - 广东省江门市 移动
+      - 巴西圣保罗 CloudFlare节点
+      - 广东省广州市 移动
+      - 美国 CloudFlare节点 (6)
+      - 美国 CloudFlare节点 (7)
+      - 美国 CloudFlare节点 (8)
+      - 美国 CloudFlare节点 (9)
+      - 吉林省 移动(全省通用) (2)
+      - 美国 CloudFlare节点 (10)
+      - 美国 CloudFlare节点 (11)
+      - 广东省 移动 (2)
+      - 美国 CloudFlare节点 (12)
+      - 英国 V2CROSS.COM
+      - 美国 CloudFlare节点 (13)
+      - 美国 CloudFlare节点 (14)
+      - 美国 CloudFlare节点 (15)
+      - 美国 CloudFlare节点 (16)
+      - 美国 CloudFlare节点 (17)
+      - 美国 CloudFlare节点 (18)
+      - 俄罗斯 Rubtsovsk Branch of Altai State University
+      - 广东省湛江市 移动
+      - 美国 CloudFlare节点 (19)
+      - 美国 CloudFlare节点 (20)
+      - 希腊 V2CROSS.COM
+      - 美国 CloudFlare节点 (21)
+      - 广东省湛江市 移动 (1)
+      - 美国 CloudFlare节点 (22)
+      - 俄罗斯 V2CROSS.COM
+      - 美国 CloudFlare节点 (23)
+      - 巴西圣保罗 CloudFlare节点 (1)
+      - 吉林省 移动(全省通用) (3)
+      - 美国 CloudFlare节点 (24)
+      - 美国 CloudFlare节点 (25)
+      - 广东省湛江市 移动 (2)
+      - 美国 CloudFlare节点 (26)
+      - 美国 CloudFlare节点 (27)
+      - 美国 CloudFlare节点 (28)
+      - 广东省广州市 移动 (1)
+      - 海南省 移动(全省通用)
+      - 吉林省 移动(全省通用) (4)
+      - 广东省广州市 移动 (2)
+      - 美国 CloudFlare节点 (29)
+      - 香港 Google云计算数据中心
+      - 美国 CloudFlare节点 (30)
+      - 韩国 V2CROSS.COM
+      - 山东省济南市 联通IDC机房
+      - 美国 CloudFlare节点 (31)
+      - 美国 CloudFlare节点 (32)
+      - 美国 CloudFlare节点 (33)
+      - 希腊 V2CROSS.COM (1)
+      - 广东省广州市 移动 (3)
+      - 美国 CloudFlare节点 (34)
+      - 美国 CloudFlare节点 (35)
+      - 美国 CloudFlare节点 (36)
+      - 美国 CloudFlare节点 (37)
+      - 巴西圣保罗 CloudFlare节点 (2)
+      - 美国 CloudFlare节点 (38)
+      - 江苏省南京市 移动
+      - 印度 V2CROSS.COM
+      - 印度 V2CROSS.COM (1)
+      - 美国 CloudFlare节点 (39)
+      - 印度 V2CROSS.COM (2)
+      - 美国 Fastly全球Anycast节点
+      - 美国+CloudFlare节点
+      - 英国+伦敦Amazon数据中心
+      - 美国+CloudFlare节点+(1)
+      - 美国加利福尼亚州洛杉矶+Cloudinnovation数据中心
+      - 美国+CloudFlare节点+(2)
+      - 广东省肇庆市+中移铁通
+      - 美国+惠普HP
+      - 美国+Xerox
+      - 美国+CloudFlare节点+(3)
+      - 美国+CloudFlare节点+(4)
+      - 美国+CloudFlare节点+(5)
+      - 美国+CloudFlare节点+(6)
+      - 德国+黑森州法兰克福Amazon数据中心
+      - 美国+CloudFlare节点+(7)
+      - 广东省广州市+电信
+      - 美国+CloudFlare节点+(8)
+      - 美国+V2CROSS.COM
+      - 美国+CloudFlare节点+(9)
+      - 美国+V2CROSS.COM+(1)
+      - 美国+V2CROSS.COM+(2)
+      - 哥斯达黎加+V2CROSS.COM
+      - 美国+CloudFlare节点+(10)
+      - 美国+CloudFlare节点+(11)
+      - 美国+Sprint网络
+      - 美国+CloudFlare节点+(13)
+      - 澳大利亚+V2CROSS.COM
+      - 美国+CloudFlare节点+(15)
+      - 美国+Amazon数据中心
+      - 美国+CloudFlare节点+(16)
+      - 美国+CloudFlare节点+(17)
+      - 俄罗斯新西伯利亚+justhost.ru
+      - 美国+Amazon数据中心+(1)
+      - 爱尔兰+都柏林Amazon数据中心
+      - 美国+Xerox+(1)
+      - 美国+CloudFlare节点+(19)
+      - 南非+V2CROSS.COM
+  - interval: 300
+    name: ♻️ 自动选择
     type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
     proxies:
-      - 香港(yudou66.com+玉豆免费节点)
-      - 美国(yudou66.com+玉豆免费节点)
-      - 美国(yudou66.com+玉豆免费节点)+2
-      - 美国(yudou66.com+玉豆免费节点)+3
-      - 美国(yudou66.com+玉豆免费节点)+4
-      - 美国(yudou66.com+玉豆免费节点)+5
-      - 美国(yudou66.com 玉豆免费节点) 6
-      - 美国(yudou66.com 玉豆免费节点) 7
-      - 美国(yudou66.com+玉豆免费节点)+8
-      - 美国(yudou66.com+玉豆免费节点)+9
-      - 美国(yudou66.com+玉豆免费节点)+10
-      - 美国(yudou66.com+玉豆免费节点)+11
-      - 新加坡(yudou66.com+玉豆免费节点)
-      - 美国(yudou66.com 玉豆免费节点) 12
-      - 俄罗斯(yudou66.com+玉豆免费节点)
-      - 美国(yudou66.com+玉豆免费节点)+13
-      - 俄罗斯(yudou66.com+玉豆免费节点)+2
-      - 美国(yudou66.com+玉豆免费节点)+14
-      - 美国(yudou66.com 玉豆免费节点) 15
-      - 美国(yudou66.com 玉豆免费节点) 16
-      - 新加坡(yudou66.com+玉豆免费节点)+2
-      - 美国(yudou66.com+玉豆免费节点)+17
-      - 美国(yudou66.com+玉豆免费节点)+18
-      - 香港(yudou66.com 玉豆免费节点) 2
-      - 美国(yudou66.com+玉豆免费节点)+19
-      - 美国(yudou66.com+玉豆免费节点)+20
-      - 美国(yudou66.com+玉豆免费节点)+21
-      - 美国(yudou66.com 玉豆免费节点) 22
-      - 香港(yudou66.com 玉豆免费节点) 3
-      - 美国(yudou66.com 玉豆免费节点) 23
-      - 香港(yudou66.com+玉豆免费节点)+4
-      - 日本(yudou66.com+玉豆免费节点)
-      - 美国(yudou66.com+玉豆免费节点)+24
-      - 香港(yudou66.com+玉豆免费节点)+5
-      - 香港(yudou66.com+玉豆免费节点)+6
-      - 美国(yudou66.com 玉豆免费节点) 25
-      - 香港(yudou66.com+玉豆免费节点)+7
-      - 美国(yudou66.com+玉豆免费节点)+26
-      - 香港(yudou66.com+玉豆免费节点)+8
-      - 美国(yudou66.com+玉豆免费节点)+27
-      - 美国(yudou66.com+玉豆免费节点)+28
-      - 美国(yudou66.com+玉豆免费节点)+29
-      - 美国(yudou66.com 玉豆免费节点) 30
-      - 美国(yudou66.com+玉豆免费节点)+31
-      - 香港(yudou66.com 玉豆免费节点) 9
-      - 美国(yudou66.com+玉豆免费节点)+32
-      - 美国(yudou66.com+玉豆免费节点)+33
-      - 美国(yudou66.com+玉豆免费节点)+34
-      - 美国(yudou66.com 玉豆免费节点) 35
-      - 美国(yudou66.com+玉豆免费节点)+36
-      - 香港(yudou66.com 玉豆免费节点) 10
-      - 韩国(yudou66.com+玉豆免费节点)
-      - 韩国(yudou66.com+玉豆免费节点)+2
-      - 韩国(yudou66.com+玉豆免费节点)+3
-      - 韩国(yudou66.com+玉豆免费节点)+4
-      - 韩国(yudou66.com+玉豆免费节点)+5
-      - 美国(yudou66.com+玉豆免费节点)+37
-      - 美国(yudou66.com+玉豆免费节点)+38
-      - 韩国(yudou66.com+玉豆免费节点)+6
-      - 乌克兰(yudou66.com+玉豆免费节点)
-      - 韩国(yudou66.com+玉豆免费节点)+7
-      - 韩国(yudou66.com+玉豆免费节点)+8
-      - 美国(yudou66.com+玉豆免费节点)+39
-      - 美国(yudou66.com 玉豆免费节点) 40
-      - 美国(yudou66.com+玉豆免费节点)+41
-      - 美国(yudou66.com+玉豆免费节点)+42
-      - 美国(yudou66.com+玉豆免费节点)+43
-      - 韩国(yudou66.com+玉豆免费节点)+9
-      - 美国(yudou66.com+玉豆免费节点)+44
-      - 美国(yudou66.com 玉豆免费节点) 45
-      - 美国(yudou66.com+玉豆免费节点)+46
-      - 日本(yudou66.com+玉豆免费节点)+2
-      - 美国(yudou66.com+玉豆免费节点)+47
-      - 美国(yudou66.com+玉豆免费节点)+48
-      - 俄罗斯(yudou66.com+玉豆免费节点)+3
-      - 美国(yudou66.com+玉豆免费节点)+49
-      - 美国(yudou66.com+玉豆免费节点)+50
-      - 美国(yudou66.com+玉豆免费节点)+51
-      - 美国(yudou66.com+玉豆免费节点)+52
-      - 韩国(yudou66.com+玉豆免费节点)+10
-      - 美国(yudou66.com+玉豆免费节点)+53
-      - 美国(yudou66.com+玉豆免费节点)+54
-      - 俄罗斯(yudou66.com+玉豆免费节点)+4
-      - 美国(yudou66.com+玉豆免费节点)+55
-      - 俄罗斯(yudou66.com+玉豆免费节点)+5
-      - 美国(yudou66.com+玉豆免费节点)+56
-      - 美国(yudou66.com+玉豆免费节点)+57
-      - 俄罗斯(yudou66.com+玉豆免费节点)+6
-      - 俄罗斯(yudou66.com+玉豆免费节点)+7
-      - 美国(yudou66.com+玉豆免费节点)+58
-      - 美国(yudou66.com+玉豆免费节点)+59
-      - 俄罗斯(yudou66.com+玉豆免费节点)+8
-      - 俄罗斯(yudou66.com+玉豆免费节点)+9
-      - 美国(yudou66.com+玉豆免费节点)+60
-      - 美国(yudou66.com+玉豆免费节点)+61
-      - 美国(yudou66.com+玉豆免费节点)+62
-      - 俄罗斯(yudou66.com+玉豆免费节点)+10
-      - 美国(yudou66.com+玉豆免费节点)+63
-      - 美国(yudou66.com+玉豆免费节点)+64
-      - 美国(yudou66.com+玉豆免费节点)+65
-      - 俄罗斯(yudou66.com+玉豆免费节点)+11
-      - 美国(yudou66.com+玉豆免费节点)+66
-      - 香港(yudou66.com+玉豆免费节点)+11
-      - 俄罗斯(yudou66.com+玉豆免费节点)+12
-      - 美国(yudou66.com+玉豆免费节点)+67
-      - 香港(yudou66.com+玉豆免费节点)+12
-      - 香港(yudou66.com+玉豆免费节点)+13
-      - 美国(yudou66.com+玉豆免费节点)+68
-      - 美国(yudou66.com+玉豆免费节点)+69
-      - 美国(yudou66.com+玉豆免费节点)+70
-      - 美国(yudou66.com+玉豆免费节点)+71
-      - 美国(yudou66.com+玉豆免费节点)+72
-      - 俄罗斯(yudou66.com+玉豆免费节点)+13
-      - 美国(yudou66.com+玉豆免费节点)+73
-      - 美国(yudou66.com+玉豆免费节点)+74
-      - 美国(yudou66.com+玉豆免费节点)+75
-      - 美国(yudou66.com+玉豆免费节点)+76
-      - 美国(yudou66.com+玉豆免费节点)+77
-      - 美国(yudou66.com+玉豆免费节点)+78
+      - 海南省+移动(全省通用)
+      - 海南省+移动(全省通用)+(1)
+      - 俄罗斯+V2CROSS.COM
+      - 波兰+V2CROSS.COM
+      - 广东省 移动
+      - 美国 CloudFlare节点
+      - 山东省 电信
+      - 吉林省 移动(全省通用)
+      - 吉林省 移动(全省通用) (1)
+      - 广东省 移动 (1)
+      - 日本 大阪Google云计算数据中心
+      - 美国 CloudFlare节点 (1)
+      - 美国 CloudFlare节点 (2)
+      - 美国 CloudFlare节点 (3)
+      - 美国 CloudFlare节点 (4)
+      - 美国 3COM公司企业网
+      - 美国 CloudFlare节点 (5)
+      - 广东省江门市 移动
+      - 巴西圣保罗 CloudFlare节点
+      - 广东省广州市 移动
+      - 美国 CloudFlare节点 (6)
+      - 美国 CloudFlare节点 (7)
+      - 美国 CloudFlare节点 (8)
+      - 美国 CloudFlare节点 (9)
+      - 吉林省 移动(全省通用) (2)
+      - 美国 CloudFlare节点 (10)
+      - 美国 CloudFlare节点 (11)
+      - 广东省 移动 (2)
+      - 美国 CloudFlare节点 (12)
+      - 英国 V2CROSS.COM
+      - 美国 CloudFlare节点 (13)
+      - 美国 CloudFlare节点 (14)
+      - 美国 CloudFlare节点 (15)
+      - 美国 CloudFlare节点 (16)
+      - 美国 CloudFlare节点 (17)
+      - 美国 CloudFlare节点 (18)
+      - 俄罗斯 Rubtsovsk Branch of Altai State University
+      - 广东省湛江市 移动
+      - 美国 CloudFlare节点 (19)
+      - 美国 CloudFlare节点 (20)
+      - 希腊 V2CROSS.COM
+      - 美国 CloudFlare节点 (21)
+      - 广东省湛江市 移动 (1)
+      - 美国 CloudFlare节点 (22)
+      - 俄罗斯 V2CROSS.COM
+      - 美国 CloudFlare节点 (23)
+      - 巴西圣保罗 CloudFlare节点 (1)
+      - 吉林省 移动(全省通用) (3)
+      - 美国 CloudFlare节点 (24)
+      - 美国 CloudFlare节点 (25)
+      - 广东省湛江市 移动 (2)
+      - 美国 CloudFlare节点 (26)
+      - 美国 CloudFlare节点 (27)
+      - 美国 CloudFlare节点 (28)
+      - 广东省广州市 移动 (1)
+      - 海南省 移动(全省通用)
+      - 吉林省 移动(全省通用) (4)
+      - 广东省广州市 移动 (2)
+      - 美国 CloudFlare节点 (29)
+      - 香港 Google云计算数据中心
+      - 美国 CloudFlare节点 (30)
+      - 韩国 V2CROSS.COM
+      - 山东省济南市 联通IDC机房
+      - 美国 CloudFlare节点 (31)
+      - 美国 CloudFlare节点 (32)
+      - 美国 CloudFlare节点 (33)
+      - 希腊 V2CROSS.COM (1)
+      - 广东省广州市 移动 (3)
+      - 美国 CloudFlare节点 (34)
+      - 美国 CloudFlare节点 (35)
+      - 美国 CloudFlare节点 (36)
+      - 美国 CloudFlare节点 (37)
+      - 巴西圣保罗 CloudFlare节点 (2)
+      - 美国 CloudFlare节点 (38)
+      - 江苏省南京市 移动
+      - 印度 V2CROSS.COM
+      - 印度 V2CROSS.COM (1)
+      - 美国 CloudFlare节点 (39)
+      - 印度 V2CROSS.COM (2)
+      - 美国 Fastly全球Anycast节点
+      - 美国+CloudFlare节点
+      - 英国+伦敦Amazon数据中心
+      - 美国+CloudFlare节点+(1)
+      - 美国加利福尼亚州洛杉矶+Cloudinnovation数据中心
+      - 美国+CloudFlare节点+(2)
+      - 广东省肇庆市+中移铁通
+      - 美国+惠普HP
+      - 美国+Xerox
+      - 美国+CloudFlare节点+(3)
+      - 美国+CloudFlare节点+(4)
+      - 美国+CloudFlare节点+(5)
+      - 美国+CloudFlare节点+(6)
+      - 德国+黑森州法兰克福Amazon数据中心
+      - 美国+CloudFlare节点+(7)
+      - 广东省广州市+电信
+      - 美国+CloudFlare节点+(8)
+      - 美国+V2CROSS.COM
+      - 美国+CloudFlare节点+(9)
+      - 美国+V2CROSS.COM+(1)
+      - 美国+V2CROSS.COM+(2)
+      - 哥斯达黎加+V2CROSS.COM
+      - 美国+CloudFlare节点+(10)
+      - 美国+CloudFlare节点+(11)
+      - 美国+Sprint网络
+      - 美国+CloudFlare节点+(13)
+      - 澳大利亚+V2CROSS.COM
+      - 美国+CloudFlare节点+(15)
+      - 美国+Amazon数据中心
+      - 美国+CloudFlare节点+(16)
+      - 美国+CloudFlare节点+(17)
+      - 俄罗斯新西伯利亚+justhost.ru
+      - 美国+Amazon数据中心+(1)
+      - 爱尔兰+都柏林Amazon数据中心
+      - 美国+Xerox+(1)
+      - 美国+CloudFlare节点+(19)
+      - 南非+V2CROSS.COM
+    url: https://www.gstatic.com/generate_204
+    tolerance: 50
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -480,244 +431,211 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港(yudou66.com+玉豆免费节点)
-      - 美国(yudou66.com+玉豆免费节点)
-      - 美国(yudou66.com+玉豆免费节点)+2
-      - 美国(yudou66.com+玉豆免费节点)+3
-      - 美国(yudou66.com+玉豆免费节点)+4
-      - 美国(yudou66.com+玉豆免费节点)+5
-      - 美国(yudou66.com 玉豆免费节点) 6
-      - 美国(yudou66.com 玉豆免费节点) 7
-      - 美国(yudou66.com+玉豆免费节点)+8
-      - 美国(yudou66.com+玉豆免费节点)+9
-      - 美国(yudou66.com+玉豆免费节点)+10
-      - 美国(yudou66.com+玉豆免费节点)+11
-      - 新加坡(yudou66.com+玉豆免费节点)
-      - 美国(yudou66.com 玉豆免费节点) 12
-      - 俄罗斯(yudou66.com+玉豆免费节点)
-      - 美国(yudou66.com+玉豆免费节点)+13
-      - 俄罗斯(yudou66.com+玉豆免费节点)+2
-      - 美国(yudou66.com+玉豆免费节点)+14
-      - 美国(yudou66.com 玉豆免费节点) 15
-      - 美国(yudou66.com 玉豆免费节点) 16
-      - 新加坡(yudou66.com+玉豆免费节点)+2
-      - 美国(yudou66.com+玉豆免费节点)+17
-      - 美国(yudou66.com+玉豆免费节点)+18
-      - 香港(yudou66.com 玉豆免费节点) 2
-      - 美国(yudou66.com+玉豆免费节点)+19
-      - 美国(yudou66.com+玉豆免费节点)+20
-      - 美国(yudou66.com+玉豆免费节点)+21
-      - 美国(yudou66.com 玉豆免费节点) 22
-      - 香港(yudou66.com 玉豆免费节点) 3
-      - 美国(yudou66.com 玉豆免费节点) 23
-      - 香港(yudou66.com+玉豆免费节点)+4
-      - 日本(yudou66.com+玉豆免费节点)
-      - 美国(yudou66.com+玉豆免费节点)+24
-      - 香港(yudou66.com+玉豆免费节点)+5
-      - 香港(yudou66.com+玉豆免费节点)+6
-      - 美国(yudou66.com 玉豆免费节点) 25
-      - 香港(yudou66.com+玉豆免费节点)+7
-      - 美国(yudou66.com+玉豆免费节点)+26
-      - 香港(yudou66.com+玉豆免费节点)+8
-      - 美国(yudou66.com+玉豆免费节点)+27
-      - 美国(yudou66.com+玉豆免费节点)+28
-      - 美国(yudou66.com+玉豆免费节点)+29
-      - 美国(yudou66.com 玉豆免费节点) 30
-      - 美国(yudou66.com+玉豆免费节点)+31
-      - 香港(yudou66.com 玉豆免费节点) 9
-      - 美国(yudou66.com+玉豆免费节点)+32
-      - 美国(yudou66.com+玉豆免费节点)+33
-      - 美国(yudou66.com+玉豆免费节点)+34
-      - 美国(yudou66.com 玉豆免费节点) 35
-      - 美国(yudou66.com+玉豆免费节点)+36
-      - 香港(yudou66.com 玉豆免费节点) 10
-      - 韩国(yudou66.com+玉豆免费节点)
-      - 韩国(yudou66.com+玉豆免费节点)+2
-      - 韩国(yudou66.com+玉豆免费节点)+3
-      - 韩国(yudou66.com+玉豆免费节点)+4
-      - 韩国(yudou66.com+玉豆免费节点)+5
-      - 美国(yudou66.com+玉豆免费节点)+37
-      - 美国(yudou66.com+玉豆免费节点)+38
-      - 韩国(yudou66.com+玉豆免费节点)+6
-      - 乌克兰(yudou66.com+玉豆免费节点)
-      - 韩国(yudou66.com+玉豆免费节点)+7
-      - 韩国(yudou66.com+玉豆免费节点)+8
-      - 美国(yudou66.com+玉豆免费节点)+39
-      - 美国(yudou66.com 玉豆免费节点) 40
-      - 美国(yudou66.com+玉豆免费节点)+41
-      - 美国(yudou66.com+玉豆免费节点)+42
-      - 美国(yudou66.com+玉豆免费节点)+43
-      - 韩国(yudou66.com+玉豆免费节点)+9
-      - 美国(yudou66.com+玉豆免费节点)+44
-      - 美国(yudou66.com 玉豆免费节点) 45
-      - 美国(yudou66.com+玉豆免费节点)+46
-      - 日本(yudou66.com+玉豆免费节点)+2
-      - 美国(yudou66.com+玉豆免费节点)+47
-      - 美国(yudou66.com+玉豆免费节点)+48
-      - 俄罗斯(yudou66.com+玉豆免费节点)+3
-      - 美国(yudou66.com+玉豆免费节点)+49
-      - 美国(yudou66.com+玉豆免费节点)+50
-      - 美国(yudou66.com+玉豆免费节点)+51
-      - 美国(yudou66.com+玉豆免费节点)+52
-      - 韩国(yudou66.com+玉豆免费节点)+10
-      - 美国(yudou66.com+玉豆免费节点)+53
-      - 美国(yudou66.com+玉豆免费节点)+54
-      - 俄罗斯(yudou66.com+玉豆免费节点)+4
-      - 美国(yudou66.com+玉豆免费节点)+55
-      - 俄罗斯(yudou66.com+玉豆免费节点)+5
-      - 美国(yudou66.com+玉豆免费节点)+56
-      - 美国(yudou66.com+玉豆免费节点)+57
-      - 俄罗斯(yudou66.com+玉豆免费节点)+6
-      - 俄罗斯(yudou66.com+玉豆免费节点)+7
-      - 美国(yudou66.com+玉豆免费节点)+58
-      - 美国(yudou66.com+玉豆免费节点)+59
-      - 俄罗斯(yudou66.com+玉豆免费节点)+8
-      - 俄罗斯(yudou66.com+玉豆免费节点)+9
-      - 美国(yudou66.com+玉豆免费节点)+60
-      - 美国(yudou66.com+玉豆免费节点)+61
-      - 美国(yudou66.com+玉豆免费节点)+62
-      - 俄罗斯(yudou66.com+玉豆免费节点)+10
-      - 美国(yudou66.com+玉豆免费节点)+63
-      - 美国(yudou66.com+玉豆免费节点)+64
-      - 美国(yudou66.com+玉豆免费节点)+65
-      - 俄罗斯(yudou66.com+玉豆免费节点)+11
-      - 美国(yudou66.com+玉豆免费节点)+66
-      - 香港(yudou66.com+玉豆免费节点)+11
-      - 俄罗斯(yudou66.com+玉豆免费节点)+12
-      - 美国(yudou66.com+玉豆免费节点)+67
-      - 香港(yudou66.com+玉豆免费节点)+12
-      - 香港(yudou66.com+玉豆免费节点)+13
-      - 美国(yudou66.com+玉豆免费节点)+68
-      - 美国(yudou66.com+玉豆免费节点)+69
-      - 美国(yudou66.com+玉豆免费节点)+70
-      - 美国(yudou66.com+玉豆免费节点)+71
-      - 美国(yudou66.com+玉豆免费节点)+72
-      - 俄罗斯(yudou66.com+玉豆免费节点)+13
-      - 美国(yudou66.com+玉豆免费节点)+73
-      - 美国(yudou66.com+玉豆免费节点)+74
-      - 美国(yudou66.com+玉豆免费节点)+75
-      - 美国(yudou66.com+玉豆免费节点)+76
-      - 美国(yudou66.com+玉豆免费节点)+77
-      - 美国(yudou66.com+玉豆免费节点)+78
-  - name: 🇭🇰 香港节点
+      - 海南省+移动(全省通用)
+      - 海南省+移动(全省通用)+(1)
+      - 俄罗斯+V2CROSS.COM
+      - 波兰+V2CROSS.COM
+      - 广东省 移动
+      - 美国 CloudFlare节点
+      - 山东省 电信
+      - 吉林省 移动(全省通用)
+      - 吉林省 移动(全省通用) (1)
+      - 广东省 移动 (1)
+      - 日本 大阪Google云计算数据中心
+      - 美国 CloudFlare节点 (1)
+      - 美国 CloudFlare节点 (2)
+      - 美国 CloudFlare节点 (3)
+      - 美国 CloudFlare节点 (4)
+      - 美国 3COM公司企业网
+      - 美国 CloudFlare节点 (5)
+      - 广东省江门市 移动
+      - 巴西圣保罗 CloudFlare节点
+      - 广东省广州市 移动
+      - 美国 CloudFlare节点 (6)
+      - 美国 CloudFlare节点 (7)
+      - 美国 CloudFlare节点 (8)
+      - 美国 CloudFlare节点 (9)
+      - 吉林省 移动(全省通用) (2)
+      - 美国 CloudFlare节点 (10)
+      - 美国 CloudFlare节点 (11)
+      - 广东省 移动 (2)
+      - 美国 CloudFlare节点 (12)
+      - 英国 V2CROSS.COM
+      - 美国 CloudFlare节点 (13)
+      - 美国 CloudFlare节点 (14)
+      - 美国 CloudFlare节点 (15)
+      - 美国 CloudFlare节点 (16)
+      - 美国 CloudFlare节点 (17)
+      - 美国 CloudFlare节点 (18)
+      - 俄罗斯 Rubtsovsk Branch of Altai State University
+      - 广东省湛江市 移动
+      - 美国 CloudFlare节点 (19)
+      - 美国 CloudFlare节点 (20)
+      - 希腊 V2CROSS.COM
+      - 美国 CloudFlare节点 (21)
+      - 广东省湛江市 移动 (1)
+      - 美国 CloudFlare节点 (22)
+      - 俄罗斯 V2CROSS.COM
+      - 美国 CloudFlare节点 (23)
+      - 巴西圣保罗 CloudFlare节点 (1)
+      - 吉林省 移动(全省通用) (3)
+      - 美国 CloudFlare节点 (24)
+      - 美国 CloudFlare节点 (25)
+      - 广东省湛江市 移动 (2)
+      - 美国 CloudFlare节点 (26)
+      - 美国 CloudFlare节点 (27)
+      - 美国 CloudFlare节点 (28)
+      - 广东省广州市 移动 (1)
+      - 海南省 移动(全省通用)
+      - 吉林省 移动(全省通用) (4)
+      - 广东省广州市 移动 (2)
+      - 美国 CloudFlare节点 (29)
+      - 香港 Google云计算数据中心
+      - 美国 CloudFlare节点 (30)
+      - 韩国 V2CROSS.COM
+      - 山东省济南市 联通IDC机房
+      - 美国 CloudFlare节点 (31)
+      - 美国 CloudFlare节点 (32)
+      - 美国 CloudFlare节点 (33)
+      - 希腊 V2CROSS.COM (1)
+      - 广东省广州市 移动 (3)
+      - 美国 CloudFlare节点 (34)
+      - 美国 CloudFlare节点 (35)
+      - 美国 CloudFlare节点 (36)
+      - 美国 CloudFlare节点 (37)
+      - 巴西圣保罗 CloudFlare节点 (2)
+      - 美国 CloudFlare节点 (38)
+      - 江苏省南京市 移动
+      - 印度 V2CROSS.COM
+      - 印度 V2CROSS.COM (1)
+      - 美国 CloudFlare节点 (39)
+      - 印度 V2CROSS.COM (2)
+      - 美国 Fastly全球Anycast节点
+      - 美国+CloudFlare节点
+      - 英国+伦敦Amazon数据中心
+      - 美国+CloudFlare节点+(1)
+      - 美国加利福尼亚州洛杉矶+Cloudinnovation数据中心
+      - 美国+CloudFlare节点+(2)
+      - 广东省肇庆市+中移铁通
+      - 美国+惠普HP
+      - 美国+Xerox
+      - 美国+CloudFlare节点+(3)
+      - 美国+CloudFlare节点+(4)
+      - 美国+CloudFlare节点+(5)
+      - 美国+CloudFlare节点+(6)
+      - 德国+黑森州法兰克福Amazon数据中心
+      - 美国+CloudFlare节点+(7)
+      - 广东省广州市+电信
+      - 美国+CloudFlare节点+(8)
+      - 美国+V2CROSS.COM
+      - 美国+CloudFlare节点+(9)
+      - 美国+V2CROSS.COM+(1)
+      - 美国+V2CROSS.COM+(2)
+      - 哥斯达黎加+V2CROSS.COM
+      - 美国+CloudFlare节点+(10)
+      - 美国+CloudFlare节点+(11)
+      - 美国+Sprint网络
+      - 美国+CloudFlare节点+(13)
+      - 澳大利亚+V2CROSS.COM
+      - 美国+CloudFlare节点+(15)
+      - 美国+Amazon数据中心
+      - 美国+CloudFlare节点+(16)
+      - 美国+CloudFlare节点+(17)
+      - 俄罗斯新西伯利亚+justhost.ru
+      - 美国+Amazon数据中心+(1)
+      - 爱尔兰+都柏林Amazon数据中心
+      - 美国+Xerox+(1)
+      - 美国+CloudFlare节点+(19)
+      - 南非+V2CROSS.COM
+  - interval: 300
+    name: 🇭🇰 香港节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
     proxies:
-      - 香港(yudou66.com+玉豆免费节点)
-      - 香港(yudou66.com 玉豆免费节点) 2
-      - 香港(yudou66.com 玉豆免费节点) 3
-      - 香港(yudou66.com+玉豆免费节点)+4
-      - 香港(yudou66.com+玉豆免费节点)+5
-      - 香港(yudou66.com+玉豆免费节点)+6
-      - 香港(yudou66.com+玉豆免费节点)+7
-      - 香港(yudou66.com+玉豆免费节点)+8
-      - 香港(yudou66.com 玉豆免费节点) 9
-      - 香港(yudou66.com 玉豆免费节点) 10
-      - 香港(yudou66.com+玉豆免费节点)+11
-      - 香港(yudou66.com+玉豆免费节点)+12
-      - 香港(yudou66.com+玉豆免费节点)+13
-  - name: 🇯🇵 日本节点
+      - 香港 Google云计算数据中心
+    url: https://www.gstatic.com/generate_204
+    tolerance: 50
+  - interval: 300
+    name: 🇯🇵 日本节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
     proxies:
-      - 日本(yudou66.com+玉豆免费节点)
-      - 日本(yudou66.com+玉豆免费节点)+2
-  - name: 🇸🇬 狮城节点
+      - 日本 大阪Google云计算数据中心
+    url: https://www.gstatic.com/generate_204
+    tolerance: 50
+  - interval: 300
+    name: 🇺🇲 美国节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
     proxies:
-      - 新加坡(yudou66.com+玉豆免费节点)
-      - 新加坡(yudou66.com+玉豆免费节点)+2
-  - name: 🇺🇲 美国节点
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 (1)
+      - 美国 CloudFlare节点 (2)
+      - 美国 CloudFlare节点 (3)
+      - 美国 CloudFlare节点 (4)
+      - 美国 3COM公司企业网
+      - 美国 CloudFlare节点 (5)
+      - 美国 CloudFlare节点 (6)
+      - 美国 CloudFlare节点 (7)
+      - 美国 CloudFlare节点 (8)
+      - 美国 CloudFlare节点 (9)
+      - 美国 CloudFlare节点 (10)
+      - 美国 CloudFlare节点 (11)
+      - 美国 CloudFlare节点 (12)
+      - 美国 CloudFlare节点 (13)
+      - 美国 CloudFlare节点 (14)
+      - 美国 CloudFlare节点 (15)
+      - 美国 CloudFlare节点 (16)
+      - 美国 CloudFlare节点 (17)
+      - 美国 CloudFlare节点 (18)
+      - 美国 CloudFlare节点 (19)
+      - 美国 CloudFlare节点 (20)
+      - 美国 CloudFlare节点 (21)
+      - 美国 CloudFlare节点 (22)
+      - 美国 CloudFlare节点 (23)
+      - 美国 CloudFlare节点 (24)
+      - 美国 CloudFlare节点 (25)
+      - 美国 CloudFlare节点 (26)
+      - 美国 CloudFlare节点 (27)
+      - 美国 CloudFlare节点 (28)
+      - 美国 CloudFlare节点 (29)
+      - 美国 CloudFlare节点 (30)
+      - 美国 CloudFlare节点 (31)
+      - 美国 CloudFlare节点 (32)
+      - 美国 CloudFlare节点 (33)
+      - 美国 CloudFlare节点 (34)
+      - 美国 CloudFlare节点 (35)
+      - 美国 CloudFlare节点 (36)
+      - 美国 CloudFlare节点 (37)
+      - 美国 CloudFlare节点 (38)
+      - 美国 CloudFlare节点 (39)
+      - 美国 Fastly全球Anycast节点
+      - 美国+CloudFlare节点
+      - 美国+CloudFlare节点+(1)
+      - 美国加利福尼亚州洛杉矶+Cloudinnovation数据中心
+      - 美国+CloudFlare节点+(2)
+      - 美国+惠普HP
+      - 美国+Xerox
+      - 美国+CloudFlare节点+(3)
+      - 美国+CloudFlare节点+(4)
+      - 美国+CloudFlare节点+(5)
+      - 美国+CloudFlare节点+(6)
+      - 美国+CloudFlare节点+(7)
+      - 美国+CloudFlare节点+(8)
+      - 美国+V2CROSS.COM
+      - 美国+CloudFlare节点+(9)
+      - 美国+V2CROSS.COM+(1)
+      - 美国+V2CROSS.COM+(2)
+      - 美国+CloudFlare节点+(10)
+      - 美国+CloudFlare节点+(11)
+      - 美国+Sprint网络
+      - 美国+CloudFlare节点+(13)
+      - 美国+CloudFlare节点+(15)
+      - 美国+Amazon数据中心
+      - 美国+CloudFlare节点+(16)
+      - 美国+CloudFlare节点+(17)
+      - 美国+Amazon数据中心+(1)
+      - 美国+Xerox+(1)
+      - 美国+CloudFlare节点+(19)
+    url: https://www.gstatic.com/generate_204
     tolerance: 50
-    proxies:
-      - 美国(yudou66.com+玉豆免费节点)
-      - 美国(yudou66.com+玉豆免费节点)+2
-      - 美国(yudou66.com+玉豆免费节点)+3
-      - 美国(yudou66.com+玉豆免费节点)+4
-      - 美国(yudou66.com+玉豆免费节点)+5
-      - 美国(yudou66.com 玉豆免费节点) 6
-      - 美国(yudou66.com 玉豆免费节点) 7
-      - 美国(yudou66.com+玉豆免费节点)+8
-      - 美国(yudou66.com+玉豆免费节点)+9
-      - 美国(yudou66.com+玉豆免费节点)+10
-      - 美国(yudou66.com+玉豆免费节点)+11
-      - 美国(yudou66.com 玉豆免费节点) 12
-      - 美国(yudou66.com+玉豆免费节点)+13
-      - 美国(yudou66.com+玉豆免费节点)+14
-      - 美国(yudou66.com 玉豆免费节点) 15
-      - 美国(yudou66.com 玉豆免费节点) 16
-      - 美国(yudou66.com+玉豆免费节点)+17
-      - 美国(yudou66.com+玉豆免费节点)+18
-      - 美国(yudou66.com+玉豆免费节点)+19
-      - 美国(yudou66.com+玉豆免费节点)+20
-      - 美国(yudou66.com+玉豆免费节点)+21
-      - 美国(yudou66.com 玉豆免费节点) 22
-      - 美国(yudou66.com 玉豆免费节点) 23
-      - 美国(yudou66.com+玉豆免费节点)+24
-      - 美国(yudou66.com 玉豆免费节点) 25
-      - 美国(yudou66.com+玉豆免费节点)+26
-      - 美国(yudou66.com+玉豆免费节点)+27
-      - 美国(yudou66.com+玉豆免费节点)+28
-      - 美国(yudou66.com+玉豆免费节点)+29
-      - 美国(yudou66.com 玉豆免费节点) 30
-      - 美国(yudou66.com+玉豆免费节点)+31
-      - 美国(yudou66.com+玉豆免费节点)+32
-      - 美国(yudou66.com+玉豆免费节点)+33
-      - 美国(yudou66.com+玉豆免费节点)+34
-      - 美国(yudou66.com 玉豆免费节点) 35
-      - 美国(yudou66.com+玉豆免费节点)+36
-      - 美国(yudou66.com+玉豆免费节点)+37
-      - 美国(yudou66.com+玉豆免费节点)+38
-      - 美国(yudou66.com+玉豆免费节点)+39
-      - 美国(yudou66.com 玉豆免费节点) 40
-      - 美国(yudou66.com+玉豆免费节点)+41
-      - 美国(yudou66.com+玉豆免费节点)+42
-      - 美国(yudou66.com+玉豆免费节点)+43
-      - 美国(yudou66.com+玉豆免费节点)+44
-      - 美国(yudou66.com 玉豆免费节点) 45
-      - 美国(yudou66.com+玉豆免费节点)+46
-      - 美国(yudou66.com+玉豆免费节点)+47
-      - 美国(yudou66.com+玉豆免费节点)+48
-      - 美国(yudou66.com+玉豆免费节点)+49
-      - 美国(yudou66.com+玉豆免费节点)+50
-      - 美国(yudou66.com+玉豆免费节点)+51
-      - 美国(yudou66.com+玉豆免费节点)+52
-      - 美国(yudou66.com+玉豆免费节点)+53
-      - 美国(yudou66.com+玉豆免费节点)+54
-      - 美国(yudou66.com+玉豆免费节点)+55
-      - 美国(yudou66.com+玉豆免费节点)+56
-      - 美国(yudou66.com+玉豆免费节点)+57
-      - 美国(yudou66.com+玉豆免费节点)+58
-      - 美国(yudou66.com+玉豆免费节点)+59
-      - 美国(yudou66.com+玉豆免费节点)+60
-      - 美国(yudou66.com+玉豆免费节点)+61
-      - 美国(yudou66.com+玉豆免费节点)+62
-      - 美国(yudou66.com+玉豆免费节点)+63
-      - 美国(yudou66.com+玉豆免费节点)+64
-      - 美国(yudou66.com+玉豆免费节点)+65
-      - 美国(yudou66.com+玉豆免费节点)+66
-      - 美国(yudou66.com+玉豆免费节点)+67
-      - 美国(yudou66.com+玉豆免费节点)+68
-      - 美国(yudou66.com+玉豆免费节点)+69
-      - 美国(yudou66.com+玉豆免费节点)+70
-      - 美国(yudou66.com+玉豆免费节点)+71
-      - 美国(yudou66.com+玉豆免费节点)+72
-      - 美国(yudou66.com+玉豆免费节点)+73
-      - 美国(yudou66.com+玉豆免费节点)+74
-      - 美国(yudou66.com+玉豆免费节点)+75
-      - 美国(yudou66.com+玉豆免费节点)+76
-      - 美国(yudou66.com+玉豆免费节点)+77
-      - 美国(yudou66.com+玉豆免费节点)+78
 
 rules:
 # 本地/局域网地址
