@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2025-04-08 14:01:25
+# 创建时间：2025-04-08 14:23:14
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：116
 # 节点类型：ss, vmess, trojan
@@ -294,7 +294,7 @@ proxy-groups:
       - 南非+V2CROSS.COM
   - interval: 300
     name: ♻️ 自动选择
-    type: fallback
+    type: url-test
     proxies:
       - 海南省+移动(全省通用)
       - 海南省+移动(全省通用)+(1)
@@ -413,9 +413,7 @@ proxy-groups:
       - 美国+CloudFlare节点+(19)
       - 南非+V2CROSS.COM
     url: https://www.gstatic.com/generate_204
-    sort:
-      - latency
-    timeout: 5000
+    tolerance: 50
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -551,25 +549,21 @@ proxy-groups:
       - 南非+V2CROSS.COM
   - interval: 300
     name: 🇭🇰 香港节点
-    type: fallback
+    type: url-test
     proxies:
       - 香港 Google云计算数据中心
     url: https://www.gstatic.com/generate_204
-    sort:
-      - latency
-    timeout: 5000
+    tolerance: 50
   - interval: 300
     name: 🇯🇵 日本节点
-    type: fallback
+    type: url-test
     proxies:
       - 日本 大阪Google云计算数据中心
     url: https://www.gstatic.com/generate_204
-    sort:
-      - latency
-    timeout: 5000
+    tolerance: 50
   - interval: 300
     name: 🇺🇲 美国节点
-    type: fallback
+    type: url-test
     proxies:
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 (1)
@@ -641,9 +635,7 @@ proxy-groups:
       - 美国+Xerox+(1)
       - 美国+CloudFlare节点+(19)
     url: https://www.gstatic.com/generate_204
-    sort:
-      - latency
-    timeout: 5000
+    tolerance: 50
 
 rules:
 # 本地/局域网地址
