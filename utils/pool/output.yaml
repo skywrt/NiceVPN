@@ -593,7 +593,7 @@ proxies:
   sni: golinkwuxian.top
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 71 TJN"
+- name: "\U0001F1FA\U0001F1F3 UN 71 TJN"
   type: trojan
   server: sanjose06.852224.ggff.net
   port: 443
@@ -666,99 +666,6 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: "\U0001F1FA\U0001F1F3 UN 78 VMS"
-  type: vmess
-  server: s2.db-link02.top
-  port: 8080
-  cipher: auto
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /dabai.in172.64.41.150
-    headers:
-      host: 100-119-151-248.s2.db-link02.top
-- name: "\U0001F1FA\U0001F1F3 UN 79 VMS"
-  type: vmess
-  server: 104.21.73.150
-  port: 2087
-  cipher: auto
-  uuid: 0eb8fc06-01ab-4ec2-8e77-f185e7d8f9f2
-  alterId: 0
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /rak1-sub.931.pp.ua
-    headers:
-      host: rak1-sub.931.pp.ua
-- name: "\U0001F1FA\U0001F1F8 US 80 VMS"
-  type: vmess
-  server: 172.67.163.102
-  port: 2053
-  cipher: auto
-  uuid: 0eb8fc06-01ab-4ec2-8e77-f185e7d8f9f2
-  alterId: 0
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /rak1-sub.931.pp.ua
-    headers:
-      host: rak1-sub.931.pp.ua
-- name: "\U0001F1E8\U0001F1F3 CN 81 VMS"
-  type: vmess
-  server: dxv4.pai50288.uk
-  port: 14100
-  cipher: auto
-  uuid: f6866b0b-f946-4a03-8df0-c7e0016b55ad
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 82 VMS"
-  type: vmess
-  server: s4.db-link02.top
-  port: 2086
-  cipher: auto
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /dabai.in104.17.119.148
-    headers:
-      host: 100-215-157-195.s4.db-link02.top
-- name: "\U0001F1EE\U0001F1F3 IN 83 TJN"
-  type: trojan
-  server: 185.67.125.31
-  port: 443
-  udp: true
-  password: '74260698218909400'
-  sni: unified-lioness.shiner427.skin
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 84 TJN"
-  type: trojan
-  server: 63.177.116.21
-  port: 22222
-  udp: true
-  password: telegram-id-privatevpns
-  sni: trojan.burgerip.co.uk
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EE\U0001F1EA IE 85 TJN"
-  type: trojan
-  server: 54.195.42.181
-  port: 22222
-  udp: true
-  password: telegram-id-directvpn
-  sni: trojan.burgerip.co.uk
-  skip-cert-verify: false
-  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -833,21 +740,13 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 68 TJN"
   - "\U0001F1FA\U0001F1F3 UN 69 VMS"
   - "\U0001F1E7\U0001F1F7 BR 70 TJN"
-  - "\U0001F1FA\U0001F1F8 US 71 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 71 TJN"
   - "\U0001F1FA\U0001F1F8 US 72 TJN"
   - "\U0001F1E8\U0001F1F3 CN 73 VMS"
   - "\U0001F1FA\U0001F1F3 UN 74 VMS"
   - "\U0001F1E8\U0001F1FF CZ 75 VMS"
   - "\U0001F1ED\U0001F1F0 HK 76 TJN"
   - "\U0001F1FA\U0001F1F8 US 77 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 78 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 79 VMS"
-  - "\U0001F1FA\U0001F1F8 US 80 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 81 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 82 VMS"
-  - "\U0001F1EE\U0001F1F3 IN 83 TJN"
-  - "\U0001F1FA\U0001F1F8 US 84 TJN"
-  - "\U0001F1EE\U0001F1EA IE 85 TJN"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -924,20 +823,12 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 68 TJN"
   - "\U0001F1FA\U0001F1F3 UN 69 VMS"
   - "\U0001F1E7\U0001F1F7 BR 70 TJN"
-  - "\U0001F1FA\U0001F1F8 US 71 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 71 TJN"
   - "\U0001F1FA\U0001F1F8 US 72 TJN"
   - "\U0001F1E8\U0001F1F3 CN 73 VMS"
   - "\U0001F1FA\U0001F1F3 UN 74 VMS"
   - "\U0001F1E8\U0001F1FF CZ 75 VMS"
   - "\U0001F1ED\U0001F1F0 HK 76 TJN"
   - "\U0001F1FA\U0001F1F8 US 77 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 78 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 79 VMS"
-  - "\U0001F1FA\U0001F1F8 US 80 VMS"
-  - "\U0001F1E8\U0001F1F3 CN 81 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 82 VMS"
-  - "\U0001F1EE\U0001F1F3 IN 83 TJN"
-  - "\U0001F1FA\U0001F1F8 US 84 TJN"
-  - "\U0001F1EE\U0001F1EA IE 85 TJN"
 rules:
 - "MATCH,\U0001F310 Proxy"
