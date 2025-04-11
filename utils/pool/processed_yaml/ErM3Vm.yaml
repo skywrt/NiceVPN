@@ -1,57 +1,89 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2025-04-12 03:24:44
+# 创建时间：2025-04-12 03:14:09
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：161
 # 节点类型：ss, vmess, trojan
 ####################################
 mixed-port: 7890
-allow-lan: false
-log-level: silent
-external-controller: 127.0.0.1:9090
+allow-lan: true
+log-level: info
+external-controller: 0.0.0.0:9090
 dns:
-  enable: true
-  cache-algorithm: arc
-  prefer-h3: false
-  use-hosts: false
-  use-system-hosts: false
-  respect-rules: true
-  listen: 127.0.0.1:1053
-  ipv6: false
+  enabled: true
+  listen: 0.0.0.0:1053
+  ipv6: true
   default-nameserver:
-    - https://cloudflare-dns.com/dns-query
+    - 223.5.5.5
+    - 114.114.114.114
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
-  fake-ip-filter-mode: blacklist
   fake-ip-filter:
     - '*.lan'
-  nameserver-policy:
-    '+.arpa':
-      - https://cloudflare-dns.com/dns-query 
-    'rule-set:cn':
-      - https://doh.alidns.com/dns-query
-      - https://1.12.222.222/dns-query
+    - '*.linksys.com'
+    - '*.linksyssmartwifi.com'
+    - swscan.apple.com
+    - mesu.apple.com
+    - '*.msftconnecttest.com'
+    - '*.msftncsi.com'
+    - time.*.com
+    - time.*.gov
+    - time.*.edu.cn
+    - time.*.apple.com
+    - time1.*.com
+    - time2.*.com
+    - time3.*.com
+    - time4.*.com
+    - time5.*.com
+    - time6.*.com
+    - time7.*.com
+    - ntp.*.com
+    - ntp.*.com
+    - ntp1.*.com
+    - ntp2.*.com
+    - ntp3.*.com
+    - ntp4.*.com
+    - ntp5.*.com
+    - ntp6.*.com
+    - ntp7.*.com
+    - '*.time.edu.cn'
+    - '*.ntp.org.cn'
+    - +.pool.ntp.org
+    - time1.cloud.tencent.com
+    - +.music.163.com
+    - '*.126.net'
+    - musicapi.taihe.com
+    - music.taihe.com
+    - songsearch.kugou.com
+    - trackercdn.kugou.com
+    - '*.kuwo.cn'
+    - api-jooxtt.sanook.com
+    - api.joox.com
+    - joox.com
+    - +.y.qq.com
+    - +.music.tc.qq.com
+    - aqqmusic.tc.qq.com
+    - +.stream.qqmusic.qq.com
+    - '*.xiami.com'
+    - +.music.migu.cn
+    - +.srv.nintendo.net
+    - +.stun.playstation.net
+    - xbox.*.microsoft.com
+    - +.xboxlive.com
+    - localhost.ptlogin2.qq.com
+    - proxy.golang.org
+    - stun.*.*
+    - stun.*.*.*
+    - '*.mcdn.bilivideo.cn'
   nameserver:
-    - https://dns.google/dns-query
-  fallback:
-    - https://cloudflare-dns.com/dns-query
-  proxy-server-nameserver:
-    - https://mozilla.cloudflare-dns.com/dns-query
-    - https://dns.adguard.com/dns-query
-  direct-nameserver:
-    - https://doh.alidns.com/dns-query
-  direct-nameserver-follow-policy: true
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
   fallback-filter:
-    geoip: true
-    geoip-code: CN
-    geosite:
-      - gfw
-    domain:
-      - '.google.com'
-      - '.facebook.com'
-      - 'googleusercontent.com'
-      - 'youtube.com'
+    geoip: false
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
 
 proxies:
   - {"name":"广东省广州市+移动_1_2","type":"ss","server":"gg21.hangfengjiasu.com","port":12202,"password":"cdc48a7a-b618-45af-a831-5afbd686b02f","cipher":"chacha20-ietf-poly1305"}
@@ -208,7 +240,7 @@ proxies:
   - {"name":"挪威 V2CROSS.COM_2","type":"vmess","server":"84.247.147.67","port":54179,"cipher":"auto","uuid":"d143ebbc-7825-4b43-a55e-f11cb153bd5b","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"欧盟 V2CROSS.COM_3","type":"vmess","server":"45.82.246.173","port":26521,"cipher":"auto","uuid":"cff7001e-3a74-43e8-bfd8-a7af9630a58b","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国+惠普公司","type":"trojan","server":"15.236.184.86","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"瑞典+斯德哥尔摩Amazon数据中心_2","type":"trojan","server":"13.48.52.204","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"瑞典+斯德哥尔摩Amazon数据中心_2","type":"trojan","server":"13.48.52.204","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
   - {"name":"香港+腾讯云_1","type":"trojan","server":"myvps.lol","port":443,"udp":true,"password":"oIwjHDXpKePvYIg8","sni":"myvps.lol","skip-cert-verify":true,"network":"tcp"}
   - {"name":"香港+腾讯云_2","type":"trojan","server":"43.161.255.183","port":443,"udp":true,"password":"oIwjHDXpKePvYIg8","sni":"myvps.lol","skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国+Xerox","type":"trojan","server":"13.61.79.56","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
@@ -392,12 +424,9 @@ proxy-groups:
       - 德国+黑森州法兰克福Amazon数据中心
   - name: ♻️ 自动选择
     type: url-test
-    url: https://www.gstatic.com/generate_204
+    url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
-    lazy: true
-    timeout: 10000
-    max-failed-times: 5
     proxies:
       - 广东省广州市+移动_1_2
       - 法国+V2CROSS.COM
@@ -740,12 +769,9 @@ proxy-groups:
       - 德国+黑森州法兰克福Amazon数据中心
   - name: 🇭🇰 香港节点
     type: url-test
-    url: https://www.gstatic.com/generate_204
+    url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
-    lazy: true
-    timeout: 10000
-    max-failed-times: 5
     proxies:
       - 香港+特别行政区
       - 香港+电讯盈科有限公司
@@ -753,35 +779,26 @@ proxy-groups:
       - 香港+腾讯云_2
   - name: 🇯🇵 日本节点
     type: url-test
-    url: https://www.gstatic.com/generate_204
+    url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
-    lazy: true
-    timeout: 10000
-    max-failed-times: 5
     proxies:
       - 日本+东京Amazon数据中心_2
       - 日本+V2CROSS.COM_1
       - 日本+V2CROSS.COM_2
   - name: 🇸🇬 狮城节点
     type: url-test
-    url: https://www.gstatic.com/generate_204
+    url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
-    lazy: true
-    timeout: 10000
-    max-failed-times: 5
     proxies:
       - 新加坡+亚马逊(Amazon)公司数据中心
       - 新加坡+Digital+Ocean数据中心
   - name: 🇺🇲 美国节点
     type: url-test
-    url: https://www.gstatic.com/generate_204
+    url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
-    lazy: true
-    timeout: 10000
-    max-failed-times: 5
     proxies:
       - 美国 CloudFlare节点_2_2
       - 美国 CloudFlare节点_1
