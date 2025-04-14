@@ -1,208 +1,300 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2025-04-14 20:02:14
+# 创建时间：2025-04-14 20:28:43
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
-# 节点数量：42
-# 节点类型：ss, vmess, trojan
+# 节点数量：64
+# 节点类型：vmess
 ####################################
 mixed-port: 7890
-allow-lan: false
-log-level: silent
-external-controller: 127.0.0.1:9090
+allow-lan: true
+log-level: info
+external-controller: 0.0.0.0:9090
 dns:
-  enable: true
-  cache-algorithm: arc
-  prefer-h3: false
-  use-hosts: false
-  use-system-hosts: false
-  respect-rules: true
-  listen: 127.0.0.1:1053
-  ipv6: false
+  enabled: true
+  listen: 0.0.0.0:1053
+  ipv6: true
   default-nameserver:
-    - https://cloudflare-dns.com/dns-query
+    - 223.5.5.5
+    - 114.114.114.114
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
-  fake-ip-filter-mode: blacklist
   fake-ip-filter:
     - '*.lan'
-  nameserver-policy:
-    '+.arpa':
-      - https://cloudflare-dns.com/dns-query 
-    'rule-set:cn':
-      - https://doh.alidns.com/dns-query
-      - https://1.12.222.222/dns-query
+    - '*.linksys.com'
+    - '*.linksyssmartwifi.com'
+    - swscan.apple.com
+    - mesu.apple.com
+    - '*.msftconnecttest.com'
+    - '*.msftncsi.com'
+    - time.*.com
+    - time.*.gov
+    - time.*.edu.cn
+    - time.*.apple.com
+    - time1.*.com
+    - time2.*.com
+    - time3.*.com
+    - time4.*.com
+    - time5.*.com
+    - time6.*.com
+    - time7.*.com
+    - ntp.*.com
+    - ntp.*.com
+    - ntp1.*.com
+    - ntp2.*.com
+    - ntp3.*.com
+    - ntp4.*.com
+    - ntp5.*.com
+    - ntp6.*.com
+    - ntp7.*.com
+    - '*.time.edu.cn'
+    - '*.ntp.org.cn'
+    - +.pool.ntp.org
+    - time1.cloud.tencent.com
+    - +.music.163.com
+    - '*.126.net'
+    - musicapi.taihe.com
+    - music.taihe.com
+    - songsearch.kugou.com
+    - trackercdn.kugou.com
+    - '*.kuwo.cn'
+    - api-jooxtt.sanook.com
+    - api.joox.com
+    - joox.com
+    - +.y.qq.com
+    - +.music.tc.qq.com
+    - aqqmusic.tc.qq.com
+    - +.stream.qqmusic.qq.com
+    - '*.xiami.com'
+    - +.music.migu.cn
+    - +.srv.nintendo.net
+    - +.stun.playstation.net
+    - xbox.*.microsoft.com
+    - +.xboxlive.com
+    - localhost.ptlogin2.qq.com
+    - proxy.golang.org
+    - stun.*.*
+    - stun.*.*.*
+    - '*.mcdn.bilivideo.cn'
   nameserver:
-    - https://dns.google/dns-query
-  fallback:
-    - https://cloudflare-dns.com/dns-query
-  proxy-server-nameserver:
-    - https://mozilla.cloudflare-dns.com/dns-query
-    - https://dns.adguard.com/dns-query
-  direct-nameserver:
-    - https://doh.alidns.com/dns-query
-  direct-nameserver-follow-policy: true
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
   fallback-filter:
-    geoip: true
-    geoip-code: CN
-    geosite:
-      - gfw
-    domain:
-      - '.google.com'
-      - '.facebook.com'
-      - 'googleusercontent.com'
-      - 'youtube.com'
+    geoip: false
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
 
 proxies:
-  - {"name":"湖南省怀化市 电信_1","type":"ss","server":"hk02.x.quickcht3.club","port":52612,"password":"undefined","cipher":"null"}
-  - {"name":"俄罗斯 克拉斯诺亚尔斯克G-Core Lab","type":"ss","server":"5.189.201.250","port":31348,"password":"undefined","cipher":"null"}
-  - {"name":"欧盟 V2CROSS.COM_1","type":"ss","server":"beesyar.org","port":8080,"password":"1RWwXhwfAB5gAEozU4G2Pg","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"俄罗斯 V2CROSS.COM_1","type":"ss","server":"147.45.221.106","port":46356,"password":"m30QhUjzdUtXi1tsDsF7G1","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"广东省广州市 移动_1","type":"ss","server":"gg21.hangfengjiasu.com","port":12202,"password":"undefined","cipher":"null"}
-  - {"name":"沙特阿拉伯 Arabic Computer System Co.","type":"ss","server":"85.208.139.31","port":42037,"password":"q7jwtcA0MmyYi0JddUgXXj","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"美国 华盛顿Cogent通信公司_1","type":"ss","server":"38.114.114.108","port":8119,"password":"cdBIDV42DCwnfIN","cipher":"aes-256-gcm"}
-  - {"name":"保加利亚 V2CROSS.COM","type":"ss","server":"62.60.152.158","port":37618,"password":"y6fgyC28hscmdwqXj2v0Fm","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"海南省 移动(全省通用)","type":"ss","server":"111.29.57.125","port":52612,"password":"undefined","cipher":"null"}
-  - {"name":"美国 华盛顿Cogent通信公司_2","type":"ss","server":"38.75.136.28","port":7001,"password":"RexnBgU7EV5ADxG","cipher":"aes-256-gcm"}
-  - {"name":"广东省广州市 移动_2","type":"ss","server":"gg21.hangfengjiasu.com","port":13203,"password":"undefined","cipher":"null"}
-  - {"name":"美国 华盛顿Cogent通信公司_3","type":"ss","server":"38.110.1.146","port":8090,"password":"PCnnH6SQSnfoS27","cipher":"aes-256-gcm"}
-  - {"name":"俄罗斯 V2CROSS.COM_2","type":"ss","server":"92.38.171.215","port":31348,"password":"undefined","cipher":"null"}
-  - {"name":"沙特阿拉伯 V2CROSS.COM","type":"ss","server":"77.110.106.77","port":36301,"password":"v0NHlCl2nvVfC8AeZPMffi","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"欧盟 V2CROSS.COM_2","type":"ss","server":"45.87.175.154","port":8080,"password":"QCXDxuDlTTMD7jtgHUjIoj","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"广东省广州市 移动_3","type":"ss","server":"gg21.hangfengjiasu.com","port":12210,"password":"undefined","cipher":"null"}
-  - {"name":"湖南省怀化市 电信_2","type":"ss","server":"hk01.x.quickcht3.club","port":52611,"password":"undefined","cipher":"null"}
-  - {"name":"美国 华盛顿Cogent通信公司_4","type":"ss","server":"38.114.114.108","port":8882,"password":"kDWvXYZoTBcGkC4","cipher":"aes-256-gcm"}
-  - {"name":"美国 华盛顿Cogent通信公司_5","type":"ss","server":"38.114.114.108","port":8091,"password":"PCnnH6SQSnfoS27","cipher":"aes-256-gcm"}
-  - {"name":"广东省广州市 移动_4","type":"vmess","server":"183.236.51.38","port":42524,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"广东省广州市 移动_5","type":"vmess","server":"183.236.51.38","port":34652,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"广东省汕头市 移动","type":"vmess","server":"2a668e37-surog0-sxm4ot-zn8y.cm5.p5pv.com","port":17234,"cipher":"auto","uuid":"44e76f8c-7362-11ec-bb74-f23c9164ca5d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"广东省广州市 移动_1","type":"vmess","server":"183.236.51.38","port":42524,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"广东省广州市 移动_2","type":"vmess","server":"183.236.51.38","port":34652,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国 CloudFlare节点_1","type":"vmess","server":"141.101.120.164","port":2053,"cipher":"auto","uuid":"3bb3c730-e107-49c5-a0b2-b576d1b26a5e","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"1743919978.speed.sccapv.cccp.freefly.pp.ua"}}}
+  - {"name":"广东省汕头市 移动_1","type":"vmess","server":"2a668e37-surog0-sxm4ot-zn8y.cm5.p5pv.com","port":17234,"cipher":"auto","uuid":"44e76f8c-7362-11ec-bb74-f23c9164ca5d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"广东省湛江市 移动_1","type":"vmess","server":"120.198.71.216","port":35001,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"广东省广州市 移动_6","type":"vmess","server":"183.236.51.38","port":43121,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"广东省广州市 移动_7","type":"vmess","server":"120.232.153.40","port":42892,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"广东省广州市 移动_3","type":"vmess","server":"183.236.51.38","port":43121,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"广东省汕头市 移动_2","type":"vmess","server":"693debd4-sum4g0-svlqnl-2c08.cm5.p5pv.com","port":17234,"cipher":"auto","uuid":"c76abed4-f2d2-e4de-50ce-a545ff74ecd0","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国 加利福尼亚州洛杉矶Sharktech数据中心_1","type":"vmess","server":"6d1c9bd9-surog0-sy0g8x-1cc8s.lza.plebai.net","port":7612,"cipher":"auto","uuid":"7e64224c-4c10-11ec-bd7c-f23c913c8d2b","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"broadcastlv.chat.bilibili.com"}}}
+  - {"name":"吉林省 移动(全省通用)_1","type":"vmess","server":"v7.heduian.link","port":30807,"cipher":"auto","uuid":"cbb3f877-d1fb-344c-87a9-d153bffd5484","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/oooo","headers":{"host":"ocbc.com"}}}
+  - {"name":"美国 CloudFlare节点_2","type":"vmess","server":"www.speedtest.net","port":443,"cipher":"auto","uuid":"0ab6f8f0-1711-11f0-b934-205c6d5f5d78","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/jklhsgb0#[ @ViP_Fragment_V2ray ]-[ [ @ViP_Fragment_V2ray ]-[ [ @ViP_Fragment_V2ray ]-[ [ @ViP_Fragment_V2ray ]-[ [ @ViP_Fragment_V2ray ]-[ [ @ViP_Fragment_V2ray ]-[ [ @ViP_Fragment_V2ray ]-[ [ @ViP_Fragment_V2ray ]-[ [ @ViP_Fragment_V2ray ]-[ [ @ViP_Fragment_V2ray ]-[ [ @ViP_Fragment_V2ray ]-[ [ @ViP_Fragment_V2ray ]-[ [ @ViP_Fragment_V2ray ]-[ [ @ViP_Fragment_V2ray ]","headers":{"host":"eu-2.hihu.net"}}}
+  - {"name":"广东省广州市 移动_4","type":"vmess","server":"120.232.153.40","port":42892,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国 加利福尼亚州洛杉矶Sharktech数据中心_2","type":"vmess","server":"64.32.13.244","port":7612,"cipher":"auto","uuid":"7e64224c-4c10-11ec-bd7c-f23c913c8d2b","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"broadcastlv.chat.bilibili.com"}}}
+  - {"name":"广东省深圳市 移动","type":"vmess","server":"cloudgd.coemn.com","port":46003,"cipher":"auto","uuid":"4c5a8a75-7d65-40a9-8c3b-a67abae08534","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/zh-cn","headers":{"host":"cloudgd.coemn.com"}}}
+  - {"name":"广东省湛江市 移动_2","type":"vmess","server":"120.198.71.219","port":42355,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"山东省 电信_1","type":"vmess","server":"dxv4.pai50288.uk","port":14100,"cipher":"auto","uuid":"f6866b0b-f946-4a03-8df0-c7e0016b55ad","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国 CloudFlare节点_3","type":"vmess","server":"104.21.48.1","port":80,"cipher":"auto","uuid":"4d04b30c-ef7b-4a07-8f9e-f581ec171f8a","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/bua2hMcbA8wMzbGFtV","headers":{"host":"us7-02.890624.xyz"}}}
+  - {"name":"美国 CloudFlare节点_4","type":"vmess","server":"141.101.120.5","port":8443,"cipher":"auto","uuid":"3bb3c730-e107-49c5-a0b2-b576d1b26a5e","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"1743919978.speed.laxha.cccp.freefly.pp.ua"}}}
+  - {"name":"吉林省 移动(全省通用)_2","type":"vmess","server":"v9.heduian.link","port":30809,"cipher":"auto","uuid":"cbb3f877-d1fb-344c-87a9-d153bffd5484","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/oooo","headers":{"host":"baidu.com"}}}
+  - {"name":"芬兰 V2CROSS.COM","type":"vmess","server":"91.149.233.178","port":20050,"cipher":"auto","uuid":"400abbb8-dfb5-4a71-8604-b1fa77f82dcf","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"美国 V2CROSS.COM_1","type":"vmess","server":"45.144.48.128","port":8443,"cipher":"auto","uuid":"a4850481-9b95-430f-9b2d-192d2410b4f4","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess/"}}
+  - {"name":"吉林省 移动(全省通用)_3","type":"vmess","server":"v8.heduian.link","port":30808,"cipher":"auto","uuid":"cbb3f877-d1fb-344c-87a9-d153bffd5484","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/oooo","headers":{"host":"baidu.com"}}}
+  - {"name":"广东省汕头市 移动_3","type":"vmess","server":"c92a67a3-sum4g0-t46yf9-e13q.cm5.p5pv.com","port":17232,"cipher":"auto","uuid":"8d888b92-eec8-11ef-bca1-f23c91cfbbc9","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国 CloudFlare节点_5","type":"vmess","server":"141.101.120.195","port":2096,"cipher":"auto","uuid":"3bb3c730-e107-49c5-a0b2-b576d1b26a5e","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"1743919978.speed.adl.cccp.freefly.pp.ua"}}}
+  - {"name":"广东省广州市 移动_5","type":"vmess","server":"120.232.153.41","port":44491,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"广东省汕头市 移动_4","type":"vmess","server":"ff6848d1-surog0-tc9wl2-py5w.cm5.p5pv.com","port":17234,"cipher":"auto","uuid":"ae5338ae-9a70-58c9-3d47-7d54a5675715","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国 CloudFlare节点_6","type":"vmess","server":"us7-03.890624.xyz","port":80,"cipher":"auto","uuid":"4d04b30c-ef7b-4a07-8f9e-f581ec171f8a","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/bua2hMcbA8wMzbGFtV","headers":{"host":"us7-03.890624.xyz"}}}
   - {"name":"英国 V2CROSS.COM","type":"vmess","server":"158.180.228.226","port":443,"cipher":"auto","uuid":"9b456c2a-f2c1-45e1-87a9-b7628b04bb24","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"beyonddsz.cfd"}}}
-  - {"name":"广东省湛江市 移动_2","type":"vmess","server":"120.198.71.214","port":46345,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"广东省广州市 移动_8","type":"vmess","server":"120.232.153.40","port":57852,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"广东省湛江市 移动_3","type":"vmess","server":"120.198.71.219","port":51095,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"广东省湛江市 移动_3","type":"vmess","server":"120.198.71.214","port":46345,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"广东省广州市 移动_6","type":"vmess","server":"120.232.153.40","port":57852,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国 CloudFlare节点_7","type":"vmess","server":"s2.db-link02.top","port":2095,"cipher":"auto","uuid":"4b36625c-b9d9-3ea6-aed5-86d62c70e16d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/dabai.in104.20.27.115","headers":{"host":"100-209-47-141.s2.db-link02.top"}}}
+  - {"name":"美国 CloudFlare节点_8","type":"vmess","server":"s4.db-link02.top","port":2052,"cipher":"auto","uuid":"4b36625c-b9d9-3ea6-aed5-86d62c70e16d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/dabai.in172.64.8.26","headers":{"host":"100-145-217-186.s4.db-link02.top"}}}
+  - {"name":"广东省湛江市 移动_4","type":"vmess","server":"120.198.71.219","port":51095,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"巴西圣保罗 CloudFlare节点","type":"vmess","server":"188.114.96.5","port":443,"cipher":"auto","uuid":"edbb1059-1633-4271-b66e-ed4fba47a1bf","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"linde06.indiavideo.sbs"}}}
+  - {"name":"美国 V2CROSS.COM_2","type":"vmess","server":"linde06.indiavideo.sbs","port":443,"cipher":"auto","uuid":"edbb1059-1633-4271-b66e-ed4fba47a1bf","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"linde06.indiavideo.sbs"}}}
+  - {"name":"捷克 V2CROSS.COM","type":"vmess","server":"185.189.32.179","port":48737,"cipher":"auto","uuid":"3680a006-d824-4574-90f3-21226dae6903","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"广东省汕头市 移动_5","type":"vmess","server":"a194ab3e-surog0-sy0g8x-1cc8s.cm5.p5pv.com","port":17234,"cipher":"auto","uuid":"7e64224c-4c10-11ec-bd7c-f23c913c8d2b","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"山东省 电信_2","type":"vmess","server":"144.255.36.254","port":14100,"cipher":"auto","uuid":"f6866b0b-f946-4a03-8df0-c7e0016b55ad","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国 CloudFlare节点_1","type":"vmess","server":"104.16.155.10","port":2095,"cipher":"auto","uuid":"4b36625c-b9d9-3ea6-aed5-86d62c70e16d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/dabai.in104.20.27.115","headers":{"host":"100-209-47-141.s2.db-link02.top"}}}
-  - {"name":"美国 V2CROSS.COM_1","type":"vmess","server":"3h-poland1.09vpn.com","port":8443,"cipher":"auto","uuid":"a4850481-9b95-430f-9b2d-192d2410b4f4","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess/"}}
-  - {"name":"广东省广州市 移动_9","type":"vmess","server":"183.236.51.38","port":37802,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"广东省湛江市 移动_4","type":"vmess","server":"120.198.71.216","port":42259,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国 CloudFlare节点_2","type":"vmess","server":"de01.sh-cloudflare.sbs","port":2096,"cipher":"auto","uuid":"1e2e8430-9c0e-4394-a9ea-4d845e978757","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"de01.sh-cloudflare.sbs"}}}
-  - {"name":"吉林省 移动(全省通用)","type":"vmess","server":"v40.heduian.link","port":30840,"cipher":"auto","uuid":"cbb3f877-d1fb-344c-87a9-d153bffd5484","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/index","headers":{"host":"api100-core-quic-lf.amemv.com"}}}
-  - {"name":"广东省广州市 移动_10","type":"vmess","server":"183.236.51.38","port":59554,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"广东省广州市 移动_11","type":"vmess","server":"120.232.153.41","port":46597,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国 V2CROSS.COM_2","type":"trojan","server":"166.0.198.68","port":443,"udp":true,"password":"02926f9e-153a-42c8-8ecd-8fade7009ad1","sni":"golinkwuxian.top","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/apple","headers":{"host":"222.golinkwuxian.top"}}}
-  - {"name":"美国 CloudFlare节点_3","type":"trojan","server":"172.66.168.209","port":443,"udp":true,"password":"aTArbZ2F0E","sni":"uSa-vp-27.bLAzECLOUD.SITE","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkvkws","headers":{"host":"uSa-vp-27.bLAzECLOUD.SITE"}}}
-  - {"name":"美国 Amazon EC2服务器","type":"trojan","server":"3.72.123.152","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
+  - {"name":"山东省济南市 联通IDC机房","type":"vmess","server":"119.188.66.248","port":22643,"cipher":"auto","uuid":"98e96c9f-4bb3-39d4-9a2c-fac04257f7c7","alterId":2,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"zxjp-c.tkong.cc"}}}
+  - {"name":"美国 CloudFlare节点_9","type":"vmess","server":"1743919941.tencentapp.cn","port":2096,"cipher":"auto","uuid":"3bb3c730-e107-49c5-a0b2-b576d1b26a5e","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"1743919978.speed.adl.cccp.freefly.pp.ua"}}}
+  - {"name":"美国 CloudFlare节点_10","type":"vmess","server":"104.16.155.10","port":2095,"cipher":"auto","uuid":"4b36625c-b9d9-3ea6-aed5-86d62c70e16d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/dabai.in104.20.27.115","headers":{"host":"100-209-47-141.s2.db-link02.top"}}}
+  - {"name":"美国 V2CROSS.COM_3","type":"vmess","server":"3h-poland1.09vpn.com","port":8443,"cipher":"auto","uuid":"a4850481-9b95-430f-9b2d-192d2410b4f4","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess/","headers":{"host":"3h-poland1.09vpn.com"}}}
+  - {"name":"广东省广州市 移动_7","type":"vmess","server":"183.236.51.38","port":37802,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国 CloudFlare节点_11","type":"vmess","server":"104.21.80.1","port":2096,"cipher":"auto","uuid":"75a0885f-0ca5-42a4-8651-391cf8193154","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"de01.sh-cloudflare.sbs"}}}
+  - {"name":"美国 CloudFlare节点_12","type":"vmess","server":"104.21.80.1","port":443,"cipher":"auto","uuid":"4d04b30c-ef7b-4a07-8f9e-f581ec171f8a","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/bua2hMcbA8wMzbGFtV","headers":{"host":"us7-02.890624.xyz"}}}
+  - {"name":"美国 CloudFlare节点_13","type":"vmess","server":"hk2.lrzdx.uk","port":443,"cipher":"auto","uuid":"db69d5bc-d36c-4903-f471-74b98c5cefe5","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/register","headers":{"host":"hk2.lrzdx.uk"}}}
+  - {"name":"美国 CloudFlare节点_14","type":"vmess","server":"104.21.16.1","port":2096,"cipher":"auto","uuid":"75a0885f-0ca5-42a4-8651-391cf8193154","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"de01.sh-cloudflare.sbs"}}}
+  - {"name":"美国 CloudFlare节点_15","type":"vmess","server":"US7-01.890624.XyZ","port":443,"cipher":"auto","uuid":"4d04b30c-ef7b-4a07-8f9e-f581ec171f8a","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/bua2hMcbA8wMzbGFtV","headers":{"host":"us7-01.890624.xyz"}}}
+  - {"name":"美国 CloudFlare节点_16","type":"vmess","server":"104.21.32.1","port":2096,"cipher":"auto","uuid":"75a0885f-0ca5-42a4-8651-391cf8193154","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"de01.sh-cloudflare.sbs"}}}
+  - {"name":"美国 CloudFlare节点_17","type":"vmess","server":"uS7-07.890606.xYz","port":443,"cipher":"auto","uuid":"4d04b30c-ef7b-4a07-8f9e-f581ec171f8a","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/bua2hMcbA8wMzbGFtV","headers":{"host":"us7-07.890606.xyz"}}}
+  - {"name":"广东省湛江市 移动_5","type":"vmess","server":"120.198.71.216","port":42259,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国 CloudFlare节点_18","type":"vmess","server":"www.visa.com.tw","port":443,"cipher":"auto","uuid":"66e5c8dd-3176-458e-8fb0-1ed91d2f9602","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess-argo?ed=2048","headers":{"host":"advertisers-assembled-voting-resource.trycloudflare.com"}}}
+  - {"name":"美国 CloudFlare节点_19","type":"vmess","server":"us01.sh-cloudflare.sbs","port":8443,"cipher":"auto","uuid":"914584ee-3515-46ac-a09d-4677a2e9dc9a","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"us01.sh-cloudflare.sbs"}}}
+  - {"name":"广东省 移动","type":"vmess","server":"4c16178d-surog0-t26vr3-1likw.cm.plebai.net","port":15229,"cipher":"auto","uuid":"a23c20fc-3e66-11ef-b1d2-f23c91cfbbc9","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国 CloudFlare节点_20","type":"vmess","server":"de01.sh-cloudflare.sbs","port":2096,"cipher":"auto","uuid":"1e2e8430-9c0e-4394-a9ea-4d845e978757","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"de01.sh-cloudflare.sbs"}}}
+  - {"name":"吉林省 移动(全省通用)_4","type":"vmess","server":"v40.heduian.link","port":30840,"cipher":"auto","uuid":"cbb3f877-d1fb-344c-87a9-d153bffd5484","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/index","headers":{"host":"api100-core-quic-lf.amemv.com"}}}
+  - {"name":"美国 CloudFlare节点_21","type":"vmess","server":"104.21.112.1","port":443,"cipher":"auto","uuid":"4d04b30c-ef7b-4a07-8f9e-f581ec171f8a","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/bua2hMcbA8wMzbGFtV","headers":{"host":"us7-03.890624.xyz"}}}
+  - {"name":"美国 CloudFlare节点_22","type":"vmess","server":"141.101.121.181","port":2083,"cipher":"auto","uuid":"381cb6d1-6ad4-4909-8494-b8d786cf78ce","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"1744007578.speed.ruanewa.cccp.freefly.pp.ua"}}}
+  - {"name":"广东省广州市 移动_8","type":"vmess","server":"183.236.51.38","port":59554,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"俄罗斯 莫斯科JustHost","type":"vmess","server":"45.147.201.231","port":20010,"cipher":"auto","uuid":"c9f3ac47-222d-4f24-b475-1fdaeccdd3c5","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"广东省广州市 移动_9","type":"vmess","server":"120.232.153.41","port":46597,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国 CloudFlare节点_23","type":"vmess","server":"1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top","port":443,"cipher":"auto","uuid":"5f726fe3-d82e-4da5-a711-8af0cbb2b682","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/azumase.ren","headers":{"host":"1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top"}}}
+  - {"name":"印度 V2CROSS.COM_3","type":"vmess","server":"202.78.162.5","port":443,"cipher":"auto","uuid":"716eded6-2201-4dbd-9d63-1638c9e8e677","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"pendar.onthewifi.com"}}}
+  - {"name":"美国 CloudFlare节点_24","type":"vmess","server":"104.21.82.183","port":8880,"cipher":"auto","uuid":"5a7021e0-26b4-45d6-b175-fe551601ca97","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"server26.beheshtbaneh.com"}}}
+  - {"name":"美国 Fastly全球Anycast节点","type":"vmess","server":"gov.uk","port":443,"cipher":"auto","uuid":"77848824-93b7-4b89-ffd0-e91afff406ce","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/77848824","headers":{"host":"zheshiscp.com"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
-      - 🇭🇰 香港节点
-      - 🇸🇬 狮城节点
       - 🇺🇲 美国节点
-      - 🇯🇵 日本节点
       - 🚀 手动切换
       - DIRECT
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 湖南省怀化市 电信_1
-      - 俄罗斯 克拉斯诺亚尔斯克G-Core Lab
-      - 欧盟 V2CROSS.COM_1
-      - 俄罗斯 V2CROSS.COM_1
       - 广东省广州市 移动_1
-      - 沙特阿拉伯 Arabic Computer System Co.
-      - 美国 华盛顿Cogent通信公司_1
-      - 保加利亚 V2CROSS.COM
-      - 海南省 移动(全省通用)
-      - 美国 华盛顿Cogent通信公司_2
       - 广东省广州市 移动_2
-      - 美国 华盛顿Cogent通信公司_3
-      - 俄罗斯 V2CROSS.COM_2
-      - 沙特阿拉伯 V2CROSS.COM
-      - 欧盟 V2CROSS.COM_2
-      - 广东省广州市 移动_3
-      - 湖南省怀化市 电信_2
-      - 美国 华盛顿Cogent通信公司_4
-      - 美国 华盛顿Cogent通信公司_5
-      - 广东省广州市 移动_4
-      - 广东省广州市 移动_5
-      - 广东省汕头市 移动
-      - 广东省湛江市 移动_1
-      - 广东省广州市 移动_6
-      - 广东省广州市 移动_7
-      - 山东省 电信_1
-      - 英国 V2CROSS.COM
-      - 广东省湛江市 移动_2
-      - 广东省广州市 移动_8
-      - 广东省湛江市 移动_3
-      - 山东省 电信_2
       - 美国 CloudFlare节点_1
-      - 美国 V2CROSS.COM_1
-      - 广东省广州市 移动_9
-      - 广东省湛江市 移动_4
+      - 广东省汕头市 移动_1
+      - 广东省湛江市 移动_1
+      - 广东省广州市 移动_3
+      - 广东省汕头市 移动_2
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心_1
+      - 吉林省 移动(全省通用)_1
       - 美国 CloudFlare节点_2
-      - 吉林省 移动(全省通用)
-      - 广东省广州市 移动_10
-      - 广东省广州市 移动_11
-      - 美国 V2CROSS.COM_2
+      - 广东省广州市 移动_4
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心_2
+      - 广东省深圳市 移动
+      - 广东省湛江市 移动_2
+      - 山东省 电信_1
       - 美国 CloudFlare节点_3
-      - 美国 Amazon EC2服务器
+      - 美国 CloudFlare节点_4
+      - 吉林省 移动(全省通用)_2
+      - 芬兰 V2CROSS.COM
+      - 美国 V2CROSS.COM_1
+      - 吉林省 移动(全省通用)_3
+      - 广东省汕头市 移动_3
+      - 美国 CloudFlare节点_5
+      - 广东省广州市 移动_5
+      - 广东省汕头市 移动_4
+      - 美国 CloudFlare节点_6
+      - 英国 V2CROSS.COM
+      - 广东省湛江市 移动_3
+      - 广东省广州市 移动_6
+      - 美国 CloudFlare节点_7
+      - 美国 CloudFlare节点_8
+      - 广东省湛江市 移动_4
+      - 巴西圣保罗 CloudFlare节点
+      - 美国 V2CROSS.COM_2
+      - 捷克 V2CROSS.COM
+      - 广东省汕头市 移动_5
+      - 山东省 电信_2
+      - 山东省济南市 联通IDC机房
+      - 美国 CloudFlare节点_9
+      - 美国 CloudFlare节点_10
+      - 美国 V2CROSS.COM_3
+      - 广东省广州市 移动_7
+      - 美国 CloudFlare节点_11
+      - 美国 CloudFlare节点_12
+      - 美国 CloudFlare节点_13
+      - 美国 CloudFlare节点_14
+      - 美国 CloudFlare节点_15
+      - 美国 CloudFlare节点_16
+      - 美国 CloudFlare节点_17
+      - 广东省湛江市 移动_5
+      - 美国 CloudFlare节点_18
+      - 美国 CloudFlare节点_19
+      - 广东省 移动
+      - 美国 CloudFlare节点_20
+      - 吉林省 移动(全省通用)_4
+      - 美国 CloudFlare节点_21
+      - 美国 CloudFlare节点_22
+      - 广东省广州市 移动_8
+      - 俄罗斯 莫斯科JustHost
+      - 广东省广州市 移动_9
+      - 美国 CloudFlare节点_23
+      - 印度 V2CROSS.COM_3
+      - 美国 CloudFlare节点_24
+      - 美国 Fastly全球Anycast节点
   - name: ♻️ 自动选择
     type: url-test
-    url: https://www.gstatic.com/generate_204
+    url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
-    lazy: true
-    timeout: 10000
-    max-failed-times: 5
     proxies:
-      - 湖南省怀化市 电信_1
-      - 俄罗斯 克拉斯诺亚尔斯克G-Core Lab
-      - 欧盟 V2CROSS.COM_1
-      - 俄罗斯 V2CROSS.COM_1
       - 广东省广州市 移动_1
-      - 沙特阿拉伯 Arabic Computer System Co.
-      - 美国 华盛顿Cogent通信公司_1
-      - 保加利亚 V2CROSS.COM
-      - 海南省 移动(全省通用)
-      - 美国 华盛顿Cogent通信公司_2
       - 广东省广州市 移动_2
-      - 美国 华盛顿Cogent通信公司_3
-      - 俄罗斯 V2CROSS.COM_2
-      - 沙特阿拉伯 V2CROSS.COM
-      - 欧盟 V2CROSS.COM_2
-      - 广东省广州市 移动_3
-      - 湖南省怀化市 电信_2
-      - 美国 华盛顿Cogent通信公司_4
-      - 美国 华盛顿Cogent通信公司_5
-      - 广东省广州市 移动_4
-      - 广东省广州市 移动_5
-      - 广东省汕头市 移动
-      - 广东省湛江市 移动_1
-      - 广东省广州市 移动_6
-      - 广东省广州市 移动_7
-      - 山东省 电信_1
-      - 英国 V2CROSS.COM
-      - 广东省湛江市 移动_2
-      - 广东省广州市 移动_8
-      - 广东省湛江市 移动_3
-      - 山东省 电信_2
       - 美国 CloudFlare节点_1
-      - 美国 V2CROSS.COM_1
-      - 广东省广州市 移动_9
-      - 广东省湛江市 移动_4
+      - 广东省汕头市 移动_1
+      - 广东省湛江市 移动_1
+      - 广东省广州市 移动_3
+      - 广东省汕头市 移动_2
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心_1
+      - 吉林省 移动(全省通用)_1
       - 美国 CloudFlare节点_2
-      - 吉林省 移动(全省通用)
-      - 广东省广州市 移动_10
-      - 广东省广州市 移动_11
-      - 美国 V2CROSS.COM_2
+      - 广东省广州市 移动_4
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心_2
+      - 广东省深圳市 移动
+      - 广东省湛江市 移动_2
+      - 山东省 电信_1
       - 美国 CloudFlare节点_3
-      - 美国 Amazon EC2服务器
+      - 美国 CloudFlare节点_4
+      - 吉林省 移动(全省通用)_2
+      - 芬兰 V2CROSS.COM
+      - 美国 V2CROSS.COM_1
+      - 吉林省 移动(全省通用)_3
+      - 广东省汕头市 移动_3
+      - 美国 CloudFlare节点_5
+      - 广东省广州市 移动_5
+      - 广东省汕头市 移动_4
+      - 美国 CloudFlare节点_6
+      - 英国 V2CROSS.COM
+      - 广东省湛江市 移动_3
+      - 广东省广州市 移动_6
+      - 美国 CloudFlare节点_7
+      - 美国 CloudFlare节点_8
+      - 广东省湛江市 移动_4
+      - 巴西圣保罗 CloudFlare节点
+      - 美国 V2CROSS.COM_2
+      - 捷克 V2CROSS.COM
+      - 广东省汕头市 移动_5
+      - 山东省 电信_2
+      - 山东省济南市 联通IDC机房
+      - 美国 CloudFlare节点_9
+      - 美国 CloudFlare节点_10
+      - 美国 V2CROSS.COM_3
+      - 广东省广州市 移动_7
+      - 美国 CloudFlare节点_11
+      - 美国 CloudFlare节点_12
+      - 美国 CloudFlare节点_13
+      - 美国 CloudFlare节点_14
+      - 美国 CloudFlare节点_15
+      - 美国 CloudFlare节点_16
+      - 美国 CloudFlare节点_17
+      - 广东省湛江市 移动_5
+      - 美国 CloudFlare节点_18
+      - 美国 CloudFlare节点_19
+      - 广东省 移动
+      - 美国 CloudFlare节点_20
+      - 吉林省 移动(全省通用)_4
+      - 美国 CloudFlare节点_21
+      - 美国 CloudFlare节点_22
+      - 广东省广州市 移动_8
+      - 俄罗斯 莫斯科JustHost
+      - 广东省广州市 移动_9
+      - 美国 CloudFlare节点_23
+      - 印度 V2CROSS.COM_3
+      - 美国 CloudFlare节点_24
+      - 美国 Fastly全球Anycast节点
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -220,68 +312,106 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 湖南省怀化市 电信_1
-      - 俄罗斯 克拉斯诺亚尔斯克G-Core Lab
-      - 欧盟 V2CROSS.COM_1
-      - 俄罗斯 V2CROSS.COM_1
       - 广东省广州市 移动_1
-      - 沙特阿拉伯 Arabic Computer System Co.
-      - 美国 华盛顿Cogent通信公司_1
-      - 保加利亚 V2CROSS.COM
-      - 海南省 移动(全省通用)
-      - 美国 华盛顿Cogent通信公司_2
       - 广东省广州市 移动_2
-      - 美国 华盛顿Cogent通信公司_3
-      - 俄罗斯 V2CROSS.COM_2
-      - 沙特阿拉伯 V2CROSS.COM
-      - 欧盟 V2CROSS.COM_2
-      - 广东省广州市 移动_3
-      - 湖南省怀化市 电信_2
-      - 美国 华盛顿Cogent通信公司_4
-      - 美国 华盛顿Cogent通信公司_5
-      - 广东省广州市 移动_4
-      - 广东省广州市 移动_5
-      - 广东省汕头市 移动
-      - 广东省湛江市 移动_1
-      - 广东省广州市 移动_6
-      - 广东省广州市 移动_7
-      - 山东省 电信_1
-      - 英国 V2CROSS.COM
-      - 广东省湛江市 移动_2
-      - 广东省广州市 移动_8
-      - 广东省湛江市 移动_3
-      - 山东省 电信_2
       - 美国 CloudFlare节点_1
-      - 美国 V2CROSS.COM_1
-      - 广东省广州市 移动_9
-      - 广东省湛江市 移动_4
+      - 广东省汕头市 移动_1
+      - 广东省湛江市 移动_1
+      - 广东省广州市 移动_3
+      - 广东省汕头市 移动_2
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心_1
+      - 吉林省 移动(全省通用)_1
       - 美国 CloudFlare节点_2
-      - 吉林省 移动(全省通用)
-      - 广东省广州市 移动_10
-      - 广东省广州市 移动_11
-      - 美国 V2CROSS.COM_2
+      - 广东省广州市 移动_4
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心_2
+      - 广东省深圳市 移动
+      - 广东省湛江市 移动_2
+      - 山东省 电信_1
       - 美国 CloudFlare节点_3
-      - 美国 Amazon EC2服务器
+      - 美国 CloudFlare节点_4
+      - 吉林省 移动(全省通用)_2
+      - 芬兰 V2CROSS.COM
+      - 美国 V2CROSS.COM_1
+      - 吉林省 移动(全省通用)_3
+      - 广东省汕头市 移动_3
+      - 美国 CloudFlare节点_5
+      - 广东省广州市 移动_5
+      - 广东省汕头市 移动_4
+      - 美国 CloudFlare节点_6
+      - 英国 V2CROSS.COM
+      - 广东省湛江市 移动_3
+      - 广东省广州市 移动_6
+      - 美国 CloudFlare节点_7
+      - 美国 CloudFlare节点_8
+      - 广东省湛江市 移动_4
+      - 巴西圣保罗 CloudFlare节点
+      - 美国 V2CROSS.COM_2
+      - 捷克 V2CROSS.COM
+      - 广东省汕头市 移动_5
+      - 山东省 电信_2
+      - 山东省济南市 联通IDC机房
+      - 美国 CloudFlare节点_9
+      - 美国 CloudFlare节点_10
+      - 美国 V2CROSS.COM_3
+      - 广东省广州市 移动_7
+      - 美国 CloudFlare节点_11
+      - 美国 CloudFlare节点_12
+      - 美国 CloudFlare节点_13
+      - 美国 CloudFlare节点_14
+      - 美国 CloudFlare节点_15
+      - 美国 CloudFlare节点_16
+      - 美国 CloudFlare节点_17
+      - 广东省湛江市 移动_5
+      - 美国 CloudFlare节点_18
+      - 美国 CloudFlare节点_19
+      - 广东省 移动
+      - 美国 CloudFlare节点_20
+      - 吉林省 移动(全省通用)_4
+      - 美国 CloudFlare节点_21
+      - 美国 CloudFlare节点_22
+      - 广东省广州市 移动_8
+      - 俄罗斯 莫斯科JustHost
+      - 广东省广州市 移动_9
+      - 美国 CloudFlare节点_23
+      - 印度 V2CROSS.COM_3
+      - 美国 CloudFlare节点_24
+      - 美国 Fastly全球Anycast节点
   - name: 🇺🇲 美国节点
     type: url-test
-    url: https://www.gstatic.com/generate_204
+    url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
-    lazy: true
-    timeout: 10000
-    max-failed-times: 5
     proxies:
-      - 美国 华盛顿Cogent通信公司_1
-      - 美国 华盛顿Cogent通信公司_2
-      - 美国 华盛顿Cogent通信公司_3
-      - 美国 华盛顿Cogent通信公司_4
-      - 美国 华盛顿Cogent通信公司_5
       - 美国 CloudFlare节点_1
-      - 美国 V2CROSS.COM_1
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心_1
       - 美国 CloudFlare节点_2
-      - 美国 V2CROSS.COM_2
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心_2
       - 美国 CloudFlare节点_3
-      - 美国 Amazon EC2服务器
+      - 美国 CloudFlare节点_4
+      - 美国 V2CROSS.COM_1
+      - 美国 CloudFlare节点_5
+      - 美国 CloudFlare节点_6
+      - 美国 CloudFlare节点_7
+      - 美国 CloudFlare节点_8
+      - 美国 V2CROSS.COM_2
+      - 美国 CloudFlare节点_9
+      - 美国 CloudFlare节点_10
+      - 美国 V2CROSS.COM_3
+      - 美国 CloudFlare节点_11
+      - 美国 CloudFlare节点_12
+      - 美国 CloudFlare节点_13
+      - 美国 CloudFlare节点_14
+      - 美国 CloudFlare节点_15
+      - 美国 CloudFlare节点_16
+      - 美国 CloudFlare节点_17
+      - 美国 CloudFlare节点_18
+      - 美国 CloudFlare节点_19
+      - 美国 CloudFlare节点_20
+      - 美国 CloudFlare节点_21
+      - 美国 CloudFlare节点_22
+      - 美国 CloudFlare节点_23
+      - 美国 CloudFlare节点_24
+      - 美国 Fastly全球Anycast节点
 
 rules:
 # 本地/局域网地址
