@@ -1,10 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2025-04-16 02:27:59
+# 创建时间：2025-04-16 02:38:17
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
-# 节点数量：111
-# 节点类型：ss, vmess, trojan
+# 节点数量：102
+# 节点类型：vmess, trojan
 ####################################
 mixed-port: 7890
 allow-lan: false
@@ -54,64 +54,55 @@ dns:
       - 'youtube.com'
 
 proxies:
-  - {"name":"湖南省怀化市 电信_1","type":"ss","server":"hk02.x.quickcht3.club","port":52612,"password":"undefined","cipher":"null"}
-  - {"name":"广东省中山市 移动_1","type":"ss","server":"hk2.fgmcx.top","port":41049,"password":"undefined","cipher":"null"}
-  - {"name":"沙特阿拉伯 V2CROSS.COM","type":"ss","server":"77.110.102.235","port":64864,"password":"9onFEWpRgKmtMnxtXGIWD0","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"印度 V2CROSS.COM_1","type":"ss","server":"203.25.108.78","port":44591,"password":"9IAge06PmPuo5OJGD17sdg","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"欧盟 V2CROSS.COM","type":"ss","server":"45.8.98.163","port":2636,"password":"DLW8QqdfAvfUHSeucMIF4E","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"海南省 移动(全省通用)","type":"ss","server":"111.29.57.125","port":52612,"password":"undefined","cipher":"null"}
-  - {"name":"湖南省怀化市 电信_2","type":"ss","server":"hk01.x.quickcht3.club","port":52611,"password":"undefined","cipher":"null"}
-  - {"name":"俄罗斯 克拉斯诺亚尔斯克G-Core Lab","type":"ss","server":"5.189.201.250","port":31348,"password":"undefined","cipher":"null"}
-  - {"name":"广东省中山市 移动_2","type":"ss","server":"zz5.fgmcx.top","port":41068,"password":"undefined","cipher":"null"}
   - {"name":"俄罗斯 莫斯科JustHost","type":"vmess","server":"45.147.201.231","port":20011,"cipher":"auto","uuid":"e4319e6e-ef82-45cf-a1f3-e4db006306fc","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
   - {"name":"广东省深圳市 移动_2","type":"vmess","server":"cloudgd.coemn.com","port":46003,"cipher":"auto","uuid":"4c5a8a75-7d65-40a9-8c3b-a67abae08534","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":""}}
-  - {"name":"广东省广州市 移动 (4)","type":"vmess","server":"183.236.51.38","port":43121,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"广东省广州市 移动_1","type":"vmess","server":"183.236.51.38","port":43121,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"广东省广州市 移动_2","type":"vmess","server":"120.232.153.40","port":59082,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"广东省 移动 (1)","type":"vmess","server":"81137562-sutj40-suyhjm-1hhyy.cm.plebai.net","port":15229,"cipher":"auto","uuid":"c594c7ec-8b10-11ef-a2b8-f23c9164ca5d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"广东省广州市 移动 (8)","type":"vmess","server":"183.236.51.38","port":34652,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"广东省中山市 移动 (2)","type":"vmess","server":"hzz9.fgmcx.top","port":23910,"cipher":"auto","uuid":"be443689-bc64-49ff-85a5-8eecaa2235d3","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"广东省汕头市 移动 (4)","type":"vmess","server":"b79d3418-sux8g0-swe4j1-1rfon.cm5.p5pv.com","port":17232,"cipher":"auto","uuid":"aed1cc24-351d-11ef-ba52-f23c9164ca5d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"广东省汕头市 移动 (1)","type":"vmess","server":"81f6bf37-sutj40-svgpxu-y2gs.cm5.p5pv.com","port":17233,"cipher":"auto","uuid":"b806b388-5f97-11ee-8014-f23c913c8d2b","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"广东省广州市 移动 (7)","type":"vmess","server":"120.232.153.63","port":37805,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"广东省 移动_1","type":"vmess","server":"81137562-sutj40-suyhjm-1hhyy.cm.plebai.net","port":15229,"cipher":"auto","uuid":"c594c7ec-8b10-11ef-a2b8-f23c9164ca5d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"广东省广州市 移动_3","type":"vmess","server":"183.236.51.38","port":34652,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"广东省中山市 移动_3","type":"vmess","server":"hzz9.fgmcx.top","port":23910,"cipher":"auto","uuid":"be443689-bc64-49ff-85a5-8eecaa2235d3","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"广东省汕头市 移动_1","type":"vmess","server":"b79d3418-sux8g0-swe4j1-1rfon.cm5.p5pv.com","port":17232,"cipher":"auto","uuid":"aed1cc24-351d-11ef-ba52-f23c9164ca5d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"广东省汕头市 移动_2","type":"vmess","server":"81f6bf37-sutj40-svgpxu-y2gs.cm5.p5pv.com","port":17233,"cipher":"auto","uuid":"b806b388-5f97-11ee-8014-f23c913c8d2b","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"广东省广州市 移动_4","type":"vmess","server":"120.232.153.63","port":37805,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"广东省汕头市 移动_3","type":"vmess","server":"00fd0574-sux8g0-sv07nd-jtx1.cm5.p5pv.com","port":17235,"cipher":"auto","uuid":"947dde8e-bcf5-11ef-af4a-f23c91cfbbc9","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国 CloudFlare节点_1","type":"vmess","server":"us7-01.890624.xyz","port":443,"cipher":"auto","uuid":"4d04b30c-ef7b-4a07-8f9e-f581ec171f8a","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/bua2hMcbA8wMzbGFtV","headers":{"host":"us7-01.890624.xyz"}}}
-  - {"name":"广东省湛江市 移动 (3)","type":"vmess","server":"120.198.71.219","port":42355,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"广东省汕头市 移动 (3)","type":"vmess","server":"87ab6ec1-sux8g0-susn3i-1lkt0.cm5.p5pv.com","port":17235,"cipher":"auto","uuid":"cd1b0ae0-4010-11ee-953a-f23c9164ca5d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"广东省广州市 移动 (10)","type":"vmess","server":"120.232.153.40","port":57852,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"广东省广州市 移动 (9)","type":"vmess","server":"183.236.51.38","port":42524,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"广东省湛江市 移动_1","type":"vmess","server":"120.198.71.219","port":42355,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"广东省汕头市 移动_4","type":"vmess","server":"87ab6ec1-sux8g0-susn3i-1lkt0.cm5.p5pv.com","port":17235,"cipher":"auto","uuid":"cd1b0ae0-4010-11ee-953a-f23c9164ca5d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"广东省广州市 移动_5","type":"vmess","server":"120.232.153.40","port":57852,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"广东省广州市 移动_6","type":"vmess","server":"183.236.51.38","port":42524,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"广东省中山市 移动_4","type":"vmess","server":"usz1.fgmcx.top","port":23903,"cipher":"auto","uuid":"be443689-bc64-49ff-85a5-8eecaa2235d3","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"广东省 移动 (2)","type":"vmess","server":"2130c4e3-surog0-szxfsm-v3c2.cm.plebai.net","port":15229,"cipher":"auto","uuid":"5f091cbe-fb34-11ea-9777-f23c9164ca5d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"广东省 移动_2","type":"vmess","server":"2130c4e3-surog0-szxfsm-v3c2.cm.plebai.net","port":15229,"cipher":"auto","uuid":"5f091cbe-fb34-11ea-9777-f23c9164ca5d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国 CloudFlare节点 (10)","type":"vmess","server":"us7-03.890624.xyz","port":80,"cipher":"auto","uuid":"4d04b30c-ef7b-4a07-8f9e-f581ec171f8a","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":""}}
-  - {"name":"广东省 联通 (1)","type":"vmess","server":"ba91e0a1-sutj40-t1k53r-1jm8i.cu.plebai.net","port":5228,"cipher":"auto","uuid":"a6ddfc37-05eb-11ed-af40-f23c91cfbbc9","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"广东省 联通 (3)","type":"vmess","server":"74f77c00-sutj40-t5qufl-8n27.cu.plebai.net","port":5229,"cipher":"auto","uuid":"5dc6fa05-a601-aba6-7761-ecde22d2b0fc","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"广东省 联通_1","type":"vmess","server":"ba91e0a1-sutj40-t1k53r-1jm8i.cu.plebai.net","port":5228,"cipher":"auto","uuid":"a6ddfc37-05eb-11ed-af40-f23c91cfbbc9","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"广东省 联通_2","type":"vmess","server":"74f77c00-sutj40-t5qufl-8n27.cu.plebai.net","port":5229,"cipher":"auto","uuid":"5dc6fa05-a601-aba6-7761-ecde22d2b0fc","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国 CloudFlare节点_3","type":"vmess","server":"s1.db-link01.top","port":2052,"cipher":"auto","uuid":"4b36625c-b9d9-3ea6-aed5-86d62c70e16d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/dabai.in172.67.2.142","headers":{"host":"100-151-164-47.s1.db-link01.top"}}}
-  - {"name":"广东省中山市 移动 (1)","type":"vmess","server":"hzz9.fgmcx.top","port":23919,"cipher":"auto","uuid":"be443689-bc64-49ff-85a5-8eecaa2235d3","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"广东省中山市 移动_5","type":"vmess","server":"hzz9.fgmcx.top","port":23919,"cipher":"auto","uuid":"be443689-bc64-49ff-85a5-8eecaa2235d3","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"吉林省 移动(全省通用) (4)","type":"vmess","server":"v40.heduian.link","port":30840,"cipher":"auto","uuid":"cbb3f877-d1fb-344c-87a9-d153bffd5484","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":""}}
-  - {"name":"广东省广州市 移动 (2)","type":"vmess","server":"120.232.153.40","port":42892,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"广东省广州市 移动_7","type":"vmess","server":"120.232.153.40","port":42892,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国 CloudFlare节点_4","type":"vmess","server":"104.21.64.1","port":2053,"cipher":"auto","uuid":"965ed2bb-eb8e-4468-a890-f3a32233ed02","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/5u-s.445.pp.ua","headers":{"host":"5u-s.445.pp.ua"}}}
   - {"name":"江苏省 移动_2","type":"vmess","server":"fadawtawd.zhangwei.li","port":46005,"cipher":"auto","uuid":"4c5a8a75-7d65-40a9-8c3b-a67abae08534","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":""}}
   - {"name":"香港 腾讯云","type":"vmess","server":"43.154.34.74","port":1935,"cipher":"auto","uuid":"2e5bfd4a-0852-4df4-b9e7-9b6f207113b4","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess-argo","headers":{"host":"djdjjrjjrhk.lzj520hxw.dpdns.org"}}}
   - {"name":"美国 CloudFlare节点 (16)","type":"vmess","server":"104.16.155.10","port":2095,"cipher":"auto","uuid":"4b36625c-b9d9-3ea6-aed5-86d62c70e16d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":""}}
-  - {"name":"广东省 联通 (2)","type":"vmess","server":"f5f98477-sutj40-tdcdb7-1k27l.cu.plebai.net","port":5229,"cipher":"auto","uuid":"ba4b1f2e-c985-11ed-9c0c-f23c913c8d2b","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"广东省汕头市 移动 (5)","type":"vmess","server":"ecd6d7ce-sux8g0-t0aln2-1kvd6.cm5.p5pv.com","port":17234,"cipher":"auto","uuid":"baf0d462-b4e2-11ed-b581-f23c9164ca5d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"广东省湛江市 移动 (1)","type":"vmess","server":"120.198.71.216","port":50082,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"广东省广州市 移动 (3)","type":"vmess","server":"120.232.153.41","port":46597,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"广东省 联通_3","type":"vmess","server":"f5f98477-sutj40-tdcdb7-1k27l.cu.plebai.net","port":5229,"cipher":"auto","uuid":"ba4b1f2e-c985-11ed-9c0c-f23c913c8d2b","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"广东省汕头市 移动_5","type":"vmess","server":"ecd6d7ce-sux8g0-t0aln2-1kvd6.cm5.p5pv.com","port":17234,"cipher":"auto","uuid":"baf0d462-b4e2-11ed-b581-f23c9164ca5d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"广东省湛江市 移动_2","type":"vmess","server":"120.198.71.216","port":50082,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"广东省广州市 移动_8","type":"vmess","server":"120.232.153.41","port":46597,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"俄罗斯 V2CROSS.COM","type":"vmess","server":"195.58.49.84","port":22012,"cipher":"auto","uuid":"e4319e6e-ef82-45cf-a1f3-e4db006306fc","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"广东省湛江市 移动 (4)","type":"vmess","server":"120.198.71.216","port":42259,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"广东省湛江市 移动_3","type":"vmess","server":"120.198.71.216","port":42259,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"广东省 联通_4","type":"vmess","server":"2e93912d-sutj40-sutgau-1r62f.cu.plebai.net","port":5229,"cipher":"auto","uuid":"154b0bf8-f9a7-11ee-a218-f23c91cfbbc9","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"广东省湛江市 移动 (2)","type":"vmess","server":"120.198.71.216","port":35001,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"广东省湛江市 移动_4","type":"vmess","server":"120.198.71.216","port":35001,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国 CloudFlare节点_6","type":"vmess","server":"104.18.149.76","port":443,"cipher":"auto","uuid":"de94cc0a-0592-4969-b1fc-97ea8f0ea0b3","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/aa","headers":{"host":"us.kkp.me.eu.org"}}}
-  - {"name":"广东省汕头市 移动 (2)","type":"vmess","server":"929e4f8a-sutj40-sutgau-1r62f.cm5.p5pv.com","port":17233,"cipher":"auto","uuid":"154b0bf8-f9a7-11ee-a218-f23c91cfbbc9","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"广东省广州市 移动 (11)","type":"vmess","server":"183.236.51.38","port":59554,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"广东省汕头市 移动_6","type":"vmess","server":"929e4f8a-sutj40-sutgau-1r62f.cm5.p5pv.com","port":17233,"cipher":"auto","uuid":"154b0bf8-f9a7-11ee-a218-f23c91cfbbc9","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"广东省广州市 移动_9","type":"vmess","server":"183.236.51.38","port":59554,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国 CloudFlare节点 (17)","type":"vmess","server":"s2.db-link02.top","port":2082,"cipher":"auto","uuid":"4b36625c-b9d9-3ea6-aed5-86d62c70e16d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":""}}
-  - {"name":"广东省广州市 移动 (5)","type":"vmess","server":"120.232.153.41","port":44491,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"广东省广州市 移动_10","type":"vmess","server":"120.232.153.41","port":44491,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"英国 V2CROSS.COM","type":"vmess","server":"193.122.58.158","port":443,"cipher":"auto","uuid":"e537f2f5-2a0c-4f59-92c9-832ca6433bf3","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"irvideo.cfd"}}}
   - {"name":"美国 CloudFlare节点 (3)","type":"vmess","server":"www.speedtest.net","port":443,"cipher":"auto","uuid":"0ab6f8f0-1711-11f0-b934-205c6d5f5d78","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":""}}
   - {"name":"美国 CloudFlare节点_24","type":"vmess","server":"104.21.96.1","port":8443,"cipher":"auto","uuid":"914584ee-3515-46ac-a09d-4677a2e9dc9a","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":""}}
   - {"name":"美国 CloudFlare节点_10","type":"vmess","server":"104.21.48.1","port":2096,"cipher":"auto","uuid":"b3928f8d-ea81-4d75-bcec-4016a072adff","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"de01.sh-cloudflare.sbs"}}}
   - {"name":"美国 CloudFlare节点_11","type":"vmess","server":"172.67.200.11","port":443,"cipher":"auto","uuid":"4d04b30c-ef7b-4a07-8f9e-f581ec171f8a","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/bua2hMcbA8wMzbGFtV","headers":{"host":"us7-07.890606.xyz"}}}
-  - {"name":"广东省湛江市 移动 (5)","type":"vmess","server":"120.198.71.214","port":46345,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"广东省广州市 移动 (6)","type":"vmess","server":"183.236.51.38","port":37802,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"广东省湛江市 移动_5","type":"vmess","server":"120.198.71.214","port":46345,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"广东省广州市 移动_11","type":"vmess","server":"183.236.51.38","port":37802,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"广东省湛江市 移动_6","type":"vmess","server":"120.198.71.219","port":51095,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国 CloudFlare节点_12","type":"vmess","server":"172.67.220.10","port":443,"cipher":"auto","uuid":"39cec18f-a439-427c-9a4e-aeb6fcdf6f53","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"linja05.hwcar.sbs"}}}
   - {"name":"美国 CloudFlare节点_13","type":"vmess","server":"104.21.96.1","port":2096,"cipher":"auto","uuid":"75a0885f-0ca5-42a4-8651-391cf8193154","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"de01.sh-cloudflare.sbs"}}}
@@ -177,64 +168,55 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 湖南省怀化市 电信_1
-      - 广东省中山市 移动_1
-      - 沙特阿拉伯 V2CROSS.COM
-      - 印度 V2CROSS.COM_1
-      - 欧盟 V2CROSS.COM
-      - 海南省 移动(全省通用)
-      - 湖南省怀化市 电信_2
-      - 俄罗斯 克拉斯诺亚尔斯克G-Core Lab
-      - 广东省中山市 移动_2
       - 俄罗斯 莫斯科JustHost
       - 广东省深圳市 移动_2
-      - 广东省广州市 移动 (4)
+      - 广东省广州市 移动_1
       - 广东省广州市 移动_2
-      - 广东省 移动 (1)
-      - 广东省广州市 移动 (8)
-      - 广东省中山市 移动 (2)
-      - 广东省汕头市 移动 (4)
-      - 广东省汕头市 移动 (1)
-      - 广东省广州市 移动 (7)
+      - 广东省 移动_1
+      - 广东省广州市 移动_3
+      - 广东省中山市 移动_3
+      - 广东省汕头市 移动_1
+      - 广东省汕头市 移动_2
+      - 广东省广州市 移动_4
       - 广东省汕头市 移动_3
       - 美国 CloudFlare节点_1
-      - 广东省湛江市 移动 (3)
-      - 广东省汕头市 移动 (3)
-      - 广东省广州市 移动 (10)
-      - 广东省广州市 移动 (9)
+      - 广东省湛江市 移动_1
+      - 广东省汕头市 移动_4
+      - 广东省广州市 移动_5
+      - 广东省广州市 移动_6
       - 广东省中山市 移动_4
-      - 广东省 移动 (2)
+      - 广东省 移动_2
       - 美国 CloudFlare节点 (10)
-      - 广东省 联通 (1)
-      - 广东省 联通 (3)
+      - 广东省 联通_1
+      - 广东省 联通_2
       - 美国 CloudFlare节点_3
-      - 广东省中山市 移动 (1)
+      - 广东省中山市 移动_5
       - 吉林省 移动(全省通用) (4)
-      - 广东省广州市 移动 (2)
+      - 广东省广州市 移动_7
       - 美国 CloudFlare节点_4
       - 江苏省 移动_2
       - 香港 腾讯云
       - 美国 CloudFlare节点 (16)
-      - 广东省 联通 (2)
-      - 广东省汕头市 移动 (5)
-      - 广东省湛江市 移动 (1)
-      - 广东省广州市 移动 (3)
+      - 广东省 联通_3
+      - 广东省汕头市 移动_5
+      - 广东省湛江市 移动_2
+      - 广东省广州市 移动_8
       - 俄罗斯 V2CROSS.COM
-      - 广东省湛江市 移动 (4)
+      - 广东省湛江市 移动_3
       - 广东省 联通_4
-      - 广东省湛江市 移动 (2)
+      - 广东省湛江市 移动_4
       - 美国 CloudFlare节点_6
-      - 广东省汕头市 移动 (2)
-      - 广东省广州市 移动 (11)
+      - 广东省汕头市 移动_6
+      - 广东省广州市 移动_9
       - 美国 CloudFlare节点 (17)
-      - 广东省广州市 移动 (5)
+      - 广东省广州市 移动_10
       - 英国 V2CROSS.COM
       - 美国 CloudFlare节点 (3)
       - 美国 CloudFlare节点_24
       - 美国 CloudFlare节点_10
       - 美国 CloudFlare节点_11
-      - 广东省湛江市 移动 (5)
-      - 广东省广州市 移动 (6)
+      - 广东省湛江市 移动_5
+      - 广东省广州市 移动_11
       - 广东省湛江市 移动_6
       - 美国 CloudFlare节点_12
       - 美国 CloudFlare节点_13
@@ -294,67 +276,58 @@ proxy-groups:
     interval: 300
     tolerance: 50
     lazy: true
-    timeout: 10000
+    timeout: 5000
     max-failed-times: 5
     proxies:
-      - 湖南省怀化市 电信_1
-      - 广东省中山市 移动_1
-      - 沙特阿拉伯 V2CROSS.COM
-      - 印度 V2CROSS.COM_1
-      - 欧盟 V2CROSS.COM
-      - 海南省 移动(全省通用)
-      - 湖南省怀化市 电信_2
-      - 俄罗斯 克拉斯诺亚尔斯克G-Core Lab
-      - 广东省中山市 移动_2
       - 俄罗斯 莫斯科JustHost
       - 广东省深圳市 移动_2
-      - 广东省广州市 移动 (4)
+      - 广东省广州市 移动_1
       - 广东省广州市 移动_2
-      - 广东省 移动 (1)
-      - 广东省广州市 移动 (8)
-      - 广东省中山市 移动 (2)
-      - 广东省汕头市 移动 (4)
-      - 广东省汕头市 移动 (1)
-      - 广东省广州市 移动 (7)
+      - 广东省 移动_1
+      - 广东省广州市 移动_3
+      - 广东省中山市 移动_3
+      - 广东省汕头市 移动_1
+      - 广东省汕头市 移动_2
+      - 广东省广州市 移动_4
       - 广东省汕头市 移动_3
       - 美国 CloudFlare节点_1
-      - 广东省湛江市 移动 (3)
-      - 广东省汕头市 移动 (3)
-      - 广东省广州市 移动 (10)
-      - 广东省广州市 移动 (9)
+      - 广东省湛江市 移动_1
+      - 广东省汕头市 移动_4
+      - 广东省广州市 移动_5
+      - 广东省广州市 移动_6
       - 广东省中山市 移动_4
-      - 广东省 移动 (2)
+      - 广东省 移动_2
       - 美国 CloudFlare节点 (10)
-      - 广东省 联通 (1)
-      - 广东省 联通 (3)
+      - 广东省 联通_1
+      - 广东省 联通_2
       - 美国 CloudFlare节点_3
-      - 广东省中山市 移动 (1)
+      - 广东省中山市 移动_5
       - 吉林省 移动(全省通用) (4)
-      - 广东省广州市 移动 (2)
+      - 广东省广州市 移动_7
       - 美国 CloudFlare节点_4
       - 江苏省 移动_2
       - 香港 腾讯云
       - 美国 CloudFlare节点 (16)
-      - 广东省 联通 (2)
-      - 广东省汕头市 移动 (5)
-      - 广东省湛江市 移动 (1)
-      - 广东省广州市 移动 (3)
+      - 广东省 联通_3
+      - 广东省汕头市 移动_5
+      - 广东省湛江市 移动_2
+      - 广东省广州市 移动_8
       - 俄罗斯 V2CROSS.COM
-      - 广东省湛江市 移动 (4)
+      - 广东省湛江市 移动_3
       - 广东省 联通_4
-      - 广东省湛江市 移动 (2)
+      - 广东省湛江市 移动_4
       - 美国 CloudFlare节点_6
-      - 广东省汕头市 移动 (2)
-      - 广东省广州市 移动 (11)
+      - 广东省汕头市 移动_6
+      - 广东省广州市 移动_9
       - 美国 CloudFlare节点 (17)
-      - 广东省广州市 移动 (5)
+      - 广东省广州市 移动_10
       - 英国 V2CROSS.COM
       - 美国 CloudFlare节点 (3)
       - 美国 CloudFlare节点_24
       - 美国 CloudFlare节点_10
       - 美国 CloudFlare节点_11
-      - 广东省湛江市 移动 (5)
-      - 广东省广州市 移动 (6)
+      - 广东省湛江市 移动_5
+      - 广东省广州市 移动_11
       - 广东省湛江市 移动_6
       - 美国 CloudFlare节点_12
       - 美国 CloudFlare节点_13
@@ -425,64 +398,55 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 湖南省怀化市 电信_1
-      - 广东省中山市 移动_1
-      - 沙特阿拉伯 V2CROSS.COM
-      - 印度 V2CROSS.COM_1
-      - 欧盟 V2CROSS.COM
-      - 海南省 移动(全省通用)
-      - 湖南省怀化市 电信_2
-      - 俄罗斯 克拉斯诺亚尔斯克G-Core Lab
-      - 广东省中山市 移动_2
       - 俄罗斯 莫斯科JustHost
       - 广东省深圳市 移动_2
-      - 广东省广州市 移动 (4)
+      - 广东省广州市 移动_1
       - 广东省广州市 移动_2
-      - 广东省 移动 (1)
-      - 广东省广州市 移动 (8)
-      - 广东省中山市 移动 (2)
-      - 广东省汕头市 移动 (4)
-      - 广东省汕头市 移动 (1)
-      - 广东省广州市 移动 (7)
+      - 广东省 移动_1
+      - 广东省广州市 移动_3
+      - 广东省中山市 移动_3
+      - 广东省汕头市 移动_1
+      - 广东省汕头市 移动_2
+      - 广东省广州市 移动_4
       - 广东省汕头市 移动_3
       - 美国 CloudFlare节点_1
-      - 广东省湛江市 移动 (3)
-      - 广东省汕头市 移动 (3)
-      - 广东省广州市 移动 (10)
-      - 广东省广州市 移动 (9)
+      - 广东省湛江市 移动_1
+      - 广东省汕头市 移动_4
+      - 广东省广州市 移动_5
+      - 广东省广州市 移动_6
       - 广东省中山市 移动_4
-      - 广东省 移动 (2)
+      - 广东省 移动_2
       - 美国 CloudFlare节点 (10)
-      - 广东省 联通 (1)
-      - 广东省 联通 (3)
+      - 广东省 联通_1
+      - 广东省 联通_2
       - 美国 CloudFlare节点_3
-      - 广东省中山市 移动 (1)
+      - 广东省中山市 移动_5
       - 吉林省 移动(全省通用) (4)
-      - 广东省广州市 移动 (2)
+      - 广东省广州市 移动_7
       - 美国 CloudFlare节点_4
       - 江苏省 移动_2
       - 香港 腾讯云
       - 美国 CloudFlare节点 (16)
-      - 广东省 联通 (2)
-      - 广东省汕头市 移动 (5)
-      - 广东省湛江市 移动 (1)
-      - 广东省广州市 移动 (3)
+      - 广东省 联通_3
+      - 广东省汕头市 移动_5
+      - 广东省湛江市 移动_2
+      - 广东省广州市 移动_8
       - 俄罗斯 V2CROSS.COM
-      - 广东省湛江市 移动 (4)
+      - 广东省湛江市 移动_3
       - 广东省 联通_4
-      - 广东省湛江市 移动 (2)
+      - 广东省湛江市 移动_4
       - 美国 CloudFlare节点_6
-      - 广东省汕头市 移动 (2)
-      - 广东省广州市 移动 (11)
+      - 广东省汕头市 移动_6
+      - 广东省广州市 移动_9
       - 美国 CloudFlare节点 (17)
-      - 广东省广州市 移动 (5)
+      - 广东省广州市 移动_10
       - 英国 V2CROSS.COM
       - 美国 CloudFlare节点 (3)
       - 美国 CloudFlare节点_24
       - 美国 CloudFlare节点_10
       - 美国 CloudFlare节点_11
-      - 广东省湛江市 移动 (5)
-      - 广东省广州市 移动 (6)
+      - 广东省湛江市 移动_5
+      - 广东省广州市 移动_11
       - 广东省湛江市 移动_6
       - 美国 CloudFlare节点_12
       - 美国 CloudFlare节点_13
@@ -542,7 +506,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     lazy: true
-    timeout: 10000
+    timeout: 5000
     max-failed-times: 5
     proxies:
       - 香港 腾讯云
@@ -553,7 +517,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     lazy: true
-    timeout: 10000
+    timeout: 5000
     max-failed-times: 5
     proxies:
       - 美国 CloudFlare节点_1
