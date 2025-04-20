@@ -1,57 +1,89 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2025-04-20 04:23:12
+# 创建时间：2025-04-20 04:31:46
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：253
 # 节点类型：vmess, trojan
 ####################################
 mixed-port: 7890
-allow-lan: false
-log-level: silent
-external-controller: 127.0.0.1:9090
+allow-lan: true
+log-level: info
+external-controller: 0.0.0.0:9090
 dns:
-  enable: true
-  cache-algorithm: arc
-  prefer-h3: false
-  use-hosts: false
-  use-system-hosts: false
-  respect-rules: true
-  listen: 127.0.0.1:1053
-  ipv6: false
+  enabled: true
+  listen: 0.0.0.0:1053
+  ipv6: true
   default-nameserver:
-    - https://cloudflare-dns.com/dns-query
+    - 223.5.5.5
+    - 114.114.114.114
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
-  fake-ip-filter-mode: blacklist
   fake-ip-filter:
     - '*.lan'
-  nameserver-policy:
-    '+.arpa':
-      - https://cloudflare-dns.com/dns-query 
-    'rule-set:cn':
-      - https://doh.alidns.com/dns-query
-      - https://1.12.222.222/dns-query
+    - '*.linksys.com'
+    - '*.linksyssmartwifi.com'
+    - swscan.apple.com
+    - mesu.apple.com
+    - '*.msftconnecttest.com'
+    - '*.msftncsi.com'
+    - time.*.com
+    - time.*.gov
+    - time.*.edu.cn
+    - time.*.apple.com
+    - time1.*.com
+    - time2.*.com
+    - time3.*.com
+    - time4.*.com
+    - time5.*.com
+    - time6.*.com
+    - time7.*.com
+    - ntp.*.com
+    - ntp.*.com
+    - ntp1.*.com
+    - ntp2.*.com
+    - ntp3.*.com
+    - ntp4.*.com
+    - ntp5.*.com
+    - ntp6.*.com
+    - ntp7.*.com
+    - '*.time.edu.cn'
+    - '*.ntp.org.cn'
+    - +.pool.ntp.org
+    - time1.cloud.tencent.com
+    - +.music.163.com
+    - '*.126.net'
+    - musicapi.taihe.com
+    - music.taihe.com
+    - songsearch.kugou.com
+    - trackercdn.kugou.com
+    - '*.kuwo.cn'
+    - api-jooxtt.sanook.com
+    - api.joox.com
+    - joox.com
+    - +.y.qq.com
+    - +.music.tc.qq.com
+    - aqqmusic.tc.qq.com
+    - +.stream.qqmusic.qq.com
+    - '*.xiami.com'
+    - +.music.migu.cn
+    - +.srv.nintendo.net
+    - +.stun.playstation.net
+    - xbox.*.microsoft.com
+    - +.xboxlive.com
+    - localhost.ptlogin2.qq.com
+    - proxy.golang.org
+    - stun.*.*
+    - stun.*.*.*
+    - '*.mcdn.bilivideo.cn'
   nameserver:
-    - https://dns.google/dns-query
-  fallback:
-    - https://cloudflare-dns.com/dns-query
-  proxy-server-nameserver:
-    - https://mozilla.cloudflare-dns.com/dns-query
-    - https://dns.adguard.com/dns-query
-  direct-nameserver:
-    - https://doh.alidns.com/dns-query
-  direct-nameserver-follow-policy: true
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
   fallback-filter:
-    geoip: true
-    geoip-code: CN
-    geosite:
-      - gfw
-    domain:
-      - '.google.com'
-      - '.facebook.com'
-      - 'googleusercontent.com'
-      - 'youtube.com'
+    geoip: false
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
 
 proxies:
   - {"name":"🇨🇦 加拿大 www.85la.com 283","type":"vmess","server":"51.79.102.253","port":80,"cipher":"auto","uuid":"58fe1542-5290-40ad-815a-77707a81afe5","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/IOebhLMhl1CTbFHbL95myfRX2","headers":{"host":"google.com"}}}
@@ -202,7 +234,7 @@ proxies:
   - {"name":"🇺🇸 www.85la.com 美国_334","type":"vmess","server":"172.67.179.199","port":443,"cipher":"auto","uuid":"172.67.179.199:443?type=ws&encryption=auto&host=linde06.indiavideo.sbs&path=%2Flinkws&security=tls&sni=linde06.indiavideo.sbs#%F0%9F%87%BA%F0%9F%87%B8%20www.85la.com%20%E7%BE%8E%E5%9B%BD_334","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"linde06.indiavideo.sbs"}}}
   - {"name":"🇺🇸 www.85la.com 美国_336","type":"vmess","server":"2.56.125.101","port":38088,"cipher":"auto","uuid":"2.56.125.101:38088?type=tcp&encryption=auto#%F0%9F%87%BA%F0%9F%87%B8%20www.85la.com%20%E7%BE%8E%E5%9B%BD_336","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇨🇳 www.85la.com 中国_4","type":"trojan","server":"v3.nmcf.me","port":443,"udp":true,"password":"f2ebda77-3dff-4244-8828-18771ee5ad30","sni":"v3.nmcf.me","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇺🇸 www.85la.com 美国_342","type":"vmess","server":"uswuxian.pai50288.uk","port":8443,"cipher":"auto","uuid":"uswuxian.pai50288.uk:8443?type=ws&encryption=auto&security=tls#%F0%9F%87%BA%F0%9F%87%B8%20www.85la.com%20%E7%BE%8E%E5%9B%BD_342","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"🇺🇸 www.85la.com 美国_342","type":"vmess","server":"uswuxian.pai50288.uk","port":8443,"cipher":"auto","uuid":"uswuxian.pai50288.uk:8443?type=ws&encryption=auto&security=tls#%F0%9F%87%BA%F0%9F%87%B8%20www.85la.com%20%E7%BE%8E%E5%9B%BD_342","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":""}}
   - {"name":"🇺🇸 www.85la.com 美国_341","type":"vmess","server":"186.190.215.193","port":22324,"cipher":"auto","uuid":"186.190.215.193:22324?type=tcp&encryption=auto#%F0%9F%87%BA%F0%9F%87%B8%20www.85la.com%20%E7%BE%8E%E5%9B%BD_341","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇧🇷 www.85la.com 巴西_9","type":"vmess","server":"188.114.97.79","port":443,"cipher":"auto","uuid":"188.114.97.79:443?type=ws&encryption=auto&host=linde06.indiavideo.sbs&path=%2Flinkws&security=tls&sni=linde06.indiavideo.sbs#%F0%9F%87%A7%F0%9F%87%B7%20www.85la.com%20%E5%B7%B4%E8%A5%BF_9","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"linde06.indiavideo.sbs"}}}
   - {"name":"🇺🇸 www.85la.com 美国_344","type":"vmess","server":"172.67.196.112","port":443,"cipher":"auto","uuid":"172.67.196.112:443?type=ws&encryption=auto&host=linde06.indiavideo.sbs&path=%2Flinkws&security=tls&sni=linde06.indiavideo.sbs#%F0%9F%87%BA%F0%9F%87%B8%20www.85la.com%20%E7%BE%8E%E5%9B%BD_344","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"linde06.indiavideo.sbs"}}}
@@ -575,12 +607,9 @@ proxy-groups:
       - 🇪🇸 www.85la.com 西班牙_4
   - name: ♻️ 自动选择
     type: url-test
-    url: https://www.gstatic.com/generate_204
+    url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
-    lazy: true
-    timeout: 7000
-    max-failed-times: 7
     proxies:
       - 🇨🇦 加拿大 www.85la.com 283
       - 🇺🇸 www.85la.com 美国_4
@@ -1107,34 +1136,25 @@ proxy-groups:
       - 🇪🇸 www.85la.com 西班牙_4
   - name: 🇯🇵 日本节点
     type: url-test
-    url: https://www.gstatic.com/generate_204
+    url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
-    lazy: true
-    timeout: 7000
-    max-failed-times: 7
     proxies:
       - 🇯🇵 www.85la.com 日本_12
       - 🇯🇵 www.85la.com 日本_4
   - name: 🇸🇬 狮城节点
     type: url-test
-    url: https://www.gstatic.com/generate_204
+    url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
-    lazy: true
-    timeout: 7000
-    max-failed-times: 7
     proxies:
       - 🇸🇬 www.85la.com 新加坡_4
       - 🇸🇬 www.85la.com 新加坡_6
   - name: 🇺🇲 美国节点
     type: url-test
-    url: https://www.gstatic.com/generate_204
+    url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
-    lazy: true
-    timeout: 7000
-    max-failed-times: 7
     proxies:
       - 🇺🇸 www.85la.com 美国_4
       - 🇺🇸 www.85la.com 美国_19
