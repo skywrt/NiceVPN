@@ -1,89 +1,57 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2025-04-21 17:48:13
+# 创建时间：2025-04-21 17:52:38
 # 使用模版：ACL4SSR_Online_Mini_MultiCountry.ini
 # 节点数量：385
 # 节点类型：vmess, trojan
 ####################################
 mixed-port: 7890
-allow-lan: true
-log-level: info
-external-controller: 0.0.0.0:9090
+allow-lan: false
+log-level: silent
+external-controller: 127.0.0.1:9090
 dns:
-  enabled: true
-  listen: 0.0.0.0:1053
-  ipv6: true
+  enable: true
+  cache-algorithm: arc
+  prefer-h3: false
+  use-hosts: false
+  use-system-hosts: false
+  respect-rules: true
+  listen: 127.0.0.1:1053
+  ipv6: false
   default-nameserver:
-    - 223.5.5.5
-    - 114.114.114.114
+    - https://cloudflare-dns.com/dns-query
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
+  fake-ip-filter-mode: blacklist
   fake-ip-filter:
     - '*.lan'
-    - '*.linksys.com'
-    - '*.linksyssmartwifi.com'
-    - swscan.apple.com
-    - mesu.apple.com
-    - '*.msftconnecttest.com'
-    - '*.msftncsi.com'
-    - time.*.com
-    - time.*.gov
-    - time.*.edu.cn
-    - time.*.apple.com
-    - time1.*.com
-    - time2.*.com
-    - time3.*.com
-    - time4.*.com
-    - time5.*.com
-    - time6.*.com
-    - time7.*.com
-    - ntp.*.com
-    - ntp.*.com
-    - ntp1.*.com
-    - ntp2.*.com
-    - ntp3.*.com
-    - ntp4.*.com
-    - ntp5.*.com
-    - ntp6.*.com
-    - ntp7.*.com
-    - '*.time.edu.cn'
-    - '*.ntp.org.cn'
-    - +.pool.ntp.org
-    - time1.cloud.tencent.com
-    - +.music.163.com
-    - '*.126.net'
-    - musicapi.taihe.com
-    - music.taihe.com
-    - songsearch.kugou.com
-    - trackercdn.kugou.com
-    - '*.kuwo.cn'
-    - api-jooxtt.sanook.com
-    - api.joox.com
-    - joox.com
-    - +.y.qq.com
-    - +.music.tc.qq.com
-    - aqqmusic.tc.qq.com
-    - +.stream.qqmusic.qq.com
-    - '*.xiami.com'
-    - +.music.migu.cn
-    - +.srv.nintendo.net
-    - +.stun.playstation.net
-    - xbox.*.microsoft.com
-    - +.xboxlive.com
-    - localhost.ptlogin2.qq.com
-    - proxy.golang.org
-    - stun.*.*
-    - stun.*.*.*
-    - '*.mcdn.bilivideo.cn'
+  nameserver-policy:
+    '+.arpa':
+      - https://cloudflare-dns.com/dns-query 
+    'rule-set:cn':
+      - https://doh.alidns.com/dns-query
+      - https://1.12.222.222/dns-query
   nameserver:
-    - https://doh.pub/dns-query
-    - https://dns.alidns.com/dns-query
+    - https://dns.google/dns-query
+  fallback:
+    - https://cloudflare-dns.com/dns-query
+  proxy-server-nameserver:
+    - https://mozilla.cloudflare-dns.com/dns-query
+    - https://dns.adguard.com/dns-query
+  direct-nameserver:
+    - https://doh.alidns.com/dns-query
+  direct-nameserver-follow-policy: true
   fallback-filter:
-    geoip: false
-    ipcidr:
-      - 240.0.0.0/4
-      - 0.0.0.0/32
+    geoip: true
+    geoip-code: CN
+    geosite:
+      - gfw
+    domain:
+      - '.google.com'
+      - '.facebook.com'
+      - 'googleusercontent.com'
+      - 'youtube.com'
 
 proxies:
   - {"name":"美国 CloudFlare节点_1_1","type":"vmess","server":"manager.onetwothree123.ir","port":8443,"cipher":"auto","uuid":"3cdb397b-ebad-48bf-a92c-c11b7ae5d043","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/🆔@M3HDIO1","headers":{"host":"manager.onetwothree123.ir"}}}
@@ -141,14 +109,14 @@ proxies:
   - {"name":"广东省广州市 电信_4","type":"trojan","server":"aafrtpfxr.jpl01i9zjfegelp.5xfsur8v62.gosdk.xyz","port":46927,"udp":true,"password":"ac52f118-5ada-4bcd-ab7e-c1897deefed5","sni":"q08m.vgraxiw73s.hasyaf.cn","skip-cert-verify":true,"network":"tcp"}
   - {"name":"广东省广州市 电信_1_2","type":"trojan","server":"sla.cn.964e995b760.gogodns.xin","port":43383,"udp":true,"password":"dec77d0d-607f-45f7-95b0-9434131de295","sni":"q08m.vgraxiw73s.hasyaf.cn","skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国 V2CROSS.COM_4","type":"trojan","server":"45.146.232.173","port":46668,"udp":true,"password":"4d3546b9-f55a-4ec4-af91-36408636d06b","sni":"q08m.vgraxiw73s.hasyaf.cn","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"爱尔兰 都柏林Amazon数据中心","type":"trojan","server":"54.195.240.94","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
+  - {"name":"爱尔兰 都柏林Amazon数据中心","type":"trojan","server":"54.195.240.94","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国 V2CROSS.COM_2_2","type":"trojan","server":"45.146.232.173","port":43383,"udp":true,"password":"dec77d0d-607f-45f7-95b0-9434131de295","sni":"q08m.vgraxiw73s.hasyaf.cn","skip-cert-verify":true,"network":"tcp"}
   - {"name":"广东省肇庆市 中移铁通","type":"trojan","server":"csuzhou01.1cooldns.com","port":42303,"udp":true,"password":"VMhGp5wEIyCDf90T","sni":"hk06.run.place","skip-cert-verify":true,"network":"tcp"}
   - {"name":"日本 V2CROSS.COM_2","type":"trojan","server":"160.22.188.200","port":8313,"udp":true,"password":"2c605663-b89a-5734-a9d6-97d4743d72cf","sni":"hk-13-568.flztjc.net","skip-cert-verify":true,"network":"tcp"}
   - {"name":"广东省广州市 电信_6_1","type":"trojan","server":"aafrtpfxr.jpl01i9zjfegelp.5xfsur8v62.gosdk.xyz","port":46926,"udp":true,"password":"aa34901b-0877-4143-8e50-67de188e178a","sni":"q08m.vgraxiw73s.hasyaf.cn","skip-cert-verify":true,"network":"tcp"}
   - {"name":"广东省广州市 电信_7_1","type":"trojan","server":"aafrtpfxr.jpl01i9zjfegelp.5xfsur8v62.gosdk.xyz","port":43592,"udp":true,"password":"a8a56445-1dbd-446c-9924-381eeaf73439","sni":"q08m.vgraxiw73s.hasyaf.cn","skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国 V2CROSS.COM_7_2","type":"trojan","server":"45.146.232.171","port":43383,"udp":true,"password":"dec77d0d-607f-45f7-95b0-9434131de295","sni":"q08m.vgraxiw73s.hasyaf.cn","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国 CloudFlare节点_21","type":"trojan","server":"104.21.23.162","port":443,"udp":true,"password":"f82fb954-06a1-4f0b-9180-17e07585b61f","sni":"6tghjk.131.pp.ua","skip-cert-verify":false,"network":"tcp"}
+  - {"name":"美国 CloudFlare节点_21","type":"trojan","server":"104.21.23.162","port":443,"udp":true,"password":"f82fb954-06a1-4f0b-9180-17e07585b61f","sni":"6tghjk.131.pp.ua","skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国 V2CROSS.COM_7","type":"trojan","server":"45.146.232.173","port":34016,"udp":true,"password":"7f744c6e-7f17-416e-9ea7-5d5e6482b705","sni":"q08m.vgraxiw73s.hasyaf.cn","skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国 V2CROSS.COM_8_1","type":"trojan","server":"45.146.232.171","port":43592,"udp":true,"password":"51a668c6-d1bb-4e7e-aca3-125349f779fd","sni":"q08m.vgraxiw73s.hasyaf.cn","skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国 V2CROSS.COM_9","type":"trojan","server":"45.146.232.171","port":34016,"udp":true,"password":"7f744c6e-7f17-416e-9ea7-5d5e6482b705","sni":"q08m.vgraxiw73s.hasyaf.cn","skip-cert-verify":true,"network":"tcp"}
@@ -160,9 +128,9 @@ proxies:
   - {"name":"广东省广州市 电信_12","type":"trojan","server":"aafrtpfxr.jpl01i9zjfegelp.5xfsur8v62.gosdk.xyz","port":27408,"udp":true,"password":"de59dbc2-14e7-4d7a-bd73-706c55bb6ad6","sni":"q08m.vgraxiw73s.hasyaf.cn","skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国 V2CROSS.COM_10","type":"trojan","server":"45.146.232.171","port":46668,"udp":true,"password":"4d3546b9-f55a-4ec4-af91-36408636d06b","sni":"q08m.vgraxiw73s.hasyaf.cn","skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国 V2CROSS.COM_11","type":"trojan","server":"45.146.232.173","port":43592,"udp":true,"password":"51a668c6-d1bb-4e7e-aca3-125349f779fd","sni":"q08m.vgraxiw73s.hasyaf.cn","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国 CloudFlare节点_22","type":"trojan","server":"172.67.214.21","port":443,"udp":true,"password":"4be20cf1-6af1-4e87-ae5a-80d6ec30fecd","sni":"8fg.191268.xyz","skip-cert-verify":false,"network":"tcp"}
+  - {"name":"美国 CloudFlare节点_22","type":"trojan","server":"172.67.214.21","port":443,"udp":true,"password":"4be20cf1-6af1-4e87-ae5a-80d6ec30fecd","sni":"8fg.191268.xyz","skip-cert-verify":true,"network":"tcp"}
   - {"name":"广东省广州市 电信_13","type":"trojan","server":"sla.cn.964e995b760.gogodns.xin","port":43592,"udp":true,"password":"51a668c6-d1bb-4e7e-aca3-125349f779fd","sni":"q08m.vgraxiw73s.hasyaf.cn","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国 CloudFlare节点_23","type":"trojan","server":"104.21.42.250","port":443,"udp":true,"password":"4be20cf1-6af1-4e87-ae5a-80d6ec30fecd","sni":"8fg.191268.xyz","skip-cert-verify":false,"network":"tcp"}
+  - {"name":"美国 CloudFlare节点_23","type":"trojan","server":"104.21.42.250","port":443,"udp":true,"password":"4be20cf1-6af1-4e87-ae5a-80d6ec30fecd","sni":"8fg.191268.xyz","skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国 CloudFlare节点_24","type":"trojan","server":"104.25.165.83","port":8443,"udp":true,"password":"123456","sni":"top-azx.pages.dev","skip-cert-verify":true,"network":"tcp"}
   - {"name":"美国 华盛顿州西雅图市wowrack数据中心_1","type":"vmess","server":"a7195629-sv2sg0-t8dih2-9kd8.se.plebai.net","port":12089,"cipher":"auto","uuid":"8bd4eef0-e4ad-11ef-b717-f23c913c8d2b","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":""}}
   - {"name":"广东省 联通_7","type":"vmess","server":"2e93912d-sutj40-sutgau-1r62f.cu.plebai.net","port":5229,"cipher":"auto","uuid":"154b0bf8-f9a7-11ee-a218-f23c91cfbbc9","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
@@ -872,9 +840,12 @@ proxy-groups:
       - 美国 CloudFlare节点 (26)
   - name: ♻️ 自动选择
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
+    lazy: true
+    timeout: 7000
+    max-failed-times: 7
     proxies:
       - 美国 CloudFlare节点_1_1
       - 广东省广州市 移动_5_1
@@ -1665,33 +1636,45 @@ proxy-groups:
       - 美国 CloudFlare节点 (26)
   - name: 🇭🇰 香港节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
+    lazy: true
+    timeout: 7000
+    max-failed-times: 7
     proxies:
       - 香港 腾讯云_2
       - 香港 电讯盈科有限公司_5
       - 香港 Google云计算数据中心
   - name: 🇯🇵 日本节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
+    lazy: true
+    timeout: 7000
+    max-failed-times: 7
     proxies:
       - 日本 V2CROSS.COM_1
       - 日本 V2CROSS.COM_2
   - name: 🇸🇬 狮城节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
+    lazy: true
+    timeout: 7000
+    max-failed-times: 7
     proxies:
       - 新加坡 Amazon数据中心
   - name: 🇺🇲 美国节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
+    lazy: true
+    timeout: 7000
+    max-failed-times: 7
     proxies:
       - 美国 CloudFlare节点_1_1
       - 美国 CloudFlare节点 (9)
