@@ -200,7 +200,6 @@ proxies:
   - {name: 🇸🇬 SG 1 → skywrt, server: 13.213.46.196, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
   - {name: 🇸🇬 SG 2 → skywrt, server: 54.251.168.143, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
   - {name: 🇸🇬 SG 3 → skywrt, server: 159.223.94.156, port: 80, type: vmess, uuid: 533724ad-58ef-4147-88dc-9da523c15fc4, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /anti13.zingfast.vn}, udp: true}
-  - {name: 🇺🇸 US 1 → skywrt, server: aaaa.wxx.gay, port: 443, type: vmess, uuid: 8237ec34-143a-11ee-8019-000017022008, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /look, headers: {Host: aaaa.wxx.gay}}, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -222,7 +221,6 @@ proxy-groups:
       - 🇸🇬 SG 1 → skywrt
       - 🇸🇬 SG 2 → skywrt
       - 🇸🇬 SG 3 → skywrt
-      - 🇺🇸 US 1 → skywrt
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
@@ -233,7 +231,6 @@ proxy-groups:
       - 🇸🇬 SG 1 → skywrt
       - 🇸🇬 SG 2 → skywrt
       - 🇸🇬 SG 3 → skywrt
-      - 🇺🇸 US 1 → skywrt
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -254,7 +251,7 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - 🇺🇸 US 1 → skywrt
+      - DIRECT
   - name: 🇹🇼 台湾节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -292,7 +289,6 @@ proxy-groups:
       - 🇸🇬 SG 1 → skywrt
       - 🇸🇬 SG 2 → skywrt
       - 🇸🇬 SG 3 → skywrt
-      - 🇺🇸 US 1 → skywrt
   - name: 👉 国内网站
     type: select
     proxies:
