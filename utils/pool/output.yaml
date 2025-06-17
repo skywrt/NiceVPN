@@ -134,6 +134,21 @@ proxies:
   ws-opts:
     path: /anti13.zingfast.vn
   udp: true
+- name: "\U0001F1FA\U0001F1F3 UN 19 VMS"
+  server: aaaa.wxx.gay
+  port: 443
+  type: vmess
+  uuid: 8237ec34-143a-11ee-8019-000017022008
+  alterId: 64
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /look
+    headers:
+      Host: aaaa.wxx.gay
+  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -156,6 +171,7 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 16 SSS"
   - "\U0001F1F8\U0001F1EC SG 17 SSS"
   - "\U0001F1F8\U0001F1EC SG 18 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 19 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -180,5 +196,6 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 16 SSS"
   - "\U0001F1F8\U0001F1EC SG 17 SSS"
   - "\U0001F1F8\U0001F1EC SG 18 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 19 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
