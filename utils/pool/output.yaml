@@ -100,41 +100,7 @@ proxies:
   password: b84d16a244460e09
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 15 SSS"
-  server: 54.199.83.239
-  port: 2333
-  type: ss
-  cipher: aes-256-cfb
-  password: doub.io
-  udp: true
-- name: "\U0001F1F8\U0001F1EC SG 16 SSS"
-  server: 13.213.46.196
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: "\U0001F1F8\U0001F1EC SG 17 SSS"
-  server: 54.251.168.143
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: "\U0001F1F8\U0001F1EC SG 18 VMS"
-  server: 159.223.94.156
-  port: 80
-  type: vmess
-  uuid: 533724ad-58ef-4147-88dc-9da523c15fc4
-  alterId: 64
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /anti13.zingfast.vn
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 19 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 15 VMS"
   server: aaaa.wxx.gay
   port: 443
   type: vmess
@@ -148,6 +114,40 @@ proxies:
     path: /look
     headers:
       Host: aaaa.wxx.gay
+  udp: true
+- name: "\U0001F1EF\U0001F1F5 JP 16 SSS"
+  server: 54.199.83.239
+  port: 2333
+  type: ss
+  cipher: aes-256-cfb
+  password: doub.io
+  udp: true
+- name: "\U0001F1F8\U0001F1EC SG 17 SSS"
+  server: 13.213.46.196
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: "\U0001F1F8\U0001F1EC SG 18 SSS"
+  server: 54.251.168.143
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: "\U0001F1F8\U0001F1EC SG 19 VMS"
+  server: 159.223.94.156
+  port: 80
+  type: vmess
+  uuid: 533724ad-58ef-4147-88dc-9da523c15fc4
+  alterId: 64
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /anti13.zingfast.vn
   udp: true
 proxy-groups:
 - name: automatic
@@ -167,11 +167,11 @@ proxy-groups:
   - "\U0001F1F2\U0001F1F4 MO 12 TJN"
   - "\U0001F1F9\U0001F1FC TW 13 TJN"
   - "\U0001F1F9\U0001F1FC TW 14 TJN"
-  - "\U0001F1EF\U0001F1F5 JP 15 SSS"
-  - "\U0001F1F8\U0001F1EC SG 16 SSS"
+  - "\U0001F1FA\U0001F1F8 US 15 VMS"
+  - "\U0001F1EF\U0001F1F5 JP 16 SSS"
   - "\U0001F1F8\U0001F1EC SG 17 SSS"
-  - "\U0001F1F8\U0001F1EC SG 18 VMS"
-  - "\U0001F1FA\U0001F1F8 US 19 VMS"
+  - "\U0001F1F8\U0001F1EC SG 18 SSS"
+  - "\U0001F1F8\U0001F1EC SG 19 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -192,10 +192,10 @@ proxy-groups:
   - "\U0001F1F2\U0001F1F4 MO 12 TJN"
   - "\U0001F1F9\U0001F1FC TW 13 TJN"
   - "\U0001F1F9\U0001F1FC TW 14 TJN"
-  - "\U0001F1EF\U0001F1F5 JP 15 SSS"
-  - "\U0001F1F8\U0001F1EC SG 16 SSS"
+  - "\U0001F1FA\U0001F1F8 US 15 VMS"
+  - "\U0001F1EF\U0001F1F5 JP 16 SSS"
   - "\U0001F1F8\U0001F1EC SG 17 SSS"
-  - "\U0001F1F8\U0001F1EC SG 18 VMS"
-  - "\U0001F1FA\U0001F1F8 US 19 VMS"
+  - "\U0001F1F8\U0001F1EC SG 18 SSS"
+  - "\U0001F1F8\U0001F1EC SG 19 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
